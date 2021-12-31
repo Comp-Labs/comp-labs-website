@@ -13,6 +13,8 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
   favicon: 'img/favicon.ico',
   organizationName: 'Comp-Labs', // Usually your GitHub org/user name.
   projectName: 'comp-labs-website', // Usually your repo name.
+  deploymentBranch: 'main',
+  trailingSlash: false,
 
   presets: [
     [
@@ -48,7 +50,9 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
            // label: 'Tutorial',
           //},
           {to: '/', label: 'Home', position: 'left'},
-          {to: '/contact-us', label: 'Contact Us', position: 'left'},
+          {to: '/docs/intro', label: 'Guides', position: 'left'},
+          {to: '/services', label: 'Services', position: 'left'},
+          {href: 'https://forms.gle/dQmrNAZZ1KK81rAP7', label: 'Contact Us', position: 'left'},
           {to: '/donate-us', label: 'Donate Us', position: 'left'},
           {to: '/policies', label: 'Policies', position: 'left'},
           {
@@ -66,15 +70,15 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
             items: [
               {
                 label: 'Home',
-                to: '/docs/intro',
+                to: '/',
               },
               {
-                label: 'Contact Us',
-                to: '/docs/intro',
+                label: 'Contact Us!',
+                href: 'https://forms.gle/dQmrNAZZ1KK81rAP7',
               },
               {
-                label: 'Donate',
-                to: '/docs/intro',
+                label: 'Donate Us!',
+                to: '/donate-us',
               },
             ],
           },
@@ -83,19 +87,19 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
             items: [
               {
                 label: 'Apps',
-                to: '/blog',
+                to: '/services/apps',
               },
               {
                 label: 'Guides',
-                to: '/guides',
+                to: '/docs/intro',
               },
               {
                 label: 'Google Play Developers',
-                to: '/google-play-developers',
+                to: '/services/google-play-developers',
               },
               {
                 label: 'Business Meeting Service',
-                to: '/business-meeting-service',
+                to: '/services/business-meeting-service',
               },
             ],
           },
@@ -104,15 +108,15 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
             items: [
               {
                 label: 'Terms of Service',
-                to: '/terms-of-service',
+                to: '/legal/terms-of-service',
               },
               {
                 label: 'Privacy Policy',
-                to: '/privacy-policy',
+                to: '/legal/privacy-policy',
               },
               {
                 label: 'Cookie Policy',
-                to: '/cookie-policy',
+                to: '/legal/cookie-policy',
               },
             ],
           },
