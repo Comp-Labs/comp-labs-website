@@ -4,32 +4,32 @@ import styles from './HomepageFeatures.module.css';
 
 const FeatureList = [
   {
-    title: 'Easy to Use',
-    Svg: require('../../static/img/undraw_docusaurus_mountain.svg').default,
-    description: (
-      <>
-        Docusaurus was designed from the ground up to be easily installed and
-        used to get your website up and running quickly.
-      </>
-    ),
-  },
-  {
-    title: 'Focus on What Matters',
+    title: 'Guides',
     Svg: require('../../static/img/undraw_docusaurus_tree.svg').default,
     description: (
       <>
-        Docusaurus lets you focus on your docs, and we&apos;ll do the chores. Go
-        ahead and move your docs into the <code>docs</code> directory.
+        We provide technical guides to help users do stuff related to tech by just watching our videos.
       </>
     ),
   },
   {
-    title: 'Powered by React',
+    title: 'Apps',
     Svg: require('../../static/img/undraw_docusaurus_react.svg').default,
     description: (
       <>
-        Extend or customize your website layout by reusing React. Docusaurus can
-        be extended while reusing the same header and footer.
+        We make user-friendly apps for platforms including Android, Windows, Apple Platforms (iOS, iPadOS, watchOS, macOS, and tvOS), and Linux.
+        [Go To Apps](/services/apps)
+      </>
+    ),
+    
+  },
+  {
+    title: 'App Submission Service for Google Play Developer Console',
+    Svg: require('../../static/img/google_play.svg').default,
+    description: (
+      <>
+        This Service helps you to submit apps to Google Play Console for Free, Go to its page to Learn More.
+        [Learn More](/google-play-developers)
       </>
     ),
   },
