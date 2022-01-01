@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+    <id>https://comp-labs.github.io/comp-labs-website/blog</id>
+    <title>Comp Labs Blog</title>
+    <updated>2022-01-01T00:00:00.000Z</updated>
+    <generator>https://github.com/jpmonette/feed</generator>
+    <link rel="alternate" href="https://comp-labs.github.io/comp-labs-website/blog"/>
+    <subtitle>Comp Labs Blog</subtitle>
+    <icon>https://comp-labs.github.io/comp-labs-website/img/favicon.ico</icon>
+    <entry>
+        <title type="html"><![CDATA[Welcome to Comp Labs Guides!]]></title>
+        <id>/2022/01/01/welcome</id>
+        <link href="https://comp-labs.github.io/comp-labs-website/blog/2022/01/01/welcome"/>
+        <updated>2022-01-01T00:00:00.000Z</updated>
+        <summary type="html"><![CDATA[Welcome Page for Docusaurus Blog.]]></summary>
+        <content type="html"><![CDATA[<p>Select one of the blog posts or search using the search box above. Happy Reading!</p>]]></content>
+        <author>
+            <name>Comp Labs</name>
+            <uri>https://github.com/Comp-Labs</uri>
+        </author>
+    </entry>
+</feed>

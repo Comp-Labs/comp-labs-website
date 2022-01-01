@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkcomp_labs_website=self.webpackChunkcomp_labs_website||[]).push([[668],{8903:function(e){e.exports=JSON.parse('{"permalink":"/comp-labs-website/blog","page":1,"postsPerPage":10,"totalPages":1,"totalCount":1,"previousPage":null,"nextPage":null,"blogDescription":"Blog","blogTitle":"Blog"}')}}]);

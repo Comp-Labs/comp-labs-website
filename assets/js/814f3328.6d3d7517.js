@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkcomp_labs_website=self.webpackChunkcomp_labs_website||[]).push([[535],{5641:function(e){e.exports=JSON.parse('{"title":"Recent posts","items":[{"title":"Welcome to Comp Labs Guides!","permalink":"/comp-labs-website/blog/2022/01/01/welcome"}]}')}}]);

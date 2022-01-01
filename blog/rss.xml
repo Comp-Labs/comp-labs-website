@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+    <channel>
+        <title>Comp Labs Blog</title>
+        <link>https://comp-labs.github.io/comp-labs-website/blog</link>
+        <description>Comp Labs Blog</description>
+        <lastBuildDate>Sat, 01 Jan 2022 00:00:00 GMT</lastBuildDate>
+        <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
+        <generator>https://github.com/jpmonette/feed</generator>
+        <item>
+            <title><![CDATA[Welcome to Comp Labs Guides!]]></title>
+            <link>https://comp-labs.github.io/comp-labs-website/blog/2022/01/01/welcome</link>
+            <guid>/2022/01/01/welcome</guid>
+            <pubDate>Sat, 01 Jan 2022 00:00:00 GMT</pubDate>
+            <description><![CDATA[Welcome Page for Docusaurus Blog.]]></description>
+            <content:encoded><![CDATA[<p>Select one of the blog posts or search using the search box above. Happy Reading!</p>]]></content:encoded>
+        </item>
+    </channel>
+</rss>
