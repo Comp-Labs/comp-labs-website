@@ -1,1 +1,0 @@
-"use strict";(self.webpackChunkcomp_labs_website=self.webpackChunkcomp_labs_website||[]).push([[243],{9495:function(e){e.exports=JSON.parse('{"allTagsPath":"/comp-labs-website/blog/tags","slug":"/comp-labs-website/blog/tags/hello","name":"hello","count":1,"permalink":"/comp-labs-website/blog/tags/hello"}')}}]);
