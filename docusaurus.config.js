@@ -15,6 +15,7 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
   projectName: 'comp-labs-website', // Usually your repo name.
   deploymentBranch: 'main',
   trailingSlash: false,
+  themes: ['@docusaurus/theme-live-codeblock'],
 
   presets: [
     [
@@ -56,6 +57,14 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
   
         //... other Algolia params
       //},
+      announcementBar: {
+        id: 'support_us',
+        content:
+          'Example Banner',
+        backgroundColor: '#147EFB',
+        textColor: '#FFFFFF',
+        isCloseable: false,
+      },
       navbar: {
         title: 'Comp Labs',
         logo: {
@@ -210,6 +219,11 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
             ],
           },
         ],
+        logo: {
+          alt: 'Comp Labs Footer Logo',
+          src: 'img/logo.svg',
+          href: '/',
+        },
         copyright: `Copyright © ${new Date().getFullYear()} Comp Labs. All Rights Reserved.`,
       },
       prism: {
