@@ -14,7 +14,7 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
   organizationName: 'Comp-Labs', // Usually your GitHub org/user name.
   projectName: 'comp-labs-website', // Usually your repo name.
   deploymentBranch: 'main',
-  trailingSlash: false,
+  trailingSlash: 'false',
   themes: ['@docusaurus/theme-live-codeblock'],
 
   presets: [
