@@ -4,7 +4,6 @@ import styles from './HomepageFeatures.module.css';
 
 const FeatureList = [
   {
-    href: 'https://docs.complabs.in/',
     title: 'Guides',
     Svg: require('../../static/img/undraw_docusaurus_tree.svg').default,
     description: (
@@ -19,10 +18,8 @@ const FeatureList = [
     description: (
       <>
         We make user-friendly apps for platforms including Android, Windows, Apple Platforms (iOS, iPadOS, watchOS, macOS, and tvOS), and Linux.
-        [Go To Apps](/services/apps)
       </>
     ),
-    href: 'https://complabs28.wixsite.com/comp-labs-app-store',
   },
   {
     title: 'App Submission Service for Google Play Developer Console',
@@ -30,10 +27,8 @@ const FeatureList = [
     description: (
       <>
         This Service helps you to submit apps to Google Play Console for Free, Go to its page to Learn More.
-        [Learn More](/google-play-developers)
       </>
     ),
-    to: '../../google-play-developers',
   },
 ];
 

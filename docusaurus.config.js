@@ -37,34 +37,35 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
   themeConfig:
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
-      //algolia: {
+      algolia: {
         // If Algolia did not provide you any appId, use 'BH4D9OD16A'
-        //appId: 'YOUR_APP_ID',
+        appId: 'BH4D9OD16A',
   
         // Public API key: it is safe to commit it
-        //apiKey: 'YOUR_SEARCH_API_KEY',
+        apiKey: '599cec31baffa4868cae4e79f180729b',
   
-        //indexName: 'YOUR_INDEX_NAME',
+        indexName: 'docsearch',
   
         // Optional: see doc section below
-        //contextualSearch: true,
+        // contextualSearch: true,
   
         // Optional: Specify domains where the navigation should occur through window.location instead on history.push. Useful when our Algolia config crawls multiple documentation sites and we want to navigate with window.location.href to them.
-        //externalUrlRegex: 'external\\.com|domain\\.com',
+        // externalUrlRegex: 'external\\.com|domain\\.com',
   
         // Optional: Algolia search parameters
-        //searchParameters: {},
+        // searchParameters: {},
   
         //... other Algolia params
-      //},
-      announcementBar: {
-        id: 'support_us',
-        content:
-          'Example Banner',
-        backgroundColor: '#147EFB',
-        textColor: '#FFFFFF',
-        isCloseable: false,
       },
+      image: 'img/Comp Labs Logo_Text.png',
+      // announcementBar: {
+      //   id: 'support_us',
+      //   content:
+      //     'Example Banner',
+      //   backgroundColor: '#147EFB',
+      //   textColor: '#FFFFFF',
+      //   isCloseable: false,
+      // },
       navbar: {
         title: 'Comp Labs',
         logo: {
@@ -78,7 +79,6 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
            // position: 'left',
            // label: 'Tutorial',
           //},
-          {to: '/', label: 'Home', position: 'left'},
           {to: '/docs/welcome', label: 'Docs', position: 'left'},
           {href: 'https://docs.complabs.in', label: 'Guides', position: 'left'},
           //{to: 'blog', label: 'Guides 🚧', position: 'left'},
@@ -129,10 +129,11 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
             label: 'GitHub',
             position: 'right',
           },
-          //{
-            //type: 'search',
-            //position: 'right',
-          //},
+          {to: '/search', label: '🔍 Search', position: 'right'},
+          {
+            type: 'search',
+            position: 'right',
+          },
         ],
       },
       footer: {
@@ -218,10 +219,23 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
               },
             ],
           },
+          {
+            title: 'Social',
+            items: [
+              {
+                label: 'GitHub',
+                href: 'https://github.com/Comp-Labs',
+              },
+              {
+                label: 'YouTube',
+                href: 'https://youtube.com/channel/UCL6pKeSCbJkPohM2PUZbqQA',
+              },
+            ],
+          },
         ],
         logo: {
           alt: 'Comp Labs Footer Logo',
-          src: 'img/logo.svg',
+          src: 'img/Comp Labs Logo_Text.png',
           href: '/',
         },
         copyright: `Copyright © ${new Date().getFullYear()} Comp Labs. All Rights Reserved.`,
