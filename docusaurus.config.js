@@ -66,6 +66,10 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
       //   textColor: '#FFFFFF',
       //   isCloseable: false,
       // },
+      tableOfContents: {
+        minHeadingLevel: 2,
+        maxHeadingLevel: 5,
+      },
       navbar: {
         title: 'Comp Labs',
         logo: {
@@ -79,9 +83,10 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
            // position: 'left',
            // label: 'Tutorial',
           //},
-          {to: '/docs/welcome', label: 'Docs', position: 'left'},
+          {to: '/', label: 'Home', position: 'left'},
+          // {to: '/docs/welcome', label: 'Docs', position: 'left'},
           {href: 'https://docs.complabs.in', label: 'Guides', position: 'left'},
-          //{to: 'blog', label: 'Guides 🚧', position: 'left'},
+          //{to: 'blog', label: 'Guides', position: 'left'},
           {
             type: 'dropdown',
             label: 'Services',
@@ -95,10 +100,10 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
                 label: 'Google Play Developers',
                 to: '/services/google-play-developers',
               },
-              {
-                label: 'Business Meeting Service',
-                to: '/services/business-meeting-service',
-              },
+              // {
+              //   label: 'Business Meeting Service',
+              //   to: '/services/business-meeting-service',
+              // },
               // ... more items
             ],
           },
@@ -147,17 +152,9 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
                 to: '/',
               },
               {
-                label: 'Docs',
-                to: '/docs/welcome',
-              },
-              {
                 label: 'Guides',
                 href: 'https://docs.complabs.in',
               },
-              //{
-                //label: 'Guides 🚧',
-                //to: 'blog',
-              //},
               {
                 label: 'Contact Us!',
                 href: 'https://forms.gle/dQmrNAZZ1KK81rAP7',
@@ -229,6 +226,27 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
               {
                 label: 'YouTube',
                 href: 'https://youtube.com/channel/UCL6pKeSCbJkPohM2PUZbqQA',
+              },
+            ],
+          },
+          {
+            title: 'Experimental Pages 🚧',
+            items: [
+              {
+                label: 'Docs 🚧',
+                to: '/docs/welcome',
+              },
+              {
+                label: 'Guides 🚧',
+                to: 'blog',
+              },
+              {
+                label: 'Apps 🚧',
+                to: '/services/apps',
+              },
+              {
+                label: 'Business Meeting Service 🚧',
+                to: '/services/business-meeting-service',
               },
             ],
           },
