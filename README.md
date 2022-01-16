@@ -4,4 +4,4 @@ This Repository Contains up-to-date source code for the [Comp Labs Website](http
 
 Written in ReactJS, Markdown, and MDX. Built with [Docusaurus](docusaurus.io). Deploys with [Netlify](netlify.com).
 
-[Visit Website](https://v2.complabs.in)
+[Visit Website](https://complabs.in)
