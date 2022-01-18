@@ -45,7 +45,7 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
         // If Algolia did not provide you any appId, use 'BH4D9OD16A'
         appId: 'K1QUTN73LL',
         apiKey: '00b3485d53f7bfdeb9cc5fdd5a37cff2',
-        // indexName: 'docsearch',
+        indexName: 'docsearch',
       },
       image: 'img/Comp Labs Logo_Text.png',
       // announcementBar: {
