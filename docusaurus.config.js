@@ -6,7 +6,7 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
 (module.exports = {
   title: 'Comp Labs',
   tagline: 'Our website provides Technical Guides, Apps, and Google Play Developer Console Service. This is a non-profit website so please donate to us to keep our resources running. You can write your feedback and comments about anything on our Contact Us page. See details of our services below.',
-  url: 'https://v2.complabs.in',
+  url: 'https://complabs.in',
   baseUrl: '/',
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
@@ -41,13 +41,30 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
   themeConfig:
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
-      algolia: {
-        // If Algolia did not provide you any appId, use 'BH4D9OD16A'
-        appId: 'K1QUTN73LL',
-        apiKey: '00b3485d53f7bfdeb9cc5fdd5a37cff2',
-        indexName: 'docsearch',
+      liveCodeBlock: {
+        playgroundPosition: 'bottom',
+      },
+      hideableSidebar: true,
+      colorMode: {
+        defaultMode: 'light',
+        disableSwitch: false,
+        respectPrefersColorScheme: true,
+      },
+      prism: {
+        // We need to load markdown again so that YAML is loaded before MD
+        // and the YAML front matter is highlighted correctly.
+        // TODO after we have forked prism-react-renderer, we should tweak the
+        // import order and fix it there
+        additionalLanguages: ['java', 'markdown'],
       },
       image: 'img/Comp Labs Logo_Text.png',
+      // metadata: [{name: 'twitter:card', content: 'summary'}],
+      algolia: {
+        appId: 'X1Z85QJPUV',
+        apiKey: 'bf7211c161e8205da2f933a02534105a',
+        indexName: 'docusaurus-2',
+        contextualSearch: true,
+      },
       // announcementBar: {
       //   id: 'support_us',
       //   content:
@@ -61,6 +78,7 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
         maxHeadingLevel: 5,
       },
       navbar: {
+        hideOnScroll: true,
         title: 'Comp Labs',
         logo: {
           alt: 'Comp Labs Logo',
@@ -74,7 +92,7 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
            // label: 'Tutorial',
           //},
           {to: '/', label: 'Home', position: 'left'},
-          // {to: '/docs/welcome', label: 'Docs', position: 'left'},
+          // {to: '/docs/', label: 'Docs', position: 'left'},
           {href: 'https://docs.complabs.in', label: 'Guides', position: 'left'},
           //{to: 'blog', label: 'Guides', position: 'left'},
           {
@@ -119,15 +137,22 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
               // ... more items
             ],
           },
+          // right
           {
-            href: 'https://github.com/Comp-Labs/',
-            label: 'GitHub',
+            type: 'localeDropdown',
             position: 'right',
+            dropdownItemsAfter: [
+              {
+                href: 'https://github.com/facebook/docusaurus/issues/3526',
+                label: 'Help Us Translate',
+              },
+            ],
           },
-          {to: '/search', label: '🔍 Search', position: 'right'},
           {
-            type: 'search',
+            href: 'https://github.com/Comp-Labs',
             position: 'right',
+            className: 'header-github-link',
+            'aria-label': 'GitHub Repository',
           },
         ],
       },
