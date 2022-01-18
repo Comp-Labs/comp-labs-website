@@ -30,6 +30,10 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
         theme: {
           customCss: require.resolve('./src/css/custom.css'),
         },
+        gtag: {
+          trackingID: 'UA-203163469-1',
+          anonymizeIP: true,
+        },
       }),
     ],
   ],
