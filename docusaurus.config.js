@@ -43,23 +43,9 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
     ({
       algolia: {
         // If Algolia did not provide you any appId, use 'BH4D9OD16A'
-        appId: 'BH4D9OD16A',
-  
-        // Public API key: it is safe to commit it
-        apiKey: '599cec31baffa4868cae4e79f180729b',
-  
-        indexName: 'docsearch',
-  
-        // Optional: see doc section below
-        // contextualSearch: true,
-  
-        // Optional: Specify domains where the navigation should occur through window.location instead on history.push. Useful when our Algolia config crawls multiple documentation sites and we want to navigate with window.location.href to them.
-        // externalUrlRegex: 'external\\.com|domain\\.com',
-  
-        // Optional: Algolia search parameters
-        // searchParameters: {},
-  
-        //... other Algolia params
+        appId: 'K1QUTN73LL',
+        apiKey: '00b3485d53f7bfdeb9cc5fdd5a37cff2',
+        // indexName: 'docsearch',
       },
       image: 'img/Comp Labs Logo_Text.png',
       // announcementBar: {
