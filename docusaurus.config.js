@@ -59,12 +59,6 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
       },
       image: 'img/Comp Labs Logo_Text.png',
       // metadata: [{name: 'twitter:card', content: 'summary'}],
-      algolia: {
-        appId: 'X1Z85QJPUV',
-        apiKey: 'bf7211c161e8205da2f933a02534105a',
-        indexName: 'docusaurus-2',
-        contextualSearch: true,
-      },
       // announcementBar: {
       //   id: 'support_us',
       //   content:
@@ -76,6 +70,13 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
       tableOfContents: {
         minHeadingLevel: 2,
         maxHeadingLevel: 5,
+      },
+      algolia: {
+        appId: '5BME7GVXKF',
+        apiKey: '25d03e7421fce25240ee86175434634d',
+        indexName: 'comp-labs',
+        contextualSearch: true,
+        placeholder: 'Search Comp Labs...',
       },
       navbar: {
         hideOnScroll: true,
