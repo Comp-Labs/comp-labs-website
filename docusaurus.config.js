@@ -17,6 +17,11 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
   trailingSlash: 'false',
   themes: ['@docusaurus/theme-live-codeblock'],
 
+  clientModules: [
+    require.resolve('./src/css/docsearch-alpha.css'),
+    require.resolve('./src/css/docsearch-alpha.js'),
+  ],
+
   presets: [
     [
       '@docusaurus/preset-classic',
@@ -72,10 +77,10 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
         maxHeadingLevel: 5,
       },
       algolia: {
+        // container: '#docsearch',
         appId: '5BME7GVXKF',
-        apiKey: '25d03e7421fce25240ee86175434634d',
         indexName: 'comp-labs',
-        contextualSearch: true,
+        apiKey: '25d03e7421fce25240ee86175434634d',
         placeholder: 'Search Comp Labs...',
       },
       navbar: {
@@ -92,7 +97,6 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
            // position: 'left',
            // label: 'Tutorial',
           //},
-          {to: '/', label: 'Home', position: 'left'},
           // {to: '/docs/', label: 'Docs', position: 'left'},
           {href: 'https://docs.complabs.in', label: 'Guides', position: 'left'},
           //{to: 'blog', label: 'Guides', position: 'left'},
@@ -154,6 +158,10 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
             position: 'right',
             className: 'header-github-link',
             'aria-label': 'GitHub Repository',
+          },
+          {
+            type: 'search',
+            position: 'right',
           },
         ],
       },

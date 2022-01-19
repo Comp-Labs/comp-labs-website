@@ -18,6 +18,11 @@
 
 .buttons {
   display: flex;
-  align-items: center;
-  justify-content: center;
+  /* align-items: center; */
+  /* justify-content: center; */
+}
+
+.iframe-container {
+text-align:center;
+width:100%;
 }
