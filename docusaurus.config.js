@@ -18,8 +18,6 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
   themes: ['@docusaurus/theme-live-codeblock'],
 
   clientModules: [
-    require.resolve('./src/css/docsearch-alpha.css'),
-    require.resolve('./src/css/docsearch-alpha.js'),
     require.resolve('./src/css/roboto.css'),
     require.resolve('./src/css/material-icons.css'),
   ],
@@ -206,16 +204,16 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
             items: [
               {
                 label: 'Apps',
-                to: '/services/apps',
+                to: '/apps',
               },
               {
                 label: 'Google Play Developers',
                 to: '/services/google-play-developers',
               },
-              {
-                label: 'Business Meeting Service',
-                to: '/services/business-meeting-service',
-              },
+              // {
+              //   label: 'Business Meeting Service',
+              //   to: '/services/business-meeting-service',
+              // },
             ],
           },
           {
@@ -278,7 +276,7 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
               },
               {
                 label: 'Apps 🚧',
-                to: '/apps',
+                to: '/apps/',
               },
               {
                 label: 'Business Meeting Service 🚧',

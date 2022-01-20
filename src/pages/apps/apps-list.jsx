@@ -21,6 +21,12 @@ export default function TitlebarImageList() {
             srcSet={`${item.img}`}
             alt={item.title}
             loading="lazy" />
+            <ImageListItem key={item.progress}>
+          <img
+            src={`${item.progress}`}
+            srcSet={`${item.progress}`}
+            alt="Progress"
+            loading="lazy" />
           <ImageListItemBar
             title={item.title}
             subtitle={item.category}
@@ -32,6 +38,7 @@ export default function TitlebarImageList() {
               <InfoIcon />
             </IconButton>} />
         </ImageListItem>
+        </ImageListItem>
       ))}
     </ImageList>
   );
@@ -39,58 +46,45 @@ export default function TitlebarImageList() {
 
 const itemData = [
   {
-    img: 'https://static.wixstatic.com/media/8b7e16_4ff2bf618aa14c1985daaba191c0db9e~mv2.png/v1/fill/w_155,h_155,al_c,q_85,usm_0.66_1.00_0.01/applestore.webp',
+    img: '/img/apps/applestore.webp',
     title: 'Apple Store',
     category: 'Productivity',
-    page: 'https://complabs.in',
-    featured: true,
+    page: '/apps/apple-store',
+    progress: '/img/apps/progress.svg',
   },
   {
-    img: 'https://complabs.in/img/complabs.png',
+    img: '/img/apps/complabs.png',
     title: 'CloudConsole',
     category: 'Productivity',
-    page: 'https://complabs.in',
+    page: '/apps/cloud-console',
+    progress: '/img/apps/progress.svg'
   },
   {
-    img: 'https://complabs.in/img/complabs.png',
+    img: '/img/apps/complabs.png',
     title: 'GadgetCompare',
     category: 'Productivity',
-    page: 'https://complabs.in',
+    page: '/apps/gadget-compare',
+    progress: '/img/apps/progress.svg'
   },
   {
-    img: 'https://complabs.in/img/complabs.png',
+    img: '/img/apps/complabs.png',
     title: 'Google Docs',
     category: 'Productivity',
-    page: 'https://complabs.in',
+    page: '/apps/google-docs',
+    progress: '/img/apps/progress.svg'
   },
   {
-    img: 'https://complabs.in/img/complabs.png',
+    img: '/img/apps/complabs.png',
     title: 'StackBlitz',
     category: 'Productivity',
-    page: 'https://complabs.in',
+    page: '/apps/stackblitz',
+    progress: '/img/apps/progress.svg'
   },
   {
-    img: 'https://complabs.in/img/complabs.png',
+    img: '/img/apps/complabs.png',
     title: 'Jira Server',
     category: 'Productivity',
-    page: 'https://complabs.in',
-  },
-  {
-    img: 'https://complabs.in/img/complabs.png',
-    title: 'Google Docs',
-    category: 'Productivity',
-    page: 'https://complabs.in',
-  },
-  {
-    img: 'https://complabs.in/img/complabs.png',
-    title: 'Google Docs',
-    category: 'Productivity',
-    page: 'https://complabs.in',
-  },
-  {
-    img: 'https://complabs.in/img/complabs.png',
-    title: 'Google Docs',
-    category: 'Productivity',
-    page: 'https://complabs.in',
+    page: '/apps/jira-server',
+    progress: '/img/apps/progress.svg'
   },
 ];
