@@ -32,6 +32,15 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
           // Please change this to your repo.
           editUrl: 'https://github.com/Comp-Labs/comp-labs-website/edit/main/',
         },
+        blog: {
+          blogTitle: 'Comp Labs Blog',
+          blogSidebarTitle: 'All Posts',
+          sortPosts: 'ascending',
+          feedOptions: {
+            copyright: 'Copyright © 2022 Comp Labs. All Rights Reserved.',
+            type: null,
+          },
+        },
         theme: {
           customCss: require.resolve('./src/css/custom.css'),
         },
@@ -159,6 +168,7 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
             className: 'header-github-link',
             'aria-label': 'GitHub Repository',
           },
+          {to: '/search', label: '🔍 Search', position: 'right'},
           {
             type: 'search',
             position: 'right',
