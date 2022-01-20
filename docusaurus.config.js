@@ -20,6 +20,8 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
   clientModules: [
     require.resolve('./src/css/docsearch-alpha.css'),
     require.resolve('./src/css/docsearch-alpha.js'),
+    require.resolve('./src/css/roboto.css'),
+    require.resolve('./src/css/material-icons.css'),
   ],
 
   presets: [
@@ -276,7 +278,7 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
               },
               {
                 label: 'Apps 🚧',
-                to: '/services/apps',
+                to: '/apps',
               },
               {
                 label: 'Business Meeting Service 🚧',
