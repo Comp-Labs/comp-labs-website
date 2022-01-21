@@ -11,6 +11,7 @@
    font-family: progressBarFont;
 }
 </style>
+<link rel="icon" type="image/x-icon" href="/img/favicon.ico"></link>
 <label for="file">App Development Progress</label>
 <br>
 </br>

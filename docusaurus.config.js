@@ -83,7 +83,7 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
       // },
       tableOfContents: {
         minHeadingLevel: 2,
-        maxHeadingLevel: 5,
+        maxHeadingLevel: 6,
       },
       algolia: {
         // container: '#docsearch',
@@ -98,34 +98,26 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
         logo: {
           alt: 'Comp Labs Logo',
           src: 'img/logo.svg',
+          srcDark: 'img/logo.svg',
         },
         items: [
-        //  {
-           // type: 'doc',
-           // docId: 'intro',
-           // position: 'left',
-           // label: 'Tutorial',
-          //},
-          // {to: '/docs/', label: 'Docs', position: 'left'},
+          {to: '/docs/', label: 'Docs 🚧', position: 'left'},
           {href: 'https://docs.complabs.in', label: 'Guides', position: 'left'},
-          //{to: 'blog', label: 'Guides', position: 'left'},
+          {to: 'blog', label: 'Guides 🚧', position: 'left'},
+          {to: '/apps/', label: 'Apps', position: 'left'},
           {
             type: 'dropdown',
-            label: 'Services',
+            label: 'Solutions',
             position: 'left',
             items: [
               {
-                label: 'Apps',
-                href: 'https://complabs28.wixsite.com/comp-labs-app-store',
+                label: 'Google Play Developers',
+                to: '/solutions/google-play-developers',
               },
               {
-                label: 'Google Play Developers',
-                to: '/services/google-play-developers',
+                label: 'Business Meeting Service',
+                to: '/solutions/business-meeting-service',
               },
-              // {
-              //   label: 'Business Meeting Service',
-              //   to: '/services/business-meeting-service',
-              // },
               // ... more items
             ],
           },
@@ -133,7 +125,7 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
           {to: '/donate-us', label: 'Donate Us', position: 'left'},
           {
             type: 'dropdown',
-            label: 'Policies',
+            label: 'Legal',
             position: 'left',
             items: [
               {
@@ -152,16 +144,16 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
             ],
           },
           // right
-          {
-            type: 'localeDropdown',
-            position: 'right',
-            dropdownItemsAfter: [
-              {
-                href: 'https://github.com/facebook/docusaurus/issues/3526',
-                label: 'Help Us Translate',
-              },
-            ],
-          },
+          // {
+          //   type: 'localeDropdown',
+          //   position: 'right',
+          //   dropdownItemsAfter: [
+          //     {
+          //       href: 'https://github.com/facebook/docusaurus/issues/3526',
+          //       label: 'Help Us Translate',
+          //     },
+          //   ],
+          // },
           {
             href: 'https://github.com/Comp-Labs',
             position: 'right',
@@ -186,8 +178,20 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
                 to: '/',
               },
               {
+                label: 'Docs 🚧',
+                to: '/docs/',
+              },
+              {
                 label: 'Guides',
                 href: 'https://docs.complabs.in',
+              },
+              {
+                label: 'Guides 🚧',
+                to: '/blog',
+              },
+              {
+                label: 'Apps 🚧',
+                to: '/apps/',
               },
               {
                 label: 'Contact Us!',
@@ -200,20 +204,16 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
             ],
           },
           {
-            title: 'Services',
+            title: 'Solutions',
             items: [
               {
-                label: 'Apps',
-                to: '/apps',
+                label: 'Google Play Developers',
+                to: '/solutions/google-play-developers',
               },
               {
-                label: 'Google Play Developers',
-                to: '/services/google-play-developers',
+                label: 'Business Meeting Service',
+                to: '/solutions/business-meeting-service',
               },
-              // {
-              //   label: 'Business Meeting Service',
-              //   to: '/services/business-meeting-service',
-              // },
             ],
           },
           {
@@ -237,8 +237,8 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
             title: 'Our Sites',
             items: [
               {
-                label: 'Comp Labs',
-                href: 'https://www.complabs.in/',
+                label: 'Comp Labs (This Site)',
+                href: '/',
               },
               {
                 label: 'Doraemon Originals',
@@ -258,13 +258,13 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
                 href: 'https://github.com/Comp-Labs',
               },
               {
-                label: 'YouTube',
+                label: 'YouTube Channel',
                 href: 'https://youtube.com/channel/UCL6pKeSCbJkPohM2PUZbqQA',
               },
             ],
           },
           {
-            title: 'Experimental Pages 🚧',
+            title: 'In Development 🚧',
             items: [
               {
                 label: 'Docs 🚧',
@@ -280,7 +280,7 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
               },
               {
                 label: 'Business Meeting Service 🚧',
-                to: '/services/business-meeting-service',
+                to: '/solutions/business-meeting-service',
               },
             ],
           },

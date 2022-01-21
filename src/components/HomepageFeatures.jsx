@@ -1,6 +1,8 @@
 import React from 'react';
 import clsx from 'clsx';
 import styles from './HomepageFeatures.module.css';
+import Link from '@docusaurus/Link';
+import Translate, {translate} from '@docusaurus/Translate';
 
 const FeatureList = [
   {
@@ -8,7 +10,7 @@ const FeatureList = [
     Svg: require('../../static/img/undraw_docusaurus_tree.svg').default,
     description: (
       <>
-        We provide technical guides to help users do stuff related to tech by just watching our videos.
+        We provide technical guides to help users do stuff related to tech by just watching our videos.<br></br><br></br><Link className="button button--primary" to="/blog"><Translate>Read Now!</Translate></Link>
       </>
     ),
   },
@@ -17,7 +19,7 @@ const FeatureList = [
     Svg: require('../../static/img/undraw_docusaurus_react.svg').default,
     description: (
       <>
-        We make user-friendly apps for platforms including Android, Windows, Apple Platforms (iOS, iPadOS, watchOS, macOS, and tvOS), and Linux.
+        We innovate and create user-friendly and useful apps for platforms including <br></br><code>Android</code>, <code>Windows</code>, Apple Platforms  <code>iOS, iPadOS, watchOS, macOS, and tvOS</code>, and <code>Linux</code>.<br></br>Explore and Download the Apps Today!<br></br><br></br><Link className="button button--primary" to="/apps"><Translate>Explore!</Translate></Link>
       </>
     ),
   },
@@ -26,11 +28,13 @@ const FeatureList = [
     Svg: require('../../static/img/google_play.svg').default,
     description: (
       <>
-        This Service helps you to submit apps to Google Play Console for Free, Go to its page to Learn More.
+        This is the best solution that gives you <code>Full Access</code> to the <code>Expensive</code> Google Play Console for Just $1.<br></br><br></br><Link className="button button--primary" to="/solutions/google-play-developers"><Translate>Get Now!</Translate></Link>
       </>
     ),
   },
 ];
+
+/*<a href="#">Hello</a>*/
 
 function Feature({Svg, title, description}) {
   return (

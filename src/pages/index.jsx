@@ -5,16 +5,51 @@ import Link from '@docusaurus/Link';
 import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
 import styles from './index.module.css';
 import HomepageFeatures from '../components/HomepageFeatures';
+import Translate, {translate} from '@docusaurus/Translate';
+import useBaseUrl from '@docusaurus/useBaseUrl';
 
 function HomepageHeader() {
   const {siteConfig} = useDocusaurusContext();
   return (
-    <header className={clsx('hero hero--primary', styles.heroBanner)}>
-      <div className="container">
-        <h1 className="hero__title">{siteConfig.title}</h1>
-        <p className="hero__subtitle">{siteConfig.tagline}</p>
+    <div className={styles.hero}>
+          <div className={styles.heroInner}>
+            <h1 className={styles.heroProjectTagline}>
+              <img
+                alt={translate({message: 'Comp Labs Logo Animated'})}
+                className={styles.heroLogo}
+                src={useBaseUrl('/img/docusaurus_keytar.svg')}
+              />
+              <span
+                className={styles.heroTitleTextHtml}
+                // eslint-disable-next-line react/no-danger
+                dangerouslySetInnerHTML={{
+                  __html: translate({
+                    id: 'homepage.hero.title',
+                    message:
+                      '<b>Comp Labs</b><br><b>------</b>------<b>------</b>------<b>------</b><br>Focus on your <b>content</b>, Leave <b>all</b> of the <b>workloads</b> to <b>us</b>.',
+                  }),
+                }}
+              />
+            </h1>
+            <div className={styles.indexCtas}>
+              <Link className="button button--primary" to="/docs">
+                <Translate>Get Started</Translate>
+              </Link>
+              {/* <Link className="button button--info" to="https://docusaurus.new">
+                <Translate>Playground</Translate>
+              </Link> */}
+              <span className={styles.indexCtasGitHubButtonWrapper}>
+                <iframe
+                  className={styles.indexCtasGitHubButton}
+                  src="https://ghbtns.com/github-btn.html?user=comp-labs&amp;type=follow&amp;count=true&amp;size=large"
+                  width={190}
+                  height={30}
+                  title="GitHub Follow"
+                />
+              </span>
+            </div>
+          </div>
         </div>
-    </header>
   );
 }
 

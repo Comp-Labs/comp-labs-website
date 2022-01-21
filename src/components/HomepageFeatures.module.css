@@ -9,3 +9,11 @@
   height: 200px;
   width: 200px;
 }
+
+.indexCtas {
+  --ifm-button-size-multiplier: 1.6;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  margin-top: 24px;
+}

@@ -36,6 +36,15 @@
   --site-color-checkbox-checked-bg: hsl(167deg 56% 73% / 25%);
 }
 
+@font-face {
+  font-family: websiteFont;
+  src: url(/fonts/font.otf);
+}
+
+* {
+  font-family: websiteFont;
+}
+
 html[data-theme='dark'] {
   --site-color-feedback-background: #f0f8ff;
   --site-color-favorite-background: #1d1e1e;
