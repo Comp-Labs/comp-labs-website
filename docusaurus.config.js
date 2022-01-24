@@ -35,6 +35,7 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
         blog: {
           blogTitle: 'Comp Labs Blog',
           blogSidebarTitle: 'All Posts',
+          blogSidebarCount: 'ALL',
           sortPosts: 'ascending',
           feedOptions: {
             copyright: 'Copyright © 2022 Comp Labs. All Rights Reserved.',
