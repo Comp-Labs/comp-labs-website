@@ -26,7 +26,7 @@ function HomepageHeader() {
                   __html: translate({
                     id: 'homepage.hero.title',
                     message:
-                      '<b>Comp Labs</b><br><b>------</b>------<b>------</b>------<b>------</b><br>Focus on your <b>content</b>, Leave <b>all</b> of the <b>workloads</b> to <b>us</b>.',
+                      '<b>Comp Labs</b><br><b>------</b>------<b>------</b>------<b>------</b><br>Focus on your <b>content</b>, Leave <b>all</b> of the <b>workload</b> to <b>us</b>.',
                   }),
                 }}
               />
