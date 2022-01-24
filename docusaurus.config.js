@@ -87,9 +87,9 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
       },
       algolia: {
         // container: '#docsearch',
-        appId: 'K1QUTN73LL',
-        indexName: 'netlify_fe016cee-ab6a-46fa-afc2-aebca22fcb38_main_all',
-        apiKey: '00b3485d53f7bfdeb9cc5fdd5a37cff2',
+        appId: '5BME7GVXKF',
+        indexName: 'comp-labs',
+        apiKey: 'dad01739ec6bb5d5b902dfc48bb20a50',
         placeholder: 'Search Comp Labs...',
       },
       navbar: {
@@ -159,11 +159,6 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
             position: 'right',
             className: 'header-github-link',
             'aria-label': 'GitHub Repository',
-          },
-          {to: '/search', label: '🔍 Search', position: 'right'},
-          {
-            type: 'search',
-            position: 'right',
           },
         ],
       },
