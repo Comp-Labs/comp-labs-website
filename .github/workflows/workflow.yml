@@ -1,6 +1,7 @@
-    - uses: actions/checkout@v2
-    - uses: darrenjennings/algolia-docsearch-action@master
-    with:
+- name: Algolia Docsearch Indexer
+  uses: darrenjennings/algolia-docsearch-action@v0.2.0
+  uses: actions/checkout@v2
+  with:
     algolia_application_id: '5BME7GVXKF'
     algolia_api_key: '25d03e7421fce25240ee86175434634d'
     file: 'docsearch/config.json'
