@@ -1,5 +1,4 @@
 name: 'DocSearch Crawler'
-
     - uses: actions/checkout@v2
     - uses: darrenjennings/algolia-docsearch-action@master
     with:
