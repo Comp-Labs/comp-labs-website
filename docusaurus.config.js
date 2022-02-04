@@ -22,6 +22,16 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
     require.resolve('./src/css/material-icons.css'),
   ],
 
+  plugins: [
+    [
+      '@docusaurus/plugin-sitemap',
+      {
+        changefreq: 'daily',
+        priority: 0.5,
+      },
+    ],
+  ],
+
   presets: [
     [
       '@docusaurus/preset-classic',
