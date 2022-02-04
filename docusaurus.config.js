@@ -63,6 +63,10 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
       liveCodeBlock: {
         playgroundPosition: 'bottom',
       },
+      // Remove Comments When Comp Labs App is Publicly Available on the App Store
+      // metadata: [
+      //   {name: 'apple-itunes-app', content: 'app-id=myAppStoreID'}
+      // ],
       hideableSidebar: true,
       colorMode: {
         defaultMode: 'light',
@@ -152,16 +156,32 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
             ],
           },
           // right
-          // {
-          //   type: 'localeDropdown',
-          //   position: 'right',
-          //   dropdownItemsAfter: [
-          //     {
-          //       href: 'https://github.com/facebook/docusaurus/issues/3526',
-          //       label: 'Help Us Translate',
-          //     },
-          //   ],
-          // },
+          {
+            type: 'dropdown',
+            label: 'Website v2 (Current)',
+            position: 'right',
+            items: [
+              {
+                label: 'Website v2 (Current)',
+                to: '/',
+              },
+              {
+                label: 'Website v1 (Legacy)',
+                to: 'https://complabs28.wixsite.com/complabs',
+              },
+              // ... more items
+            ],
+          },
+          {
+            type: 'localeDropdown',
+            position: 'right',
+            // dropdownItemsAfter: [
+            //   {
+            //     href: 'https://github.com/facebook/docusaurus/issues/3526',
+            //     label: 'Help Us Translate',
+            //   },
+            // ],
+          },
           {
             href: 'https://github.com/Comp-Labs',
             position: 'right',
