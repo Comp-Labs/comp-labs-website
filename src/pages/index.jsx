@@ -17,7 +17,7 @@ function HomepageHeader() {
               <img
                 alt={translate({message: 'Comp Labs Logo Animated'})}
                 className={styles.heroLogo}
-                src={useBaseUrl('/img/docusaurus_keytar.svg')}
+                src={useBaseUrl('/img/complabs.png')}
               />
               <span
                 className={styles.heroTitleTextHtml}
