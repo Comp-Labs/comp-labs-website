@@ -1,7 +1,28 @@
-- name: Algolia Docsearch Indexer
-  uses: darrenjennings/algolia-docsearch-action@v0.2.0
-  uses: actions/checkout@v2
-  with:
-    algolia_application_id: '5BME7GVXKF'
-    algolia_api_key: '25d03e7421fce25240ee86175434634d'
-    file: 'docsearch/config.json'
+name: Algolia Crawler
+
+on:
+  push:
+    branches:
+      - main
+  pull_request:
+    branches:
+      - main
+
+jobs:
+  algolia_crawl:
+    name: Algolia Recrawl
+    runs-on: ubuntu-latest
+    steps:
+      # checkout this repo
+      - name: Checkout Repo
+        uses: actions/checkout@v2
+
+      - name: Algolia crawler creation and crawl
+        uses: algolia/algoliasearch-crawler-github-actions@v1.0.11
+        id: algolia_crawler
+        with: # mandatory parameters
+          crawler-user-id: ${{ secrets.CRAWLER_USER_ID }}
+          crawler-api-key: ${{ secrets.CRAWLER_API_KEY }}
+          algolia-app-id: ${{ secrets.ALGOLIA_APP_ID }}
+          algolia-api-key: ${{ secrets.ALGOLIA_API_KEY }}
+          site-url: 'https://complabs.in'
