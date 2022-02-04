@@ -55,7 +55,6 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
         theme: {
           customCss: require.resolve('./src/css/custom.css'),
         },
-        {
         sitemap: {
           changefreq: 'weekly',
           priority: 0.5,
