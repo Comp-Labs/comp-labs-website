@@ -17,12 +17,11 @@ jobs:
       - name: Checkout Repo
         uses: actions/checkout@v2
 
-      # - name: Install Docker and JQ using Choco
-      #   run: |
-      #     choco install docker-desktop
-      #     choco install jq
+      - name: Install Docker and JQ using Choco
+        run: |
+          cmd.exe choco install docker-desktop
+          cmd.exe choco install jq
       
       - name: Crawl Website using Docsearch Scraper
         run: |
-          cmd.exe
-          docker run -it --env-file=.env -e "CONFIG=$(cat ./docsearch-crawler/config.json | jq -r tostring)" algolia/docsearch-scraper
+          cmd.exe docker run -it --env-file=.env -e "CONFIG=$(cat ./docsearch-crawler/config.json | jq -r tostring)" algolia/docsearch-scraper
