@@ -158,8 +158,12 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
                 to: '/solutions/google-play-developers',
               },
               {
-                label: 'Business Meeting Service',
+                label: 'Business Meeting Service 🚧',
                 to: '/solutions/business-meeting-service',
+              },
+              {
+                label: 'Business Mail Service 🚧',
+                to: '/solutions/business-mail-service',
               },
               // ... more items
             ],
@@ -265,8 +269,12 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
                 to: '/solutions/google-play-developers',
               },
               {
-                label: 'Business Meeting Service',
+                label: 'Business Meeting Service 🚧',
                 to: '/solutions/business-meeting-service',
+              },
+              {
+                label: 'Business Mail Service 🚧',
+                to: '/solutions/business-mail-service',
               },
             ],
           },
@@ -312,7 +320,7 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
                 href: 'https://github.com/Comp-Labs',
               },
               {
-                label: 'YouTube Channel',
+                label: 'YouTube',
                 href: 'https://youtube.com/channel/UCL6pKeSCbJkPohM2PUZbqQA',
               },
             ],
@@ -335,6 +343,10 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
               {
                 label: 'Business Meeting Service 🚧',
                 to: '/solutions/business-meeting-service',
+              },
+              {
+                label: 'Business Mail Service 🚧',
+                to: '/solutions/business-mail-service',
               },
             ],
           },
