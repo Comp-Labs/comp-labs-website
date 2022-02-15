@@ -165,6 +165,30 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
                 label: 'Business Mail Service 🚧',
                 to: '/solutions/business-mail-service',
               },
+              {
+                label: 'Anonymous VPN 🚧',
+                to: '/solutions/vpn',
+              },
+              // ... more items
+            ],
+          },
+          {
+            type: 'dropdown',
+            label: 'Tools',
+            position: 'left',
+            items: [
+              {
+                label: 'DNS Lookup 🚧',
+                to: '/tools/dns-lookup',
+              },
+              {
+                label: 'Fast SpeedTest 🚧',
+                to: '/tools/speedtest',
+              },
+              {
+                label: 'Web Tools 🚧',
+                to: '/tools/web-tools',
+              },
               // ... more items
             ],
           },
@@ -276,6 +300,27 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
                 label: 'Business Mail Service 🚧',
                 to: '/solutions/business-mail-service',
               },
+              {
+                label: 'Anonymous VPN 🚧',
+                to: '/solutions/business-mail-service',
+              },
+            ],
+          },
+          {
+            title: 'Tools',
+            items: [
+              {
+                label: 'DNS Lookup 🚧',
+                to: '/tools/dns-lookup',
+              },
+              {
+                label: 'Fast SpeedTest 🚧',
+                to: '/tools/speedtest',
+              },
+              {
+                label: 'Web Tools 🚧',
+                to: '/tools/web-tools',
+              },
             ],
           },
           {
@@ -347,6 +392,22 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
               {
                 label: 'Business Mail Service 🚧',
                 to: '/solutions/business-mail-service',
+              },
+              {
+                label: 'Anonymous VPN 🚧',
+                to: '/solutions/vpn',
+              },
+              {
+                label: 'DNS Lookup 🚧',
+                to: '/tools/dns-lookup',
+              },
+              {
+                label: 'Fast SpeedTest 🚧',
+                to: 'Fast SpeedTest 🚧',
+              },
+              {
+                label: 'Web Tools 🚧',
+                to: '/tools/web-tools',
               },
             ],
           },
