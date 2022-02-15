@@ -403,7 +403,7 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
               },
               {
                 label: 'Fast SpeedTest 🚧',
-                to: 'Fast SpeedTest 🚧',
+                to: '/tools/speedtest',
               },
               {
                 label: 'Web Tools 🚧',
