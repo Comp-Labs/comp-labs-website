@@ -11,7 +11,7 @@ function SpeedtestHeader() {
     <header className={clsx('hero hero--primary', styles.heroBanner)}>
       <div className="container">
         <h1 className="hero__title">Free and Accurate Internet SpeedTest</h1>
-        <p className="hero__subtitle">This is our Free, Always Accurate Internet, Internet SpeedTest. It is powered by OpenSpeedTest to give you the best experience, accurate and detailed SpeedTest.</p>
+        <p className="hero__subtitle">This is our Free, Always Accurate Internet, Internet SpeedTest. It is powered by OpenSpeedTest to give you the best experience, accurate and detailed SpeedTest. Click on the "Start" Button Below to Start the SpeedTest. Download the App for Your Platform for More Accurate Results as told by the Experts.</p>
         {/* <div className={styles.buttons}>
           <Link
             className="button button--secondary button--lg"
@@ -32,6 +32,7 @@ export default function Speedtest() {
       description="">
       <SpeedtestHeader />
       <main>
+      <iframe src="/stcomponent.html" title="OpenSpeedTest HTML5 Widget" width="100%" height="1000"></iframe>
       </main>
     </Layout>
   );

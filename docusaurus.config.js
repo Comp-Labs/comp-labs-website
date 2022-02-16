@@ -146,7 +146,7 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
         items: [
           {to: '/docs/', label: 'Docs 🚧', position: 'left'},
           {href: 'https://docs.complabs.in', label: 'Guides', position: 'left'},
-          {to: 'blog', label: 'Guides 🚧', position: 'left'},
+          {to: 'blog', label: 'Guides', position: 'left'},
           {to: '/apps/', label: 'Apps', position: 'left'},
           {
             type: 'dropdown',
@@ -178,16 +178,16 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
             position: 'left',
             items: [
               {
-                label: 'DNS Lookup 🚧',
-                to: '/tools/dns-lookup',
+                label: 'DNS Lookup',
+                to: 'https://digwebinterface.com',
               },
               {
-                label: 'Fast SpeedTest 🚧',
+                label: 'Fast SpeedTest',
                 to: '/tools/speedtest',
               },
               {
-                label: 'Web Tools 🚧',
-                to: '/tools/web-tools',
+                label: 'Web Tools',
+                href: 'https://webtoolhub.com',
               },
               // ... more items
             ],
@@ -263,12 +263,12 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
                 label: 'Docs 🚧',
                 to: '/docs/',
               },
+              // {
+              //   label: 'Guides',
+              //   href: 'https://docs.complabs.in',
+              // },
               {
                 label: 'Guides',
-                href: 'https://docs.complabs.in',
-              },
-              {
-                label: 'Guides 🚧',
                 to: '/blog',
               },
               {
@@ -310,16 +310,16 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
             title: 'Tools',
             items: [
               {
-                label: 'DNS Lookup 🚧',
-                to: '/tools/dns-lookup',
+                label: 'DNS Lookup',
+                href: 'https://digwebinterface.com',
               },
               {
-                label: 'Fast SpeedTest 🚧',
+                label: 'Fast SpeedTest',
                 to: '/tools/speedtest',
               },
               {
-                label: 'Web Tools 🚧',
-                to: '/tools/web-tools',
+                label: 'Web Tools',
+                href: 'https://webtoolhub.com',
               },
             ],
           },
@@ -340,23 +340,23 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
               },
             ],
           },
-          {
-            title: 'Our Sites',
-            items: [
-              {
-                label: 'Comp Labs (This Site)',
-                href: '/',
-              },
-              {
-                label: 'Doraemon Originals',
-                href: 'https://complabs28.wixsite.com/doraemon-originals',
-              },
-              {
-                label: 'Comp Labs App Store',
-                href: 'https://complabs28.wixsite.com/comp-labs-app-store',
-              },
-            ],
-          },
+          // {
+          //   title: 'Our Sites',
+          //   items: [
+          //     {
+          //       label: 'Comp Labs (This Site)',
+          //       href: '/',
+          //     },
+          //     {
+          //       label: 'Doraemon Originals',
+          //       href: 'https://complabs28.wixsite.com/doraemon-originals',
+          //     },
+          //     {
+          //       label: 'Comp Labs App Store',
+          //       href: 'https://complabs28.wixsite.com/comp-labs-app-store',
+          //     },
+          //   ],
+          // },
           {
             title: 'Social',
             items: [
@@ -378,10 +378,6 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
                 to: '/docs/',
               },
               {
-                label: 'Guides 🚧',
-                to: 'blog',
-              },
-              {
                 label: 'Apps 🚧',
                 to: '/apps/',
               },
@@ -396,18 +392,6 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
               {
                 label: 'Anonymous VPN 🚧',
                 to: '/solutions/vpn',
-              },
-              {
-                label: 'DNS Lookup 🚧',
-                to: '/tools/dns-lookup',
-              },
-              {
-                label: 'Fast SpeedTest 🚧',
-                to: '/tools/speedtest',
-              },
-              {
-                label: 'Web Tools 🚧',
-                to: '/tools/web-tools',
               },
             ],
           },

@@ -11,14 +11,14 @@ function LookupHeader() {
     <header className={clsx('hero hero--primary', styles.heroBanner)}>
       <div className="container">
         <h1 className="hero__title">DNS Lookup</h1>
-        <p className="hero__subtitle">You can look up your DNS Records here. This service is powered by <code>DigWebInterface.com</code></p>
-        {/* <div className={styles.buttons}>
+        <p className="hero__subtitle">You can look up your DNS Records here. Click on the Button Below to Lookup!</p>
+        <div className={styles.buttons}>
           <Link
             className="button button--secondary button--lg"
-            to="/docs/intro">
-            Docusaurus Tutorial - 5min ⏱️
+            href="https://digwebinterface.com">
+            Lookup Your DNS Records!
           </Link>
-        </div> */}
+        </div>
       </div>
     </header>
   );
