@@ -1,0 +1,137 @@
+---
+title: Run Ubuntu GUI Desktop on an AWS EC2 Instance
+authors:
+  - comp-labs
+tags: ['Ubuntu', 'AWS', 'EC2', 'Desktop', 'GUI']
+description: Blog Post for Running Ubuntu GUI Desktop on an AWS EC2 Instance.
+image: https://i.imgur.com/mErPwqL.png
+hide_table_of_contents: false
+---
+# Run Ubuntu GUI Desktop on an AWS EC2 Instance
+
+Today we'll guide you through the setup of running Ubuntu Desktop on an AWS EC2 instance using TightVNC Server on a EC2 Instance Running Ubuntu 16.04+.
+
+## Prerequisites:
+
+- Access to an AWS EC2 instance using `PuTTY (or any other SSH CLient)` | This guide assumes that you’re logged into the machine using SSH
+- An EC2 Instance Running Ubuntu `16.04+`
+- Remmina Remote Desktop Client (Comes Pre-installed and must have on Ubuntu `16.04+`) (Used for Connecting to your GUI Ubuntu Desktop using Ubuntu Machines) [Download for Older then `16.04`](https://remmina.org/)
+- RealVNC Client (Used for Connecting to your GUI Ubuntu Desktop using macOS/Windows Machines) [Download](https://www.realvnc.com/en/connect/download/viewer/)
+
+## Configuring TightVNC on the EC2 Instance
+
+**Let’s install Ubuntu Desktop and TightVNC on your EC2 Instance. After logging in to your EC2 instance using the Terminal or the SSH Client, enter the following commands to install the tools that will be required to run Ubuntu Desktop:**
+
+```bash
+sudo apt -y update
+sudo apt -y install ubuntu-desktop
+sudo apt -y install tightvncserver
+sudo apt -y install gnome-panel gnome-settings-daemon metacity nautilus gnome-terminal
+```
+
+**After completion, your machine is ready with GUI support but needs some configuration to be done.**
+
+## Configuring the VNC Server
+
+In your terminal type the following command to launch VNC server to create an initial configuration file:
+
+```bash
+vncserver :1
+```
+
+Open the configuration file in VIM Editor:
+
+```bash
+vim ~/.vnc/xstartup
+```
+
+**Press the `i` key on your keyboard to get into the insert mode which will allow you to enter text into the file. Edit the file to look like so:**
+
+```sh title="~/.vnc/xstartup"
+#!/bin/sh
+
+export XKL_XMODMAP_DISABLE=1
+unset SESSION_MANAGER
+unset DBUS_SESSION_BUS_ADDRESS
+
+[ -x /etc/vnc/xstartup ] && exec /etc/vnc/xstartup
+[ -r $HOME/.Xresources ] && xrdb $HOME/.Xresources
+xsetroot -solid grey
+
+vncconfig -iconic &
+gnome-panel &
+gnome-settings-daemon &
+metacity &
+nautilus &
+gnome-terminal &
+```
+
+**After you’re done, enter `Ctrl + :` or `Esc + :` and type `wq` to save and quit the file.**
+
+Great! We’re almost done with the configuration. Now, let’s restart the VNC server by killing it first and then starting it up.
+
+To Kill the VNC server and Start it Again, type the Following Command:
+
+```bash
+vncserver -kill :1
+vncserver :1
+```
+
+**Congratulations! you’re done with the configuration for Ubuntu Desktop. Now Perform the Next Steps below:**
+
+## AWS Firewall Configuration
+
+**We need to make sure that the AWS instance has inbound rules setup to allow connection using VNC. So, head over to your AWS EC2 console and modify the inbound-rules. Add the entry:**
+
+`Custom TCP Rule` | `TCP` | `5901` | `Custom` | `0.0.0.0/0` | `VNC Connect`
+
+<!-- Image -->
+
+Save this Configuration Entry by Clicking on the `Save` Button. Done!
+
+## Connecting to your New Ubuntu Desktop!
+
+### Using Remmina Remote Desktop Client (Ubuntu)
+
+Launch Remmina Remote Desktop Client. Then,
+
+- Choose the connection type as `VNC`
+- Enter your EC2 URL along with the port number as `1`. For Example: My EC2 instance URL and the port number as `1` will be:
+```
+ec2-54-172-197-171.compute-1.amazonaws.com:1
+```
+![Image](https://ubuntucommunity.s3.dualstack.us-east-2.amazonaws.com/optimized/2X/b/b2797553e971b5212390a1080122077d1db08641_2_689x490.png)
+
+- Enter the password you provided during the installation of the VNC Server.
+- Connect!
+
+![Image](https://ubuntucommunity.s3.dualstack.us-east-2.amazonaws.com/optimized/2X/c/c209121c10b6ee3c5ae5d726959ad5003cbf43a4_2_690x381.png)
+
+### Using RealVNC Viewer (macOS, Windows)
+
+
+
+## Final Words
+
+**Congratulations, you’ve successfully configured your EC2 instance to run Ubuntu Desktop GUI Support.**
+
+**Hope you liked the guide.**
+
+## Video Guide
+
+You can Watch the YouTube Video Guide too for better Understanding.
+
+**Video yet to be uploaded**
+
+Subscribe our Channel:
+
+<iframe src="/subscribe.html" title="Subscribe Comp Labs" height="70"></iframe>
+
+## Finding Help
+
+If you get Stuck Anywhere, Please Feel Free to Find or Ask Help in one of These Forums/Methods:
+
+- [Ask Ubuntu](https://askubuntu.com/)
+- [Ubuntu Forums](https://ubuntuforums.org/)
+- [IRC-based Support](https://wiki.ubuntu.com/IRC/ChannelList)
+- [Contact Comp Labs](https://forms.gle/dQmrNAZZ1KK81rAP7)

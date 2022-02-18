@@ -351,10 +351,6 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
           //       label: 'Doraemon Originals',
           //       href: 'https://complabs28.wixsite.com/doraemon-originals',
           //     },
-          //     {
-          //       label: 'Comp Labs App Store',
-          //       href: 'https://complabs28.wixsite.com/comp-labs-app-store',
-          //     },
           //   ],
           // },
           {

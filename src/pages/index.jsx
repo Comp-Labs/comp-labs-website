@@ -18,6 +18,8 @@ function HomepageHeader() {
                 alt={translate({message: 'Comp Labs Logo Animated'})}
                 className={styles.heroLogo}
                 src={useBaseUrl('/img/complabs.png')}
+                width="256"
+                height="256"
               />
               <span
                 className={styles.heroTitleTextHtml}
@@ -26,18 +28,18 @@ function HomepageHeader() {
                   __html: translate({
                     id: 'homepage.hero.title',
                     message:
-                      '<b>Comp Labs</b><br><b>------</b>------<b>------</b>------<b>------</b><br>Focus on your <b>content</b>, Leave <b>all</b> of the <b>workload</b> to <b>us</b>.',
+                      '<p><b>Comp Labs</b><br><b>------</b>------<b>------</b>------<b>------</b><br>Focus on your <b>content</b>, Leave <b>all</b> of the <b>workload</b> to <b>us</b>.</p>',
                   }),
                 }}
               />
             </h1>
             <div className={styles.indexCtas}>
               <Link className="button button--primary" to="/docs">
-                <Translate>Get Started</Translate>
+                <Translate>Docs</Translate>
               </Link>
-              {/* <Link className="button button--info" to="https://docusaurus.new">
-                <Translate>Playground</Translate>
-              </Link> */}
+              <Link className="button button--info" to="https://docusaurus.new">
+                <Translate>Guides</Translate>
+              </Link>
               <span className={styles.indexCtasGitHubButtonWrapper}>
                 <iframe
                   className={styles.indexCtasGitHubButton}
