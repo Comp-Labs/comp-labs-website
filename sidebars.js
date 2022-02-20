@@ -17,6 +17,11 @@
       label: '📄 Home',
     },
     {
+      type: 'doc',
+      id: 'example',
+      label: 'Example',
+    },
+    {
       type: 'category',
       label: 'Apps',
       link: {
