@@ -1,4 +1,4 @@
-const lightCodeTheme = require('prism-react-renderer/themes/github');
+  const lightCodeTheme = require('prism-react-renderer/themes/github');
 const darkCodeTheme = require('prism-react-renderer/themes/dracula');
 
 // With JSDoc @type annotations, IDEs can provide config autocompletion
@@ -99,6 +99,7 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
       //   {name: 'apple-itunes-app', content: 'app-id=myAppStoreID'}
       // ],
       hideableSidebar: true,
+      autoCollapseSidebarCategories: true,
       colorMode: {
         defaultMode: 'light',
         disableSwitch: false,
@@ -179,10 +180,10 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
             items: [
               {
                 label: 'DNS Lookup',
-                to: 'https://digwebinterface.com',
+                href: 'https://digwebinterface.com',
               },
               {
-                label: 'Fast SpeedTest',
+                label: 'SpeedTest',
                 to: '/tools/speedtest',
               },
               {
@@ -272,7 +273,7 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
                 to: '/blog',
               },
               {
-                label: 'Apps 🚧',
+                label: 'Apps',
                 to: '/apps/',
               },
               {
@@ -314,7 +315,7 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
                 href: 'https://digwebinterface.com',
               },
               {
-                label: 'Fast SpeedTest',
+                label: 'SpeedTest',
                 to: '/tools/speedtest',
               },
               {
@@ -372,10 +373,6 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
               {
                 label: 'Docs 🚧',
                 to: '/docs/',
-              },
-              {
-                label: 'Apps 🚧',
-                to: '/apps/',
               },
               {
                 label: 'Business Meeting Service 🚧',

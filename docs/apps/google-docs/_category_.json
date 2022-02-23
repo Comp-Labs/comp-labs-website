@@ -1,4 +1,8 @@
 {
   "label": "Google Docs",
-  "position": 4
+  "position": 1,
+  "link": {
+    "type": "generated-index",
+    "title": "Google Docs"
+  }
 }

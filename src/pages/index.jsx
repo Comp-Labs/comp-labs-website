@@ -35,18 +35,18 @@ function HomepageHeader() {
             </h1>
             <div className={styles.indexCtas}>
               <Link className="button button--primary" to="/docs">
-                <Translate>Docs</Translate>
+                <Translate>Get Started</Translate>
               </Link>
-              <Link className="button button--info" to="https://docusaurus.new">
+              {/* <Link className="button button--info" to="/blog">
                 <Translate>Guides</Translate>
-              </Link>
+              </Link> */}
               <span className={styles.indexCtasGitHubButtonWrapper}>
                 <iframe
                   className={styles.indexCtasGitHubButton}
                   src="https://ghbtns.com/github-btn.html?user=comp-labs&amp;type=follow&amp;count=true&amp;size=large"
                   width={190}
                   height={30}
-                  title="GitHub Follow"
+                  title="Follow Comp Labs on GitHub"
                 />
               </span>
             </div>

@@ -28,7 +28,7 @@ const FeatureList = [
     Svg: require('../../static/img/google_play.svg').default,
     description: (
       <>
-        This is the best solution that gives you <code>Full Access</code> to the <code>Expensive</code> Google Play Console for Free.<br></br><br></br><Link className="button button--primary" to="/solutions/google-play-developers"><Translate>Get Now!</Translate></Link>
+        This is the best solution that helps you publish your <code>AndroidOS</code> and <code>ChromeOS</code> Apps to the <code>Expensive</code> Google Play Console for Free.<br></br><br></br><Link className="button button--primary" to="/solutions/google-play-developers"><Translate>Get Now!</Translate></Link>
       </>
     ),
   },
