@@ -77,8 +77,8 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
           customCss: require.resolve('./src/css/custom.css'),
         },
         sitemap: {
-          changefreq: 'weekly',
-          priority: 0.5,
+          changefreq: 'always',
+          priority: 1.0,
         },
         gtag: {
           trackingID: 'UA-203163469-1',
@@ -188,7 +188,7 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
               },
               {
                 label: 'Web Tools',
-                href: 'https://webtoolhub.com',
+                href: 'https://www.webtoolhub.com/',
               },
               // ... more items
             ],
@@ -320,7 +320,7 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
               },
               {
                 label: 'Web Tools',
-                href: 'https://webtoolhub.com',
+                href: 'https://www.webtoolhub.com/',
               },
             ],
           },
