@@ -28,7 +28,7 @@ function HomepageHeader() {
                   __html: translate({
                     id: 'homepage.hero.title',
                     message:
-                      '<p><b>Comp Labs</b><br><b>------</b>------<b>------</b>------<b>------</b><br>Focus on your <b>content</b>, Leave <b>all</b> of the <b>workload</b> to <b>us</b>.</p>',
+                      '<p><b>Comp Labs</b><br><b>------</b>------<b>------</b>------<b>------</b><br><b>Guides.</b> <b>Apps.</b> <b>Solutions.</b> <b>Tools.</b><br><b>Everything</b> you need for <b>Personal</b>, <b>Business</b>, or <b>Enterprise Use</b>.</p>',
                   }),
                 }}
               />
@@ -43,11 +43,20 @@ function HomepageHeader() {
               <span className={styles.indexCtasGitHubButtonWrapper}>
                 <iframe
                   className={styles.indexCtasGitHubButton}
-                  src="https://ghbtns.com/github-btn.html?user=comp-labs&amp;type=follow&amp;count=true&amp;size=large"
+                  src="https://ghbtns.com/github-btn.html?user=Comp-Labs&amp;type=follow&amp;count=true&amp;size=large"
                   width={190}
                   height={30}
                   title="Follow Comp Labs on GitHub"
                 />
+              </span>
+              <span className={styles.indexCtasGitHubButtonWrapper}>
+              <iframe
+                className={styles.indexCtasGitHubButton}
+                src="https://ghbtns.com/github-btn.html?user=Comp-Labs&amp;type=sponsor&amp;size=large" frameborder="0" scrolling="0" width="180" height="30" title="GitHub">
+                width={190}
+                height={30}
+                title="Sponsor Comp Labs on GitHub"
+              </iframe>
               </span>
             </div>
           </div>
