@@ -160,11 +160,11 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
               },
               {
                 label: 'Business Meeting Service 🚧',
-                to: '/solutions/business-meeting-service',
+                to: '/solutions/enterprise-meeting-solution',
               },
               {
                 label: 'Business Mail Service 🚧',
-                to: '/solutions/business-mail-service',
+                to: '/solutions/enterprise-mail-solution',
               },
               {
                 label: 'Anonymous VPN 🚧',
@@ -295,15 +295,15 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
               },
               {
                 label: 'Business Meeting Service 🚧',
-                to: '/solutions/business-meeting-service',
+                to: '/solutions/enterprise-meeting-solution',
               },
               {
                 label: 'Business Mail Service 🚧',
-                to: '/solutions/business-mail-service',
+                to: '/solutions/enterprise-mail-solution',
               },
               {
                 label: 'Anonymous VPN 🚧',
-                to: '/solutions/business-mail-service',
+                to: '/solutions/enterprise-mail-solution',
               },
             ],
           },
@@ -376,11 +376,11 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
               },
               {
                 label: 'Business Meeting Service 🚧',
-                to: '/solutions/business-meeting-service',
+                to: '/solutions/enterprise-meeting-solution',
               },
               {
                 label: 'Business Mail Service 🚧',
-                to: '/solutions/business-mail-service',
+                to: '/solutions/enterprise-mail-solution',
               },
               {
                 label: 'Anonymous VPN 🚧',
