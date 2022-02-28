@@ -5,7 +5,7 @@ import Link from '@docusaurus/Link';
 import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
 import styles from '../index.module.css';
 
-function PlayHeader() {
+function PlayHeader1() {
   const {siteConfig} = useDocusaurusContext();
   return (
     <header className={clsx('hero hero--primary', styles.heroBanner)}>
@@ -29,8 +29,8 @@ export default function Play() {
   return (
     <Layout
       title={`Google Play Developers`}
-      description="">
-      <PlayHeader />
+      description="SaaS Solution to Submit Apps to Google Play Store Free of Cost!">
+      <PlayHeader1 />
       <main>
       </main>
     </Layout>
