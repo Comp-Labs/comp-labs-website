@@ -22,6 +22,16 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
     require.resolve('./src/css/material-icons.css'),
   ],
 
+  scripts: [
+    // String format.
+    'https://kit.fontawesome.com/307bcbc229.js',
+    // Object format.
+    // {
+    //   src: 'https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.0/clipboard.min.js',
+    //   async: true,
+    // },
+  ],
+
   plugins: [
     [
       '@docusaurus/plugin-pwa',
