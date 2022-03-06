@@ -37,9 +37,7 @@ function HomepageHeader() {
               <Link className="button button--primary" to="/docs">
                 <Translate>Get Started</Translate>
               </Link>
-              {/* <Link className="button button--info" to="/blog">
-                <Translate>Guides</Translate>
-              </Link> */}
+              {/* <Link className="button button--info" to="/blog"><Translate>Guides</Translate></Link> */}
               <span className={styles.indexCtasGitHubButtonWrapper}>
                 <iframe
                   className={styles.indexCtasGitHubButton}
