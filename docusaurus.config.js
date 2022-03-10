@@ -56,7 +56,7 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
           {
             tagName: 'meta',
             name: 'theme-color',
-            content: 'rgb(37, 194, 160)',
+            content: '#1877F2',
           },
         ],
       },
@@ -108,6 +108,12 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
       // metadata: [
       //   {name: 'apple-itunes-app', content: 'app-id=myAppStoreID'}
       // ],
+      metadata: [
+        {name: 'msapplication-TileColor', content: '#1877F2'}
+      ],
+      metadata: [
+        {name: 'theme-color', content: '#1877F2'}
+      ],
       hideableSidebar: true,
       autoCollapseSidebarCategories: true,
       colorMode: {
