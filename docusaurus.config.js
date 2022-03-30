@@ -20,6 +20,7 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
   clientModules: [
     require.resolve('./src/css/roboto.css'),
     require.resolve('./src/css/material-icons.css'),
+    // require.resolve('https://cdn-uicons.flaticon.com/uicons-bold-rounded/css/uicons-bold-rounded.css'),
   ],
 
   scripts: [
