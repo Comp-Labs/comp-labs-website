@@ -5,7 +5,7 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
 /** @type {import('@docusaurus/types').DocusaurusConfig} */
 (module.exports = {
   title: 'Comp Labs',
-  tagline: 'Comp Labs - Guides. Apps. Solutions. Tools.<br>Everything you need for Personal, Business, or Enterprise Use.',
+  tagline: 'Guides, Apps, Solutions, and Tools for Personal, Business, or Enterprise Use.',
   url: 'https://complabs.in',
   baseUrl: '/',
   onBrokenLinks: 'throw',

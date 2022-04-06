@@ -17,3 +17,10 @@
   align-items: center;
   margin-top: 24px;
 }
+
+* {
+  background-image: url("/img/wave.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
