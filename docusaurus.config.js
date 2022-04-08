@@ -129,7 +129,7 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
         // import order and fix it there
         additionalLanguages: ['java', 'markdown'],
       },
-      image: 'img/Comp Labs Logo_Text.png',
+      image: 'img/comp-labs-logo.png',
       // metadata: [{name: 'twitter:card', content: 'summary'}],
       // announcementBar: {
       //   id: 'support_us',
@@ -408,7 +408,7 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
         ],
         logo: {
           alt: 'Comp Labs Footer Logo',
-          src: 'img/Comp Labs Logo_Text.png',
+          src: 'img/comp-labs-logo.png',
           href: '/',
         },
         copyright: `Copyright © ${new Date().getFullYear()} Comp Labs. All Rights Reserved.`,
