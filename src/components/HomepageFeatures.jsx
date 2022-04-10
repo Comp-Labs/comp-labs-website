@@ -25,7 +25,7 @@ const FeatureList = [
   },
   {
     title: 'App Submission Service for Google Play Developer Console',
-    Svg: require('../../static/img/undraw_docusaurus_react.svg').default,
+    Svg: require('../../static/img/google_play.svg').default,
     description: (
       <>
         This is the best solution that helps you publish your <code>AndroidOS</code> and <code>ChromeOS</code> Apps to the Google Play Console for Free.<br></br><br></br><Link className="button button--primary" to="/solutions/google-play-developers"><Translate>Get Now!</Translate></Link>
