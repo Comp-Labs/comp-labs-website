@@ -136,7 +136,7 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
         id: 'lightrope',
         content:
           '<ul class="lightrope"><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li></ul>',
-        backgroundColor: '#fff',
+        // backgroundColor: '#fff',
         // textColor: '#fff',
         isCloseable: false,
       },
