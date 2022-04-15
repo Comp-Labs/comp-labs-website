@@ -135,7 +135,7 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
       announcementBar: {
         id: 'lightrope',
         content:
-          '<ul class="lightrope"><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li></ul>',
+          '<iframe src="/lightrope.html" title="Comp Labs Light Rope"></iframe>',
         // backgroundColor: '#fff',
         // textColor: '#fff',
         isCloseable: false,
