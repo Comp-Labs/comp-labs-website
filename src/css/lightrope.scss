@@ -7,13 +7,13 @@ $light-off-opacity: 0.4;
 
 html[data-theme='dark'] {
     body {
-        background: #fff;
+        background: #000;
       }
 }
 
 html[data-theme='light'] {
     body {
-        background: #000;
+        background: #fff;
       }
 }
 
