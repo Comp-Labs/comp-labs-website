@@ -20,6 +20,7 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
   clientModules: [
     require.resolve('./src/css/roboto.css'),
     require.resolve('./src/css/material-icons.css'),
+    require.resolve('./src/css/lightrope.scss'),
     // require.resolve('https://cdn-uicons.flaticon.com/uicons-bold-rounded/css/uicons-bold-rounded.css'),
   ],
 
@@ -131,14 +132,14 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
       },
       image: 'img/comp-labs-logo.png',
       // metadata: [{name: 'twitter:card', content: 'summary'}],
-      // announcementBar: {
-      //   id: 'support_us',
-      //   content:
-      //     'Example Banner',
-      //   backgroundColor: '#147EFB',
-      //   textColor: '#FFFFFF',
-      //   isCloseable: false,
-      // },
+      announcementBar: {
+        id: 'lightrope',
+        content:
+          '<ul class="lightrope"><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li></ul>',
+        backgroundColor: '#fff',
+        textColor: '#fff',
+        isCloseable: false,
+      },
       tableOfContents: {
         minHeadingLevel: 2,
         maxHeadingLevel: 6,
