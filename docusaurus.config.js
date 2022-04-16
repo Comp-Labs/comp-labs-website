@@ -18,8 +18,8 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
   themes: ['@docusaurus/theme-live-codeblock'],
 
   clientModules: [
-    require.resolve('./src/css/roboto.css'),
-    require.resolve('./src/css/material-icons.css'),
+    // require.resolve('./src/css/roboto.css'),
+    // require.resolve('./src/css/material-icons.css'),
     // require.resolve('./src/css/lightrope.scss'),
     // require.resolve('https://cdn-uicons.flaticon.com/uicons-bold-rounded/css/uicons-bold-rounded.css'),
   ],
@@ -145,13 +145,13 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
         maxHeadingLevel: 6,
       },
       algolia: {
-        // container: '#docsearch',
-        appId: '7LEIQ4QK6M',
-        indexName: 'complabs',
-        apiKey: 'd0a38351663330eccb11548d292f41bd',
+        // Old
         // appId: '5BME7GVXKF',
         // indexName: 'comp-labs',
         // apiKey: 'dad01739ec6bb5d5b902dfc48bb20a50',
+        appId: '7LEIQ4QK6M',
+        indexName: 'complabs',
+        apiKey: 'd0a38351663330eccb11548d292f41bd',
         placeholder: 'Search Comp Labs...',
       },
       navbar: {
@@ -164,7 +164,6 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
         },
         items: [
           {to: '/docs/', label: 'Docs 🚧', position: 'left'},
-          // {href: 'https://docs.complabs.in', label: 'Guides', position: 'left'},
           {to: 'blog', label: 'Guides', position: 'left'},
           {to: '/apps/', label: 'Apps', position: 'left'},
           {
@@ -188,7 +187,6 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
                 label: 'Anonymous VPN 🚧',
                 to: '/solutions/vpn',
               },
-              // ... more items
             ],
           },
           {
@@ -208,7 +206,6 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
                 label: 'Web Tools',
                 href: 'https://www.webtoolhub.com/',
               },
-              // ... more items
             ],
           },
           {href: 'https://forms.gle/dQmrNAZZ1KK81rAP7', label: 'Contact Us', position: 'left'},
@@ -230,10 +227,9 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
                 label: 'Cookie Policy',
                 to: '/legal/cookie-policy',
               },
-              // ... more items
             ],
           },
-          // right
+          // Right
           {
             type: 'dropdown',
             label: 'Website v2 (Current)',
@@ -247,18 +243,11 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
                 label: 'Website v1 (Legacy)',
                 to: 'https://complabs28.wixsite.com/complabs',
               },
-              // ... more items
             ],
           },
           {
             type: 'localeDropdown',
             position: 'right',
-            // dropdownItemsAfter: [
-            //   {
-            //     href: 'https://github.com/facebook/docusaurus/issues/3526',
-            //     label: 'Help Us Translate',
-            //   },
-            // ],
           },
           {
             href: 'https://github.com/Comp-Labs',
@@ -282,10 +271,6 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
                 label: 'Docs 🚧',
                 to: '/docs/',
               },
-              // {
-              //   label: 'Guides',
-              //   href: 'https://docs.complabs.in',
-              // },
               {
                 label: 'Guides',
                 to: '/blog',
