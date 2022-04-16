@@ -132,14 +132,14 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
       },
       image: 'img/comp-labs-logo.png',
       // metadata: [{name: 'twitter:card', content: 'summary'}],
-      announcementBar: {
-        id: 'lightrope',
-        content:
-          '<iframe src="/lightrope.html" title="Comp Labs Light Rope"></iframe>',
-        // backgroundColor: '#fff',
-        // textColor: '#fff',
-        isCloseable: false,
-      },
+      // announcementBar: {
+      //   id: 'lightrope',
+      //   content:
+      //     '<iframe src="/lightrope.html" title="Comp Labs Light Rope"></iframe>',
+      //   // backgroundColor: '#fff',
+      //   // textColor: '#fff',
+      //   isCloseable: false,
+      // },
       tableOfContents: {
         minHeadingLevel: 2,
         maxHeadingLevel: 6,
