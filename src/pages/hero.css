@@ -22,7 +22,6 @@
     height: 106px;
     position: relative;
     overflow: hidden;
-    margin-top: var(--offset);
   }
   
   .mask span {
@@ -30,7 +29,6 @@
     box-sizing: border-box;
     position: absolute;
     top: 100px;
-    padding-bottom: var(--offset);
     
     background-size: 100% 100%;
     -webkit-background-clip: text;
