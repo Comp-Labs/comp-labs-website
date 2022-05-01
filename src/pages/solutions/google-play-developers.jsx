@@ -46,7 +46,7 @@ function PlayHeader2() {
                   __html: translate({
                     id: 'homepage.hero.title',
                     message:
-                      '<p><b>App Submission Service for Google Play Apps</b><br><b>------</b>------<b>------</b>------<b>------</b><br>Best <b>SaaS Solution</b> to <b>Submit Your Apps</b> to <b><code>Play Store</code></b>, <b>Free of Cost!</b></p>',
+                      '<p><b>App Publisher for Google Play</b><br><b>------</b>------<b>------</b>------<b>------</b><br>Best <b>SaaS Solution</b> to <b>Submit Your Apps</b> to <b><code>Play Store</code></b>, <b>Free of Cost!</b></p>',
                   }),
                 }}
               />
@@ -60,7 +60,7 @@ export default function Play() {
   const {siteConfig} = useDocusaurusContext();
   return (
     <Layout
-      title={`Google Play Developers`}
+      title={`App Publisher for Google Play`}
       description="SaaS Solution to Submit Apps to Google Play Store Free of Cost!">
       <PlayHeader2 />
       <PlayHeader1 />

@@ -10,7 +10,7 @@ const FeatureList = [
     Svg: require('../../static/img/undraw_typewriter.svg').default,
     description: (
       <>
-        We provide technical guides to help users do stuff related to tech by just watching our videos.<br></br><br></br><Link className="button button--primary" to="/blog"><Translate>Read Now!</Translate></Link>
+        Tech Based Blog for Enthusiasts.<br></br><br></br><Link className="button button--primary" to="/blog"><Translate>Read Now!</Translate></Link>
       </>
     ),
   },
@@ -19,16 +19,16 @@ const FeatureList = [
     Svg: require('../../static/img/undraw_develop_app.svg').default,
     description: (
       <>
-        We innovate and create user-friendly and useful apps for platforms including <br></br><code>Android</code>, <code>Windows</code>, Apple Platforms  <code>iOS, iPadOS, watchOS, macOS, and tvOS</code>, and <code>Linux</code>.<br></br>Explore and Download the Apps Today!<br></br><br></br><Link className="button button--primary" to="/apps"><Translate>Explore!</Translate></Link>
+        Apps with the World's Best UI/UX for Platforms Including <br></br><code>Android</code>, <code>Windows</code>, <code>iOS, iPadOS, watchOS, macOS, tvOS</code>, and <code>Linux</code>.<br></br>Download the Apps Today!<br></br><br></br><Link className="button button--primary" to="/apps"><Translate>Explore!</Translate></Link>
       </>
     ),
   },
   {
-    title: 'App Submission Service for Google Play Developer Console',
+    title: 'App Publisher for Google Play',
     Svg: require('../../static/img/undraw_android.svg').default,
     description: (
       <>
-        This is the best solution that helps you publish your <code>AndroidOS</code> and <code>ChromeOS</code> Apps to the Google Play Console for Free.<br></br><br></br><Link className="button button--primary" to="/solutions/google-play-developers"><Translate>Get Now!</Translate></Link>
+        Best Solution to Publish Your <code>AndroidOS</code> and <code>ChromeOS</code> Apps to the Google Play Console for Free.<br></br><br></br><Link className="button button--primary" to="/solutions/google-play-developers"><Translate>Get Now!</Translate></Link>
       </>
     ),
   },

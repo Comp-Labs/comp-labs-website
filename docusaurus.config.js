@@ -165,7 +165,7 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
             position: 'left',
             items: [
               {
-                label: 'Google Play Developers',
+                label: 'App Publisher for Google Play',
                 to: '/solutions/google-play-developers',
               },
               {
@@ -198,6 +198,10 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
               {
                 label: 'Web Tools',
                 href: 'https://www.webtoolhub.com/',
+              },
+              {
+                label: 'WeatherBox ⛅',
+                href: 'https://weatherbox.complabs.in',
               },
             ],
           },
@@ -286,7 +290,7 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
             title: 'Solutions',
             items: [
               {
-                label: 'Google Play Developers',
+                label: 'App Publisher for Google Play',
                 to: '/solutions/google-play-developers',
               },
               {
@@ -317,6 +321,10 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
               {
                 label: 'Web Tools',
                 href: 'https://www.webtoolhub.com/',
+              },
+              {
+                label: 'WeatherBox ⛅',
+                href: 'https://weatherbox.complabs.in',
               },
             ],
           },
@@ -360,6 +368,10 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
               {
                 label: 'YouTube',
                 href: 'https://youtube.com/channel/UCL6pKeSCbJkPohM2PUZbqQA',
+              },
+              {
+                label: 'LinkTree',
+                href: 'https://linktr.ee/complabs',
               },
             ],
           },

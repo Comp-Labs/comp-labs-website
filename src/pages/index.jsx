@@ -47,6 +47,7 @@ function HomepageHeader() {
                   title="Follow Comp Labs on GitHub"
                 />
               </span>
+              <br></br>
               <span className={styles.indexCtasGitHubButtonWrapper}>
               <iframe
                 className={styles.indexCtasGitHubButton}
