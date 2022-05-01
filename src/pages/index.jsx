@@ -41,7 +41,7 @@ function HomepageHeader() {
               <span className={styles.indexCtasGitHubButtonWrapper}>
                 <iframe
                   className={styles.indexCtasGitHubButton}
-                  src="https://ghbtns.com/github-btn.html?user=Comp-Labs&amp;type=follow&amp;count=true&amp;size=large"
+                  src="https://ghbtns.com/github-btn.html?user=Comp-Labs&amp;type=follow&amp;count=true&amp;size=small"
                   width={190}
                   height={30}
                   title="Follow Comp Labs on GitHub"
@@ -51,7 +51,7 @@ function HomepageHeader() {
               <span className={styles.indexCtasGitHubButtonWrapper}>
               <iframe
                 className={styles.indexCtasGitHubButton}
-                src="https://ghbtns.com/github-btn.html?user=Comp-Labs&amp;type=sponsor&amp;size=large" frameborder="0" scrolling="0" width="180" height="30" title="GitHub">
+                src="https://ghbtns.com/github-btn.html?user=Comp-Labs&amp;type=sponsor&amp;size=small" frameborder="0" scrolling="0" width="180" height="30" title="GitHub">
                 width={190}
                 height={30}
                 title="Sponsor Comp Labs on GitHub"
