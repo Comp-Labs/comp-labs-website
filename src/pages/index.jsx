@@ -7,7 +7,6 @@ import styles from './index.module.css';
 import HomepageFeatures from '../components/HomepageFeatures';
 import Translate, {translate} from '@docusaurus/Translate';
 import useBaseUrl from '@docusaurus/useBaseUrl';
-import heroJS from '../../static/herojs.js';
 
 function HomepageHeader() {
   const {siteConfig} = useDocusaurusContext();
