@@ -20,6 +20,7 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
   scripts: [
     // String format.
     'https://kit.fontawesome.com/307bcbc229.js',
+    './static/herojs.js',
     // Object format.
     // {
     //   src: 'https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.0/clipboard.min.js',
@@ -65,7 +66,6 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
       ({
         docs: {
           sidebarPath: require.resolve('./sidebars.js'),
-          // Please change this to your repo.
           editUrl: 'https://github.com/Comp-Labs/comp-labs-website/edit/main/',
         },
         blog: {
