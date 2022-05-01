@@ -7,7 +7,7 @@ import Translate, {translate} from '@docusaurus/Translate';
 const FeatureList = [
   {
     title: 'Guides',
-    Svg: require('../../static/img/undraw_docusaurus_tree.svg').default,
+    Svg: require('../../static/img/undraw_typewriter.svg').default,
     description: (
       <>
         We provide technical guides to help users do stuff related to tech by just watching our videos.<br></br><br></br><Link className="button button--primary" to="/blog"><Translate>Read Now!</Translate></Link>
