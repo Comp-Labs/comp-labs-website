@@ -17,13 +17,6 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
   trailingSlash: 'false',
   themes: ['@docusaurus/theme-live-codeblock'],
 
-  clientModules: [
-    // require.resolve('./src/css/roboto.css'),
-    // require.resolve('./src/css/material-icons.css'),
-    // require.resolve('./src/css/lightrope.scss'),
-    // require.resolve('https://cdn-uicons.flaticon.com/uicons-bold-rounded/css/uicons-bold-rounded.css'),
-  ],
-
   scripts: [
     // String format.
     'https://kit.fontawesome.com/307bcbc229.js',
