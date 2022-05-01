@@ -16,7 +16,7 @@ const FeatureList = [
   },
   {
     title: 'Apps',
-    Svg: require('../../static/img/undraw_docusaurus_react.svg').default,
+    Svg: require('../../static/img/undraw_develop_app.svg').default,
     description: (
       <>
         We innovate and create user-friendly and useful apps for platforms including <br></br><code>Android</code>, <code>Windows</code>, Apple Platforms  <code>iOS, iPadOS, watchOS, macOS, and tvOS</code>, and <code>Linux</code>.<br></br>Explore and Download the Apps Today!<br></br><br></br><Link className="button button--primary" to="/apps"><Translate>Explore!</Translate></Link>
