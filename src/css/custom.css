@@ -91,6 +91,12 @@ html[data-theme='dark'] {
   border-radius: 7px;
 }
 
+.special {
+  align-items: center;
+  justify-content: center;
+  align-content: center;
+}
+
 .dropdown-content a:hover {background-color: #007AFF;}
 
 .dropdown:hover .dropdown-content {display: block;}

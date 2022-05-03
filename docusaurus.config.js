@@ -204,7 +204,7 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
           },
           {
             type: 'dropdown',
-            label: 'Special ✨',
+            label: 'Special',
             position: 'left',
             items: [
               {
@@ -341,7 +341,7 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
             ],
           },
           {
-            title: 'Special ✨',
+            title: 'Special',
             items: [
               {
                 label: 'WeatherBox ⛅',
