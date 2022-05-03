@@ -15,13 +15,13 @@ function LightsAnimationHeader() {
         <div className="container">
           <h1 className="hero__title">Free, Fast, and Accurate Internet SpeedTest</h1>
           <p className="hero__subtitle">Christmas Lights Animation Brought to You by Comp Labs. Credits for this Animation goes to <a href="https://codepen.io/tobyj/pen/QjvEex" target="_blank">@tobyj</a> at CodePen.</p>
-          <div className={styles.buttons}>
+          {/* <div className={styles.buttons}>
             <Link
               className="button button--secondary button--lg"
               to="/docs/intro">
               Docusaurus Tutorial - 5min ⏱️
             </Link>
-          </div>
+          </div> */}
         </div>
       </header>
     );
@@ -35,7 +35,7 @@ export default function LightsAnimation() {
       description="Christmas Lights Animation by Comp Labs.">
       <LightsAnimationHeader />
       <main>
-      <iframe src="/html/lightrope.html" title="Pure-CSS Christmas Lights" width="100%" height="500" style="border:none;"></iframe>
+      <iframe src="/html/lightrope.html" title="Pure-CSS Christmas Lights" width="100%" height="500"></iframe>
       <a href="https://codepen.io/rudrasen2/pen/GRywgoR" target="_blank" rel="noopener noreferrer" class="button button--info"><i class="fa-brands fa-codepen"></i> View on CodePen</a>
       </main>
     </Layout>
