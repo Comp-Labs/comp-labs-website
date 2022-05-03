@@ -13,7 +13,7 @@ function LightsAnimationHeader() {
     return (
       <header className={clsx('hero hero--primary', styles.heroBanner)}>
         <div className="container">
-          <h1 className="hero__title">Free, Fast, and Accurate Internet SpeedTest</h1>
+          <h1 className="hero__title">Christmas Lights Animation</h1>
           <p className="hero__subtitle">Christmas Lights Animation Brought to You by Comp Labs. Credits for this Animation goes to <a href="https://codepen.io/tobyj/pen/QjvEex" target="_blank">@tobyj</a> at CodePen.</p>
           {/* <div className={styles.buttons}>
             <Link

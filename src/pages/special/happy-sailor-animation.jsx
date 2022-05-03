@@ -16,7 +16,11 @@ function SailorAnimationHeader() {
           <h1 className="hero__title">Happy Sailor Animation</h1>
           <p className="hero__subtitle">Happy Sailor Animation Brought to You by Comp Labs. Credits for this Animation goes to <a href="https://codepen.io/tuckermassad/pen/XWVwzax" target="_blank">@tuckermassad</a> at CodePen.</p>
           {/* <div className={styles.buttons}>
-            <Link className="button button--secondary button--lg" to="/docs/intro">Docusaurus Tutorial - 5min ⏱️</Link>
+            <Link
+              className="button button--secondary button--lg"
+              to="/docs/intro">
+              Docusaurus Tutorial - 5min ⏱️
+            </Link>
           </div> */}
         </div>
       </header>
