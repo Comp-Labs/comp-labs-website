@@ -3,10 +3,9 @@ import clsx from 'clsx';
 import Layout from '@theme/Layout';
 import Link from '@docusaurus/Link';
 import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
-import indexStyles from '../index.module.css';
+import styles from '../index.module.css';
 import Translate, {translate} from '@docusaurus/Translate';
 import useBaseUrl from '@docusaurus/useBaseUrl';
-import styles from '../../../src/css/custom.css';
 import buttonStyles from '../../css/buttons.css';
 
 function SailorAnimationHeader() {
@@ -16,13 +15,9 @@ function SailorAnimationHeader() {
         <div className="container">
           <h1 className="hero__title">Happy Sailor Animation</h1>
           <p className="hero__subtitle">Happy Sailor Animation Brought to You by Comp Labs. Credits for this Animation goes to <a href="https://codepen.io/tuckermassad/pen/XWVwzax" target="_blank">@tuckermassad</a> at CodePen.</p>
-          {/* <div className={styles.buttons}>
-            <Link
-              className="button button--secondary button--lg"
-              to="/docs/intro">
-              Docusaurus Tutorial - 5min ⏱️
-            </Link>
-          </div> */}
+          <div className={styles.buttons}>
+            <Link className="button button--secondary button--lg" to="/docs/intro">Docusaurus Tutorial - 5min ⏱️</Link>
+          </div>
         </div>
       </header>
     );
