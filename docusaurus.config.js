@@ -16,6 +16,7 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
   deploymentBranch: 'main',
   trailingSlash: 'false',
   themes: ['@docusaurus/theme-live-codeblock'],
+  titleDelimiter: '•',
 
   scripts: [
     // String format.
@@ -126,11 +127,11 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
       image: 'img/comp-labs-logo.png',
       // metadata: [{name: 'twitter:card', content: 'summary'}],
       // announcementBar: {
-      //   id: 'lightrope',
+      //   id: 'announcement',
       //   content:
-      //     '<iframe src="/lightrope.html" title="Comp Labs Light Rope"></iframe>',
-      //   // backgroundColor: '#fff',
-      //   // textColor: '#fff',
+      //     '<p>Some Announcement...</p>',
+      //   backgroundColor: '#fff',
+      //   textColor: '#fff',
       //   isCloseable: false,
       // },
       tableOfContents: {
@@ -199,9 +200,24 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
                 label: 'Web Tools',
                 href: 'https://www.webtoolhub.com/',
               },
+            ],
+          },
+          {
+            type: 'dropdown',
+            label: 'Special ✨',
+            position: 'left',
+            items: [
               {
                 label: 'WeatherBox ⛅',
                 href: 'https://weatherbox.complabs.in',
+              },
+              {
+                label: 'Beautiful Christmas Lights',
+                to: '/special/christmas-lights',
+              },
+              {
+                label: 'Happy Sailor Animation',
+                to: '/special/happy-sailor-animation',
               },
             ],
           },
@@ -322,9 +338,22 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
                 label: 'Web Tools',
                 href: 'https://www.webtoolhub.com/',
               },
+            ],
+          },
+          {
+            title: 'Special ✨',
+            items: [
               {
                 label: 'WeatherBox ⛅',
                 href: 'https://weatherbox.complabs.in',
+              },
+              {
+                label: 'Beautiful Christmas Lights',
+                to: '/special/christmas-lights',
+              },
+              {
+                label: 'Happy Sailor Animation',
+                to: '/special/happy-sailor-animation',
               },
             ],
           },

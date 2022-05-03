@@ -32,7 +32,7 @@ export default function Speedtest() {
       description="">
       <SpeedtestHeader />
       <main>
-      <iframe src="/stcomponent.html" title="OpenSpeedTest HTML5 Widget" width="100%" height="1000"></iframe>
+      <iframe src="/html/speedtest.html" title="OpenSpeedTest HTML5 Widget" width="100%" height="1000"></iframe>
       </main>
     </Layout>
   );
