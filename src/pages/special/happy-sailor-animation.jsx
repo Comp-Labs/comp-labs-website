@@ -15,13 +15,6 @@ function SailorAnimationHeader() {
         <div className="container">
           <h1 className="hero__title">Happy Sailor Animation</h1>
           <p className="hero__subtitle">Happy Sailor Animation Brought to You by Comp Labs. Credits for this Animation goes to <a href="https://codepen.io/tuckermassad/pen/XWVwzax" target="_blank">@tuckermassad</a> at CodePen.</p>
-          {/* <div className={styles.buttons}>
-            <Link
-              className="button button--secondary button--lg"
-              to="/docs/intro">
-              Docusaurus Tutorial - 5min ⏱️
-            </Link>
-          </div> */}
         </div>
       </header>
     );
@@ -35,7 +28,7 @@ export default function SailorAnimation() {
       description="Happy Sailor Animation by Comp Labs">
       <SailorAnimationHeader />
       <main>
-      <iframe src="/html/sailor.html" title="Happy-Sailor Animation" width="100%" height="500" style="border:none;"></iframe>
+      <iframe src="/html/sailor.html" title="Happy-Sailor Animation" width="100%" height="500"></iframe>
       <a href="https://codepen.io/rudrasen2/pen/zYRxPBr" target="_blank" rel="noopener noreferrer" class="button button--info"><i class="fa-brands fa-codepen"></i> View on CodePen</a>
       </main>
     </Layout>
