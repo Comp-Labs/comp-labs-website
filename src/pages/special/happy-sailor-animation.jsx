@@ -31,6 +31,7 @@ export default function SailorAnimation() {
       <iframe src="/html/sailor.html" title="Happy-Sailor Animation" width="100%" height="500"></iframe>
       <center><a href="https://codepen.io/rudrasen2/pen/zYRxPBr" target="_blank" rel="noopener noreferrer" class="button button--info"><i class="fa-brands fa-codepen"></i> View on CodePen</a></center>
       <br></br>
+      <p> </p>
       </main>
     </Layout>
   );
