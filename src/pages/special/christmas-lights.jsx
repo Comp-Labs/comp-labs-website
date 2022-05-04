@@ -36,7 +36,7 @@ export default function LightsAnimation() {
       <LightsAnimationHeader />
       <main>
       <iframe src="/html/lightrope.html" title="Pure-CSS Christmas Lights" width="100%" height="500"></iframe>
-      <a href="https://codepen.io/rudrasen2/pen/GRywgoR" target="_blank" rel="noopener noreferrer" class="button button--info"><i class="fa-brands fa-codepen"></i> View on CodePen</a>
+      <center><a href="https://codepen.io/rudrasen2/pen/GRywgoR" target="_blank" rel="noopener noreferrer" class="button button--info"><i class="fa-brands fa-codepen"></i> View on CodePen</a></center>
       </main>
     </Layout>
   );
