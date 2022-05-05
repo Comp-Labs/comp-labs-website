@@ -110,7 +110,12 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
       metadata: [
         {name: 'theme-color', content: '#1877F2'}
       ],
-      hideableSidebar: true,
+      docs: {
+        sidebar: {
+          hideable: true,
+          autoCollapseCategories: true,
+        },
+      },
       autoCollapseSidebarCategories: true,
       colorMode: {
         defaultMode: 'light',
