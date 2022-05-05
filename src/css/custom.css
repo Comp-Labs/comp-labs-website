@@ -250,7 +250,11 @@ div[class^='announcementBar_'] {
   color: red;
 }
 
-.a .href {
+a {
+  color: #25C2A0
+}
+
+href {
   color: #25C2A0
 }
 
