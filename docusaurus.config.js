@@ -116,7 +116,6 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
           autoCollapseCategories: true,
         },
       },
-      autoCollapseSidebarCategories: true,
       colorMode: {
         defaultMode: 'light',
         disableSwitch: false,
