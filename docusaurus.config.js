@@ -406,6 +406,13 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
                 label: 'LinkTree',
                 href: 'https://linktr.ee/complabs',
               },
+              {
+                html: `
+                <a href="https://www.netlify.com" target="_blank" rel="noreferrer noopener" aria-label="Deploys by Netlify">
+                  <img src="https://www.netlify.com/img/global/badges/netlify-color-accent.svg" alt="Deploys by Netlify" width="114" height="51" />
+                </a>
+              `,
+              },
             ],
           },
           {
@@ -435,7 +442,7 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
           src: 'img/comp-labs-logo.png',
           href: '/',
         },
-        copyright: `Copyright © ${new Date().getFullYear()} Comp Labs. All Rights Reserved.`,
+        copyright: `Copyright © ${new Date().getFullYear()} Comp Labs. All Rights Reserved. Built using Docusaurus.`,
       },
       prism: {
         theme: lightCodeTheme,
