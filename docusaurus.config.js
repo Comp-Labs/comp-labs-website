@@ -365,7 +365,7 @@ const darkCodeTheme = require("prism-react-renderer/themes/dracula");
                 to: "/special/happy-sailor-animation"
               },
               {
-                label: "Sewing Machine Animation",
+                label: "Sewing Machine Animations",
                 to: "/special/sewing-machine"
               }
             ]
