@@ -40,7 +40,7 @@ export default function SewingAnimation() {
           src="/html/sewing.html"
           title="Sewing Machine Animation"
           width="100%"
-          height="700"
+          height="900"
         ></iframe>
         <center>
           <a
