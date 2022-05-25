@@ -1,0 +1,410 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  content: "";
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: #e3fff9;
+  transform: scale(1.15);
+}
+
+.sewing-stuff {
+  width: 450px;
+  align-items: flex-end;
+  justify-content: space-around;
+  transform: translateY(-3px);
+  display: flex;
+}
+
+.table {
+  height: 15px;
+  width: 450px;
+  background-color: #f1dbc1;
+  border-bottom: 5px solid #5796e9;
+}
+
+.tape-top {
+  height: 11px;
+  width: 34px;
+  border-radius: 2px 0 0 1px;
+  background-color: #fdf4a3;
+  box-shadow: 0 2.75px #fdde51;
+}
+.tape-top::before,
+.tape-top::after {
+  position: absolute;
+}
+.tape-top::before {
+  height: 5.5px;
+  width: 34px;
+  background-image: repeating-linear-gradient(
+    to right,
+    transparent,
+    transparent 11%,
+    #5796e9 11%,
+    #5796e9 16%
+  );
+}
+.tape-top::after {
+  height: 0;
+  width: 0;
+  border-style: solid;
+  border-width: 14.3px 0 0 14.3px;
+  border-color: transparent transparent transparent #fdde51;
+  margin-left: 34px;
+}
+
+.tape-bottom {
+  height: 49.3px;
+  width: 11px;
+  position: absolute;
+  background-color: #fdf4a3;
+  margin-left: 34px;
+  margin-top: 3.3px;
+  box-shadow: 2.75px 0 #fdde51;
+}
+.tape-bottom::before,
+.tape-bottom::after {
+  content: "";
+  position: absolute;
+}
+.tape-bottom::before {
+  height: 47.6px;
+  width: 55%;
+  background-image: repeating-linear-gradient(
+    to bottom,
+    transparent,
+    transparent 10%,
+    #5796e9 10%,
+    #5796e9 13%
+  );
+}
+.tape-bottom::after {
+  height: 11px;
+  width: 11px;
+  margin-top: 49.3px;
+  border-radius: 0 0 1px 1px;
+  box-shadow: 2.75px 0 #a5a4a4;
+  background-color: #666666;
+  border: 2.2px solid #c2c2c2;
+}
+
+.pin-cushion {
+  height: 6px;
+  width: 50px;
+  position: relative;
+  border-radius: 1px 1px 1px 1px;
+  background-color: #fffefb;
+  box-shadow: 0 3px #5796e9;
+}
+.pin-cushion::before {
+  content: "";
+  position: absolute;
+  z-index: 1;
+  height: 22.5px;
+  box-shadow: 0 4px #eea0cd;
+  width: 45px;
+  background-color: #ffcbe9;
+  border-radius: 10em 10em 0 0;
+  transform: translateY(-27px) translateX(2.4px);
+}
+
+.pins {
+  display: flex;
+  z-index: 5;
+  position: absolute;
+  justify-content: space-around;
+  transform: translateY(-30px);
+}
+
+.pin {
+  z-index: 5;
+  margin-right: 8.5px;
+  height: 20px;
+  width: 1px;
+  background-image: linear-gradient(to bottom, gray, #cfcfcf);
+}
+.pin::before {
+  position: absolute;
+  display: flex;
+  height: 4px;
+  width: 4px;
+  border-radius: 50%;
+  background-color: #5796e9;
+  transform: translateX(-1.4px) translateY(-4px);
+}
+
+.pin:nth-child(1) {
+  transform: rotate(-35deg) translateY(5px);
+}
+
+.pin:nth-child(2) {
+  transform: rotate(-20deg);
+}
+
+.pin:nth-child(3) {
+  transform: rotate(-9deg) translateY(-3px);
+}
+
+.pin:nth-child(4) {
+  transform: rotate(3deg) translateY(-3px);
+}
+
+.pin:nth-child(5) {
+  transform: rotate(20deg) translateY(-1px);
+}
+
+.pin:nth-child(6) {
+  transform: rotate(35deg) translateY(5px);
+}
+
+.thread {
+  height: 25px;
+  width: 16px;
+  transform: translateX(142px);
+  background-image: repeating-linear-gradient(
+    35deg,
+    #5796e9,
+    #5796e9 0 5%,
+    #ffcac6 5% 10%
+  );
+}
+.thread::before {
+  display: flex;
+  height: 25px;
+  width: 19.52px;
+  border-radius: 0.5px;
+  transform: translateX(-2px);
+  border-radius: 2px;
+  background-image: linear-gradient(
+    to bottom,
+    #b8a0a0 0 10%,
+    #8f7777 10% 20%,
+    transparent 20% 80%,
+    #b8a0a0 80% 90%,
+    #8f7777 90%
+  );
+}
+.thread::after {
+  display: flex;
+  height: 1px;
+  width: 105px;
+  background-color: #5796e9;
+  transform: translateX(-104px) translateY(-9.5px) rotate(-9.5deg);
+}
+
+.needle {
+  position: absolute;
+  height: 20px;
+  width: 3.5px;
+  background-color: #ffcbe9;
+  transform: translateY(61px) translateX(20.4545454545px);
+}
+.needle::before {
+  display: flex;
+  height: 18px;
+  width: 8px;
+  border-radius: 0.5px;
+  transform: translateX(-2px) translateY(3px);
+  background-image: linear-gradient(
+    to bottom,
+    #7ab1fd 0 20%,
+    transparent 20% 85%,
+    #7ab1fd 85%
+  );
+}
+.needle::after {
+  display: flex;
+  height: 15px;
+  width: 1px;
+  background-color: #7ab1fd;
+  transform: translateY(2px) translateX(1.2px);
+  border-radius: 0 0 50% 50%;
+}
+
+.machine-top {
+  display: flex;
+  height: 50px;
+  width: 185px;
+  border-radius: 5px 5px 0 0px;
+  background-color: white;
+  box-shadow: 0 4px #5796e9, 0px 0px 4px #a9c2fa;
+}
+.machine-top::before {
+  content: "";
+  height: 11px;
+  width: 45px;
+  position: absolute;
+  border-radius: 0 0 1px 1px;
+  transform: translateY(50px);
+  box-shadow: 0 3px #5796e9;
+  background-color: white;
+}
+.machine-top::after {
+  content: "";
+  background-image: linear-gradient(#ffcbe9 0 80%, #7ab1fd 80%);
+  height: 15px;
+  width: 40px;
+  transform: translateX(75px) translateY(20px);
+}
+
+.machine-right {
+  height: 50px;
+  width: 50px;
+  background-color: white;
+  box-shadow: -4px 0px #5796e9, 0px 3px 2px #5796e9;
+  transform: translateX(135px);
+}
+.machine-right::before {
+  height: 35.7142857143px;
+  width: 12.5px;
+  position: absolute;
+  border-radius: 0 25% 25% 0;
+  transform: translateY(-20px) translateX(50px);
+  background-image: linear-gradient(to right, #ffcbe9 0 70%, #7ab1fd 70%);
+}
+.machine-right::after {
+  display: flex;
+  height: 30px;
+  width: 10px;
+  background-image: repeating-linear-gradient(
+    to bottom,
+    #ffe6e6 0 10%,
+    #7ab1fd 10% 20%,
+    transparent 20% 40%
+  );
+  transform: translateX(18px) translateY(10px);
+}
+
+.machine-bottom {
+  height: 40px;
+  width: 200px;
+  border-radius: 5px 0 0 0px;
+  background-color: white;
+  transform: translateX(-15px);
+  box-shadow: 0 3px #5796e9, 0px 2px 2px #5796e9;
+}
+.machine-bottom::before {
+  display: flex;
+  height: 85px;
+  width: 125px;
+  background-image: repeating-linear-gradient(
+      rgba(255, 233, 111, 0.5),
+      rgba(255, 233, 111, 0.5) 5%,
+      #5796e980 5% 10%
+    ),
+    repeating-linear-gradient(
+      90deg,
+      rgba(255, 184, 223, 0.9),
+      rgba(255, 184, 223, 0.9) 5%,
+      transparent 5% 10%
+    );
+  clip-path: polygon(30% 0%, 90% 0%, 90% 20%, 30% 45%);
+}
+
+@keyframes needle-animation {
+  50% {
+    transform: translateY(-4.5px) translateX(1.2px);
+  }
+}
+.needle::after {
+  animation: needle-animation 0.2s infinite;
+}
+
+@keyframes thread-animation {
+  50% {
+    background-image: repeating-linear-gradient(
+      35deg,
+      #ffcac6,
+      #ffcac6 0 5%,
+      #5796e9 5% 10%
+    );
+  }
+}
+@keyframes thread-animation2 {
+  50% {
+    transform-origin: center left;
+    transform: translateX(-105px) translateY(-1px) rotate(0deg);
+  }
+}
+.thread {
+  animation: thread-animation 2s infinite;
+}
+.thread::after {
+  animation: thread-animation2 2s infinite;
+}
+
+@keyframes fabric-animation {
+  50% {
+    content: "bob";
+    display: flex;
+    height: 200px;
+    width: 125px;
+    background-image: repeating-linear-gradient(
+        rgba(255, 233, 111, 0.5),
+        rgba(255, 233, 111, 0.5) 5%,
+        #5796e980 5% 10%
+      ),
+      repeating-linear-gradient(
+        90deg,
+        rgba(255, 184, 223, 0.9),
+        rgba(255, 184, 223, 0.9) 5%,
+        transparent 5% 10%
+      );
+    clip-path: polygon(30% 0%, 90% 0%, 90% 20%, 30% 45%);
+  }
+}
+.machine-bottom::before {
+  animation: fabric-animation 7s infinite;
+}
+
+@keyframes tape-animation1 {
+  50% {
+    height: 102px;
+  }
+}
+@keyframes tape-animation2 {
+  50% {
+    height: 102px;
+    background-image: repeating-linear-gradient(
+      to bottom,
+      transparent,
+      transparent 6%,
+      #5796e9 6%,
+      #5796e9 7.5%
+    );
+  }
+}
+@keyframes tape-animation3 {
+  50% {
+    transform: translateY(52.7px);
+  }
+}
+.tape-bottom {
+  animation: tape-animation1 3s infinite;
+}
+
+.tape-bottom::before {
+  animation: tape-animation2 3s infinite;
+}
+
+.tape-bottom::after {
+  animation: tape-animation3 3s infinite;
+}
+
+@keyframes pin-animation {
+  50% {
+    background-color: #fc93d0;
+  }
+}
+.pin::before {
+  animation: pin-animation 3s infinite;
+}
