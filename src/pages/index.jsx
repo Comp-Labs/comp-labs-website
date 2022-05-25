@@ -7,6 +7,8 @@ import styles from './index.module.css';
 import HomepageFeatures from '../components/HomepageFeatures';
 import Translate, {translate} from '@docusaurus/Translate';
 import useBaseUrl from '@docusaurus/useBaseUrl';
+import rotateStyles from '../../static/html/rotate.css';
+import '../../static/html/rotate.js';
 
 function HomepageHeader() {
   const {siteConfig} = useDocusaurusContext();
@@ -28,7 +30,7 @@ function HomepageHeader() {
                   __html: translate({
                     id: 'homepage.hero.title',
                     message:
-                      '<p><b>Comp Labs</b><br><b>------</b>------<b>------</b>------<b>------</b><br><b>Guides. Apps. Solutions. Tools.</b><br><b>Everything</b> you need for <b>Personal</b>, <b>Business</b>, or <b>Enterprise Use</b>.</p>',
+                      '<p><b>Comp Labs</b><br><b>------</b>------<b>------</b>------<b>------</b><br><h2><div class="mask"><span data-show>Guides.</span><span>Apps.</span><span>Solutions.</span><span>Tools.</span></div></h2><br><b>Everything</b> you need for <b>Personal</b>, <b>Business</b>, or <b>Enterprise Use</b>.</p>',
                   }),
                 }}
               />
