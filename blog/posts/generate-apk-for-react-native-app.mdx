@@ -2,61 +2,72 @@
 title: Generate Debug and Release APK for React Native App
 authors:
   - comp-labs
-tags: ['React Native', 'Android', 'APK', 'Release', 'Debug', 'Generate']
+tags: ["React Native", "Android", "APK", "Release", "Debug", "Generate"]
 description: Generate Debug and Release APK of a React Native App.
-image: '/img/blog/react-native-generate-apk.png'
+image: "/img/blog/react-native-generate-apk.png"
 hide_table_of_contents: false
 ---
 
-import Tabs from '@theme/Tabs';
-import TabItem from '@theme/TabItem';
+import Tabs from "@theme/Tabs";
+import TabItem from "@theme/TabItem";
 
 # Generate Debug and Release APK for React Native App
 
 > **What is an .apk file?**
 
-**An Android Package Kit `APK` is the package file format used by the Android Operating System for ~Distribution~ and Installation of Mobile Apps. It is similar to the `.exe` file you have on Windows Operating System, a `.apk` file is for Android.**
+> > **An Android Package Kit `APK` is the package file format used by the Android Operating System for ~Distribution~ and Installation of Mobile Apps. It is similar to the `.exe` file you have on Windows Operating System, a `.apk` file is for Android.**
+
+<!-- truncate -->
 
 > **Do You Know Why I Cut The `~Distribution~` Word?**
 
-**I Cut that Because As Per New Google Play Guidelines, The New Format to Distribute Apps on the Play Store is an `AAB` File. I will Write a Blog Post on How to Generate AAB for RN (React Native App) Soon.**
+> > **I Cut that Because As Per New Google Play Guidelines, The New Format to Distribute Apps on the Play Store is an `AAB` File. I will Write a Blog Post on How to Generate AAB for RN (React Native App) Soon.**
 
 ## Debug APK
 
 ### What can I use it for?
 
 A debug `.apk` file will allow you to install and test your app before publishing to app stores. Mind you, this is not yet ready for publishing, and there are quite a few things you’ll need to do to before you can publish. Nevertheless, it’ll be useful for initial distribution and testing.
-You’ll need to enable debugging options on your phone to run this apk.
+You’ll need to enable debugging options on your phone to run this type of apk.
 
 ## Prerequisite:
+
 - `react-native version > 0.58`
 
 ## How to generate one in 3 steps?
 
 - Go to the root of the project in the terminal and run the below command:
+
 ```
 react-native bundle --platform android --dev false --entry-file index.js --bundle-output android/app/src/main/assets/index.android.bundle --assets-dest android/app/src/main/res
 ```
 
 - Go to `android` directory:
+
 ```
 cd android
 ```
+
 - Now in this android folder, run this command
+
 ```
 ./gradlew assembleDebug
 ```
+
 - There! you’ll find the apk file in the following path:
 
 `yourProject/android/app/build/outputs/apk/debug/app-debug.apk`
 
 ## Release APK
+
 ### Generate a keystore
 
 You will need a Java generated signing key which is a keystore file used to generate a React Native executable binary for Android. You can create one using the `keytool` in the Terminal with the following command:
+
 ```
 keytool -genkey -v -keystore your_key_name.keystore -alias your_key_alias -keyalg RSA -keysize 2048 -validity 10000
 ```
+
 Once you run the keytool utility, you’ll be prompted to type in a password.
 :::note
 **Make sure you Remember the Password!**
@@ -67,9 +78,11 @@ You can change `your_key_name` with any name you want, as well as `your_key_alia
 
 Firstly, you need to copy the file `your_key_name.keystore` and paste it under the `android/app` directory in your React Native project folder.
 On Terminal:
+
 ```
 mv my-release-key.keystore /android/app
 ```
+
 You need to open your `android\app\build.gradle` file and add the keystore configuration. There are two ways of configuring the project with keystore. First, the common and unsecured way:
 
 ```title="buildGradleKeyStore"
@@ -107,25 +120,20 @@ signingConfigs {
 ```
 
 ```
-react-native bundle --platform android --dev false --entry-file index.js --bundle-output android/app/src/main/assets/index.android.bundle 
+react-native bundle --platform android --dev false --entry-file index.js --bundle-output android/app/src/main/assets/index.android.bundle
 --assets-dest android/app/src/main/res/
 ```
 
 ## Release APK Generation
 
-
 Place your Terminal Working Directory to `android` and Build The `APK` File:
 
 <Tabs className="unique-tabs">
   <TabItem value="Windows">
-    <code>
-    cd android && gradlew assembleRelease
-    </code>
+    <code>cd android && gradlew assembleRelease</code>
   </TabItem>
   <TabItem value="macOS/Linux">
-    <code>
-    cd android && ./gradlew assembleRelease
-    </code>
+    <code>cd android && ./gradlew assembleRelease</code>
   </TabItem>
 </Tabs>
 
