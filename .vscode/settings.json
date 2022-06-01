@@ -1,3 +1,9 @@
 {
-    "search.useIgnoreFiles": false
+    "search.useIgnoreFiles": false,
+    "cSpell.enableFiletypes": [
+        "mdx"
+    ],
+    "cSpell.words": [
+        "macappstores"
+    ]
 }
