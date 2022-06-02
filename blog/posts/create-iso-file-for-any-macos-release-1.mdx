@@ -5,7 +5,7 @@ authors:
   - rudra-sen
 tags: ["ISO File", "macOS", "Monterey", "Big Sur", "Catalina", "Mojave"]
 description: Create ISO File For Any Release Of macOS
-image: "/img/blog/how-to-install-macos-big-sur-11-5-in-oracle-vm-virtualbox-windows.jpg"
+image: "/img/blog/1.jpg"
 hide_table_of_contents: false
 slug: posts/create-iso-file-for-any-macos-release
 date: 2022-06-01T18:00
@@ -13,9 +13,11 @@ date: 2022-06-01T18:00
 
 # Create an ISO File For Any Release of macOS
 
-![Image](/img/blog/how-to-install-macos-big-sur-11-5-in-oracle-vm-virtualbox-windows.jpg)
+![Image](/img/blog/1.jpg)
 
 **Today we'll guide you through the setup of creating an ISO File for any macOS Release.**
+
+## Introduction
 
 > What is it needed for?
 >
@@ -28,28 +30,28 @@ Below are the options for creating an ISO File. Select the macOS release name yo
 :::caution Important!
 
 - **macOS Mojave and Releases Older than this have been marked as deprecated by Apple, no longer supported, and no longer receiving updates. Our Recommendation is to use the latest release of macOS. However, If you want, macOS Mojave Guide is provided.**
-- You need to be on a Real Mac (Also Known as Macintosh) or have macOS installed as VM. If you don’t have a Real Mac, then I recommend to use the following guide and Install macOS Monterey / Big Sur / Catalina on Windows using VirtualBox. You can choose either to install macOS Monterey, Big Sur or Catalina.
+- **You need to be on a Real Mac (Also Known as Macintosh) or have macOS installed as VM. If you don’t have a Real Mac, then I recommend to use the following guide and Install macOS [Monterey](/blog/posts/install-macos-monterey-on-windows-using-virtualbox) / [Big Sur](/blog/posts/install-macos-big-sur-on-windows-using-virtualbox) / [Catalina](/blog/posts/install-macos-catalina-on-windows-using-virtualbox) on Windows using VirtualBox. You can choose either to install macOS Monterey, Big Sur or Catalina.**
 
 :::
 
 **Options (Sorted from Newest to Oldest Release)**
 
-- [macOS Monterey (12.4 (21F79) - Latest Till Now)](#create-iso-for-macos-monterey)
-- [macOS Big Sur (11.6.6 (20G624) - Latest Till Now)](#create-iso-for-macos-big-sur)
-- [macOS Catalina (10.15.7 (19H1922) - Latest Till Now)](#create-iso-for-macos-catalina)
+- [macOS Monterey (12.4 (21F79) - Latest Version)](#create-iso-for-macos-monterey)
+- [macOS Big Sur (11.6.6 (20G624) - Latest Version)](#create-iso-for-macos-big-sur)
+- [macOS Catalina (10.15.7 (19H1922) - Latest Version)](#create-iso-for-macos-catalina)
 - [macOS Mojave (10.14.6 (18G9323) - Latest Version](#create-iso-for-macos-mojave)
 
 ## Create ISO for macOS Monterey
 
 ### Prerequisites
 
-[Install macOS Monterey.app](macappstores://apps.apple.com/app/macos-monterey/id1576738294?mt=12)
+- [Install macOS Monterey.app](macappstores://apps.apple.com/app/macos-monterey/id1576738294?mt=12)
 
 Click on the Link to Download macOS Monterey. Software Update Window will open and will start downloading macOS Monterey. Download will take time depending on your Internet Speed.
 
-When the download of macOS Monterey is finished, the Installer Window will Open. Make sure to Quit the Installer by click on Install macOS Monterey > Quit Install macOS or pressing <b><i class="fa-solid fa-command"></i> + Q</b> on your keyboard.
+When the download of macOS Monterey is finished, the Installer Window will Open. Make sure to Quit the Installer by click on Install macOS Monterey > Quit Install macOS or pressing <i class="fa-solid fa-command"></i> <b>+ Q</b> on your keyboard.
 
-Next, Open Terminal.app and copy the following command to create an Empty Disk Image. Type your macOS Account Password when prompted.
+Next, Open Terminal and copy the following command to create an Empty Disk Image. Type your macOS Account Password when prompted.
 
 ```bash
 sudo hdiutil create -o /tmp/Monterey -size 16384m -volname Monterey -layout SPUD -fs HFS+J
@@ -82,7 +84,10 @@ sudo rm -fv /tmp/Monterey.dmg
 ```
 
 :::note
+
 Running the `rm -rf` commands will do the cleanup and remove all the unnecessary files (disk image) from the `/tmp` folder. Although if you don’t do it then it will be automatically be removed after a while.
+
+:::
 
 After running all the commands properly you should end up with a macOS Monterey ISO image file on your Desktop.
 
