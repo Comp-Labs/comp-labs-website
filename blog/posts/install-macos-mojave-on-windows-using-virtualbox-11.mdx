@@ -19,17 +19,152 @@ date: 2022-06-01T18:00
 
 <!-- truncate -->
 
+## System Requirements
+
+Before we get started, make sure to read the following requirements. Please do not skip this step because it will help you to successfully install macOS Mojave on Windows using VirtualBox.
+
+- Minimum 2 GB memory (Recommended 8GB or higher)
+- Minimum 2 cores of processors (Recommended 4 cores or higher)
+- Minimum 20GB Free Hard Disk Space (Recommended 100GB or higher)
+- Your system should support Intel or AMD VT (Virtualization Technology)
+- Intel/AMD VT (Virtualization Technology) Should be enabled from BIOS setup
+
+:::note Required
+
+If you haven't already, then you should enable Virtualization Technology (Alos known as Intel VT or AMD-V).
+
+:::
+
+Furthermore, it's highly recommended that you install macOS Mojave on SSD **(Solid State Drive)** instead of HDD **(Hard Disk Drive)** because you will have a much faster performance with SSD rather than HDD.
+
 ## Prerequisites
 
-- macOS Mojave ISO File- Download
-- VirtualBox - Download (Click on Windows hosts after clicking this link.)
-- VirtualBox Extension Package- Download (Click on All supported platforms under Virtualbox x.x.xx Oracle VM VirtualBox Extension Pack
-- 4 GB RAM and 200GB Storage for the VM. Should be double the values for Windows System Example: You have to be with 8 GB RAM and Storage more than 500 GB. 4 GB RAM and 200GB Storage for macOS.
+To install macOS Mojave on Windows using VirtualBox, you must download the following files and read the step by step guide to avoid any problems. If you miss any of the steps below, then you might be unsuccessful in running macOS on your PC.
 
-## Starting with the guide...
+- Download macOS Mojave ISO
+  - [macOS Mojave 10.14.6 (18G9323) ISO Latest](//complabs.in)
+- Download VirtualBox
+  - [VirtualBox Latest Version Setup](//www.virtualbox.org/wiki/Downloads)
 
-Watch Video for Instructions.
-Video needs to be uploaded.
+## Install VirtualBox on Windows PC
+
+From the [Download Prerequisites](#prerequisites) section of this post, you should have downloaded VirtualBox and if you didn't, download VirtualBox and install it on your Windows PC. If you've already installed VirtualBox, then you can skip this step. Otherwise, follow the steps below.
+
+1. Open the downloaded VirtualBox setup file.
+2. On the Welcome Wizard page, click Next.
+3. Keep the default settings on the Custom Setup page and click Next.
+4. Again Click Next to accept the default options unless you want to change something.
+5. On the Warning Network interface page, just click Yes to process with VirtualBox Installation.
+6. Click the Install button to install VirtualBox. Again click Yes if required.
+7. While installing VirtualBox, you might a security warning about "Oracle Corporation". You need to click Install on this page to proceed with the installation. If you click Don't install, the installation process will be terminate here and you can't go ahead. If you see the security warning again, click the Install button.
+8. Finally, Click Finish.
+
+![11-1](/img/blog/11-1.png)
+![11-2](/img/blog/11-2.png)
+![11-3](/img/blog/11-3.png)
+
+## Install & Update VirtualBox Extension (Optional)
+
+This step is not 100% necessary but it's highly recommended to do this step because macOS Mojave might not function properly on VirtualBox. For this reason, it might cause problems during the installation. Go to the VirtualBox download page. Under `VirtualBox x.x.xx Oracle VM VirtualBox Extension Pack` section, click on `All supported platforms` to download the latest version of VirtualBox Extension Pack.
+
+![11-4](/img/blog/11-4.png)
+
+Once you've downloaded the Extension pack. Now, Follow the steps below to update the VirtualBox Extension Pack.
+
+1. Open up VirtualBox. Click on `Preferences`. Select `Extensions` on the sidebar.
+2. Click on **Plus** (+) icon and select the **VirtualBox extension file** which you've downloaded at the beginning of this section (`Oracle_VM_VirtualBox_Extension_Pack-6.1.34.vbox-extpack`). Click **Install** or **Upgrade** and then **Agree** to the terms and conditions. Click the **OK** button.
+
+Finally, you should see something like the screenshot below.
+
+![11-5](/img/blog/11-5.png)
+![11-6](/img/blog/11-6.png)
+![11-7](/img/blog/11-7.png)
+
+## Create a New Virtual Machine for macOS Mojave
+
+Creating a virtual machine for macOS Mojave is kind of the same as you create a virtual machine for the Windows or Linux Operating System but with some minor changes. In this post, I'll outline those changes. Follow the steps below to create a new virtual machine for macOS Mojave using the ISO file.
+
+1. Open up VirtualBox and Click on **New**.
+2. Click Expert Mode and select the following options then click Create.
+  1. Name: Type a suitable Virtual Machine Name.
+  2. Machine Name: Type the Virtual Machine Location as per your wish (a separate drive is recommended).
+  3. Type: Mac OS X.
+  4. Version: Mac OS X (64-bit).
+  5. Memory size: 4096 MB (4 GB) (recommended 8192 MB (8 GB) or higher).
+  6. Hard Disk: Create a virtual hard disk now.
+  7. On the create virtual hard disk window, choose the following options.
+    1. File Location: The default location should be fine unless you want to change to a new location.
+    2. File Size: You can specify the disk size here.
+    3. Hard disk file type: VHD (Virtual Hard Disk) format.
+    4. Storage on physical hard disk: Select the Dynamically allocated option. However, if you want to have a better performance disk then choose a fixed disk. Fixed disk, will allocate the specified size from your host machine immediately. Read more about the [dynamic vs fixed-size disk](https://www.vembu.com/blog/hyper-v-disk-types-fixed-size-dynamically-expanding-and-differencing-disks/).
+
+![11-8](/img/blog/11-8.png)
+![11-9](/img/blog/11-9.png)
+
+## Edit the New Virtual Machine
+
+It's time to edit the new virtual machine to make it work. Select the Name of the Virtual Machine and click on Settings. Now, make the following changes to the macOS Mojave Virtual Machine.
+
+1. Under System > Motherboard, increase the Base Memory to 8192 MB. However, you can use a bit lower memory if your system doesn't have this much RAM.
+2. Uncheck Floppy from the Boot Order section.
+3. Under the Processor tab, increase the processors to 4 or higher.
+
+![11-10](/img/blog/11-10.png)
+![11-11](/img/blog/11-11.png)
+
+4. On the Display window, increase the Video Memory to 128MB.
+
+![11-12](/img/blog/11-12.png)
+
+5. From the Storage section, click on Empty > DVD icon. Click on Choose a disk file. You should select the macOS Mojave ISO image which you've downloaded from the "Download Prerequisites" section of this post. Finally, click OK to close the macOS Mojave Settings window.
+
+![11-13](/img/blog/11-13.png)
+![11-14](/img/blog/11-14.png)
+
+## Execute the VirtualBox Code by Command Prompt
+
+Once you've created and customized your virtual machine, it's time to run some codes in order to install macOS Mojave on VirtualBox. First, you should note your virtual machine name which you typed because later on, we will use it.
+
+:::note
+
+Before you execute the code by command prompt, you should read the following steps.
+
+:::
+
+**Code: (Copy this code to Notepad)**
+
+```
+cd "C:\Program Files\Oracle\VirtualBox\"
+VBoxManage.exe modifyvm "VM Name" --cpuidset 00000001 000106e5 00100800 0098e3fd bfebfbff
+VBoxManage setextradata "VM Name" "VBoxInternal/Devices/efi/0/Config/DmiSystemProduct" "iMac19,1"
+VBoxManage setextradata "VM Name" "VBoxInternal/Devices/efi/0/Config/DmiSystemVersion" "1.0"
+VBoxManage setextradata "VM Name" "VBoxInternal/Devices/efi/0/Config/DmiBoardProduct" "Mac-AA95B1DDAB278B95"
+VBoxManage setextradata "VM Name" "VBoxInternal/Devices/smc/0/Config/DeviceKey" "ourhardworkbythesewordsguardedpleasedontsteal(c)AppleComputerInc"
+VBoxManage setextradata "VM Name" "VBoxInternal/Devices/smc/0/Config/GetKeyFromRealSMC" 1
+```
+
+1. When you opened the Code via Notepad, use the replace function of the program to replace the "VM Name" with your virtual machine name. See the picture below to get an idea of how to do it.
+
+![11-15](/img/blog/11-15.png)
+
+2. Now, you have two choices. First, if you want to fix your macOS Mojave screen resolution in the first place. You should also execute the following code. You have to change "VM Name" with your virtual machine name and HxV with a screen resolution such as "1920×1080". For more supported screen resolution on VirtualBox and detailed guide, visit fix macOS Catalina screen resolution on VirtualBox.
+
+```
+VBoxManage setextradata "VM Name" VBoxInternal2/EfiGraphicsResolution HxV
+```
+
+:::note Important Note
+
+I highly recommend to quit the VirtualBox program before executing the code. If you don’t do it, your virtual machine might not proceed to the installation step. To quit, simply open VirtualBox, then press Ctrl + Q. It will close automatically.
+
+:::
+
+![11-16](/img/blog/11-16.png)
+
+3. Once you replaced the "**VM Name**" with your virtual machine name, then run the code one by one via command prompt (CMD). You can open the command prompt by pressing the <i class="fa-brands fa-microsoft"></i> + X key in Windows 10/11 and select Command Prompt from the list. Or simply press Windows key and type CMD. Click Run As Administrator and click Yes.
+
+
+---
 
 **Subscribe to our Channel Below:**
 
