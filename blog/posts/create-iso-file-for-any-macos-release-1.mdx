@@ -21,18 +21,18 @@ date: 2022-06-01T18:00
 
 > What is it needed for?
 >
-> > macOS ISO is required for Installing macOS as an [Virtual Machine](https://en.wikipedia.org/wiki/Virtual_machine) on Windows. We have already created a step by step guide on how to [install macOS on VirtualBox](/search?q=Install+macOS). You can refer to that after reading this guide.
+> > macOS ISO is required for Installing macOS as an [Virtual Machine](https://en.wikipedia.org/wiki/Virtual_machine) on Windows. We have already created a step by step guide on how to [install macOS on VirtualBox](/search?q=Install+macOS).
 
 <!-- truncate -->
 
 :::caution Important!
 
-- **macOS Mojave and Releases Older than this have been marked as deprecated by Apple, no longer supported, and no longer receiving updates. Our Recommendation is to use the latest release of macOS. However, If you want, macOS Mojave Guide is provided.**
+- **macOS Mojave and older Releases have been marked as deprecated by Apple, no longer supported, and no longer receiving updates. Our Recommendation is to use the latest release of macOS. However, If you want, macOS Mojave Guide is provided.**
 - **You need to be on a Real Mac (Also Known as Macintosh) or have macOS installed as VM. If you don’t have a Real Mac, then I recommend to use the following guide and Install macOS [Monterey](/blog/posts/install-macos-monterey-on-windows-using-virtualbox) / [Big Sur](/blog/posts/install-macos-big-sur-on-windows-using-virtualbox) / [Catalina](/blog/posts/install-macos-catalina-on-windows-using-virtualbox) on Windows using VirtualBox. You can choose either to install macOS Monterey, Big Sur or Catalina.**
 
 :::
 
-Below are the options for creating an ISO File. Select the macOS release name you want to install and you'll be guided for the rest of the process.
+**Below are the options for creating an ISO File. Select the macOS release you want to install and you'll be guided for the rest of the process.**
 
 **(Sorted from Newest to Oldest Release)**
 
@@ -49,9 +49,9 @@ Below are the options for creating an ISO File. Select the macOS release name yo
 
 Click on the Link to Download macOS Monterey. Software Update Window will open and will start downloading macOS Monterey. Download will take time depending on your Internet Speed.
 
-When the download of macOS Monterey is finished, the Installer Window will Open. Make sure to Quit the Installer by click on Install macOS Monterey > Quit Install macOS or pressing Command + Q on your keyboard.
+When the download of macOS Monterey is finished, the Installer Window will Open. Make sure to Quit the Installer by click on `Install macOS Monterey` > `Quit Install macOS` or pressing `Command + Q` on your keyboard.
 
-Next, Open Terminal and copy the following command to create an Empty Disk Image. Type your macOS Account Password when prompted.
+Next, Open Terminal <i class="fa-solid fa-terminal"></i> and copy the following command to create an Empty Disk Image. Type your macOS Account Password when prompted.
 
 ```bash
 sudo hdiutil create -o /tmp/Monterey -size 16384m -volname Monterey -layout SPUD -fs HFS+J
