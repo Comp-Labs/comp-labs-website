@@ -39,14 +39,14 @@
   --site-color-checkbox-checked-bg: hsl(167deg 56% 73% / 25%);
 }
 
-@font-face {
+/* @font-face {
   font-family: websiteFont;
   src: url(/fonts/font.otf);
 }
 
 * {
   font-family: websiteFont;
-}
+} */
 
 ::-webkit-scrollbar{width:16px;height:16px}
 ::-webkit-scrollbar-track{border-radius:100vh;background:#edf2f7}
