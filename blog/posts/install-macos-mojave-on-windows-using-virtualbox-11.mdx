@@ -13,7 +13,14 @@ date: 2022-06-01T18:00
 
 # How to install macOS Mojave 10.14 in Oracle VM VirtualBox (Windows)
 
-![Image](/img/blog/11.jpg)
+<figure>
+  <center>
+    <img src="/img/blog/11.jpg"></img>
+  </center>
+  <figcaption>
+    <center>Image by Author</center>
+  </figcaption>
+</figure>
 
 **Today we'll guide you how to install macOS Mojave 10.14 in Oracle VM VirtualBox (Windows)**
 
@@ -59,9 +66,37 @@ From the [Download Prerequisites](#prerequisites) section of this post, you shou
 7. While installing VirtualBox, you might a security warning about "Oracle Corporation". You need to click Install on this page to proceed with the installation. If you click Don't install, the installation process will be terminate here and you can't go ahead. If you see the security warning again, click the Install button.
 8. Finally, Click Finish.
 
-![11-1](/img/blog/11-1.png)
-![11-2](/img/blog/11-2.png)
-![11-3](/img/blog/11-3.png)
+<figure>
+  <center>
+    <img src="//complabs.in/img/favicon.ico"></img>
+  </center>
+  <figcaption>
+    <center>
+      <p>VirtualBox Setup Welcome Wizard<p>
+    </center>
+  </figcaption>
+</figure>
+<figure>
+  <center>
+    <img src="//complabs.in/img/favicon.ico"></img>
+  </center>
+  <figcaption>
+    <center>
+      <p>Windows Security<p>
+    </center>
+  </figcaption>
+</figure>
+<figure>
+  <center>
+    <img src="//complabs.in/img/favicon.ico"></img>
+  </center>
+  <figcaption>
+    <center>
+      <p>VirtualBox Setup Completed</p>
+    </center>
+  </figcaption>
+</figure>
+![11-1](/img/blog/11-1.png) ![11-2](/img/blog/11-2.png) ![11-3](/img/blog/11-3.png)
 
 ## Install & Update VirtualBox Extension (Optional)
 
@@ -86,17 +121,17 @@ Creating a virtual machine for macOS Mojave is kind of the same as you create a 
 
 1. Open up VirtualBox and Click on **New**.
 2. Click Expert Mode and select the following options then click Create.
-  1. Name: Type a suitable Virtual Machine Name.
-  2. Machine Name: Type the Virtual Machine Location as per your wish (a separate drive is recommended).
-  3. Type: Mac OS X.
-  4. Version: Mac OS X (64-bit).
-  5. Memory size: 4096 MB (4 GB) (recommended 8192 MB (8 GB) or higher).
-  6. Hard Disk: Create a virtual hard disk now.
-  7. On the create virtual hard disk window, choose the following options.
-    1. File Location: The default location should be fine unless you want to change to a new location.
-    2. File Size: You can specify the disk size here.
-    3. Hard disk file type: VHD (Virtual Hard Disk) format.
-    4. Storage on physical hard disk: Select the Dynamically allocated option. However, if you want to have a better performance disk then choose a fixed disk. Fixed disk, will allocate the specified size from your host machine immediately. Read more about the [dynamic vs fixed-size disk](https://www.vembu.com/blog/hyper-v-disk-types-fixed-size-dynamically-expanding-and-differencing-disks/).
+3. Name: Type a suitable Virtual Machine Name.
+4. Machine Name: Type the Virtual Machine Location as per your wish (a separate drive is recommended).
+5. Type: Mac OS X.
+6. Version: Mac OS X (64-bit).
+7. Memory size: 4096 MB (4 GB) (recommended 8192 MB (8 GB) or higher).
+8. Hard Disk: Create a virtual hard disk now.
+9. On the create virtual hard disk window, choose the following options.
+10. File Location: The default location should be fine unless you want to change to a new location.
+11. File Size: You can specify the disk size here.
+12. Hard disk file type: VHD (Virtual Hard Disk) format.
+13. Storage on physical hard disk: Select the Dynamically allocated option. However, if you want to have a better performance disk then choose a fixed disk. Fixed disk, will allocate the specified size from your host machine immediately. Read more about the [dynamic vs fixed-size disk](https://www.vembu.com/blog/hyper-v-disk-types-fixed-size-dynamically-expanding-and-differencing-disks/).
 
 ![11-8](/img/blog/11-8.png)
 ![11-9](/img/blog/11-9.png)
@@ -133,7 +168,7 @@ Before you execute the code by command prompt, you should read the following ste
 
 **Code: (Copy this code to Notepad)**
 
-```
+```title="VirtualBox Code"
 cd "C:\Program Files\Oracle\VirtualBox\"
 VBoxManage.exe modifyvm "VM Name" --cpuidset 00000001 000106e5 00100800 0098e3fd bfebfbff
 VBoxManage setextradata "VM Name" "VBoxInternal/Devices/efi/0/Config/DmiSystemProduct" "iMac19,1"
@@ -162,7 +197,6 @@ I highly recommend to quit the VirtualBox program before executing the code. If 
 ![11-16](/img/blog/11-16.png)
 
 3. Once you replaced the "**VM Name**" with your virtual machine name, then run the code one by one via command prompt (CMD). You can open the command prompt by pressing the <i class="fa-brands fa-microsoft"></i> + X key in Windows 10/11 and select Command Prompt from the list. Or simply press Windows key and type CMD. Click Run As Administrator and click Yes.
-
 
 ---
 
