@@ -3,7 +3,7 @@ title: Install macOS Mojave on Windows using VirtualBox
 authors:
   - comp-labs
   - rudra-sen
-tags: ["Install", "macOS Mojave", "VirtualBox", "Windows"]
+tags: ["Install macOS Mojave", "VirtualBox", "Windows"]
 description: This is my first post on Docusaurus 2.
 image: "/img/blog/11.jpg"
 hide_table_of_contents: false
@@ -127,12 +127,12 @@ Creating a virtual machine for macOS Mojave is kind of the same as you create a 
 13. Storage on physical hard disk: Select the Dynamically allocated option. However, if you want to have a better performance disk then choose a fixed disk. Fixed disk, will allocate the specified size from your host machine immediately. Read more about the [dynamic vs fixed-size disk](https://www.vembu.com/blog/hyper-v-disk-types-fixed-size-dynamically-expanding-and-differencing-disks/).
 
 <figure>
-<img src="/img/blog/11-8.png"></img>
+<img src="/img/blog/11-8.jpg"></img>
 <figcaption align="center">Create macOS Mojave New VM</figcaption>
 </figure>
 
 <figure>
-<img src="/img/blog/11-9.png"></img>
+<img src="/img/blog/11-9.jpg"></img>
 <figcaption align="center">Create macOS Mojave VHD Disk</figcaption>
 </figure>
 
@@ -142,34 +142,34 @@ It's time to edit the new virtual machine to make it work. Select the Name of th
 
 1. Under System > Motherboard, increase the Base Memory to 8192 MB. However, you can use a bit lower memory if your system doesn't have this much RAM.
 2. Uncheck Floppy from the Boot Order section.
-3. Under the Processor tab, increase the processors to 4 or higher.
+3. Under the Processor tab, increase the processors to 4 or higher. If you do not have much, you can set it to 2.
 
 <figure>
-<img src="/img/blog/11-10.png"></img>
+<img src="/img/blog/11-10.jpg"></img>
 <figcaption align="center">macOS Mojave Boot Order</figcaption>
 </figure>
 
 <figure>
-<img src="/img/blog/11-11.png"></img>
+<img src="/img/blog/11-11.jpg"></img>
 <figcaption align="center">Increase macOS Mojave Processor</figcaption>
 </figure>
 
 4. On the Display window, increase the Video Memory to 128MB.
 
 <figure>
-<img src="/img/blog/11-12.png"></img>
+<img src="/img/blog/11-12.jpg"></img>
 <figcaption align="center">Increase macOS Mojave Video Memory</figcaption>
 </figure>
 
 5. From the Storage section, click on Empty > DVD icon. Click on Choose a disk file. You should select the macOS Mojave ISO image which you've downloaded from the [Prerequisites](#prerequisites) section of this post. Finally, click OK to close the macOS Mojave Settings window.
 
 <figure>
-<img src="/img/blog/11-13.png"></img>
+<img src="/img/blog/11-13.jpg"></img>
 <figcaption align="center">Browse macOS Mojave ISO Image</figcaption>
 </figure>
 
 <figure>
-<img src="/img/blog/11-14.png"></img>
+<img src="/img/blog/11-14.jpg"></img>
 <figcaption align="center">Browsed macOS Mojave ISO Image</figcaption>
 </figure>
 
@@ -198,7 +198,7 @@ VBoxManage setextradata "VM Name" "VBoxInternal/Devices/smc/0/Config/GetKeyFromR
 1. When you opened the Code via Notepad, use the replace function of the program to replace the "VM Name" with your virtual machine name. See the picture below to get an idea of how to do it.
 
 <figure>
-<img src="/img/blog/11-15.png"></img>
+<img src="/img/blog/11-15.jpg"></img>
 <figcaption align="center">Replace macOS Mojave VM Name</figcaption>
 </figure>
 
@@ -210,16 +210,101 @@ VBoxManage setextradata "VM Name" VBoxInternal2/EfiGraphicsResolution HxV
 
 :::note Important Note
 
-I highly recommend to quit the VirtualBox program before executing the code. If you don’t do it, your virtual machine might not proceed to the installation step. To quit, simply open VirtualBox, then press Ctrl + Q. It will close automatically.
+I highly recommend to quit the VirtualBox program before executing the code. If you don't do it, your virtual machine might not proceed to the installation step. To quit, simply open VirtualBox, then press Ctrl + Q. It will close automatically.
 
 :::
 
 <figure>
-<img src="/img/blog/11-16.png"></img>
+<img src="/img/blog/11-16.jpg"></img>
 <figcaption align="center">Exit VirtualBox</figcaption>
 </figure>
 
 3. Once you replaced the "**VM Name**" with your virtual machine name, then run the code one by one via command prompt (CMD). You can open the command prompt by pressing the <i class="fa-brands fa-microsoft"></i> + X key in Windows 10/11 and select Command Prompt from the list. Or simply press Windows key and type CMD. Click Run As Administrator and click Yes.
+
+<figure>
+<img src="/img/blog/11-17.jpg"></img>
+<figcaption align="center">Execute macOS Mojave VirtualBox Code</figcaption>
+</figure>
+
+4. Now, that you've executed the macOS Mojave VirtualBox code. Open the VirtualBox app then click the **Start** button to power on the VM. A black screen with a lot of white text will appear on the screen. Just wait for a few minutes and the macOS Mojave installation will start.
+
+<!-- 11-18 -->
+
+## Create macOS Mojave Bootable Disk
+
+Once you start your VM, a whole bunch of code will run on the screen, but you should not be worried about it. Wait for a few minutes, and you should see the macOS Mojave Language window.
+
+1. Select your **Language** and click **Continue** arrow.
+
+<!-- 11-19 -->
+
+2. Now, you'll see **macOS Utilities** Window. From the list, select **Disk Utility** and click **Continue**.
+
+<!-- 11-20 -->
+
+3. Select your main **VHD Disk** and click the **Erase** button. Choose the following options and again click **Erase**.
+  - **Name:** `macOS System` (You can type any name you want)
+  - **Format:** `APFS` (If you get an error, select Mac OS X Extended Journaled)
+  - **Scheme:** `GUID Partition Map`
+
+<!-- 11-21 -->
+
+4. Now, **Quit** the **Disk Utility** window.
+
+<!-- 11-22 -->
+
+5. From macOS Utilities, select **Install macOS** and click **Continue**.
+
+<!-- 11-23 -->
+
+6. Click **Continue** on Install macOS Mojave screen.
+
+<!-- 11-24 -->
+
+7. **Agree** to the macOS Mojave License agreement.
+8. Select **macOS System** (Or your Disk Name) and click **Install**.
+
+<!-- 11-25 -->
+<!-- 11-26 -->
+
+9. Now, wait for 3-7 minutes and your VM will restart. macOS Mojave will be installed on your Disk. Next, you should not do anything. You'll see another 15-29 minutes (or even 1 hour) installation window. Be patient till the macOS Mojave gets installed.
+
+<!-- 11-27 -->
+<!-- 11-28 -->
+
+## Perform a Clean Installation of macOS Mojave
+
+Once you've passed step [Create macOS Mojave Bootable Disk](#create-macos-mojave-bootable-disk), you'll see the macOS Mojave Welcome window. Select the following options. You can change most of the settings later on, so don't worry about it for now.
+
+1. Select your **Country** and click **Continue**.
+
+<!-- 11-29 -->
+
+2. Choose a **Keyboard** Layout and click **Continue**.
+3. On the "Data & Privacy" window, click **Continue**.
+4. Select **Don't transfer any information now** and click **Continue**.
+5. Click on **Set Up Later** then **Don't Sign In**. Click **Skip**. You can add your Apple ID later.
+6. Click **Agree** to the **Terms and Conditions** and click **Continue**.
+7. Fill out the **Full name, Account name, Password**, and **Hint** then click **Continue**.
+
+<!-- 11-30 -->
+
+8. If you want to customize **Express Set Up**, you can click on Customize Settings otherwise click on **Continue**.
+9. Dark mode feature is added newly to macOS Mojave 10.14 so you can select **Light** or **Dark** mode then click **Continue**.
+
+<!-- 11-31 -->
+
+10. Wait a little while to Setting Up Your Mac. Then you should end up on the desktop of macOS Mojave.
+
+<!-- 11-32 -->
+
+## Conclusion
+
+Finally, you should see the macOS Mojave Wallpaper, and it successfully installs on VirtualBox.
+
+If you have any kinds of questions, suggestions or inquiries on how to install macOS Mojave on Windows using VirtualBox, please feel free to contact us by [email](mailto:complabs28@gmail.com) or by our [contact page](https://forms.gle/dQmrNAZZ1KK81rAP7). We will answer your every question and get your suggestion for our future works. Thanks for being with us.
+
+YouTube Video will be uploaded after some time.
 
 ---
 
