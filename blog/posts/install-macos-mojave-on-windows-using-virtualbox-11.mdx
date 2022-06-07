@@ -8,17 +8,17 @@ description: This is my first post on Docusaurus 2.
 image: "/img/blog/11.jpg"
 hide_table_of_contents: false
 slug: posts/install-macos-mojave-on-windows-using-virtualbox
-date: 2022-06-01T18:00
+date: 2022-06-07T18:00
 ---
 
 # How to install macOS Mojave 10.14 in Oracle VM VirtualBox (Windows)
 
 <figure>
 <img src="/img/blog/11.jpg"></img>
-<figcaption align = "center"><b>Image by Author</b></figcaption>
+<figcaption align = "center">Image by Author</figcaption>
 </figure>
 
-**Today we'll guide you how to install macOS Mojave 10.14 in Oracle VM VirtualBox (Windows)**
+**Today we'll guide you on installing macOS Mojave 10.14 on Windows using VirtualBox**
 
 <!-- truncate -->
 
@@ -34,7 +34,7 @@ Before we get started, make sure to read the following requirements. Please do n
 
 :::note Required
 
-If you haven't already, then you should enable Virtualization Technology (Alos known as Intel VT or AMD-V).
+If you haven't already, then you should enable Virtualization Technology (Also known as Intel VT or AMD-V).
 
 :::
 
@@ -46,6 +46,7 @@ To install macOS Mojave on Windows using VirtualBox, you must download the follo
 
 - Download macOS Mojave ISO
   - [macOS Mojave 10.14.6 (18G9323) ISO Latest](//complabs.in)
+  - [Create macOS Mojave ISO Image](/blog/posts/create-iso-file-for-any-macos-release#create-iso-for-macos-mojave)
 - Download VirtualBox
   - [VirtualBox Latest Version Setup](//www.virtualbox.org/wiki/Downloads)
 
@@ -228,7 +229,10 @@ I highly recommend to quit the VirtualBox program before executing the code. If 
 
 4. Now, that you've executed the macOS Mojave VirtualBox code. Open the VirtualBox app then click the **Start** button to power on the VM. A black screen with a lot of white text will appear on the screen. Just wait for a few minutes and the macOS Mojave installation will start.
 
-<!-- 11-18 -->
+<figure>
+<img src="/img/blog/11-18.jpg"></img>
+<figcaption align="center">macOS Mojave Installation</figcaption>
+</figure>
 
 ## Create macOS Mojave Bootable Disk
 
@@ -236,41 +240,73 @@ Once you start your VM, a whole bunch of code will run on the screen, but you sh
 
 1. Select your **Language** and click **Continue** arrow.
 
-<!-- 11-19 -->
+<figure>
+<img src="/img/blog/11-19.jpg"></img>
+<figcaption align="center">Select macOS Mojave Language</figcaption>
+</figure>
 
 2. Now, you'll see **macOS Utilities** Window. From the list, select **Disk Utility** and click **Continue**.
 
-<!-- 11-20 -->
+<figure>
+<img src="/img/blog/11-20.jpg"></img>
+<figcaption align="center">Select Disk Utility</figcaption>
+</figure>
 
 3. Select your main **VHD Disk** and click the **Erase** button. Choose the following options and again click **Erase**.
   - **Name:** `macOS System` (You can type any name you want)
   - **Format:** `APFS` (If you get an error, select Mac OS X Extended Journaled)
   - **Scheme:** `GUID Partition Map`
 
-<!-- 11-21 -->
+<figure>
+<img src="/img/blog/11-21.jpg"></img>
+<figcaption align="center">Erase VirtualBox Hard Disk</figcaption>
+</figure>
 
 4. Now, **Quit** the **Disk Utility** window.
 
-<!-- 11-22 -->
+<figure>
+<img src="/img/blog/11-22.jpg"></img>
+<figcaption align="center">Quit Disk Utility</figcaption>
+</figure>
 
 5. From macOS Utilities, select **Install macOS** and click **Continue**.
 
-<!-- 11-23 -->
+<figure>
+<img src="/img/blog/11-23.jpg"></img>
+<figcaption align="center">Select Install macOS Mojave</figcaption>
+</figure>
 
 6. Click **Continue** on Install macOS Mojave screen.
 
-<!-- 11-24 -->
+<figure>
+<img src="/img/blog/11-24.jpg"></img>
+<figcaption align="center">Install macOS Mojave</figcaption>
+</figure>
 
 7. **Agree** to the macOS Mojave License agreement.
 8. Select **macOS System** (Or your Disk Name) and click **Install**.
 
-<!-- 11-25 -->
-<!-- 11-26 -->
+<figure>
+<img src="/img/blog/11-25.jpg"></img>
+<figcaption align="center">Agree to the macOS Mojave License agreement</figcaption>
+</figure>
+
+<figure>
+<img src="/img/blog/11-26.jpg"></img>
+<figcaption align="center">Install macOS Mojave on Formatted Disk</figcaption>
+</figure>
 
 9. Now, wait for 3-7 minutes and your VM will restart. macOS Mojave will be installed on your Disk. Next, you should not do anything. You'll see another 15-29 minutes (or even 1 hour) installation window. Be patient till the macOS Mojave gets installed.
 
-<!-- 11-27 -->
-<!-- 11-28 -->
+<figure>
+<img src="/img/blog/11-27.jpg"></img>
+<figcaption align="center">Installing macOS Mojave on Disk</figcaption>
+</figure>
+
+<figure>
+<img src="/img/blog/11-28.jpg"></img>
+<figcaption align="center">Install macOS while Reboot</figcaption>
+</figure>
 
 ## Perform a Clean Installation of macOS Mojave
 
@@ -278,7 +314,10 @@ Once you've passed step [Create macOS Mojave Bootable Disk](#create-macos-mojave
 
 1. Select your **Country** and click **Continue**.
 
-<!-- 11-29 -->
+<figure>
+<img src="/img/blog/11-29.jpg"></img>
+<figcaption align="center">Select your Country</figcaption>
+</figure>
 
 2. Choose a **Keyboard** Layout and click **Continue**.
 3. On the "Data & Privacy" window, click **Continue**.
@@ -287,16 +326,25 @@ Once you've passed step [Create macOS Mojave Bootable Disk](#create-macos-mojave
 6. Click **Agree** to the **Terms and Conditions** and click **Continue**.
 7. Fill out the **Full name, Account name, Password**, and **Hint** then click **Continue**.
 
-<!-- 11-30 -->
+<figure>
+<img src="/img/blog/11-30.jpg"></img>
+<figcaption align="center">Create macOS Mojave Computer Account</figcaption>
+</figure>
 
 8. If you want to customize **Express Set Up**, you can click on Customize Settings otherwise click on **Continue**.
 9. Dark mode feature is added newly to macOS Mojave 10.14 so you can select **Light** or **Dark** mode then click **Continue**.
 
-<!-- 11-31 -->
+<figure>
+<img src="/img/blog/11-31.jpg"></img>
+<figcaption align="center">Choose macOS Mojave Look</figcaption>
+</figure>
 
 10. Wait a little while to Setting Up Your Mac. Then you should end up on the desktop of macOS Mojave.
 
-<!-- 11-32 -->
+<figure>
+<img src="/img/blog/11-32.jpg"></img>
+<figcaption align="center">macOS Mojave Installation Successful</figcaption>
+</figure>
 
 ## Conclusion
 

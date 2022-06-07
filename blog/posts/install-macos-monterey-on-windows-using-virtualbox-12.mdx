@@ -8,28 +8,155 @@ description: This is my first post on Docusaurus 2.
 image: "/img/blog/12.jpg"
 hide_table_of_contents: false
 slug: posts/install-macos-monterey-on-windows-using-virtualbox
-date: 2022-06-01T18:00
+date: 2022-06-07T18:00
 ---
 
 # How to Install macOS Montrey 12.4 in Oracle VM VirtualBox (Windows)
 
-![Image](/img/blog/12.jpg)
+<figure>
+<img src="/img/blog/12.jpg"></img>
+<figcaption align="center">Image by Author</figcaption>
+</figure>
 
-**Today we'll guide you how to install macOS Big Sur 11.5 in Oracle VM VirtualBox (Windows)**
+**Today we'll guide you on installing macOS Monterey 12.4 on Windows using VirtualBox**
 
 <!-- truncate -->
 
 ## Prerequisites
 
-- macOS Big Sur ISO File- Download
-- VirtualBox - Download (Click on Windows hosts after clicking this link.)
-- VirtualBox Extension Package- Download (Click on All supported platforms under Virtualbox x.x.xx Oracle VM VirtualBox Extension Pack
-- 4 GB RAM and 200GB Storage for the VM. Should be double the values for Windows System Example: You have to be with 8 GB RAM and Storage more than 500 GB. 4 GB RAM and 200GB Storage for macOS.
+There are some files and software that you have to download before installing macOS Monterey as a virtual machine. So, the first step is to download VirtualBox which is an open-source virtualization software and the other thing is that you have to download the VirtualBox codes to configure the VM. Finally, you’ll have to download the macOS Monterey ISO image, you can get all of them from the below links.
 
-## Starting with the guide...
+- [Download VirtualBox](https://download.virtualbox.org/virtualbox/6.1.30/VirtualBox-6.1.30-148432-Win.exe)
+- [Download VirtualBox Extension Pack](https://download.virtualbox.org/virtualbox/6.1.30/Oracle_VM_VirtualBox_Extension_Pack-6.1.30.vbox-extpack)
+- [VirtualBox Configuration Code](//complabs.in)
+- [Download macOS Monterey ISO Image](//complabs.in)
+- [Create macOS Monterey ISO Image](/blog/posts/create-iso-file-for-any-macos-release#create-iso-for-macos-monterey) (Optional)
 
-Watch Video for Instructions.
-Video needs to be uploaded.
+## Install VirtualBox
+
+Next is to Install VirtualBox. Double-click on the installation file, click next, next, and next finally install it on your PC. To be exactly sure, the installation process is not very hard, in any let me know if you are stuck at some place, I would be happy to help you.
+
+After installing VirtualBox on your PC, double-click on the VirtualBox extension pack file and choose install. Or open VirtualBox, go to preferences, go to the extensions button on the sidebar and click on the plus icon and locate the VirtualBox extension pack file, and then simply install it.
+
+<figure>
+<img src="/img/blog/12-1.jpg"></img>
+<img src="/img/blog/12-2.jpg"></img>
+<figcaption align="center">Install VirtualBox Extension Pack</figcaption>
+</figure>
+
+## Create Virtual Machine
+
+### Enable Expert Mode
+
+Now to begin the real process of installing macOS Monterey on your Windows PC, you have to create a new virtual machine. On the VirtualBox app, click on new, and then click on expert mode.
+
+<figure>
+<img src="/img/blog/12-3.jpg"></img>
+<img src="/img/blog/12-4.jpg"></img>
+<figcaption align="center">Enable Expert Mode</figcaption>
+</figure>
+
+## Configure Virtual Machine
+
+It is time to specify a name for the virtual machine as you like and choose the guest operating system's type as `Mac OS X` and version as `Mac OS X (64-bit). And don't forget the amount of RAM that you have to put there, at least 4GB will be fine (will be slower than expected, Recommended 8GB+), and finally choose to create a virtual hard disk now and click on create.
+
+<figure>
+<img src="/img/blog/12-5.jpg"></img>
+<figcaption align="center">Insert VM Details</figcaption>
+</figure>
+
+Specify the amount of storage that you want in your macOS Monterey VM. I'll go with 100 GB, choose VMDK, and leave the rest of the settings by default as they are.
+
+<figure>
+<img src="/img/blog/12-6.jpg"></img>
+<figcaption align="center">Configure Storage</figcaption>
+</figure>
+
+## Configure Virtual Machine Settings
+
+To be exactly clear, there are some settings that must be applied to the virtual machine specifically for macOS. And besides these, we'll have to add the macOS Monterey ISO image to our virtual machine. To attach it, on the home page, click on your VM, then click on Settings. Then go to the storage, click on Empty, then click on the Blue CD icon on the right hand side and locate the macOS Monterey ISO image that you downloaded from the [Prerequisites](#prerequisites) Section.
+
+<figure>
+<img src="/img/blog/12-7.jpg"></img>
+<img src="/img/blog/12-8.jpg"></img>
+<img src="/img/blog/12-9.jpg"></img>
+<figcaption align="center">Add macOS Monterey ISO Image</figcaption>
+</figure>
+
+We also need to disable Floppy Disk from the boot order. To disable it, click on System on the sidebar, and then uncheck the box with Floppy Disk.
+
+<figure>
+<img src="/img/blog/12-10.jpg"></img>
+<figcaption align="center">Uncheck Floppy Disk</figcaption>
+</figure>
+
+Next, we need to increase the number of processors. Under System Tab, Click on Processor tab above, go there and increase it to at least 2 processors.
+
+<figure>
+<img src="/img/blog/12-11.jpg"></img>
+<figcaption align="center">Increase Processor Cores</figcaption>
+</figure>
+
+We also need to increase the video memory for our VM. To increase it, go to the Display tab and take it all the way up to the last which is 128 MB.
+
+<figure>
+<img src="/img/blog/12-12.jpg"></img>
+<figcaption align="center">Increase Video Memory</figcaption>
+</figure>
+
+Also, select USB 3.0 from the USB tab in the sidebar.
+
+<figure>
+<img src="/img/blog/12-13.jpg"></img>
+<figcaption align="center">Enable USB 3.0</figcaption>
+</figure>
+
+Once you are done with configuring all of these settings for your virtual machine, there is another setting that must be done from the Command Prompt as Administrator. So, click on File on the top-left corner of VirtualBox and then click on Exit. Then open the VirtualBox Configuration Code that you downloaded (Open with Windows Notepad). Now replace "VM Name" with the name of the virtual machine that you inserted while creating your VM. Mine is "macOS Monterey" so I'll replace "VM Name" with "macOS Monterey".
+
+:::tip How to use Replace Function in Windows Notepad
+
+First, Open **Notepad**. Then Go to `Edit` > `Replace` or press **Ctrl + H**. Replace popup will appear and you can replace the text with the text you want.
+
+![Replace Function in Notepad](/img/blog/Replace-Function-Notepad.jpg)
+
+:::
+
+<figure>
+<img src="/img/blog/12-14.jpg"></img>
+<figcaption align="center">Modifying the VM name in the Notepad</figcaption>
+</figure>
+
+Now, launch Command Prompt/Terminal with Administrator Privileges.
+
+<figure>
+<img src="/img/blog/12-15.jpg"></img>
+<figcaption align="center">Run Command Prompt as Administrator</figcaption>
+</figure>
+
+Copy all those lines of codes from the VirtualBox Configuration Code and paste them one by one on Command Prompt and press enter.
+
+<figure>
+<img src="/img/blog/12-16.jpg"></img>
+<figcaption align="center">Run Code in Command Prompt</figcaption>
+</figure>
+
+## Install macOS Monterey
+
+---
+
+## FAQ and Solutions to Frequent Problems during Process
+
+<details>
+<summary>How do I dropdown?</summary>
+<br>
+This is how you dropdown.
+</details>
+
+<details>
+<summary>How do I dropdown?</summary>
+<br>
+This is how you dropdown.
+</details>
 
 **Subscribe to our Channel Below:**
 
