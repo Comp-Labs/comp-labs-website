@@ -11,7 +11,7 @@ slug: posts/install-macos-monterey-on-windows-using-virtualbox
 date: 2022-06-07T18:00
 ---
 
-# How to Install macOS Montrey 12.4 in Oracle VM VirtualBox (Windows)
+# How to Install macOS Monterey 12.4 in Oracle VM VirtualBox (Windows)
 
 <figure>
 <img src="/img/blog/12.jpg"></img>
@@ -31,10 +31,11 @@ There are some files and software that you have to download before installing ma
 - [VirtualBox Configuration Code](//complabs.in)
 - [Download macOS Monterey ISO Image](//complabs.in)
 - [Create macOS Monterey ISO Image](/blog/posts/create-iso-file-for-any-macos-release#create-iso-for-macos-monterey) (Optional)
+- Windows 10 or 11 Required to Install macOS Monterey. Windows 8.1, 7 and below versions are **unsupported**.
 
 ## Install VirtualBox
 
-Next is to Install VirtualBox. Double-click on the installation file, click next, next, and next finally install it on your PC. To be exactly sure, the installation process is not very hard, in any let me know if you are stuck at some place, I would be happy to help you.
+Next is to install VirtualBox. Double-click on the installation file, click next, next, and next finally install it on your PC. To be exactly sure, the installation process is not very hard, in any let me know if you are stuck at some place, I would be happy to help you.
 
 After installing VirtualBox on your PC, double-click on the VirtualBox extension pack file and choose install. Or open VirtualBox, go to preferences, go to the extensions button on the sidebar and click on the plus icon and locate the VirtualBox extension pack file, and then simply install it.
 
@@ -44,9 +45,7 @@ After installing VirtualBox on your PC, double-click on the VirtualBox extension
 <figcaption align="center">Install VirtualBox Extension Pack</figcaption>
 </figure>
 
-## Create Virtual Machine
-
-### Enable Expert Mode
+## Create a Virtual Machine
 
 Now to begin the real process of installing macOS Monterey on your Windows PC, you have to create a new virtual machine. On the VirtualBox app, click on new, and then click on expert mode.
 
@@ -74,7 +73,7 @@ Specify the amount of storage that you want in your macOS Monterey VM. I'll go w
 
 ## Configure Virtual Machine Settings
 
-To be exactly clear, there are some settings that must be applied to the virtual machine specifically for macOS. And besides these, we'll have to add the macOS Monterey ISO image to our virtual machine. To attach it, on the home page, click on your VM, then click on Settings. Then go to the storage, click on Empty, then click on the Blue CD icon on the right hand side and locate the macOS Monterey ISO image that you downloaded from the [Prerequisites](#prerequisites) Section.
+To be exactly clear, some settings must be applied to the virtual machine specifically for macOS. And besides these, we'll have to add the macOS Monterey ISO image to our virtual machine. To attach it, on the home page, click on your VM, then click on Settings. Then go to the storage, click on Empty, then click on the Blue CD icon on the right-hand side and locate the macOS Monterey ISO image that you downloaded from the [Prerequisites](#prerequisites) Section.
 
 <figure>
 <img src="/img/blog/12-7.jpg"></img>
@@ -90,14 +89,14 @@ We also need to disable Floppy Disk from the boot order. To disable it, click on
 <figcaption align="center">Uncheck Floppy Disk</figcaption>
 </figure>
 
-Next, we need to increase the number of processors. Under System Tab, Click on Processor tab above, go there and increase it to at least 2 processors.
+Next, we need to increase the number of processors. Under System Tab, Click on the Processor tab above, go there and increase it to at least 2 processors.
 
 <figure>
 <img src="/img/blog/12-11.jpg"></img>
 <figcaption align="center">Increase Processor Cores</figcaption>
 </figure>
 
-We also need to increase the video memory for our VM. To increase it, go to the Display tab and take it all the way up to the last which is 128 MB.
+We also need to increase the video memory for our VM. To increase it, go to the Display tab and take it up to the last which is 128 MB.
 
 <figure>
 <img src="/img/blog/12-12.jpg"></img>
@@ -142,21 +141,49 @@ Copy all those lines of codes from the VirtualBox Configuration Code and paste t
 
 ## Install macOS Monterey
 
+It is time to begin the clean installation of macOS Monterey on your Windows PC using VirtualBox. So, power on the virtual machine by opening VirtualBox, clicking on your VM, and clicking on `Start`. Wait until all those lines of codes go away. After that, you will be on a screen where you will have to choose a language.
+
+<figure>
+<img src="/img/blog/12-17.jpg"></img>
+<figcaption align="center">Choose a Language</figcaption>
+</figure>
+
+Choose **Disk Utility** and Click on **Continue**.
+
+<figure>
+<img src="/img/blog/12-18.jpg"></img>
+<figcaption align="center">Choose Disk Utility</figcaption>
+</figure>
+
+Click on `VBOX HARDDISK MEDIA` from the Sidebar and click on the **Erase** icon on the top-left of the Disk Utility Window.
+
+<figure>
+<img src="/img/blog/12-19.jpg"></img>
+<figcaption align="center">Erase Disk</figcaption>
+</figure>
+
+Under **Name:**, name the volume as per your wish and erase it with the following settings. After, that close the Disk Utility.
+
+<figure>
+<img src="/img/blog/12-20.jpg"></img>
+<figcaption align="center">Erase Disk Settings</figcaption>
+</figure>
+
+After Erase is complete, click on **Done** and close Disk Utility by Pressing the **Red X** button on the top-left corner of the window.
+
+
+
 ---
 
 ## FAQ and Solutions to Frequent Problems during Process
 
 <details>
 <summary>How do I dropdown?</summary>
-<br>
-</br>
 This is how you dropdown.
 </details>
 
 <details>
 <summary>How do I dropdown?</summary>
-<br>
-</br>
 This is how you dropdown.
 </details>
 
