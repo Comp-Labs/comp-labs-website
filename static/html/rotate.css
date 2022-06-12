@@ -20,7 +20,7 @@ h2 {
   position: absolute;
   top: 100px;
   padding-bottom: var(--offset);
-  
+
   background-size: 100% 100%;
   -webkit-background-clip: text;
   background-clip: text;
@@ -30,12 +30,12 @@ h2 {
 
 .mask span[data-show] {
   transform: translateY(-100%);
-  transition: .5s transform ease-in-out;
+  transition: 0.5s transform ease-in-out;
 }
 
 .mask span[data-up] {
   transform: translateY(-200%);
-  transition: .5s transform ease-in-out;
+  transition: 0.5s transform ease-in-out;
 }
 
 .mask span:nth-child(1) {

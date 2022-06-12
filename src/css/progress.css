@@ -1,8 +1,8 @@
 @font-face {
-    font-family: progressBarFont;
-    src: url(/fonts/font.otf);
- }
- 
- * {
-    font-family: progressBarFont;
- }
+  font-family: progressBarFont;
+  src: url(/fonts/font.otf);
+}
+
+* {
+  font-family: progressBarFont;
+}

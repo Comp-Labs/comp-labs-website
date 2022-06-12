@@ -23,7 +23,7 @@
 }
 
 .appsList {
-text-align:center;
+  text-align: center;
 }
 
 /**
@@ -33,7 +33,7 @@ text-align:center;
  * LICENSE file in the root directory of this source tree.
  */
 
- .section {
+.section {
   padding: 72px 0;
 }
 

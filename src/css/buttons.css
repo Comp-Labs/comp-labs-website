@@ -1,18 +1,20 @@
 .mybuttonstyle {
-    background-color: #007AFF; /* Blue */
-    border: none;
-    color: white;
-    padding: 5px 20px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 16px;
-    margin: 4px 2px;
-    cursor: pointer;
-    font-family: Helvetica, sans-serif;
-  }
-  .buttonstyle {border-radius: 12px;}
-  .disabled {
-    opacity: 0.6;
-    cursor: not-allowed;
-  }  
+  background-color: #007aff; /* Blue */
+  border: none;
+  color: white;
+  padding: 5px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  font-family: Helvetica, sans-serif;
+}
+.buttonstyle {
+  border-radius: 12px;
+}
+.disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
