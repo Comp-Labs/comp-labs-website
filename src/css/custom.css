@@ -59,6 +59,25 @@ html[data-theme='dark'] {
   --site-color-checkbox-checked-bg: hsl(167deg 56% 73% / 10%);
 }
 
+html {
+scroll-behavior: smooth;
+}
+
+.scrollToTopBtn {
+  color: #fff;
+  background-color: #25C2A0;
+  text-decoration: none;
+  border-radius: 25px;
+  position: fixed;
+  outline: none;
+  z-index: 100;
+  opacity: 0;
+  pointer-events: none;
+  padding: 0.75em 1.5em;
+  inset: auto 2em 2em auto;
+  transition: all 250ms ease-in-out;
+}
+
 .dropbtn {
   background-color: #04AA6D;
   color: white;
