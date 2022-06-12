@@ -224,8 +224,8 @@ const darkCodeTheme = require("prism-react-renderer/themes/dracula");
                 },
                 {
                   label: "Sewing Machine Animation",
-                  to: "/special/sewing-machine"
-                }
+                  to: "/special/sewing-machine",
+                },
               ],
             },
             {
@@ -368,8 +368,8 @@ const darkCodeTheme = require("prism-react-renderer/themes/dracula");
                 },
                 {
                   label: "Sewing Machine Animation",
-                  to: "/special/sewing-machine"
-                }
+                  to: "/special/sewing-machine",
+                },
               ],
             },
             {
