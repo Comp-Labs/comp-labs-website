@@ -90,6 +90,11 @@ html {
   transition: all 250ms ease-in-out;
 }
 
+.isVisible {
+  pointer-events: auto;
+  opacity: 1;
+}
+
 .dropbtn {
   background-color: #04aa6d;
   color: white;
