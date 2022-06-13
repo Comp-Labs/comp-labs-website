@@ -16,7 +16,7 @@ import Image from '@theme/IdealImage';
 const SpecialCards = [
   {
     name: 'WeatherBox ⛅',
-    image: require('@site/static/img/special/weatherbox.png'),
+    image: require('@site/static/img/special/default.png'),
     url: {
       page: 'https://weatherbox.complabs.in',
     },
@@ -28,7 +28,7 @@ const SpecialCards = [
   },
   {
     name: 'Christmas Lights 🎇',
-    image: require('@site/static/img/special/christmas-lights.png'),
+    image: require('@site/static/img/special/default.png'),
     url: {
       page: '/special/christmas-lights',
       codepen: 'https://codepen.io/rudrasen2/pen/GRywgoR',
@@ -41,7 +41,7 @@ const SpecialCards = [
   },
   {
     name: 'Happy Sailor ⛵',
-    image: require('@site/static/img/special/sailor.png'),
+    image: require('@site/static/img/special/default.png'),
     url: {
       page: '/special/happy-sailor-animation',
       codepen: 'https://codepen.io/rudrasen2/pen/zYRxPBr',
@@ -55,7 +55,7 @@ const SpecialCards = [
   },
   {
     name: 'Sewing Machine 🪡🧵',
-    image: require('@site/static/img/special/sewing-machine.png'),
+    image: require('@site/static/img/special/default.png'),
     url: {
       page: '/special/sewing-machine',
       codepen: 'https://codepen.io/rudrasen2/pen/XWZeqVb',
@@ -69,7 +69,7 @@ const SpecialCards = [
   },
   {
     name: 'Nezuko',
-    image: require('@site/static/img/special/nezuko.png'),
+    image: require('@site/static/img/special/default.png'),
     url: {
       page: '/special/nezuko',
       codepen: 'https://codepen.io/rudrasen2/pen/dydworj',
@@ -83,7 +83,7 @@ const SpecialCards = [
   },
   {
     name: 'Komi',
-    image: require('@site/static/img/special/komi.png'),
+    image: require('@site/static/img/special/default.png'),
     url: {
       page: '/special/komi',
       codepen: 'https://codepen.io/rudrasen2/pen/YzedXxa',
@@ -97,7 +97,7 @@ const SpecialCards = [
   },
   {
     name: 'Turin Horse - Hadi 🐎',
-    image: require('@site/static/img/special/turin-horse.png'),
+    image: require('@site/static/img/special/default.png'),
     url: {
       page: '/special/turin-horse',
       codepen: 'https://codepen.io/rudrasen2/pen/oNEJXeo',
