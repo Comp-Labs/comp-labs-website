@@ -137,7 +137,10 @@ function SpecialCard({ name, image, url, description }: Props) {
         <div className="card__footer">
           <div className="button-group button-group--block">
             <Link className="button button--secondary" to={url.page}>
-              <Translate id="special.tryItButton">View Now!</Translate>
+              <Translate id="special.urlButton">Try Now!</Translate>
+            </Link>
+            <Link className="button button--secondary" to={url.codepen}>
+              <Translate id="special.codepenButton">Try Now!</Translate>
             </Link>
           </div>
         </div>
