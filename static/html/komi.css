@@ -1,9 +1,18 @@
 @import url("https://fonts.googleapis.com/css2?family=Kiwi+Maru:wght@500&display=swap");
 @keyframes blinky {
-  0%, 9%, 11%, 19%, 21%, 69%, 71%, 100% {
+  0%,
+  9%,
+  11%,
+  19%,
+  21%,
+  69%,
+  71%,
+  100% {
     transform: scaleY(1);
   }
-  10%, 20%, 70% {
+  10%,
+  20%,
+  70% {
     transform: scaleY(0);
   }
 }
@@ -19,9 +28,13 @@
   --shirt-color: #fff;
   --shirt-color-dark: #eaeaea;
   --shirt-color-dark-2: #ddd;
-  --bow-color-1: #961E60;
+  --bow-color-1: #961e60;
   --bow-color-2: #411854;
-  --bow-gradient: repeating-linear-gradient(-45deg, var(--bow-color-1) 0 0.25rem, var(--bow-color-2) 0.25rem 0.375rem);
+  --bow-gradient: repeating-linear-gradient(
+    -45deg,
+    var(--bow-color-1) 0 0.25rem,
+    var(--bow-color-2) 0.25rem 0.375rem
+  );
   --background: #c4bcdc;
   --line-width-1: 0.125rem;
   --line-width-2: 0.375rem;
@@ -50,7 +63,9 @@ body {
 .komi *::after {
   position: absolute;
 }
-.komi-head, .komi-body, .komi-hair-extension {
+.komi-head,
+.komi-body,
+.komi-hair-extension {
   animation: var(--hover-animation, none);
 }
 .komi-eye {
@@ -71,7 +86,8 @@ body {
   background-color: var(--white);
   animation: blinky 7s infinite;
 }
-.komi-eye::before, .komi-eye::after {
+.komi-eye::before,
+.komi-eye::after {
   content: "";
 }
 .komi-eye::before {
@@ -103,7 +119,8 @@ body {
   transform: scale(var(--eye-sparkle-scale, 0));
   transition: 0.4s ease-in-out;
 }
-.komi-eye-sparkle::before, .komi-eye-sparkle::after {
+.komi-eye-sparkle::before,
+.komi-eye-sparkle::after {
   content: "";
   border-radius: 100%;
   background-color: var(--sparkle-color);
@@ -233,7 +250,8 @@ body {
   border-radius: inherit;
   background-color: var(--primary-color-tint);
 }
-.komi-cat-ear-fur::before, .komi-cat-ear-fur::after {
+.komi-cat-ear-fur::before,
+.komi-cat-ear-fur::after {
   content: "";
   border-radius: var(--cat-ear-fur-border-radius);
   background-color: var(--primary-color);
@@ -299,7 +317,8 @@ body {
   border-radius: 100%;
   background-color: var(--primary-color);
 }
-.komi-hair-back-1::before, .komi-hair-back-1::after {
+.komi-hair-back-1::before,
+.komi-hair-back-1::after {
   content: "";
 }
 .komi-hair-back-1::before {
@@ -320,7 +339,8 @@ body {
   left: 25%;
   width: 65%;
 }
-.komi-hair-bangs::before, .komi-hair-bangs::after {
+.komi-hair-bangs::before,
+.komi-hair-bangs::after {
   content: "";
   z-index: 2;
   background-color: var(--primary-color-tint);
@@ -341,7 +361,8 @@ body {
   transform: rotate(-2deg) skewY(10deg);
   border-radius: 0.25rem;
 }
-.komi-hair-bangs-1, .komi-hair-bangs-2 {
+.komi-hair-bangs-1,
+.komi-hair-bangs-2 {
   transform-origin: center top;
   background-color: var(--primary-color);
 }
@@ -491,7 +512,8 @@ body {
   z-index: 2;
   inset: 0;
 }
-.komi-bow-top::before, .komi-bow-top::after {
+.komi-bow-top::before,
+.komi-bow-top::after {
   top: -0.25rem;
   right: var(--bow-top-right);
   bottom: auto;
@@ -499,7 +521,8 @@ body {
   content: "";
   height: 1.75rem;
   width: 1.75rem;
-  transform: rotate(calc(-15deg * var(--flip))) perspective(1rem) rotateY(calc(22deg * var(--flip)));
+  transform: rotate(calc(-15deg * var(--flip))) perspective(1rem)
+    rotateY(calc(22deg * var(--flip)));
   background-color: var(--bow-color-1);
   background-image: var(--bow-gradient);
   border-radius: 0.25rem;
@@ -515,7 +538,8 @@ body {
   --bow-top-shadow-offset: 0.75rem;
   inset: 0;
 }
-.komi-bow-top-shadow::before, .komi-bow-top-shadow::after {
+.komi-bow-top-shadow::before,
+.komi-bow-top-shadow::after {
   top: 0.125rem;
   right: var(--bow-top-shadow-right);
   bottom: auto;
@@ -543,7 +567,8 @@ body {
   z-index: 1;
   inset: 0;
 }
-.komi-bow-bottom::before, .komi-bow-bottom::after {
+.komi-bow-bottom::before,
+.komi-bow-bottom::after {
   top: 0.325rem;
   right: var(--bow-bottom-right);
   bottom: auto;
@@ -572,7 +597,8 @@ body {
   height: 8rem;
   transform: translateX(-50%);
 }
-.komi-shirt::before, .komi-shirt::after {
+.komi-shirt::before,
+.komi-shirt::after {
   top: 0;
   right: var(--shirt-right);
   bottom: auto;
@@ -592,7 +618,8 @@ body {
 .komi-shirt::after {
   --shirt-right: 0;
 }
-.komi-shirt-sleeves::before, .komi-shirt-sleeves::after {
+.komi-shirt-sleeves::before,
+.komi-shirt-sleeves::after {
   top: 1rem;
   right: var(--shirt-sleeve-right);
   bottom: auto;
@@ -612,13 +639,15 @@ body {
   --shirt-sleeve-right: -1.25rem;
   --flip: -1;
 }
-.komi-shirt-sleeves, .komi-shirt-sleeves-shadow {
+.komi-shirt-sleeves,
+.komi-shirt-sleeves-shadow {
   inset: 0;
 }
 .komi-shirt-sleeves-shadow {
   z-index: 1;
 }
-.komi-shirt-sleeves-shadow::before, .komi-shirt-sleeves-shadow::after {
+.komi-shirt-sleeves-shadow::before,
+.komi-shirt-sleeves-shadow::after {
   top: 2.5rem;
   right: var(--shirt-sleeve-sh-right);
   bottom: auto;
@@ -653,17 +682,26 @@ body {
   overflow: hidden;
 }
 .komi-zigzag {
-  background-image: repeating-linear-gradient(45deg, var(--primary-color-tint) 0 0.125rem, transparent 0.125rem 0.25rem);
+  background-image: repeating-linear-gradient(
+    45deg,
+    var(--primary-color-tint) 0 0.125rem,
+    transparent 0.125rem 0.25rem
+  );
   opacity: var(--zigzag-opacity, 0);
   transition: 0.3s;
 }
-.komi-zigzag, .komi-zigzag::after {
+.komi-zigzag,
+.komi-zigzag::after {
   height: 0.125rem;
   width: 1.125rem;
 }
 .komi-zigzag::after {
   content: "";
-  background-image: repeating-linear-gradient(-45deg, transparent 0 0.125rem, var(--primary-color-tint) 0.125rem 0.25rem);
+  background-image: repeating-linear-gradient(
+    -45deg,
+    transparent 0 0.125rem,
+    var(--primary-color-tint) 0.125rem 0.25rem
+  );
 }
 .komi-zigzag-1 {
   left: -2rem;
@@ -786,7 +824,8 @@ body {
 }
 
 @keyframes twinkleY {
-  0%, 100% {
+  0%,
+  100% {
     transform: translateX(-50%) scaleY(1);
   }
   50% {
@@ -794,7 +833,8 @@ body {
   }
 }
 @keyframes twinkleX {
-  0%, 100% {
+  0%,
+  100% {
     transform: translateY(-50%) scaleX(1);
   }
   50% {
@@ -802,21 +842,30 @@ body {
   }
 }
 @keyframes catEarTwitch {
-  0%, 70%, 90% {
+  0%,
+  70%,
+  90% {
     transform: rotate(0deg);
   }
-  80%, 95% {
+  80%,
+  95% {
     transform: rotate(5deg) scaleX(0.9);
   }
 }
 @keyframes tremble {
-  0%, 24%, 50%, 74%, 100% {
+  0%,
+  24%,
+  50%,
+  74%,
+  100% {
     transform: translate(0, 0);
   }
-  25%, 49% {
+  25%,
+  49% {
     transform: translate(0.0625rem, 0.1875rem);
   }
-  75%, 99% {
+  75%,
+  99% {
     transform: translate(-0.0625rem, 0.1875rem);
   }
 }

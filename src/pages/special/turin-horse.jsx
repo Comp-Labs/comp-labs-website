@@ -15,8 +15,8 @@ function TurinHorseAnimationHeader() {
       <div className="container">
         <h1 className="hero__title">The Turin Horse - Hadi</h1>
         <p className="hero__subtitle">
-          The Turin Horse - Hadi CSS Animation Animation Brought to You by Comp Labs. Credits for this
-          Animation goes to
+          The Turin Horse - Hadi CSS Animation Animation Brought to You by Comp
+          Labs. Credits for this Animation goes to
           <a href="https://codepen.io/leimapapa/pen/GRQGzOZ" target="_blank">
             @leimapapa
           </a>

@@ -8,10 +8,9 @@ description: Guide on Installing macOS Ventura on Windows using VirtualBox
 image: "/img/blog/default.png"
 hide_table_of_contents: false
 slug: posts/install-macos-ventura-on-windows-using-virtualbox
-date: 2022-06-07T18:00
 ---
 
-import Giscus from '@giscus/react';
+import Giscus from "@giscus/react";
 
 <figure>
   <img src="./img/16.jpg"></img>
@@ -22,7 +21,7 @@ import Giscus from '@giscus/react';
 
 <!-- truncate -->
 
-**macOS 13** also known as **macOS Ventura** as announced on the 6<sup>th</sup> June, 2022 in [WWDC22](https://developer.apple.com/videos/wwdc2022/). It's amazing to see that every year, Apple is introducing new products to the market. And this year, **macOS Ventura** comes with the all-new **M2 Chip** preloaded on the new Macs. Compared to the previous versions of macOS, Apple has brought a lot of changes taking from UI to settings. And by the way, did I tell you that from now onwards, **System Preferences** is named as **System Settings** from now on. New settings that look similar to Ubuntu settings have been added. Cool new features are added such as **Stage Manager**, **Spotlight**, Convert your **iPhone** to Webcams, and more. If you are a Windows user, looking forward to testing the new macOS Ventura, perhaps you should consider this guide.
+**macOS 13** also known as **macOS Ventura** as announced on the 6<sup>th</sup> June, 2022 in [WWDC22](https://developer.apple.com/videos/wwdc2022/). It's amazing to see that every year, Apple is introducing new products to the market. And this year, **macOS Ventura** comes with the all-new **M2 Chip** preloaded on the new Macs. Compared to the previous versions of macOS, Apple has brought a lot of changes taking from UI to settings. And by the way, did I tell you that from now onwards, **System Preferences** is named as **System Settings** from now on. New settings that look similar to Ubuntu settings have been added. Cool new features are added such as **Stage Manager**, **Spotlight**, Convert your **iPhone** to Webcams and more. If you are a Windows user, looking forward to testing the new macOS Ventura, perhaps you should consider this guide.
 
 Since Virtualisation is so powerful, it can give you the macOS feel in real-time while using your Windows Apps. After experiencing the operating system, you can give your opinion about the macOS 13. So why you are waiting, let's start the process of Installing macOS Ventura on Windows using VirtualBox.
 
@@ -52,7 +51,7 @@ VirtualBox is an open-source virtualization application that you can get it righ
   </figcaption>
 </figure>
 
-It's time to install the downloaded VirtualBox that you've got. Double-click on the VirtualBox Installer and Install it with the default options. There is no need to prepare a step-by-step guide for this section. After that you need to install the VirtualBox Extension, double click on its installer. It will launch `VirtualBox` > Click on `Install` > then scroll down and Agree with the Terms and Conditions.
+It's time to install the downloaded VirtualBox that you've got. Double-click on the VirtualBox Installer and Install it with the default options. There is no need to prepare a step-by-step guide for this section. After that, you need to install the VirtualBox Extension and double-click on its installer. It will launch `VirtualBox` > Click on `Install` > then scroll down and agree with the Terms and Conditions.
 
 <figure>
   <img src="./img/16-3.jpg"></img>
@@ -73,7 +72,7 @@ As long as you have the macOS Ventura ISO image, you can perform a clean install
 
 ## Create a New Virtual Machine
 
-While the installation of the VirtualBox Extension Pack is complete, you must start the creation of a new virtual machine for macOS Ventura. The creating process of a virtual machine for MacOS Ventura is simple except there are some macOS-Specific requirements that you must fulfill.
+While the installation of the VirtualBox Extension Pack is complete, you must start the creation of a new virtual machine for macOS Ventura. The creating process of a virtual machine for macOS Ventura is simple except there are some macOS-Specific requirements that you must fulfil.
 
 **Requirements:**
 
@@ -170,7 +169,7 @@ Finally, once you are done with configuring the settings of the VirtualBox for M
 
 ## VirtualBox Config Commands
 
-There are some necessary codes that must be executed on the Command Prompt. If the code is not executed, macOS Ventura VM will not boot. So you have to get the [VirtualBox Code](#code) that is needed and then bring the necessary changes to the code and then execute it on Command Prompt. The necessary configuration means that you have to replace "VM name" with the name of the virtual machine that you created. And the code for Intel processor and AMD processor are a bit different, depending on your processor, apply the code.
+Some necessary codes must be executed on the Command Prompt. If the code is not executed, macOS Ventura VM will not boot. So you have to get the [VirtualBox Code](#code) that is needed and then bring the necessary changes to the code and then execute it on Command Prompt. The necessary configuration means that you have to replace the "VM name" with the name of the virtual machine that you created. And the code for Intel processor and AMD processor is a bit different, depending on your processor, apply the code.
 
 The easiest way is to copy the codes into a **Notepad File**, then go to the **edit menu** and click on **replace**. Type VM name to find it and then replace it with the virtual machine name.
 
@@ -195,7 +194,7 @@ Execute all the commands line by line on Command Prompt.
 
 ## Install macOS Ventura
 
-This is the final and important step which is about formatting your virtual hard drive and then installing macOS Ventura on it. Obviously, you have to launch VirtualBox, select your macOS VM, and then click on **Start**.
+This is the final and important step which is about formatting your virtual hard drive and then installing macOS Ventura on it. You have to launch VirtualBox, select your macOS VM, and then click on **Start**.
 
 <figure>
   <img src="./img/16-21.jpg"></img>
@@ -234,14 +233,14 @@ You have to erase the virtual hard drive based on the settings below. For this s
   <figcaption align="center">Erase Disk</figcaption>
 </figure>
 
-When the disk is erased, you have to quit the disk utility by clicking on **Disk Utlity** from the top and click on **Quit Disk Utility**. And once again, you will be on the recovery screen. This time instead of disk utility, you have to choose "Install macOS 13 Beta".
+When the disk is erased, you have to quit the disk utility by clicking on **Disk Utility** from the top and clicking on **Quit Disk Utility**. And once again, you will be on the recovery screen. This time instead of disk utility, you have to choose "Install macOS 13 Beta".
 
 <figure>
   <img src="./img/16-26.jpg"></img>
   <figcaption align="center">Click on Install macOS 13</figcaption>
 </figure>
 
-For the nextt step, click on **Continue**.
+For the next step, click on **Continue**.
 
 <figure>
   <img src="./img/16-27.jpg"></img>
@@ -271,7 +270,7 @@ For the next step, you have to be patient because several times it's going to re
 
 ## macOS Ventura Setup
 
-After the final result of Installing macOS Ventura on VirtualBox, you have to configure the basic user settings just like as you setup your new mobile.
+After the final result of Installing macOS Ventura on VirtualBox, you have to configure the basic user settings just like as you set up your new mobile.
 
 1. For the first step, please select your country.
 
@@ -294,7 +293,7 @@ After the final result of Installing macOS Ventura on VirtualBox, you have to co
   <figcaption align="center">Accessibility</figcaption>
 </figure>
 
-4. Configure the network settings by selecting **Loacl Network (Ethernet)**. If there is some problem, try to fix it, or tell me, or select **My computer does not connect to he internet** and continue.
+4. Configure the network settings by selecting **Local Network (Ethernet)**. If there is some problem, try to fix it, or tell me, or select **My computer does not connect to the internet** and continue.
 5. Ignore the warning which is saying your computer is not connected to the Internet and move on.
 
 <figure>
@@ -302,7 +301,7 @@ After the final result of Installing macOS Ventura on VirtualBox, you have to co
   <figcaption align="center">Internet Settings</figcaption>
 </figure>
 
-6. Please read about the Apple Data & Privacy regarding using macOS Ventura. Once you did click on **Continue**.
+6. Please read about Apple Data & Privacy regarding using macOS Ventura. Once you did click on **Continue**.
 
 <figure>
   <img src="./img/16-35.jpg"></img>
@@ -332,7 +331,7 @@ After the final result of Installing macOS Ventura on VirtualBox, you have to co
   <figcaption align="center">Create User Account</figcaption>
 </figure>
 
-11. Enable Location Services on macOS Ventura by checking the box and click on **Continue**.
+11. Enable Location Services on macOS Ventura by checking the box and clicking on **Continue**.
 
 <figure>
   <img src="./img/16-40.jpg"></img>
@@ -346,7 +345,7 @@ After the final result of Installing macOS Ventura on VirtualBox, you have to co
   <figcaption align="center">Select Time Zone</figcaption>
 </figure>
 
-13. On the Analytics Page, click on **Continue**.
+13. On the Analytics page, click on **Continue**.
 
 <figure>
   <img src="./img/16-42.jpg"></img>
@@ -377,6 +376,20 @@ After the final result of Installing macOS Ventura on VirtualBox, you have to co
 ## Conclusion
 
 I am 100% sure that after testing and experiencing macOS Ventura, you will learn something new. The design, animations, launch tab, stage manager, tabs, and spotlight updates are all bringing those new vibes. Perhaps after testing and Learning How to Install macOS Ventura, you may be considering switching to macOS forever. In the end, I am hoping that you have not faced any difficulties during the installation of the macOS Ventura on VirtualBox. And let me know your thoughts about the macOS Ventura in the comment section.
+
+---
+
+## Video Guide
+
+**Subscribe to our Channel:**
+
+<iframe
+  src="https://complabs.in/html/subscribe.html"
+  title="Subscribe Comp Labs"
+  height="100"
+></iframe>
+
+## Comments
 
 <Giscus
   id="comments"
