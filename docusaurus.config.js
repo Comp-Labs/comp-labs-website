@@ -235,6 +235,7 @@ const darkCodeTheme = require("prism-react-renderer/themes/dracula");
               position: "left",
             },
             { to: "/donate-us", label: "Donate Us", position: "left" },
+            { to: "/special", label: "Special New", position: "left" },
             {
               type: "dropdown",
               label: "Legal",

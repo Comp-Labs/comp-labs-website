@@ -77,7 +77,7 @@ html {
 
 table {
   border-collapse: collapse;
-  border-radius: 10px;
+  border-radius: 20px;
   overflow: hidden;
 }
 
@@ -96,8 +96,8 @@ table {
   transition: all 250ms ease-in-out;
 }
 
-* {
-  border-radius: 10px;
+img {
+  border-radius: 20px;
 }
 
 .isVisible {
