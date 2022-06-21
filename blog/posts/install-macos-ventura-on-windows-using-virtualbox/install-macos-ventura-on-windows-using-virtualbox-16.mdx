@@ -25,9 +25,9 @@ import Giscus from "@giscus/react";
 
 Since Virtualisation is so powerful, it can give you the macOS feel in real-time while using your Windows Apps. After experiencing the operating system, you can give your opinion about the macOS 13. So why you are waiting, let's start the process of Installing macOS Ventura on Windows using VirtualBox.
 
-# VirtualBox Setup
+## VirtualBox Setup
 
-## Intel VT-x and AMD-V
+### Intel VT-x and AMD-V
 
 Make sure that you enable the virtualisation feature also known as Intel VT-x and AMD-V from the BIOS of your computer otherwise you won't be able to run the Virtual Machine. However, if your computer does not support virtualisation technology, then you can't install macOS Ventura. I am afraid you have to purchase a new computer.
 
@@ -42,7 +42,7 @@ If virtualisation is disabled, follow the below post and enable it from the BIOS
 
 [How to Enable Virtualization from BIOS of your computer?](https://www.wikigain.com/enable-virtualization-technology-on-asus-aser-hp-dell-lenovo/)
 
-## Download VirtualBox and Extension Pack
+### Download VirtualBox and Extension Pack
 
 VirtualBox is an open-source virtualization application that you can get it right now and test any operating system that you desire. Aside from VirtualBox, you also need to get the VirtualBox extension pack which will result in solving the issues of the mouse and keyboard. Since both of these open source applications are free, get them right now from [virtualbox.org](//virtualbox.org).
 
@@ -65,14 +65,14 @@ It's time to install the downloaded VirtualBox that you've got. Double-click on 
   </figcaption>
 </figure>
 
-## macOS Ventura ISO
+### macOS Ventura ISO
 
 As long as you have the macOS Ventura ISO image, you can perform a clean installation of macOS Ventura in VirtualBox/VMware. The big question is acquiring the MacOS Ventura ISO image. For now, you can get the macOS Ventura ISO image from the below link, but you need to learn how to create these images yourself. So in the future when a new version of the macOS Ventura is released, you can create it yourself rather than downloading it.
 
 [Download macOS Ventura ISO Image](//complabs.in)
 [Create macOS Ventura ISO Image](//complabs.in)
 
-## Create a New Virtual Machine
+### Create a New Virtual Machine
 
 While the installation of the VirtualBox Extension Pack is complete, you must start the creation of a new virtual machine for macOS Ventura. The creating process of a virtual machine for macOS Ventura is simple except there are some macOS-Specific requirements that you must fulfil.
 
@@ -116,7 +116,7 @@ The Hard Disk type I have selected is VMDK (Virtual Machine Disk) with Dynamical
   <figcaption align="center">Configure Storage</figcaption>
 </figure>
 
-## Configure Virtual Machine Settings
+### Configure Virtual Machine Settings
 
 These settings are really important for booting the virtual machine. These settings include the boot order, graphics controller, configuring the amount of processor, adding the macOS Ventura ISO image, and finally enabling `USB 3.0`.
 
@@ -169,7 +169,7 @@ Finally, once you are done with configuring the settings of the VirtualBox for M
   <figcaption align="center">Exit VirtualBox</figcaption>
 </figure>
 
-## VirtualBox Config Commands
+### VirtualBox Config Commands
 
 Some necessary codes must be executed on the Command Prompt. If the code is not executed, macOS Ventura VM will not boot. So you have to get the [VirtualBox Code](#code) that is needed and then bring the necessary changes to the code and then execute it on Command Prompt. The necessary configuration means that you have to replace the "VM name" with the name of the virtual machine that you created. And the code for Intel processor and AMD processor is a bit different, depending on your processor, apply the code.
 
@@ -194,7 +194,7 @@ Execute all the commands line by line on Command Prompt.
   <figcaption align="center">Replace VM Name</figcaption>
 </figure>
 
-# Install macOS Ventura
+## Install macOS Ventura
 
 This is the final and important step which is about formatting your virtual hard drive and then installing macOS Ventura on it. You have to launch VirtualBox, select your macOS VM, and then click on **Start**.
 
@@ -270,7 +270,7 @@ For the next step, you have to be patient because several times it's going to re
   <figcaption align="center">Wait</figcaption>
 </figure>
 
-## macOS Ventura Setup
+### macOS Ventura Setup
 
 After the final result of Installing macOS Ventura on VirtualBox, you have to configure the basic user settings just like as you set up your new mobile.
 
@@ -391,7 +391,7 @@ I am 100% sure that after testing and experiencing macOS Ventura, you will learn
   height="100"
 ></iframe>
 
-# Comments
+## Comments
 
 <Giscus
   id="comments"
@@ -409,7 +409,8 @@ I am 100% sure that after testing and experiencing macOS Ventura, you will learn
   loading="lazy"
 />
 
-# Install macOS on Windows using VirtualBox Series
+<br></br>
+## Install macOS on Windows using VirtualBox Series
 
 | ![macOS Mojave](https://complabs.in/blog/posts/install-macos-mojave-on-windows-using-virtualbox/img/11.jpg) 	| ![macOS Catalina](https://complabs.in/blog/posts/install-macos-catalina-on-windows-using-virtualbox/img/10.jpg) 	| ![macOS Big Sur](https://complabs.in/blog/posts/install-macos-big-sur-on-windows-using-virtualbox/img/9.jpg) 	| ![macOS Monterey](https://complabs.in/blog/posts/install-macos-monterey-on-windows-using-virtualbox/img/12.jpg) 	|                  ![macOS Ventura](https://complabs.in/blog/posts/install-macos-ventura-on-windows-using-virtualbox/img/16.jpg)                  	|
 |:----------------------------------------------------------------------------------------:	|:--------------------------------------------------------------------------------------------:	|:-----------------------------------------------------------------------------------------:	|:--------------------------------------------------------------------------------------------:	|:-------------------------------------------------------------------------:	|
