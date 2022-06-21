@@ -79,8 +79,8 @@ const darkCodeTheme = require("prism-react-renderer/themes/dracula");
             blogSidebarCount: "ALL",
             sortPosts: "ascending",
             feedOptions: {
-              copyright: "Copyright © 2022 Comp Labs. All Rights Reserved.",
-              type: null,
+              type: 'all',
+              copyright: `Copyright © ${new Date().getFullYear()} Comp Labs. All Rights Reserved.`,
             },
           },
           theme: {
