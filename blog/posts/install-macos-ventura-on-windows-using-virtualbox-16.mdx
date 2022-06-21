@@ -5,17 +5,14 @@ authors:
   - rudra-sen
 tags: ["macOS Ventura", "VirtualBox", "Windows"]
 description: Guide on Installing macOS Ventura on Windows using VirtualBox
-image: "./img/16.jpg"
+image: "/static/img/blog/16/16.jpg"
 hide_table_of_contents: false
 slug: posts/install-macos-ventura-on-windows-using-virtualbox
 ---
 
 import Giscus from "@giscus/react";
 
-<figure>
-  <img src="./img/16.jpg"></img>
-  <figcaption align="center">Image by Author</figcaption>
-</figure>
+![Post Image](/static/img/blog/16/16.jpg)
 
 # Introduction
 
@@ -34,7 +31,7 @@ Make sure that you enable the virtualisation feature also known as Intel VT-x an
 To check if your computer supports and has enabled virtualisation technology, there is a simple method that you can use to check right now. And it is to open `Task Manager` > Go to `Performance` Tab > Select `CPU` and check the **virtualisation status** as shown below.
 
 <figure>
-  <img src="./img/16-1.jpg"></img>
+  <img src="/static/img/blog/16/16-1.jpg"></img>
   <figcaption align="center">Check Virtualisation Status</figcaption>
 </figure>
 
@@ -47,7 +44,7 @@ If virtualisation is disabled, follow the below post and enable it from the BIOS
 VirtualBox is an open-source virtualization application that you can get it right now and test any operating system that you desire. Aside from VirtualBox, you also need to get the VirtualBox extension pack which will result in solving the issues of the mouse and keyboard. Since both of these open source applications are free, get them right now from [virtualbox.org](//virtualbox.org).
 
 <figure>
-  <img src="./img/16-2.jpg"></img>
+  <img src="/static/img/blog/16/16-2.jpg"></img>
   <figcaption align="center">
     Get VirtualBox and VirtualBox Extension Pack
   </figcaption>
@@ -56,10 +53,10 @@ VirtualBox is an open-source virtualization application that you can get it righ
 It's time to install the downloaded VirtualBox that you've got. Double-click on the VirtualBox Installer and Install it with the default options. There is no need to prepare a step-by-step guide for this section. After that, you need to install the VirtualBox Extension and double-click on its installer. It will launch `VirtualBox` > Click on `Install` > then scroll down and agree with the Terms and Conditions.
 
 <figure>
-  <img src="./img/16-3.jpg"></img>
-  <img src="./img/16-4.jpg"></img>
-  <img src="./img/16-5.jpg"></img>
-  <img src="./img/16-6.jpg"></img>
+  <img src="/static/img/blog/16/16-3.jpg"></img>
+  <img src="/static/img/blog/16/16-4.jpg"></img>
+  <img src="/static/img/blog/16/16-5.jpg"></img>
+  <img src="/static/img/blog/16/16-6.jpg"></img>
   <figcaption align="center">
     Get VirtualBox and VirtualBox Extension Pack
   </figcaption>
@@ -85,14 +82,14 @@ While the installation of the VirtualBox Extension Pack is complete, you must st
 Launch VirtualBox and then click on the new button from the top-level menu.
 
 <figure>
-  <img src="./img/16-7.jpg"></img>
+  <img src="/static/img/blog/16/16-7.jpg"></img>
   <figcaption align="center">Create a New Virtual Machine</figcaption>
 </figure>
 
 After clicking on New, a new window will appear which will ask you to enter the details of the new macOS VM. But for now, you have to click on the **Expert Mode** button.
 
 <figure>
-  <img src="./img/16-8.jpg"></img>
+  <img src="/static/img/blog/16/16-8.jpg"></img>
   <figcaption align="center">Enable Expert Mode</figcaption>
 </figure>
 
@@ -103,7 +100,7 @@ Following that please make sure to at least provide `4GB (4096 MB)` of RAM to th
 Finally, at the end click on **Create a virtual hard disk now** and then click on **create**.
 
 <figure>
-  <img src="./img/16-9.jpg"></img>
+  <img src="/static/img/blog/16/16-9.jpg"></img>
   <figcaption align="center">Enter VM Details</figcaption>
 </figure>
 
@@ -112,7 +109,7 @@ After providing details of the new virtual machine, you have to configure the si
 The Hard Disk type I have selected is VMDK (Virtual Machine Disk) with Dynamically allocated settings.
 
 <figure>
-  <img src="./img/16-10.jpg"></img>
+  <img src="/static/img/blog/16/16-10.jpg"></img>
   <figcaption align="center">Configure Storage</figcaption>
 </figure>
 
@@ -123,49 +120,49 @@ These settings are really important for booting the virtual machine. These setti
 So let's begin by accessing the settings of the macOS Ventura VM on VirtualBox. Click on Virtual Machine > Click on `Settings` from the top-level menu.
 
 <figure>
-  <img src="./img/16-11.jpg"></img>
+  <img src="/static/img/blog/16/16-11.jpg"></img>
   <figcaption align="center">Access VM Settings</figcaption>
 </figure>
 
 First of all, we need to configure the boot order. Go to the `System` tab > `Motherboard` and uncheck the **Floppy** disk. Leave the rest of the settings as default.
 
 <figure>
-  <img src="./img/16-12.jpg"></img>
+  <img src="/static/img/blog/16/16-12.jpg"></img>
   <figcaption align="center">Configure Boot Order</figcaption>
 </figure>
 
 Following the boot order, go to the **Processor** tab and increase the processor count to 2, as in the previous step, leave the rest of the settings as default.
 
 <figure>
-  <img src="./img/16-13.jpg"></img>
+  <img src="/static/img/blog/16/16-13.jpg"></img>
   <figcaption align="center">Increase Processor Cores</figcaption>
 </figure>
 
 Configuring the graphics is another important section that must be configured, so go to the `Display` tab > Increase the video memory to `128 MB`. Then in front of the graphics controller, click on the drop-down menu and choose `VMSVGA`.
 
 <figure>
-  <img src="./img/16-14.jpg"></img>
+  <img src="/static/img/blog/16/16-14.jpg"></img>
   <figcaption align="center">Graphics Configuration</figcaption>
 </figure>
 
 For the next step, we have to attach the macOS Ventura ISO image to the virtual machine. To add it, go to the `Storage` tab > click on `Empty` > then click on the **CD Icon** and choose a **disk file**. After that, you have to locate the [downloaded](#iso) ISO and attach it to the virtual machine.
 
 <figure>
-  <img src="./img/16-15.jpg"></img>
+  <img src="/static/img/blog/16/16-15.jpg"></img>
   <figcaption align="center">Add macOS Ventura ISO Image</figcaption>
 </figure>
 
 And finally, you must enable the USB 3.0 from the USB category, enabling USB 3.0 will resolve the issue (mouse and keyboard are not working) of the mouse and keyboard.
 
 <figure>
-  <img src="./img/16-16.jpg"></img>
+  <img src="/static/img/blog/16/16-16.jpg"></img>
   <figcaption align="center">Enable USB 3.0</figcaption>
 </figure>
 
 Finally, once you are done with configuring the settings of the VirtualBox for MacOS Ventura, click OK then go to the File menu and choose exit.
 
 <figure>
-  <img src="./img/16-17.jpg"></img>
+  <img src="/static/img/blog/16/16-17.jpg"></img>
   <figcaption align="center">Exit VirtualBox</figcaption>
 </figure>
 
@@ -176,21 +173,21 @@ Some necessary codes must be executed on the Command Prompt. If the code is not 
 The easiest way is to copy the codes into a **Notepad File**, then go to the **edit menu** and click on **replace**. Type VM name to find it and then replace it with the virtual machine name.
 
 <figure>
-  <img src="./img/16-18.jpg"></img>
+  <img src="/static/img/blog/16/16-18.jpg"></img>
   <figcaption align="center">Replace VM Name</figcaption>
 </figure>
 
 The moment your changes to the code is done, open Windows Search (<i class="fa-brands fa-windows"></i> + S) and search for Command Prompt and run it as Administrator.
 
 <figure>
-  <img src="./img/16-19.jpg"></img>
+  <img src="/static/img/blog/16/16-19.jpg"></img>
   <figcaption align="center">Run Command Prompt as Administrator</figcaption>
 </figure>
 
 Execute all the commands line by line on Command Prompt.
 
 <figure>
-  <img src="./img/16-20.jpg"></img>
+  <img src="/static/img/blog/16/16-20.jpg"></img>
   <figcaption align="center">Replace VM Name</figcaption>
 </figure>
 
@@ -199,28 +196,28 @@ Execute all the commands line by line on Command Prompt.
 This is the final and important step which is about formatting your virtual hard drive and then installing macOS Ventura on it. You have to launch VirtualBox, select your macOS VM, and then click on **Start**.
 
 <figure>
-  <img src="./img/16-21.jpg"></img>
+  <img src="/static/img/blog/16/16-21.jpg"></img>
   <figcaption align="center">Power on the VM</figcaption>
 </figure>
 
 After the virtual machine is powered on, a bunch of code will appear on your screen which means that currently, it is trying to boot macOS Ventura. If everything goes well, you will be on the macOS Installation Welcome Page, the first step would be to set your preferred language and then move on.
 
 <figure>
-  <img src="./img/16-22.jpg"></img>
+  <img src="/static/img/blog/16/16-22.jpg"></img>
   <figcaption align="center">Choose a Language</figcaption>
 </figure>
 
 At the moment, you are on the macOS Recovery screen where you can see a bunch of options. But since we are trying to partition the virtual hard drive, you have to select **Disk Utility** and click on **Continue**.
 
 <figure>
-  <img src="./img/16-23.jpg"></img>
+  <img src="/static/img/blog/16/16-23.jpg"></img>
   <figcaption align="center">Select Disk Utility</figcaption>
 </figure>
 
 On the left panel of the disk utility, click on "VBOX HARDDISK Media", then click on **Erase**.
 
 <figure>
-  <img src="./img/16-24.jpg"></img>
+  <img src="/static/img/blog/16/16-24.jpg"></img>
   <figcaption align="center">Click on Erase Disk</figcaption>
 </figure>
 
@@ -231,42 +228,42 @@ You have to erase the virtual hard drive based on the settings below. For this s
 | Your Wish | APFS       | GUID Partition Map |
 
 <figure>
-  <img src="./img/16-25.jpg"></img>
+  <img src="/static/img/blog/16/16-25.jpg"></img>
   <figcaption align="center">Erase Disk</figcaption>
 </figure>
 
 When the disk is erased, you have to quit the disk utility by clicking on **Disk Utility** from the top and clicking on **Quit Disk Utility**. And once again, you will be on the recovery screen. This time instead of disk utility, you have to choose "Install macOS 13 Beta".
 
 <figure>
-  <img src="./img/16-26.jpg"></img>
+  <img src="/static/img/blog/16/16-26.jpg"></img>
   <figcaption align="center">Click on Install macOS 13</figcaption>
 </figure>
 
 For the next step, click on **Continue**.
 
 <figure>
-  <img src="./img/16-27.jpg"></img>
+  <img src="/static/img/blog/16/16-27.jpg"></img>
   <figcaption align="center">Install macOS 13</figcaption>
 </figure>
 
 You have to agree with the Software License Agreement of macOS Ventura by clicking on **Agree**.
 
 <figure>
-  <img src="./img/16-28.jpg"></img>
+  <img src="/static/img/blog/16/16-28.jpg"></img>
   <figcaption align="center">Agree Terms and Conditions</figcaption>
 </figure>
 
 In this final step, you have to select the drive name which you formatted earlier and then click on **Continue**.
 
 <figure>
-  <img src="./img/16-29.jpg"></img>
+  <img src="/static/img/blog/16/16-29.jpg"></img>
   <figcaption align="center">Select Disk</figcaption>
 </figure>
 
 For the next step, you have to be patient because several times it's going to restart the virtual machine and at least it will be taking around 45 mins to even 3 hours to complete based on your computer speed.
 
 <figure>
-  <img src="./img/16-30.jpg"></img>
+  <img src="/static/img/blog/16/16-30.jpg"></img>
   <figcaption align="center">Wait</figcaption>
 </figure>
 
@@ -277,21 +274,21 @@ After the final result of Installing macOS Ventura on VirtualBox, you have to co
 1. For the first step, please select your country.
 
 <figure>
-  <img src="./img/16-31.jpg"></img>
+  <img src="/static/img/blog/16/16-31.jpg"></img>
   <figcaption align="center">Select Your Country or Region</figcaption>
 </figure>
 
 2. Based on the country that you have selected, the commonly spoken languages will be added and all you have to do is click continue.
 
 <figure>
-  <img src="./img/16-32.jpg"></img>
+  <img src="/static/img/blog/16/16-32.jpg"></img>
   <figcaption align="center">Written and Spoken Languages</figcaption>
 </figure>
 
 3. Accessibility is the other feature that you have to click not now and move on.
 
 <figure>
-  <img src="./img/16-33.jpg"></img>
+  <img src="/static/img/blog/16/16-33.jpg"></img>
   <figcaption align="center">Accessibility</figcaption>
 </figure>
 
@@ -299,21 +296,21 @@ After the final result of Installing macOS Ventura on VirtualBox, you have to co
 5. Ignore the warning which is saying your computer is not connected to the Internet and move on.
 
 <figure>
-  <img src="./img/16-34.jpg"></img>
+  <img src="/static/img/blog/16/16-34.jpg"></img>
   <figcaption align="center">Internet Settings</figcaption>
 </figure>
 
 6. Please read about Apple Data & Privacy regarding using macOS Ventura. Once you did click on **Continue**.
 
 <figure>
-  <img src="./img/16-35.jpg"></img>
+  <img src="/static/img/blog/16/16-35.jpg"></img>
   <figcaption align="center">Data & Privacy </figcaption>
 </figure>
 
 7. On the migration page, you have to click on "Not Now" because we are performing a clean installation.
 
 <figure>
-  <img src="./img/16-36.jpg"></img>
+  <img src="/static/img/blog/16/16-36.jpg"></img>
   <figcaption align="center">Migration Assistant</figcaption>
 </figure>
 
@@ -321,57 +318,57 @@ After the final result of Installing macOS Ventura on VirtualBox, you have to co
 9. Again click on the agree button.
 
 <figure>
-  <img src="./img/16-37.jpg"></img>
-  <img src="./img/16-38.jpg"></img>
+  <img src="/static/img/blog/16/16-37.jpg"></img>
+  <img src="/static/img/blog/16/16-38.jpg"></img>
   <figcaption align="center">Terms and Conditions</figcaption>
 </figure>
 
 10. At the moment we are not connected to the internet, that's why you need to create a local user account.
 
 <figure>
-  <img src="./img/16-39.jpg"></img>
+  <img src="/static/img/blog/16/16-39.jpg"></img>
   <figcaption align="center">Create User Account</figcaption>
 </figure>
 
 11. Enable Location Services on macOS Ventura by checking the box and clicking on **Continue**.
 
 <figure>
-  <img src="./img/16-40.jpg"></img>
+  <img src="/static/img/blog/16/16-40.jpg"></img>
   <figcaption align="center">Enable Location Services</figcaption>
 </figure>
 
 12. Select your Time Zone by entering your current time zone and click on **Continue**.
 
 <figure>
-  <img src="./img/16-41.jpg"></img>
+  <img src="/static/img/blog/16/16-41.jpg"></img>
   <figcaption align="center">Select Time Zone</figcaption>
 </figure>
 
 13. On the Analytics page, click on **Continue**.
 
 <figure>
-  <img src="./img/16-42.jpg"></img>
+  <img src="/static/img/blog/16/16-42.jpg"></img>
   <figcaption align="center">Analytics</figcaption>
 </figure>
 
 12. If you are using Screen Time, you can configure it from the installer page too, or once the installation is completed, launch the app and set it up.
 
 <figure>
-  <img src="./img/16-43.jpg"></img>
+  <img src="/static/img/blog/16/16-43.jpg"></img>
   <figcaption align="center">Screen Time</figcaption>
 </figure>
 
 13. Choose the theme that you prefer.
 
 <figure>
-  <img src="./img/16-44.jpg"></img>
+  <img src="/static/img/blog/16/16-44.jpg"></img>
   <figcaption align="center">Theme</figcaption>
 </figure>
 
 14. And Best of luck using macOS Ventura your PC.
 
 <figure>
-  <img src="./img/16-45.jpg"></img>
+  <img src="/static/img/blog/16/16-45.jpg"></img>
   <figcaption align="center">Installation Complete!</figcaption>
 </figure>
 
@@ -413,7 +410,7 @@ I am 100% sure that after testing and experiencing macOS Ventura, you will learn
 
 ## Install macOS on Windows using VirtualBox Series
 
-| ![macOS Mojave](https://complabs.in/blog/posts/install-macos-mojave-on-windows-using-virtualbox/img/11.jpg) 	| ![macOS Catalina](https://complabs.in/blog/posts/install-macos-catalina-on-windows-using-virtualbox/img/10.jpg) 	| ![macOS Big Sur](https://complabs.in/blog/posts/install-macos-big-sur-on-windows-using-virtualbox/img/9.jpg) 	| ![macOS Monterey](https://complabs.in/blog/posts/install-macos-monterey-on-windows-using-virtualbox/img/12.jpg) 	|                  ![macOS Ventura](https://complabs.in/blog/posts/install-macos-ventura-on-windows-using-virtualbox/img/16.jpg)                  	|
+| ![macOS Mojave](https://complabs.in/blog/posts/install-macos-mojave-on-windows-using-virtualbox//static/img/blog/16/11.jpg) 	| ![macOS Catalina](https://complabs.in/blog/posts/install-macos-catalina-on-windows-using-virtualbox//static/img/blog/16/10.jpg) 	| ![macOS Big Sur](https://complabs.in/blog/posts/install-macos-big-sur-on-windows-using-virtualbox//static/img/blog/16/9.jpg) 	| ![macOS Monterey](https://complabs.in/blog/posts/install-macos-monterey-on-windows-using-virtualbox//static/img/blog/16/12.jpg) 	|                  ![macOS Ventura](https://complabs.in/blog/posts/install-macos-ventura-on-windows-using-virtualbox//static/img/blog/16/16.jpg)                  	|
 |:----------------------------------------------------------------------------------------:	|:--------------------------------------------------------------------------------------------:	|:-----------------------------------------------------------------------------------------:	|:--------------------------------------------------------------------------------------------:	|:-------------------------------------------------------------------------:	|
 |                   **Install macOS Mojave on Windows using VirtualBox**                   	|                    **Install macOS Catalina on Windows using VirtualBox**                    	|                   **Install macOS Big Sur on Windows using VirtualBox**                   	|                    **Install macOS Monterey on Windows using VirtualBox**                    	|           **Install macOS Ventura on Windows using VirtualBox**           	|
 |         [Read Now](/blog/posts/install-macos-mojave-on-windows-using-virtualbox)         	|          [Read Now](/blog/posts/install-macos-catalina-on-windows-using-virtualbox)          	|         [Read Now](/blog/posts/install-macos-big-sur-on-windows-using-virtualbox)         	|          [Read Now](/blog/posts/install-macos-monterey-on-windows-using-virtualbox)          	| [Read Now](/blog/posts/install-macos-ventura-on-windows-using-virtualbox) 	|
