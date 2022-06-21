@@ -180,7 +180,9 @@ After Erase is complete, click on **Done** and close Disk Utility by Pressing th
     To do this, choose one of the following screen resolution according to your
     screen resolution when you run your "VBoxManage" commands:
   </b>
-  <b>replace "VM Name" with your own virtual machine name</b>
+  <br></br>
+  <b>Replace "VM Name" with your own virtual machine name</b>
+  <br></br>
   <code>
     VBoxManage setextradata "VM Name" "VBoxInternal2/EfiGraphicsResolution"
     1280×720 VBoxManage setextradata "VM Name"
@@ -200,13 +202,14 @@ After Erase is complete, click on **Done** and close Disk Utility by Pressing th
 
 <details>
   <summary>
-    I am Trying to Run macOS on AMD Processor. And it gives me an error. How do
-    I fix it?
+    I am Trying to Run macOS on AMD Processor. And it gives me an error. How do I fix it?
   </summary>
   You'll need to add this line to fix this issue:
+  <br></br>
   <code>
     VBoxManage modifyvm “VM Name” –cpu-profile "Intel Xeon X5482 3.20GHz"
   </code>
+  <br></br>
   This command is executed with the command prompt configuration steps listed <a href="#run-virtualbox-code-using-command-prompt">above</a>
 </details>
 
