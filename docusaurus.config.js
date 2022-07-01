@@ -13,15 +13,14 @@ const darkCodeTheme = require("prism-react-renderer/themes/dracula");
     onBrokenLinks: "throw",
     onBrokenMarkdownLinks: "warn",
     favicon: "img/favicon.ico",
-    organizationName: "Comp-Labs", // Usually your GitHub org/user name.
-    projectName: "comp-labs-website", // Usually your repo name.
+    organizationName: "Comp-Labs",
+    projectName: "comp-labs-website",
     deploymentBranch: "main",
     trailingSlash: "false",
     themes: ["@docusaurus/theme-live-codeblock"],
     titleDelimiter: "•",
 
     scripts: [
-      // String format.
       "https://kit.fontawesome.com/307bcbc229.js",
       "/static/scrolltotop.js",
       // 'https://complabs.in/herojs.js',
@@ -51,7 +50,7 @@ const darkCodeTheme = require("prism-react-renderer/themes/dracula");
             {
               tagName: "link",
               rel: "manifest",
-              href: "/manifest.json", // your PWA manifest
+              href: "/manifest.json",
             },
             {
               tagName: "meta",
@@ -122,10 +121,6 @@ const darkCodeTheme = require("prism-react-renderer/themes/dracula");
           respectPrefersColorScheme: true,
         },
         prism: {
-          // We need to load markdown again so that YAML is loaded before MD
-          // and the YAML front matter is highlighted correctly.
-          // TODO after we have forked prism-react-renderer, we should tweak the
-          // import order and fix it there
           additionalLanguages: ["java", "markdown"],
         },
         image: "img/comp-labs-logo.png",
@@ -161,24 +156,20 @@ const darkCodeTheme = require("prism-react-renderer/themes/dracula");
             srcDark: "img/logo.svg",
           },
           items: [
-            { to: "/docs/", label: "Docs 🚧", position: "left" },
+            // { to: "/docs", label: "Docs 🚧", position: "left" },
             { to: "blog", label: "Guides", position: "left" },
-            { to: "/apps/", label: "Apps", position: "left" },
+            { to: "/apps", label: "Apps", position: "left" },
             {
               type: "dropdown",
               label: "Solutions",
               position: "left",
               items: [
                 {
-                  label: "App Publisher for Google Play",
+                  label: "App Publishing Solution",
                   to: "/solutions/google-play-developers",
                 },
                 {
-                  label: "Business Meeting Service 🚧",
-                  to: "/solutions/enterprise-meeting-solution",
-                },
-                {
-                  label: "Business Mail Service 🚧",
+                  label: "Enterprise Mail Solution 🚧",
                   to: "/solutions/enterprise-mail-solution",
                 },
                 {
@@ -207,35 +198,12 @@ const darkCodeTheme = require("prism-react-renderer/themes/dracula");
               ],
             },
             {
-              type: "dropdown",
-              label: "Special",
-              position: "left",
-              items: [
-                {
-                  label: "WeatherBox ⛅",
-                  href: "https://weatherbox.complabs.in",
-                },
-                {
-                  label: "Beautiful Christmas Lights",
-                  to: "/special/christmas-lights",
-                },
-                {
-                  label: "Happy Sailor Animation",
-                  to: "/special/happy-sailor-animation",
-                },
-                {
-                  label: "Sewing Machine Animation",
-                  to: "/special/sewing-machine",
-                },
-              ],
-            },
-            {
               href: "https://forms.gle/dQmrNAZZ1KK81rAP7",
               label: "Contact Us",
               position: "left",
             },
-            { to: "/donate-us", label: "Donate Us", position: "left" },
-            { to: "/special", label: "Special New", position: "left" },
+            // { to: "/donate-us", label: "Donate Us", position: "left" },
+            { to: "/special", label: "Special ✨", position: "left" },
             {
               type: "dropdown",
               label: "Legal",
@@ -256,21 +224,6 @@ const darkCodeTheme = require("prism-react-renderer/themes/dracula");
               ],
             },
             // Right
-            {
-              type: "dropdown",
-              label: "Website v2 (Current)",
-              position: "right",
-              items: [
-                {
-                  label: "Website v2 (Current)",
-                  to: "/",
-                },
-                {
-                  label: "Website v1 (Legacy)",
-                  to: "https://complabs28.wixsite.com/complabs",
-                },
-              ],
-            },
             {
               type: "localeDropdown",
               position: "right",
@@ -293,26 +246,30 @@ const darkCodeTheme = require("prism-react-renderer/themes/dracula");
                   label: "Home",
                   to: "/",
                 },
-                {
-                  label: "Docs 🚧",
-                  to: "/docs/",
-                },
+                // {
+                //   label: "Docs 🚧",
+                //   to: "/docs/",
+                // },
                 {
                   label: "Guides",
                   to: "/blog",
                 },
                 {
                   label: "Apps",
-                  to: "/apps/",
+                  to: "/apps",
                 },
                 {
                   label: "Contact Us!",
                   href: "https://forms.gle/dQmrNAZZ1KK81rAP7",
                 },
                 {
-                  label: "Donate Us!",
-                  to: "/donate-us",
+                  label: "Special",
+                  href: "/special",
                 },
+                // {
+                //   label: "Donate Us!",
+                //   to: "/donate-us",
+                // },
               ],
             },
             {
@@ -326,10 +283,10 @@ const darkCodeTheme = require("prism-react-renderer/themes/dracula");
                   label: "Business Meeting Service 🚧",
                   to: "/solutions/enterprise-meeting-solution",
                 },
-                {
-                  label: "Business Mail Service 🚧",
-                  to: "/solutions/enterprise-mail-solution",
-                },
+                // {
+                //   label: "Business Mail Service 🚧",
+                //   to: "/solutions/enterprise-mail-solution",
+                // },
                 {
                   label: "Anonymous VPN 🚧",
                   to: "/solutions/enterprise-mail-solution",
@@ -350,27 +307,6 @@ const darkCodeTheme = require("prism-react-renderer/themes/dracula");
                 {
                   label: "Web Tools",
                   href: "https://www.webtoolhub.com/",
-                },
-              ],
-            },
-            {
-              title: "Special",
-              items: [
-                {
-                  label: "WeatherBox ⛅",
-                  href: "https://weatherbox.complabs.in",
-                },
-                {
-                  label: "Beautiful Christmas Lights",
-                  to: "/special/christmas-lights",
-                },
-                {
-                  label: "Happy Sailor Animation",
-                  to: "/special/happy-sailor-animation",
-                },
-                {
-                  label: "Sewing Machine Animation",
-                  to: "/special/sewing-machine",
                 },
               ],
             },
@@ -439,10 +375,10 @@ const darkCodeTheme = require("prism-react-renderer/themes/dracula");
                   label: "Business Meeting Service 🚧",
                   to: "/solutions/enterprise-meeting-solution",
                 },
-                {
-                  label: "Business Mail Service 🚧",
-                  to: "/solutions/enterprise-mail-solution",
-                },
+                // {
+                //   label: "Business Mail Service 🚧",
+                //   to: "/solutions/enterprise-mail-solution",
+                // },
                 {
                   label: "Anonymous VPN 🚧",
                   to: "/solutions/vpn",

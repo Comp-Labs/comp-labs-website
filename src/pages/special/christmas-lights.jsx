@@ -56,7 +56,7 @@ export default function LightsAnimation() {
             rel="noopener noreferrer"
             class="button button--primary"
           >
-            <i class="fa-brands fa-codepen"></i> View on CodePen
+            <i class="fa-brands fa-codepen"></i> Edit on CodePen
           </a>
         </center>
         <br></br>
