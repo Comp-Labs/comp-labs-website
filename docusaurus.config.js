@@ -197,11 +197,7 @@ const darkCodeTheme = require("prism-react-renderer/themes/dracula");
                 },
               ],
             },
-            {
-              href: "https://forms.gle/dQmrNAZZ1KK81rAP7",
-              label: "Contact Us",
-              position: "left",
-            },
+            { to: "https://forms.gle/dQmrNAZZ1KK81rAP7", label: "Contact Us", position: "left" },
             // { to: "/donate-us", label: "Donate Us", position: "left" },
             { to: "/special", label: "Special ✨", position: "left" },
             {
@@ -263,7 +259,7 @@ const darkCodeTheme = require("prism-react-renderer/themes/dracula");
                   href: "https://forms.gle/dQmrNAZZ1KK81rAP7",
                 },
                 {
-                  label: "Special",
+                  label: "Special ✨",
                   href: "/special",
                 },
                 // {
