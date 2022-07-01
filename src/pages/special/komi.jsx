@@ -18,7 +18,7 @@ function AnimeKomiHeader() {
           Anime Komi Animation Brought to You by Comp Labs. Credits for this
           Animation goes to
           <a href="https://codepen.io/tiffachoo/pen/wvyXRzL" target="_blank">
-            @tiffachoo
+             @tiffachoo
           </a>
           at CodePen.
         </p>
