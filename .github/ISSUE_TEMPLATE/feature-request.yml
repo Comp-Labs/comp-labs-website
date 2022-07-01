@@ -2,13 +2,6 @@ name: 📦 Feature Request
 description: Came up with an idea? Feel free to share it here.
 title: "[Feature]: "
 labels: ["feature-request", "enhancement"]
-
-Is your feature request related to a problem you are facing? Please describe the problem you are trying to solve.
-
-Describe the solution you'd like Please describe the desired behavior.
-
-Describe alternatives you've considered Please describe alternative solutions or features you have considered.
-
 body:
   - type: textarea
     attributes:
