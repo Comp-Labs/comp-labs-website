@@ -1,0 +1,50 @@
+name: 🐛 Bug Report
+description: Something Buggy? Report it here.
+title: "[BUG]: "
+labels: ["bug", "triage"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for taking the time to fill out this bug report! If this doesn’t look right, [choose a different type](https://github.com/Comp-Labs/comp-labs-website/issues/new/choose).
+  - type: textarea
+    attributes:
+      label: Description
+      description: A clear and concise description of what the bug is, and why you consider it to be a bug.
+    validations:
+      required: true
+  - type: textarea
+    attributes:
+      label: Expected Behavior
+      description: A description of what you expected to happen.
+      placeholder: |
+        This should happen...
+    validations:
+        required: true
+  - type: textarea
+    attributes:
+      label: Actual Behavior
+      description: A description of what is actually happening.
+      placeholder: |
+        This is happening...
+    validations:
+        required: true
+  - type: textarea
+    attributes:
+      label: Reproduction Steps
+      description: Please tell us how to reproduce the issue you're facing so that we can address it properly.
+      placeholder: |
+        A description with steps to reproduce the issue.
+        1. Step 1
+        2. Step 2
+    validations:
+        required: true
+  - type: textarea
+    attributes:
+      label: Environment Details
+      description: Provide Environment Details (such as version of the stuff you're using)
+      placeholder: |
+        Browser: Chrome / Edge / Safari / Firefox / Opera v1.2.3
+        NodeJS: v17.2.0
+        NPM: 8.3.0
+        Operating System: Windows 10 / macOS 13 Ventura / Ubuntu 20.04 LTS
