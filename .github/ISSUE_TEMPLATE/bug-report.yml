@@ -45,4 +45,4 @@ body:
         NPM: 8.3.0
         Operating System: Windows 10 / macOS 13 Ventura / Ubuntu 20.04 LTS
     validations:
-        required: true
+        required: false
