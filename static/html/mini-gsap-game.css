@@ -1,0 +1,87 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  background-color: #8d98a0;
+  display: grid;
+  place-items: center;
+  min-height: 100vh;
+  width: 100%;
+  overflow: hidden;
+  opacity: 0;
+}
+
+#wallpaper {
+  fill: #abab87;
+  position: absolute;
+  inset: 0;
+  height: 100%;
+  width: 100%;
+  filter: url(#scribble);
+}
+
+#picture-frame {
+  max-width: 70vw;
+  max-height: 70vh;
+  overflow: visible;
+  transform-origin: center 15%;
+  filter: url(#scribble);
+}
+
+#shadow {
+  opacity: 0.3;
+}
+
+#inner-shadow {
+  opacity: 0.5;
+}
+
+#wood {
+  fill: #d3b392;
+}
+
+#glare-group {
+  opacity: 0.35;
+}
+
+#cat-image {
+  filter: saturate(0.5);
+}
+
+#background {
+  fill: #5a6340;
+}
+
+body,
+#background,
+#mouth,
+#eyes,
+#wallpaper,
+#cat-image {
+  transition: 1s ease-in-out all;
+}
+
+.win {
+  background-color: #55b955;
+}
+.win #wood {
+  fill: #e2b383;
+}
+.win #wallpaper {
+  fill: #f2f269;
+}
+.win #background {
+  fill: #617330;
+}
+.win #mouth {
+  d: path("M388.5 292C376 320.5 341 307.5 336 266C342 300 311 330 288 297");
+}
+.win #eyes {
+  d: path("M208 216C229 208 247 196 279 218.5M361.5 218.5C379.5 208 407 187 441 210.5");
+}
+.win #cat-image {
+  filter: saturate(1);
+}

@@ -199,7 +199,7 @@ const darkCodeTheme = require("prism-react-renderer/themes/dracula");
             },
             { to: "https://forms.gle/dQmrNAZZ1KK81rAP7", label: "Contact Us", position: "left" },
             // { to: "/donate-us", label: "Donate Us", position: "left" },
-            { to: "/special", label: "Special ✨", position: "left" },
+            { to: "/webdev-crafts", label: "WebDev's Crafts", position: "left" },
             {
               type: "dropdown",
               label: "Legal",
@@ -259,8 +259,8 @@ const darkCodeTheme = require("prism-react-renderer/themes/dracula");
                   href: "https://forms.gle/dQmrNAZZ1KK81rAP7",
                 },
                 {
-                  label: "Special ✨",
-                  href: "/special",
+                  label: "WebDev's Crafts",
+                  href: "/webdev-crafts",
                 },
                 // {
                 //   label: "Donate Us!",

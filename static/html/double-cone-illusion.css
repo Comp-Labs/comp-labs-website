@@ -1,0 +1,77 @@
+body {
+	margin: 0;
+	width: 100vw;
+	height: 100vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	--ring: #3b3a4c;
+	--speed: 8s;
+	--light: #fff8;
+	background: radial-gradient(#fff0 40%, #000c 100%), linear-gradient(315deg, #bdd4e7 0%, #8693ab 74%);
+
+}
+
+body:before {
+	content: "";
+	position: absolute;
+	background:red;
+	width: 70vmin;
+	height: 70vmin;
+	animation: spin var(--speed) linear 0s infinite;
+	border-radius: 100%;
+	background: 
+		/* deepest rings */
+		radial-gradient(circle at 50.5% 50%, #fff0 4.5vmin, var(--ring) calc(4.5vmin + 1px) 5.5vmin, #fff0 calc(5.5vmin + 1px) 100vmin),
+		radial-gradient(circle at 52% 50%, #fff0 5.5vmin, var(--ring) calc(5.5vmin + 1px) 6.5vmin, #fff0 calc(6.5vmin + 1px) 100vmin),
+		radial-gradient(circle at 53.5% 50%, #fff0 6.5vmin, var(--ring) calc(6.5vmin + 1px) 7.5vmin, #fff0 calc(7.5vmin + 1px) 100vmin),
+		radial-gradient(circle at 55% 50%, #fff0 7.5vmin, var(--ring) calc(7.5vmin + 1px) 8.5vmin, #fff0 calc(8.5vmin + 1px) 100vmin),
+		radial-gradient(circle at 56.5% 50%, #fff0 8.5vmin, var(--ring) calc(8.5vmin + 1px) 9.5vmin, #fff0 calc(9.5vmin + 1px) 100vmin),
+		radial-gradient(circle at 57.75% 50%, #fff0 9.5vmin, var(--ring) calc(9.5vmin + 1px) 10.5vmin, #fff0 calc(10.5vmin + 1px) 100vmin),
+		radial-gradient(circle at 59.25% 50%, #fff0 10.5vmin, var(--ring) calc(10.5vmin + 1px) 11.5vmin, #fff0 calc(11.5vmin + 1px) 100vmin),
+		/* deeper rings */
+		radial-gradient(circle at 59.75% 50%, #fff0 11vmin, var(--ring) calc(11vmin + 1px) 12vmin, #fff0 calc(12vmin + 1px) 100vmin),
+		radial-gradient(circle at 58.25% 50%, #fff0 12vmin, var(--ring) calc(12vmin + 1px) 13vmin, #fff0 calc(13vmin + 1px) 100vmin),
+		radial-gradient(circle at 56.75% 50%, #fff0 13vmin, var(--ring) calc(13vmin + 1px) 14vmin, #fff0 calc(14vmin + 1px) 100vmin),
+		radial-gradient(circle at 55.25% 50%, #fff0 14vmin, var(--ring) calc(14vmin + 1px) 15vmin, #fff0 calc(15vmin + 1px) 100vmin),
+		radial-gradient(circle at 53.75% 50%, #fff0 15vmin, var(--ring) calc(15vmin + 1px) 16vmin, #fff0 calc(16vmin + 1px) 100vmin),
+		radial-gradient(circle at 52.25% 50%, #fff0 16vmin, var(--ring) calc(16vmin + 1px) 17vmin, #fff0 calc(17vmin + 1px) 100vmin),
+		radial-gradient(circle at 50.75% 50%, #fff0 17vmin, var(--ring) calc(17vmin + 1px) 18vmin, #fff0 calc(18vmin + 1px) 100vmin),  
+		/* inner rings */
+		radial-gradient(circle at 50% 50%, #fff0 17.5vmin, var(--ring) calc(17.5vmin + 1px) 18.5vmin, #fff0 calc(18.5vmin + 1px) 100vmin),
+		radial-gradient(circle at 51.5% 50%, #fff0 18.5vmin, var(--ring) calc(18.5vmin + 1px) 19.5vmin, #fff0 calc(19.5vmin + 1px) 100vmin),
+		radial-gradient(circle at 53% 50%, #fff0 19.5vmin, var(--ring) calc(19.5vmin + 1px) 20.5vmin, #fff0 calc(20.5vmin + 1px) 100vmin),
+		radial-gradient(circle at 54.5% 50%, #fff0 20.5vmin, var(--ring) calc(20.5vmin + 1px) 21.5vmin, #fff0 calc(21.5vmin + 1px) 100vmin),
+		radial-gradient(circle at 56% 50%, #fff0 21.5vmin, var(--ring) calc(21.5vmin + 1px) 22.5vmin, #fff0 calc(22.5vmin + 1px) 100vmin),
+		radial-gradient(circle at 57.5% 50%, #fff0 22.5vmin, var(--ring) calc(22.5vmin + 1px) 23.5vmin, #fff0 calc(23.5vmin + 1px) 100vmin),
+		radial-gradient(circle at 59% 50%, #fff0 23.5vmin, var(--ring) calc(23.5vmin + 1px) 24.5vmin, #fff0 calc(24.5vmin + 1px) 100vmin),
+		radial-gradient(circle at 60.5% 50%, #fff0 24.5vmin, var(--ring) calc(24.5vmin + 1px) 25.5vmin, #fff0 calc(25.5vmin + 1px) 100vmin),
+		radial-gradient(circle at 62% 50%, #fff0 25.5vmin, var(--ring) calc(25.5vmin + 1px) 26.5vmin, #fff0 calc(26.5vmin + 1px) 100vmin),
+		/* outer rings */
+		radial-gradient(circle at 50% 50%, #fff0 34vmin, var(--ring) calc(34vmin + 1px) 35vmin, #fff0 calc(35vmin + 1px) 100vmin),
+		radial-gradient(circle at 51.5% 50%, #fff0 33vmin, var(--ring) calc(33vmin + 1px) 34vmin, #fff0 calc(34vmin + 1px) 100vmin),
+		radial-gradient(circle at 53% 50%, #fff0 32vmin, var(--ring) calc(32vmin + 1px) 33vmin, #fff0 calc(33vmin + 1px) 100vmin),
+		radial-gradient(circle at 54.5% 50%, #fff0 31vmin, var(--ring) calc(31vmin + 1px) 32vmin, #fff0 calc(32vmin + 1px) 100vmin),
+		radial-gradient(circle at 56% 50%, #fff0 30vmin, var(--ring) calc(30vmin + 1px) 31vmin, #fff0 calc(31vmin + 1px) 100vmin),
+		radial-gradient(circle at 57.5% 50%, #fff0 29vmin, var(--ring) calc(29vmin + 1px) 30vmin, #fff0 calc(30vmin + 1px) 100vmin),
+		radial-gradient(circle at 59% 50%, #fff0 28vmin, var(--ring) calc(28vmin + 1px) 29vmin, #fff0 calc(29vmin + 1px) 100vmin),
+		radial-gradient(circle at 60.5% 50%, #fff0 27vmin, var(--ring) calc(27vmin + 1px) 28vmin, #fff0 calc(28vmin + 1px) 100vmin),
+		radial-gradient(circle at 62% 50%, #fff0 26vmin, var(--ring) calc(26vmin + 1px) 27vmin, #fff0 calc(27vmin + 1px) 100vmin),
+		/* bg */
+		radial-gradient(circle at 55% 50%, #FFF 0%, #fff8 15%, #FFF0 15% 100%),
+  radial-gradient(circle at 50% 50%, #0000 5%, #0001 9%, #0004 10% , var(--light) 11% 100%);
+}
+
+@keyframes spin {
+	to { transform: rotate(360deg); }
+}
+
+body:after {
+    content: "";
+    position: absolute;
+    width: 70vmin;
+    height: 70vmin;
+    border-radius: 100%;
+	animation: spin var(--speed) linear 0s infinite;
+    box-shadow: -1vmin -1vmin 5vmin 0 #fff4, 1vmin 1vmin 5vmin 0 #0008;
+}
