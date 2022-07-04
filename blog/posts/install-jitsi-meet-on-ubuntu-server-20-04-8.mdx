@@ -14,17 +14,31 @@ import Giscus from "@giscus/react";
 
 # Install Jitsi Meet on Ubuntu Server 20.04
 
-![Image](/img/blog/default.png)
+![Image](/img/blog/8/8.jpg)
 
-Today we'll guide you on Implementing Jitsi Meet on Ubuntu Server 20.04.
+Today we'll guide you on Installing Jitsi Meet on Ubuntu Server 20.04.
 
 <!-- truncate -->
 
 ## Prerequisites
 
-- Ubuntu Server 20.04
+- Ubuntu Server 20.04+
+- Public IP Address (Optional but Recommended)
+- `sudo` / `root` User Access
 
 ## Introduction
+
+Today we'll install Jitsi Meet Server on an Ubuntu Server. So let me tell you what is **Jitsi Meet**. Jitsi Meet is a Ubuntu Package that can enable you to Attend and Join Meetings using the server. Sounds Cool, Huh?
+
+So Now Let's Begin the Installation...
+
+sudo apt -y update
+sudo apt -y install gnupg2 nginx-full curl wget apt-transport-https
+sudo apt-add-repository universe
+sudo apt -y update
+
+DNS:
+- A mail.complabs.in <<Public IP Address>> 1800
 
 ---
 
