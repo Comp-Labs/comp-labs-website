@@ -18,11 +18,12 @@ const WebDevCards = [
     image: 'https://complabs.in/img/blog/default.png',
     url: {
       page: 'https://weatherbox.complabs.in',
+      github: 'https://github.com/Comp-Labs/WeatherBox',
     },
     description: (
       <Translate id="special.weatherbox.description">
-        WeatherBox is a Simple and Modern Weather App that shows the Current
-        Weather of any place in the world!
+        WeatherBox is a Simple Weather App that shows the Current
+        Weather of any city in the world!
       </Translate>
     ),
   },
@@ -48,8 +49,7 @@ const WebDevCards = [
     },
     description: (
       <Translate id="special.happy.sailor.description">
-        CodeSandbox is a popular special solution. Runs Docusaurus in a remote
-        Docker container.
+        Happy Sailor in the Sea Animation made using Pure HTML, CSS, and JS.
       </Translate>
     ),
   },
@@ -62,13 +62,12 @@ const WebDevCards = [
     },
     description: (
       <Translate id="special..description">
-        CodeSandbox is a popular special solution. Runs Docusaurus in a remote
-        Docker container.
+        Sewing Machine Animation made using Pure HTML and CSS.
       </Translate>
     ),
   },
   {
-    name: 'Nezuko',
+    name: 'Anime Nezuko',
     image: 'https://complabs.in/img/blog/default.png',
     url: {
       page: 'https://codepen.io/rudrasen2/full/dydworj',
@@ -76,13 +75,12 @@ const WebDevCards = [
     },
     description: (
       <Translate id="special.nezuko.description">
-        CodeSandbox is a popular special solution. Runs Docusaurus in a remote
-        Docker container.
+        Anime Nezuko made using Pure HTML and CSS.
       </Translate>
     ),
   },
   {
-    name: 'Komi',
+    name: 'Anime Komi',
     image: 'https://complabs.in/img/blog/default.png',
     url: {
       page: 'https://codepen.io/rudrasen2/full/YzedXxa',
@@ -90,8 +88,7 @@ const WebDevCards = [
     },
     description: (
       <Translate id="special.komi.description">
-        CodeSandbox is a popular special solution. Runs Docusaurus in a remote
-        Docker container.
+        Anime Komi Animation made using Pure HTML and CSS.
       </Translate>
     ),
   },
@@ -104,8 +101,150 @@ const WebDevCards = [
     },
     description: (
       <Translate id="special.turin.horse.description">
-        CodeSandbox is a popular special solution. Runs Docusaurus in a remote
-        Docker container.
+        Turin Horse Animation made using Pure HTML and CSS.
+      </Translate>
+    ),
+  },
+  {
+    name: 'Double Cone Illusion',
+    image: 'https://complabs.in/img/blog/default.png',
+    url: {
+      page: 'https://codepen.io/rudrasen2/full/oNEJXeo',
+      codepen: 'https://codepen.io/rudrasen2/pen/oNEJXeo',
+    },
+    description: (
+      <Translate id="special.double.cone.illusion.description">
+        Double Cone Illusion made using Pure HTML and CSS.
+      </Translate>
+    ),
+  },
+  {
+    name: 'Magical Text Effect ✨',
+    image: 'https://complabs.in/img/blog/default.png',
+    url: {
+      page: 'https://codepen.io/rudrasen2/full/oNEJXeo',
+      codepen: 'https://codepen.io/rudrasen2/pen/oNEJXeo',
+    },
+    description: (
+      <Translate id="special.magical.text.effect.description">
+        Magical Text Effect made using Pure HTML, CSS, and JS.
+      </Translate>
+    ),
+  },
+  {
+    name: 'Mini GSAP Game - A Little to the Right',
+    image: 'https://complabs.in/img/blog/default.png',
+    url: {
+      page: 'https://codepen.io/rudrasen2/full/oNEJXeo',
+      codepen: 'https://codepen.io/rudrasen2/pen/oNEJXeo',
+    },
+    description: (
+      <Translate id="special.mini.gsap.game.description">
+        Mini GSAP Game - A Little to the Right made using Pure HTML, CSS, and JS.
+      </Translate>
+    ),
+  },
+  {
+    name: 'Multi-Input Maze',
+    image: 'https://complabs.in/img/blog/default.png',
+    url: {
+      page: 'https://codepen.io/rudrasen2/full/oNEJXeo',
+      codepen: 'https://codepen.io/rudrasen2/pen/oNEJXeo',
+    },
+    description: (
+      <Translate id="special.multi.input.maze.description">
+        Multi-Input Maze Game made using Pure HTML, CSS, and JS.
+      </Translate>
+    ),
+  },
+  {
+    name: 'Dragon Animation 🐉',
+    image: 'https://complabs.in/img/blog/default.png',
+    url: {
+      page: 'https://codepen.io/rudrasen2/full/oNEJXeo',
+      codepen: 'https://codepen.io/rudrasen2/pen/oNEJXeo',
+    },
+    description: (
+      <Translate id="special.dragon.animation.description">
+        Dragon Animation made using Pure HTML, CSS, and JS.
+      </Translate>
+    ),
+  },
+  {
+    name: '1-DIV Card Backgrounds',
+    image: 'https://complabs.in/img/blog/default.png',
+    url: {
+      page: 'https://codepen.io/rudrasen2/full/oNEJXeo',
+      codepen: 'https://codepen.io/rudrasen2/pen/oNEJXeo',
+    },
+    description: (
+      <Translate id="special.1.div.card.backgrounds.description">
+        1-DIV Card Backgrounds made using Pure HTML and CSS.
+      </Translate>
+    ),
+  },
+  {
+    name: 'Parametric Spider 🕷️',
+    image: 'https://complabs.in/img/blog/default.png',
+    url: {
+      page: 'https://codepen.io/rudrasen2/full/oNEJXeo',
+      codepen: 'https://codepen.io/rudrasen2/pen/oNEJXeo',
+    },
+    description: (
+      <Translate id="special.parametric.spider.description">
+        Parametric Spider made using Pure HTML, CSS, and JS.
+      </Translate>
+    ),
+  },
+  {
+    name: 'Island 🏝️',
+    image: 'https://complabs.in/img/blog/default.png',
+    url: {
+      page: 'https://codepen.io/rudrasen2/full/oNEJXeo',
+      codepen: 'https://codepen.io/rudrasen2/pen/oNEJXeo',
+    },
+    description: (
+      <Translate id="special.island.description">
+        Island made using Next.JS and Pure HTML, CSS, and JS.
+      </Translate>
+    ),
+  },
+  {
+    name: 'Play Buttons',
+    image: 'https://complabs.in/img/blog/default.png',
+    url: {
+      page: 'https://codepen.io/rudrasen2/full/oNEJXeo',
+      codepen: 'https://codepen.io/rudrasen2/pen/oNEJXeo',
+    },
+    description: (
+      <Translate id="special.play.buttons.description">
+        SVG Play Buttons made using Pure HTML and CSS.
+      </Translate>
+    ),
+  },
+  {
+    name: 'Super Header Slider',
+    image: 'https://complabs.in/img/blog/default.png',
+    url: {
+      page: 'https://codepen.io/rudrasen2/full/oNEJXeo',
+      codepen: 'https://codepen.io/rudrasen2/pen/oNEJXeo',
+    },
+    description: (
+      <Translate id="special.super.header.slider.description">
+        Super Header Slider made using Pure HTML, CSS, and JS.
+      </Translate>
+    ),
+  },
+  {
+    name: 'Generative Kong Summit Patterns',
+    image: 'https://complabs.in/img/blog/default.png',
+    url: {
+      page: 'https://codepen.io/rudrasen2/full/oNEJXeo',
+      codepen: 'https://codepen.io/rudrasen2/pen/oNEJXeo',
+    },
+    description: (
+      <Translate id="special.generative.kong.summit.patterns.description">
+        Generative Kong Summit Patterns made using Pure HTML, CSS, and JS.
       </Translate>
     ),
   },
@@ -117,6 +256,7 @@ interface Props {
   url: {
     page?: string;
     codepen?: string;
+    github?: string;
   };
   description: JSX.Element;
 }
@@ -136,8 +276,14 @@ function WebDevCard({ name, image, url, description }: Props) {
         </div>
         <div className="card__footer">
           <div className="button-group button-group--block">
-            <Link className="button button--secondary" to={url.page}>
-              <Translate id="special.tryItButton">View Now!</Translate>
+            <Link className="button button--primary" to={url.page}>
+              <Translate id="special.tryItButton">View Live</Translate>
+            </Link>
+            <Link className="button button--primary" to={url.codepen}>
+              <Translate id="special.tryItButton">View on CodePen</Translate>
+            </Link>
+            <Link className="button button--primary" to={url.github}>
+              <Translate id="special.tryItButton">View on GitHub</Translate>
             </Link>
           </div>
         </div>
