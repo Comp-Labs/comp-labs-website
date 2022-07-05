@@ -30,7 +30,7 @@ const WebDevCards = [
     name: 'Christmas Lights 🎇',
     image: 'https://complabs.in/img/blog/default.png',
     url: {
-      page: '/special/christmas-lights',
+      page: 'https://codepen.io/rudrasen2/full/GRywgoR',
       codepen: 'https://codepen.io/rudrasen2/pen/GRywgoR',
     },
     description: (
@@ -43,7 +43,7 @@ const WebDevCards = [
     name: 'Happy Sailor ⛵',
     image: 'https://complabs.in/img/blog/default.png',
     url: {
-      page: '/special/happy-sailor-animation',
+      page: '/https://codepen.io/rudrasen2/full/zYRxPBr',
       codepen: 'https://codepen.io/rudrasen2/pen/zYRxPBr',
     },
     description: (
@@ -57,7 +57,7 @@ const WebDevCards = [
     name: 'Sewing Machine 🪡🧵',
     image: 'https://complabs.in/img/blog/default.png',
     url: {
-      page: '/special/sewing-machine',
+      page: 'https://codepen.io/rudrasen2/full/XWZeqVb',
       codepen: 'https://codepen.io/rudrasen2/pen/XWZeqVb',
     },
     description: (
@@ -71,7 +71,7 @@ const WebDevCards = [
     name: 'Nezuko',
     image: 'https://complabs.in/img/blog/default.png',
     url: {
-      page: '/special/nezuko',
+      page: 'https://codepen.io/rudrasen2/full/dydworj',
       codepen: 'https://codepen.io/rudrasen2/pen/dydworj',
     },
     description: (
@@ -85,7 +85,7 @@ const WebDevCards = [
     name: 'Komi',
     image: 'https://complabs.in/img/blog/default.png',
     url: {
-      page: '/special/komi',
+      page: 'https://codepen.io/rudrasen2/full/YzedXxa',
       codepen: 'https://codepen.io/rudrasen2/pen/YzedXxa',
     },
     description: (
@@ -99,7 +99,7 @@ const WebDevCards = [
     name: 'Turin Horse - Hadi 🐎',
     image: 'https://complabs.in/img/blog/default.png',
     url: {
-      page: '/special/turin-horse',
+      page: 'https://codepen.io/rudrasen2/full/oNEJXeo',
       codepen: 'https://codepen.io/rudrasen2/pen/oNEJXeo',
     },
     description: (
