@@ -43,7 +43,7 @@ const WebDevCards = [
     name: 'Happy Sailor ⛵',
     image: 'https://complabs.in/img/blog/default.png',
     url: {
-      page: '/https://codepen.io/rudrasen2/full/zYRxPBr',
+      page: 'https://codepen.io/rudrasen2/full/zYRxPBr',
       codepen: 'https://codepen.io/rudrasen2/pen/zYRxPBr',
     },
     description: (
