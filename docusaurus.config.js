@@ -11,7 +11,7 @@ const darkCodeTheme = require("prism-react-renderer/themes/dracula");
     url: "https://complabs.in",
     baseUrl: "/",
     onBrokenLinks: "throw",
-    onBrokenMarkdownLinks: "warn",
+    onBrokenMarkdownLinks: "throw",
     favicon: "img/favicon.ico",
     organizationName: "Comp-Labs",
     projectName: "comp-labs-website",
