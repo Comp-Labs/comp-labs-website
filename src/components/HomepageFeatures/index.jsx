@@ -7,7 +7,7 @@ import Translate, { translate } from "@docusaurus/Translate";
 const FeatureList = [
   {
     title: "Guides",
-    Svg: require("../../static/img/undraw_typewriter.svg").default,
+    Svg: require("../../../static/img/undraw_typewriter.svg").default,
     description: (
       <>
         Tech Based Blog for Enthusiasts.<br></br>
@@ -20,7 +20,7 @@ const FeatureList = [
   },
   {
     title: "Apps",
-    Svg: require("../../static/img/undraw_develop_app.svg").default,
+    Svg: require("../../../static/img/undraw_develop_app.svg").default,
     description: (
       <>
         Apps with the World's Best UI/UX for Platforms Including <br></br>
@@ -36,7 +36,7 @@ const FeatureList = [
   },
   {
     title: "App Publisher for Google Play",
-    Svg: require("../../static/img/undraw_android.svg").default,
+    Svg: require("../../../static/img/undraw_android.svg").default,
     description: (
       <>
         Best Solution to Publish Your <code>AndroidOS</code> and{" "}
