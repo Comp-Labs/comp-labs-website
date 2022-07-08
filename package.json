@@ -26,7 +26,7 @@
     "@docusaurus/theme-common": "^2.0.0-beta.21",
     "@docusaurus/theme-live-codeblock": "^2.0.0-beta.21",
     "@docusaurus/utils": "^2.0.0-beta.21",
-    "@docusaurus/utils-common": "2.0.0-beta.21",
+    "@docusaurus/utils-common": "2.0.0-beta.22",
     "@emotion/react": "^11.7.1",
     "@emotion/styled": "^11.6.0",
     "@giscus/react": "^2.0.6",
