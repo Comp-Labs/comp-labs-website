@@ -282,9 +282,11 @@ function WebDevCard({ name, image, url, description }: Props) {
             <Link className="button button--primary" to={url.codepen}>
               <Translate id="special.tryItButton">View on CodePen</Translate>
             </Link>
+            {url.github > 0 &&
             <Link className="button button--primary" to={url.github}>
               <Translate id="special.tryItButton">View on GitHub</Translate>
             </Link>
+            }
           </div>
         </div>
       </div>
