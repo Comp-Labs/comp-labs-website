@@ -277,14 +277,14 @@ function WebDevCard({ name, image, url, description }: Props) {
         <div className="card__footer">
           <div className="button-group button-group--block">
             <Link className="button button--primary" to={url.page}>
-              <Translate id="special.tryItButton">View Live</Translate>
+              <Translate id="special.tryItButton"><i class="fa-solid fa-arrow-up-right-from-square"></i> View Live</Translate>
             </Link>
             <Link className="button button--primary" to={url.codepen}>
-              <Translate id="special.tryItButton">View on CodePen</Translate>
+              <Translate id="special.tryItButton"><i class="fa-brands fa-codepen"></i> View on CodePen</Translate>
             </Link>
-            {url.github > 0 &&
+            if (url.github={url.github}) {
             <Link className="button button--primary" to={url.github}>
-              <Translate id="special.tryItButton">View on GitHub</Translate>
+              <Translate id="special.tryItButton"><i class="fa-brands fa-github"></i> View on GitHub</Translate>
             </Link>
             }
           </div>
