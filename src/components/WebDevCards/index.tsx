@@ -282,7 +282,7 @@ function WebDevCard({ name, image, url, description }: Props) {
             <Link className="button button--primary" to={url.codepen}>
               <i class="fa-brands fa-codepen"></i> View on CodePen
             </Link>
-            if (url.github={url.github}) {
+            if (url.github="https://github.com/Comp-Labs/WeatherBox") {
             <Link className="button button--primary" to={url.github}>
               <i class="fa-brands fa-github"></i> View on GitHub
             </Link>
