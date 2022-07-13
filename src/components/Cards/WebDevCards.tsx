@@ -15,7 +15,7 @@ import Link from '@docusaurus/Link';
 const WebDevCards = [
   {
     name: 'WeatherBox ⛅',
-    image: 'https://complabs.in/img/blog/default.png',
+    image: require('@site/static/img/blog/default.png'),
     url: {
       page: 'https://weatherbox.complabs.in',
       github: 'https://github.com/Comp-Labs/WeatherBox',
@@ -29,7 +29,7 @@ const WebDevCards = [
   },
   {
     name: 'Christmas Lights 🎇',
-    image: 'https://complabs.in/img/blog/default.png',
+    image: require('@site/static/img/blog/default.png'),
     url: {
       page: 'https://codepen.io/rudrasen2/full/GRywgoR',
       codepen: 'https://codepen.io/rudrasen2/pen/GRywgoR',
@@ -42,7 +42,7 @@ const WebDevCards = [
   },
   {
     name: 'Happy Sailor ⛵',
-    image: 'https://complabs.in/img/blog/default.png',
+    image: require('@site/static/img/blog/default.png'),
     url: {
       page: 'https://codepen.io/rudrasen2/full/zYRxPBr',
       codepen: 'https://codepen.io/rudrasen2/pen/zYRxPBr',
@@ -55,7 +55,7 @@ const WebDevCards = [
   },
   {
     name: 'Sewing Machine 🪡🧵',
-    image: 'https://complabs.in/img/blog/default.png',
+    image: require('@site/static/img/blog/default.png'),
     url: {
       page: 'https://codepen.io/rudrasen2/full/XWZeqVb',
       codepen: 'https://codepen.io/rudrasen2/pen/XWZeqVb',
@@ -68,7 +68,7 @@ const WebDevCards = [
   },
   {
     name: 'Anime Nezuko',
-    image: 'https://complabs.in/img/blog/default.png',
+    image: require('@site/static/img/blog/default.png'),
     url: {
       page: 'https://codepen.io/rudrasen2/full/dydworj',
       codepen: 'https://codepen.io/rudrasen2/pen/dydworj',
@@ -81,7 +81,7 @@ const WebDevCards = [
   },
   {
     name: 'Anime Komi',
-    image: 'https://complabs.in/img/blog/default.png',
+    image: require('@site/static/img/blog/default.png'),
     url: {
       page: 'https://codepen.io/rudrasen2/full/YzedXxa',
       codepen: 'https://codepen.io/rudrasen2/pen/YzedXxa',
@@ -94,7 +94,7 @@ const WebDevCards = [
   },
   {
     name: 'Turin Horse - Hadi 🐎',
-    image: 'https://complabs.in/img/blog/default.png',
+    image: require('@site/static/img/blog/default.png'),
     url: {
       page: 'https://codepen.io/rudrasen2/full/oNEJXeo',
       codepen: 'https://codepen.io/rudrasen2/pen/oNEJXeo',
@@ -107,7 +107,7 @@ const WebDevCards = [
   },
   {
     name: 'Double Cone Illusion',
-    image: 'https://complabs.in/img/blog/default.png',
+    image: require('@site/static/img/blog/default.png'),
     url: {
       page: 'https://codepen.io/josetxu/full/VwQqagB',
       codepen: 'https://codepen.io/josetxu/pen/VwQqagB',
@@ -120,7 +120,7 @@ const WebDevCards = [
   },
   {
     name: 'Magical Text Effect ✨',
-    image: 'https://complabs.in/img/blog/default.png',
+    image: require('@site/static/img/blog/default.png'),
     url: {
       page: 'https://codepen.io/Hyperplexed/full/YzeOLYe',
       codepen: 'https://codepen.io/Hyperplexed/pen/YzeOLYe',
@@ -133,7 +133,7 @@ const WebDevCards = [
   },
   {
     name: 'Mini GSAP Game - A Little to the Right',
-    image: 'https://complabs.in/img/blog/default.png',
+    image: require('@site/static/img/blog/default.png'),
     url: {
       page: 'https://codepen.io/a-trost/full/jOZXdoP',
       codepen: 'https://codepen.io/a-trost/pen/jOZXdoP',
@@ -146,7 +146,7 @@ const WebDevCards = [
   },
   {
     name: 'Multi-Input Maze',
-    image: 'https://complabs.in/img/blog/default.png',
+    image: require('@site/static/img/blog/default.png'),
     url: {
       page: 'https://codepen.io/nitnelav/full/GRQEadJ',
       codepen: 'https://codepen.io/nitnelav/pen/GRQEadJ',
@@ -159,7 +159,7 @@ const WebDevCards = [
   },
   {
     name: 'Dragon Animation 🐉',
-    image: 'https://complabs.in/img/blog/default.png',
+    image: require('@site/static/img/blog/default.png'),
     url: {
       page: 'https://codepen.io/grantjenkins/full/poeqNve',
       codepen: 'https://codepen.io/grantjenkins/pen/poeqNve',
@@ -172,7 +172,7 @@ const WebDevCards = [
   },
   {
     name: '1-DIV Card Backgrounds',
-    image: 'https://complabs.in/img/blog/default.png',
+    image: require('@site/static/img/blog/default.png'),
     url: {
       page: 'https://codepen.io/thebabydino/full/NWxBzRv',
       codepen: 'https://codepen.io/thebabydino/pen/NWxBzRv',
@@ -185,7 +185,7 @@ const WebDevCards = [
   },
   {
     name: 'Parametric Spider 🕷️',
-    image: 'https://complabs.in/img/blog/default.png',
+    image: require('@site/static/img/blog/default.png'),
     url: {
       page: 'https://codepen.io/supah/full/vYdwbQK',
       codepen: 'https://codepen.io/supah/pen/vYdwbQK',
@@ -198,7 +198,7 @@ const WebDevCards = [
   },
   {
     name: 'Island 🏝️',
-    image: 'https://complabs.in/img/blog/default.png',
+    image: require('@site/static/img/blog/default.png'),
     url: {
       page: 'https://codepen.io/Anna_Batura/full/eYVqoxd',
       codepen: 'https://codepen.io/Anna_Batura/pen/eYVqoxd',
@@ -211,7 +211,7 @@ const WebDevCards = [
   },
   {
     name: 'Play Buttons',
-    image: 'https://complabs.in/img/blog/default.png',
+    image: require('@site/static/img/blog/default.png'),
     url: {
       page: 'https://codepen.io/Adir-SL/full/zYRyaaN',
       codepen: 'https://codepen.io/Adir-SL/pen/zYRyaaN',
@@ -224,7 +224,7 @@ const WebDevCards = [
   },
   {
     name: 'Super Header Slider',
-    image: 'https://complabs.in/img/blog/default.png',
+    image: require('@site/static/img/blog/default.png'),
     url: {
       page: 'https://codepen.io/Hyperplexed/full/BaYXaOx',
       codepen: 'https://codepen.io/Hyperplexed/pen/BaYXaOx',
@@ -237,7 +237,7 @@ const WebDevCards = [
   },
   {
     name: 'Generative Kong Summit Patterns',
-    image: 'https://complabs.in/img/blog/default.png',
+    image: require('@site/static/img/blog/default.png'),
     url: {
       page: 'https://codepen.io/cobra_winfrey/full/poaYpGV',
       codepen: 'https://codepen.io/cobra_winfrey/pen/poaYpGV',
@@ -250,7 +250,7 @@ const WebDevCards = [
   },
   {
     name: 'Tri-Wave',
-    image: 'https://complabs.in/img/blog/default.png',
+    image: require('@site/static/img/blog/default.png'),
     url: {
       page: 'https://codepen.io/chrisgannon/full/zYNRdWX',
       codepen: 'https://codepen.io/chrisgannon/pen/zYNRdWX',
@@ -263,7 +263,7 @@ const WebDevCards = [
   },
   {
     name: '🍹 Sunrise',
-    image: 'https://complabs.in/img/blog/default.png',
+    image: require('@site/static/img/blog/default.png'),
     url: {
       page: 'https://codepen.io/deeonwuli/full/bGvbqgm',
       codepen: 'https://codepen.io/deeonwuli/pen/bGvbqgm',
@@ -276,7 +276,7 @@ const WebDevCards = [
   },
   {
     name: '😷 Woman Wearing Face Mask',
-    image: 'https://complabs.in/img/blog/default.png',
+    image: require('@site/static/img/blog/default.png'),
     url: {
       page: 'https://codepen.io/AsyrafHussin/full/LYdPOoG',
       codepen: 'https://codepen.io/AsyrafHussin/pen/LYdPOoG',
@@ -289,7 +289,7 @@ const WebDevCards = [
   },
   {
     name: '✈️ Stunt Airplane Interactions',
-    image: 'https://complabs.in/img/blog/default.png',
+    image: require('@site/static/img/blog/default.png'),
     url: {
       page: 'https://codepen.io/kitjenson/full/zYNQGag',
       codepen: 'https://codepen.io/kitjenson/pen/zYNQGag',
@@ -302,7 +302,7 @@ const WebDevCards = [
   },
   {
     name: 'House in Air Animation',
-    image: 'https://complabs.in/img/blog/default.png',
+    image: require('@site/static/img/blog/default.png'),
     url: {
       page: 'https://codepen.io/jh3y/full/jOzNQyG',
       codepen: 'https://codepen.io/jh3y/pen/jOzNQyG',
@@ -315,7 +315,7 @@ const WebDevCards = [
   },
   {
     name: '3D Print My Heart ❤️',
-    image: 'https://complabs.in/img/blog/default.png',
+    image: require('@site/static/img/blog/default.png'),
     url: {
       page: 'https://codepen.io/leimapapa/full/ExEjavJ',
       codepen: 'https://codepen.io/leimapapa/pen/ExEjavJ',
@@ -328,7 +328,7 @@ const WebDevCards = [
   },
   {
     name: 'Paper Craft Animation',
-    image: 'https://complabs.in/img/blog/default.png',
+    image: require('@site/static/img/blog/default.png'),
     url: {
       page: 'https://codepen.io/fostor_uchiyama/full/BarNVNY',
       codepen: 'https://codepen.io/fostor_uchiyama/pen/BarNVNY',
@@ -341,7 +341,7 @@ const WebDevCards = [
   },
   {
     name: 'Infinite City Motion',
-    image: 'https://complabs.in/img/blog/default.png',
+    image: require('@site/static/img/blog/default.png'),
     url: {
       page: 'https://codepen.io/pjkarlik/full/wvmKevN',
       codepen: 'https://codepen.io/pjkarlik/pen/wvmKevN',
@@ -354,7 +354,7 @@ const WebDevCards = [
   },
   {
     name: 'Noise Shapes with Input Motion',
-    image: 'https://complabs.in/img/blog/default.png',
+    image: require('@site/static/img/blog/default.png'),
     url: {
       page: 'https://codepen.io/Mamboleoo/full/YzaqPpd',
       codepen: 'https://codepen.io/Mamboleoo/pen/YzaqPpd',
@@ -367,7 +367,7 @@ const WebDevCards = [
   },
   {
     name: '3D Technoblade',
-    image: 'https://complabs.in/img/blog/default.png',
+    image: require('@site/static/img/blog/default.png'),
     url: {
       page: 'https://codepen.io/khanhtranngoccva/full/oNqjmRW',
       codepen: 'https://codepen.io/khanhtranngoccva/pen/oNqjmRW',
@@ -380,7 +380,7 @@ const WebDevCards = [
   },
   {
     name: 'Box Having Party',
-    image: 'https://complabs.in/img/blog/default.png',
+    image: require('@site/static/img/blog/default.png'),
     url: {
       page: 'https://codepen.io/atzedent/full/dydVGYN',
       codepen: 'https://codepen.io/atzedent/pen/dydVGYN',
@@ -393,7 +393,7 @@ const WebDevCards = [
   },
   {
     name: 'Play with Shadows',
-    image: 'https://complabs.in/img/blog/default.png',
+    image: require('@site/static/img/blog/default.png'),
     url: {
       page: 'https://codepen.io/Akerblad/full/rNdxBjb',
       codepen: 'https://codepen.io/Akerblad/pen/rNdxBjb',
@@ -406,7 +406,7 @@ const WebDevCards = [
   },
   {
     name: 'Interactive Graph',
-    image: 'https://complabs.in/img/blog/default.png',
+    image: require('@site/static/img/blog/default.png'),
     url: {
       page: 'https://codepen.io/ykadosh/full/GRxoWMR',
       codepen: 'https://codepen.io/ykadosh/pen/GRxoWMR',
@@ -419,7 +419,7 @@ const WebDevCards = [
   },
   {
     name: 'Arcade Game',
-    image: 'https://complabs.in/img/blog/default.png',
+    image: require('@site/static/img/blog/default.png'),
     url: {
       page: 'https://codepen.io/Calleb/full/JjLXQXY',
       codepen: 'https://codepen.io/Calleb/pen/JjLXQXY',
