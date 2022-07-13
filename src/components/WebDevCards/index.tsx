@@ -477,8 +477,8 @@ function WebDevCard({ name, image, url, description }: Props) {
 export function WebDevCardsRow(): JSX.Element {
   return (
     <div className="row">
-      {WebDevCards.map((special) => (
-        <WebDevCard key={crafts.name} {...special} />
+      {WebDevCards.map((crafts) => (
+        <WebDevCard key={crafts.name} {...crafts} />
       ))}
     </div>
   );
