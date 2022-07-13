@@ -58,7 +58,7 @@ interface Props {
     };
 }
 
-function macOSGuideSeriesCards({ name, image, url }: Props) {
+function macOSGuideSeriesCard({ name, image, url }: Props) {
     return (
         <div className="col col--6 margin-bottom--lg">
             <div className={clsx('card')}>
