@@ -105,10 +105,26 @@ function macOSGuideSeriesCard({ name, image, url }: Props) {
                 <div className="card__footer">
                     <p>{url.status}</p>
                     <Stack direction="row" spacing={1}>
-                        <Chip label={url.categories[0]} variant="outlined" size="small" />
-                        <Chip label={url.categories[1]} variant="outlined" size="small" />
-                        <Chip label={url.categories[2]} variant="outlined" size="small" />
-                        <Chip label={url.categories[3]} variant="outlined" size="small" />
+                        if (url.categories.length = 1)
+                        {
+                            <Chip label={url.categories[0]} variant="outlined" size="small" />
+                        }
+                        if (url.categories.length = 2)
+                        {
+                            <Chip label={url.categories[1]} variant="outlined" size="small" />
+                        }
+                        if (url.categories.length = 3)
+                        {
+                            <Chip label={url.categories[2]} variant="outlined" size="small" />
+                        }
+                        if (url.categories.length = 4)
+                        {
+                            <Chip label={url.categories[3]} variant="outlined" size="small" />
+                        }
+                        if (url.categories.length = 5)
+                        {
+                            <Chip label={url.categories[4]} variant="outlined" size="small" />
+                        }
                     </Stack>
                     <div className="button-group button-group--block">
                         <Link className="button button--primary" to={url.viewNow}>
