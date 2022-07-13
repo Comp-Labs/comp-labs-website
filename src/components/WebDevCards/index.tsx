@@ -21,7 +21,7 @@ const WebDevCards = [
       github: 'https://github.com/Comp-Labs/WeatherBox',
     },
     description: (
-      <Translate id="special.weatherbox.description">
+      <Translate id="crafts.weatherbox.description">
         WeatherBox is a Simple Weather App that shows the Current
         Weather of any city in the world!
       </Translate>
@@ -35,7 +35,7 @@ const WebDevCards = [
       codepen: 'https://codepen.io/rudrasen2/pen/GRywgoR',
     },
     description: (
-      <Translate id="special.christmas.lights.description">
+      <Translate id="crafts.christmas.lights.description">
         Christmas Light Rope made using Pure HTML and CSS.
       </Translate>
     ),
@@ -48,7 +48,7 @@ const WebDevCards = [
       codepen: 'https://codepen.io/rudrasen2/pen/zYRxPBr',
     },
     description: (
-      <Translate id="special.happy.sailor.description">
+      <Translate id="crafts.happy.sailor.description">
         Happy Sailor in the Sea Animation made using Pure HTML, CSS, and JS.
       </Translate>
     ),
@@ -61,7 +61,7 @@ const WebDevCards = [
       codepen: 'https://codepen.io/rudrasen2/pen/XWZeqVb',
     },
     description: (
-      <Translate id="special..description">
+      <Translate id="crafts..description">
         Sewing Machine Animation made using Pure HTML and CSS.
       </Translate>
     ),
@@ -74,7 +74,7 @@ const WebDevCards = [
       codepen: 'https://codepen.io/rudrasen2/pen/dydworj',
     },
     description: (
-      <Translate id="special.nezuko.description">
+      <Translate id="crafts.nezuko.description">
         Anime Nezuko made using Pure HTML and CSS.
       </Translate>
     ),
@@ -87,7 +87,7 @@ const WebDevCards = [
       codepen: 'https://codepen.io/rudrasen2/pen/YzedXxa',
     },
     description: (
-      <Translate id="special.komi.description">
+      <Translate id="crafts.komi.description">
         Anime Komi Animation made using Pure HTML and CSS.
       </Translate>
     ),
@@ -100,7 +100,7 @@ const WebDevCards = [
       codepen: 'https://codepen.io/rudrasen2/pen/oNEJXeo',
     },
     description: (
-      <Translate id="special.turin.horse.description">
+      <Translate id="crafts.turin.horse.description">
         Turin Horse Animation made using Pure HTML and CSS.
       </Translate>
     ),
@@ -109,11 +109,11 @@ const WebDevCards = [
     name: 'Double Cone Illusion',
     image: 'https://complabs.in/img/blog/default.png',
     url: {
-      page: 'https://codepen.io/rudrasen2/full/oNEJXeo',
-      codepen: 'https://codepen.io/rudrasen2/pen/oNEJXeo',
+      page: 'https://codepen.io/josetxu/full/VwQqagB',
+      codepen: 'https://codepen.io/josetxu/pen/VwQqagB',
     },
     description: (
-      <Translate id="special.double.cone.illusion.description">
+      <Translate id="crafts.double.cone.illusion.description">
         Double Cone Illusion made using Pure HTML and CSS.
       </Translate>
     ),
@@ -122,11 +122,11 @@ const WebDevCards = [
     name: 'Magical Text Effect ✨',
     image: 'https://complabs.in/img/blog/default.png',
     url: {
-      page: 'https://codepen.io/rudrasen2/full/oNEJXeo',
-      codepen: 'https://codepen.io/rudrasen2/pen/oNEJXeo',
+      page: 'https://codepen.io/Hyperplexed/full/YzeOLYe',
+      codepen: 'https://codepen.io/Hyperplexed/pen/YzeOLYe',
     },
     description: (
-      <Translate id="special.magical.text.effect.description">
+      <Translate id="crafts.magical.text.effect.description">
         Magical Text Effect made using Pure HTML, CSS, and JS.
       </Translate>
     ),
@@ -135,11 +135,11 @@ const WebDevCards = [
     name: 'Mini GSAP Game - A Little to the Right',
     image: 'https://complabs.in/img/blog/default.png',
     url: {
-      page: 'https://codepen.io/rudrasen2/full/oNEJXeo',
-      codepen: 'https://codepen.io/rudrasen2/pen/oNEJXeo',
+      page: 'https://codepen.io/a-trost/full/jOZXdoP',
+      codepen: 'https://codepen.io/a-trost/pen/jOZXdoP',
     },
     description: (
-      <Translate id="special.mini.gsap.game.description">
+      <Translate id="crafts.mini.gsap.game.description">
         Mini GSAP Game - A Little to the Right made using Pure HTML, CSS, and JS.
       </Translate>
     ),
@@ -148,11 +148,11 @@ const WebDevCards = [
     name: 'Multi-Input Maze',
     image: 'https://complabs.in/img/blog/default.png',
     url: {
-      page: 'https://codepen.io/rudrasen2/full/oNEJXeo',
-      codepen: 'https://codepen.io/rudrasen2/pen/oNEJXeo',
+      page: 'https://codepen.io/nitnelav/full/GRQEadJ',
+      codepen: 'https://codepen.io/nitnelav/pen/GRQEadJ',
     },
     description: (
-      <Translate id="special.multi.input.maze.description">
+      <Translate id="crafts.multi.input.maze.description">
         Multi-Input Maze Game made using Pure HTML, CSS, and JS.
       </Translate>
     ),
@@ -161,11 +161,11 @@ const WebDevCards = [
     name: 'Dragon Animation 🐉',
     image: 'https://complabs.in/img/blog/default.png',
     url: {
-      page: 'https://codepen.io/rudrasen2/full/oNEJXeo',
-      codepen: 'https://codepen.io/rudrasen2/pen/oNEJXeo',
+      page: 'https://codepen.io/grantjenkins/full/poeqNve',
+      codepen: 'https://codepen.io/grantjenkins/pen/poeqNve',
     },
     description: (
-      <Translate id="special.dragon.animation.description">
+      <Translate id="crafts.dragon.animation.description">
         Dragon Animation made using Pure HTML, CSS, and JS.
       </Translate>
     ),
@@ -174,11 +174,11 @@ const WebDevCards = [
     name: '1-DIV Card Backgrounds',
     image: 'https://complabs.in/img/blog/default.png',
     url: {
-      page: 'https://codepen.io/rudrasen2/full/oNEJXeo',
-      codepen: 'https://codepen.io/rudrasen2/pen/oNEJXeo',
+      page: 'https://codepen.io/thebabydino/full/NWxBzRv',
+      codepen: 'https://codepen.io/thebabydino/pen/NWxBzRv',
     },
     description: (
-      <Translate id="special.1.div.card.backgrounds.description">
+      <Translate id="crafts.1.div.card.backgrounds.description">
         1-DIV Card Backgrounds made using Pure HTML and CSS.
       </Translate>
     ),
@@ -187,11 +187,11 @@ const WebDevCards = [
     name: 'Parametric Spider 🕷️',
     image: 'https://complabs.in/img/blog/default.png',
     url: {
-      page: 'https://codepen.io/rudrasen2/full/oNEJXeo',
-      codepen: 'https://codepen.io/rudrasen2/pen/oNEJXeo',
+      page: 'https://codepen.io/supah/full/vYdwbQK',
+      codepen: 'https://codepen.io/supah/pen/vYdwbQK',
     },
     description: (
-      <Translate id="special.parametric.spider.description">
+      <Translate id="crafts.parametric.spider.description">
         Parametric Spider made using Pure HTML, CSS, and JS.
       </Translate>
     ),
@@ -200,11 +200,11 @@ const WebDevCards = [
     name: 'Island 🏝️',
     image: 'https://complabs.in/img/blog/default.png',
     url: {
-      page: 'https://codepen.io/rudrasen2/full/oNEJXeo',
-      codepen: 'https://codepen.io/rudrasen2/pen/oNEJXeo',
+      page: 'https://codepen.io/Anna_Batura/full/eYVqoxd',
+      codepen: 'https://codepen.io/Anna_Batura/pen/eYVqoxd',
     },
     description: (
-      <Translate id="special.island.description">
+      <Translate id="crafts.island.description">
         Island made using Next.JS and Pure HTML, CSS, and JS.
       </Translate>
     ),
@@ -213,11 +213,11 @@ const WebDevCards = [
     name: 'Play Buttons',
     image: 'https://complabs.in/img/blog/default.png',
     url: {
-      page: 'https://codepen.io/rudrasen2/full/oNEJXeo',
-      codepen: 'https://codepen.io/rudrasen2/pen/oNEJXeo',
+      page: 'https://codepen.io/Adir-SL/full/zYRyaaN',
+      codepen: 'https://codepen.io/Adir-SL/pen/zYRyaaN',
     },
     description: (
-      <Translate id="special.play.buttons.description">
+      <Translate id="crafts.play.buttons.description">
         SVG Play Buttons made using Pure HTML and CSS.
       </Translate>
     ),
@@ -226,11 +226,11 @@ const WebDevCards = [
     name: 'Super Header Slider',
     image: 'https://complabs.in/img/blog/default.png',
     url: {
-      page: 'https://codepen.io/rudrasen2/full/oNEJXeo',
-      codepen: 'https://codepen.io/rudrasen2/pen/oNEJXeo',
+      page: 'https://codepen.io/Hyperplexed/full/BaYXaOx',
+      codepen: 'https://codepen.io/Hyperplexed/pen/BaYXaOx',
     },
     description: (
-      <Translate id="special.super.header.slider.description">
+      <Translate id="crafts.super.header.slider.description">
         Super Header Slider made using Pure HTML, CSS, and JS.
       </Translate>
     ),
@@ -239,12 +239,194 @@ const WebDevCards = [
     name: 'Generative Kong Summit Patterns',
     image: 'https://complabs.in/img/blog/default.png',
     url: {
-      page: 'https://codepen.io/rudrasen2/full/oNEJXeo',
-      codepen: 'https://codepen.io/rudrasen2/pen/oNEJXeo',
+      page: 'https://codepen.io/cobra_winfrey/full/poaYpGV',
+      codepen: 'https://codepen.io/cobra_winfrey/pen/poaYpGV',
     },
     description: (
-      <Translate id="special.generative.kong.summit.patterns.description">
+      <Translate id="crafts.generative.kong.summit.patterns.description">
         Generative Kong Summit Patterns made using Pure HTML, CSS, and JS.
+      </Translate>
+    ),
+  },
+  {
+    name: 'Tri-Wave',
+    image: 'https://complabs.in/img/blog/default.png',
+    url: {
+      page: 'https://codepen.io/chrisgannon/full/zYNRdWX',
+      codepen: 'https://codepen.io/chrisgannon/pen/zYNRdWX',
+    },
+    description: (
+      <Translate id="crafts.tri.wave.description">
+        Tri-Wave Pattern Animation made using Pure HTML, CSS, and JS.
+      </Translate>
+    ),
+  },
+  {
+    name: '🍹 Sunrise',
+    image: 'https://complabs.in/img/blog/default.png',
+    url: {
+      page: 'https://codepen.io/deeonwuli/full/bGvbqgm',
+      codepen: 'https://codepen.io/deeonwuli/pen/bGvbqgm',
+    },
+    description: (
+      <Translate id="crafts.sunrise.description">
+        Sunrise made using Pure HTML and CSS.
+      </Translate>
+    ),
+  },
+  {
+    name: '😷 Woman Wearing Face Mask',
+    image: 'https://complabs.in/img/blog/default.png',
+    url: {
+      page: 'https://codepen.io/AsyrafHussin/full/LYdPOoG',
+      codepen: 'https://codepen.io/AsyrafHussin/pen/LYdPOoG',
+    },
+    description: (
+      <Translate id="crafts.face.mask.woman.description">
+        Face Mask Woman made using Pure HTML and CSS.
+      </Translate>
+    ),
+  },
+  {
+    name: '✈️ Stunt Airplane Interactions',
+    image: 'https://complabs.in/img/blog/default.png',
+    url: {
+      page: 'https://codepen.io/kitjenson/full/zYNQGag',
+      codepen: 'https://codepen.io/kitjenson/pen/zYNQGag',
+    },
+    description: (
+      <Translate id="crafts.stunt.airplane.description">
+        Stunt Airplane Interactions made using Pure HTML, CSS, and JS.
+      </Translate>
+    ),
+  },
+  {
+    name: 'House in Air Animation',
+    image: 'https://complabs.in/img/blog/default.png',
+    url: {
+      page: 'https://codepen.io/jh3y/full/jOzNQyG',
+      codepen: 'https://codepen.io/jh3y/pen/jOzNQyG',
+    },
+    description: (
+      <Translate id="crafts.house.in.air.description">
+        House in Air Animation made using Pure HTML and CSS.
+      </Translate>
+    ),
+  },
+  {
+    name: '3D Print My Heart ❤️',
+    image: 'https://complabs.in/img/blog/default.png',
+    url: {
+      page: 'https://codepen.io/leimapapa/full/ExEjavJ',
+      codepen: 'https://codepen.io/leimapapa/pen/ExEjavJ',
+    },
+    description: (
+      <Translate id="crafts.print.heart.description">
+        3D Print Heart Animation made using Pure HTML and CSS.
+      </Translate>
+    ),
+  },
+  {
+    name: 'Paper Craft Animation',
+    image: 'https://complabs.in/img/blog/default.png',
+    url: {
+      page: 'https://codepen.io/fostor_uchiyama/full/BarNVNY',
+      codepen: 'https://codepen.io/fostor_uchiyama/pen/BarNVNY',
+    },
+    description: (
+      <Translate id="crafts.paper.craft.animation.description">
+        Paper Craft Animation made using Pure HTML, CSS, and JS.
+      </Translate>
+    ),
+  },
+  {
+    name: 'Infinite City Motion',
+    image: 'https://complabs.in/img/blog/default.png',
+    url: {
+      page: 'https://codepen.io/pjkarlik/full/wvmKevN',
+      codepen: 'https://codepen.io/pjkarlik/pen/wvmKevN',
+    },
+    description: (
+      <Translate id="crafts.infinite.city.motion.description">
+        Infinite City Motion made using Pure HTML, CSS, and JS.
+      </Translate>
+    ),
+  },
+  {
+    name: 'Noise Shapes with Input Motion',
+    image: 'https://complabs.in/img/blog/default.png',
+    url: {
+      page: 'https://codepen.io/Mamboleoo/full/YzaqPpd',
+      codepen: 'https://codepen.io/Mamboleoo/pen/YzaqPpd',
+    },
+    description: (
+      <Translate id="crafts.noise.shapes.description">
+        Noise Shapes with Input Motion made using Pure HTML, CSS, and JS.
+      </Translate>
+    ),
+  },
+  {
+    name: '3D Technoblade',
+    image: 'https://complabs.in/img/blog/default.png',
+    url: {
+      page: 'https://codepen.io/khanhtranngoccva/full/oNqjmRW',
+      codepen: 'https://codepen.io/khanhtranngoccva/pen/oNqjmRW',
+    },
+    description: (
+      <Translate id="crafts.technoblade.description">
+        3D Technoblade made using Pure HTML, CSS, and JS.
+      </Translate>
+    ),
+  },
+  {
+    name: 'Box Having Party',
+    image: 'https://complabs.in/img/blog/default.png',
+    url: {
+      page: 'https://codepen.io/atzedent/full/dydVGYN',
+      codepen: 'https://codepen.io/atzedent/pen/dydVGYN',
+    },
+    description: (
+      <Translate id="crafts.box.party.description">
+        Box Having Party Animation made using Pure HTML, CSS, and JS.
+      </Translate>
+    ),
+  },
+  {
+    name: 'Play with Shadows',
+    image: 'https://complabs.in/img/blog/default.png',
+    url: {
+      page: 'https://codepen.io/Akerblad/full/rNdxBjb',
+      codepen: 'https://codepen.io/Akerblad/pen/rNdxBjb',
+    },
+    description: (
+      <Translate id="crafts.play.shadows.description">
+        Play with Shadows Animation made using Pure HTML, CSS, and JS.
+      </Translate>
+    ),
+  },
+  {
+    name: 'Interactive Graph',
+    image: 'https://complabs.in/img/blog/default.png',
+    url: {
+      page: 'https://codepen.io/ykadosh/full/GRxoWMR',
+      codepen: 'https://codepen.io/ykadosh/pen/GRxoWMR',
+    },
+    description: (
+      <Translate id="crafts.interactive.graph.description">
+        Interactive SVG Graph made using Pure HTML, CSS, and JS.
+      </Translate>
+    ),
+  },
+  {
+    name: 'Arcade Game',
+    image: 'https://complabs.in/img/blog/default.png',
+    url: {
+      page: 'https://codepen.io/Calleb/full/JjLXQXY',
+      codepen: 'https://codepen.io/Calleb/pen/JjLXQXY',
+    },
+    description: (
+      <Translate id="crafts.arcade.game.description">
+        Arcade Game made using Pure HTML, CSS, and JS.
       </Translate>
     ),
   },
@@ -296,7 +478,7 @@ export function WebDevCardsRow(): JSX.Element {
   return (
     <div className="row">
       {WebDevCards.map((special) => (
-        <WebDevCard key={special.name} {...special} />
+        <WebDevCard key={crafts.name} {...special} />
       ))}
     </div>
   );
