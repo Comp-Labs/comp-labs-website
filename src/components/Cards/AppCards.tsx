@@ -14,7 +14,7 @@ import Link from '@docusaurus/Link';
 import Chip from '@mui/material/Chip';
 import Stack from '@mui/material/Stack';
 
-const macOSGuideSeriesCards = [
+const AppCards = [
     {
         name: 'Comp Labs Meet',
         image: require('@site/static/img/apps/comp-labs-meet/icon.png'),
@@ -90,7 +90,7 @@ interface Props {
     };
 }
 
-function macOSGuideSeriesCard({ name, image, url }: Props) {
+function AppCard({ name, image, url }: Props) {
     return (
         <div className="col col--6 margin-bottom--lg">
             <div className={clsx('card')}>
@@ -137,11 +137,11 @@ function macOSGuideSeriesCard({ name, image, url }: Props) {
     );
 }
 
-export function macOSGuideSeriesCardsRow(): JSX.Element {
+export function AppCardsRow(): JSX.Element {
     return (
         <div className="row">
-            {macOSGuideSeries.map((crafts) => (
-                <macOSGuideSeriesCard key={crafts.name} {...crafts} />
+            {Apps.map((crafts) => (
+                <AppCard key={crafts.name} {...crafts} />
             ))}
         </div>
     );
