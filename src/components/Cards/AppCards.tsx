@@ -17,7 +17,7 @@ import Stack from '@mui/material/Stack';
 const AppCards = [
     {
         name: 'Comp Labs Meet',
-        image: require('/img/apps/comp-labs-meet/icon.png'),
+        image: '/img/apps/comp-labs-meet/icon.png',
         url: {
             categories: ['Productivity', 'Social', 'Collaboration'],
             status: '✅ Available',
@@ -26,7 +26,7 @@ const AppCards = [
     },
     {
         name: 'Google Docs',
-        image: require('/img/apps/google-docs.png'),
+        image: '/img/apps/google-docs.png',
         url: {
             categories: ['Productivity'],
             status: '✅ Available',
@@ -35,7 +35,7 @@ const AppCards = [
     },
     {
         name: 'Jira Server',
-        image: require('/img/apps/jira-server.png'),
+        image: '/img/apps/jira-server.png',
         url: {
             categories: ['Productivity'],
             status: '✅ Available',
@@ -44,7 +44,7 @@ const AppCards = [
     },
     {
         name: 'Apple Store',
-        image: require('/img/apps/applestore.webp'),
+        image: '/img/apps/applestore.webp',
         url: {
             categories: ['Shopping'],
             status: 'Planned',
@@ -53,7 +53,7 @@ const AppCards = [
     },
     {
         name: 'CloudConsole',
-        image: require('/img/apps/complabs.png'),
+        image: '/img/apps/complabs.png',
         url: {
             categories: ['Productivity'],
             status: '🚧 In Development',
@@ -62,7 +62,7 @@ const AppCards = [
     },
     {
         name: 'GadgetCompare',
-        image: require('/img/apps/complabs.png'),
+        image: '/img/apps/complabs.png',
         url: {
             categories: ['Productivity'],
             status: '🚧 In Development',
@@ -71,7 +71,7 @@ const AppCards = [
     },
     {
         name: 'CodeEdit',
-        image: require('/img/apps/complabs.png'),
+        image: '/img/apps/complabs.png',
         url: {
             categories: ['Productivity'],
             status: '🚧 In Development',
