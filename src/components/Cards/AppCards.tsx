@@ -140,7 +140,7 @@ function AppCard({ name, image, url }: Props) {
 export function AppCardsRow(): JSX.Element {
     return (
         <div className="row">
-            {Apps.map((crafts) => (
+            {WebDevCrafts.map((crafts) => (
                 <AppCard key={crafts.name} {...crafts} />
             ))}
         </div>
