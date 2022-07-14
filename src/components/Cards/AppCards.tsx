@@ -96,31 +96,6 @@ export function TagOne({ name, image, url }: Props) {
     }
 }
 
-export function TagTwo({ name, image, url }: Props) {
-    if (url.categories.length = 1) {
-        <Chip label={url.categories[0]} variant="outlined" size="small" />
-    }
-}
-
-export function TagThree({ name, image, url }: Props) {
-
-    if (url.categories.length = 1) {
-        <Chip label={url.categories[0]} variant="outlined" size="small" />
-    }
-}
-
-export function TagFour({ name, image, url }: Props) {
-    if (url.categories.length = 1) {
-        <Chip label={url.categories[0]} variant="outlined" size="small" />
-    }
-}
-
-export function TagFive({ name, image, url }: Props) {
-    if (url.categories.length = 1) {
-        <Chip label={url.categories[0]} variant="outlined" size="small" />
-    }
-}
-
 function AppCard({ name, image, url }: Props) {
     return (
         <div className="col col--6 margin-bottom--lg">
@@ -136,11 +111,10 @@ function AppCard({ name, image, url }: Props) {
                 <div className="card__footer">
                     <p>{url.status}</p>
                     <Stack direction="row" spacing={1}>
-                        <TagOne />
-                        <TagTwo />
-                        <TagThree />
-                        <TagFour />
-                        <TagFive />
+                        <Chip label={url.categories[1]} variant="outlined" size="small" />
+                        <Chip label={url.categories[2]} variant="outlined" size="small" />
+                        <Chip label={url.categories[3]} variant="outlined" size="small" />
+                        <Chip label={url.categories[4]} variant="outlined" size="small" />
                     </Stack>
                     <div className="button-group button-group--block">
                         <Link className="button button--primary" to={url.viewNow}>
