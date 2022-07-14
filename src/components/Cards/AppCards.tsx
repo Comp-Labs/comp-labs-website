@@ -111,6 +111,7 @@ function AppCard({ name, image, url }: Props) {
                 <div className="card__footer">
                     <p>{url.status}</p>
                     <Stack direction="row" spacing={1}>
+                        <Chip label={url.categories[0]} variant="outlined" size="small" />
                         <Chip label={url.categories[1]} variant="outlined" size="small" />
                         <Chip label={url.categories[2]} variant="outlined" size="small" />
                         <Chip label={url.categories[3]} variant="outlined" size="small" />
