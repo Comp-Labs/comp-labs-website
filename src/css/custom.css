@@ -75,6 +75,10 @@ html {
   scroll-behavior: smooth;
 }
 
+* {
+  overflow-x: auto;
+}
+
 table {
   border-collapse: collapse;
   border-radius: 20px;
