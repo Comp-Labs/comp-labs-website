@@ -76,7 +76,7 @@ html {
 }
 
 * {
-  overflow-x: auto;
+  overflow: auto;
 }
 
 table {

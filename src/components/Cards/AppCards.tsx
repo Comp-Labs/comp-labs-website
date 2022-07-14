@@ -117,6 +117,7 @@ function AppCard({ name, image, url }: Props) {
                         <Chip label={url.categories[3]} variant="outlined" size="small" />
                         <Chip label={url.categories[4]} variant="outlined" size="small" />
                     </Stack>
+                    <br></br>
                     <div className="button-group button-group--block">
                         <Link className="button button--primary" to={url.viewNow}>
                             <i class="fa-solid fa-arrow-up-right-from-square"></i> View Now
