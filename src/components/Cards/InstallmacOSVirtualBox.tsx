@@ -85,8 +85,8 @@ function macOSGuideSeriesCard({ name, image, url }: Props) {
 export function macOSGuideSeriesCardsRow(): JSX.Element {
     return (
         <div className="row">
-            {macOSGuideSeries.map((crafts) => (
-                <macOSGuideSeriesCard key={crafts.name} {...crafts} />
+            {macOSGuideSeriesCards.map((macos) => (
+                <macOSGuideSeriesCard key={macos.name} {...macos} />
             ))}
         </div>
     );
