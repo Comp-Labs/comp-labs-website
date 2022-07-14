@@ -17,35 +17,35 @@ const macOSGuideSeriesCards = [
         name: 'Install macOS Mojave on Windows using VirtualBox',
         image: '/img/blog/default.png',
         url: {
-            readNow: '/blog/posts/install-macos-mojave-on-windows-using-virtualbox',
+            read: '/blog/posts/install-macos-mojave-on-windows-using-virtualbox',
         },
     },
     {
         name: 'Install macOS Catalina on Windows using VirtualBox',
         image: '/img/blog/default.png',
         url: {
-            readNow: '/blog/posts/install-macos-catalina-on-windows-using-virtualbox',
+            read: '/blog/posts/install-macos-catalina-on-windows-using-virtualbox',
         },
     },
     {
         name: 'Install macOS Big Sur on Windows using VirtualBox',
         image: '/img/blog/default.png',
         url: {
-            readNow: '/blog/posts/install-macos-big-sur-on-windows-using-virtualbox',
+            read: '/blog/posts/install-macos-big-sur-on-windows-using-virtualbox',
         },
     },
     {
         name: 'Install macOS Monterey on Windows using VirtualBox',
         image: '/img/blog/default.png',
         url: {
-            readNow: '/blog/posts/install-macos-monterey-on-windows-using-virtualbox',
+            read: '/blog/posts/install-macos-monterey-on-windows-using-virtualbox',
         },
     },
     {
         name: 'Install macOS Ventura on Windows using VirtualBox',
         image: '/img/blog/default.png',
         url: {
-            readNow: '/blog/posts/install-macos-ventura-on-windows-using-virtualbox',
+            read: '/blog/posts/install-macos-ventura-on-windows-using-virtualbox',
         },
     },
 ];
@@ -54,7 +54,7 @@ interface Props {
     name: string;
     image: string;
     url: {
-        readNow?: string;
+        read?: string;
     };
 }
 
@@ -63,7 +63,7 @@ function macOSGuideSeriesCard({ name, image, url }: Props) {
         <div className="col col--6 margin-bottom--lg">
             <div className={clsx('card')}>
                 <div className={clsx('card__image')}>
-                    <Link to={url.readNow}>
+                    <Link to={url.read}>
                         <img src={image}></img>
                     </Link>
                 </div>
@@ -72,7 +72,7 @@ function macOSGuideSeriesCard({ name, image, url }: Props) {
                 </div>
                 <div className="card__footer">
                     <div className="button-group button-group--block">
-                        <Link className="button button--primary" to={url.readNow}>
+                        <Link className="button button--primary" to={url.read}>
                             <i class="fa-brands fa-github"></i> Read Now
                         </Link>
                     </div>
