@@ -15,35 +15,35 @@ import Link from '@docusaurus/Link';
 const macOSGuideSeriesCards = [
     {
         name: 'Install macOS Mojave on Windows using VirtualBox',
-        image: require('@site/static/img/blog/default.png'),
+        image: require('/img/blog/default.png'),
         url: {
             readNow: '/blog/posts/install-macos-mojave-on-windows-using-virtualbox',
         },
     },
     {
         name: 'Install macOS Catalina on Windows using VirtualBox',
-        image: require('@site/static/img/blog/default.png'),
+        image: require('/img/blog/default.png'),
         url: {
             readNow: '/blog/posts/install-macos-catalina-on-windows-using-virtualbox',
         },
     },
     {
         name: 'Install macOS Big Sur on Windows using VirtualBox',
-        image: require('@site/static/img/blog/default.png'),
+        image: require('/img/blog/default.png'),
         url: {
             readNow: '/blog/posts/install-macos-big-sur-on-windows-using-virtualbox',
         },
     },
     {
         name: 'Install macOS Monterey on Windows using VirtualBox',
-        image: require('@site/static/img/blog/default.png'),
+        image: require('/img/blog/default.png'),
         url: {
             readNow: '/blog/posts/install-macos-monterey-on-windows-using-virtualbox',
         },
     },
     {
         name: 'Install macOS Ventura on Windows using VirtualBox',
-        image: require('@site/static/img/blog/default.png'),
+        image: require('/img/blog/default.png'),
         url: {
             readNow: '/blog/posts/install-macos-ventura-on-windows-using-virtualbox',
         },
