@@ -75,7 +75,11 @@ html {
   scroll-behavior: smooth;
 }
 
-* {
+[class^="status-"] {
+  white-space: nowrap;
+}
+
+navbar {
   white-space: nowrap;
 }
 
