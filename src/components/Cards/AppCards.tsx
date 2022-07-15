@@ -28,7 +28,7 @@ const AppCards = [
         name: 'Google Docs',
         image: '/img/apps/google-docs.png',
         url: {
-            categories: ['Productivity'],
+            categories: ['Productivity', 'Blank', 'Blank'],
             status: '✅ Available',
             viewNow: '/apps/google-docs',
         },
@@ -37,7 +37,7 @@ const AppCards = [
         name: 'Jira Server',
         image: '/img/apps/jira-server.png',
         url: {
-            categories: ['Productivity'],
+            categories: ['Productivity', 'Blank', 'Blank'],
             status: '✅ Available',
             viewNow: '/apps/jira-server',
         },
@@ -46,7 +46,7 @@ const AppCards = [
         name: 'Apple Store',
         image: '/img/apps/applestore.webp',
         url: {
-            categories: ['Shopping'],
+            categories: ['Shopping', 'Blank', 'Blank'],
             status: 'Planned',
             viewNow: '/apps/apple-store',
         },
@@ -55,7 +55,7 @@ const AppCards = [
         name: 'CloudConsole',
         image: '/img/apps/complabs.png',
         url: {
-            categories: ['Productivity'],
+            categories: ['Productivity', 'Blank', 'Blank'],
             status: '🚧 In Development',
             viewNow: '/apps/cloud-console',
         },
@@ -64,7 +64,7 @@ const AppCards = [
         name: 'GadgetCompare',
         image: '/img/apps/complabs.png',
         url: {
-            categories: ['Productivity'],
+            categories: ['Productivity', 'Blank', 'Blank'],
             status: '🚧 In Development',
             viewNow: '/apps/gadget-compare',
         },
@@ -73,7 +73,7 @@ const AppCards = [
         name: 'CodeEdit',
         image: '/img/apps/complabs.png',
         url: {
-            categories: ['Productivity'],
+            categories: ['Productivity', 'Blank', 'Blank'],
             status: '🚧 In Development',
             viewNow: '/apps/codeedit',
         },
@@ -114,8 +114,8 @@ function AppCard({ name, image, url }: Props) {
                         <Chip label={url.categories[0]} variant="outlined" size="small" />
                         <Chip label={url.categories[1]} variant="outlined" size="small" />
                         <Chip label={url.categories[2]} variant="outlined" size="small" />
-                        <Chip label={url.categories[3]} variant="outlined" size="small" />
-                        <Chip label={url.categories[4]} variant="outlined" size="small" />
+                        {/* <Chip label={url.categories[3]} variant="outlined" size="small" />
+                        <Chip label={url.categories[4]} variant="outlined" size="small" /> */}
                     </Stack>
                     <br></br>
                     <div className="button-group button-group--block">
