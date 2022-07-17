@@ -7,6 +7,7 @@ import styles from "./index.module.css";
 import HomepageFeatures from "../components/HomepageFeatures";
 import Translate, { translate } from "@docusaurus/Translate";
 import useBaseUrl from "@docusaurus/useBaseUrl";
+var ReactRotatingText = require('react-rotating-text');
 
 function HomepageHeader() {
   const { siteConfig } = useDocusaurusContext();
@@ -28,7 +29,19 @@ function HomepageHeader() {
               __html: translate({
                 id: "homepage.hero.title",
                 message:
-                  "<p><b>Comp Labs</b><br><b>------</b>------<b>------</b>------<b>------</b><br><b>Guides. Apps. Solutions. Tools.</b><br><b>Everything</b> you need for <b>Personal</b>, <b>Business</b>, or <b>Enterprise Use</b>.</p>",
+                  "<p><b>Comp Labs</b><br><b>------</b>------<b>------</b>------<b>------</b><br>",
+              }),
+            }}
+          />
+          <ReactRotatingText items={['Guides.', 'Apps.', 'Solutions.', 'Tools.']} />
+          <span
+            className={styles.heroTitleTextHtml}
+            // eslint-disable-next-line react/no-danger
+            dangerouslySetInnerHTML={{
+              __html: translate({
+                id: "homepage.hero.title",
+                message:
+                  "<p><b>Everything</b> you need for <b>Personal</b>, <b>Business</b>, or <b>Enterprise Use</b>.</p></p>",
               }),
             }}
           />
