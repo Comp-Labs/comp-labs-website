@@ -12,7 +12,7 @@ slug: posts/create-iso-file-for-any-macos-release
 
 import Giscus from "@giscus/react";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { solid, regular, brands } from '@fortawesome/fontawesome-svg-core/import.macro'
+import { faTerminal } from '@fortawesome/free-solid-svg-icons'
 
 # Create an ISO File For Any Release of macOS
 
@@ -54,7 +54,7 @@ Click on the Link to Download macOS Monterey. Software Update Window will open a
 
 When the download of macOS Monterey is finished, the Installer Window will Open. Make sure to Quit the Installer by click on `Install macOS Monterey` > `Quit Install macOS` or pressing <kbd>Command</kbd> + Q on your keyboard.
 
-Next, Open Terminal <FontAwesomeIcon icon="fa-solid fa-terminal" /> <FontAwesomeIcon icon={solid('terminal')} /> and copy the following command to create an Empty Disk Image. Type your macOS Account Password when prompted.
+Next, Open Terminal <FontAwesomeIcon icon="fa-solid fa-terminal" /> <FontAwesomeIcon icon={faTerminal} /> and copy the following command to create an Empty Disk Image. Type your macOS Account Password when prompted.
 
 ```bash
 sudo hdiutil create -o /tmp/Monterey -size 16384m -volname Monterey -layout SPUD -fs HFS+J
