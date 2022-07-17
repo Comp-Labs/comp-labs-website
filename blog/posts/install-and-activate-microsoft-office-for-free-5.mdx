@@ -10,6 +10,10 @@ hide_table_of_contents: false
 slug: posts/install-configure-and-activate-microsoft-office-for-free
 ---
 
+import Giscus from "@giscus/react";
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faWindows } from '@fortawesome/free-solid-svg-icons'
+
 # Install, Configure and Activate Microsoft Office for Free!
 
 ![Image](/img/blog/5/5.jpg)
@@ -36,7 +40,7 @@ First, Disable the Antivirus by following below steps.\*\*
 
 Windows Defender or any other Third-Party Antivirus software needs to be disabled to Continue. Follow the steps below to disable Windows Defender Antivirus:
 
-- Go to search by pressing <kbd><i class="fa-brands fa-windows"></i></kbd> + S on your keyboard and type `Windows Security`. Open the App.
+- Go to search by pressing <kbd><FontAwesomeIcon icon={faWindows} /></kbd> + S on your keyboard and type `Windows Security`. Open the App.
 - Click on `Virus and threat protection`, click on `Manage settings` under `Virus and threat protection settings`. Disable `Real-time Protection`, `Cloud-delivered protection`, `Automatic Sample Submission`, and `Tamper Protection`.
 - Close the App. Ignore the notifications that appears right after you disable the Antivirus.
 

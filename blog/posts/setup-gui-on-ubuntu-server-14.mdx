@@ -11,6 +11,8 @@ slug: posts/setup-gui-on-ubuntu-server
 ---
 
 import Giscus from "@giscus/react";
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faWindows, faClone } from '@fortawesome/free-solid-svg-icons'
 
 # Setup GUI on Ubuntu Server
 
@@ -77,7 +79,7 @@ Next, Click on **Launch Instance**. After this, open [EC2 Management Console](ht
 
 ## Connect to Ubuntu Instance using PuTTY SSH Client
 
-Click on the Instance ID that looks like `i-xxxxxxxxxxxxxxxxx`. Next, Copy the IP Address under **Public IPv4 Address** or click on <i class="fa-regular fa-clone"></i> icon under **Public IPv4 Address**.
+Click on the Instance ID that looks like `i-xxxxxxxxxxxxxxxxx`. Next, Copy the IP Address under **Public IPv4 Address** or click on <FontAwesomeIcon icon={faClone} /> icon under **Public IPv4 Address**.
 
 <figure>
   <img src="/img/blog/14/14-8.jpg"></img>
@@ -170,7 +172,7 @@ Now GUI Configuration Process is Completed! Now let's connect to our GUI Instanc
 
 ## Connecting to your New Ubuntu Desktop!
 
-Open Remote Desktop Connection by pressing <kbd><i class="fa-brands fa-windows"></i></kbd> + R and type `mstsc` and press Enter. Then Type in your EC2 Instance Public IP Address and press Enter. Then type in your username as `ubuntu` and password as you set earlier. Then click on **OK**.
+Open Remote Desktop Connection by pressing <kbd><FontAwesomeIcon icon={faWindows} /></kbd> + R and type `mstsc` and press Enter. Then Type in your EC2 Instance Public IP Address and press Enter. Then type in your username as `ubuntu` and password as you set earlier. Then click on **OK**.
 
 <figure>
   <img src="/img/blog/14/14-16.jpg"></img>
