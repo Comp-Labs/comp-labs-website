@@ -41,7 +41,7 @@ function HomepageHeader() {
               __html: translate({
                 id: "homepage.hero.title",
                 message:
-                  "<p><b>Everything</b> you need for <b>Personal</b>, <b>Business</b>, or <b>Enterprise Use</b>.</p></p>",
+                  "<p>for <b>Personal</b>, <b>Business</b>, or <b>Enterprise Use</b>.</p></p>",
               }),
             }}
           />
