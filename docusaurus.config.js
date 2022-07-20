@@ -25,10 +25,10 @@ const darkCodeTheme = require("prism-react-renderer/themes/dracula");
       "/static/scrolltotop.js",
       // 'https://complabs.in/herojs.js',
       // Object format.
-      // {
-      //   src: 'https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.0/clipboard.min.js',
-      //   async: true,
-      // },
+      {
+        src: 'https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6230468888789445',
+        async: true,
+      },
     ],
 
     plugins: [
