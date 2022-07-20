@@ -123,7 +123,7 @@ const darkCodeTheme = require("prism-react-renderer/themes/dracula");
         prism: {
           additionalLanguages: ["java", "markdown"],
         },
-        image: "img/comp-labs-logo.png",
+        image: "https://complabs.in/img/comp-labs-logo.png",
         // metadata: [{name: 'twitter:card', content: 'summary'}],
         // announcementBar: {
         //   id: 'announcement',
