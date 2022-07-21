@@ -79,14 +79,16 @@ html {
   white-space: nowrap;
 }
 
+[class^="navbar-"] {
+  white-space: nowrap;
+}
+
 navbar {
   white-space: nowrap;
 }
 
 table {
   border-collapse: collapse;
-  border-radius: 20px;
-  overflow-x: scroll;
 }
 
 .scrollToTopBtn {
