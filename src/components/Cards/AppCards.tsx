@@ -61,6 +61,15 @@ const AppCards = [
         },
     },
     {
+        name: 'CodeEdit',
+        image: '/img/apps/complabs.png',
+        url: {
+            categories: ['Productivity', 'Blank', 'Blank'],
+            status: '🚧 In Development',
+            viewNow: '/apps/codeedit',
+        },
+    },
+    {
         name: 'GadgetCompare',
         image: '/img/apps/complabs.png',
         url: {
@@ -70,12 +79,12 @@ const AppCards = [
         },
     },
     {
-        name: 'CodeEdit',
+        name: 'Office',
         image: '/img/apps/complabs.png',
         url: {
             categories: ['Productivity', 'Blank', 'Blank'],
             status: '🚧 In Development',
-            viewNow: '/apps/codeedit',
+            viewNow: '/apps/office',
         },
     },
 ];
