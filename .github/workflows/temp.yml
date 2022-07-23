@@ -1,0 +1,13 @@
+# This is a basic workflow that is manually triggered
+
+name: Swizzle
+
+on:
+  workflow_dispatch:
+
+jobs:
+  swizzle:
+    runs-on: windows-latest
+    steps:
+    - name: Install Deps n Swizzle
+      run: npm install && npm i --save disqus-react && npm run swizzle @docusaurus/theme-classic BlogPostItem -- --wrap
