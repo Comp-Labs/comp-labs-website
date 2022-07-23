@@ -148,7 +148,6 @@ const darkCodeTheme = require("prism-react-renderer/themes/dracula");
           placeholder: "Search Comp Labs...",
         },
         navbar: {
-          hideOnScroll: true,
           title: "Comp Labs",
           logo: {
             alt: "Comp Labs Logo",
@@ -229,6 +228,11 @@ const darkCodeTheme = require("prism-react-renderer/themes/dracula");
               position: "right",
               className: "header-github-link",
               "aria-label": "GitHub Repository",
+            },
+            {
+              type: 'html',
+              position: 'right',
+              value: '<a href="https://youtube.com/channel/UCL6pKeSCbJkPohM2PUZbqQA"><i class="fa-brands fa-youtube color:#f70000"></i></a>',
             },
           ],
         },
