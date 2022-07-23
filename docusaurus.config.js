@@ -232,7 +232,7 @@ const darkCodeTheme = require("prism-react-renderer/themes/dracula");
             {
               type: 'html',
               position: 'right',
-              value: '<a href="https://youtube.com/channel/UCL6pKeSCbJkPohM2PUZbqQA"><i class="fa-brands fa-youtube color:#f70000"></i></a>',
+              value: '<a style="color:#f70000" href="https://youtube.com/channel/UCL6pKeSCbJkPohM2PUZbqQA"><i class="fa-brands fa-youtube fa-xl color:#f70000"></i></a>',
             },
           ],
         },
