@@ -9,5 +9,6 @@ jobs:
   swizzle:
     runs-on: windows-latest
     steps:
+    - uses: actions/checkout@v3
     - name: Install Deps n Swizzle
       run: npm install && npm i --save disqus-react && npm run swizzle @docusaurus/theme-classic BlogPostItem -- --wrap
