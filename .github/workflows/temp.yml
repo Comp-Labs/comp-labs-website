@@ -8,5 +8,7 @@ jobs:
     runs-on: windows-latest
     steps:
     - uses: actions/checkout@v3
+    - name: Configure Git
+      run: git config user.name "Rudra Sen" && git config user.email "<rudra_sen@outlook.com>"
     - name: Install Deps n Swizzle
-      run: npm install && npm i --save disqus-react && npm run swizzle @docusaurus/theme-classic BlogPostItem -- --wrap --danger && git config user.email "rudra_sen@outlook.com" && git config user.name "Rudra Sen" git commit -m "Swizzle Complete" && git push -u origin main
+      run: npm install && npm i --save disqus-react && npm run swizzle @docusaurus/theme-classic BlogPostItem -- --wrap --danger && git add * && git commit -m "Swizzle Complete" && git push -u origin main
