@@ -8,17 +8,5 @@ jobs:
     runs-on: windows-latest
     steps:
     - uses: actions/checkout@v3
-    - name: Git Commit and Push
-      uses: github-actions-x/commit@v2.9
-      with:
-        github-token: ${GITHUB_TOKEN}
-    # Override branch to push to
-        push-branch: main
-    # Specify commit message
-        commit-message: Swizzle
-    # Committer email. Default is ${name}@users.noreply.github.com
-        email: rudra_sen@outlook.com
-    # Committer name. Default is name of the person or app that initiated the workflow.
-        name: Rudra Sen
     - name: Install Deps n Swizzle
-      run: npm install && npm i --save disqus-react && npm run swizzle @docusaurus/theme-classic BlogPostItem -- --wrap --danger && git config --global user.email "rudra_sen@outlook.com" && git config --global user.name "Rudra Sen" git commit -m "Swizzle Complete" && git push -u origin main
+      run: npm install && npm i --save disqus-react && npm run swizzle @docusaurus/theme-classic BlogPostItem -- --wrap --danger && git config user.email "rudra_sen@outlook.com" && git config user.name "Rudra Sen" git commit -m "Swizzle Complete" && git push -u origin main
