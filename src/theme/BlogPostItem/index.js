@@ -13,7 +13,7 @@ export default function BlogPostItemWrapper(props) {
       <hr></hr>
       <strong>Subscribe to our Channel:</strong>
       <iframe
-          src="https://complabs.in/html/subscribe.html"
+          src="https://clfiles.herokuapp.com/html/subscribe.html"
           title="Subscribe Comp Labs"
           height="100"
         ></iframe>

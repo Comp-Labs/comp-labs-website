@@ -39,7 +39,7 @@ export default function Speedtest() {
       <SpeedtestHeader />
       <main>
         <iframe
-          src="/html/speedtest.html"
+          src="https://clfiles.herokuapp.com/html/speedtest.html"
           title="OpenSpeedTest HTML5 Widget"
           width="100%"
           height="1000"
