@@ -2,6 +2,7 @@ import React from "react";
 import { DiscussionEmbed } from "disqus-react";
 import { useBlogPost } from "@docusaurus/theme-common/internal";
 import BlogPostItem from "@theme-original/BlogPostItem";
+import styles from "https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.css";
 
 export default function BlogPostItemWrapper(props) {
   const { metadata } = useBlogPost();
@@ -29,6 +30,7 @@ export default function BlogPostItemWrapper(props) {
           }}
         />
       )}
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.css"></link>
       <div class="grid place-items-center min-h-screen">
         <button
           id="share-button"
