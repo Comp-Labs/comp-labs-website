@@ -228,7 +228,7 @@ const darkCodeTheme = require("prism-react-renderer/themes/dracula");
               href: "https://github.com/Comp-Labs",
               position: "right",
               className: "header-github-link",
-              "aria-label": "GitHub Repository",
+              "aria-label": "GitHub",
             },
             {
               type: 'html',
