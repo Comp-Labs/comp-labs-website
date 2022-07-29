@@ -33,7 +33,7 @@ function HomepageHeader() {
               }),
             }}
           />
-          <ReactRotatingText items={['Guides.', 'Apps.', 'Solutions.', 'Tools.']} />
+          <ReactRotatingText items={['Guides.', 'Apps.', 'Solutions.', 'Tools.']} color="#1877f2" />
           <span
             className={styles.heroTitleTextHtml}
             // eslint-disable-next-line react/no-danger
