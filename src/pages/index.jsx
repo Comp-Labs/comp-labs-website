@@ -15,13 +15,13 @@ function HomepageHeader() {
     <div className={styles.hero}>
       <div className={styles.heroInner}>
         <h1 className={styles.heroProjectTagline}>
-          <img
+          {/* <img
             alt={translate({ message: "Comp Labs Logo Animated" })}
             className={styles.heroLogo}
             src={useBaseUrl("/img/complabs.png")}
             width="256"
             height="256"
-          />
+          /> */}
           <span
             className={styles.heroTitleTextHtml}
             // eslint-disable-next-line react/no-danger
