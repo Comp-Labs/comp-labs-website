@@ -508,6 +508,97 @@ const WebDevCards = [
       </Translate>
     ),
   },
+  {
+    name: 'Ice Pop Loader',
+    image: '/img/blog/default.jpg',
+    url: {
+      page: 'https://codepen.io/dariocorsi/full/PoRpZPp',
+      codepen: 'https://codepen.io/dariocorsi/pen/PoRpZPp',
+    },
+    description: (
+      <Translate id="crafts.ice.pop.loader.description">
+        Ice Pop Loader made using Pure HTML and CSS.
+      </Translate>
+    ),
+  },
+  {
+    name: 'Puzzle',
+    image: '/img/blog/default.jpg',
+    url: {
+      page: 'https://codepen.io/t_afif/full/JjLWpOJ',
+      codepen: 'https://codepen.io/t_afif/pen/JjLWpOJ',
+    },
+    description: (
+      <Translate id="crafts.puzzle.description">
+        Puzzle made using Pure HTML and CSS.
+      </Translate>
+    ),
+  },
+  {
+    name: 'Tardigrade',
+    image: '/img/blog/default.jpg',
+    url: {
+      page: 'https://codepen.io/graphilla/full/xxWqzgg',
+      codepen: 'https://codepen.io/graphilla/pen/xxWqzgg',
+    },
+    description: (
+      <Translate id="crafts.tardigrade.description">
+        Tardigrade made using Pure HTML, CSS, and JS.
+      </Translate>
+    ),
+  },
+  {
+    name: 'Celestial Circles',
+    image: '/img/blog/default.jpg',
+    url: {
+      page: 'https://codepen.io/Sanja_kaz/full/vYRGwqy',
+      codepen: 'https://codepen.io/Sanja_kaz/pen/vYRGwqy',
+    },
+    description: (
+      <Translate id="crafts.celestial.circles.description">
+        Celestial Circles made using Pure HTML, CSS, and JS.
+      </Translate>
+    ),
+  },
+  {
+    name: 'Cloud',
+    image: '/img/blog/default.jpg',
+    url: {
+      page: 'https://codepen.io/leemartin/full/ZExLqQb',
+      codepen: 'https://codepen.io/leemartin/pen/ZExLqQb',
+    },
+    description: (
+      <Translate id="crafts.cloud.description">
+        Cloud made using Pure VueJS.
+      </Translate>
+    ),
+  },
+  {
+    name: 'Chromatic Aberration',
+    image: '/img/blog/default.jpg',
+    url: {
+      page: 'https://codepen.io/lukemeyrick/full/eYMvymP',
+      codepen: 'https://codepen.io/lukemeyrick/pen/eYMvymP',
+    },
+    description: (
+      <Translate id="crafts.chromatic.aberration.description">
+        Chromatic Aberration made using Pure HTML and CSS.
+      </Translate>
+    ),
+  },
+  {
+    name: 'Customised Captions',
+    image: '/img/blog/default.jpg',
+    url: {
+      page: 'https://codepen.io/argyleink/full/wvmJWeG',
+      codepen: 'https://codepen.io/argyleink/pen/wvmJWeG',
+    },
+    description: (
+      <Translate id="crafts.styled.captions.description">
+        Customised Captions using Pure HTML and CSS.
+      </Translate>
+    ),
+  },
 ];
 
 interface Props {

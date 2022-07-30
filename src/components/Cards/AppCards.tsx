@@ -53,7 +53,7 @@ const AppCards = [
     },
     {
         name: 'CloudConsole',
-        image: '/img/apps/complabs.png',
+        image: '/img/blog/default.jpg',
         url: {
             categories: ['Productivity', 'Blank', 'Blank'],
             status: '🚧 In Development',
@@ -62,7 +62,7 @@ const AppCards = [
     },
     {
         name: 'CodeEdit',
-        image: '/img/apps/complabs.png',
+        image: '/img/blog/default.jpg',
         url: {
             categories: ['Productivity', 'Blank', 'Blank'],
             status: '🚧 In Development',
@@ -71,7 +71,7 @@ const AppCards = [
     },
     {
         name: 'GadgetCompare',
-        image: '/img/apps/complabs.png',
+        image: '/img/blog/default.jpg',
         url: {
             categories: ['Productivity', 'Blank', 'Blank'],
             status: '🚧 In Development',
@@ -80,7 +80,7 @@ const AppCards = [
     },
     {
         name: 'Office',
-        image: '/img/apps/complabs.png',
+        image: '/img/blog/default.jpg',
         url: {
             categories: ['Productivity', 'Blank', 'Blank'],
             status: '🚧 In Development',
