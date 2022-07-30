@@ -9,6 +9,7 @@ export default function BlogPostItemWrapper(props) {
   const { comments = true } = frontMatter;
   return (
     <>
+      &lt;!-- truncate --&gt;
       <BlogPostItem {...props} />
       <hr></hr>
       <strong>Subscribe to our Channel:</strong>
