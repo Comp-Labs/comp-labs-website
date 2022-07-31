@@ -74,8 +74,8 @@ const darkCodeTheme = require("prism-react-renderer/themes/dracula");
               "https://github.com/Comp-Labs/comp-labs-website/edit/main/",
           },
           blog: {
-            blogTitle: "Comp Labs Blog",
-            blogSidebarTitle: "All Posts",
+            blogTitle: "Guides",
+            blogSidebarTitle: "All Guides",
             blogSidebarCount: "ALL",
             sortPosts: "ascending",
             feedOptions: {
@@ -91,7 +91,7 @@ const darkCodeTheme = require("prism-react-renderer/themes/dracula");
             priority: 1.0,
           },
           gtag: {
-            trackingID: "UA-203163469-1",
+            trackingID: "G-7PSBRGTFP5",
             anonymizeIP: true,
           },
         }),
