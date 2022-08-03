@@ -5,9 +5,9 @@ const darkCodeTheme = require("prism-react-renderer/themes/dracula");
 /** @type {import('@docusaurus/types').DocusaurusConfig} */
 (
   module.exports = {
-    title: "Comp Labs",
+    title: "Tech Fiddle",
     tagline:
-      "Guides, Apps, Solutions, and Tools for Personal, Business, or Enterprise Use.",
+      "All About Technology...",
     url: "https://complabs.in",
     baseUrl: "/",
     onBrokenLinks: "throw",
@@ -18,7 +18,6 @@ const darkCodeTheme = require("prism-react-renderer/themes/dracula");
     deploymentBranch: "main",
     trailingSlash: "false",
     themes: ["@docusaurus/theme-live-codeblock"],
-    titleDelimiter: "•",
 
     scripts: [
       "https://kit.fontawesome.com/307bcbc229.js",
@@ -80,7 +79,7 @@ const darkCodeTheme = require("prism-react-renderer/themes/dracula");
             sortPosts: "ascending",
             feedOptions: {
               type: 'all',
-              copyright: `Copyright © ${new Date().getFullYear()} Comp Labs. All Rights Reserved.`,
+              copyright: `Copyright © ${new Date().getFullYear()} Tech Fiddle. All Rights Reserved.`,
             },
           },
           theme: {
@@ -146,12 +145,12 @@ const darkCodeTheme = require("prism-react-renderer/themes/dracula");
           appId: "7LEIQ4QK6M",
           indexName: "complabs",
           apiKey: "d0a38351663330eccb11548d292f41bd",
-          placeholder: "Search Comp Labs...",
+          placeholder: "Search Tech Fiddle...",
         },
         navbar: {
-          title: "Comp Labs",
+          title: "Tech Fiddle",
           logo: {
-            alt: "Comp Labs Logo",
+            alt: "Tech Fiddle Logo",
             src: "img/logo.svg",
             srcDark: "img/logo.svg",
           },
@@ -388,11 +387,11 @@ const darkCodeTheme = require("prism-react-renderer/themes/dracula");
             },
           ],
           logo: {
-            alt: "Comp Labs Footer Logo",
+            alt: "Tech Fiddle Footer Logo",
             src: "img/comp-labs-logo.png",
             href: "/",
           },
-          copyright: `Copyright © ${new Date().getFullYear()} Comp Labs. All Rights Reserved. Built using Docusaurus.`,
+          copyright: `Copyright © ${new Date().getFullYear()} Tech Fiddle. All Rights Reserved. Built using Docusaurus.`,
         },
         prism: {
           theme: lightCodeTheme,

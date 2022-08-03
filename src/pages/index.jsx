@@ -16,7 +16,7 @@ function HomepageHeader() {
       <div className={styles.heroInner}>
         <h1 className={styles.heroProjectTagline}>
           {/* <img
-            alt={translate({ message: "Comp Labs Logo Animated" })}
+            alt={translate({ message: "Tech Fiddle Logo Animated" })}
             className={styles.heroLogo}
             src={useBaseUrl("/img/complabs.png")}
             width="256"
@@ -29,7 +29,7 @@ function HomepageHeader() {
               __html: translate({
                 id: "homepage.hero.title",
                 message:
-                  "<p><b>Comp Labs</b><br><b>------</b>------<b>------</b>------<b>------</b><br>",
+                  "<p><b>Tech Fiddle</b><br><b>------</b>------<b>------</b>------<b>------</b><br>",
               }),
             }}
           />
@@ -57,7 +57,7 @@ function HomepageHeader() {
               src="https://ghbtns.com/github-btn.html?user=Comp-Labs&amp;type=follow&amp;count=true&amp;size=small"
               width={190}
               height={30}
-              title="Follow Comp Labs on GitHub"
+              title="Follow Tech Fiddle on GitHub"
             />
           </span>
           <br></br>
@@ -73,7 +73,7 @@ function HomepageHeader() {
             >
               width={190}
               height={30}
-              title="Sponsor Comp Labs on GitHub"
+              title="Sponsor Tech Fiddle on GitHub"
             </iframe>
           </span>
         </div>

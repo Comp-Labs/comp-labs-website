@@ -1,4 +1,4 @@
-# <p align="center">Comp Labs Website</p>
+# <p align="center">Tech Fiddle Website</p>
 
 <hr />
 
@@ -6,7 +6,7 @@
 
 <hr />
 
-This Repository Contains up-to-date source code for the [Comp Labs Website](https://github.com/Comp-Labs/comp-labs-website).
+This Repository Contains up-to-date source code for the [Tech Fiddle Website](https://github.com/Comp-Labs/comp-labs-website).
 
 Written in ReactJS, Markdown, and MDX. Built with [Docusaurus](docusaurus.io). Deploys with [Netlify](netlify.com).
 
@@ -14,6 +14,6 @@ Written in ReactJS, Markdown, and MDX. Built with [Docusaurus](docusaurus.io). D
 
 <footer>
 <p align="center" style="font-size: smaller;">
-Built with ❤️ by the Comp Labs Team.
+Built with ❤️ by the Tech Fiddle Team.
 </p>
 </footer>
