@@ -45,7 +45,7 @@ const darkCodeTheme = require("prism-react-renderer/themes/dracula");
             {
               tagName: "link",
               rel: "icon",
-              href: "/img/complabs.png",
+              href: "/img/complabs.jpg",
             },
             {
               tagName: "link",
@@ -123,7 +123,7 @@ const darkCodeTheme = require("prism-react-renderer/themes/dracula");
         prism: {
           additionalLanguages: ["java", "markdown"],
         },
-        image: "https://complabs.in/img/comp-labs-logo.png",
+        image: "https://complabs.in/img/comp-labs-logo.jpg",
         // metadata: [{name: 'twitter:card', content: 'summary'}],
         // announcementBar: {
         //   id: 'announcement',
@@ -388,7 +388,7 @@ const darkCodeTheme = require("prism-react-renderer/themes/dracula");
           ],
           logo: {
             alt: "Tech Fiddle Footer Logo",
-            src: "img/comp-labs-logo.png",
+            src: "img/comp-labs-logo.jpg",
             href: "/",
           },
           copyright: `Copyright © ${new Date().getFullYear()} Tech Fiddle. All Rights Reserved. Built using Docusaurus.`,

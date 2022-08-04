@@ -42,7 +42,7 @@ function PlayHeader2() {
           {/* <img
                 alt={translate({message: 'Tech Fiddle Logo Animated'})}
                 className={styles.heroLogo}
-                src={useBaseUrl('/img/complabs.png')}
+                src={useBaseUrl('/img/complabs.jpg')}
                 width="256"
                 height="256"
               /> */}
