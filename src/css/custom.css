@@ -18,7 +18,7 @@
   --ifm-color-primary-darker: hsl(var(--site-primary-hue-saturation), 38%);
   --ifm-color-primary-darkest: hsl(var(--site-primary-hue-saturation), 32%);
 
-  --ifm-color-primary: #1877f2;
+  --ifm-color-primary: #005aff;
   --ifm-color-info: #25c2a0;
 
   --ifm-color-primary-light: hsl(var(--site-primary-hue-saturation-light), 54%);
