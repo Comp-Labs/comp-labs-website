@@ -9,7 +9,7 @@
 
  import clsx from 'clsx';
  
- import styles from './styles.module.css';
+ import styles from './styles.module.scss';
  
  export interface Props {
    url: string;
