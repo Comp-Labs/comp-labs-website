@@ -11,7 +11,7 @@ import React from 'react';
 import clsx from 'clsx';
 import Translate from '@docusaurus/Translate';
 import Link from '@docusaurus/Link';
-import Chip from '@mui/material/Chip';
+import Chip from '@mui/joy/Chip';
 import Stack from '@mui/material/Stack';
 
 const AppCards = [
@@ -120,11 +120,12 @@ function AppCard({ name, image, url }: Props) {
                 <div className="card__footer">
                     <p>{url.status}</p>
                     <Stack direction="row" spacing={1}>
-                        <Chip label={url.categories[0]} variant="outlined" size="small" />
-                        <Chip label={url.categories[1]} variant="outlined" size="small" />
-                        <Chip label={url.categories[2]} variant="outlined" size="small" />
-                        {/* <Chip label={url.categories[3]} variant="outlined" size="small" />
-                        <Chip label={url.categories[4]} variant="outlined" size="small" /> */}
+                    <Chip size="sm" variant="soft">{url.categories[0]}</Chip>
+                    <Chip size="sm" variant="soft">{url.categories[1]}</Chip>
+                    <Chip size="sm" variant="soft">{url.categories[2]}</Chip>
+                    {/* <Chip size="sm" variant="soft">{url.categories[3]}</Chip>
+                    <Chip size="sm" variant="soft">{url.categories[4]}</Chip>
+                    <Chip size="sm" variant="soft">{url.categories[5]}</Chip> */}
                     </Stack>
                     <br></br>
                     <div className="button-group button-group--block">
