@@ -1,6 +1,6 @@
 {
   "name": "comp-labs-website",
-  "version": "2022.7.1",
+  "version": "2022.8.1",
   "private": true,
   "scripts": {
     "docusaurus": "docusaurus",
