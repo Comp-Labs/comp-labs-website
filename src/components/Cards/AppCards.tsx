@@ -13,6 +13,7 @@ import Translate from '@docusaurus/Translate';
 import Link from '@docusaurus/Link';
 import Chip from '@mui/joy/Chip';
 import Stack from '@mui/material/Stack';
+import { CssVarsProvider } from '@mui/joy/styles';
 
 const AppCards = [
     {
@@ -120,12 +121,14 @@ function AppCard({ name, image, url }: Props) {
                 <div className="card__footer">
                     <p>{url.status}</p>
                     <Stack direction="row" spacing={1}>
+                    <CssVarsProvider>
                     <Chip size="sm" variant="soft">{url.categories[0]}</Chip>
                     <Chip size="sm" variant="soft">{url.categories[1]}</Chip>
                     <Chip size="sm" variant="soft">{url.categories[2]}</Chip>
                     {/* <Chip size="sm" variant="soft">{url.categories[3]}</Chip>
                     <Chip size="sm" variant="soft">{url.categories[4]}</Chip>
                     <Chip size="sm" variant="soft">{url.categories[5]}</Chip> */}
+                    </CssVarsProvider>
                     </Stack>
                     <br></br>
                     <div className="button-group button-group--block">
