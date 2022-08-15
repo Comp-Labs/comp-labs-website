@@ -83,7 +83,7 @@ const darkCodeTheme = require("prism-react-renderer/themes/dracula");
             },
           },
           theme: {
-            customCss: require.resolve("./src/styles/custom.scss"),
+            customCss: require.resolve("./src/css/custom.css"),
           },
           sitemap: {
             changefreq: "always",

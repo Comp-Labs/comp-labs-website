@@ -21,10 +21,10 @@
    ButtonNext,
    DotGroup,
  } from 'pure-react-carousel';
- import 'pure-react-carousel/dist/react-carousel.es.scss';
+ import 'pure-react-carousel/dist/react-carousel.es.css';
  import Link from '@docusaurus/Link';
  import Image from '@theme/IdealImage';
- import styles from './ShowcaseCarousel.module.scss';
+ import styles from './ShowcaseCarousel.module.css';
  
  type Site = {
    name: string;
