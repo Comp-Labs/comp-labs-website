@@ -33,6 +33,7 @@ const darkCodeTheme = require("prism-react-renderer/themes/dracula");
 
     plugins: [
       [
+        'plugin-image-zoom',
         "@docusaurus/plugin-pwa",
         {
           debug: true,
@@ -100,6 +101,7 @@ const darkCodeTheme = require("prism-react-renderer/themes/dracula");
     themeConfig:
       /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
       ({
+        zoomSelector: '.markdown img',
         liveCodeBlock: {
           playgroundPosition: "bottom",
         },
