@@ -32,8 +32,8 @@ const darkCodeTheme = require("prism-react-renderer/themes/dracula");
     ],
 
     plugins: [
+      'plugin-image-zoom',
       [
-        'plugin-image-zoom',
         "@docusaurus/plugin-pwa",
         {
           debug: true,
