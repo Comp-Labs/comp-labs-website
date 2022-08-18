@@ -599,6 +599,227 @@ const WebDevCards = [
       </Translate>
     ),
   },
+  {
+    name: 'Woman With Long Hair',
+    image: '/img/blog/default.jpg',
+    url: {
+      page: 'https://codepen.io/AsyrafHussin/full/KKooZZJ',
+      codepen: 'https://codepen.io/AsyrafHussin/pen/KKooZZJ',
+    },
+    description: (
+      <Translate id="crafts.long.hair.woman.description">
+        Long Hair Woman made using Pure HTML and CSS.
+      </Translate>
+    ),
+  },
+  {
+    name: 'Footer Sorrow',
+    image: '/img/blog/default.jpg',
+    url: {
+      page: 'https://codepen.io/ste-vg/full/PoQgvBK',
+      codepen: 'https://codepen.io/ste-vg/pen/PoQgvBK',
+    },
+    description: (
+      <Translate id="crafts.footer.sorrow.description">
+        Footer Sorrow Animation made using Pure HTML and CSS.
+      </Translate>
+    ),
+  },
+  {
+    name: 'The Dogs of Unsplash',
+    image: '/img/blog/default.jpg',
+    url: {
+      page: 'https://codepen.io/ste-vg/full/PoQgvBK',
+      codepen: 'https://codepen.io/ste-vg/pen/PoQgvBK',
+    },
+    description: (
+      <Translate id="crafts.unsplash.dogs.description">
+        The Dogs of Unsplash Showcase made using Pure HTML Marquee and CSS.
+      </Translate>
+    ),
+  },
+  {
+    name: 'Hover Glide Image Gallery',
+    image: '/img/blog/default.jpg',
+    url: {
+      page: 'https://codepen.io/Hyperplexed/full/VwXXPKJ',
+      codepen: 'https://codepen.io/Hyperplexed/pen/VwXXPKJ',
+    },
+    description: (
+      <Translate id="crafts.image.gallery.description">
+        Hover Glide Image Gallery made using Pure HTML, CSS, and JS.
+      </Translate>
+    ),
+  },
+  {
+    name: 'Shader: Infinity Scroll',
+    image: '/img/blog/default.jpg',
+    url: {
+      page: 'https://codepen.io/YusukeNakaya/full/rNdvewM',
+      codepen: 'https://codepen.io/YusukeNakaya/pen/rNdvewM',
+    },
+    description: (
+      <Translate id="crafts.infinity.scroll.description">
+        Infinity Scroll made using Pure HTML, CSS, and JS.
+      </Translate>
+    ),
+  },
+  {
+    name: 'Evil Dot Loader Animation',
+    image: '/img/blog/default.jpg',
+    url: {
+      page: 'https://codepen.io/maxew33/full/MWVVaWE',
+      codepen: 'https://codepen.io/maxew33/pen/MWVVaWE',
+    },
+    description: (
+      <Translate id="crafts.evil.dot.animation.description">
+        Evil Dot Loader Animation made using Pure HTML and CSS.
+      </Translate>
+    ),
+  },
+  {
+    name: 'Random Gradient Generator',
+    image: '/img/blog/default.jpg',
+    url: {
+      page: 'https://codepen.io/lukemeyrick/full/eYMVqNa',
+      codepen: 'https://codepen.io/lukemeyrick/pen/eYMVqNa',
+    },
+    description: (
+      <Translate id="crafts.gradient.generator.description">
+        Random Gradient Generator made using Pure HTML, CSS, and JS.
+      </Translate>
+    ),
+  },
+  {
+    name: 'Custom Tooltip',
+    image: '/img/blog/default.jpg',
+    url: {
+      page: 'https://codepen.io/Adir-SL/full/VwXGPmy',
+      codepen: 'https://codepen.io/Adir-SL/pen/VwXGPmy',
+    },
+    description: (
+      <Translate id="crafts.tooltip.description">
+        Custom Tooltip made using Pure HTML and CSS.
+      </Translate>
+    ),
+  },
+  {
+    name: '🔥 Play With Fire',
+    image: '/img/blog/default.jpg',
+    url: {
+      page: 'https://codepen.io/freedommayer/full/vYRrarM',
+      codepen: 'https://codepen.io/freedommayer/pen/vYRrarM',
+    },
+    description: (
+      <Translate id="crafts.fire.play.description">
+        Play with Fire made using Pure HTML, CSS, and JS.
+      </Translate>
+    ),
+  },
+  {
+    name: '🙊 Monkey Business',
+    image: '/img/blog/default.jpg',
+    url: {
+      page: 'https://codepen.io/grantjenkins/full/KKoemZO',
+      codepen: 'https://codepen.io/grantjenkins/pen/KKoemZO',
+    },
+    description: (
+      <Translate id="crafts.monkey.business.description">
+        Monkey Business Animation made using Pure HTML, CSS, and JS.
+      </Translate>
+    ),
+  },
+  {
+    name: 'Binary Patterns',
+    image: '/img/blog/default.jpg',
+    url: {
+      page: 'https://codepen.io/DonKarlssonSan/full/jOzvvwy',
+      codepen: 'https://codepen.io/DonKarlssonSan/pen/jOzvvwy',
+    },
+    description: (
+      <Translate id="crafts.binary.patterns.description">
+        Binary Patterns made using Pure HTML, CSS, and JS.
+      </Translate>
+    ),
+  },
+{
+  name: 'Dieter Rams Interface Control',
+  image: '/img/blog/default.jpg',
+  url: {
+    page: 'https://codepen.io/aepicos/full/bGvjzeL',
+    codepen: 'https://codepen.io/aepicos/pen/bGvjzeL',
+  },
+  description: (
+    <Translate id="crafts.interface.control.description">
+      Dieter Rams Interface Control made using Pure HTML and CSS.
+    </Translate>
+  ),
+},
+{
+  name: 'Dieter Rams Interface Control',
+  image: '/img/blog/default.jpg',
+  url: {
+    page: 'https://codepen.io/aepicos/full/bGvjzeL',
+    codepen: 'https://codepen.io/aepicos/pen/bGvjzeL',
+  },
+  description: (
+    <Translate id="crafts.interface.control.description">
+      Dieter Rams Interface Control made using Pure HTML and CSS.
+    </Translate>
+  ),
+},
+{
+  name: 'Morphing Portal',
+  image: '/img/blog/default.jpg',
+  url: {
+    page: 'https://codepen.io/pavlovsk/full/XWEPaJe',
+    codepen: 'https://codepen.io/pavlovsk/pen/XWEPaJe',
+  },
+  description: (
+    <Translate id="crafts.morphing.portal.description">
+      Morphing Portal made using Pure HTML, CSS, and JS.
+    </Translate>
+  ),
+},
+{
+  name: 'Pixel Art',
+  image: '/img/blog/default.jpg',
+  url: {
+    page: 'https://codepen.io/gnykka/full/NWYLrOW',
+    codepen: 'https://codepen.io/gnykka/pen/NWYLrOW',
+  },
+  description: (
+    <Translate id="crafts.pixel.art.description">
+      Pixel Art made using Pure HTML and CSS.
+    </Translate>
+  ),
+},
+{
+  name: 'Marquee Logo Wall',
+  image: '/img/blog/default.jpg',
+  url: {
+    page: 'https://codepen.io/hexagoncircle/full/wvmjomb',
+    codepen: 'https://codepen.io/hexagoncircle/pen/wvmjomb',
+  },
+  description: (
+    <Translate id="crafts.marquee.logo.wall.description">
+      Marquee Logo Wall made using Pure HTML, CSS, and JS.
+    </Translate>
+  ),
+},
+{
+  name: 'Marquee Examples',
+  image: '/img/blog/default.jpg',
+  url: {
+    page: 'https://codepen.io/hexagoncircle/full/eYMrGwW',
+    codepen: 'https://codepen.io/hexagoncircle/pen/eYMrGwW',
+  },
+  description: (
+    <Translate id="crafts.marquee.examples.description">
+      Marquee Examples made using Pure HTML, CSS, and JS.
+    </Translate>
+  ),
+},
 ];
 
 interface Props {
