@@ -26,6 +26,7 @@
     "@docusaurus/theme-live-codeblock": "^2.0.1",
     "@docusaurus/utils": "^2.0.1",
     "@docusaurus/utils-common": "2.0.1",
+    "@easyops-cn/docusaurus-search-local": "^0.31.0",
     "@emotion/react": "^11.7.1",
     "@emotion/styled": "^11.6.0",
     "@fortawesome/fontawesome-svg-core": "^6.1.1",
