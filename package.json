@@ -58,7 +58,7 @@
     "react-rotating-text": "^1.4.1",
     "react-router-dom": "^6.2.1",
     "styled-components": "^5.3.5",
-    "typescript": "4.7.4",
+    "typescript": "4.8.2",
     "url-loader": "^4.1.1"
   },
   "browserslist": {
