@@ -17,7 +17,24 @@ const darkCodeTheme = require("prism-react-renderer/themes/dracula");
     projectName: "comp-labs-website",
     deploymentBranch: "main",
     trailingSlash: "false",
-    themes: ["@docusaurus/theme-live-codeblock"],
+
+    themes: [
+    ["@docusaurus/theme-live-codeblock"],
+    // enable-local-search
+    // [
+    //   require.resolve("@easyops-cn/docusaurus-search-local"),
+    //   {
+    //     indexPages: true,
+    //     removeDefaultStemmer: false, // will change to true later
+    //     highlightSearchTermsOnTargetPage: true,
+    //     searchBarShortcutHint: false,
+    //     // `hashed` is recommended as long-term-cache of index file is possible.
+    //     hashed: true,
+    //     // For Docs using Chinese, The `language` is recommended to set to:
+    //     // language: ["en", "zh"],
+    //   },
+    // ],
+  ],
 
     scripts: [
       "https://kit.fontawesome.com/307bcbc229.js",
