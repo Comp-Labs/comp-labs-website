@@ -1,5 +1,4 @@
 import React from "react";
-import { DiscussionEmbed } from "disqus-react";
 import { useBlogPost } from "@docusaurus/theme-common/internal";
 import BlogPostItem from "@theme-original/BlogPostItem";
 
