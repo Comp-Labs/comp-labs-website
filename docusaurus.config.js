@@ -73,7 +73,7 @@ const darkCodeTheme = require("prism-react-renderer/themes/dracula");
             {
               tagName: "meta",
               name: "theme-color",
-              content: "#1877F2",
+              content: "#076af7",
             },
           ],
         },
@@ -118,7 +118,15 @@ const darkCodeTheme = require("prism-react-renderer/themes/dracula");
     themeConfig:
       /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
       ({
-        zoomSelector: '.markdown img',
+        zoom: {
+          selector: '.markdown img',
+          background: {
+            light: 'rgb(7, 106, 247)',
+            dark: 'rgb(7, 106, 247)'
+          },
+          // options you can specify via https://github.com/francoischalifour/medium-zoom#usage
+          config: {}
+        },
         liveCodeBlock: {
           playgroundPosition: "bottom",
         },
@@ -126,8 +134,8 @@ const darkCodeTheme = require("prism-react-renderer/themes/dracula");
         // metadata: [
         //   {name: 'apple-itunes-app', content: 'app-id=myAppStoreID'}
         // ],
-        metadata: [{ name: "msapplication-TileColor", content: "#1877F2" }],
-        metadata: [{ name: "theme-color", content: "#1877F2" }],
+        metadata: [{ name: "msapplication-TileColor", content: "#076af7" }],
+        metadata: [{ name: "theme-color", content: "#076af7" }],
         docs: {
           sidebar: {
             hideable: true,
