@@ -19,7 +19,7 @@ const darkCodeTheme = require("prism-react-renderer/themes/dracula");
     trailingSlash: "false",
 
     themes: [
-    ["@docusaurus/theme-live-codeblock"],
+    "@docusaurus/theme-live-codeblock",
     // enable-local-search
     // [
     //   require.resolve("@easyops-cn/docusaurus-search-local"),
