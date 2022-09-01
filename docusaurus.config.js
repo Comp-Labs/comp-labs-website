@@ -20,14 +20,14 @@ const darkCodeTheme = require("prism-react-renderer/themes/dracula");
 
     themes: [
     "@docusaurus/theme-live-codeblock",
-    // enable-local-search
+    
     // [
     //   require.resolve("@easyops-cn/docusaurus-search-local"),
     //   {
     //     indexPages: true,
     //     removeDefaultStemmer: false, // will change to true later
     //     highlightSearchTermsOnTargetPage: true,
-    //     searchBarShortcutHint: false,
+    //     searchBarShortcutHint: true,
     //     // `hashed` is recommended as long-term-cache of index file is possible.
     //     hashed: true,
     //     // For Docs using Chinese, The `language` is recommended to set to:
@@ -175,6 +175,7 @@ const darkCodeTheme = require("prism-react-renderer/themes/dracula");
           placeholder: "Search Tech Fiddle...",
         },
         navbar: {
+          hideOnScroll: true,
           title: "Tech Fiddle",
           logo: {
             alt: "Tech Fiddle Logo",
