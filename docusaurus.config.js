@@ -268,7 +268,7 @@ const darkCodeTheme = require("prism-react-renderer/themes/dracula");
           style: "dark",
           links: [
             {
-              title: "Sitemap",
+              title: "Tech Fiddle",
               items: [
                 {
                   label: "Home",
@@ -294,10 +294,10 @@ const darkCodeTheme = require("prism-react-renderer/themes/dracula");
                   label: "WebDev's Crafts",
                   href: "/webdev-crafts",
                 },
-                // {
-                //   label: "Donate Us!",
-                //   to: "/donate-us",
-                // },
+                {
+                  label: "Donate Us!",
+                  to: "/donate-us",
+                },
               ],
             },
             {

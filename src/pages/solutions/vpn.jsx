@@ -19,13 +19,13 @@ function VPNHeader() {
           servers. Now you can connect to our public and anonymous VPN. You can
           connect to our VPN by the following steps below:-
         </p>
-        {/* <div className={styles.buttons}>
+        <div className={styles.buttons}>
           <Link
-            className="button button--secondary button--lg"
-            to="/docs/intro">
-            Docusaurus Tutorial - 5min ⏱️
+            className="button button--primary"
+            to="/">
+            Register for VPN Now!
           </Link>
-        </div> */}
+        </div>
       </div>
     </header>
   );

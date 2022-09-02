@@ -20,15 +20,15 @@ function MailHeader1() {
             </b>
           </p>
         </Admonition>
-        {/* <h1 className="hero__title">App Submission Service for Google Play Developer Console</h1>
+        <h1 className="hero__title">App Submission Service for Google Play Developer Console</h1>
         <p className="hero__subtitle"></p>
         <div className={styles.buttons}>
           <Link
-            className="button button--secondary button--lg"
+            className="button button--primary"
             href="https://forms.gle/XM3VbGQD6uXqNr43A">
             Register Now!
           </Link>
-        </div> */}
+        </div>
       </div>
     </header>
   );

@@ -22,7 +22,7 @@ function PlayHeader1() {
         </p>
         <div className={styles.buttons}>
           <Link
-            className="button button--secondary button--lg"
+            className="button button--primary"
             href="https://forms.gle/XM3VbGQD6uXqNr43A"
           >
             Register Now!
