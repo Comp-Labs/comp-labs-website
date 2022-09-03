@@ -121,8 +121,8 @@ const darkCodeTheme = require("prism-react-renderer/themes/dracula");
         zoom: {
           selector: '.markdown img',
           background: {
-            light: 'rgb(7, 106, 247)',
-            dark: 'rgb(7, 106, 247)'
+            light: '#076af7',
+            dark: '#076af7'
           },
           // options you can specify via https://github.com/francoischalifour/medium-zoom#usage
           config: {}
@@ -256,6 +256,12 @@ const darkCodeTheme = require("prism-react-renderer/themes/dracula");
               position: "right",
               className: "header-github-link",
               "aria-label": "GitHub",
+            },
+            {
+              href: "https://youtube.com/channel/UCL6pKeSCbJkPohM2PUZbqQA",
+              position: "right",
+              className: "header-youtube-link",
+              "aria-label": "YouTube",
             },
             {
               type: 'html',
