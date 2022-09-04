@@ -38,8 +38,8 @@ const darkCodeTheme = require("prism-react-renderer/themes/dracula");
 
     scripts: [
       "https://kit.fontawesome.com/307bcbc229.js",
-      "https://clfiles.herokuapp.com/js/scrolltotop.js",
-      "https://clfiles.herokuapp.com/js/sharebtn.js",
+      "https://cdn.complabs.in/js/scrolltotop.js",
+      "https://cdn.complabs.in/js/sharebtn.js",
       // 'https://complabs.in/herojs.js',
       // Object format.
       {
