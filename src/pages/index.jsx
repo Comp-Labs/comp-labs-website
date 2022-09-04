@@ -7,7 +7,7 @@ import styles from "./index.module.css";
 import HomepageFeatures from "../components/HomepageFeatures";
 import Translate, { translate } from "@docusaurus/Translate";
 import useBaseUrl from "@docusaurus/useBaseUrl";
-var ReactRotatingText = require('react-rotating-text');
+var ReactRotatingText = require("react-rotating-text");
 
 function HomepageHeader() {
   const { siteConfig } = useDocusaurusContext();
@@ -33,7 +33,10 @@ function HomepageHeader() {
               }),
             }}
           />
-          <ReactRotatingText items={['Guides.', 'Apps.', 'Solutions.', 'Tools.']} color="#076af7" />
+          <ReactRotatingText
+            items={["Guides.", "Apps.", "Solutions.", "Tools."]}
+            color="#076af7"
+          />
           <span
             className={styles.heroTitleTextHtml}
             // eslint-disable-next-line react/no-danger
@@ -50,7 +53,9 @@ function HomepageHeader() {
           <Link className="button button--primary" to="/docs">
             <Translate>Get Started</Translate>
           </Link>
-          <Link className="button button--primary" to="/blog"><Translate>Guides</Translate></Link>
+          <Link className="button button--primary" to="/blog">
+            <Translate>Guides</Translate>
+          </Link>
           <span className={styles.indexCtasGitHubButtonWrapper}>
             <iframe
               className={styles.indexCtasGitHubButton}

@@ -20,9 +20,7 @@ function VPNHeader() {
           connect to our VPN by the following steps below:-
         </p>
         <div className={styles.buttons}>
-          <Link
-            className="button button--primary"
-            to="/">
+          <Link className="button button--primary" to="/">
             Register for VPN Now!
           </Link>
         </div>

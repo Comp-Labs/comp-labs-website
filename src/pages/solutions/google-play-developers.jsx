@@ -53,7 +53,7 @@ function PlayHeader2() {
               __html: translate({
                 id: "homepage.hero.title",
                 message:
-                  "<p><b>App Publisher for Google Play</b><br><b>------</b>------<b>------</b>------<b>------</b><br>Best <b>SaaS Solution</b> to <b>Submit Your Apps</b> to <b><code>Play Store</code></b>, <b>Free of Cost!</b></p>",
+                  "<p><b>App Publisher for Google Play</b><br><b>------</b>------<b>------</b>------<b>------</b>------<b>------</b>------<b>------</b>------<b>------</b><br>Best <b>SaaS Solution</b> to <b>Submit Your Apps</b> to <b><code>Play Store</code></b>, <b>Free of Cost!</b></p>",
               }),
             }}
           />

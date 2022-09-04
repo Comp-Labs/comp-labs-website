@@ -12,7 +12,7 @@ import { CssVarsProvider } from '@mui/joy/styles';
 
 const AppCards = [
     {
-        name: 'Comp Labs Meet',
+        name: 'Tech Fiddle Meet',
         image: '/img/apps/comp-labs-meet/icon.png',
         url: {
             categories: ['Productivity', 'Social', 'Collaboration'],
@@ -106,8 +106,8 @@ function AppCard({ name, image, url }: Props) {
         <div className="col col--6 margin-bottom--lg">
             <div className={clsx('card')}>
                 <div className={clsx('card__image')}>
-                    <Link to={url.page}>
-                        <img src={image}></img>
+                    <Link to={url.viewNow}>
+                        <img src={image} alt={name}></img>
                     </Link>
                 </div>
                 <div className="card__body">

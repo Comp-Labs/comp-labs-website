@@ -35,7 +35,7 @@ function SpeedtestHeader() {
 export default function Speedtest() {
   const { siteConfig } = useDocusaurusContext();
   return (
-    <Layout title={`SpeedTest`} description="">
+    <Layout title={`SpeedTest`} description="SpeedTest Tool made by Tech Fiddle and Powered by OpenSpeedTest.com">
       <SpeedtestHeader />
       <main>
         <iframe

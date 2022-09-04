@@ -130,7 +130,7 @@ const darkCodeTheme = require("prism-react-renderer/themes/dracula");
         liveCodeBlock: {
           playgroundPosition: "bottom",
         },
-        // Remove Comments When Comp Labs App is Publicly Available on the App Store
+        // Remove Comments When Tech Fiddle App is Publicly Available on the App Store
         // metadata: [
         //   {name: 'apple-itunes-app', content: 'app-id=myAppStoreID'}
         // ],
@@ -365,7 +365,7 @@ const darkCodeTheme = require("prism-react-renderer/themes/dracula");
             //   title: 'Our Sites',
             //   items: [
             //     {
-            //       label: 'Comp Labs (This Site)',
+            //       label: 'Tech Fiddle (This Site)',
             //       href: '/',
             //     },
             //     {

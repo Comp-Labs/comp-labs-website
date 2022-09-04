@@ -8,7 +8,7 @@ import Translate, { translate } from "@docusaurus/Translate";
 import useBaseUrl from "@docusaurus/useBaseUrl";
 import Admonition from "@theme/Admonition";
 
-function MeetHeader1() {
+function MeetHeader2() {
   const { siteConfig } = useDocusaurusContext();
   return (
     <header className={clsx("hero hero--primary", styles.heroBanner)}>
@@ -34,7 +34,7 @@ function MeetHeader1() {
   );
 }
 
-function MeetHeader2() {
+function MeetHeader1() {
   const { siteConfig } = useDocusaurusContext();
   return (
     <div className={styles.hero}>
@@ -59,19 +59,31 @@ function MeetHeader2() {
             }}
           />
         </h1>
+        <div className={styles.indexCtas}>
+        <Link className="button button--primary" href="https://forms.gle/XM3VbGQD6uXqNr43A">
+            <Translate>Register Now!</Translate>
+          </Link>
+          <Admonition type="caution" icon="⚠️">
+          <p>
+            <b>
+              This Page is in Development. Browse this Page with Caution ⚠️.
+            </b>
+          </p>
+        </Admonition>
+        </div>
       </div>
     </div>
   );
 }
 
-export default function Play() {
+export default function Meeting() {
   const { siteConfig } = useDocusaurusContext();
   return (
     <Layout
-      title={`Google Play Developers`}
-      description="SaaS Solution to Submit Apps to Google Play Store Free of Cost!"
+      title={`Enterprise Meeting Solution`}
+      description="SaaS Solution to Empower Your Meetings Anywhere, No Matter Where You Are! Powered by Tech Fiddle Meet."
     >
-      <MeetHeader2 />
+      {/* <MeetHeader2 /> */}
       <MeetHeader1 />
       <main></main>
     </Layout>
