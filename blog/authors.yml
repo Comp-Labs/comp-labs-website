@@ -1,12 +1,13 @@
 comp-labs:
   name: Tech Fiddle
-  title: System Blog Writer
-  url: https://github.com/Comp-Labs
+  title: System Blog Editor
+  url: https://complabs.in
   image_url: https://github.com/comp-labs.png
   github: https://github.com/Comp-Labs/
 
 rudra-sen:
   name: Rudra Sen
+  title: A Human...
   url: https://github.com/Comp-Labs
   image_url: https://github.com/rudrasen2.png
   github: https://github.com/RudraSen2

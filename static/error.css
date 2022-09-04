@@ -45,7 +45,7 @@ body {
   display: inline-block;
   width: 120px;
   height: 120px;
-  background-image: url("https://complabs.in/img/error.png");
+  background-image: url("https://cdn.complabs.in/img/error.png");
   background-size: cover;
   -webkit-transform: scale(1.4);
   -ms-transform: scale(1.4);

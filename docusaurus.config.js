@@ -150,7 +150,7 @@ const darkCodeTheme = require("prism-react-renderer/themes/dracula");
         prism: {
           additionalLanguages: ["java", "markdown"],
         },
-        image: "https://complabs.in/img/comp-labs-logo.jpg",
+        image: "https://cdn.complabs.in/img/logo-removebg.jpg",
         // metadata: [{name: 'twitter:card', content: 'summary'}],
         // announcementBar: {
         //   id: 'announcement',
@@ -179,8 +179,8 @@ const darkCodeTheme = require("prism-react-renderer/themes/dracula");
           title: "Tech Fiddle",
           logo: {
             alt: "Tech Fiddle Logo",
-            src: "img/logo.svg",
-            srcDark: "img/logo.svg",
+            src: "https://cdn.complabs.in/img/icon-removebg.jpg",
+            srcDark: "https://cdn.complabs.in/img/icon-removebg.jpg",
           },
           items: [
             // { to: "/docs", label: "Docs 🚧", position: "left" },
@@ -192,15 +192,19 @@ const darkCodeTheme = require("prism-react-renderer/themes/dracula");
               position: "left",
               items: [
                 {
-                  label: "App Publishing Solution",
+                  label: "🚧 App Publishing Solution",
                   to: "/solutions/google-play-developers",
                 },
                 {
-                  label: "Enterprise Mail Solution 🚧",
+                  label: "🚧 Enterprise Mail Solution",
                   to: "/solutions/enterprise-mail-solution",
                 },
                 {
-                  label: "Anonymous VPN 🚧",
+                  label: "🚧 Enterprise Meeting Solution",
+                  to: "/solutions/enterprise-meeting-solution",
+                },
+                {
+                  label: "🚧 Anonymous VPN",
                   to: "/solutions/vpn",
                 },
               ],
@@ -257,17 +261,22 @@ const darkCodeTheme = require("prism-react-renderer/themes/dracula");
               className: "header-github-link",
               "aria-label": "GitHub",
             },
-            {
-              href: "https://youtube.com/channel/UCL6pKeSCbJkPohM2PUZbqQA",
-              position: "right",
-              className: "header-youtube-link",
-              "aria-label": "YouTube",
-            },
-            {
-              type: 'html',
-              position: 'right',
-              value: '<a style="color:#f70000" href="https://youtube.com/channel/UCL6pKeSCbJkPohM2PUZbqQA"><i class="fa-brands fa-youtube fa-xl color:#f70000"></i></a>',
-            },
+            // {
+            //   href: "https://youtube.com/channel/UCL6pKeSCbJkPohM2PUZbqQA",
+            //   position: "right",
+            //   className: "header-youtube-link",
+            //   "aria-label": "YouTube",
+            // },
+            // {
+            //   type: 'html',
+            //   position: 'right',
+            //   value: '<a style="color:#f70000" href="https://youtube.com/channel/UCL6pKeSCbJkPohM2PUZbqQA"><i class="fa-brands fa-youtube fa-xl color:#f70000"></i></a>',
+            // },
+            // {
+            //   type: 'html',
+            //   position: 'right',
+            //   value: '<div className="button-group button-group--block"><Link className="button button--primary" href="https://github.com/Comp-Labs"><i class="fa-brands fa-github fa-xl"></i></Link> <Link className="button button--primary" href="https://youtube.com/channel/UCL6pKeSCbJkPohM2PUZbqQA"><i class="fa-brands fa-youtube fa-xl></i></Link></div>',
+            // },
           ],
         },
         footer: {
@@ -280,10 +289,10 @@ const darkCodeTheme = require("prism-react-renderer/themes/dracula");
                   label: "Home",
                   to: "/",
                 },
-                // {
-                //   label: "Docs 🚧",
-                //   to: "/docs/",
-                // },
+                {
+                  label: "🚧 Docs",
+                  to: "/docs/",
+                },
                 {
                   label: "Guides",
                   to: "/blog",
@@ -310,19 +319,19 @@ const darkCodeTheme = require("prism-react-renderer/themes/dracula");
               title: "Solutions",
               items: [
                 {
-                  label: "App Publisher for Google Play",
+                  label: "🚧 App Publishing Solution",
                   to: "/solutions/google-play-developers",
                 },
                 {
-                  label: "Business Meeting Service 🚧",
+                  label: "🚧 Enterprise Meeting Service",
                   to: "/solutions/enterprise-meeting-solution",
                 },
-                // {
-                //   label: "Business Mail Service 🚧",
-                //   to: "/solutions/enterprise-mail-solution",
-                // },
                 {
-                  label: "Anonymous VPN 🚧",
+                  label: "🚧 Enterprise Mail Service",
+                  to: "/solutions/enterprise-mail-solution",
+                },
+                {
+                  label: "🚧 Anonymous VPN",
                   to: "/solutions/enterprise-mail-solution",
                 },
               ],
@@ -399,22 +408,26 @@ const darkCodeTheme = require("prism-react-renderer/themes/dracula");
               ],
             },
             {
-              title: "In Development 🚧",
+              title: "🚧 In Development",
               items: [
                 {
-                  label: "Docs 🚧",
+                  label: "🚧 Docs",
                   to: "/docs/",
                 },
                 {
-                  label: "Business Meeting Service 🚧",
+                  label: "🚧 App Publishing Solution",
+                  to: "/solutions/google-play-developers",
+                },
+                {
+                  label: "🚧 Business Meeting Service",
                   to: "/solutions/enterprise-meeting-solution",
                 },
-                // {
-                //   label: "Business Mail Service 🚧",
-                //   to: "/solutions/enterprise-mail-solution",
-                // },
                 {
-                  label: "Anonymous VPN 🚧",
+                  label: "🚧 Business Mail Service",
+                  to: "/solutions/enterprise-mail-solution",
+                },
+                {
+                  label: "🚧 Anonymous VPN",
                   to: "/solutions/vpn",
                 },
               ],
@@ -422,7 +435,7 @@ const darkCodeTheme = require("prism-react-renderer/themes/dracula");
           ],
           logo: {
             alt: "Tech Fiddle Footer Logo",
-            src: "img/comp-labs-logo.jpg",
+            src: "https://cdn.complabs.in/img/logo-removebg.jpg",
             href: "/",
           },
           copyright: `Copyright © ${new Date().getFullYear()} Tech Fiddle. All Rights Reserved. Built using Docusaurus.`,

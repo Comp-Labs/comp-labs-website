@@ -10,35 +10,35 @@ import Link from '@docusaurus/Link';
 const macOSGuideSeriesCards = [
     {
         name: 'Install macOS Mojave on Windows using VirtualBox',
-        image: '/img/blog/default.jpg',
+        image: 'https://cdn.complabs.in/img/default.jpg',
         url: {
             read: '/blog/posts/install-macos-mojave-on-windows-using-virtualbox',
         },
     },
     {
         name: 'Install macOS Catalina on Windows using VirtualBox',
-        image: '/img/blog/default.jpg',
+        image: 'https://cdn.complabs.in/img/default.jpg',
         url: {
             read: '/blog/posts/install-macos-catalina-on-windows-using-virtualbox',
         },
     },
     {
         name: 'Install macOS Big Sur on Windows using VirtualBox',
-        image: '/img/blog/default.jpg',
+        image: 'https://cdn.complabs.in/img/default.jpg',
         url: {
             read: '/blog/posts/install-macos-big-sur-on-windows-using-virtualbox',
         },
     },
     {
         name: 'Install macOS Monterey on Windows using VirtualBox',
-        image: '/img/blog/default.jpg',
+        image: 'https://cdn.complabs.in/img/default.jpg',
         url: {
             read: '/blog/posts/install-macos-monterey-on-windows-using-virtualbox',
         },
     },
     {
         name: 'Install macOS Ventura on Windows using VirtualBox',
-        image: '/img/blog/default.jpg',
+        image: 'https://cdn.complabs.in/img/default.jpg',
         url: {
             read: '/blog/posts/install-macos-ventura-on-windows-using-virtualbox',
         },

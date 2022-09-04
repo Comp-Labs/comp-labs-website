@@ -18,7 +18,7 @@ function HomepageHeader() {
           {/* <img
             alt={translate({ message: "Tech Fiddle Logo Animated" })}
             className={styles.heroLogo}
-            src={useBaseUrl("/img/complabs.jpg")}
+            src={useBaseUrl("https://cdn.complabs.in/img/icon-removebg.jpg")}
             width="256"
             height="256"
           /> */}
@@ -49,14 +49,22 @@ function HomepageHeader() {
             }}
           />
         </h1>
-        <div className={styles.indexCtas}>
+        {/* <div className={styles.indexCtas}> */}
+        {/* <div className="button-group button-group--block">
           <Link className="button button--primary" to="/docs">
             <Translate>Get Started</Translate>
           </Link>
           <Link className="button button--primary" to="/blog">
             <Translate>Guides</Translate>
           </Link>
-          <span className={styles.indexCtasGitHubButtonWrapper}>
+          <Link className="button button--primary" href="https://github.com/Comp-Labs">
+            <Translate>Follow Tech Fiddle</Translate>
+          </Link>
+          <Link className="button button--primary" href="https://github.com/sponsors/RudraSen2">
+            <Translate>Sponsor Tech Fiddle</Translate>
+          </Link>
+          </div> */}
+          {/* <span className={styles.indexCtasGitHubButtonWrapper}>
             <iframe
               className={styles.indexCtasGitHubButton}
               src="https://ghbtns.com/github-btn.html?user=Comp-Labs&amp;type=follow&amp;count=true&amp;size=small"
@@ -80,8 +88,8 @@ function HomepageHeader() {
               height={30}
               title="Sponsor Tech Fiddle on GitHub"
             </iframe>
-          </span>
-        </div>
+          </span> */}
+        {/* </div> */}
       </div>
     </div>
   );
@@ -91,7 +99,7 @@ export default function Home() {
   const { siteConfig } = useDocusaurusContext();
   return (
     <Layout
-      title={``}
+      title={`Home`}
       description="Our website provides Technical Guides, Apps, and Google Play Developer Console Service. This is a non-profit website so please donate to us to keep our resources running. You can write your feedback and comments about anything on our Contact Us page. See details of our services below."
     >
       <HomepageHeader />

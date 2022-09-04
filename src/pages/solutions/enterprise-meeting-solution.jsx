@@ -43,7 +43,7 @@ function MeetHeader1() {
           <img
             alt={translate({ message: "Tech Fiddle Logo Animated" })}
             className={styles.heroLogo}
-            src={useBaseUrl("/img/apps/comp-labs-meet/icon.png")}
+            src={useBaseUrl("https://cdn.complabs.in/img/apps/comp-labs-meet/icon.png")}
             width="256"
             height="256"
           />

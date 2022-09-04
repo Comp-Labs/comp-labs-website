@@ -9,78 +9,87 @@ import Link from '@docusaurus/Link';
 import Chip from '@mui/joy/Chip';
 import Stack from '@mui/material/Stack';
 import { CssVarsProvider } from '@mui/joy/styles';
+import Highlight from '@site/src/components/Highlight';
 
 const AppCards = [
     {
         name: 'Tech Fiddle Meet',
-        image: '/img/apps/comp-labs-meet/icon.png',
+        image: 'https://cdn.complabs.in/img/apps/comp-labs-meet/icon.png',
         url: {
             categories: ['Productivity', 'Social', 'Collaboration'],
             status: '✅ Available',
             viewNow: '/apps/comp-labs-meet',
+            color: '#00d26a',
         },
     },
     {
         name: 'Google Docs',
-        image: '/img/apps/google-docs.png',
+        image: 'https://cdn.complabs.in/img/apps/google-docs.png',
         url: {
             categories: ['Productivity', 'Blank', 'Blank'],
             status: '✅ Available',
             viewNow: '/apps/google-docs',
+            color: '#00d26a',
         },
     },
     {
         name: 'Jira Server',
-        image: '/img/apps/jira-server.png',
+        image: 'https://cdn.complabs.in/img/apps/jira-server.png',
         url: {
             categories: ['Productivity', 'Blank', 'Blank'],
             status: '✅ Available',
             viewNow: '/apps/jira-server',
+            color: '#00d26a',
         },
     },
     {
         name: 'Apple Store',
-        image: '/img/apps/applestore.webp',
+        image: 'https://cdn.complabs.in/img/apps/applestore.webp',
         url: {
             categories: ['Shopping', 'Blank', 'Blank'],
-            status: 'Planned',
+            status: '🚧 In Development',
             viewNow: '/apps/apple-store',
+            color: '#076AF7',
         },
     },
     {
         name: 'CloudConsole',
-        image: '/img/blog/default.jpg',
+        image: 'https://cdn.complabs.in/img/default.jpg',
         url: {
             categories: ['Productivity', 'Blank', 'Blank'],
             status: '🚧 In Development',
             viewNow: '/apps/cloud-console',
+            color: '#076AF7',
         },
     },
     {
         name: 'CodeEdit',
-        image: '/img/blog/default.jpg',
+        image: 'https://cdn.complabs.in/img/default.jpg',
         url: {
             categories: ['Productivity', 'Blank', 'Blank'],
             status: '🚧 In Development',
             viewNow: '/apps/codeedit',
+            color: '#076AF7',
         },
     },
     {
         name: 'GadgetCompare',
-        image: '/img/blog/default.jpg',
+        image: 'https://cdn.complabs.in/img/default.jpg',
         url: {
             categories: ['Productivity', 'Blank', 'Blank'],
             status: '🚧 In Development',
             viewNow: '/apps/gadget-compare',
+            color: '#076AF7',
         },
     },
     {
         name: 'Office',
-        image: '/img/blog/default.jpg',
+        image: 'https://cdn.complabs.in/img/default.jpg',
         url: {
             categories: ['Productivity', 'Blank', 'Blank'],
             status: '🚧 In Development',
             viewNow: '/apps/office',
+            color: '#076AF7',
         },
     },
 ];
@@ -92,6 +101,7 @@ interface Props {
         categories?: string;
         status?: string;
         viewNow?: string;
+        color?: string;
     };
 }
 
@@ -114,7 +124,8 @@ function AppCard({ name, image, url }: Props) {
                     <h3>{name}</h3>
                 </div>
                 <div className="card__footer">
-                    <p>{url.status}</p>
+                    <Highlight color={url.color}>{url.status}</Highlight>
+                    <br></br><br></br>
                     <Stack direction="row" spacing={1}>
                     <CssVarsProvider>
                     <Chip size="sm" variant="soft">{url.categories[0]}</Chip>

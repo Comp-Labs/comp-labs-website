@@ -6,8 +6,8 @@ import Translate, { translate } from "@docusaurus/Translate";
 
 const FeatureList = [
   {
-    title: "Tech Fiddle / 🚧 Docs",
-    Svg: require("../../../static/img/undraw_typewriter.svg").default,
+    title: "🚧 Docs",
+    Svg: require("https://cdn.complabs.in/img/undraw_typewriter.svg").default,
     description: (
       <>
         Use our Handy Documentation to Learn More about Tech Fiddle and it's
@@ -21,8 +21,8 @@ const FeatureList = [
     ),
   },
   {
-    title: "Tech Fiddle / Guides",
-    Svg: require("../../../static/img/undraw_typewriter.svg").default,
+    title: "Guides",
+    Svg: require("https://cdn.complabs.in/img/undraw_typewriter.svg").default,
     description: (
       <>
         Tech Based Blog for Enthusiasts.
@@ -35,8 +35,8 @@ const FeatureList = [
     ),
   },
   {
-    title: "Tech Fiddle / Apps",
-    Svg: require("../../../static/img/undraw_develop_app.svg").default,
+    title: "Apps",
+    Svg: require("https://cdn.complabs.in/img/undraw_develop_app.svg").default,
     description: (
       <>
         Apps with the World's Best UI/UX for Platforms Including <br></br>
@@ -51,8 +51,8 @@ const FeatureList = [
     ),
   },
   {
-    title: "Tech Fiddle / Contact Us",
-    Svg: require("../../../static/img/undraw_typewriter.svg").default,
+    title: "Contact Us",
+    Svg: require("https://cdn.complabs.in/img/undraw_typewriter.svg").default,
     description: (
       <>
         Please Contact Us using the Google Form Link for any Issues, Queries,
@@ -69,8 +69,8 @@ const FeatureList = [
     ),
   },
   {
-    title: "Tech Fiddle / WebDev's Crafts",
-    Svg: require("../../../static/img/undraw_typewriter.svg").default,
+    title: "WebDev's Crafts",
+    Svg: require("https://cdn.complabs.in/img/undraw_typewriter.svg").default,
     description: (
       <>
         Mesmerizing Crafts Made by WebDev's at Tech Fiddle And All The CodePen
@@ -84,8 +84,8 @@ const FeatureList = [
     ),
   },
   // {
-  //   title: "Tech Fiddle / Donate Us",
-  //   Svg: require("../../../static/img/undraw_typewriter.svg").default,
+  //   title: "Donate Us",
+  //   Svg: require("https://cdn.complabs.in/img/undraw_typewriter.svg").default,
   //   description: (
   //     <>
   //       Please Donate Us to keep us alive!
@@ -98,8 +98,8 @@ const FeatureList = [
   //   ),
   // },
   {
-    title: "Tech Fiddle / Solutions / 🚧 App Publisher for Google Play",
-    Svg: require("../../../static/img/undraw_android.svg").default,
+    title: "🚧 App Publisher for Google Play",
+    Svg: require("https://cdn.complabs.in/img/undraw_android.svg").default,
     description: (
       <>
         Best Solution to Publish Your <code>AndroidOS</code> and{" "}
@@ -115,8 +115,8 @@ const FeatureList = [
     ),
   },
   {
-    title: "Tech Fiddle / Solutions / 🚧 Business Mail Service",
-    Svg: require("../../../static/img/undraw_typewriter.svg").default,
+    title: "🚧 Business Mail Service",
+    Svg: require("https://cdn.complabs.in/img/undraw_typewriter.svg").default,
     description: (
       <>
         Best SaaS Solution Which Empowers Your Personal, Business, and
@@ -133,8 +133,8 @@ const FeatureList = [
     ),
   },
   {
-    title: "Tech Fiddle / Solutions / 🚧 Business Meeting Service",
-    Svg: require("../../../static/img/undraw_typewriter.svg").default,
+    title: "🚧 Business Meeting Service",
+    Svg: require("https://cdn.complabs.in/img/undraw_typewriter.svg").default,
     description: (
       <>
         Best SaaS Solution Which Empowers Your Personal, Business, and
@@ -151,8 +151,8 @@ const FeatureList = [
     ),
   },
   {
-    title: "Tech Fiddle / Solutions / 🚧 Anonymous VPN",
-    Svg: require("../../../static/img/undraw_typewriter.svg").default,
+    title: "🚧 Anonymous VPN",
+    Svg: require("https://cdn.complabs.in/img/undraw_typewriter.svg").default,
     description: (
       <>
         Introducing our Free, Fast, Anonymous VPN Powered by the SoftEther Open
@@ -167,8 +167,8 @@ const FeatureList = [
     ),
   },
   {
-    title: "Tech Fiddle / Tools / DNS Lookup",
-    Svg: require("../../../static/img/undraw_typewriter.svg").default,
+    title: "DNS Lookup",
+    Svg: require("https://cdn.complabs.in/img/undraw_typewriter.svg").default,
     description: (
       <>
         Best DNS Lookup Tool with Advanced Configuration, Cherry-Picked by Tech
@@ -185,8 +185,8 @@ const FeatureList = [
     ),
   },
   {
-    title: "Tech Fiddle / Tools / SpeedTest",
-    Svg: require("../../../static/img/undraw_typewriter.svg").default,
+    title: "SpeedTest",
+    Svg: require("https://cdn.complabs.in/img/undraw_typewriter.svg").default,
     description: (
       <>
         Free, Fast, and Always Accurate Internet, Internet SpeedTest. Powered by OpenSpeedTest.com to give you the best experience, accurate and detailed SpeedTest.
@@ -202,8 +202,8 @@ const FeatureList = [
     ),
   },
   {
-    title: "Tech Fiddle / Tools / Web Tools",
-    Svg: require("../../../static/img/undraw_typewriter.svg").default,
+    title: "Web Tools",
+    Svg: require("https://cdn.complabs.in/img/undraw_typewriter.svg").default,
     description: (
       <>
         Best Web Tools Just for You by Tech Fiddle!
@@ -213,8 +213,70 @@ const FeatureList = [
           className="button button--primary"
           href="https://digwebinterface.com/"
         >
-          <Translate>Lookup Now!</Translate>
+          <Translate>Explore Now!</Translate>
         </Link>
+      </>
+    ),
+  },
+  {
+    title: "Legal",
+    Svg: require("https://cdn.complabs.in/img/undraw_typewriter.svg").default,
+    description: (
+      <>
+        Legal Documents for Tech Fiddle!
+        <br></br>
+        <br></br>
+        <div className="button-group button-group--block">
+        <Link
+          className="button button--primary"
+          to="/legal/terms-of-service"
+        >
+          <i class="fa-regular fa-file"></i> <Translate>Terms of Service</Translate>
+        </Link>
+        <Link
+          className="button button--primary"
+          to="/legal/privacy-policy"
+        >
+          <i class="fa-regular fa-file"></i> <Translate>Privacy Policy</Translate>
+        </Link>
+        <Link
+          className="button button--primary"
+          to="/legal/cookie-policy"
+        >
+          <i class="fa-regular fa-file"></i> <Translate>Cookie Policy</Translate>
+        </Link>
+        </div>
+      </>
+    ),
+  },
+  {
+    title: "Social",
+    Svg: require("https://cdn.complabs.in/img/undraw_typewriter.svg").default,
+    description: (
+      <>
+        Connect with Tech Fiddle!
+        <br></br>
+        <br></br>
+        <div className="button-group button-group--block">
+        <Link
+          className="button button--primary"
+          href="https://github.com/Comp-Labs"
+        >
+          <i class="fa-brands fa-github"></i> <Translate>GitHub</Translate>
+        </Link>
+        <Link
+          className="button button--primary"
+          href="https://youtube.com/channel/UCL6pKeSCbJkPohM2PUZbqQA"
+        >
+          <i class="fa-brands fa-youtube"></i> <Translate>YouTube</Translate>
+        </Link>
+        <Link
+          className="button button--primary"
+          href="https://linktr.ee/complabs"
+        >
+          <i class="fa-solid fa-tree-palm"></i> <Translate>LinkTree</Translate>
+        </Link>
+        </div>
       </>
     ),
   },
@@ -222,7 +284,7 @@ const FeatureList = [
 
 function Feature({ Svg, title, description }) {
   return (
-    <div className={clsx("col col--4")}>
+    <div className={clsx("col col--6")}>
       <div className="text--center">
         <Svg className={styles.featureSvg} alt={title} />
       </div>
