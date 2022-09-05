@@ -12,9 +12,9 @@ var ReactRotatingText = require("react-rotating-text");
 function HomepageHeader() {
   const { siteConfig } = useDocusaurusContext();
   return (
-    <div className={styles.hero}>
-      <div className={styles.heroInner}>
-        <h1 className={styles.heroProjectTagline}>
+    <div className={hero}>
+      <div className={heroInner}>
+        <h1 className={heroProjectTagline}>
           {/* <img
             alt={translate({ message: "Tech Fiddle Logo Animated" })}
             className={styles.heroLogo}
@@ -23,7 +23,7 @@ function HomepageHeader() {
             height="256"
           /> */}
           <span
-            className={styles.heroTitleTextHtml}
+            className={heroTitleTextHtml}
             // eslint-disable-next-line react/no-danger
             dangerouslySetInnerHTML={{
               __html: translate({

@@ -19,32 +19,69 @@ const darkCodeTheme = require("prism-react-renderer/themes/dracula");
     trailingSlash: "false",
 
     themes: [
-    "@docusaurus/theme-live-codeblock",
-    
-    // [
-    //   require.resolve("@easyops-cn/docusaurus-search-local"),
-    //   {
-    //     indexPages: true,
-    //     removeDefaultStemmer: false, // will change to true later
-    //     highlightSearchTermsOnTargetPage: true,
-    //     searchBarShortcutHint: true,
-    //     // `hashed` is recommended as long-term-cache of index file is possible.
-    //     hashed: true,
-    //     // For Docs using Chinese, The `language` is recommended to set to:
-    //     // language: ["en", "zh"],
-    //   },
-    // ],
-  ],
+      "@docusaurus/theme-live-codeblock",
+
+      // [
+      //   require.resolve("@easyops-cn/docusaurus-search-local"),
+      //   {
+      //     indexPages: true,
+      //     removeDefaultStemmer: false, // will change to true later
+      //     highlightSearchTermsOnTargetPage: true,
+      //     searchBarShortcutHint: true,
+      //     // `hashed` is recommended as long-term-cache of index file is possible.
+      //     hashed: true,
+      //     // For Docs using Chinese, The `language` is recommended to set to:
+      //     // language: ["en", "zh"],
+      //   },
+      // ],
+    ],
 
     scripts: [
       "https://kit.fontawesome.com/307bcbc229.js",
       "https://cdn.complabs.in/js/scrolltotop.js",
       "https://cdn.complabs.in/js/sharebtn.js",
+      "https://s7.addthis.com/js/300/addthis_widget.js#pubid=ra-629de96c243ef6ee",
       // 'https://complabs.in/herojs.js',
-      // Object format.
+      // Google AdSense:
       {
         src: 'https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6230468888789445',
         async: true,
+        crossorigin: 'anonymous',
+      },
+      // TrustedSite:
+      {
+        src: 'https://cdn.ywxi.net/js/1.js',
+        async: true,
+      },
+    ],
+
+    stylesheets: [
+      // String format.
+      'https://docusaurus.io/style.css',
+      // Object format.
+      {
+        href: '/apple-touch-icon.png',
+        rel: 'apple-touch-icon',
+        sizes: '180x180',
+      },
+      {
+        href: '/favicon-32x32.png',
+        rel: 'icon',
+        sizes: '32x32',
+      },
+      {
+        href: '/favicon-16x16.png',
+        rel: 'icon',
+        sizes: '16x16',
+      },
+      {
+        href: '/site.webmanifest',
+        rel: 'manifest',
+      },
+      {
+        href: '/safari-pinned-tab.svg',
+        rel: 'mask-icon',
+        color: '#5bbad5',
       },
     ],
 

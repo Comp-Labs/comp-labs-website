@@ -1,0 +1,19 @@
+import React from "react";
+
+function YTSubscribe() {
+    return (
+        <>
+<html>
+<head>
+<script src="https://apis.google.com/js/platform.js"></script>
+</head>
+<body>
+<script src="https://apis.google.com/js/platform.js"></script>
+<div class="g-ytsubscribe" data-channelid="UCL6pKeSCbJkPohM2PUZbqQA" data-layout="full" data-count="default"></div>
+</body>
+</html>
+        </>
+    )
+}
+
+export default YTSubscribe;
