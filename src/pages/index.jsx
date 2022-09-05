@@ -12,9 +12,9 @@ var ReactRotatingText = require("react-rotating-text");
 function HomepageHeader() {
   const { siteConfig } = useDocusaurusContext();
   return (
-    <div className={hero}>
-      <div className={heroInner}>
-        <h1 className={heroProjectTagline}>
+    <div className={styles.hero}>
+      <div className={styles.heroInner}>
+        <h1 className={styles.heroProjectTagline}>
           {/* <img
             alt={translate({ message: "Tech Fiddle Logo Animated" })}
             className={styles.heroLogo}
