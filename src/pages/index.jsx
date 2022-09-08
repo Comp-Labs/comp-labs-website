@@ -23,7 +23,7 @@ function HomepageHeader() {
             height="256"
           /> */}
           <span
-            className={heroTitleTextHtml}
+            className={styles.heroTitleTextHtml}
             // eslint-disable-next-line react/no-danger
             dangerouslySetInnerHTML={{
               __html: translate({

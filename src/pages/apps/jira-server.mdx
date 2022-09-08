@@ -30,19 +30,76 @@ import TabItem from "@theme/TabItem";
 
 <Tabs className="unique-tabs">
   <TabItem value="Windows">
-    <img src="https://cdn.complabs.in/img/default.jpg" alt="Windows-Screenshot-1"></img>
-    <img src="https://cdn.complabs.in/img/default.jpg" alt="Windows-Screenshot-2"></img>
-    <img src="https://cdn.complabs.in/img/default.jpg" alt="Windows-Screenshot-3"></img>
-    </TabItem>
+    <ShowcaseCarousel
+      aspectRatio={6000 / 4000}
+      sites={[
+        {
+          name: "Windows Screenshot 1",
+          image:
+            "https://cdn.complabs.in/img/default.jpg",
+          url: "",
+        },
+        {
+          name: "Windows Screenshot 2",
+          image:
+            "https://cdn.complabs.in/img/default.jpg",
+          url: "",
+        },
+        {
+          name: "Windows Screenshot 3",
+          image:
+            "https://cdn.complabs.in/img/default.jpg",
+          url: "",
+        },
+      ]}
+    />
+  </TabItem>
   <TabItem value="macOS">
-    <img src="https://cdn.complabs.in/img/default.jpg" alt="macOS-Screenshot-1"></img>
-    <img src="https://cdn.complabs.in/img/default.jpg" alt="macOS-Screenshot-2"></img>
-    <img src="https://cdn.complabs.in/img/default.jpg" alt="macOS-Screenshot-3"></img>
-    </TabItem>
+    <ShowcaseCarousel
+      aspectRatio={6000 / 4000}
+      sites={[
+        {
+          name: "macOS Screenshot 1",
+          image: "https://cdn.complabs.in/img/default.jpg",
+          url: "",
+        },
+        {
+          name: "macOS Screenshot 2",
+          image: "https://cdn.complabs.in/img/default.jpg",
+          url: "",
+        },
+        {
+          name: "macOS Screenshot 3",
+          image: "https://cdn.complabs.in/img/default.jpg",
+          url: "",
+        },
+      ]}
+    />
+  </TabItem>
   <TabItem value="Linux">
-    <img src="https://cdn.complabs.in/img/default.jpg" alt="Linux-Screenshot-1"></img>
-    <img src="https://cdn.complabs.in/img/default.jpg" alt="Linux-Screenshot-2"></img>
-    <img src="https://cdn.complabs.in/img/default.jpg" alt="Linux-Screenshot-3"></img>
+    <ShowcaseCarousel
+      aspectRatio={799 / 636}
+      sites={[
+        {
+          name: "Linux Screenshot 1",
+          image:
+            "https://cdn.complabs.in/img/default.jpg",
+          url: "",
+        },
+        {
+          name: "Linux Screenshot 2",
+          image:
+            "https://cdn.complabs.in/img/default.jpg",
+          url: "",
+        },
+        {
+          name: "Linux Screenshot 3",
+          image:
+            "https://cdn.complabs.in/img/default.jpg",
+          url: "",
+        },
+      ]}
+    />
   </TabItem>
 </Tabs>
 
