@@ -59,7 +59,7 @@ function macOSGuideSeriesCard({ name, image, url }: Props) {
             <div className={clsx('card')}>
                 <div className={clsx('card__image')}>
                     <Link to={url.read}>
-                        <img src={image}></img>
+                        <img src={image} alt={name} title={name}></img>
                     </Link>
                 </div>
                 <div className="card__body">

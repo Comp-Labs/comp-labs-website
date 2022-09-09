@@ -72,6 +72,11 @@ html[data-theme="dark"] {
   --site-color-checkbox-checked-bg: hsl(167deg 56% 73% / 10%);
 }
 
+div[class^='announcementBar_'] {
+  --site-announcement-bar-stripe-color1: #fff;
+  --site-announcement-bar-stripe-color2: #fff;
+}
+
 #scrollToTopBtn {
   display: none;
   position: fixed;

@@ -21,7 +21,6 @@
  function SiteSlide({index, site}: {index: number; site: Site}) {
    return (
      <Slide index={index} className={styles.siteSlide}>
-      {/* <img src={site.image} alt={site.name} title={site.name}></img> */}
        <Image
          img={site.image}
          alt={site.name}

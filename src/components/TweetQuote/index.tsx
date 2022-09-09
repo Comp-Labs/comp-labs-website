@@ -37,6 +37,7 @@
                alt={name}
                className={clsx('avatar__photo', styles.avatarImg)}
                src={avatar}
+               title={name}
                // loading="lazy"
              />
              <div className={clsx('avatar__intro')}>
