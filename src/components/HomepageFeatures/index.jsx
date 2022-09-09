@@ -227,16 +227,13 @@ const FeatureList = [
         <br></br>
         <div className="button-group button-group--block">
           <Link className="button button--primary" to="/legal/terms-of-service">
-            <i class="fa-regular fa-file"></i>
-            <Translate>Terms of Service</Translate>
+            <i class="fa-regular fa-file"></i> <Translate>Terms of Service</Translate>
           </Link>
           <Link className="button button--primary" to="/legal/privacy-policy">
-            <i class="fa-regular fa-file"></i>
-            <Translate>Privacy Policy</Translate>
+            <i class="fa-regular fa-file"></i> <Translate>Privacy Policy</Translate>
           </Link>
           <Link className="button button--primary" to="/legal/cookie-policy">
-            <i class="fa-regular fa-file"></i>
-            <Translate>Cookie Policy</Translate>
+            <i class="fa-regular fa-file"></i> <Translate>Cookie Policy</Translate>
           </Link>
         </div>
       </>
@@ -267,7 +264,7 @@ const FeatureList = [
             className="button button--primary"
             href="https://linktr.ee/complabs"
           >
-            <i class="fa-solid fa-tree-palm"></i> <Translate>LinkTree</Translate>
+            <i class="fa-solid fa-tree"></i> <Translate>LinkTree</Translate>
           </Link>
         </div>
       </>
@@ -288,6 +285,26 @@ function Feature({ Svg, title, description }) {
     </div>
   );
 }
+
+// function Feature({ Svg, title, description }) {
+//   return (
+//     <div className={clsx("card")}>
+//       <div className={clsx("card__image")}>
+//         <div className="text--center">
+//           <Svg className={styles.featureSvg} alt={title} />
+//         </div>
+//         <div className="card__body">
+//           <div className="text--center padding-horiz--md">
+//             <h3>{title}</h3>
+//             <p>{description}</p>
+//           </div>
+//         </div>
+//         <div className="card__footer">
+//         </div>
+//       </div>
+//     </div>
+//   );
+// }
 
 export default function HomepageFeatures() {
   return (

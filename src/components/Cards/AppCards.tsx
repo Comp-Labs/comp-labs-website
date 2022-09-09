@@ -17,9 +17,11 @@ const AppCards = [
         image: 'https://cdn.complabs.in/img/apps/comp-labs-meet/icon.png',
         url: {
             categories: ['Productivity', 'Social', 'Collaboration'],
-            status: '✅ Available',
+            status: 'Available',
             viewNow: '/apps/comp-labs-meet',
             color: '#00d26a',
+            width: '256',
+            height: '256',
         },
     },
     {
@@ -27,9 +29,11 @@ const AppCards = [
         image: 'https://cdn.complabs.in/img/apps/google-docs.png',
         url: {
             categories: ['Productivity', 'Blank', 'Blank'],
-            status: '✅ Available',
+            status: 'Available',
             viewNow: '/apps/google-docs',
             color: '#00d26a',
+            width: '256',
+            height: '256',
         },
     },
     {
@@ -37,9 +41,11 @@ const AppCards = [
         image: 'https://cdn.complabs.in/img/apps/jira-server.png',
         url: {
             categories: ['Productivity', 'Blank', 'Blank'],
-            status: '✅ Available',
+            status: 'Available',
             viewNow: '/apps/jira-server',
             color: '#00d26a',
+            width: '256',
+            height: '256',
         },
     },
     {
@@ -47,49 +53,59 @@ const AppCards = [
         image: 'https://cdn.complabs.in/img/apps/applestore.webp',
         url: {
             categories: ['Shopping', 'Blank', 'Blank'],
-            status: '🚧 In Development',
+            status: 'In Development',
             viewNow: '/apps/apple-store',
             color: '#076AF7',
+            width: '256',
+            height: '256',
         },
     },
     {
         name: 'CloudConsole',
-        image: 'https://cdn.complabs.in/img/default.jpg',
+        image: 'https://cdn.complabs.in/img/icon-removebg.jpg',
         url: {
             categories: ['Productivity', 'Blank', 'Blank'],
-            status: '🚧 In Development',
+            status: 'In Development',
             viewNow: '/apps/cloud-console',
             color: '#076AF7',
+            width: '256',
+            height: '256',
         },
     },
     {
         name: 'CodeEdit',
-        image: 'https://cdn.complabs.in/img/default.jpg',
+        image: 'https://cdn.complabs.in/img/icon-removebg.jpg',
         url: {
             categories: ['Productivity', 'Blank', 'Blank'],
-            status: '🚧 In Development',
+            status: 'In Development',
             viewNow: '/apps/codeedit',
             color: '#076AF7',
+            width: '256',
+            height: '256',
         },
     },
     {
         name: 'GadgetCompare',
-        image: 'https://cdn.complabs.in/img/default.jpg',
+        image: 'https://cdn.complabs.in/img/icon-removebg.jpg',
         url: {
             categories: ['Productivity', 'Blank', 'Blank'],
-            status: '🚧 In Development',
+            status: 'In Development',
             viewNow: '/apps/gadget-compare',
             color: '#076AF7',
+            width: '256',
+            height: '256',
         },
     },
     {
         name: 'Office',
-        image: 'https://cdn.complabs.in/img/default.jpg',
+        image: 'https://cdn.complabs.in/img/icon-removebg.jpg',
         url: {
             categories: ['Productivity', 'Blank', 'Blank'],
-            status: '🚧 In Development',
+            status: 'In Development',
             viewNow: '/apps/office',
             color: '#076AF7',
+            width: '256',
+            height: '256',
         },
     },
 ];
@@ -102,6 +118,8 @@ interface Props {
         status?: string;
         viewNow?: string;
         color?: string;
+        width?: string,
+        height?: string,
     };
 }
 
@@ -113,11 +131,10 @@ export function TagOne({ name, image, url }: Props) {
 
 function AppCard({ name, image, url }: Props) {
     return (
-        <div className="col col--6 margin-bottom--lg">
             <div className={clsx('card')}>
                 <div className={clsx('card__image')}>
                     <Link to={url.viewNow}>
-                        <img src={image} alt={name} title={name}></img>
+                        <img src={image} alt={name} title={name} width={url.width} height={url.height}></img>
                     </Link>
                 </div>
                 <div className="card__body">
@@ -139,18 +156,17 @@ function AppCard({ name, image, url }: Props) {
                     <br></br>
                     <div className="button-group button-group--block">
                         <Link className="button button--primary" to={url.viewNow}>
-                            <i class="fa-solid fa-arrow-up-right-from-square"></i> View Now
+                            <i className="fa-solid fa-arrow-up-right-from-square"></i> View Now
                         </Link>
                     </div>
                 </div>
             </div>
-        </div>
     );
 }
 
 export function AppCardsRow(): JSX.Element {
     return (
-        <div className="row">
+        <div className="row cardRow">
             {AppCards.map((apps) => (
                 <AppCard key={apps.name} {...apps} />
             ))}

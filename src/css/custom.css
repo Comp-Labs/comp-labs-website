@@ -117,6 +117,10 @@ table {
   border-collapse: collapse;
 }
 
+.cardRow {
+
+}
+
 /* * {
 background: rgba(255, 255, 255, 0.18823529411764706);
 border-radius: 16px;

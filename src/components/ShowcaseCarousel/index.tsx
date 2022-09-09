@@ -27,9 +27,10 @@
          title={site.name}
          loading={index === 0 ? 'eager' : 'lazy'}
        />
-       <Link to={site.url} className={styles.siteLink} target="_blank">
-         🔗 {site.name}
-       </Link>
+       {/* <Link to={site.url} className={styles.siteLink} target="_blank"> */}
+       <div className={styles.siteLink}>
+         <Highlight color="#1877f2">{site.name}</Highlight>
+        </div>
      </Slide>
    );
  }
