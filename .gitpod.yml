@@ -5,9 +5,8 @@
 tasks:
   - before: >
       [[ ! -z $GNUPG_KEY  ]] &&
-      gpg --verbose --batch --import <(echo $GNUPG_KEY|base64 -d) &&
-      echo 'pinentry-mode loopback' >> ~/.gnupg/gpg.conf
+      cd ~ &&
+      rm -rf .gnupg &&
+      echo $GNUPG_KEY | base64 -d | tar --no-same-owner -xzvf -
   - init: npm install && npm run build
     command: npm run start
-
-
