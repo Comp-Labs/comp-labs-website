@@ -1,8 +1,4 @@
 {
   "label": "CloudConsole",
-  "position": 1,
-  "link": {
-    "type": "generated-index",
-    "title": "CloudConsole"
-  }
+  "position": 1
 }

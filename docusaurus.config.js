@@ -239,7 +239,7 @@ const darkCodeTheme = require("prism-react-renderer/themes/dracula");
             srcDark: "https://cdn.complabs.in/img/icon-removebg.jpg",
           },
           items: [
-            // { to: "/docs", label: "Docs 🚧", position: "left" },
+            { to: "/docs", label: "🚧 Docs", position: "left" },
             { to: "blog", label: "Guides", position: "left" },
             { to: "/apps", label: "Apps", position: "left" },
             {

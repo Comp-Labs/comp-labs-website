@@ -1,7 +1,9 @@
 import React from 'react';
 import MDXComponents from '@theme-original/MDXComponents';
 // Divider
-import BrowserWindow from "@site/src/components/BrowserWindow";
+import Browser from "@site/src/components/ShowcaseWindow/Browser";
+import BrowserWindow from "@site/src/components/ShowcaseWindow";
+import DocCardList from '@theme/DocCardList';
 import Giscus from "@giscus/react";
 import Highlight from "@site/src/components/Highlight";
 import Link from "@docusaurus/Link";
@@ -10,12 +12,15 @@ import NativeShare from '@site/src/components/NativeShare';
 import ShowcaseCarousel from "@site/src/components/ShowcaseCarousel";
 import Tabs from "@theme/Tabs";
 import TabItem from "@theme/TabItem";
+import Terminal from "@site/src/components/ShowcaseWindow/Terminal";
 import YTSubscribe from '@site/src/components/YTSubscribe';
 
 export default {
   ...MDXComponents,
   // Divider
+  Browser: Browser,
   BrowserWindow: BrowserWindow,
+  DocCardList: DocCardList,
   Giscus: Giscus,
   Highlight: Highlight,
   Link: Link,
@@ -24,5 +29,6 @@ export default {
   ShowcaseCarousel: ShowcaseCarousel,
   Tabs: Tabs,
   TabItem: TabItem,
+  Terminal: Terminal,
   YTSubscribe: YTSubscribe,
 };
