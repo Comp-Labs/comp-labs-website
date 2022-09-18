@@ -63,6 +63,11 @@
   
   .browserWindowMenuIcon {
     margin-left: auto;
+    color: '#000000';
+  }
+
+  [data-theme="dark"] .browserWindowMenuIcon {
+    color: '#ffffff';
   }
   
   .bar {
@@ -75,6 +80,5 @@
   
   .browserWindowBody {
     padding: 1rem;
-    background: #000000;
   }
   

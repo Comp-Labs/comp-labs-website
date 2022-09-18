@@ -4,13 +4,15 @@ import styles from './styles.module.css';
 interface Props {
   background: string;
   children: ReactNode;
+  color: string;
   minHeight: number;
   url: string;
 }
 
 function Browser({
-  background,
+  background = '#ffffff',
   children,
+  color = '#000000',
   minHeight,
   url = 'https://complabs.in/',
 }: Props): JSX.Element {
@@ -22,7 +24,7 @@ function Browser({
           <span className={styles.dot} style={{ background: '#fbbe3c' }} />
           <span className={styles.dot} style={{ background: '#58cb42' }} />
         </div>
-        <div className={styles.browserWindowAddressBar}>{url}</div>
+        <div className={styles.browserWindowAddressBar}><i class="fa-solid fa-lock"></i> {url}</div>
         <div className={styles.browserWindowMenuIcon}>
           <div>
             <span className={styles.bar} />
@@ -32,7 +34,7 @@ function Browser({
         </div>
       </div>
 
-      <div className={styles.browserWindowBody}>{children}</div>
+      <div className={styles.browserWindowBody} style={{ background, color }}>{children}</div>
     </div>
   );
 }

@@ -1,29 +1,36 @@
 import React, { type ReactNode } from 'react';
-import styles from './terminalStyles.module.css';
+import terminalStyles from './terminalStyles.module.css';
 
-interface Props {
+interface terminalProps {
+  background: string;
   children: ReactNode;
+  color: string;
   minHeight: number;
   title: string;
 }
 
 function Terminal({
+  background = '#000000',
   children,
+  color = '#ffffff',
   minHeight,
   title = 'Tech Fiddle Terminal',
-}: Props): JSX.Element {
+}: terminalProps): JSX.Element {
   return (
-    <div className={styles.browserWindow} style={{ minHeight }}>
-      <div className={styles.browserWindowHeader}>
-        <div className={styles.buttons}>
-          <span className={styles.dot} style={{ background: '#f25f58' }} />
-          <span className={styles.dot} style={{ background: '#fbbe3c' }} />
-          <span className={styles.dot} style={{ background: '#58cb42' }} />
+    <div className={terminalStyles.browserWindow} style={{ minHeight }}>
+      <div className={terminalStyles.browserWindowHeader}>
+        <div className={terminalStyles.buttons}>
+          <span className={terminalStyles.dot} style={{ background: '#f25f58' }} />
+          <span className={terminalStyles.dot} style={{ background: '#fbbe3c' }} />
+          <span className={terminalStyles.dot} style={{ background: '#58cb42' }} />
         </div>
-        <div className={styles.browserWindowAddressBar}>{title}</div>
+        <div className={terminalStyles.browserWindowAddressBar}>{title}</div>
+        <div className={terminalStyles.browserWindowMenuIcon}>
+          <i class="fa-solid fa-gear"></i>
+        </div>
       </div>
 
-      <div className={styles.browserWindowBody}>{children}</div>
+      <div className={terminalStyles.browserWindowBody} style={{ background, color }}>{children}</div>
     </div>
   );
 }

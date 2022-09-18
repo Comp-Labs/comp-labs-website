@@ -3,9 +3,10 @@ import MDXComponents from '@theme-original/MDXComponents';
 // Divider
 import Browser from "@site/src/components/ShowcaseWindow/Browser";
 import BrowserWindow from "@site/src/components/ShowcaseWindow";
+import { CssVarsProvider } from "@mui/joy/styles";
 import DocCardList from '@theme/DocCardList';
 import Giscus from "@giscus/react";
-import Highlight from "@site/src/components/Highlight";
+// import Highlight from "@site/src/components/Highlight";
 import Link from "@docusaurus/Link";
 import Microlink from "@microlink/react";
 import NativeShare from '@site/src/components/NativeShare';
@@ -20,9 +21,10 @@ export default {
   // Divider
   Browser: Browser,
   BrowserWindow: BrowserWindow,
+  CssVarsProvider: CssVarsProvider,
   DocCardList: DocCardList,
   Giscus: Giscus,
-  Highlight: Highlight,
+  // Highlight: Highlight,
   Link: Link,
   Microlink: Microlink,
   NativeShare: NativeShare,

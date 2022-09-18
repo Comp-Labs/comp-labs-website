@@ -39,7 +39,7 @@ const darkCodeTheme = require("prism-react-renderer/themes/dracula");
     scripts: [
       "https://kit.fontawesome.com/307bcbc229.js",
       "https://cdn.complabs.in/js/scrolltotop.js",
-      "https://cdn.complabs.in/js/sharebtn.js",
+      "https://cdn.complabs.in/html/sharebtn/script.js",
       "https://s7.addthis.com/js/300/addthis_widget.js#pubid=ra-629de96c243ef6ee",
       // 'https://complabs.in/herojs.js',
       // Google AdSense:
@@ -174,7 +174,9 @@ const darkCodeTheme = require("prism-react-renderer/themes/dracula");
             dark: '#076af7'
           },
           // options you can specify via https://github.com/francoischalifour/medium-zoom#usage
-          config: {}
+          config: {
+            background: '#076af7',
+          }
         },
         liveCodeBlock: {
           playgroundPosition: "bottom",
