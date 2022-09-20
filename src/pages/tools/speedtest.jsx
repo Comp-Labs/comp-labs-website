@@ -14,11 +14,11 @@ function SpeedtestHeader() {
           Free, Fast, and Accurate Internet SpeedTest
         </h1>
         <p className="hero__subtitle">
-          This is our Free, Fast, and Always Accurate Internet, Internet
-          SpeedTest. It is powered by OpenSpeedTest to give you the best
-          experience, accurate and detailed SpeedTest. Click on the "Start"
-          Button Below to Start the SpeedTest. Download the App for Your
-          Platform for More Accurate Results as told by the Experts.
+          This is our Free, Fast, and Always Accurate Internet SpeedTest. It is
+          powered by OpenSpeedTest to give you the best experience, accurate and
+          detailed SpeedTest. Click on the "Start" Button Below to Start the
+          SpeedTest. Download the App for Your Platform for More Accurate
+          Results as told by the Experts.
         </p>
         {/* <div className={styles.buttons}>
           <Link
@@ -35,7 +35,10 @@ function SpeedtestHeader() {
 export default function Speedtest() {
   const { siteConfig } = useDocusaurusContext();
   return (
-    <Layout title={`SpeedTest`} description="SpeedTest Tool made by Tech Fiddle and Powered by OpenSpeedTest.com">
+    <Layout
+      title={`SpeedTest`}
+      description="Free, Fast, and Always Accurate Internet SpeedTest Tool made by Tech Fiddle and Powered by OpenSpeedTest.com to give you the best experience."
+    >
       <SpeedtestHeader />
       <main>
         <iframe
