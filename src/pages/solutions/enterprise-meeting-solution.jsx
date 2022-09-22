@@ -41,7 +41,7 @@ function MeetHeader1() {
       <div className={styles.heroInner}>
         <h1 className={styles.heroProjectTagline}>
           <img
-            alt={translate({ message: "Tech Fiddle Logo Animated" })}
+            alt={translate({ message: "Tech Fiddle Meet Logo Animated" })}
             className={styles.heroLogo}
             src={useBaseUrl("https://cdn.complabs.in/img/apps/comp-labs-meet/icon.png")}
             width="256"

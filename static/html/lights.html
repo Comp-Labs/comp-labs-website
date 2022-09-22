@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang='en' class=''>
+
+<head>
+
+    <meta charset='UTF-8'>
+    <title>CodePen Demo</title>
+
+    <meta name="robots" content="noindex">
+
+    <link rel="shortcut icon" type="image/x-icon"
+        href="https://cpwebassets.codepen.io/assets/favicon/favicon-aec34940fbc1a6e787974dcd360f2c6b63348d4b1f4e06c77743096d55480f33.ico">
+    <link rel="mask-icon"
+        href="https://cpwebassets.codepen.io/assets/favicon/logo-pin-8f3771b1072e3c38bd662872f6b673a722f4b3ca2421637d5596661b4e2132cc.svg"
+        color="#111">
+    <link rel="canonical" href="https://codepen.io/rudrasen2/pen/GRywgoR">
+
+
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+
+    <style class="INLINE_PEN_STYLESHEET_ID">
+        body {
+            background: #123456;
+        }
+
+        .lightrope {
+            text-align: center;
+            white-space: nowrap;
+            overflow: hidden;
+            position: absolute;
+            z-index: 1;
+            margin: -15px 0 0 0;
+            padding: 0;
+            pointer-events: none;
+            width: 100%;
+        }
+
+        .lightrope li {
+            position: relative;
+            -webkit-animation-fill-mode: both;
+            animation-fill-mode: both;
+            -webkit-animation-iteration-count: infinite;
+            animation-iteration-count: infinite;
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            display: block;
+            width: 12px;
+            height: 28px;
+            border-radius: 50%;
+            margin: 20px;
+            display: inline-block;
+            background: #00f7a5;
+            box-shadow: 0px 4.6666666667px 24px 3px #00f7a5;
+            -webkit-animation-name: flash-1;
+            animation-name: flash-1;
+            -webkit-animation-duration: 2s;
+            animation-duration: 2s;
+        }
+
+        .lightrope li:nth-child(2n+1) {
+            background: aqua;
+            box-shadow: 0px 4.6666666667px 24px 3px rgba(0, 255, 255, 0.5);
+            -webkit-animation-name: flash-2;
+            animation-name: flash-2;
+            -webkit-animation-duration: 0.4s;
+            animation-duration: 0.4s;
+        }
+
+        .lightrope li:nth-child(4n+2) {
+            background: #f70094;
+            box-shadow: 0px 4.6666666667px 24px 3px #f70094;
+            -webkit-animation-name: flash-3;
+            animation-name: flash-3;
+            -webkit-animation-duration: 1.1s;
+            animation-duration: 1.1s;
+        }
+
+        .lightrope li:nth-child(odd) {
+            -webkit-animation-duration: 1.8s;
+            animation-duration: 1.8s;
+        }
+
+        .lightrope li:nth-child(3n+1) {
+            -webkit-animation-duration: 1.4s;
+            animation-duration: 1.4s;
+        }
+
+        .lightrope li:before {
+            content: "";
+            position: absolute;
+            background: #222;
+            width: 10px;
+            height: 9.3333333333px;
+            border-radius: 3px;
+            top: -4.6666666667px;
+            left: 1px;
+        }
+
+        .lightrope li:after {
+            content: "";
+            top: -14px;
+            left: 9px;
+            position: absolute;
+            width: 52px;
+            height: 18.6666666667px;
+            border-bottom: solid #222 2px;
+            border-radius: 50%;
+        }
+
+        .lightrope li:last-child:after {
+            content: none;
+        }
+
+        .lightrope li:first-child {
+            margin-left: -40px;
+        }
+
+        @-webkit-keyframes flash-1 {
+
+            0%,
+            100% {
+                background: #00f7a5;
+                box-shadow: 0px 4.6666666667px 24px 3px #00f7a5;
+            }
+
+            50% {
+                background: rgba(0, 247, 165, 0.4);
+                box-shadow: 0px 4.6666666667px 24px 3px rgba(0, 247, 165, 0.2);
+            }
+        }
+
+        @keyframes flash-1 {
+
+            0%,
+            100% {
+                background: #00f7a5;
+                box-shadow: 0px 4.6666666667px 24px 3px #00f7a5;
+            }
+
+            50% {
+                background: rgba(0, 247, 165, 0.4);
+                box-shadow: 0px 4.6666666667px 24px 3px rgba(0, 247, 165, 0.2);
+            }
+        }
+
+        @-webkit-keyframes flash-2 {
+
+            0%,
+            100% {
+                background: aqua;
+                box-shadow: 0px 4.6666666667px 24px 3px aqua;
+            }
+
+            50% {
+                background: rgba(0, 255, 255, 0.4);
+                box-shadow: 0px 4.6666666667px 24px 3px rgba(0, 255, 255, 0.2);
+            }
+        }
+
+        @keyframes flash-2 {
+
+            0%,
+            100% {
+                background: aqua;
+                box-shadow: 0px 4.6666666667px 24px 3px aqua;
+            }
+
+            50% {
+                background: rgba(0, 255, 255, 0.4);
+                box-shadow: 0px 4.6666666667px 24px 3px rgba(0, 255, 255, 0.2);
+            }
+        }
+
+        @-webkit-keyframes flash-3 {
+
+            0%,
+            100% {
+                background: #f70094;
+                box-shadow: 0px 4.6666666667px 24px 3px #f70094;
+            }
+
+            50% {
+                background: rgba(247, 0, 148, 0.4);
+                box-shadow: 0px 4.6666666667px 24px 3px rgba(247, 0, 148, 0.2);
+            }
+        }
+
+        @keyframes flash-3 {
+
+            0%,
+            100% {
+                background: #f70094;
+                box-shadow: 0px 4.6666666667px 24px 3px #f70094;
+            }
+
+            50% {
+                background: rgba(247, 0, 148, 0.4);
+                box-shadow: 0px 4.6666666667px 24px 3px rgba(247, 0, 148, 0.2);
+            }
+        }
+    </style>
+
+
+    <script
+        src="https://cpwebassets.codepen.io/assets/editor/iframe/iframeConsoleRunner-7549a40147ccd0ba0a6b5373d87e770e49bb4689f1c2dc30cccc7463f207f997.js"></script>
+    <script
+        src="https://cpwebassets.codepen.io/assets/editor/iframe/iframeRefreshCSS-5e03f34e38152f20eb79c96b0b89c2d99c5085e9ae9386dc71e2f0b3c30bf513.js"></script>
+    <script
+        src="https://cpwebassets.codepen.io/assets/editor/iframe/iframeRuntimeErrors-4f205f2c14e769b448bcf477de2938c681660d5038bc464e3700256713ebe261.js"></script>
+</head>
+
+<body>
+    <ul class="lightrope">
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+    </ul>
+
+    <script
+        src="https://cpwebassets.codepen.io/assets/common/stopExecutionOnTimeout-1b93190375e9ccc259df3a57c1abc0e64599724ae30d7ea4c6877eb615f89387.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+
+</body>
+
+</html>

@@ -10,11 +10,6 @@ hide_table_of_contents: false
 date: 2022-01-01T00:00
 ---
 
-import Link from "@docusaurus/Link";
-import Giscus from "@giscus/react";
-import NativeShare from '@site/src/components/NativeShare';
-import YTSubscribe from '@site/src/components/YTSubscribe';
-
 # Welcome!
 
 Select one of the blog posts or search using the search box above. Happy Reading!
@@ -42,7 +37,7 @@ As most of our Blog Posts are YouTube Videos, We Recommend You To Go To Our YouT
 <!-- truncate -->
 
 <iframe
-  src="https://cdn.complabs.in/html/sharebtn/index.html"
+  src="/html/sharebtn/sharebtn.html"
   title="Share Button"
   height="100"
   width="200"
@@ -50,15 +45,16 @@ As most of our Blog Posts are YouTube Videos, We Recommend You To Go To Our YouT
 
 <NativeShare />
 
-<YTSubscribe />
+<button
+  id="share-button"
+  class="bg-indigo-500 hover:bg-indigo-700 text-white font-bold py-2 px-4 rounded"
+>
+  <i class="fa-solid fa-share-nodes"></i> Share
+</button>
 
 **Subscribe to our YouTube Channel:**
 
-<iframe
-  src="https://cdn.complabs.in/html/subscribe.html"
-  title="Subscribe Tech Fiddle"
-  height="100"
-></iframe>
+<YTSubscribe />
 
 ## Comments
 
@@ -77,5 +73,3 @@ As most of our Blog Posts are YouTube Videos, We Recommend You To Go To Our YouT
   lang="en"
   loading="lazy"
 />
-
-<button id="share-button" class="bg-indigo-500 hover:bg-indigo-700 text-white font-bold py-2 px-4 rounded"><i class="fa-solid fa-share-nodes"></i> Share</button>

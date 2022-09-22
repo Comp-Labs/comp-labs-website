@@ -39,7 +39,7 @@ const darkCodeTheme = require("prism-react-renderer/themes/dracula");
     scripts: [
       "https://kit.fontawesome.com/307bcbc229.js",
       "https://cdn.complabs.in/js/scrolltotop.js",
-      "https://cdn.complabs.in/js/sharebtn.js",
+      "https://cdn.complabs.in/html/sharebtn/script.js",
       "https://s7.addthis.com/js/300/addthis_widget.js#pubid=ra-629de96c243ef6ee",
       // 'https://complabs.in/herojs.js',
       // Google AdSense:
@@ -115,6 +115,18 @@ const darkCodeTheme = require("prism-react-renderer/themes/dracula");
           ],
         },
       ],
+      [
+        'ideal-image',
+        /** @type {import('@docusaurus/plugin-ideal-image').PluginOptions} */
+        ({
+          quality: 70,
+          max: 1030,
+          min: 640,
+          steps: 2,
+          // Use false to debug, but it incurs huge perf costs
+          disableInDev: true,
+        }),
+      ],
     ],
 
     presets: [
@@ -162,7 +174,9 @@ const darkCodeTheme = require("prism-react-renderer/themes/dracula");
             dark: '#076af7'
           },
           // options you can specify via https://github.com/francoischalifour/medium-zoom#usage
-          config: {}
+          config: {
+            background: '#076af7',
+          }
         },
         liveCodeBlock: {
           playgroundPosition: "bottom",
@@ -197,6 +211,13 @@ const darkCodeTheme = require("prism-react-renderer/themes/dracula");
         //   textColor: '#fff',
         //   isCloseable: false,
         // },
+        // announcementBar: {
+        //   id: 'christmas-lights',
+        //   content: '<iframe src="/html/lights.html" title="Lighting"></iframe>',
+        //   backgroundColor: '#fff',
+        //   textColor: '#fff',
+        //   isCloseable: false,
+        // },
         tableOfContents: {
           minHeadingLevel: 2,
           maxHeadingLevel: 6,
@@ -220,7 +241,7 @@ const darkCodeTheme = require("prism-react-renderer/themes/dracula");
             srcDark: "https://cdn.complabs.in/img/icon-removebg.jpg",
           },
           items: [
-            // { to: "/docs", label: "Docs 🚧", position: "left" },
+            { to: "/docs", label: "🚧 Docs", position: "left" },
             { to: "blog", label: "Guides", position: "left" },
             { to: "/apps", label: "Apps", position: "left" },
             {
@@ -312,7 +333,7 @@ const darkCodeTheme = require("prism-react-renderer/themes/dracula");
             // {
             //   type: 'html',
             //   position: 'right',
-            //   value: '<div className="button-group button-group--block"><Link className="button button--primary" href="https://github.com/Comp-Labs"><i class="fa-brands fa-github fa-xl"></i></Link> <Link className="button button--primary" href="https://youtube.com/channel/UCL6pKeSCbJkPohM2PUZbqQA"><i class="fa-brands fa-youtube fa-xl></i></Link></div>',
+            //   value: '<div className="button-group button-group--block"><Link className="button button--primary" href="https://github.com/Comp-Labs"><i class="fa-brands fa-github fa-xl"></i></Link> <Link className="button button--primary" href="https://youtube.com/channel/UCL6pKeSCbJkPohM2PUZbqQA"><i class="fa-brands fa-youtube fa-xl></ifra></Link></div>',
             // },
           ],
         },
@@ -438,7 +459,7 @@ const darkCodeTheme = require("prism-react-renderer/themes/dracula");
                 {
                   html: `
                 <a href="https://www.netlify.com" target="_blank" rel="noreferrer noopener" aria-label="Deploys by Netlify">
-                  <img src="https://www.netlify.com/img/global/badges/netlify-color-accent.svg" alt="Deploys by Netlify" width="114" height="51" />
+                  <img src="https://www.netlify.com/img/global/badges/netlify-color-accent.svg" alt="Deploys by Netlify" title="Deploys by Netlify" width="114" height="51" />
                 </a>
               `,
                 },

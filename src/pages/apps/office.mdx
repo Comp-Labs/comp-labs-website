@@ -4,14 +4,11 @@ description: Microsoft Office App by Tech Fiddle.
 hide_table_of_contents: true
 ---
 
-import Tabs from "@theme/Tabs";
-import TabItem from "@theme/TabItem";
-
 # Tech Fiddle App Store
 
 ---
 
-| <img src="https://cdn.complabs.in/img/apps/google-docs.png" width='128' height='128' alt="Microsoft Office Icon"></img> | <h2>Microsoft Office</h2>                                                    |
+| <img src="https://cdn.complabs.in/img/apps/office.png" width='128' height='128' alt="Microsoft Office Icon" title="Microsoft Office Icon"></img> | <h2>Microsoft Office</h2>                                                    |
 | -------------------------------------------------------------------- | ----------------------------------------------------------------------- |
 | **Developer**                                                        | [**Tech Fiddle**](https://complabs.in/apps)                               |
 | **Category**                                                         | **Productivity**                                                        |
@@ -30,19 +27,76 @@ import TabItem from "@theme/TabItem";
 
 <Tabs className="unique-tabs">
   <TabItem value="Windows">
-    <img src="https://cdn.complabs.in/img/default.jpg" alt="Windows-Screenshot-1"></img>
-    <img src="https://cdn.complabs.in/img/default.jpg" alt="Windows-Screenshot-2"></img>
-    <img src="https://cdn.complabs.in/img/default.jpg" alt="Windows-Screenshot-3"></img>
+    <ShowcaseCarousel
+      aspectRatio={6000 / 4000}
+      sites={[
+        {
+          name: "Windows Screenshot 1",
+          image:
+            "https://cdn.complabs.in/img/default.jpg",
+          url: "",
+        },
+        {
+          name: "Windows Screenshot 2",
+          image:
+            "https://cdn.complabs.in/img/default.jpg",
+          url: "",
+        },
+        {
+          name: "Windows Screenshot 3",
+          image:
+            "https://cdn.complabs.in/img/default.jpg",
+          url: "",
+        },
+      ]}
+    />
   </TabItem>
   <TabItem value="macOS">
-    <img src="https://cdn.complabs.in/img/default.jpg" alt="macOS-Screenshot-1"></img>
-    <img src="https://cdn.complabs.in/img/default.jpg" alt="macOS-Screenshot-2"></img>
-    <img src="https://cdn.complabs.in/img/default.jpg" alt="macOS-Screenshot-3"></img>
+    <ShowcaseCarousel
+      aspectRatio={6000 / 4000}
+      sites={[
+        {
+          name: "macOS Screenshot 1",
+          image: "https://cdn.complabs.in/img/default.jpg",
+          url: "",
+        },
+        {
+          name: "macOS Screenshot 2",
+          image: "https://cdn.complabs.in/img/default.jpg",
+          url: "",
+        },
+        {
+          name: "macOS Screenshot 3",
+          image: "https://cdn.complabs.in/img/default.jpg",
+          url: "",
+        },
+      ]}
+    />
   </TabItem>
   <TabItem value="Linux">
-    <img src="https://cdn.complabs.in/img/default.jpg" alt="Linux-Screenshot-1"></img>
-    <img src="https://cdn.complabs.in/img/default.jpg" alt="Linux-Screenshot-2"></img>
-    <img src="https://cdn.complabs.in/img/default.jpg" alt="Linux-Screenshot-3"></img>
+    <ShowcaseCarousel
+      aspectRatio={6000 / 4000}
+      sites={[
+        {
+          name: "Linux Screenshot 1",
+          image:
+            "https://cdn.complabs.in/img/default.jpg",
+          url: "",
+        },
+        {
+          name: "Linux Screenshot 2",
+          image:
+            "https://cdn.complabs.in/img/default.jpg",
+          url: "",
+        },
+        {
+          name: "Linux Screenshot 3",
+          image:
+            "https://cdn.complabs.in/img/default.jpg",
+          url: "",
+        },
+      ]}
+    />
   </TabItem>
 </Tabs>
 

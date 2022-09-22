@@ -2,15 +2,19 @@ import React, { type ReactNode } from 'react';
 import styles from './styles.module.css';
 
 interface Props {
+  background: string;
   children: ReactNode;
+  color: string;
   minHeight: number;
   url: string;
 }
 
-function BrowserWindow({
+function Browser({
+  background = '#ffffff',
   children,
+  color = '#000000',
   minHeight,
-  url = 'https://complabs.in',
+  url = 'https://complabs.in/',
 }: Props): JSX.Element {
   return (
     <div className={styles.browserWindow} style={{ minHeight }}>
@@ -20,7 +24,7 @@ function BrowserWindow({
           <span className={styles.dot} style={{ background: '#fbbe3c' }} />
           <span className={styles.dot} style={{ background: '#58cb42' }} />
         </div>
-        <div className={styles.browserWindowAddressBar}>{url}</div>
+        <div className={styles.browserWindowAddressBar}><i class="fa-solid fa-lock"></i> {url}</div>
         <div className={styles.browserWindowMenuIcon}>
           <div>
             <span className={styles.bar} />
@@ -30,9 +34,9 @@ function BrowserWindow({
         </div>
       </div>
 
-      <div className={styles.browserWindowBody}>{children}</div>
+      <div className={styles.browserWindowBody} style={{ background, color }}>{children}</div>
     </div>
   );
 }
 
-export default BrowserWindow;
+export default Browser;

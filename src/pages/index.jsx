@@ -23,7 +23,7 @@ function HomepageHeader() {
             height="256"
           /> */}
           <span
-            className={heroTitleTextHtml}
+            className={styles.heroTitleTextHtml}
             // eslint-disable-next-line react/no-danger
             dangerouslySetInnerHTML={{
               __html: translate({
@@ -100,7 +100,7 @@ export default function Home() {
   return (
     <Layout
       title={`Home`}
-      description="Our website provides Technical Guides, Apps, and Google Play Developer Console Service. This is a non-profit website so please donate to us to keep our resources running. You can write your feedback and comments about anything on our Contact Us page. See details of our services below."
+      description="Tech Fiddle provides a Tech Enthusiastic Blog, Lots of Apps, and Core Solutions to Empower you or your Enterprise."
     >
       <HomepageHeader />
       <main>
