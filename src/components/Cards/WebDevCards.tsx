@@ -557,9 +557,9 @@ const WebDevCards = [
   },
   {
     name: 'Cloud',
-    image: 'https://api.microlink.io/?url=https://codepen.io/leemartin/fullpage/ZExLqQb&screenshot=true&meta=false&embed=screenshot.url',
+    image: 'https://api.microlink.io/?url=https://codepen.io/leemartin/full/ZExLqQb&screenshot=true&meta=false&embed=screenshot.url',
     url: {
-      page: 'https://codepen.io/leemartin/fullpage/ZExLqQb',
+      page: 'https://codepen.io/leemartin/full/ZExLqQb',
       codepen: 'https://codepen.io/leemartin/pen/ZExLqQb',
     },
     description: (

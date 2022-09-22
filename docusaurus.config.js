@@ -277,6 +277,10 @@ const darkCodeTheme = require("prism-react-renderer/themes/dracula");
                   href: "https://digwebinterface.com",
                 },
                 {
+                  label: "MicroURL",
+                  href: "https://microurl.complabs.in/",
+                },
+                {
                   label: "SpeedTest",
                   to: "/tools/speedtest",
                 },
@@ -400,6 +404,10 @@ const darkCodeTheme = require("prism-react-renderer/themes/dracula");
                 {
                   label: "DNS Lookup",
                   href: "https://digwebinterface.com",
+                },
+                {
+                  label: "MicroURL",
+                  href: "https://microurl.complabs.in/",
                 },
                 {
                   label: "SpeedTest",
