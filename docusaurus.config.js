@@ -86,6 +86,15 @@ const darkCodeTheme = require("prism-react-renderer/themes/dracula");
     ],
 
     plugins: [
+      // [
+      //   "./plugins/blog-plugin",
+      //   {
+      //     id: "blog",
+      //     routeBasePath: "blog",
+      //     path: "./blog",
+  
+      //   },
+      // ],
       'plugin-image-zoom',
       [
         "@docusaurus/plugin-pwa",
@@ -134,6 +143,7 @@ const darkCodeTheme = require("prism-react-renderer/themes/dracula");
         "@docusaurus/preset-classic",
         /** @type {import('@docusaurus/preset-classic').Options} */
         ({
+          // blog: false,
           docs: {
             sidebarPath: require.resolve("./sidebars.js"),
             editUrl:

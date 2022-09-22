@@ -8,6 +8,32 @@ import HomepageFeatures from "../components/HomepageFeatures";
 import Translate, { translate } from "@docusaurus/Translate";
 import useBaseUrl from "@docusaurus/useBaseUrl";
 var ReactRotatingText = require("react-rotating-text");
+import BlogPostItem from "@theme/BlogPostItem";
+import { Content } from "@theme/BlogPostPage";
+import { BlogPostProvider } from "@docusaurus/theme-common/internal";
+
+interface Props {
+  readonly recentPosts: readonly { readonly content: Content }[];
+}
+
+function RecentBlogPosts({ recentPosts }: Props): JSX.Element {
+  <div className="container margin-top--xl">
+    <div className="row">
+      <div className="col col--9 col--offset-1">
+        {recentPosts.map(({ content: BlogPostContent }) => (
+          <BlogPostProvider
+            key={BlogPostContent.metadata.permalink}
+            content={BlogPostContent}
+          >
+            <BlogPostItem>
+              <BlogPostContent />
+            </BlogPostItem>
+          </BlogPostProvider>
+        ))}
+      </div>
+    </div>
+  </div>
+}
 
 function HomepageHeader() {
   const { siteConfig } = useDocusaurusContext();
@@ -64,7 +90,7 @@ function HomepageHeader() {
             <Translate>Sponsor Tech Fiddle</Translate>
           </Link>
           </div> */}
-          {/* <span className={styles.indexCtasGitHubButtonWrapper}>
+        {/* <span className={styles.indexCtasGitHubButtonWrapper}>
             <iframe
               className={styles.indexCtasGitHubButton}
               src="https://ghbtns.com/github-btn.html?user=Comp-Labs&amp;type=follow&amp;count=true&amp;size=small"
@@ -104,6 +130,7 @@ export default function Home() {
     >
       <HomepageHeader />
       <main>
+        {/* <RecentBlogPosts /> */}
         <HomepageFeatures />
       </main>
     </Layout>
