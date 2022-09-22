@@ -1,5 +1,3 @@
-
-
 .browserWindow {
   border: 3px solid var(--ifm-color-emphasis-200);
   border-top-left-radius: var(--ifm-global-radius);
@@ -73,4 +71,5 @@
 
 .browserWindowBody {
   padding: 1rem;
+  color: #ffffff;
 }

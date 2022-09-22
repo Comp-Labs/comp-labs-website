@@ -98,7 +98,7 @@ const AppCards = [
     },
     {
         name: 'Office',
-        image: 'https://cdn.complabs.in/img/icon-removebg.jpg',
+        image: 'https://cdn.complabs.in/img/apps/office.png',
         url: {
             categories: ['Productivity', 'Blank', 'Blank'],
             status: 'In Development',
@@ -133,9 +133,11 @@ function AppCard({ name, image, url }: Props) {
     return (
             <div className={clsx('card')}>
                 <div className={clsx('card__image')}>
+                    <center>
                     <Link to={url.viewNow}>
                         <img src={image} alt={name} title={name} width={url.width} height={url.height}></img>
                     </Link>
+                    </center>
                 </div>
                 <div className="card__body">
                     <h3>{name}</h3>

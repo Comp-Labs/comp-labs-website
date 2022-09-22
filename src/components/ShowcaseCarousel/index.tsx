@@ -11,6 +11,7 @@
  import Link from '@docusaurus/Link';
  import Image from '@theme/IdealImage';
  import styles from './ShowcaseCarousel.module.css';
+ import Highlight from "@site/src/components/Highlight";
  
  type Site = {
    name: string;

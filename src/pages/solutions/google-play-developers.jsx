@@ -68,7 +68,7 @@ export default function Play() {
   return (
     <Layout
       title={`App Publisher for Google Play`}
-      description="SaaS Solution to Submit Apps to Google Play Store Free of Cost!"
+      description="Hello, Android Developers! This is the SaaS Solution You Were Looking for, Especially Tailored For You, to Submit Apps to the Google Play Store Free of Cost!"
     >
       <PlayHeader2 />
       <PlayHeader1 />

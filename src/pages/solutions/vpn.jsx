@@ -34,7 +34,7 @@ export default function VPN() {
   return (
     <Layout
       title={`Anonymous VPN`}
-      description="Introducing our Free, Fast, Anonymous VPN Powered by the SoftEther Open Source VPN Project and made by Tech Fiddle, hosted in it's own servers. Now you can connect to our public and anonymous VPN."
+      description="Free, Fast, Anonymous VPN Powered by the SoftEther Open Source VPN Project and made, Self-Hosted and Maintained by Tech Fiddle."
     >
       <VPNHeader />
       <main></main>
