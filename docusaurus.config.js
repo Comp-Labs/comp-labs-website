@@ -41,6 +41,8 @@ const darkCodeTheme = require("prism-react-renderer/themes/dracula");
       "https://cdn.complabs.in/js/scrolltotop.js",
       "https://cdn.complabs.in/html/sharebtn/script.js",
       "https://s7.addthis.com/js/300/addthis_widget.js#pubid=ra-629de96c243ef6ee",
+      "https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js",
+      // "https://cdn.complabs.in/js/loader.js",
       // 'https://complabs.in/herojs.js',
       // Google AdSense:
       {
@@ -300,7 +302,7 @@ const darkCodeTheme = require("prism-react-renderer/themes/dracula");
                 },
               ],
             },
-            { to: "https://forms.gle/dQmrNAZZ1KK81rAP7", label: "Contact Us", position: "left" },
+            { to: "/contact", label: "Contact Us", position: "left" },
             // { to: "/donate-us", label: "Donate Us", position: "left" },
             { to: "/webdev-crafts", label: "WebDev's Crafts", position: "left" },
             {

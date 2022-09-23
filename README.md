@@ -14,6 +14,6 @@ Written in ReactJS, Markdown, and MDX. Built with [Docusaurus](docusaurus.io). D
 
 <footer>
 <p align="center" style="font-size: smaller;">
-Built with ❤️ by the Tech Fiddle Team.
+Built with ❤️ by Tech Fiddle.
 </p>
 </footer>
