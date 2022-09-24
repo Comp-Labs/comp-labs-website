@@ -24,7 +24,7 @@ function Browser({
           <span className={styles.dot} style={{ background: '#fbbe3c' }} />
           <span className={styles.dot} style={{ background: '#58cb42' }} />
         </div>
-        <div className={styles.browserWindowAddressBar}><i class="fa-solid fa-lock"></i> {url}</div>
+        <div className={styles.browserWindowAddressBar}><i className="fa-solid fa-lock"></i> {url}</div>
         <div className={styles.browserWindowMenuIcon}>
           <div>
             <span className={styles.bar} />

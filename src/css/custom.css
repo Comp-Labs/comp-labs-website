@@ -70,7 +70,7 @@
   /* centers the loading animation horizontally one the screen */
   top: 50%;
   /* centers the loading animation vertically one the screen */
-  background-image: url(https://cdn.complabs.in/img/loader.gif);
+  background-image: url(https://cdn.jsdelivr.net/gh/Comp-Labs/cdn/img/loader.gif);
   /* path to your loading animation */
   background-repeat: no-repeat;
   background-position: center;
@@ -391,16 +391,52 @@ div[class^="announcementBar_"] {
   background-color: var(--ifm-tabs-color-active);
 }
 
-.red>a {
+/* .red>a {
   color: red;
+} */
+
+/* Modern UI Link Styling */
+/* Light */
+a:hover {
+  text-decoration: none;
+  color: #F5F5F5;
+  background-color: #F5F5F5;
+  border-radius: 10px;
 }
 
-a {
-  color: #25c2a0;
+href:hover {
+  text-decoration: none;
+  color: #F5F5F5;
+  background-color: #F5F5F5;
+  border-radius: 10px;
 }
 
-href {
-  color: #25c2a0;
+.a .href:hover {
+  text-decoration: none;
+  color: #F5F5F5;
+  background-color: #F5F5F5;
+  border-radius: 10px;
+}
+/* Dark */
+html[data-theme="dark"] a:hover {
+  text-decoration: none;
+  color: #F5F5F5;
+  background-color: #04101d;
+  border-radius: 10px;
+}
+
+html[data-theme="dark"] href:hover {
+  text-decoration: none;
+  color: #F5F5F5;
+  background-color: #04101d;
+  border-radius: 10px;
+}
+
+html[data-theme="dark"] .a .href:hover {
+  text-decoration: none;
+  color: #F5F5F5;
+  background-color: #04101d;
+  border-radius: 10px;
 }
 
 .tooltip {

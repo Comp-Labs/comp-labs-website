@@ -43,7 +43,7 @@ function MailHeader2() {
           {/* <img
                 alt={translate({message: 'Tech Fiddle Logo Animated'})}
                 className={styles.heroLogo}
-                src={useBaseUrl('https://cdn.complabs.in/img/apps/comp-labs-meet/icon.png')}
+                src={useBaseUrl('https://cdn.jsdelivr.net/gh/Comp-Labs/cdn/img/apps/comp-labs-meet/icon.png')}
                 width="256"
                 height="256"
               /> */}

@@ -14,7 +14,7 @@ import Highlight from '@site/src/components/Highlight';
 const AppCards = [
     {
         name: 'Tech Fiddle Meet',
-        image: 'https://cdn.complabs.in/img/apps/comp-labs-meet/icon.png',
+        image: 'https://cdn.jsdelivr.net/gh/Comp-Labs/cdn/img/apps/comp-labs-meet/icon.png',
         url: {
             categories: ['Productivity', 'Social', 'Collaboration'],
             status: 'Available',
@@ -26,7 +26,7 @@ const AppCards = [
     },
     {
         name: 'Google Docs',
-        image: 'https://cdn.complabs.in/img/apps/google-docs.png',
+        image: 'https://cdn.jsdelivr.net/gh/Comp-Labs/cdn/img/apps/google-docs.png',
         url: {
             categories: ['Productivity', 'Blank', 'Blank'],
             status: 'Available',
@@ -38,7 +38,7 @@ const AppCards = [
     },
     {
         name: 'Jira Server',
-        image: 'https://cdn.complabs.in/img/apps/jira-server.png',
+        image: 'https://cdn.jsdelivr.net/gh/Comp-Labs/cdn/img/apps/jira-server.png',
         url: {
             categories: ['Productivity', 'Blank', 'Blank'],
             status: 'Available',
@@ -50,7 +50,7 @@ const AppCards = [
     },
     {
         name: 'Apple Store',
-        image: 'https://cdn.complabs.in/img/apps/applestore.webp',
+        image: 'https://cdn.jsdelivr.net/gh/Comp-Labs/cdn/img/apps/applestore.webp',
         url: {
             categories: ['Shopping', 'Blank', 'Blank'],
             status: 'In Development',
@@ -62,7 +62,7 @@ const AppCards = [
     },
     {
         name: 'CloudConsole',
-        image: 'https://cdn.complabs.in/img/icon-removebg.jpg',
+        image: 'https://cdn.jsdelivr.net/gh/Comp-Labs/cdn/img/icon-removebg.jpg',
         url: {
             categories: ['Productivity', 'Blank', 'Blank'],
             status: 'In Development',
@@ -74,7 +74,7 @@ const AppCards = [
     },
     {
         name: 'CodeEdit',
-        image: 'https://cdn.complabs.in/img/icon-removebg.jpg',
+        image: 'https://cdn.jsdelivr.net/gh/Comp-Labs/cdn/img/icon-removebg.jpg',
         url: {
             categories: ['Productivity', 'Blank', 'Blank'],
             status: 'In Development',
@@ -86,7 +86,7 @@ const AppCards = [
     },
     {
         name: 'GadgetCompare',
-        image: 'https://cdn.complabs.in/img/icon-removebg.jpg',
+        image: 'https://cdn.jsdelivr.net/gh/Comp-Labs/cdn/img/icon-removebg.jpg',
         url: {
             categories: ['Productivity', 'Blank', 'Blank'],
             status: 'In Development',
@@ -98,7 +98,7 @@ const AppCards = [
     },
     {
         name: 'Office',
-        image: 'https://cdn.complabs.in/img/apps/office.png',
+        image: 'https://cdn.jsdelivr.net/gh/Comp-Labs/cdn/img/apps/office.png',
         url: {
             categories: ['Productivity', 'Blank', 'Blank'],
             status: 'In Development',

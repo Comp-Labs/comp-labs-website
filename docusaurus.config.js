@@ -38,11 +38,11 @@ const darkCodeTheme = require("prism-react-renderer/themes/dracula");
 
     scripts: [
       "https://kit.fontawesome.com/307bcbc229.js",
-      "https://cdn.complabs.in/js/scrolltotop.js",
-      "https://cdn.complabs.in/html/sharebtn/script.js",
+      "https://cdn.jsdelivr.net/gh/Comp-Labs/cdn/js/scrolltotop.js",
+      "https://cdn.jsdelivr.net/gh/Comp-Labs/cdn/html/sharebtn/script.js",
       "https://s7.addthis.com/js/300/addthis_widget.js#pubid=ra-629de96c243ef6ee",
       "https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js",
-      // "https://cdn.complabs.in/js/loader.js",
+      // "https://cdn.jsdelivr.net/gh/Comp-Labs/cdn/js/loader.js",
       // 'https://complabs.in/herojs.js',
       // Google AdSense:
       {
@@ -154,7 +154,7 @@ const darkCodeTheme = require("prism-react-renderer/themes/dracula");
           blog: {
             blogTitle: "Guides",
             blogSidebarTitle: "All Guides",
-            blogSidebarCount: "ALL",
+            blogSidebarCount: 0, // Change to 'ALL' if required later.
             sortPosts: "ascending",
             feedOptions: {
               type: 'all',
@@ -213,7 +213,7 @@ const darkCodeTheme = require("prism-react-renderer/themes/dracula");
         prism: {
           additionalLanguages: ["java", "markdown"],
         },
-        image: "https://cdn.complabs.in/img/logo-removebg.jpg",
+        image: "https://cdn.jsdelivr.net/gh/Comp-Labs/cdn/img/logo-removebg.jpg",
         // metadata: [{name: 'twitter:card', content: 'summary'}],
         // announcementBar: {
         //   id: 'announcement',
@@ -249,8 +249,8 @@ const darkCodeTheme = require("prism-react-renderer/themes/dracula");
           title: "Tech Fiddle",
           logo: {
             alt: "Tech Fiddle Logo",
-            src: "https://cdn.complabs.in/img/icon-removebg.jpg",
-            srcDark: "https://cdn.complabs.in/img/icon-removebg.jpg",
+            src: "https://cdn.jsdelivr.net/gh/Comp-Labs/cdn/img/icon-removebg.jpg",
+            srcDark: "https://cdn.jsdelivr.net/gh/Comp-Labs/cdn/img/icon-removebg.jpg",
           },
           items: [
             { to: "/docs", label: "🚧 Docs", position: "left" },
@@ -513,7 +513,7 @@ const darkCodeTheme = require("prism-react-renderer/themes/dracula");
           ],
           logo: {
             alt: "Tech Fiddle Footer Logo",
-            src: "https://cdn.complabs.in/img/logo-removebg.jpg",
+            src: "https://cdn.jsdelivr.net/gh/Comp-Labs/cdn/img/logo-removebg.jpg",
             href: "/",
           },
           copyright: `Copyright © ${new Date().getFullYear()} Tech Fiddle. All Rights Reserved. Built using Docusaurus.`,

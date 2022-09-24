@@ -71,7 +71,7 @@ module.exports = {
 
 The locale dropdown now appears in your navbar:
 
-![Locale Dropdown](https://cdn.complabs.in/img/tutorial/localeDropdown.png)
+![Locale Dropdown](https://cdn.jsdelivr.net/gh/Comp-Labs/cdn/img/tutorial/localeDropdown.png)
 
 ## Build your localized site
 
