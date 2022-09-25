@@ -41,7 +41,7 @@ const darkCodeTheme = require("prism-react-renderer/themes/dracula");
       "https://cdn.jsdelivr.net/gh/Comp-Labs/cdn/js/scrolltotop.js",
       "https://cdn.jsdelivr.net/gh/Comp-Labs/cdn/html/sharebtn/script.js",
       "https://s7.addthis.com/js/300/addthis_widget.js#pubid=ra-629de96c243ef6ee",
-      "https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js",
+      // "https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js",
       // "https://cdn.jsdelivr.net/gh/Comp-Labs/cdn/js/loader.js",
       // 'https://complabs.in/herojs.js',
       // Google AdSense:
