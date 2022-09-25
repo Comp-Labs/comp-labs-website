@@ -302,7 +302,7 @@ const darkCodeTheme = require("prism-react-renderer/themes/dracula");
                 },
               ],
             },
-            { to: "/contact", label: "Contact Us", position: "left" },
+            { to: "https://forms.gle/dQmrNAZZ1KK81rAP7", label: "Contact Us", position: "left" },
             // { to: "/donate-us", label: "Donate Us", position: "left" },
             { to: "/webdev-crafts", label: "WebDev's Crafts", position: "left" },
             {
