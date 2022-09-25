@@ -2,7 +2,6 @@ import React from 'react';
 import MDXComponents from '@theme-original/MDXComponents';
 // Divider
 import Browser from "@site/src/components/ShowcaseWindow/Browser";
-import BrowserWindow from "@site/src/components/ShowcaseWindow";
 import { CssVarsProvider } from "@mui/joy/styles";
 import DocCardList from '@theme/DocCardList';
 import Giscus from "@giscus/react";
@@ -20,7 +19,6 @@ export default {
   ...MDXComponents,
   // Divider
   Browser: Browser,
-  BrowserWindow: BrowserWindow,
   CssVarsProvider: CssVarsProvider,
   DocCardList: DocCardList,
   Giscus: Giscus,
