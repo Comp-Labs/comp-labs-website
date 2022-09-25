@@ -42,7 +42,7 @@ export default function Speedtest() {
       <SpeedtestHeader />
       <main>
         <iframe
-          src="https://cdn.jsdelivr.net/gh/Comp-Labs/cdn/html/speedtest.html"
+          src="/html/speedtest.html"
           title="OpenSpeedTest HTML5 Widget"
           width="100%"
           height="1000"

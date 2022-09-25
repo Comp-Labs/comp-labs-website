@@ -62,7 +62,7 @@ const darkCodeTheme = require("prism-react-renderer/themes/dracula");
       'https://docusaurus.io/style.css',
       // Object format.
       {
-        href: '/apple-touch-icon.png',
+        href: '/apple-touch-icon-180x180.png',
         rel: 'apple-touch-icon',
         sizes: '180x180',
       },
@@ -472,6 +472,10 @@ const darkCodeTheme = require("prism-react-renderer/themes/dracula");
                   label: "YouTube",
                   href: "https://youtube.com/channel/UCL6pKeSCbJkPohM2PUZbqQA",
                 },
+                // {
+                //   label: "Discord",
+                //   href: "https://discord.gg/GAbzAGKccW",
+                // },
                 {
                   label: "LinkTree",
                   href: "https://linktr.ee/complabs",
