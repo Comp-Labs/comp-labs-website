@@ -7,7 +7,7 @@ import Translate, { translate } from "@docusaurus/Translate";
 const FeatureList = [
   {
     title: "🚧 Docs",
-    Svg: "/img/undraw_typewriter.svg",
+    Svg: require("/img/undraw_typewriter.svg").default,
     description: (
       <>
         Use our Handy Documentation to Learn More about Tech Fiddle and it's
@@ -22,7 +22,7 @@ const FeatureList = [
   },
   {
     title: "Guides",
-    Svg: "/img/undraw_typewriter.svg",
+    Svg: require("/img/undraw_typewriter.svg").default,
     description: (
       <>
         Tech Based Blog for Enthusiasts.
@@ -36,7 +36,7 @@ const FeatureList = [
   },
   {
     title: "Apps",
-    Svg: "/img/undraw_develop_app.svg",
+    Svg: require("/img/undraw_develop_app.svg").default,
     description: (
       <>
         Apps with the World's Best UI/UX for Platforms Including <br></br>
@@ -52,7 +52,7 @@ const FeatureList = [
   },
   {
     title: "Contact Us",
-    Svg: "/img/undraw_typewriter.svg",
+    Svg: require("/img/undraw_typewriter.svg").default,
     description: (
       <>
         Please Contact Us using the Google Form Link for any Issues, Queries,
@@ -70,7 +70,7 @@ const FeatureList = [
   },
   {
     title: "WebDev's Crafts",
-    Svg: "/img/undraw_typewriter.svg",
+    Svg: require("/img/undraw_typewriter.svg").default,
     description: (
       <>
         Mesmerizing Crafts Made by WebDev's at Tech Fiddle And All The CodePen
@@ -85,7 +85,7 @@ const FeatureList = [
   },
   // {
   //   title: "Donate Us",
-  //   Svg: "/img/undraw_typewriter.svg",
+  //   Svg: require("/img/undraw_typewriter.svg").default,
   //   description: (
   //     <>
   //       Please Donate Us to keep us alive!
@@ -99,7 +99,7 @@ const FeatureList = [
   // },
   {
     title: "🚧 App Publisher for Google Play",
-    Svg: "/img/undraw_android.svg",
+    Svg: require("/img/undraw_android.svg").default,
     description: (
       <>
         Best Solution to Publish Your <code>AndroidOS</code> and
@@ -116,7 +116,7 @@ const FeatureList = [
   },
   {
     title: "🚧 Business Mail Service",
-    Svg: "/img/undraw_typewriter.svg",
+    Svg: require("/img/undraw_typewriter.svg").default,
     description: (
       <>
         Best SaaS Solution Which Empowers Your Personal, Business, and
@@ -134,7 +134,7 @@ const FeatureList = [
   },
   {
     title: "🚧 Business Meeting Service",
-    Svg: "/img/undraw_typewriter.svg",
+    Svg: require("/img/undraw_typewriter.svg").default,
     description: (
       <>
         Best SaaS Solution Which Empowers Your Personal, Business, and
@@ -152,7 +152,7 @@ const FeatureList = [
   },
   {
     title: "🚧 Anonymous VPN",
-    Svg: "/img/undraw_typewriter.svg",
+    Svg: require("/img/undraw_typewriter.svg").default,
     description: (
       <>
         Introducing our Free, Fast, Anonymous VPN Powered by the SoftEther Open
@@ -168,7 +168,7 @@ const FeatureList = [
   },
   {
     title: "DNS Lookup",
-    Svg: "/img/undraw_typewriter.svg",
+    Svg: require("/img/undraw_typewriter.svg").default,
     description: (
       <>
         Best DNS Lookup Tool with Advanced Configuration, Cherry-Picked by Tech
@@ -186,7 +186,7 @@ const FeatureList = [
   },
   {
     title: "SpeedTest",
-    Svg: "/img/undraw_typewriter.svg",
+    Svg: require("/img/undraw_typewriter.svg").default,
     description: (
       <>
         Free, Fast, and Always Accurate Internet, Internet SpeedTest. Powered by
@@ -202,7 +202,7 @@ const FeatureList = [
   },
   {
     title: "Web Tools",
-    Svg: "/img/undraw_typewriter.svg",
+    Svg: require("/img/undraw_typewriter.svg").default,
     description: (
       <>
         Best Web Tools Just for You by Tech Fiddle!
@@ -219,7 +219,7 @@ const FeatureList = [
   },
   {
     title: "Legal",
-    Svg: "/img/undraw_typewriter.svg",
+    Svg: require("/img/undraw_typewriter.svg").default,
     description: (
       <>
         Legal Documents for Tech Fiddle.
@@ -241,7 +241,7 @@ const FeatureList = [
   },
   {
     title: "Social",
-    Svg: "/img/undraw_typewriter.svg",
+    Svg: require("/img/undraw_typewriter.svg").default,
     description: (
       <>
         Connect with Tech Fiddle!
