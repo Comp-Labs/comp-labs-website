@@ -40,6 +40,8 @@ const darkCodeTheme = require("prism-react-renderer/themes/dracula");
       "https://kit.fontawesome.com/307bcbc229.js",
       "https://cdn.jsdelivr.net/gh/Comp-Labs/cdn/js/scrolltotop.js",
       "https://cdn.jsdelivr.net/gh/Comp-Labs/cdn/html/sharebtn/script.js",
+      "https://cdn.jsdelivr.net/gh/Comp-Labs/cdn/js/wikipedia.js",
+      "https://unpkg.com/wikipedia-preview@latest/dist/wikipedia-preview.production.js",
       "https://s7.addthis.com/js/300/addthis_widget.js#pubid=ra-629de96c243ef6ee",
       "https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js",
       // "https://cdn.jsdelivr.net/gh/Comp-Labs/cdn/js/loader.js",

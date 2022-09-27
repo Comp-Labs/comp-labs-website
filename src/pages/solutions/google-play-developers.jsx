@@ -3,14 +3,14 @@ import clsx from "clsx";
 import Layout from "@theme/Layout";
 import Link from "@docusaurus/Link";
 import useDocusaurusContext from "@docusaurus/useDocusaurusContext";
-import styles from "../index.module.css";
+// import styles from "../index.module.css";
 import Translate, { translate } from "@docusaurus/Translate";
 import useBaseUrl from "@docusaurus/useBaseUrl";
 
 function PlayHeader1() {
   const { siteConfig } = useDocusaurusContext();
   return (
-    <header className={clsx("hero hero--primary", styles.heroBanner)}>
+    <header className={clsx("hero hero--primary", "heroBanner")}>
       <div className="container">
         {/* <h1 className="hero__title">App Submission Service for Google Play Apps</h1> */}
         <p className="hero__subtitle">
@@ -20,7 +20,7 @@ function PlayHeader1() {
           Cost With This Solution! Just Fill in the form by clicking on the
           button below saying "Register Now!" and we'll get back to you shortly!
         </p>
-        <div className={styles.buttons}>
+        <div className={"buttons"}>
           <Link
             className="button button--primary"
             href="https://forms.gle/XM3VbGQD6uXqNr43A"
@@ -36,18 +36,18 @@ function PlayHeader1() {
 function PlayHeader2() {
   const { siteConfig } = useDocusaurusContext();
   return (
-    <div className={styles.hero}>
-      <div className={styles.heroInner}>
-        <h1 className={styles.heroProjectTagline}>
+    <div className={"hero"}>
+      <div className={"heroInner"}>
+        <h1 className={"heroProjectTagline"}>
           {/* <img
                 alt={translate({message: 'Tech Fiddle Logo Animated'})}
-                className={styles.heroLogo}
+                className={heroLogo}
                 src={useBaseUrl('https://cdn.jsdelivr.net/gh/Comp-Labs/cdn/img/logo-removebg.jpg')}
                 width="256"
                 height="256"
               /> */}
           <span
-            className={styles.heroTitleTextHtml}
+            className={"heroTitleTextHtml"}
             // eslint-disable-next-line react/no-danger
             dangerouslySetInnerHTML={{
               __html: translate({

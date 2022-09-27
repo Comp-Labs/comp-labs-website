@@ -3,7 +3,7 @@ import clsx from "clsx";
 import Layout from "@theme/Layout";
 import Link from "@docusaurus/Link";
 import useDocusaurusContext from "@docusaurus/useDocusaurusContext";
-import styles from "./index.module.css";
+// import styles from "./index.module.css";
 import HomepageFeatures from "../components/HomepageFeatures";
 import Translate, { translate } from "@docusaurus/Translate";
 import useBaseUrl from "@docusaurus/useBaseUrl";
@@ -12,18 +12,18 @@ var ReactRotatingText = require("react-rotating-text");
 function HomepageHeader() {
   const { siteConfig } = useDocusaurusContext();
   return (
-    <div className={styles.hero}>
-      <div className={styles.heroInner}>
-        <h1 className={styles.heroProjectTagline}>
+    <div className="hero">
+      <div className="heroInner">
+        <h1 className="heroProjectTagline">
           {/* <img
             alt={translate({ message: "Tech Fiddle Logo Animated" })}
-            className={styles.heroLogo}
+            className="heroLogo"
             src={useBaseUrl("https://cdn.jsdelivr.net/gh/Comp-Labs/cdn/img/icon-removebg.jpg")}
             width="256"
             height="256"
           /> */}
           <span
-            className={styles.heroTitleTextHtml}
+            className="heroTitleTextHtml"
             // eslint-disable-next-line react/no-danger
             dangerouslySetInnerHTML={{
               __html: translate({
@@ -38,18 +38,18 @@ function HomepageHeader() {
             color="#076af7"
           />
           <span
-            className={styles.heroTitleTextHtml}
+            className="heroTitleTextHtml"
             // eslint-disable-next-line react/no-danger
             dangerouslySetInnerHTML={{
               __html: translate({
                 id: "homepage.hero.title",
                 message:
-                  "<p>for <b>Personal</b>, <b>Business</b>, or <b>Enterprise Use</b>.</p></p>",
+                  "<p>for <b>Personal</b>, <b>Business</b>, or <b>Enterprise Use</b>.</p>",
               }),
             }}
           />
         </h1>
-        {/* <div className={styles.indexCtas}> */}
+        {/* <div className="indexCtas"> */}
         {/* <div className="button-group button-group--block">
           <Link className="button button--primary" to="/docs">
             <Translate>Get Started</Translate>
@@ -64,9 +64,9 @@ function HomepageHeader() {
             <Translate>Sponsor Tech Fiddle</Translate>
           </Link>
           </div> */}
-        {/* <span className={styles.indexCtasGitHubButtonWrapper}>
+        {/* <span className="indexCtasGitHubButtonWrapper">
             <iframe
-              className={styles.indexCtasGitHubButton}
+              className="indexCtasGitHubButton"
               src="https://ghbtns.com/github-btn.html?user=Comp-Labs&amp;type=follow&amp;count=true&amp;size=small"
               width={190}
               height={30}
@@ -74,9 +74,9 @@ function HomepageHeader() {
             />
           </span>
           <br></br>
-          <span className={styles.indexCtasGitHubButtonWrapper}>
+          <span className="indexCtasGitHubButtonWrapper">
             <iframe
-              className={styles.indexCtasGitHubButton}
+              className="indexCtasGitHubButton"
               src="https://ghbtns.com/github-btn.html?user=Comp-Labs&amp;type=sponsor&amp;size=small"
               frameborder="0"
               scrolling="0"
