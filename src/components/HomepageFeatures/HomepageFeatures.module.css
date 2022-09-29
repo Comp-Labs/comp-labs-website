@@ -3,7 +3,14 @@
   align-items: center;
   padding: 2rem 0;
   width: 100%;
-  /* background-image: url("https://cdn.complabs.in/img/wave.svg");
+  /* background: "#F5F5F5" */
+  background: rgba(255, 255, 255, 0.18823529411764706);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(8.2px);
+  -webkit-backdrop-filter: blur(8.2px);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  /* background-image: url("https://cdn.jsdelivr.net/gh/Comp-Labs/cdn/img/wave.svg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover; */

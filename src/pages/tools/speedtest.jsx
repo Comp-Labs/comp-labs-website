@@ -3,12 +3,12 @@ import clsx from "clsx";
 import Layout from "@theme/Layout";
 import Link from "@docusaurus/Link";
 import useDocusaurusContext from "@docusaurus/useDocusaurusContext";
-import styles from "../index.module.css";
+// import styles from "../index.module.css";
 
 function SpeedtestHeader() {
   const { siteConfig } = useDocusaurusContext();
   return (
-    <header className={clsx("hero hero--primary", styles.heroBanner)}>
+    <header className={clsx("hero hero--primary", "heroBanner")}>
       <div className="container">
         <h1 className="hero__title">
           Free, Fast, and Accurate Internet SpeedTest
@@ -20,7 +20,7 @@ function SpeedtestHeader() {
           SpeedTest. Download the App for Your Platform for More Accurate
           Results as told by the Experts.
         </p>
-        {/* <div className={styles.buttons}>
+        {/* <div className={"buttons"}>
           <Link
             className="button button--secondary button--lg"
             to="/docs/intro">
@@ -42,7 +42,7 @@ export default function Speedtest() {
       <SpeedtestHeader />
       <main>
         <iframe
-          src="https://cdn.complabs.in/html/speedtest.html"
+          src="/html/speedtest.html"
           title="OpenSpeedTest HTML5 Widget"
           width="100%"
           height="1000"

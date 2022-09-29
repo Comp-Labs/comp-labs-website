@@ -1,0 +1,47 @@
+import React from "react";
+import Highlight from "@site/src/components/Highlight"
+
+interface FormFieldProps {
+  label: string;
+}
+
+interface InputProps
+  extends FormFieldProps,
+    React.DetailedHTMLProps<
+      React.InputHTMLAttributes<HTMLInputElement>,
+      HTMLInputElement
+    > {
+  fieldType?: "input";
+}
+
+interface TextareaProps
+  extends FormFieldProps,
+    React.DetailedHTMLProps<
+      React.TextareaHTMLAttributes<HTMLTextAreaElement>,
+      HTMLTextAreaElement
+    > {
+  fieldType: "textarea";
+}
+
+function FormField({
+  fieldType = "input",
+  label,
+  ...props
+}: InputProps | TextareaProps) {
+  const id = props.id ?? `form_field_${props.name}`;
+
+  return (
+    <div className="margin-vert--lg">
+      <label htmlFor={id}><Highlight color="#076af7">{label}</Highlight></label>
+      <div className="margin-top--sm">
+        {fieldType === "textarea" ? (
+          <textarea id={id} {...(props as TextareaProps)} />
+        ) : (
+          <input id={id} type="text" {...(props as InputProps)} />
+        )}
+      </div>
+    </div>
+  );
+}
+
+export default FormField;

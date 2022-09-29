@@ -38,9 +38,13 @@ const darkCodeTheme = require("prism-react-renderer/themes/dracula");
 
     scripts: [
       "https://kit.fontawesome.com/307bcbc229.js",
-      "https://cdn.complabs.in/js/scrolltotop.js",
-      "https://cdn.complabs.in/html/sharebtn/script.js",
+      "https://cdn.jsdelivr.net/gh/Comp-Labs/cdn/js/scrolltotop.js",
+      "https://cdn.jsdelivr.net/gh/Comp-Labs/cdn/html/sharebtn/script.js",
+      "https://cdn.jsdelivr.net/gh/Comp-Labs/cdn/js/wikipedia.js",
+      "https://unpkg.com/wikipedia-preview@latest/dist/wikipedia-preview.production.js",
       "https://s7.addthis.com/js/300/addthis_widget.js#pubid=ra-629de96c243ef6ee",
+      "https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js",
+      // "https://cdn.jsdelivr.net/gh/Comp-Labs/cdn/js/loader.js",
       // 'https://complabs.in/herojs.js',
       // Google AdSense:
       {
@@ -60,7 +64,7 @@ const darkCodeTheme = require("prism-react-renderer/themes/dracula");
       'https://docusaurus.io/style.css',
       // Object format.
       {
-        href: '/apple-touch-icon.png',
+        href: '/apple-touch-icon-180x180.png',
         rel: 'apple-touch-icon',
         sizes: '180x180',
       },
@@ -86,6 +90,15 @@ const darkCodeTheme = require("prism-react-renderer/themes/dracula");
     ],
 
     plugins: [
+      // [
+      //   "./plugins/blog-plugin",
+      //   {
+      //     id: "blog",
+      //     routeBasePath: "blog",
+      //     path: "./blog",
+  
+      //   },
+      // ],
       'plugin-image-zoom',
       [
         "@docusaurus/plugin-pwa",
@@ -134,6 +147,7 @@ const darkCodeTheme = require("prism-react-renderer/themes/dracula");
         "@docusaurus/preset-classic",
         /** @type {import('@docusaurus/preset-classic').Options} */
         ({
+          // blog: false,
           docs: {
             sidebarPath: require.resolve("./sidebars.js"),
             editUrl:
@@ -142,7 +156,7 @@ const darkCodeTheme = require("prism-react-renderer/themes/dracula");
           blog: {
             blogTitle: "Guides",
             blogSidebarTitle: "All Guides",
-            blogSidebarCount: "ALL",
+            blogSidebarCount: 0, // Change to 'ALL' if required later.
             sortPosts: "ascending",
             feedOptions: {
               type: 'all',
@@ -201,7 +215,7 @@ const darkCodeTheme = require("prism-react-renderer/themes/dracula");
         prism: {
           additionalLanguages: ["java", "markdown"],
         },
-        image: "https://cdn.complabs.in/img/logo-removebg.jpg",
+        image: "https://cdn.jsdelivr.net/gh/Comp-Labs/cdn/img/logo-removebg.jpg",
         // metadata: [{name: 'twitter:card', content: 'summary'}],
         // announcementBar: {
         //   id: 'announcement',
@@ -237,8 +251,8 @@ const darkCodeTheme = require("prism-react-renderer/themes/dracula");
           title: "Tech Fiddle",
           logo: {
             alt: "Tech Fiddle Logo",
-            src: "https://cdn.complabs.in/img/icon-removebg.jpg",
-            srcDark: "https://cdn.complabs.in/img/icon-removebg.jpg",
+            src: "https://cdn.jsdelivr.net/gh/Comp-Labs/cdn/img/icon-removebg.jpg",
+            srcDark: "https://cdn.jsdelivr.net/gh/Comp-Labs/cdn/img/icon-removebg.jpg",
           },
           items: [
             { to: "/docs", label: "🚧 Docs", position: "left" },
@@ -277,6 +291,10 @@ const darkCodeTheme = require("prism-react-renderer/themes/dracula");
                   href: "https://digwebinterface.com",
                 },
                 {
+                  label: "MicroURL",
+                  href: "https://microurl.complabs.in/",
+                },
+                {
                   label: "SpeedTest",
                   to: "/tools/speedtest",
                 },
@@ -286,7 +304,7 @@ const darkCodeTheme = require("prism-react-renderer/themes/dracula");
                 },
               ],
             },
-            { to: "https://forms.gle/dQmrNAZZ1KK81rAP7", label: "Contact Us", position: "left" },
+            { to: "/contact", label: "Contact Us", position: "left" },
             // { to: "/donate-us", label: "Donate Us", position: "left" },
             { to: "/webdev-crafts", label: "WebDev's Crafts", position: "left" },
             {
@@ -402,6 +420,10 @@ const darkCodeTheme = require("prism-react-renderer/themes/dracula");
                   href: "https://digwebinterface.com",
                 },
                 {
+                  label: "MicroURL",
+                  href: "https://microurl.complabs.in/",
+                },
+                {
                   label: "SpeedTest",
                   to: "/tools/speedtest",
                 },
@@ -452,6 +474,10 @@ const darkCodeTheme = require("prism-react-renderer/themes/dracula");
                   label: "YouTube",
                   href: "https://youtube.com/channel/UCL6pKeSCbJkPohM2PUZbqQA",
                 },
+                // {
+                //   label: "Discord",
+                //   href: "https://discord.gg/GAbzAGKccW",
+                // },
                 {
                   label: "LinkTree",
                   href: "https://linktr.ee/complabs",
@@ -493,7 +519,7 @@ const darkCodeTheme = require("prism-react-renderer/themes/dracula");
           ],
           logo: {
             alt: "Tech Fiddle Footer Logo",
-            src: "https://cdn.complabs.in/img/logo-removebg.jpg",
+            src: "https://cdn.jsdelivr.net/gh/Comp-Labs/cdn/img/logo-removebg.jpg",
             href: "/",
           },
           copyright: `Copyright © ${new Date().getFullYear()} Tech Fiddle. All Rights Reserved. Built using Docusaurus.`,

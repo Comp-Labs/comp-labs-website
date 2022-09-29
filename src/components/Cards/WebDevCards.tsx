@@ -557,9 +557,9 @@ const WebDevCards = [
   },
   {
     name: 'Cloud',
-    image: 'https://api.microlink.io/?url=https://codepen.io/leemartin/fullpage/ZExLqQb&screenshot=true&meta=false&embed=screenshot.url',
+    image: 'https://api.microlink.io/?url=https://codepen.io/leemartin/full/ZExLqQb&screenshot=true&meta=false&embed=screenshot.url',
     url: {
-      page: 'https://codepen.io/leemartin/fullpage/ZExLqQb',
+      page: 'https://codepen.io/leemartin/full/ZExLqQb',
       codepen: 'https://codepen.io/leemartin/pen/ZExLqQb',
     },
     description: (
@@ -831,13 +831,13 @@ function WebDevCard({ name, image, url, description }: Props) {
         <div className="card__footer">
           <div className="button-group button-group--block">
             <Link className="button button--primary" to={url.page}>
-              <i class="fa-solid fa-arrow-up-right-from-square"></i> View Live
+              <i className="fa-solid fa-arrow-up-right-from-square"></i> View Live
             </Link>
             <Link className="button button--primary" to={url.codepen}>
-              <i class="fa-brands fa-codepen"></i> View on CodePen
+              <i className="fa-brands fa-codepen"></i> View on CodePen
             </Link>
             <Link className="button button--primary" to={url.github}>
-              <i class="fa-brands fa-github"></i> View on GitHub
+              <i className="fa-brands fa-github"></i> View on GitHub
             </Link>
           </div>
         </div>
