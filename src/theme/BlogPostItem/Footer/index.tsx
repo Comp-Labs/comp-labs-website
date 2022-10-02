@@ -6,6 +6,7 @@ import Footer from "@theme-original/BlogPostItem/Footer";
 import { useColorMode } from "@docusaurus/theme-common";
 import Giscus from "@giscus/react";
 import YTSubscribe from '@site/src/components/YTSubscribe';
+import NativeShare from "@site/src/components/NativeShare";
 
 export default function FooterWrapper(props: {}) {
   const { siteConfig } = useDocusaurusContext();
@@ -26,12 +27,13 @@ export default function FooterWrapper(props: {}) {
       <div className="margin-vert--xl">
         <h2>Share</h2>
         <div className="row">
-        <iframe
+          <NativeShare />
+        {/* <iframe
           src="/html/sharebtn/sharebtn.html"
           title="Share Button"
           height="100"
           width="100"
-        ></iframe>
+        ></iframe> */}
         <b><code>/</code></b>
         <div className="addthis_inline_share_toolbox"></div>
         </div>

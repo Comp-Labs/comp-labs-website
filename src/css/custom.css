@@ -123,6 +123,11 @@ div[class^='announcementBar_'] {
   white-space: nowrap;
 }
 
+navbar__item dropdown dropdown--hoverable {
+  min-width: fit-content;
+  white-space: nowrap;
+}
+
 table {
   border-collapse: collapse;
 }
@@ -165,7 +170,7 @@ a:hover {
   border-radius: 10px;
 }
 
-a::before {
+/* a::before {
   content: "";
   position: absolute;
   display: block;
@@ -180,7 +185,7 @@ a::before {
 
 a:hover::before {
   transform: scaleX(1);
-}
+} */
 
 href:hover {
   text-decoration: none;
@@ -216,6 +221,11 @@ html[data-theme="dark"] .a .href:hover {
   color: #F5F5F5;
   background-color: #04101d;
   border-radius: 10px;
+}
+
+.extrafooter {
+  background-color: var(--ifm-footer-background-color);
+  color: white;
 }
 
 /* Site Variables End */
