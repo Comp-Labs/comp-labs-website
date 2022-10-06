@@ -462,14 +462,14 @@ html[data-theme="dark"] .DocSearch {
 
 /* Custom Font Start */
 
-@font-face {
+/* @font-face {
   font-family: websiteFont;
   src: url(/fonts/font3.woff2);
 }
 
 * {
   font-family: websiteFont;
-}
+} */
 
 /* fallback */
 /* @font-face {
