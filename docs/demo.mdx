@@ -3,7 +3,8 @@ sidebar_position: 7
 description: MDX Demo Document. Used for Tech Fiddle Demonstration and Testing Purposes.
 ---
 
-import NativeShare from "@site/src/components/NativeShare";
+import NativeShare from "@site/src/components/NativeShare"
+import Button from "@mui/joy/Button";
 
 # Demo
 
@@ -11,9 +12,7 @@ MDX Demo Document. Used for Tech Fiddle Demonstration and Testing Purposes.
 
 ## NativeShare
 
-<CssVarsProvider>
-  <Button id="share-button" size="sm" variant="soft"><i class="fa-solid fa-share-nodes"></i>  Share</Button>
-</CssVarsProvider>
+<NativeShare />
 <br></br>
 <iframe src="https://cdn.jsdelivr.net/gh/Comp-Labs/cdn/html/sharebtn/index.html" title="Share"></iframe>
 <br></br>
@@ -21,8 +20,6 @@ MDX Demo Document. Used for Tech Fiddle Demonstration and Testing Purposes.
 <br></br>
 <iframe src="/html/sharebtn/sharebtn.html" title="Share"></iframe>
 <script src="/html/sharebtn/script.js"></script>
-
-<NativeShare />
 
 ## ShowcaseWindow Example
 

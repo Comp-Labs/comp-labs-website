@@ -533,7 +533,7 @@ html[data-theme="dark"] .DocSearch {
 
 /* ScrollToTop Start */
 
-#scrollToTopBtn {
+/* #scrollToTopBtn {
   display: none;
   position: fixed;
   bottom: 20px;
@@ -571,7 +571,7 @@ html[data-theme="dark"] .DocSearch {
 .isVisible {
   pointer-events: auto;
   opacity: 1;
-}
+} */
 
 /* html {
   scroll-behavior: smooth;
