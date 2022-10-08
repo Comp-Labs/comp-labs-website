@@ -1,27 +1,47 @@
-import React, { useState } from "react";
-import { RWebShare } from "react-web-share";
+import React, { useState, useEffect } from 'react';
+// import { RWebShare } from "react-web-share";
 import { CssVarsProvider } from "@mui/joy/styles";
 import Button from "@mui/joy/Button";
-import BrowserOnly from '@docusaurus/BrowserOnly';
+// import BrowserOnly from '@docusaurus/BrowserOnly';
+import shareWebPage, { TypeOfSharing } from "web-sharing";
+import ShareRoundedIcon from '@mui/icons-material/ShareRounded';
 
-const NativeShare = () => {
+const APP_NAME = "Tech Fiddle"
+const HOMEPAGE_URL = "https://complabs.in"
+const onFail = () => alert("Could not Share. Please Try Again.")
+
+const onSuccess = (typeofSharing: TypeOfSharing) => {
+    if (typeofSharing.APP) {
+        alert("Shared Successfully!")
+    } else {
+        // The browser does not support sharing.
+        // alert("Your Browser doesn't support sharing. We've copied the URL for you.")
+    }
+}
+
+const NativeShare: React.FC = () => {
     return (
-        <>
-        <BrowserOnly>
-            <CssVarsProvider>
-                <RWebShare
-                    data={{
-                        text: "Sharing: " + document.title + "by Tech Fiddle",
-                        url: "",
-                        title: "Sharing: " + document.title + "by Tech Fiddle",
-                    }}
-                    onClick={() => console.log("Shared Successfully!")}
-                >
-                    <Button onClick={window.location.href} color="primary" size="md" variant="soft"><i className="fa-solid fa-share-nodes"></i> Share</Button>
-                </RWebShare>
-            </CssVarsProvider>
-            </BrowserOnly>
-        </>
+        <CssVarsProvider>
+            <Button
+                onClick={() =>
+                    shareWebPage(
+                        {
+                            title: APP_NAME,
+                            url: HOMEPAGE_URL,
+                            copyValue: `${HOMEPAGE_URL}`
+                        },
+                        onSuccess,
+                        onFail
+                    )
+                }
+                startDecorator={<i className="fa-solid fa-share-nodes"></i>}
+                color="primary"
+                size="sm"
+                variant="soft"
+            >
+                Share
+            </Button>
+        </CssVarsProvider>
     );
 };
 

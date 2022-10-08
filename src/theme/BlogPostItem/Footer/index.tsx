@@ -28,15 +28,8 @@ export default function FooterWrapper(props: {}) {
         <h2>Share</h2>
         <div className="row">
           <NativeShare />
-          {/* <iframe
-          src="/html/sharebtn/sharebtn.html"
-          title="Share Button"
-          height="100"
-          width="100"
-        ></iframe> */}
-          <b><code>/</code></b>
           <div className="addthis_inline_share_toolbox"></div>
-        </div>
+          </div>
         <h2>Subscribe to our YouTube Channel:</h2>
         <br></br>
         <YTSubscribe />
