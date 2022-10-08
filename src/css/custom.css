@@ -163,65 +163,23 @@ div[class^="announcementBar_"] {
 
 /* Modern UI Link Styling */
 /* Light */
+/* a {
+  background-color: rgba(187,239,253,0.3);
+  border-bottom: 1px solid rgba(0,0,0,0.2);
+  color: #1a1a1a;
+  color: inherit;
+  text-decoration: none;
+}
+
 a:hover {
   text-decoration: none;
-  color: #000000;
-  background-color: #F5F5F5;
-  border-radius: 10px;
-}
-
-/* a::before {
-  content: "";
-  position: absolute;
-  display: block;
-  width: 100%;
-  height: 2px;
-  bottom: 0;
-  left: 0;
-  background-color: #000;
-  transform: scaleX(0);
-  transition: transform 0.3s ease;
-}
-
-a:hover::before {
-  transform: scaleX(1);
+  opacity: 0.7
 } */
 
-href:hover {
-  text-decoration: none;
-  color: #000000;
-  background-color: #F5F5F5;
-  border-radius: 10px;
-}
-
-.a .href:hover {
-  text-decoration: none;
-  color: #000000;
-  background-color: #F5F5F5;
-  border-radius: 10px;
-}
-
 /* Dark */
-html[data-theme="dark"] a:hover {
-  text-decoration: none;
-  color: #F5F5F5;
-  background-color: #04101d;
-  border-radius: 10px;
-}
-
-html[data-theme="dark"] href:hover {
-  text-decoration: none;
-  color: #F5F5F5;
-  background-color: #04101d;
-  border-radius: 10px;
-}
-
-html[data-theme="dark"] .a .href:hover {
-  text-decoration: none;
-  color: #F5F5F5;
-  background-color: #04101d;
-  border-radius: 10px;
-}
+/* html[data-theme="dark"] a:hover {
+  text-decoration: underline;
+} */
 
 .extrafooter {
   background-color: var(--ifm-footer-background-color);
@@ -462,14 +420,14 @@ html[data-theme="dark"] .DocSearch {
 
 /* Custom Font Start */
 
-@font-face {
+/* @font-face {
   font-family: websiteFont;
   src: url(/fonts/font3.woff2);
 }
 
 * {
   font-family: websiteFont;
-}
+} */
 
 /* fallback */
 /* @font-face {
@@ -533,7 +491,7 @@ html[data-theme="dark"] .DocSearch {
 
 /* ScrollToTop Start */
 
-#scrollToTopBtn {
+/* #scrollToTopBtn {
   display: none;
   position: fixed;
   bottom: 20px;
@@ -571,7 +529,7 @@ html[data-theme="dark"] .DocSearch {
 .isVisible {
   pointer-events: auto;
   opacity: 1;
-}
+} */
 
 /* html {
   scroll-behavior: smooth;
