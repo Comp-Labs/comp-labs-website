@@ -96,7 +96,7 @@ const darkCodeTheme = require("prism-react-renderer/themes/dracula");
       //     id: "blog",
       //     routeBasePath: "blog",
       //     path: "./blog",
-  
+
       //   },
       // ],
       'plugin-image-zoom',
@@ -244,7 +244,7 @@ const darkCodeTheme = require("prism-react-renderer/themes/dracula");
           appId: "7LEIQ4QK6M",
           indexName: "complabs",
           apiKey: "d0a38351663330eccb11548d292f41bd",
-          placeholder: "Search Tech Fiddle...",
+          placeholder: "Search...",
         },
         navbar: {
           hideOnScroll: false,
