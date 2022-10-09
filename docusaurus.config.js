@@ -247,12 +247,12 @@ const darkCodeTheme = require("prism-react-renderer/themes/dracula");
           placeholder: "Search Tech Fiddle...",
         },
         navbar: {
-          hideOnScroll: true,
-          title: "Tech Fiddle",
+          hideOnScroll: false,
+          // title: "Tech Fiddle",
           logo: {
             alt: "Tech Fiddle Logo",
-            src: "https://cdn.jsdelivr.net/gh/Comp-Labs/cdn/img/icon-removebg.jpg",
-            srcDark: "https://cdn.jsdelivr.net/gh/Comp-Labs/cdn/img/icon-removebg.jpg",
+            src: "https://cdn.jsdelivr.net/gh/Comp-Labs/cdn/img/logo-removebg.jpg",
+            srcDark: "https://cdn.jsdelivr.net/gh/Comp-Labs/cdn/img/logo-removebg.jpg",
           },
           items: [
             { to: "/docs", label: "🚧 Docs", position: "left" },
@@ -327,33 +327,34 @@ const darkCodeTheme = require("prism-react-renderer/themes/dracula");
               ],
             },
             // Right
-            // {
-            //   type: "localeDropdown",
-            //   position: "right",
-            // },
+            {
+              type: "localeDropdown",
+              position: "right",
+            },
             {
               href: "https://github.com/Comp-Labs",
               position: "right",
-              className: "header-github-link",
+              className: "github",
               "aria-label": "GitHub",
             },
+            {
+              href: "https://youtube.com/channel/UCL6pKeSCbJkPohM2PUZbqQA",
+              position: "right",
+              className: "youtube",
+              "aria-label": "YouTube",
+            },
             // {
-            //   href: "https://youtube.com/channel/UCL6pKeSCbJkPohM2PUZbqQA",
+            //   href: "https://discord.gg/GAbzAGKccW",
             //   position: "right",
-            //   className: "header-youtube-link",
-            //   "aria-label": "YouTube",
+            //   className: "discord",
+            //   "aria-label": "Discord",
             // },
-            // {
-            //   type: 'html',
-            //   position: 'right',
-            //   value: '<a style="color:#f70000" href="https://youtube.com/channel/UCL6pKeSCbJkPohM2PUZbqQA"><i class="fa-brands fa-youtube fa-xl color:#f70000"></i></a>',
-            // },
-            // {
-            //   type: 'html',
-            //   position: 'right',
-            //   value: '<div className="button-group button-group--block"><Link className="button button--primary" href="https://github.com/Comp-Labs"><i class="fa-brands fa-github fa-xl"></i></Link> <Link className="button button--primary" href="https://youtube.com/channel/UCL6pKeSCbJkPohM2PUZbqQA"><i class="fa-brands fa-youtube fa-xl></ifra></Link></div>',
-            // },
-          ],
+            {
+              href: "https://linktr.ee/complabs",
+              position: "right",
+              className: "linktree",
+              "aria-label": "LinkTree",
+            },
         },
         footer: {
           style: "dark",
