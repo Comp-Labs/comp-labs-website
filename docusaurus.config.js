@@ -244,7 +244,7 @@ const darkCodeTheme = require("prism-react-renderer/themes/dracula");
           appId: "7LEIQ4QK6M",
           indexName: "complabs",
           apiKey: "d0a38351663330eccb11548d292f41bd",
-          placeholder: "Search...",
+          placeholder: "Search Tech Fiddle...",
         },
         navbar: {
           hideOnScroll: false,
@@ -343,18 +343,19 @@ const darkCodeTheme = require("prism-react-renderer/themes/dracula");
               className: "youtube",
               "aria-label": "YouTube",
             },
-            // {
-            //   href: "https://discord.gg/GAbzAGKccW",
-            //   position: "right",
-            //   className: "discord",
-            //   "aria-label": "Discord",
-            // },
+            {
+              href: "https://discord.gg/GAbzAGKccW",
+              position: "right",
+              className: "discord",
+              "aria-label": "Discord",
+            },
             {
               href: "https://linktr.ee/complabs",
               position: "right",
               className: "linktree",
               "aria-label": "LinkTree",
             },
+          ],
         },
         footer: {
           style: "dark",
