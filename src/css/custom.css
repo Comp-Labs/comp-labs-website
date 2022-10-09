@@ -340,6 +340,7 @@ a:hover {
   transition: top 300ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
   z-index: 1100;
   padding: 48px;
+  color: #0A1929;
 }
 
 .heroInner {
@@ -355,7 +356,8 @@ a:hover {
 }
 
 .heroTitleTextHtml b {
-  color: var(--ifm-color-primary);
+  -webkit-text-fill-color: transparent;
+  background: linear-gradient(to right, rgb(0, 127, 255), rgb(0, 89, 178)) text;
 }
 
 @keyframes jackInTheBox {
