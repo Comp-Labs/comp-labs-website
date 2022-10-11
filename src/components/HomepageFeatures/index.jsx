@@ -276,14 +276,12 @@ function Feature({ Svg, title, description }) {
   return (
     <div className={clsx("col col--6")}>
       <div className={clsx('card')}>
-      <div className={styles.gradient}>
       <div className="text--center">
         <Svg className={styles.featureSvg} alt={title} />
       </div>
       <div className="text--center padding-horiz--md">
         <h3>{title}</h3>
         <p>{description}</p>
-      </div>
       </div>
       </div>
     </div>
