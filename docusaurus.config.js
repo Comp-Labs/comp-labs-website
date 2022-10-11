@@ -244,6 +244,8 @@ const darkCodeTheme = require("prism-react-renderer/themes/dracula");
           appId: "7LEIQ4QK6M",
           indexName: "complabs",
           apiKey: "d0a38351663330eccb11548d292f41bd",
+          contextualSearch: true,
+          searchPagePath: 'search',
           placeholder: "Search Tech Fiddle...",
         },
         navbar: {
@@ -328,10 +330,6 @@ const darkCodeTheme = require("prism-react-renderer/themes/dracula");
             },
             // Right
             {
-              type: "localeDropdown",
-              position: "right",
-            },
-            {
               href: "https://github.com/Comp-Labs",
               position: "right",
               className: "github",
@@ -358,7 +356,7 @@ const darkCodeTheme = require("prism-react-renderer/themes/dracula");
           ],
         },
         footer: {
-          style: "dark",
+          style: "light",
           links: [
             {
               title: "Tech Fiddle",
