@@ -277,7 +277,7 @@ function Feature({ Svg, title, description }) {
     <div className={clsx("col col--6")}>
       <div className={clsx('card')}>
       <div className="text--center">
-        <Svg className={styles.featureSvg} alt={title} />
+        <Svg className="featureSvg" alt={title} />
       </div>
       <div className="text--center padding-horiz--md">
         <h3>{title}</h3>
@@ -293,7 +293,7 @@ function Feature({ Svg, title, description }) {
 //     <div className={clsx("card")}>
 //       <div className={clsx("card__image")}>
 //         <div className="text--center">
-//           <Svg className={styles.featureSvg} alt={title} />
+//           <Svg className="featureSvg" alt={title} />
 //         </div>
 //         <div className="card__body">
 //           <div className="text--center padding-horiz--md">
@@ -310,7 +310,7 @@ function Feature({ Svg, title, description }) {
 
 export default function HomepageFeatures() {
   return (
-    <section className={styles.features}>
+    <section className="features">
       <div className="container">
         <div className="row">
           {FeatureList.map((props, idx) => (

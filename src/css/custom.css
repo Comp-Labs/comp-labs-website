@@ -154,8 +154,8 @@ html[data-theme="dark"] .github:before {
 
 .navbar__logo {
   padding: 10px;
-  width: 70px;
-  height: 24px;
+  width: 558px;
+  height: 447px;
 }
 
 .navbar {
@@ -356,8 +356,8 @@ a:hover {
 /* bg: rgba(255, 255, 255, 0.72) */
 
 .hero {
-  backdrop-filter: blur(20px);
-  background-image: linear-gradient(62deg, #8EC5FC 0%, #E0C3FC 100%);
+  /* backdrop-filter: blur(20px);
+  background-image: linear-gradient(62deg, #8EC5FC 0%, #E0C3FC 100%); */
   background-color: #ffffff;
 }
 
@@ -874,6 +874,27 @@ border: 1px solid rgba(255, 255, 255, 0.3);
 }
 
 /* ToolTip End */
+
+/* HomePageFeatures.module.css Start */
+
+.features {
+  display: flex;
+  align-items: center;
+  padding: 2rem 0;
+  width: 100%;
+  background-color: #ffffff;
+  /* background-image: url("https://cdn.jsdelivr.net/gh/Comp-Labs/cdn/img/wave.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover; */
+}
+
+.featureSvg {
+  height: 200px;
+  width: 200px;
+}
+
+/* HomePageFeatures.module.css End */
 
 /* Used to test CSS insertion order */
 .test-marker-site-custom-css-unique-rule {
