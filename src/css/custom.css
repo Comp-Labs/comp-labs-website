@@ -136,26 +136,20 @@ html[data-theme="dark"] .github:before {
   background-image: url('data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiPz4KPCFET0NUWVBFIHN2ZyBQVUJMSUMgIi0vL1czQy8vRFREIFNWRyAxLjEvL0VOIiAiaHR0cDovL3d3dy53My5vcmcvR3JhcGhpY3MvU1ZHLzEuMS9EVEQvc3ZnMTEuZHRkIj4KPHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZlcnNpb249IjEuMSIgd2lkdGg9IjI0NnB4IiBoZWlnaHQ9IjMwMHB4IiBzdHlsZT0ic2hhcGUtcmVuZGVyaW5nOmdlb21ldHJpY1ByZWNpc2lvbjsgdGV4dC1yZW5kZXJpbmc6Z2VvbWV0cmljUHJlY2lzaW9uOyBpbWFnZS1yZW5kZXJpbmc6b3B0aW1pemVRdWFsaXR5OyBmaWxsLXJ1bGU6ZXZlbm9kZDsgY2xpcC1ydWxlOmV2ZW5vZGQiIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIj4KPGc+PHBhdGggc3R5bGU9Im9wYWNpdHk6MC45NTkiIGZpbGw9IiM0M2U2NWYiIGQ9Ik0gMTAwLjUsLTAuNSBDIDExNS41LC0wLjUgMTMwLjUsLTAuNSAxNDUuNSwtMC41QyAxNDUuMzMzLDIyLjgzNTcgMTQ1LjUsNDYuMTY5IDE0Niw2OS41QyAxNjIuNDU0LDUzLjA0NjIgMTc4Ljc4NywzNi43MTI4IDE5NSwyMC41QyAyMDUuMTE0LDMwLjI4MjkgMjE0Ljk0OCw0MC40NDk2IDIyNC41LDUxQyAyMDcuODk4LDY2LjkzMjIgMTkxLjIzMiw4Mi45MzIyIDE3NC41LDk5QyAxOTguMTY0LDk5LjUgMjIxLjgzMSw5OS42NjY2IDI0NS41LDk5LjVDIDI0NS41LDExNC4xNjcgMjQ1LjUsMTI4LjgzMyAyNDUuNSwxNDMuNUMgMjIxLjQ5OCwxNDMuMzMzIDE5Ny40OTgsMTQzLjUgMTczLjUsMTQ0QyAxOTAuNjc5LDE2MC4zNDYgMjA3LjY3OSwxNzYuODQ2IDIyNC41LDE5My41QyAyMTQuODMzLDIwMy44MzMgMjA0LjgzMywyMTMuODMzIDE5NC41LDIyMy41QyAxNzAuNSwxOTkuODMzIDE0Ni41LDE3Ni4xNjcgMTIyLjUsMTUyLjVDIDk4LjUsMTc2LjE2NyA3NC41LDE5OS44MzMgNTAuNSwyMjMuNUMgNDAuMTY2NywyMTMuODMzIDMwLjE2NjcsMjAzLjgzMyAyMC41LDE5My41QyAzNy4zMjEzLDE3Ni44NDYgNTQuMzIxMywxNjAuMzQ2IDcxLjUsMTQ0QyA0Ny41MDIzLDE0My41IDIzLjUwMjMsMTQzLjMzMyAtMC41LDE0My41QyAtMC41LDEyOC44MzMgLTAuNSwxMTQuMTY3IC0wLjUsOTkuNUMgMjMuNTAyMyw5OS42NjY2IDQ3LjUwMjMsOTkuNSA3MS41LDk5QyA1NC4wMTk2LDgzLjM1MzMgMzcuMDE5Niw2Ny4xODY3IDIwLjUsNTAuNUMgMzAuMTM5Niw0MC4xOTM3IDQwLjEzOTYsMzAuMTkzNyA1MC41LDIwLjVDIDY3LjUxNDgsMzYuNjgxNCA4NC4wMTQ4LDUzLjM0ODEgMTAwLDcwLjVDIDEwMC41LDQ2LjgzNTcgMTAwLjY2NywyMy4xNjkgMTAwLjUsLTAuNSBaIi8+PC9nPgo8Zz48cGF0aCBzdHlsZT0ib3BhY2l0eTowLjk2NCIgZmlsbD0iIzQzZTY1ZiIgZD0iTSAxNDUuNSwyOTkuNSBDIDEzMC41LDI5OS41IDExNS41LDI5OS41IDEwMC41LDI5OS41QyAxMDAuNSwyNjYuNSAxMDAuNSwyMzMuNSAxMDAuNSwyMDAuNUMgMTE1LjUsMjAwLjUgMTMwLjUsMjAwLjUgMTQ1LjUsMjAwLjVDIDE0NS41LDIzMy41IDE0NS41LDI2Ni41IDE0NS41LDI5OS41IFoiLz48L2c+Cjwvc3ZnPgo=');
 }
 
-/* .footer--light {
-  backdrop-filter: blur(20px);
-  box-shadow: inset 0px -1px 1px #f5f5f5;
+.footer--light {
+  /* backdrop-filter: blur(20px); */
   background-color: rgba(255, 255, 255, 0.72);
-  transition: top 300ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
-  z-index: 1100;
 }
 
 .footer--dark {
-  backdrop-filter: blur(20px);
-  box-shadow: inset 0px -1px 1px #f5f5f5;
-  background-color: rgba(255, 255, 255, 0.72);
-  transition: top 300ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
-  z-index: 1100;
-} */
+  /* backdrop-filter: blur(20px); */
+  background-color: #0A1929;
+}
 
 .navbar__logo {
   padding: 10px;
-  width: 250px;
-  height: 139px;
+  width: 150px;
+  height: 39px;
 }
 
 .navbar {
@@ -170,6 +164,7 @@ b {
   background: linear-gradient(90deg, #007FFF, #0059B2);
   -webkit-text-fill-color: transparent;
   -webkit-background-clip: text;
+  background-clip: text;
 }
 
 .unique-tabs .tabs__item {
