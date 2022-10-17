@@ -527,7 +527,7 @@ const darkCodeTheme = require("prism-react-renderer/themes/dracula");
           ],
           logo: {
             alt: "Tech Fiddle Footer Logo",
-            src: "https://cdn.jsdelivr.net/gh/Comp-Labs/cdn/img/logo-removebg.jpg",
+            src: "https://cdn.jsdelivr.net/gh/Comp-Labs/cdn/img/icon-removebg.jpg",
             href: "/",
           },
           copyright: `Copyright © ${new Date().getFullYear()} Tech Fiddle. All Rights Reserved. Built using Docusaurus.`,
