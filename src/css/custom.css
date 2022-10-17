@@ -146,10 +146,10 @@ html[data-theme="dark"] .github:before {
   background-color: #0A1929;
 } */
 
-.navbar__logo {
+/* .navbar__logo {
   width: 325px;
   height: 214px;
-}
+} */
 
 .navbar {
   backdrop-filter: blur(20px);
