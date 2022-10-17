@@ -253,8 +253,8 @@ const darkCodeTheme = require("prism-react-renderer/themes/dracula");
           // title: "Tech Fiddle",
           logo: {
             alt: "Tech Fiddle Logo",
-            src: "https://cdn.jsdelivr.net/gh/Comp-Labs/cdn/img/logo-removebg.jpg",
-            srcDark: "https://cdn.jsdelivr.net/gh/Comp-Labs/cdn/img/logo-removebg.jpg",
+            src: "https://cdn.jsdelivr.net/gh/Comp-Labs/cdn/img/icon-removebg.jpg",
+            srcDark: "https://cdn.jsdelivr.net/gh/Comp-Labs/cdn/img/icon-removebg.jpg",
           },
           items: [
             { to: "/docs", label: "🚧 Docs", position: "left" },
