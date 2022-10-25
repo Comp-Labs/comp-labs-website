@@ -253,8 +253,8 @@ const darkCodeTheme = require("prism-react-renderer/themes/dracula");
           // title: "Tech Fiddle",
           logo: {
             alt: "Tech Fiddle Logo",
-            src: "https://cdn.jsdelivr.net/gh/Comp-Labs/cdn/img/icon-removebg.jpg",
-            srcDark: "https://cdn.jsdelivr.net/gh/Comp-Labs/cdn/img/icon-removebg.jpg",
+            src: "https://cdn.jsdelivr.net/gh/Comp-Labs/cdn/img/logo-removebg.jpg",
+            srcDark: "https://cdn.jsdelivr.net/gh/Comp-Labs/cdn/img/logo-removebg.jpg",
           },
           items: [
             { to: "/docs", label: "🚧 Docs", position: "left" },
@@ -330,37 +330,23 @@ const darkCodeTheme = require("prism-react-renderer/themes/dracula");
             },
             // Right
             {
-              href: "https://github.com/Comp-Labs",
+              type: 'search',
               position: "right",
-              className: "github",
-              "aria-label": "GitHub",
-              width: "24px",
-              height: "24px",
             },
             // {
-            //   href: "https://youtube.com/channel/UCL6pKeSCbJkPohM2PUZbqQA",
+            //   href: "https://github.com/Comp-Labs",
             //   position: "right",
-            //   className: "youtube",
-            //   "aria-label": "YouTube",
+            //   className: "github",
+            //   "aria-label": "GitHub",
             //   width: "24px",
             //   height: "24px",
             // },
-            // {
-            //   href: "https://discord.gg/GAbzAGKccW",
-            //   position: "right",
-            //   className: "discord",
-            //   "aria-label": "Discord",
-            //   width: "24px",
-            //   height: "24px",
-            // },
-            // {
-            //   href: "https://linktr.ee/complabs",
-            //   position: "right",
-            //   className: "linktree",
-            //   "aria-label": "LinkTree",
-            //   width: "24px",
-            //   height: "24px",
-            // },
+            {
+              type: 'custom-Buttons',
+              position: "right",
+              itemProp: 44, 
+              anotherProp: "xyz",
+            },
           ],
         },
         footer: {
@@ -527,7 +513,7 @@ const darkCodeTheme = require("prism-react-renderer/themes/dracula");
           ],
           logo: {
             alt: "Tech Fiddle Footer Logo",
-            src: "https://cdn.jsdelivr.net/gh/Comp-Labs/cdn/img/icon-removebg.jpg",
+            src: "https://cdn.jsdelivr.net/gh/Comp-Labs/cdn/img/logo-removebg.jpg",
             href: "/",
           },
           copyright: `Copyright © ${new Date().getFullYear()} Tech Fiddle. All Rights Reserved. Built using Docusaurus.`,

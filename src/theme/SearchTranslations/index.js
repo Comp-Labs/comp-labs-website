@@ -3,12 +3,12 @@ const translations = {
   button: {
     buttonText: translate({
       id: 'theme.SearchBar.label',
-      message: 'Search',
+      message: 'Search...',
       description: 'The ARIA label and placeholder for search button',
     }),
     buttonAriaLabel: translate({
       id: 'theme.SearchBar.label',
-      message: 'Search',
+      message: 'Search...',
       description: 'The ARIA label and placeholder for search button',
     }),
   },
@@ -16,12 +16,12 @@ const translations = {
     searchBox: {
       resetButtonTitle: translate({
         id: 'theme.SearchModal.searchBox.resetButtonTitle',
-        message: 'Clear the query',
+        message: 'Clear',
         description: 'The label and ARIA label for search box reset button',
       }),
       resetButtonAriaLabel: translate({
         id: 'theme.SearchModal.searchBox.resetButtonTitle',
-        message: 'Clear the query',
+        message: 'Clear',
         description: 'The label and ARIA label for search box reset button',
       }),
       cancelButtonText: translate({
@@ -75,7 +75,7 @@ const translations = {
       }),
       helpText: translate({
         id: 'theme.SearchModal.errorScreen.helpText',
-        message: 'You might want to check your network connection.',
+        message: 'You should check your network connection. If the issue persists, mail us with the search details at complabs28@gmail.com.',
         description: 'The help text for error screen of search modal',
       }),
     },

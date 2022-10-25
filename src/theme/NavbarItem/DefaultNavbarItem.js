@@ -1,27 +1,38 @@
 import React from 'react';
 import clsx from 'clsx';
 import NavbarNavLink from '@theme/NavbarItem/NavbarNavLink';
+import Button from "@mui/joy/Button";
+import { CssVarsProvider } from '@mui/joy/styles';
 function DefaultNavbarItemDesktop({
   className,
   isDropdownItem = false,
   ...props
 }) {
   const element = (
-    <NavbarNavLink
-      className={clsx(
-        isDropdownItem ? 'dropdown__link' : 'navbar__item navbar__link',
-        className,
-      )}
-      isDropdownLink={isDropdownItem}
-      {...props}
-    />
+    <CssVarsProvider>
+    <Button
+      color="neutral"
+      onClick={() => { }}
+      size="sm"
+      variant="plain"
+    >
+      <NavbarNavLink
+        // className={clsx(
+        //   isDropdownItem ? 'dropdown__link' : 'navbar__item navbar__link',
+        //   className,
+        // )}
+        isDropdownLink={isDropdownItem}
+        {...props}
+      />
+    </Button>
+    </CssVarsProvider>
   );
   if (isDropdownItem) {
     return <li>{element}</li>;
   }
   return element;
 }
-function DefaultNavbarItemMobile({className, isDropdownItem, ...props}) {
+function DefaultNavbarItemMobile({ className, isDropdownItem, ...props }) {
   return (
     <li className="menu__list-item">
       <NavbarNavLink className={clsx('menu__link', className)} {...props} />

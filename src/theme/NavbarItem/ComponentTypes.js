@@ -7,9 +7,7 @@ import DocNavbarItem from '@theme/NavbarItem/DocNavbarItem';
 import DocSidebarNavbarItem from '@theme/NavbarItem/DocSidebarNavbarItem';
 import DocsVersionNavbarItem from '@theme/NavbarItem/DocsVersionNavbarItem';
 import DocsVersionDropdownNavbarItem from '@theme/NavbarItem/DocsVersionDropdownNavbarItem';
-import YouTubeButton from "@site/src/components/YouTubeButton";
-import DiscordButton from "@site/src/components/DiscordButton";
-import LinkTreeButton from "@site/src/components/LinkTreeButton";
+import {GitHubButton, YouTubeButton, DiscordButton, LinkTreeButton, Buttons} from "@site/src/components/SocialButtons";
 const ComponentTypes = {
   default: DefaultNavbarItem,
   localeDropdown: LocaleDropdownNavbarItem,
@@ -20,8 +18,6 @@ const ComponentTypes = {
   docSidebar: DocSidebarNavbarItem,
   docsVersion: DocsVersionNavbarItem,
   docsVersionDropdown: DocsVersionDropdownNavbarItem,
-  'custom-YouTubeIcon': YouTubeButton,
-  'custom-DiscordIcon': DiscordButton,
-  'custom-LinkTreeIcon': LinkTreeButton,
+  'custom-Buttons': Buttons,
 };
 export default ComponentTypes;

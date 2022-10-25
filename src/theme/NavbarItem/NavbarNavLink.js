@@ -4,6 +4,7 @@ import useBaseUrl from '@docusaurus/useBaseUrl';
 import isInternalUrl from '@docusaurus/isInternalUrl';
 import {isRegexpStringMatch} from '@docusaurus/theme-common';
 import IconExternalLink from '@theme/Icon/ExternalLink';
+import OpenInNew from '@mui/icons-material/OpenInNew';
 export default function NavbarNavLink({
   activeBasePath,
   activeBaseRegex,
@@ -28,11 +29,11 @@ export default function NavbarNavLink({
         children: (
           <>
             {label}
-            {isExternalLink && (
-              <IconExternalLink
+            {(
+              <OpenInNew
                 {...(isDropdownLink && {width: 12, height: 12})}
               />
-            )}
+            ) && isExternalLink}
           </>
         ),
       };
