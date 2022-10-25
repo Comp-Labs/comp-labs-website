@@ -163,7 +163,14 @@ html[data-theme="dark"] .navbar {
   backdrop-filter: blur(20px);
 }
 
-b strong {
+b {
+  background: linear-gradient(90deg, #007FFF, #0059B2);
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+  background-clip: text;
+}
+
+strong {
   background: linear-gradient(90deg, #007FFF, #0059B2);
   -webkit-text-fill-color: transparent;
   -webkit-background-clip: text;
