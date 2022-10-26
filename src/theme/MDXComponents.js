@@ -13,6 +13,7 @@ import ShowcaseCarousel from "@site/src/components/ShowcaseCarousel";
 import Tabs from "@theme/Tabs";
 import TabItem from "@theme/TabItem";
 import Terminal from "@site/src/components/ShowcaseWindow/Terminal";
+import TOCInline from '@theme/TOCInline';
 import YTSubscribe from '@site/src/components/YTSubscribe';
 
 export default {
@@ -30,5 +31,6 @@ export default {
   Tabs: Tabs,
   TabItem: TabItem,
   Terminal: Terminal,
+  TOCInline: TOCInline,
   YTSubscribe: YTSubscribe,
 };

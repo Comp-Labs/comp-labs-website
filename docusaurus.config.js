@@ -96,7 +96,7 @@ const darkCodeTheme = require("prism-react-renderer/themes/dracula");
       //     id: "blog",
       //     routeBasePath: "blog",
       //     path: "./blog",
-  
+
       //   },
       // ],
       'plugin-image-zoom',
@@ -244,15 +244,17 @@ const darkCodeTheme = require("prism-react-renderer/themes/dracula");
           appId: "7LEIQ4QK6M",
           indexName: "complabs",
           apiKey: "d0a38351663330eccb11548d292f41bd",
+          contextualSearch: true,
+          searchPagePath: 'search',
           placeholder: "Search Tech Fiddle...",
         },
         navbar: {
-          hideOnScroll: true,
-          title: "Tech Fiddle",
+          hideOnScroll: false,
+          // title: "Tech Fiddle",
           logo: {
             alt: "Tech Fiddle Logo",
-            src: "https://cdn.jsdelivr.net/gh/Comp-Labs/cdn/img/icon-removebg.jpg",
-            srcDark: "https://cdn.jsdelivr.net/gh/Comp-Labs/cdn/img/icon-removebg.jpg",
+            src: "https://cdn.jsdelivr.net/gh/Comp-Labs/cdn/img/logo-removebg.jpg",
+            srcDark: "https://cdn.jsdelivr.net/gh/Comp-Labs/cdn/img/logo-removebg.jpg",
           },
           items: [
             { to: "/docs", label: "🚧 Docs", position: "left" },
@@ -327,36 +329,28 @@ const darkCodeTheme = require("prism-react-renderer/themes/dracula");
               ],
             },
             // Right
-            // {
-            //   type: "localeDropdown",
-            //   position: "right",
-            // },
             {
-              href: "https://github.com/Comp-Labs",
+              type: 'search',
               position: "right",
-              className: "header-github-link",
-              "aria-label": "GitHub",
             },
             // {
-            //   href: "https://youtube.com/channel/UCL6pKeSCbJkPohM2PUZbqQA",
+            //   href: "https://github.com/Comp-Labs",
             //   position: "right",
-            //   className: "header-youtube-link",
-            //   "aria-label": "YouTube",
+            //   className: "github",
+            //   "aria-label": "GitHub",
+            //   width: "24px",
+            //   height: "24px",
             // },
-            // {
-            //   type: 'html',
-            //   position: 'right',
-            //   value: '<a style="color:#f70000" href="https://youtube.com/channel/UCL6pKeSCbJkPohM2PUZbqQA"><i class="fa-brands fa-youtube fa-xl color:#f70000"></i></a>',
-            // },
-            // {
-            //   type: 'html',
-            //   position: 'right',
-            //   value: '<div className="button-group button-group--block"><Link className="button button--primary" href="https://github.com/Comp-Labs"><i class="fa-brands fa-github fa-xl"></i></Link> <Link className="button button--primary" href="https://youtube.com/channel/UCL6pKeSCbJkPohM2PUZbqQA"><i class="fa-brands fa-youtube fa-xl></ifra></Link></div>',
-            // },
+            {
+              type: 'custom-Buttons',
+              position: "right",
+              itemProp: 44, 
+              anotherProp: "xyz",
+            },
           ],
         },
         footer: {
-          style: "dark",
+          style: "light",
           links: [
             {
               title: "Tech Fiddle",
