@@ -7,6 +7,7 @@ import { useColorMode } from "@docusaurus/theme-common";
 import Giscus from "@giscus/react";
 import YTSubscribe from '@site/src/components/YTSubscribe';
 import NativeShare from "@site/src/components/NativeShare";
+import { Provider, UpdownButton } from "@lyket/react";
 
 export default function FooterWrapper(props: {}) {
   const { siteConfig } = useDocusaurusContext();
@@ -29,7 +30,7 @@ export default function FooterWrapper(props: {}) {
         <div className="row">
           <NativeShare />
           <div className="addthis_inline_share_toolbox"></div>
-          </div>
+        </div>
         <h2>Subscribe to our YouTube Channel:</h2>
         <br></br>
         <YTSubscribe />
@@ -50,15 +51,26 @@ export default function FooterWrapper(props: {}) {
           loading="lazy"
         />
       </div>
-      <div
-        className="margin-vert--lg"
-        style={{
-          display: "flex",
-          alignItems: "center",
-          justifyContent: "center",
+      <Provider apiKey="pt_6fc6243f4df274525650ea97e4d638"
+        theme={{
+          colors: {
+            primary: '#22c1c3',
+            secondary: '#ff00c3',
+            background: 'transparent',
+            text: '#292929',
+            highlight: '#e095ed',
+            icon: '#292929',
+          },
+          fonts: {
+            body: 'inherit',
+          },
         }}
       >
-      </div>
+        <UpdownButton
+          namespace="techfiddle-react-website"
+          id="everybody-updown-now"
+        />
+      </Provider>
     </>
   );
 }

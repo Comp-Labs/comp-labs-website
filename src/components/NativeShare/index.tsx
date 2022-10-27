@@ -34,7 +34,7 @@ const NativeShare: React.FC = () => {
                         onFail
                     )
                 }
-                startDecorator={<i className="fa-solid fa-share-nodes"></i>}
+                startDecorator={<ShareRoundedIcon />}
                 color="primary"
                 size="sm"
                 variant="soft"

@@ -17,10 +17,10 @@ function DefaultNavbarItemDesktop({
       variant="plain"
     >
       <NavbarNavLink
-        // className={clsx(
-        //   isDropdownItem ? 'dropdown__link' : 'navbar__item navbar__link',
-        //   className,
-        // )}
+        className={clsx(
+          isDropdownItem ? 'dropdown__link' : 'navbar__item navbar__link',
+          className,
+        )}
         isDropdownLink={isDropdownItem}
         {...props}
       />

@@ -103,10 +103,11 @@ export default function Home() {
       description="Tech Fiddle provides a Tech Enthusiastic Blog, Lots of Apps, and Core Solutions to Empower you or your Enterprise."
     >
       <HomepageHeader />
+      <hr></hr>
       <main>
         {/* <RecentBlogPosts /> */}
         <HomepageFeatures />
-      </main>
+      </main>     
     </Layout>
   );
 }

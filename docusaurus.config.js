@@ -182,7 +182,7 @@ const darkCodeTheme = require("prism-react-renderer/themes/dracula");
       /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
       ({
         zoom: {
-          selector: '.markdown img',
+          selector: '.markdown img .document .root',
           background: {
             light: '#076af7',
             dark: '#076af7'

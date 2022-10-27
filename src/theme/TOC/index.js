@@ -16,11 +16,7 @@ export default function TOC({ className, ...props }) {
         linkClassName={LINK_CLASS_NAME}
         linkActiveClassName={LINK_ACTIVE_CLASS_NAME}
       />
-      <br></br>
       <hr></hr>
-      <br></br>
-      <NativeShare />
-      <div className="addthis_inline_share_toolbox"></div>
       <YTSubscribe />
     </div>
   );

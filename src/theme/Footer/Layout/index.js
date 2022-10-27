@@ -16,6 +16,7 @@ import { CssVarsProvider } from '@mui/joy/styles';
 export default function FooterLayout({ style, links, logo, copyright }) {
   return (
     <CssVarsProvider>
+      <hr></hr>
       <footer
         className={clsx('footer', {
           'footer--dark': style === 'dark',

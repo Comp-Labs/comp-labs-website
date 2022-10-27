@@ -1,21 +1,26 @@
 import React from "react";
 import clsx from "clsx";
 // import styles from "./HomepageFeatures.module.css";
-import Link from "@docusaurus/Link";
+// import Link from "@docusaurus/Link";
 import Translate, { translate } from "@docusaurus/Translate";
 import AspectRatio from "@mui/joy/AspectRatio";
 import Box from "@mui/joy/Box";
 import Button from "@mui/joy/Button";
 import Card from "@mui/joy/Card";
-import IconButton from "@mui/joy/IconButton";
 import Typography from "@mui/joy/Typography";
-import BookmarkAdd from "@mui/icons-material/BookmarkAddOutlined";
 import { CssVarsProvider } from "@mui/joy/styles";
-import ButtonGroup from '@mui/material/ButtonGroup';
+import HorizontalScroll from "react-horizontal-scrolling";
+import Avatar from "@mui/joy/Avatar";
+import Link from "@mui/joy/Link";
+import MenuBookRoundedIcon from '@mui/icons-material/MenuBookRounded';
 
 const FeatureList = [
   {
     title: "🚧 Docs",
+    href: "/docs",
+    icon: (
+      <MenuBookRoundedIcon />
+    ),
     Svg: require("/img/undraw_typewriter.svg").default,
     description: (
       <>
@@ -23,16 +28,18 @@ const FeatureList = [
         subsidiaries.
       </>
     ),
-    button: (
-      <>
-        <Link className="button button--primary" to="/docs">
-          <Translate>Read Now!</Translate>
-        </Link>
-      </>
-    ),
+    // button: (
+    //   <>
+    //     <Link className="button button--primary" to="/docs">
+    //       <Translate>Read Now!</Translate>
+    //     </Link>
+    //   </>
+    // ),
   },
   {
     title: "Guides",
+    href: "/blog",
+    icon: "<MenuBookRoundedIcon />",
     Svg: require("/img/undraw_typewriter.svg").default,
     description: <>Tech Based Blog for Enthusiasts.</>,
     button: (
@@ -45,6 +52,8 @@ const FeatureList = [
   },
   {
     title: "Apps",
+    href: "/apps",
+    icon: "",
     Svg: require("/img/undraw_develop_app.svg").default,
     description: (
       <>
@@ -64,6 +73,8 @@ const FeatureList = [
   },
   {
     title: "Contact Us",
+    href: "/contact",
+    icon: "",
     Svg: require("/img/undraw_typewriter.svg").default,
     description: (
       <>
@@ -84,6 +95,8 @@ const FeatureList = [
   },
   {
     title: "WebDev's Crafts",
+    href: "/webdev-crafts",
+    icon: "",
     Svg: require("/img/undraw_typewriter.svg").default,
     description: (
       <>
@@ -101,6 +114,8 @@ const FeatureList = [
   },
   // {
   //   title: "Donate Us",
+  //   href: "/donate-us",
+  //   icon: "",
   //   Svg: require("/img/undraw_typewriter.svg").default,
   //   description: (
   //     <>
@@ -117,6 +132,8 @@ const FeatureList = [
   // },
   {
     title: "🚧 App Publisher for Google Play",
+    href: "/solutions/google-play-developers",
+    icon: "",
     Svg: require("/img/undraw_android.svg").default,
     description: (
       <>
@@ -137,6 +154,8 @@ const FeatureList = [
   },
   {
     title: "🚧 Business Mail Service",
+    href: "/solutions/enterprise-mail-solution",
+    icon: "",
     Svg: require("/img/undraw_typewriter.svg").default,
     description: (
       <>
@@ -157,6 +176,8 @@ const FeatureList = [
   },
   {
     title: "🚧 Business Meeting Service",
+    href: "/solutions/enterprise-meeting-solution",
+    icon: "",
     Svg: require("/img/undraw_typewriter.svg").default,
     description: (
       <>
@@ -177,6 +198,8 @@ const FeatureList = [
   },
   {
     title: "🚧 Anonymous VPN",
+    href: "/solutions/vpn",
+    icon: "",
     Svg: require("/img/undraw_typewriter.svg").default,
     description: (
       <>
@@ -195,6 +218,8 @@ const FeatureList = [
   },
   {
     title: "DNS Lookup",
+    href: "https://digwebinterface.com",
+    icon: "",
     Svg: require("/img/undraw_typewriter.svg").default,
     description: (
       <>
@@ -215,6 +240,8 @@ const FeatureList = [
   },
   {
     title: "SpeedTest",
+    href: "/tools/speedtest",
+    icon: "",
     Svg: require("/img/undraw_typewriter.svg").default,
     description: (
       <>
@@ -228,16 +255,28 @@ const FeatureList = [
         <Link className="button button--primary" to="/tools/speedtest">
           <Translate>SpeedTest Now!</Translate>
         </Link>
+        <Button component="a" href="/tools/speedtest" size="sm" variant="soft">
+          Explore Now!
+        </Button>
       </>
     ),
   },
   {
     title: "Web Tools",
+    href: "https://www.webtoolhub.com/",
+    icon: "",
     Svg: require("/img/undraw_typewriter.svg").default,
     description: <>Best Web Tools Just for You by Tech Fiddle!</>,
     button: (
       <>
-        <Button component="a" href="https://digwebinterface.com/" size="sm" variant="soft">Explore Now!</Button>
+        <Button
+          component="a"
+          href="https://digwebinterface.com/"
+          size="sm"
+          variant="soft"
+        >
+          Explore Now!
+        </Button>
       </>
     ),
   },
@@ -247,7 +286,7 @@ const FeatureList = [
     description: <>Legal Documents for Tech Fiddle.</>,
     button: (
       <>
-            <div className="button-group button-group--block">
+        <div className="button-group button-group--block">
           <Button
             component="a"
             href="/legal/terms-of-service"
@@ -275,21 +314,7 @@ const FeatureList = [
           >
             Cookie Policy
           </Button>
-          </div>
-        {/* <div className="button-group button-group--block">
-          <Link className="button button--primary" to="/legal/terms-of-service">
-            <i class="fa-regular fa-file"></i>
-            <Translate>Terms of Service</Translate>
-          </Link>
-          <Link className="button button--primary" to="/legal/privacy-policy">
-            <i class="fa-regular fa-file"></i>
-            <Translate>Privacy Policy</Translate>
-          </Link>
-          <Link className="button button--primary" to="/legal/cookie-policy">
-            <i class="fa-regular fa-file"></i>
-            <Translate>Cookie Policy</Translate>
-          </Link>
-        </div> */}
+        </div>
       </>
     ),
   },
@@ -299,35 +324,33 @@ const FeatureList = [
     description: <>Connect with Tech Fiddle!</>,
     button: (
       <>
-      <div className="button-group button-group--block">
-          <Button
-            component="a"
-            href="https://github.com/Comp-Labs"
-            size="sm"
-            variant="soft"
-            startDecorator={<i class="fa-brands fa-github"></i>}
-          >
-            GitHub
-          </Button>
-          <Button
-            component="a"
-            href="https://youtube.com/channel/UCL6pKeSCbJkPohM2PUZbqQA"
-            size="sm"
-            variant="soft"
-            startDecorator={<i class="fa-brands fa-youtube"></i>}
-          >
-            YouTube
-          </Button>
-          <Button
-            component="a"
-            href="https://linktr.ee/complabs"
-            size="sm"
-            variant="soft"
-            startDecorator={<i class="fa-soft fa-tree"></i>}
-          >
-            LinkTree
-          </Button>
-          </div>
+        <Button
+          component="a"
+          href="https://github.com/Comp-Labs"
+          size="sm"
+          variant="soft"
+          startDecorator={<i class="fa-brands fa-github"></i>}
+        >
+          GitHub
+        </Button>
+        <Button
+          component="a"
+          href="https://youtube.com/channel/UCL6pKeSCbJkPohM2PUZbqQA"
+          size="sm"
+          variant="soft"
+          startDecorator={<i class="fa-brands fa-youtube"></i>}
+        >
+          YouTube
+        </Button>
+        <Button
+          component="a"
+          href="https://linktr.ee/complabs"
+          size="sm"
+          variant="soft"
+          startDecorator={<i class="fa-solid fa-tree"></i>}
+        >
+          LinkTree
+        </Button>
       </>
     ),
   },
@@ -349,49 +372,40 @@ const FeatureList = [
 //   );
 // }
 
-function Feature({ Svg, title, description, button }) {
+function Feature({ Svg, title, description, button, href, subtitle, icon }) {
   return (
     <CssVarsProvider>
-      <div className={clsx("col col--6")}>
-        <div className="flex">
-          <Card color="primary" variant="outlined" sx={{ width: 320 }}>
-            <AspectRatio minHeight="120px" maxHeight="200px" sx={{ my: 2 }}>
-              <Svg className="featureSvg" alt={title} loading="lazy" />
-            </AspectRatio>
-            <Typography level="h2" fontSize="md" sx={{ mb: 0.5 }}>
-              {title}
+      <Card
+        color="primary"
+        sx={{
+          bgcolor: "background.level1",
+          "&:hover, &:focus-within": {
+            bgcolor: "background.level2",
+          },
+          boxShadow: "inset 0 1px 0 0 rgb(255 255 255 / 5%)",
+        }}
+      >
+        <Box sx={{ display: "flex", gap: 2, mb: 2 }}>
+          <Avatar size="lg" src={icon} />
+          <div>
+            <Typography component="div">
+              <Link
+                overlay
+                href={href}
+                textColor="inherit"
+                underline="none"
+                fontWeight="md"
+              >
+                {title}
+              </Link>
             </Typography>
-            <Typography level="body2">{description}</Typography>
-            <IconButton
-              aria-label="bookmark Bahamas Islands"
-              variant="plain"
-              color="neutral"
-              size="sm"
-              sx={{ position: "absolute", top: "0.5rem", right: "0.5rem" }}
-            >
-              <BookmarkAdd />
-            </IconButton>
-            <Box>
-              {/* <div>
-            <Typography level="body3">Total price:</Typography>
-            <Typography fontSize="lg" fontWeight="lg">
-              $2,900
-            </Typography>
-          </div> */}
-              {/* <Button
-          variant="soft"
-          size="sm"
-          color="primary"
-          aria-label="Explore Bahamas Islands"
-          sx={{ ml: 'auto', fontWeight: 600 }}
-        >
-          Explore
-        </Button> */}
-              {button}
-            </Box>
-          </Card>
-        </div>
-      </div>
+            <Typography level="body2">{subtitle}</Typography>
+          </div>
+        </Box>
+        <Typography level="body2" display="flex" alignItems="center" gap={0.5}>
+          {description}
+        </Typography>
+      </Card>
     </CssVarsProvider>
   );
 }
@@ -418,14 +432,15 @@ function Feature({ Svg, title, description, button }) {
 
 export default function HomepageFeatures() {
   return (
-    <section className="features">
-      <div className="container">
-        <div className="row">
+    <section>
+      <div className="features">
+        <div className="col--col--6">
           {FeatureList.map((props, idx) => (
             <Feature key={idx} {...props} />
           ))}
-        </div>
+          </div>
       </div>
+      <hr></hr>
     </section>
   );
 }
