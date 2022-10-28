@@ -349,7 +349,7 @@ const FeatureList = [
           variant="soft"
           startDecorator={<i class="fa-solid fa-tree"></i>}
         >
-          LinkTree
+          Linktree
         </Button>
       </>
     ),

@@ -473,7 +473,7 @@ const darkCodeTheme = require("prism-react-renderer/themes/dracula");
                 //   href: "https://discord.gg/GAbzAGKccW",
                 // },
                 {
-                  label: "LinkTree",
+                  label: "Linktree",
                   href: "https://linktr.ee/complabs",
                 },
                 {
@@ -489,23 +489,23 @@ const darkCodeTheme = require("prism-react-renderer/themes/dracula");
               title: "🚧 In Development",
               items: [
                 {
-                  label: "🚧 Docs",
+                  label: "Docs",
                   to: "/docs/",
                 },
                 {
-                  label: "🚧 App Publishing Solution",
+                  label: "App Publishing Solution",
                   to: "/solutions/google-play-developers",
                 },
                 {
-                  label: "🚧 Business Meeting Service",
+                  label: "Business Meeting Service",
                   to: "/solutions/enterprise-meeting-solution",
                 },
                 {
-                  label: "🚧 Business Mail Service",
+                  label: "Business Mail Service",
                   to: "/solutions/enterprise-mail-solution",
                 },
                 {
-                  label: "🚧 Anonymous VPN",
+                  label: "Anonymous VPN",
                   to: "/solutions/vpn",
                 },
               ],

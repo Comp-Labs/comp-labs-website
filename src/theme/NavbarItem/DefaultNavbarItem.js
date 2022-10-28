@@ -9,13 +9,13 @@ function DefaultNavbarItemDesktop({
   ...props
 }) {
   const element = (
-    <CssVarsProvider>
-    <Button
-      color="neutral"
-      onClick={() => { }}
-      size="sm"
-      variant="plain"
-    >
+    // <CssVarsProvider>
+    // <Button
+    //   color="neutral"
+    //   onClick={() => { }}
+    //   size="sm"
+    //   variant="plain"
+    // >
       <NavbarNavLink
         className={clsx(
           isDropdownItem ? 'dropdown__link' : 'navbar__item navbar__link',
@@ -24,8 +24,8 @@ function DefaultNavbarItemDesktop({
         isDropdownLink={isDropdownItem}
         {...props}
       />
-    </Button>
-    </CssVarsProvider>
+    // </Button>
+    // </CssVarsProvider>
   );
   if (isDropdownItem) {
     return <li>{element}</li>;

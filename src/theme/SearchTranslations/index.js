@@ -154,7 +154,7 @@ const translations = {
   },
   placeholder: translate({
     id: 'theme.SearchModal.placeholder',
-    message: 'Search docs',
+    message: 'Search...',
     description: 'The placeholder of the input of the DocSearch pop-up modal',
   }),
 };

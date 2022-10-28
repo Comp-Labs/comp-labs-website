@@ -247,7 +247,7 @@ function SearchPageContent() {
         )
       : translate({
           id: 'theme.SearchPage.emptyResultsTitle',
-          message: 'Search the documentation',
+          message: 'Search the Tech Fiddle Website',
           description: 'The search page title for empty query',
         });
   const makeSearch = useEvent((page = 0) => {
@@ -315,12 +315,12 @@ function SearchPageContent() {
               className={styles.searchQueryInput}
               placeholder={translate({
                 id: 'theme.SearchPage.inputPlaceholder',
-                message: 'Type your search here',
+                message: 'Search...',
                 description: 'The placeholder for search page input',
               })}
               aria-label={translate({
                 id: 'theme.SearchPage.inputLabel',
-                message: 'Search',
+                message: 'Search...',
                 description: 'The ARIA label for search page input',
               })}
               onChange={(e) => setSearchQuery(e.target.value)}

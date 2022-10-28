@@ -61,25 +61,25 @@ export default function EmailSubscribe({ sx }: { sx?: SxProps<Theme> }) {
         return (
             <Alert
                 severity="success"
-            sx={[
-                (theme) => ({
-                    maxWidth: { sm: 400 },
-                }),
-                ...(Array.isArray(sx) ? sx : [sx]),
-            ]}
-            iconMapping={{
-                success: (
-                    <CheckCircleRoundedIcon
-                        fontSize="small"
-                    />
-                ),
-            }}
+                sx={[
+                    (theme) => ({
+                        maxWidth: { sm: 400 },
+                    }),
+                    ...(Array.isArray(sx) ? sx : [sx]),
+                ]}
+                iconMapping={{
+                    success: (
+                        <CheckCircleRoundedIcon
+                            fontSize="small"
+                        />
+                    ),
+                }}
             >
-                        <AlertTitle sx={{ typography: 'body2', fontWeight: 700 }}>
-          Thanks! Check your email.
-        </AlertTitle>
-        You should get a <strong>confirmation email</strong> soon. Open it up and confirm your email
-        address so that we can keep you up to date.
+                <AlertTitle sx={{ typography: 'body2', fontWeight: 700 }}>
+                    Thanks! Check your email.
+                </AlertTitle>
+                You should get a <strong>confirmation email</strong> soon. Open it up and confirm your email
+                address so that we can keep you up to date.
                 {/* <Typography fontWeight="lg" mt={0.25}>
                     Thanks! Check your email.
                 </Typography>
@@ -128,9 +128,9 @@ export default function EmailSubscribe({ sx }: { sx?: SxProps<Theme> }) {
                     placeholder="example@email.com"
                     startAdornment={
                         <InputAdornment position="start">
-                          <EmailRoundedIcon />
+                            <EmailRoundedIcon />
                         </InputAdornment>
-                      }
+                    }
                     value={form.email}
                     onChange={(event) => setForm({ email: event.target.value, status: 'initial' })}
                     inputProps={{ required: true }}

@@ -17,10 +17,9 @@ export default function Tag({ permalink, label, count }) {
         component="a"
         href={permalink}
       >
-        {count && <code>{count}</code>}
-        <code>Posts Contain</code>
-        <div className="space"></div>
         {label}
+        {count && <div className="space"></div>}
+        {count && <code>{count}</code>}
       </Chip>
     </CssVarsProvider>
 
@@ -35,13 +34,3 @@ export default function Tag({ permalink, label, count }) {
     // </Link>
   );
 }
-
-{/* <Chip
-        className={clsx(
-          count ? styles.tagWithCount : styles.tagRegular,
-        )}
-        color="primary"
-        variant="soft"
-        component="a"
-        href={permalink}
-      > */}
