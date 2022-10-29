@@ -51,7 +51,7 @@ export default function FooterWrapper(props: {}) {
           loading="lazy"
         />
       </div>
-      <Provider apiKey="pt_6fc6243f4df274525650ea97e4d638"
+      <Provider apiKey="6fc6243f4df274525650ea97e4d638"
         theme={{
           colors: {
             primary: '#22c1c3',

@@ -27,7 +27,6 @@ const DiscordLogo = createSvgIcon(
 
 export function Buttons() {
     return (
-    <CssVarsProvider>
         <Box sx={{ display: 'flex', gap: 1, flexWrap: 'wrap', alignItems: 'center' }}>
             <Tooltip color="neutral" variant="solid" title="GitHub Organisation">
                 <IconButton
@@ -79,13 +78,11 @@ export function Buttons() {
                 </IconButton>
             </Tooltip>
         </Box>
-    </CssVarsProvider>
     );
 }
 
 // export function GitHubButton() {
 //     return (
-//         <CssVarsProvider>
 //             <Tooltip color="neutral" variant="solid" title="GitHub Organisation">
 //                 <IconButton
 //                     component="a"
@@ -97,13 +94,11 @@ export function Buttons() {
 //                     <ThumbUp />
 //                 </IconButton>
 //             </Tooltip>
-//         </CssVarsProvider>
 //     )
 // }
 
 // export function YouTubeButton() {
 //     return (
-//         <CssVarsProvider>
 //             <Tooltip color="neutral" variant="solid" title="YouTube Channel">
 //                 <IconButton
 //                     component="a"
@@ -115,13 +110,11 @@ export function Buttons() {
 //                     <ThumbUp />
 //                 </IconButton>
 //             </Tooltip>
-//         </CssVarsProvider>
 //     )
 // }
 
 // export function DiscordButton() {
 //     return (
-//         <CssVarsProvider>
 //             <Tooltip color="neutral" variant="solid" title="Discord Server">
 //                 <IconButton
 //                     component="a"
@@ -134,13 +127,11 @@ export function Buttons() {
 //                     <ThumbUp />
 //                 </IconButton>
 //             </Tooltip>
-//         </CssVarsProvider>
 //     )
 // }
 
 // export function LinktreeButton() {
 //     return (
-//         <CssVarsProvider>
 //             <Tooltip color="neutral" variant="solid" title="Tech Fiddle Linktree">
 //                 <IconButton
 //                     component="a"
@@ -152,6 +143,5 @@ export function Buttons() {
 //                     <ParkRoundedIcon />
 //                 </IconButton>
 //             </Tooltip>
-//         </CssVarsProvider>
 //     )
 // }

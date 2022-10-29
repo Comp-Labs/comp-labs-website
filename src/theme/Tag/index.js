@@ -7,7 +7,6 @@ import { CssVarsProvider } from "@mui/joy/styles";
 
 export default function Tag({ permalink, label, count }) {
   return (
-    <CssVarsProvider>
       <Chip
         // className={clsx(
         //   count ? styles.tagWithCount : styles.tagRegular,
@@ -21,7 +20,6 @@ export default function Tag({ permalink, label, count }) {
         {count && <div className="space"></div>}
         {count && <code>{count}</code>}
       </Chip>
-    </CssVarsProvider>
 
     // <Link
     //   href={permalink}

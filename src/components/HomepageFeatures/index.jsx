@@ -374,7 +374,6 @@ const FeatureList = [
 
 function Feature({ Svg, title, description, button, href, subtitle, icon }) {
   return (
-    <CssVarsProvider>
       <Card
         color="primary"
         sx={{
@@ -406,7 +405,6 @@ function Feature({ Svg, title, description, button, href, subtitle, icon }) {
           {description}
         </Typography>
       </Card>
-    </CssVarsProvider>
   );
 }
 

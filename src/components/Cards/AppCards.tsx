@@ -146,14 +146,12 @@ function AppCard({ name, image, url }: Props) {
                     <Highlight color={url.color}>{url.status}</Highlight>
                     <br></br><br></br>
                     <Stack direction="row" spacing={1}>
-                    <CssVarsProvider>
                     <Chip size="sm" variant="soft">{url.categories[0]}</Chip>
                     <Chip size="sm" variant="soft">{url.categories[1]}</Chip>
                     <Chip size="sm" variant="soft">{url.categories[2]}</Chip>
                     {/* <Chip size="sm" variant="soft">{url.categories[3]}</Chip>
                     <Chip size="sm" variant="soft">{url.categories[4]}</Chip>
                     <Chip size="sm" variant="soft">{url.categories[5]}</Chip> */}
-                    </CssVarsProvider>
                     </Stack>
                     <br></br>
                     <div className="button-group button-group--block">

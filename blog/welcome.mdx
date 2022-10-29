@@ -10,6 +10,10 @@ hide_table_of_contents: false
 date: 2022-01-01T00:00
 ---
 
+import YouTubeIcon from '@mui/icons-material/YouTube';
+import SellRoundedIcon from '@mui/icons-material/SellRounded';
+import ArchiveRoundedIcon from '@mui/icons-material/ArchiveRounded';
+
 # Welcome!
 
 Select one of the blog posts from the Blog Archive or search using the search box above for your convenience. Happy Learning!
@@ -18,16 +22,14 @@ Select one of the blog posts from the Blog Archive or search using the search bo
 
 As most of our Blog Posts are YouTube Videos, We Recommend You To Go To Our YouTube Channel and Browse our Videos by Clicking on the Button Below. You can see the Blog Archive Below also.<br></br><br></br>
 
-<div className="button-group button-group--block">
-  <Link className="button button--primary" to="/blog/archive">
-    <i class="fa-solid fa-box-archive"></i> Blog Archive
-  </Link>
-  <Link
-    className="button button--primary"
-    to="https://www.youtube.com/channel/UCL6pKeSCbJkPohM2PUZbqQA"
-  >
-    <i class="fa-brands fa-youtube"></i> YouTube Channel
-  </Link>
+<div className="row">
+  <div className="text-align:center">
+  <Button variant="soft" color="primary" component="a" href="/blog/tags" startDecorator={<SellRoundedIcon />}>Filter by Tags</Button>
+  <div className="space" />
+  <Button variant="soft" color="primary" component="a" href="/blog/archive" startDecorator={<ArchiveRoundedIcon />}>Archive</Button>
+  <div className="space" />
+  <Button variant="soft" color="primary" component="a" href="https://www.youtube.com/channel/UCL6pKeSCbJkPohM2PUZbqQA" startDecorator={<YouTubeIcon />}>YouTube Channel</Button>
+</div>
 </div>
 
 :::

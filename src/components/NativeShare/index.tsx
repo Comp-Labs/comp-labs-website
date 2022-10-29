@@ -21,7 +21,6 @@ const onSuccess = (typeofSharing: TypeOfSharing) => {
 
 const NativeShare: React.FC = () => {
     return (
-        <CssVarsProvider>
             <Button
                 onClick={() =>
                     shareWebPage(
@@ -41,7 +40,6 @@ const NativeShare: React.FC = () => {
             >
                 Share
             </Button>
-        </CssVarsProvider>
     );
 };
 
