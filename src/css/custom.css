@@ -1,51 +1,56 @@
+/* Fonts */
+@import "react-alice-carousel/lib/alice-carousel.css";
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@200;300;400;500;600;800&display=swap');
+
+/* @font-face {
+  font-family: Plus Jakarta Sans;
+  font-weight: 200 300 400 500 600 800;
+  font-style: normal;
+  src: url(/static/fonts/FiraCode-VF.woff2) format("woff2-variations"),
+    url(/static/fonts/FiraCode-VF.woff) format("woff-variations");
+} */
+
 @font-face {
   font-family: Fira Code VF;
   font-weight: 300 700;
   font-style: normal;
-  src: url(/static/fonts/FiraCode-VF.woff2) format('woff2-variations'),
-    url(/static/fonts/FiraCode-VF.woff) format('woff-variations');
+  src: url(/static/fonts/FiraCode-VF.woff2) format("woff2-variations"),
+    url(/static/fonts/FiraCode-VF.woff) format("woff-variations");
 }
-
-@font-face {
-  font-family: websiteFont;
-  src: url(/fonts/font3.woff2);
-}
-
-@font-face {
-  font-family: PlusJakartaSans;
-  src: url(/fonts/font3.woff2);
-}
-
-@font-face {
-  font-family: IBMPlexSans;
-  src: url(/fonts/font3.woff2);
-}
-
-@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@700;800&family=Roboto+Flex:opsz,wght@8..144,100;8..144,200;8..144,300;8..144,400;8..144,500;8..144,600;8..144,700;8..144,800;8..144,900;8..144,1000&display=swap');
 
 /* Site Variables Start */
 
 :root {
-   --docs-color-primary: #2160fd;
-   --docs-color-primary-100: #1a90ff;
-   --docs-color-primary-tint: rgba(33, 96, 253, 0.16);
-   --docs-color-primary-tint-light: rgba(33 96 253/0.24);
- 
-   --docs-color-border: #dadde1;
- 
-   --docs-color-text: #000000;
-   --docs-color-text-100: #646464;
- 
-   --docs-color-background: #ffffff;
-   --docs-color-background-100: #f8f8f8;
-   --docs-color-background-200: #efefef;
-   --docs-color-background-300: #dcdcdc;
- 
-   /* Color from prism themes */
-   --docs-color-code-background: #f6f8fa;
- 
-   --docs-color-android: #44db85;
-   --docs-color-apple: var(--docs-color-text) !important;
+  --docs-color-primary: #2160fd;
+  --docs-color-primary-100: #1a90ff;
+  --docs-color-primary-tint: rgba(33, 96, 253, 0.16);
+  --docs-color-primary-tint-light: rgba(33 96 253/0.24);
+
+  --docs-color-border: #dadde1;
+
+  --docs-color-text: #000000;
+  --docs-color-text-100: #646464;
+
+  --docs-color-background: #ffffff;
+  --docs-color-background-100: #f8f8f8;
+  --docs-color-background-200: #efefef;
+  --docs-color-background-300: #dcdcdc;
+
+  /* Color from prism themes */
+  --docs-color-code-background: #f6f8fa;
+
+  --docs-color-android: #44db85;
+  --docs-color-apple: var(--docs-color-text) !important;
+
+  --ifm-spacing-horizontal: 1.5rem;
+
+  --ifm-font-family-base: 'Plus Jakarta Sans', system-ui, -apple-system, Segoe UI,
+  Roboto, Ubuntu, Cantarell, Noto Sans, sans-serif, BlinkMacSystemFont,
+  'Segoe UI', Helvetica, Arial, sans-serif, 'Apple Color Emoji',
+  'Segoe UI Emoji', 'Segoe UI Symbol';
+
+  --ifm-font-family-monospace: 'Fira Code VF', SFMono-Regular, Menlo, Monaco,
+  Consolas, 'Liberation Mono', 'Courier New', monospace;
 
   --ifm-color-primary: #076af7;
   --ifm-color-primary-dark: #065fde;
@@ -56,12 +61,52 @@
   --ifm-color-primary-lightest: #5096fa;
   --ifm-color-info: #25c2a0;
 
+  --ifm-navbar-shadow: none;
+  --ifm-toc-border-color: #dedede;
+
+  --ifm-table-border-color: var(--docs-color-border);
+  --code-border-color: var(--docs-color-border);
+
+  --ifm-code-font-size: 92%;
+  --docusaurus-highlighted-code-line-bg: rgba(147, 178, 244, 0.38);
+
   --site-color-feedback-background: #fff;
   --site-color-favorite-background: #f6fdfd;
   --site-color-tooltip: #fff;
   --site-color-tooltip-background: #353738;
   --site-color-svgIcon-favorite: #e9669e;
   --site-color-checkbox-checked-bg: hsl(167deg 56% 73% / 25%);
+}
+
+html[data-theme="dark"] {
+  --ifm-link-color: #1a90ff;
+  --ifm-tabs-color-active-border: #1a90ff;
+  --ifm-tabs-color-active: #1a90ff;
+
+  --ifm-color-primary: #1a90ff;
+
+  --ifm-footer-background-color: #1c1c1c;
+  --ifm-background-surface-color: #161616;
+  --ifm-background-color: #161616;
+  --ifm-toc-border-color: #2e2e2e;
+
+  --ifm-color-content: #e7e7e7;
+
+  --docusaurus-highlighted-code-line-bg: rgba(105, 105, 105, 0.3);
+}
+
+[data-theme="dark"] {
+  --docs-color-border: #2e2e2e;
+
+  --docs-color-text: #ffffff;
+  --docs-color-text-100: #b4b4b4;
+
+  --docs-color-background: #161616;
+  --docs-color-background-100: #1c1c1c;
+  --docs-color-background-200: #2a2a2a;
+  --docs-color-background-300: #2e2e2e;
+
+  --docs-color-code-background: #1e1e1e;
 }
 
 .docusaurus-highlight-code-line {
@@ -75,8 +120,8 @@ html[data-theme="dark"] .docusaurus-highlight-code-line {
   background-color: rgba(66, 66, 66, 0.3);
 }
 
-html[data-theme="dark"] * {
-  color:#ffffff;
+[data-theme="dark"] body {
+  color: #ffffff;
   background-color: #001e3c;
 }
 
@@ -108,9 +153,9 @@ html[data-theme="dark"] * {
 
 .footerbtns {
   display: flex;
-    justify-content: right;
-    align-items: right;
-  }
+  justify-content: right;
+  align-items: right;
+}
 
 /* .footer__cta a {
   --ifm-link-hover-color: #fff;
@@ -196,14 +241,14 @@ html[data-theme="dark"] .navbar {
 }
 
 b {
-  background: linear-gradient(90deg, #007FFF, #0059B2);
+  background: linear-gradient(90deg, #007fff, #0059b2);
   -webkit-text-fill-color: transparent;
   -webkit-background-clip: text;
   background-clip: text;
 }
 
 h1 {
-  background: linear-gradient(90deg, #007FFF, #0059B2);
+  background: linear-gradient(90deg, #007fff, #0059b2);
   -webkit-text-fill-color: transparent;
   -webkit-background-clip: text;
   background-clip: text;
@@ -234,7 +279,7 @@ html[data-theme="dark"] {
   --site-color-checkbox-checked-bg: hsl(167deg 56% 73% / 10%);
 }
 
-div[class^='announcementBar_'] {
+div[class^="announcementBar_"] {
   --site-announcement-bar-stripe-color1: #fff;
   --site-announcement-bar-stripe-color2: #fff;
 }
@@ -261,15 +306,21 @@ img {
 }
 
 div[class^="announcementBar_"] {
-  --site-announcement-bar-stripe-color1: hsl(var(--site-primary-hue-saturation),
-      85%);
-  --site-announcement-bar-stripe-color2: hsl(var(--site-primary-hue-saturation),
-      95%);
-  background: repeating-linear-gradient(35deg,
-      var(--site-announcement-bar-stripe-color1),
-      var(--site-announcement-bar-stripe-color1) 20px,
-      var(--site-announcement-bar-stripe-color2) 10px,
-      var(--site-announcement-bar-stripe-color2) 40px);
+  --site-announcement-bar-stripe-color1: hsl(
+    var(--site-primary-hue-saturation),
+    85%
+  );
+  --site-announcement-bar-stripe-color2: hsl(
+    var(--site-primary-hue-saturation),
+    95%
+  );
+  background: repeating-linear-gradient(
+    35deg,
+    var(--site-announcement-bar-stripe-color1),
+    var(--site-announcement-bar-stripe-color1) 20px,
+    var(--site-announcement-bar-stripe-color2) 10px,
+    var(--site-announcement-bar-stripe-color2) 40px
+  );
   font-weight: bold;
 }
 
@@ -520,25 +571,39 @@ html[data-theme="dark"] .DocSearch {
   --docsearch-hit-background: var(--ifm-color-emphasis-100);
   /* Footer */
   --docsearch-footer-background: var(--ifm-background-surface-color);
-  --docsearch-key-gradient: linear-gradient(-26.5deg,
-      var(--ifm-color-emphasis-200) 0%,
-      var(--ifm-color-emphasis-100) 100%);
+  --docsearch-key-gradient: linear-gradient(
+    -26.5deg,
+    var(--ifm-color-emphasis-200) 0%,
+    var(--ifm-color-emphasis-100) 100%
+  );
 }
 
 /* Algolia DocSearch End */
 
 /* Custom Font Start */
 
-h1, h2 {
-  color: #0A1929;
-  font-family: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, 'Apple Color Emoji', 'Segoe UI', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Roboto Flex',
-    Oxygen, Ubuntu, Cantarell, 'Arial', 'Open Sans', 'Helvetica Neue', sans-serif !important;
+h1,
+h2 {
+  color: #0a1929;
+  font-family: "Plus Jakarta Sans", -apple-system, BlinkMacSystemFont,
+    "Apple Color Emoji", "Segoe UI", "Segoe UI Emoji", "Segoe UI Symbol",
+    "Roboto Flex", Oxygen, Ubuntu, Cantarell, "Arial", "Open Sans",
+    "Helvetica Neue", sans-serif !important;
 }
 
-h3, h4, h5, h6, p, a, li, footer * {
-  color: #0A1929;
-  font-family: 'IBM Plex Sans', -apple-system, BlinkMacSystemFont, 'Apple Color Emoji', 'Segoe UI', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Roboto Flex',
-    Oxygen, Ubuntu, Cantarell, 'Arial', 'Open Sans', 'Helvetica Neue', sans-serif !important;
+h3,
+h4,
+h5,
+h6,
+p,
+a,
+li,
+footer * {
+  color: #0a1929;
+  font-family: "IBM Plex Sans", -apple-system, BlinkMacSystemFont,
+    "Apple Color Emoji", "Segoe UI", "Segoe UI Emoji", "Segoe UI Symbol",
+    "Roboto Flex", Oxygen, Ubuntu, Cantarell, "Arial", "Open Sans",
+    "Helvetica Neue", sans-serif !important;
 }
 
 /* fallback */
@@ -719,7 +784,7 @@ textarea:focus {
   margin-left: 1px;
 }
 
-[dir='rtl'] .wmf-wp-with-preview::after {
+[dir="rtl"] .wmf-wp-with-preview::after {
   margin-left: auto;
   margin-right: 1px;
 }
@@ -864,7 +929,7 @@ border: 1px solid rgba(255, 255, 255, 0.3);
   /* padding: 2rem 0; */
   text-decoration: none;
   /* color: var(--docs-color-text); */
-/* 
+  /* 
   --ifm-link-hover-decoration: none;
   --ifm-link-hover-color: inherit;
   cursor: pointer;
