@@ -182,7 +182,7 @@ const darkCodeTheme = require("prism-react-renderer/themes/dracula");
       /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
       ({
         zoom: {
-          selector: '.markdown img .document .root',
+          selector: '.markdown img',
           background: {
             light: '#076af7',
             dark: '#076af7'
@@ -246,7 +246,7 @@ const darkCodeTheme = require("prism-react-renderer/themes/dracula");
           apiKey: "d0a38351663330eccb11548d292f41bd",
           contextualSearch: true,
           searchPagePath: 'search',
-          placeholder: "Search Tech Fiddle...",
+          placeholder: "Search...",
         },
         navbar: {
           hideOnScroll: false,

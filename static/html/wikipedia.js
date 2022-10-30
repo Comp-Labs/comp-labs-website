@@ -1,5 +1,5 @@
 wikipediaPreview.init({
     detectLinks: true,
-    root: document.querySelector('.content'),
+    root: document.querySelector('.root'),
     selector: '.wikipedia',
 })

@@ -25,12 +25,9 @@
   --docs-color-primary-100: #1a90ff;
   --docs-color-primary-tint: rgba(33, 96, 253, 0.16);
   --docs-color-primary-tint-light: rgba(33 96 253/0.24);
-
   --docs-color-border: #dadde1;
-
   --docs-color-text: #000000;
   --docs-color-text-100: #646464;
-
   --docs-color-background: #ffffff;
   --docs-color-background-100: #f8f8f8;
   --docs-color-background-200: #efefef;
@@ -109,21 +106,24 @@ html[data-theme="dark"] {
   --docs-color-code-background: #1e1e1e;
 }
 
-.docusaurus-highlight-code-line {
-  background-color: rgba(0, 0, 0, 0.1);
-  display: block;
-  margin: 0 calc(-1 * var(--ifm-pre-padding));
-  padding: 0 var(--ifm-pre-padding);
+pre,
+code {
+  background-color: var(--ifm-color-primary-lightest);
+  font-variant-ligatures: none;
 }
 
-html[data-theme="dark"] .docusaurus-highlight-code-line {
-  background-color: rgba(66, 66, 66, 0.3);
+pre.prism-code {
+  border: 1px solid var(--code-border-color);
 }
 
-[data-theme="dark"] body {
+/* [data-theme="dark"] img {
+  filter: brightness(50%);
+} */
+
+/* [data-theme="dark"] body {
   color: #ffffff;
   background-color: #001e3c;
-}
+} */
 
 /* Footer */
 
@@ -157,21 +157,6 @@ html[data-theme="dark"] .docusaurus-highlight-code-line {
   align-items: right;
 }
 
-/* .footer__cta a {
-  --ifm-link-hover-color: #fff;
-  margin-top: 0.25rem;
-  display: inline-block;
-  padding: 0.25rem 1.5rem;
-  border-radius: 4px;
-  background-color: var(--docs-color-primary);
-  color: #ffffff;
-  text-decoration: none;
-}
-
-.footer__cta a:hover {
-  background-color: var(--ifm-color-primary-darker);
-} */
-
 .footer__data {
   flex: 2;
 }
@@ -181,14 +166,14 @@ html[data-theme="dark"] .docusaurus-highlight-code-line {
 }
 
 .footer__title {
-  font-size: 16px;
+  font-size: 14px;
   /* font-weight: normal;
   color: var(--docs-color-text-100); */
   margin-bottom: 0.5rem;
 }
 
 .footer__item {
-  font-size: 14px;
+  font-size: 12px;
   font-weight: normal;
   color: var(--docs-color-text);
 }
@@ -226,11 +211,99 @@ nav.navbar {
   border-bottom: 1px solid var(--ifm-toc-border-color);
 }
 
+.navbar__item,
+.menu__link {
+  font-size: 14px;
+}
+
+.menu__link {
+  border-radius: 4px 0 0 4px;
+}
+
+.menu__list-item-collapsible:hover {
+  background: none;
+}
+
+ul.menu__list > li > a.menu__link--active {
+  border-right: 1px solid var(--ifm-color-primary);
+}
+
+nav.menu {
+  padding-right: 0;
+  scrollbar-gutter: auto;
+}
+
 html[data-theme="dark"] .navbar {
   backdrop-filter: blur(20px);
   box-shadow: rgb(19 47 76) 0px -1px 1px inset;
   background-color: rgba(10, 25, 41, 0.72);
 }
+
+.navbar-sidebar__item {
+  padding-right: 0;
+}
+
+.navbar-sidebar__back {
+  background: none;
+  font-size: 14px;
+}
+
+.navbar__link,
+.menu__link,
+.table-of-contents__link,
+.pagination-nav,
+.footer {
+  --ifm-link-hover-decoration: none;
+}
+
+.menu__link {
+  /* Background tint only for menu links in sidebar */
+  --ifm-menu-color-background-active: var(--docs-color-primary-tint);
+}
+
+table {
+  border-collapse: collapse;
+  border: none;
+  background-color: transparent;
+
+  text-align: left;
+  font-size: 90%;
+}
+
+table :is(tr, td, th, thead) {
+  --ifm-table-stripe-background: transparent;
+  --table-cell-color: transparent;
+  border: none;
+  background-color: transparent;
+  border-bottom: 1px solid var(--docs-color-border);
+}
+
+table thead tr {
+  border-bottom: 1px solid var(--docs-color-border);
+}
+
+table th {
+  font-weight: 500;
+  font-size: 14px;
+  color: var(--docs-color-text-100);
+}
+
+.tabs {
+  border-bottom: 1px solid var(--docs-color-border);
+}
+
+.tabs__item {
+  --ifm-tabs-padding-vertical: 0.75rem;
+  --ifm-tabs-color-active: var(--docs-color-primary-100);
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0;
+}
+
+.tabs__item--active {
+  border-bottom: 2px solid var(--docs-color-primary-100);
+}
+
+/* Typography */
 
 .vr {
   border-left: 1px solid #000;
@@ -342,6 +415,10 @@ a:hover {
   text-decoration: none;
 }
 
+[data-theme="dark"] a:hover {
+  color: var(--ifm-color-primary);
+}
+
 /* Site Variables End */
 
 /* index.module.css Start */
@@ -358,9 +435,23 @@ a:hover {
   overflow: hidden;
 }
 
-@media screen and (max-width: 996px) {
+/* Mobile Breakpoint */
+
+@media only screen and (max-width: 996px) {
   .heroBanner {
     padding: 2rem;
+  }
+
+  :root {
+    --ifm-spacing-horizontal: 1rem;
+  }
+
+  .footer__row {
+    flex-direction: column;
+  }
+
+  .footer__data {
+    margin-bottom: 3rem;
   }
 }
 
@@ -372,6 +463,28 @@ a:hover {
 
 .appsList {
   text-align: center;
+}
+
+code[data-code='required'] {
+  font-size: 12px;
+  background-color: var(--ifm-color-danger-contrast-background);
+  color: var(--ifm-color-danger);
+}
+
+::selection {
+  background: var(--docs-color-primary);
+  color: #fff;
+}
+
+/**
+ Image caption, use in markdown as:
+ ![Image ALT](./path/to/image)
+ _my image caption_
+ */
+ img + em {
+  text-align: center;
+  display: block;
+  margin-top: 1rem;
 }
 
 /* facebook/docusaurus modules */

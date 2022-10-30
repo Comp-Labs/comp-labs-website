@@ -16,6 +16,9 @@ import TabItem from "@theme/TabItem";
 import Terminal from "@site/src/components/ShowcaseWindow/Terminal";
 import TOCInline from '@theme/TOCInline';
 import YTSubscribe from '@site/src/components/YTSubscribe';
+// Icons
+import TerminalRoundedIcon from '@mui/icons-material/TerminalRounded';
+import ContentCopyRoundedIcon from '@mui/icons-material/ContentCopyRounded';
 
 export default {
   ...MDXComponents,
@@ -35,4 +38,7 @@ export default {
   Terminal: Terminal,
   TOCInline: TOCInline,
   YTSubscribe: YTSubscribe,
+  // Icons
+  TerminalRoundedIcon: TerminalRoundedIcon,
+  ContentCopyRoundedIcon: ContentCopyRoundedIcon,
 };

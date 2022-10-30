@@ -12,15 +12,17 @@ import { CssVarsProvider } from "@mui/joy/styles";
 import HorizontalScroll from "react-horizontal-scrolling";
 import Avatar from "@mui/joy/Avatar";
 import Link from "@mui/joy/Link";
-import MenuBookRoundedIcon from '@mui/icons-material/MenuBookRounded';
+import MenuBookRoundedIcon from "@mui/icons-material/MenuBookRounded";
+import InsertDriveFileRoundedIcon from "@mui/icons-material/InsertDriveFileRounded";
+import ParkRoundedIcon from "@mui/icons-material/ParkRounded";
+import GitHubIcon from "@mui/icons-material/GitHub";
+import YouTubeIcon from "@mui/icons-material/YouTube";
 
 const FeatureList = [
   {
     title: "🚧 Docs",
     href: "/docs",
-    icon: (
-      <MenuBookRoundedIcon />
-    ),
+    icon: <MenuBookRoundedIcon />,
     Svg: require("/img/undraw_typewriter.svg").default,
     description: (
       <>
@@ -292,7 +294,7 @@ const FeatureList = [
             href="/legal/terms-of-service"
             size="sm"
             variant="soft"
-            startDecorator={<i class="fa-regular fa-file"></i>}
+            startDecorator={<InsertDriveFileRoundedIcon />}
           >
             Terms of Service
           </Button>
@@ -301,7 +303,7 @@ const FeatureList = [
             href="/legal/privacy-policy"
             size="sm"
             variant="soft"
-            startDecorator={<i class="fa-regular fa-file"></i>}
+            startDecorator={<InsertDriveFileRoundedIcon />}
           >
             Privacy Policy
           </Button>
@@ -310,7 +312,7 @@ const FeatureList = [
             href="/legal/cookie-policy"
             size="sm"
             variant="soft"
-            startDecorator={<i class="fa-regular fa-file"></i>}
+            startDecorator={<InsertDriveFileRoundedIcon />}
           >
             Cookie Policy
           </Button>
@@ -329,7 +331,7 @@ const FeatureList = [
           href="https://github.com/Comp-Labs"
           size="sm"
           variant="soft"
-          startDecorator={<i class="fa-brands fa-github"></i>}
+          startDecorator={<GitHubIcon />}
         >
           GitHub
         </Button>
@@ -338,7 +340,7 @@ const FeatureList = [
           href="https://youtube.com/channel/UCL6pKeSCbJkPohM2PUZbqQA"
           size="sm"
           variant="soft"
-          startDecorator={<i class="fa-brands fa-youtube"></i>}
+          startDecorator={<YouTubeIcon />}
         >
           YouTube
         </Button>
@@ -347,7 +349,7 @@ const FeatureList = [
           href="https://linktr.ee/complabs"
           size="sm"
           variant="soft"
-          startDecorator={<i class="fa-solid fa-tree"></i>}
+          startDecorator={<ParkRoundedIcon />}
         >
           Linktree
         </Button>
@@ -372,61 +374,66 @@ const FeatureList = [
 //   );
 // }
 
-function Feature({ Svg, title, description, button, href, subtitle, icon }) {
-  return (
-      <Card
-        color="primary"
-        sx={{
-          bgcolor: "background.level1",
-          "&:hover, &:focus-within": {
-            bgcolor: "background.level2",
-          },
-          boxShadow: "inset 0 1px 0 0 rgb(255 255 255 / 5%)",
-        }}
-      >
-        <Box sx={{ display: "flex", gap: 2, mb: 2 }}>
-          <Avatar size="lg" src={icon} />
-          <div>
-            <Typography component="div">
-              <Link
-                overlay
-                href={href}
-                textColor="inherit"
-                underline="none"
-                fontWeight="md"
-              >
-                {title}
-              </Link>
-            </Typography>
-            <Typography level="body2">{subtitle}</Typography>
-          </div>
-        </Box>
-        <Typography level="body2" display="flex" alignItems="center" gap={0.5}>
-          {description}
-        </Typography>
-      </Card>
-  );
-}
-
-// function Feature({ Svg, title, description }) {
+// function Feature({ Svg, title, description, button, href, subtitle, icon }) {
 //   return (
-//     <div className={clsx("card")}>
-//       <div className={clsx("card__image")}>
-//         <div className="text--center">
-//           <Svg className="featureSvg" alt={title} />
-//         </div>
-//         <div className="card__body">
-//           <div className="text--center padding-horiz--md">
-//             <h3>{title}</h3>
-//             <p>{description}</p>
+//       <Card
+//         color="primary"
+//         sx={{
+//           bgcolor: "background.level1",
+//           "&:hover, &:focus-within": {
+//             bgcolor: "background.level2",
+//           },
+//           boxShadow: "inset 0 1px 0 0 rgb(255 255 255 / 5%)",
+//         }}
+//       >
+//         <Box sx={{ display: "flex", gap: 2, mb: 2 }}>
+//           <Avatar size="lg" src={icon} />
+//           <div>
+//             <Typography component="div">
+//               <Link
+//                 overlay
+//                 href={href}
+//                 textColor="inherit"
+//                 underline="none"
+//                 fontWeight="md"
+//               >
+//                 {title}
+//               </Link>
+//             </Typography>
+//             <Typography level="body2">{subtitle}</Typography>
 //           </div>
-//         </div>
-//         <div className="card__footer">
-//         </div>
-//       </div>
-//     </div>
+//         </Box>
+//         <Typography level="body2" display="flex" alignItems="center" gap={0.5}>
+//           {description}
+//         </Typography>
+//       </Card>
 //   );
 // }
+
+function Feature({ Svg, title, description, href, button }) {
+  return (
+    <CssVarsProvider>
+    <div className="col--col--6">
+      <div className={clsx("card")}>
+        <div className={clsx("card__image")}>
+          <div className="text--center">
+            <Svg className="featureSvg" alt={title} />
+          </div>
+          <div className="card__body">
+            <div className="text--center padding-horiz--md">
+              <h3>{title}</h3>
+              <p>{description}</p>
+            </div>
+          </div>
+          <div className="card__footer">
+            {button}
+          </div>
+        </div>
+      </div>
+      </div>
+      </CssVarsProvider>
+  );
+}
 
 export default function HomepageFeatures() {
   return (
@@ -436,7 +443,7 @@ export default function HomepageFeatures() {
           {FeatureList.map((props, idx) => (
             <Feature key={idx} {...props} />
           ))}
-          </div>
+        </div>
       </div>
       <hr></hr>
     </section>
