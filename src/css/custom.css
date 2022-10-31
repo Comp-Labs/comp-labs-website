@@ -108,7 +108,7 @@ html[data-theme="dark"] {
 
 pre,
 code {
-  background-color: var(--ifm-color-primary-lightest);
+  /* background-color: #e8f4ff; */
   font-variant-ligatures: none;
 }
 
@@ -116,9 +116,9 @@ pre.prism-code {
   border: 1px solid var(--code-border-color);
 }
 
-/* [data-theme="dark"] img {
-  filter: brightness(50%);
-} */
+[data-theme="dark"] img {
+  filter: brightness(75%);
+}
 
 /* [data-theme="dark"] body {
   color: #ffffff;
@@ -693,32 +693,6 @@ html[data-theme="dark"] .DocSearch {
 
 /* Algolia DocSearch End */
 
-/* Custom Font Start */
-
-h1,
-h2 {
-  color: #0a1929;
-  font-family: "Plus Jakarta Sans", -apple-system, BlinkMacSystemFont,
-    "Apple Color Emoji", "Segoe UI", "Segoe UI Emoji", "Segoe UI Symbol",
-    "Roboto Flex", Oxygen, Ubuntu, Cantarell, "Arial", "Open Sans",
-    "Helvetica Neue", sans-serif !important;
-}
-
-h3,
-h4,
-h5,
-h6,
-p,
-a,
-li,
-footer * {
-  color: #0a1929;
-  font-family: "IBM Plex Sans", -apple-system, BlinkMacSystemFont,
-    "Apple Color Emoji", "Segoe UI", "Segoe UI Emoji", "Segoe UI Symbol",
-    "Roboto Flex", Oxygen, Ubuntu, Cantarell, "Arial", "Open Sans",
-    "Helvetica Neue", sans-serif !important;
-}
-
 /* fallback */
 /* @font-face {
   font-family: "Material Icons";
@@ -744,12 +718,16 @@ footer * {
   -webkit-font-smoothing: antialiased;
 } */
 
-/* Custom Font End */
-
 /* Docusaurus Zoom Start */
 
 .medium-zoom-overlay,
 .medium-zoom-image {
+  z-index: 9999;
+}
+
+[data-theme="dark"] .medium-zoom-overlay,
+.medium-zoom-image {
+  background-color: var(--docsearch-footer-background);
   z-index: 9999;
 }
 

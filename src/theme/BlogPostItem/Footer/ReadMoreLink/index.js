@@ -1,8 +1,6 @@
 import React from 'react';
 import Translate, { translate } from '@docusaurus/Translate';
 import Link from '@docusaurus/Link';
-import Button from "@mui/joy/Button";
-import {CssVarsProvider} from "@mui/joy/styles";
 function ReadMoreLabel() {
   return (
     <b>
