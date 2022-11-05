@@ -165,6 +165,7 @@ export function TagOne({ name, image, url }: Props) {
 
 function AppCard({ name, image, url }: Props) {
   return (
+    <CssVarsProvider>
     <Card variant="outlined" sx={{ maxWidth: 200, boxShadow: 'none', ...sx }}>
       <CardOverflow>
         <AspectRatio>
@@ -194,6 +195,7 @@ function AppCard({ name, image, url }: Props) {
         <Typography level="body2">A very very long description.</Typography>
       </Box>
     </Card>
+    </CssVarsProvider>
   );
 }
 
