@@ -25,6 +25,7 @@ export default function BackToTopButton() {
     //   size="sm"
     //   variant="soft"
     // />
+    <Tooltip title="Scroll to top" variant="solid">
     <button
       aria-label={translate({
         id: 'theme.BackToTopButton.buttonAriaLabel',
@@ -40,5 +41,6 @@ export default function BackToTopButton() {
       type="button"
       onClick={scrollToTop}
     />
+    </Tooltip>
   );
 }

@@ -344,7 +344,7 @@ const darkCodeTheme = require("prism-react-renderer/themes/dracula");
             {
               type: 'custom-Buttons',
               position: "right",
-              itemProp: 44, 
+              itemProp: 44,
               anotherProp: "xyz",
             },
           ],
@@ -382,6 +382,13 @@ const darkCodeTheme = require("prism-react-renderer/themes/dracula");
                 {
                   label: "Donate Us!",
                   to: "/donate-us",
+                },
+                {
+                  html: `
+                <a href="https://www.netlify.com" target="_blank" rel="noreferrer noopener" aria-label="Deploys by Netlify">
+                  <img src="https://www.netlify.com/img/global/badges/netlify-color-accent.svg" alt="Deploys by Netlify" title="Deploys by Netlify" width="114" height="51" />
+                </a>
+              `,
                 },
               ],
             },
@@ -457,34 +464,34 @@ const darkCodeTheme = require("prism-react-renderer/themes/dracula");
             //     },
             //   ],
             // },
-            {
-              title: "Social",
-              items: [
-                {
-                  label: "GitHub",
-                  href: "https://github.com/Comp-Labs",
-                },
-                {
-                  label: "YouTube",
-                  href: "https://youtube.com/channel/UCL6pKeSCbJkPohM2PUZbqQA",
-                },
-                // {
-                //   label: "Discord",
-                //   href: "https://discord.gg/GAbzAGKccW",
-                // },
-                {
-                  label: "Linktree",
-                  href: "https://linktr.ee/complabs",
-                },
-                {
-                  html: `
-                <a href="https://www.netlify.com" target="_blank" rel="noreferrer noopener" aria-label="Deploys by Netlify">
-                  <img src="https://www.netlify.com/img/global/badges/netlify-color-accent.svg" alt="Deploys by Netlify" title="Deploys by Netlify" width="114" height="51" />
-                </a>
-              `,
-                },
-              ],
-            },
+            // {
+            //   title: "Social",
+            //   items: [
+            //     {
+            //       label: "GitHub",
+            //       href: "https://github.com/Comp-Labs",
+            //     },
+            //     {
+            //       label: "YouTube",
+            //       href: "https://youtube.com/channel/UCL6pKeSCbJkPohM2PUZbqQA",
+            //     },
+            //     // {
+            //     //   label: "Discord",
+            //     //   href: "https://discord.gg/GAbzAGKccW",
+            //     // },
+            //     {
+            //       label: "Linktree",
+            //       href: "https://linktr.ee/complabs",
+            //     },
+            //     {
+            //       html: `
+            //     <a href="https://www.netlify.com" target="_blank" rel="noreferrer noopener" aria-label="Deploys by Netlify">
+            //       <img src="https://www.netlify.com/img/global/badges/netlify-color-accent.svg" alt="Deploys by Netlify" title="Deploys by Netlify" width="114" height="51" />
+            //     </a>
+            //   `,
+            //     },
+            //   ],
+            // },
             {
               title: "🚧 In Development",
               items: [

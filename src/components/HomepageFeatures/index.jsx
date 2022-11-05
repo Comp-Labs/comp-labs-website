@@ -358,21 +358,22 @@ const FeatureList = [
   },
 ];
 
-// function Feature({ Svg, title, description }) {
-//   return (
-//     <div className={clsx("col col--6")}>
-//       <div className={clsx('card')}>
-//       <div className="text--center">
-//         <Svg className="featureSvg" alt={title} />
-//       </div>
-//       <div className="text--center padding-horiz--md">
-//         <h3>{title}</h3>
-//         <p>{description}</p>
-//       </div>
-//       </div>
-//     </div>
-//   );
-// }
+function Feature({ Svg, title, description, href, button, subtitle, icon }) {
+  return (
+    <div className={clsx("col col--6")}>
+      <div className={clsx('card')}>
+      <div className="text--center">
+        <Svg className="featureSvg" alt={title} />
+      </div>
+      <div className="text--center padding-horiz--md">
+        <h3>{title}</h3>
+        <p>{description}</p>
+        {button}
+      </div>
+      </div>
+    </div>
+  );
+}
 
 // function Feature({ Svg, title, description, button, href, subtitle, icon }) {
 //   return (
@@ -410,30 +411,30 @@ const FeatureList = [
 //   );
 // }
 
-function Feature({ Svg, title, description, href, button }) {
-  return (
-    <CssVarsProvider>
-    <div className="col--col--6">
-      <div className={clsx("card")}>
-        <div className={clsx("card__image")}>
-          <div className="text--center">
-            <Svg className="featureSvg" alt={title} />
-          </div>
-          <div className="card__body">
-            <div className="text--center padding-horiz--md">
-              <h3>{title}</h3>
-              <p>{description}</p>
-            </div>
-          </div>
-          <div className="card__footer">
-            {button}
-          </div>
-        </div>
-      </div>
-      </div>
-      </CssVarsProvider>
-  );
-}
+// function Feature({ Svg, title, description, href, button }) {
+//   return (
+//     <CssVarsProvider>
+//     <div className="col--col--6">
+//       <div className={clsx("card")}>
+//         <div className={clsx("card__image")}>
+//           <div className="text--center">
+//             <Svg className="featureSvg" alt={title} />
+//           </div>
+//           <div className="card__body">
+//             <div className="text--center padding-horiz--md">
+//               <h3>{title}</h3>
+//               <p>{description}</p>
+//             </div>
+//           </div>
+//           <div className="card__footer">
+//             {button}
+//           </div>
+//         </div>
+//       </div>
+//       </div>
+//       </CssVarsProvider>
+//   );
+// }
 
 export default function HomepageFeatures() {
   return (

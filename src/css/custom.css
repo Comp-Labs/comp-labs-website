@@ -42,12 +42,12 @@
   --ifm-spacing-horizontal: 1.5rem;
 
   --ifm-font-family-base: 'Plus Jakarta Sans', system-ui, -apple-system, Segoe UI,
-  Roboto, Ubuntu, Cantarell, Noto Sans, sans-serif, BlinkMacSystemFont,
-  'Segoe UI', Helvetica, Arial, sans-serif, 'Apple Color Emoji',
-  'Segoe UI Emoji', 'Segoe UI Symbol';
+    Roboto, Ubuntu, Cantarell, Noto Sans, sans-serif, BlinkMacSystemFont,
+    'Segoe UI', Helvetica, Arial, sans-serif, 'Apple Color Emoji',
+    'Segoe UI Emoji', 'Segoe UI Symbol';
 
   --ifm-font-family-monospace: 'Fira Code VF', SFMono-Regular, Menlo, Monaco,
-  Consolas, 'Liberation Mono', 'Courier New', monospace;
+    Consolas, 'Liberation Mono', 'Courier New', monospace;
 
   --ifm-color-primary: #076af7;
   --ifm-color-primary-dark: #065fde;
@@ -224,7 +224,7 @@ nav.navbar {
   background: none;
 }
 
-ul.menu__list > li > a.menu__link--active {
+ul.menu__list>li>a.menu__link--active {
   border-right: 1px solid var(--ifm-color-primary);
 }
 
@@ -379,21 +379,15 @@ img {
 }
 
 div[class^="announcementBar_"] {
-  --site-announcement-bar-stripe-color1: hsl(
-    var(--site-primary-hue-saturation),
-    85%
-  );
-  --site-announcement-bar-stripe-color2: hsl(
-    var(--site-primary-hue-saturation),
-    95%
-  );
-  background: repeating-linear-gradient(
-    35deg,
-    var(--site-announcement-bar-stripe-color1),
-    var(--site-announcement-bar-stripe-color1) 20px,
-    var(--site-announcement-bar-stripe-color2) 10px,
-    var(--site-announcement-bar-stripe-color2) 40px
-  );
+  --site-announcement-bar-stripe-color1: hsl(var(--site-primary-hue-saturation),
+      85%);
+  --site-announcement-bar-stripe-color2: hsl(var(--site-primary-hue-saturation),
+      95%);
+  background: repeating-linear-gradient(35deg,
+      var(--site-announcement-bar-stripe-color1),
+      var(--site-announcement-bar-stripe-color1) 20px,
+      var(--site-announcement-bar-stripe-color2) 10px,
+      var(--site-announcement-bar-stripe-color2) 40px);
   font-weight: bold;
 }
 
@@ -427,6 +421,20 @@ a:hover {
  * CSS files with the .module.css suffix will be treated as CSS modules
  * and scoped locally.
  */
+
+.heroCard {
+  background-image: url("https://cdn.jsdelivr.net/gh/Comp-Labs/cdn/img/defaultbg.jpg");
+  background: rgba(255, 255, 255, 0.25);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border-radius: 24px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  min-height: 544px;
+  padding: 56px;
+  text-align: center;
+  justify-content: center;
+}
 
 .heroBanner {
   padding: 4rem 0;
@@ -481,7 +489,7 @@ code[data-code='required'] {
  ![Image ALT](./path/to/image)
  _my image caption_
  */
- img + em {
+img+em {
   text-align: center;
   display: block;
   margin-top: 1rem;
@@ -684,11 +692,9 @@ html[data-theme="dark"] .DocSearch {
   --docsearch-hit-background: var(--ifm-color-emphasis-100);
   /* Footer */
   --docsearch-footer-background: var(--ifm-background-surface-color);
-  --docsearch-key-gradient: linear-gradient(
-    -26.5deg,
-    var(--ifm-color-emphasis-200) 0%,
-    var(--ifm-color-emphasis-100) 100%
-  );
+  --docsearch-key-gradient: linear-gradient(-26.5deg,
+      var(--ifm-color-emphasis-200) 0%,
+      var(--ifm-color-emphasis-100) 100%);
 }
 
 /* Algolia DocSearch End */

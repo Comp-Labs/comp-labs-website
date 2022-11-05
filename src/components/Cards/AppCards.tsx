@@ -2,7 +2,7 @@
 
 /* eslint-disable global-require */
 
-import React from 'react';
+import * as React from 'react';
 import clsx from 'clsx';
 import Translate from '@docusaurus/Translate';
 import Link from '@docusaurus/Link';
@@ -129,47 +129,135 @@ export function TagOne({ name, image, url }: Props) {
     }
 }
 
+{/* <Card variant="outlined" sx={{ maxWidth: 200, boxShadow: 'none', ...sx }}>
+<CardOverflow>
+  <AspectRatio>
+    <img
+      src="https://cdn.jsdelivr.net/gh/Comp-Labs/cdn/img/defaultbg.jpg"
+      loading="lazy"
+      alt="Background"
+    />
+  </AspectRatio>
+</CardOverflow>
+<Box sx={{ mt: -3, width: 48 }}>
+  <AspectRatio ratio="1">
+    <img
+      src={image}
+      loading="lazy"
+      alt={name}
+      title={name}
+    />
+  </AspectRatio>
+</Box>
+<Box>
+  <Typography fontWeight="lg" mt={1.5}>
+    <Link href={url.viewNow} overlay color="neutral">
+      {name}
+    </Link>
+  </Typography>
+  <Typography level="body2">A very very long description.</Typography>
+</Box>
+</Card> */}
+
 function AppCard({ name, image, url }: Props) {
     return (
-            <div className={clsx('card')}>
-                <div className={clsx('card__image')}>
-                    <center>
-                    <Link to={url.viewNow}>
-                        <img src={image} alt={name} title={name} width={url.width} height={url.height}></img>
-                    </Link>
-                    </center>
-                </div>
-                <div className="card__body">
-                    <h3>{name}</h3>
-                </div>
-                <div className="card__footer">
-                    <Highlight color={url.color}>{url.status}</Highlight>
-                    <br></br><br></br>
-                    <Stack direction="row" spacing={1}>
-                    <Chip size="sm" variant="soft">{url.categories[0]}</Chip>
-                    <Chip size="sm" variant="soft">{url.categories[1]}</Chip>
-                    <Chip size="sm" variant="soft">{url.categories[2]}</Chip>
-                    {/* <Chip size="sm" variant="soft">{url.categories[3]}</Chip>
-                    <Chip size="sm" variant="soft">{url.categories[4]}</Chip>
-                    <Chip size="sm" variant="soft">{url.categories[5]}</Chip> */}
-                    </Stack>
-                    <br></br>
-                    <div className="button-group button-group--block">
-                        <Link className="button button--primary" to={url.viewNow}>
-                            <i className="fa-solid fa-arrow-up-right-from-square"></i> View Now
-                        </Link>
-                    </div>
-                </div>
-            </div>
+    <Card variant="outlined" sx={{ maxWidth: 200, boxShadow: 'none', ...sx }}>
+<CardOverflow>
+  <AspectRatio>
+    <img
+      src="https://cdn.jsdelivr.net/gh/Comp-Labs/cdn/img/defaultbg.jpg"
+      loading="lazy"
+      alt="Background"
+    />
+  </AspectRatio>
+</CardOverflow>
+<Box sx={{ mt: -3, width: 48 }}>
+  <AspectRatio ratio="1">
+    <img
+      src={image}
+      loading="lazy"
+      alt={name}
+      title={name}
+    />
+  </AspectRatio>
+</Box>
+<Box>
+  <Typography fontWeight="lg" mt={1.5}>
+    <Link href={url.viewNow} overlay color="neutral">
+      {name}
+    </Link>
+  </Typography>
+  <Typography level="body2">A very very long description.</Typography>
+</Box>
+</Card>
     );
 }
 
+//             <div className={clsx('card')}>
+//                 <div className={clsx('card__image')}>
+//                     <center>
+//                     <Link to={url.viewNow}>
+//                         <img src={image} alt={name} title={name} width={url.width} height={url.height}></img>
+//                     </Link>
+//                     </center>
+//                 </div>
+//                 <div className="card__body">
+//                     <h3>{name}</h3>
+//                 </div>
+//                 <div className="card__footer">
+//                     <Highlight color={url.color}>{url.status}</Highlight>
+//                     <br></br><br></br>
+//                     <Stack direction="row" spacing={1}>
+//                     <Chip size="sm" variant="soft">{url.categories[0]}</Chip>
+//                     <Chip size="sm" variant="soft">{url.categories[1]}</Chip>
+//                     <Chip size="sm" variant="soft">{url.categories[2]}</Chip>
+//                     {/* <Chip size="sm" variant="soft">{url.categories[3]}</Chip>
+//                     <Chip size="sm" variant="soft">{url.categories[4]}</Chip>
+//                     <Chip size="sm" variant="soft">{url.categories[5]}</Chip> */}
+//                     </Stack>
+//                     <br></br>
+//                     <div className="button-group button-group--block">
+//                         <Link className="button button--primary" to={url.viewNow}>
+//                             <i className="fa-solid fa-arrow-up-right-from-square"></i> View Now
+//                         </Link>
+//                     </div>
+//                 </div>
+//             </div>
+
 export function AppCardsRow(): JSX.Element {
+    const [sx, setSx] = React.useState({});
     return (
-        <div className="row cardRow">
-            {AppCards.map((apps) => (
-                <AppCard key={apps.name} {...apps} />
-            ))}
-        </div>
+        <Box
+        sx={{
+          width: '100%',
+          display: 'grid',
+          gridTemplateColumns: { xs: '1fr', md: '1fr auto' },
+          gridTemplateRows: '1fr auto',
+          gap: 2,
+          mt: 2,
+          '& .markdown-body pre': {
+            margin: 0,
+            borderRadius: 'xs',
+          },
+        }}
+      >
+        <Box
+          sx={{
+            alignSelf: 'center',
+            justifyContent: 'center',
+            mx: 'auto',
+            display: 'flex',
+            placeSelf: 'center',
+            gap: 2,
+            flexWrap: 'wrap',
+          }}
+        >
+            </Box>
+            </Box>
+        // <div className="row cardRow">
+        //     {AppCards.map((apps) => (
+        //         <AppCard key={apps.name} {...apps} />
+        //     ))}
+        // </div>
     );
 }
