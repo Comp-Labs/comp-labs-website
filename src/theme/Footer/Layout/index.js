@@ -59,6 +59,7 @@ export default function FooterLayout({ style, links, logo, copyright }) {
     <div id="status">&nbsp;</div>
     </div> */}
         {/* <script type="text/javascript" src="https://cdn.jsdelivr.net/gh/Comp-Labs/cdn/js/loader.js"></script> */}
+        <script defer src="https://chirpy.dev/bootstrap/comment.js" data-chirpy-domain="complabs.in" data-chirpy-theme="system"></script>
         <div class="popup-container"></div>
         <script type="text/javascript" src="https://unpkg.com/wikipedia-preview@latest/dist/wikipedia-preview.production.js"></script>
         <script type="text/javascript" src="/html/wikipedia.js"></script>

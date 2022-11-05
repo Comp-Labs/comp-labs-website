@@ -35,6 +35,8 @@ export default function FooterWrapper(props: {}) {
         <br></br>
         <YTSubscribe />
         <h2>Comments</h2>
+        <div data-chirpy-comment="true"></div>
+        <br></br>
         <Giscus
           id="comments"
           repo="Comp-Labs/comp-labs-website"
