@@ -1,5 +1,3 @@
-
-
 /* eslint-disable global-require */
 
 import * as React from 'react';
@@ -10,123 +8,129 @@ import Chip from '@mui/joy/Chip';
 import Stack from '@mui/material/Stack';
 import { CssVarsProvider } from '@mui/joy/styles';
 import Highlight from '@site/src/components/Highlight';
+import AspectRatio from '@mui/joy/AspectRatio';
+import Box from '@mui/joy/Box';
+import Card from '@mui/joy/Card';
+import CardOverflow from '@mui/joy/CardOverflow';
+import Typography from '@mui/joy/Typography';
+import Link from '@mui/joy/Link';
 
 const AppCards = [
-    {
-        name: 'Tech Fiddle Meet',
-        image: 'https://cdn.jsdelivr.net/gh/Comp-Labs/cdn/img/apps/comp-labs-meet/icon.png',
-        url: {
-            categories: ['Productivity', 'Social', 'Collaboration'],
-            status: 'Available',
-            viewNow: '/apps/comp-labs-meet',
-            color: '#00d26a',
-            width: '256',
-            height: '256',
-        },
+  {
+    name: 'Tech Fiddle Meet',
+    image: 'https://cdn.jsdelivr.net/gh/Comp-Labs/cdn/img/apps/comp-labs-meet/icon.png',
+    url: {
+      categories: ['Productivity', 'Social', 'Collaboration'],
+      status: 'Available',
+      viewNow: '/apps/comp-labs-meet',
+      color: '#00d26a',
+      width: '256',
+      height: '256',
     },
-    {
-        name: 'Google Docs',
-        image: 'https://cdn.jsdelivr.net/gh/Comp-Labs/cdn/img/apps/google-docs.png',
-        url: {
-            categories: ['Productivity', 'Blank', 'Blank'],
-            status: 'Available',
-            viewNow: '/apps/google-docs',
-            color: '#00d26a',
-            width: '256',
-            height: '256',
-        },
+  },
+  {
+    name: 'Google Docs',
+    image: 'https://cdn.jsdelivr.net/gh/Comp-Labs/cdn/img/apps/google-docs.png',
+    url: {
+      categories: ['Productivity', 'Blank', 'Blank'],
+      status: 'Available',
+      viewNow: '/apps/google-docs',
+      color: '#00d26a',
+      width: '256',
+      height: '256',
     },
-    {
-        name: 'Jira Server',
-        image: 'https://cdn.jsdelivr.net/gh/Comp-Labs/cdn/img/apps/jira-server.png',
-        url: {
-            categories: ['Productivity', 'Blank', 'Blank'],
-            status: 'Available',
-            viewNow: '/apps/jira-server',
-            color: '#00d26a',
-            width: '256',
-            height: '256',
-        },
+  },
+  {
+    name: 'Jira Server',
+    image: 'https://cdn.jsdelivr.net/gh/Comp-Labs/cdn/img/apps/jira-server.png',
+    url: {
+      categories: ['Productivity', 'Blank', 'Blank'],
+      status: 'Available',
+      viewNow: '/apps/jira-server',
+      color: '#00d26a',
+      width: '256',
+      height: '256',
     },
-    {
-        name: 'Apple Store',
-        image: 'https://cdn.jsdelivr.net/gh/Comp-Labs/cdn/img/apps/applestore.webp',
-        url: {
-            categories: ['Shopping', 'Blank', 'Blank'],
-            status: 'In Development',
-            viewNow: '/apps/apple-store',
-            color: '#076AF7',
-            width: '256',
-            height: '256',
-        },
+  },
+  {
+    name: 'Apple Store',
+    image: 'https://cdn.jsdelivr.net/gh/Comp-Labs/cdn/img/apps/applestore.webp',
+    url: {
+      categories: ['Shopping', 'Blank', 'Blank'],
+      status: 'In Development',
+      viewNow: '/apps/apple-store',
+      color: '#076AF7',
+      width: '256',
+      height: '256',
     },
-    {
-        name: 'CloudConsole',
-        image: 'https://cdn.jsdelivr.net/gh/Comp-Labs/cdn/img/icon-removebg.jpg',
-        url: {
-            categories: ['Productivity', 'Blank', 'Blank'],
-            status: 'In Development',
-            viewNow: '/apps/cloud-console',
-            color: '#076AF7',
-            width: '256',
-            height: '256',
-        },
+  },
+  {
+    name: 'CloudConsole',
+    image: 'https://cdn.jsdelivr.net/gh/Comp-Labs/cdn/img/icon-removebg.jpg',
+    url: {
+      categories: ['Productivity', 'Blank', 'Blank'],
+      status: 'In Development',
+      viewNow: '/apps/cloud-console',
+      color: '#076AF7',
+      width: '256',
+      height: '256',
     },
-    {
-        name: 'CodeEdit',
-        image: 'https://cdn.jsdelivr.net/gh/Comp-Labs/cdn/img/icon-removebg.jpg',
-        url: {
-            categories: ['Productivity', 'Blank', 'Blank'],
-            status: 'In Development',
-            viewNow: '/apps/codeedit',
-            color: '#076AF7',
-            width: '256',
-            height: '256',
-        },
+  },
+  {
+    name: 'CodeEdit',
+    image: 'https://cdn.jsdelivr.net/gh/Comp-Labs/cdn/img/icon-removebg.jpg',
+    url: {
+      categories: ['Productivity', 'Blank', 'Blank'],
+      status: 'In Development',
+      viewNow: '/apps/codeedit',
+      color: '#076AF7',
+      width: '256',
+      height: '256',
     },
-    {
-        name: 'GadgetCompare',
-        image: 'https://cdn.jsdelivr.net/gh/Comp-Labs/cdn/img/icon-removebg.jpg',
-        url: {
-            categories: ['Productivity', 'Blank', 'Blank'],
-            status: 'In Development',
-            viewNow: '/apps/gadget-compare',
-            color: '#076AF7',
-            width: '256',
-            height: '256',
-        },
+  },
+  {
+    name: 'GadgetCompare',
+    image: 'https://cdn.jsdelivr.net/gh/Comp-Labs/cdn/img/icon-removebg.jpg',
+    url: {
+      categories: ['Productivity', 'Blank', 'Blank'],
+      status: 'In Development',
+      viewNow: '/apps/gadget-compare',
+      color: '#076AF7',
+      width: '256',
+      height: '256',
     },
-    {
-        name: 'Office',
-        image: 'https://cdn.jsdelivr.net/gh/Comp-Labs/cdn/img/apps/office.png',
-        url: {
-            categories: ['Productivity', 'Blank', 'Blank'],
-            status: 'In Development',
-            viewNow: '/apps/office',
-            color: '#076AF7',
-            width: '256',
-            height: '256',
-        },
+  },
+  {
+    name: 'Office',
+    image: 'https://cdn.jsdelivr.net/gh/Comp-Labs/cdn/img/apps/office.png',
+    url: {
+      categories: ['Productivity', 'Blank', 'Blank'],
+      status: 'In Development',
+      viewNow: '/apps/office',
+      color: '#076AF7',
+      width: '256',
+      height: '256',
     },
+  },
 ];
 
 interface Props {
-    name: string;
-    image: string;
-    url: {
-        categories?: string;
-        status?: string;
-        viewNow?: string;
-        color?: string;
-        width?: string,
-        height?: string,
-    };
+  name: string;
+  image: string;
+  url: {
+    categories?: string;
+    status?: string;
+    viewNow?: string;
+    color?: string;
+    width?: string,
+    height?: string,
+  };
 }
 
 export function TagOne({ name, image, url }: Props) {
-    if (url.categories.length = 1) {
-        <Chip label={url.categories[0]} variant="outlined" size="small" />
-    }
+  if (url.categories.length = 1) {
+    <Chip label={url.categories[0]} variant="outlined" size="small" />
+  }
 }
 
 {/* <Card variant="outlined" sx={{ maxWidth: 200, boxShadow: 'none', ...sx }}>
@@ -160,37 +164,37 @@ export function TagOne({ name, image, url }: Props) {
 </Card> */}
 
 function AppCard({ name, image, url }: Props) {
-    return (
+  return (
     <Card variant="outlined" sx={{ maxWidth: 200, boxShadow: 'none', ...sx }}>
-<CardOverflow>
-  <AspectRatio>
-    <img
-      src="https://cdn.jsdelivr.net/gh/Comp-Labs/cdn/img/defaultbg.jpg"
-      loading="lazy"
-      alt="Background"
-    />
-  </AspectRatio>
-</CardOverflow>
-<Box sx={{ mt: -3, width: 48 }}>
-  <AspectRatio ratio="1">
-    <img
-      src={image}
-      loading="lazy"
-      alt={name}
-      title={name}
-    />
-  </AspectRatio>
-</Box>
-<Box>
-  <Typography fontWeight="lg" mt={1.5}>
-    <Link href={url.viewNow} overlay color="neutral">
-      {name}
-    </Link>
-  </Typography>
-  <Typography level="body2">A very very long description.</Typography>
-</Box>
-</Card>
-    );
+      <CardOverflow>
+        <AspectRatio>
+          <img
+            src="https://cdn.jsdelivr.net/gh/Comp-Labs/cdn/img/defaultbg.jpg"
+            loading="lazy"
+            alt="Background"
+          />
+        </AspectRatio>
+      </CardOverflow>
+      <Box sx={{ mt: -3, width: 48 }}>
+        <AspectRatio ratio="1">
+          <img
+            src={image}
+            loading="lazy"
+            alt={name}
+            title={name}
+          />
+        </AspectRatio>
+      </Box>
+      <Box>
+        <Typography fontWeight="lg" mt={1.5}>
+          <Link href={url.viewNow} overlay color="neutral">
+            {name}
+          </Link>
+        </Typography>
+        <Typography level="body2">A very very long description.</Typography>
+      </Box>
+    </Card>
+  );
 }
 
 //             <div className={clsx('card')}>
@@ -225,39 +229,42 @@ function AppCard({ name, image, url }: Props) {
 //             </div>
 
 export function AppCardsRow(): JSX.Element {
-    const [sx, setSx] = React.useState({});
-    return (
-        <Box
+  const [sx, setSx] = React.useState({});
+  return (
+    <Box
+      sx={{
+        width: '100%',
+        display: 'grid',
+        gridTemplateColumns: { xs: '1fr', md: '1fr auto' },
+        gridTemplateRows: '1fr auto',
+        gap: 2,
+        mt: 2,
+        '& .markdown-body pre': {
+          margin: 0,
+          borderRadius: 'xs',
+        },
+      }}
+    >
+      <Box
         sx={{
-          width: '100%',
-          display: 'grid',
-          gridTemplateColumns: { xs: '1fr', md: '1fr auto' },
-          gridTemplateRows: '1fr auto',
+          alignSelf: 'center',
+          justifyContent: 'center',
+          mx: 'auto',
+          display: 'flex',
+          placeSelf: 'center',
           gap: 2,
-          mt: 2,
-          '& .markdown-body pre': {
-            margin: 0,
-            borderRadius: 'xs',
-          },
+          flexWrap: 'wrap',
         }}
       >
-        <Box
-          sx={{
-            alignSelf: 'center',
-            justifyContent: 'center',
-            mx: 'auto',
-            display: 'flex',
-            placeSelf: 'center',
-            gap: 2,
-            flexWrap: 'wrap',
-          }}
-        >
-            </Box>
-            </Box>
-        // <div className="row cardRow">
-        //     {AppCards.map((apps) => (
-        //         <AppCard key={apps.name} {...apps} />
-        //     ))}
-        // </div>
-    );
+        {AppCards.map((apps) => (
+          <AppCard key={apps.name} {...apps} />
+        ))}
+      </Box>
+    </Box>
+    // <div className="row cardRow">
+    //     {AppCards.map((apps) => (
+    //         <AppCard key={apps.name} {...apps} />
+    //     ))}
+    // </div>
+  );
 }
