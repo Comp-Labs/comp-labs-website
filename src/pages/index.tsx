@@ -18,14 +18,11 @@ function HomepageHeader() {
   return (
     <div className="heroCard">
       <Card sx={{ minWidth: 300, flexGrow: 1 }}>
-      <CardCover>
           <img
-            src="https://images.unsplash.com/photo-1502657877623-f66bf489d236?auto=format&fit=crop&w=800"
-            srcSet="https://images.unsplash.com/photo-1502657877623-f66bf489d236?auto=format&fit=crop&w=800&dpr=2 2x"
+            src="https://cdn.jsdelivr.net/gh/Comp-Labs/cdn/img/defaultbg.jpg"
             loading="lazy"
-            alt=""
+            alt="Default Background"
           />
-        </CardCover>
       <CardContent>
           <Typography
             level="h1"
@@ -129,7 +126,7 @@ export default function Home() {
   return (
     <Layout
       title={`Home`}
-      description="Tech Fiddle provides a Tech Enthusiastic Blog, Lots of Apps, and Core Solutions to Empower you or your Enterprise."
+      description="Tech Fiddle provides a Tech Enthusiastic Blog, some useful apps, and Core Solutions to empower everyone."
     >
       <HomepageHeader />
       <hr></hr>

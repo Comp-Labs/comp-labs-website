@@ -57,6 +57,13 @@ const darkCodeTheme = require("prism-react-renderer/themes/dracula");
         src: 'https://cdn.ywxi.net/js/1.js',
         async: true,
       },
+      // Chirpy
+      {
+        src: "https://chirpy.dev/bootstrap/comment.js",
+        defer: true,
+        'data-chirpy-domain': "complabs.in",
+        'data-chirpy-theme': "system",
+      },
     ],
 
     stylesheets: [

@@ -41,6 +41,7 @@ export default function Heading({ as: As, id, ...props }) {
         <LinkIcon />
         </Link>
       </a>
+      <div className="h1divider"></div>
     </As>
   );
 }
