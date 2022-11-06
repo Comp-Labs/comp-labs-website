@@ -1,6 +1,7 @@
 /* Fonts */
 @import "react-alice-carousel/lib/alice-carousel.css";
 @import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@200;300;400;500;600;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lobster&family=Rubik:wght@400;500&display=swap');
 
 /* @font-face {
   font-family: Plus Jakarta Sans;
@@ -74,6 +75,16 @@
   --site-color-tooltip-background: #353738;
   --site-color-svgIcon-favorite: #e9669e;
   --site-color-checkbox-checked-bg: hsl(167deg 56% 73% / 25%);
+
+  --dark: rgb(20, 20, 20);
+  --yellow: rgb(253, 216, 53);
+  --blue: rgb(98, 0, 234);
+  
+  --c1: rgb(38, 70, 83);
+  --c2: rgb(42, 157, 143);
+  
+  --left-color: var(--c1);
+  --right-color: var(--c2);
 }
 
 html[data-theme="dark"] {
@@ -430,6 +441,58 @@ a:hover {
  * CSS files with the .module.css suffix will be treated as CSS modules
  * and scoped locally.
  */
+
+/* Super Header Slider */
+
+.side {
+  display: grid;
+  height: 100vh;
+  overflow: hidden;
+  place-items: center;
+  position: absolute;
+  width: 100%;
+}
+
+.side .title {
+  font-family: "Rubik", sans-serif;
+  font-size: 8vw;
+  margin: 0px 10vw;
+  width: 80vw;
+}
+
+.side .fancy {
+  font-family: "Lobster", cursive;
+  font-size: 1.3em;
+  line-height: 0.8em;
+}
+
+#left-side {
+  background-color: var(--left-color);
+  width: 60%;
+  z-index: 2;
+}
+
+#left-side .title {  
+  color: white;  
+}
+
+#left-side .fancy {
+  color: var(--right-color);
+}
+
+#right-side {
+  background-color: var(--right-color);
+}
+
+#right-side .title {
+  color: var(--dark);
+}
+
+#right-side .fancy {
+  color: white;
+}
+
+/* End */
 
 .heroCard {
   background-image: url("https://cdn.jsdelivr.net/gh/Comp-Labs/cdn/img/defaultbg.jpg");
