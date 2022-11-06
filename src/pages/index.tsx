@@ -17,13 +17,8 @@ function HomepageHeader() {
   const { siteConfig } = useDocusaurusContext();
   return (
     <div className="heroCard">
-      <Card sx={{ minWidth: 300, flexGrow: 1 }}>
-          <img
-            src="https://cdn.jsdelivr.net/gh/Comp-Labs/cdn/img/defaultbg.jpg"
-            loading="lazy"
-            alt="Default Background"
-          />
-      <CardContent>
+      {/* <Card sx={{ minWidth: 300, flexGrow: 1 }}>
+        <CardContent> */}
           <Typography
             level="h1"
             fontWeight="lg"
@@ -31,12 +26,12 @@ function HomepageHeader() {
             Tech Fiddle
           </Typography>
           <Typography
-                      level="h1"
-                      fontWeight="lg">
+            level="h1"
+            fontWeight="lg">
             Description...
-            </Typography>
-        </CardContent>
-      </Card>
+          </Typography>
+        {/* </CardContent>
+      </Card> */}
     </div>
     // <div className="hero">
     //   <div className="heroInner">
@@ -133,7 +128,7 @@ export default function Home() {
       <main>
         {/* <RecentBlogPosts /> */}
         <HomepageFeatures />
-      </main>     
+      </main>
     </Layout>
   );
 }

@@ -329,12 +329,12 @@ b {
   background-clip: text;
 }
 
-h1 {
+/* h1 {
   background: linear-gradient(90deg, #007fff, #0059b2);
   -webkit-text-fill-color: transparent;
   -webkit-background-clip: text;
   background-clip: text;
-}
+} */
 
 /* strong {
   background: linear-gradient(90deg, #007FFF, #0059B2);
@@ -432,6 +432,7 @@ a:hover {
  */
 
 .heroCard {
+  background-image: url("https://cdn.jsdelivr.net/gh/Comp-Labs/cdn/img/defaultbg.jpg");
   background: rgba(255, 255, 255, 0.25);
   box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
   backdrop-filter: blur(20px);
