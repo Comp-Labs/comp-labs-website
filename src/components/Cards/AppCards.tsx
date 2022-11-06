@@ -175,7 +175,7 @@ function AppCard({ name, image, url }: Props) {
                     />
                 </AspectRatio>
             </CardOverflow>
-            <Box sx={{ mt: -3, width: 48 }}>
+            <Box sx={{ width: 64 }}>
                 <AspectRatio ratio="1">
                     <img
                         src={image}
