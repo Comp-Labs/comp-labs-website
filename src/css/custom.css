@@ -42,7 +42,7 @@
 
   --ifm-spacing-horizontal: 1.5rem;
 
-  --ifm-font-family-base: 'Plus Jakarta Sans', system-ui, -apple-system, Segoe UI,
+  --ifm-font-family-base: 'Rubik', system-ui, -apple-system, Segoe UI,
     Roboto, Ubuntu, Cantarell, Noto Sans, sans-serif, BlinkMacSystemFont,
     'Segoe UI', Helvetica, Arial, sans-serif, 'Apple Color Emoji',
     'Segoe UI Emoji', 'Segoe UI Symbol';
@@ -436,63 +436,6 @@ a:hover {
 /* Site Variables End */
 
 /* index.module.css Start */
-
-/**
- * CSS files with the .module.css suffix will be treated as CSS modules
- * and scoped locally.
- */
-
-/* Super Header Slider */
-
-.side {
-  display: grid;
-  height: 100vh;
-  overflow: hidden;
-  place-items: center;
-  position: absolute;
-  width: 100%;
-}
-
-.side .title {
-  font-family: "Rubik", sans-serif;
-  font-size: 8vw;
-  margin: 0px 10vw;
-  width: 80vw;
-}
-
-.side .fancy {
-  font-family: "Lobster", cursive;
-  font-size: 1.3em;
-  line-height: 0.8em;
-}
-
-#left-side {
-  background-color: var(--left-color);
-  width: 60%;
-  z-index: 2;
-}
-
-#left-side .title {  
-  color: white;  
-}
-
-#left-side .fancy {
-  color: var(--right-color);
-}
-
-#right-side {
-  background-color: var(--right-color);
-}
-
-#right-side .title {
-  color: var(--dark);
-}
-
-#right-side .fancy {
-  color: white;
-}
-
-/* End */
 
 .heroCard {
   background-image: url("https://cdn.jsdelivr.net/gh/Comp-Labs/cdn/img/defaultbg.jpg");
