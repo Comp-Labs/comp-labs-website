@@ -7,6 +7,7 @@ export default function BlogPostItems({
 }) {
   return (
     <>
+    <img src="https://cdn.jsdelivr.net/gh/Comp-Labs/cdn/img/defaultbg.jpg"></img>
       {items.map(({content: BlogPostContent}) => (
         <BlogPostProvider
           key={BlogPostContent.metadata.permalink}
