@@ -165,7 +165,6 @@ export function TagOne({ name, image, url }: Props) {
 
 function AppCard({ name, image, url }: Props) {
   return (
-    <CssVarsProvider>
     <Card variant="outlined" sx={{ maxWidth: 200, boxShadow: 'none', ...sx }}>
       <CardOverflow>
         <AspectRatio>
@@ -195,7 +194,6 @@ function AppCard({ name, image, url }: Props) {
         <Typography level="body2">A very very long description.</Typography>
       </Box>
     </Card>
-    </CssVarsProvider>
   );
 }
 
@@ -234,7 +232,7 @@ export function AppCardsRow(): JSX.Element {
   const [sx, setSx] = React.useState({});
   return (
     <CssVarsProvider>
-    <Box
+    {/* <Box
       sx={{
         width: '100%',
         display: 'grid',
@@ -258,12 +256,10 @@ export function AppCardsRow(): JSX.Element {
           gap: 2,
           flexWrap: 'wrap',
         }}
-      >
+      > */}
         {AppCards.map((apps) => (
           <AppCard key={apps.name} {...apps} />
         ))}
-      </Box>
-    </Box>
     </CssVarsProvider>
     // <div className="row cardRow">
     //     {AppCards.map((apps) => (
