@@ -165,7 +165,7 @@ export function TagOne({ name, image, url }: Props) {
 
 function AppCard({ name, image, url }: Props) {
   return (
-    <Card variant="outlined" sx={{ maxWidth: 200, boxShadow: 'none', ...sx }}>
+    <Card variant="outlined" sx={{ maxWidth: 200, boxShadow: 'none'}}>
       <CardOverflow>
         <AspectRatio>
           <img
