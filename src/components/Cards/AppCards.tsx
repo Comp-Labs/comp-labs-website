@@ -233,6 +233,7 @@ function AppCard({ name, image, url }: Props) {
 export function AppCardsRow(): JSX.Element {
   const [sx, setSx] = React.useState({});
   return (
+    <CssVarsProvider>
     <Box
       sx={{
         width: '100%',
@@ -263,6 +264,7 @@ export function AppCardsRow(): JSX.Element {
         ))}
       </Box>
     </Box>
+    </CssVarsProvider>
     // <div className="row cardRow">
     //     {AppCards.map((apps) => (
     //         <AppCard key={apps.name} {...apps} />
