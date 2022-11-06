@@ -186,7 +186,7 @@ function AppCard({ name, image, url }: Props) {
                 </AspectRatio>
             </Box>
             <Box>
-                <Typography fontWeight="lg" mt={1.5}>
+                <Typography fontWeight="lg">
                     <Link href={url.viewNow} overlay color="neutral">
                         {name}
                     </Link>
