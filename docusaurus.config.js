@@ -66,6 +66,24 @@ const darkCodeTheme = require("prism-react-renderer/themes/dracula");
       },
     ],
 
+    headTags: [
+      {
+        tagName: 'script',
+        attributes: {
+          defer: 'true',
+          src: 'https://chirpy.dev/bootstrap/comment.js',
+        },
+      },
+      {
+        tagName: 'script',
+        attributes: {
+          async: 'true',
+          src: 'https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6230468888789445',
+          crossorigin: 'anonymous',
+        },
+      }
+    ],
+
     stylesheets: [
       // String format.
       'https://docusaurus.io/style.css',
@@ -157,14 +175,14 @@ const darkCodeTheme = require("prism-react-renderer/themes/dracula");
           // blog: false,
           docs: {
             sidebarPath: require.resolve("./sidebars.js"),
-            editUrl:
-              "https://github.com/Comp-Labs/comp-labs-website/edit/main/",
+            editUrl: "https://github.com/Comp-Labs/comp-labs-website/edit/main/",
           },
           blog: {
             blogTitle: "Guides",
             blogSidebarTitle: "All Guides",
-            blogSidebarCount: 0, // Change to 'ALL' if required later.
-            sortPosts: "ascending",
+            blogSidebarCount: 0, // Change to 'ALL' if required later
+            sortPosts: "descending",
+            editUrl: "https://github.com/Comp-Labs/comp-labs-website/edit/main/",
             feedOptions: {
               type: 'all',
               copyright: `Copyright © ${new Date().getFullYear()} Tech Fiddle. All Rights Reserved.`,
@@ -234,7 +252,7 @@ const darkCodeTheme = require("prism-react-renderer/themes/dracula");
         // },
         // announcementBar: {
         //   id: 'christmas-lights',
-        //   content: '<iframe src="/html/lights.html" title="Lighting"></iframe>',
+        //   content: '<iframe src="/html/lights.html" title="Lighting" />',
         //   backgroundColor: '#fff',
         //   textColor: '#fff',
         //   isCloseable: false,
@@ -314,7 +332,7 @@ const darkCodeTheme = require("prism-react-renderer/themes/dracula");
               ],
             },
             { to: "/contact", label: "Contact Us", position: "left" },
-            // { to: "/donate-us", label: "Donate Us", position: "left" },
+            // { to: "/donate", label: "Donate Us", position: "left" },
             { to: "/webdev-crafts", label: "WebDev's Crafts", position: "left" },
             {
               type: "dropdown",
@@ -357,7 +375,7 @@ const darkCodeTheme = require("prism-react-renderer/themes/dracula");
           ],
         },
         footer: {
-          style: "light",
+          style: "dark",
           links: [
             {
               title: "Tech Fiddle",
@@ -379,6 +397,14 @@ const darkCodeTheme = require("prism-react-renderer/themes/dracula");
                   to: "/apps",
                 },
                 {
+                  label: "Solutions",
+                  to: "/solutions",
+                },
+                {
+                  label: "Tools",
+                  to: "/tools",
+                },
+                {
                   label: "Contact Us!",
                   href: "https://forms.gle/dQmrNAZZ1KK81rAP7",
                 },
@@ -387,15 +413,12 @@ const darkCodeTheme = require("prism-react-renderer/themes/dracula");
                   href: "/webdev-crafts",
                 },
                 {
-                  label: "Donate Us!",
-                  to: "/donate-us",
+                  label: "Legal",
+                  href: "/legal",
                 },
                 {
-                  html: `
-                <a href="https://www.netlify.com" target="_blank" rel="noreferrer noopener" aria-label="Deploys by Netlify">
-                  <img src="https://www.netlify.com/img/global/badges/netlify-color-accent.svg" alt="Deploys by Netlify" title="Deploys by Netlify" width="114" height="51" />
-                </a>
-              `,
+                  label: "Donate Us!",
+                  to: "/donate",
                 },
               ],
             },
@@ -458,47 +481,38 @@ const darkCodeTheme = require("prism-react-renderer/themes/dracula");
                 },
               ],
             },
-            // {
-            //   title: 'Our Sites',
-            //   items: [
-            //     {
-            //       label: 'Tech Fiddle (This Site)',
-            //       href: '/',
-            //     },
-            //     {
-            //       label: 'Doraemon Originals',
-            //       href: 'https://complabs28.wixsite.com/doraemon-originals',
-            //     },
-            //   ],
-            // },
-            // {
-            //   title: "Social",
-            //   items: [
-            //     {
-            //       label: "GitHub",
-            //       href: "https://github.com/Comp-Labs",
-            //     },
-            //     {
-            //       label: "YouTube",
-            //       href: "https://youtube.com/channel/UCL6pKeSCbJkPohM2PUZbqQA",
-            //     },
-            //     // {
-            //     //   label: "Discord",
-            //     //   href: "https://discord.gg/GAbzAGKccW",
-            //     // },
-            //     {
-            //       label: "Linktree",
-            //       href: "https://linktr.ee/complabs",
-            //     },
-            //     {
-            //       html: `
-            //     <a href="https://www.netlify.com" target="_blank" rel="noreferrer noopener" aria-label="Deploys by Netlify">
-            //       <img src="https://www.netlify.com/img/global/badges/netlify-color-accent.svg" alt="Deploys by Netlify" title="Deploys by Netlify" width="114" height="51" />
-            //     </a>
-            //   `,
-            //     },
-            //   ],
-            // },
+            {
+              title: "Social",
+              items: [
+                {
+                  label: "GitHub",
+                  href: "https://github.com/Comp-Labs",
+                },
+                {
+                  label: "YouTube",
+                  href: "https://www.youtube.com/@techfiddle",
+                },
+                {
+                  label: "Discord",
+                  href: "https://discord.gg/GAbzAGKccW",
+                },
+                {
+                  label: "Linktree",
+                  href: "https://linktr.ee/complabs",
+                },
+                {
+                  label: "Get $200 in Cloud Credits from DigitalOcean",
+                  href: "https://m.do.co/c/4d2203436de1",
+                },
+                {
+                  html: `
+                <a href="https://www.netlify.com" target="_blank" rel="noreferrer noopener" aria-label="Deploys by Netlify">
+                  <img src="https://www.netlify.com/img/global/badges/netlify-color-accent.svg" alt="Deploys by Netlify" title="Deploys by Netlify" width="114" height="51" />
+                </a>
+              `,
+                },
+              ],
+            },
             {
               title: "🚧 In Development",
               items: [
@@ -528,12 +542,11 @@ const darkCodeTheme = require("prism-react-renderer/themes/dracula");
           logo: {
             alt: "Tech Fiddle Footer Logo",
             src: "https://cdn.jsdelivr.net/gh/Comp-Labs/cdn/img/logo-removebg.jpg",
-            href: "/",
           },
           copyright: `Copyright © ${new Date().getFullYear()} Tech Fiddle. All Rights Reserved. Built using Docusaurus.`,
         },
         prism: {
-          theme: lightCodeTheme,
+          theme: darkCodeTheme,
           darkTheme: darkCodeTheme,
         },
       }),

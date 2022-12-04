@@ -821,7 +821,7 @@ function WebDevCard({ name, image, url, description }: Props) {
       <div className={clsx('card')}>
         <div className={clsx('card__image')}>
           <Link to={url.page}>
-            <img src={image} alt={name} title={name}></img>
+            <img src={image} alt={name} title={name} />
           </Link>
         </div>
         <div className="card__body">

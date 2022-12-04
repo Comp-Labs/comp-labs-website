@@ -9,6 +9,7 @@ import Box from "@mui/joy/Box";
 import { createSvgIcon } from '@mui/material/utils';
 import GitHubIcon from '@mui/icons-material/GitHub';
 import YouTubeIcon from '@mui/icons-material/YouTube';
+import RssFeedRoundedIcon from '@mui/icons-material/RssFeedRounded';
 
 // const GitHubLogo = createSvgIcon(
 //     <path d="M12 1.27a11 11 0 00-3.48 21.46c.55.09.73-.28.73-.55v-1.84c-3.03.64-3.67-1.46-3.67-1.46-.55-1.29-1.28-1.65-1.28-1.65-.92-.65.1-.65.1-.65 1.1 0 1.73 1.1 1.73 1.1.92 1.65 2.57 1.2 3.21.92a2 2 0 01.64-1.47c-2.47-.27-5.04-1.19-5.04-5.5 0-1.1.46-2.1 1.2-2.84a3.76 3.76 0 010-2.93s.91-.28 3.11 1.1c1.8-.49 3.7-.49 5.5 0 2.1-1.38 3.02-1.1 3.02-1.1a3.76 3.76 0 010 2.93c.83.74 1.2 1.74 1.2 2.94 0 4.21-2.57 5.13-5.04 5.4.45.37.82.92.82 2.02v3.03c0 .27.1.64.73.55A11 11 0 0012 1.27" />,
@@ -25,34 +26,35 @@ const DiscordLogo = createSvgIcon(
     'Discord',
 );
 
-export function Buttons() {
+export function NavbarButtons() {
     return (
+        <div className="navbarButtons">
         <Box sx={{ display: 'flex', gap: 1, flexWrap: 'wrap', alignItems: 'center' }}>
-            <Tooltip color="neutral" variant="solid" title="GitHub Organisation">
+            <Tooltip color="neutral" variant="solid" title="GitHub">
                 <IconButton
                     component="a"
                     href="https://github.com/Comp-Labs"
                     color="primary"
                     size="sm"
                     variant="outlined"
-                    aria-label="GitHub Organisation"
+                    aria-label="GitHub"
                 >
                     <GitHubIcon />
                 </IconButton>
             </Tooltip>
-            <Tooltip color="neutral" variant="solid" title="YouTube Channel">
+            <Tooltip color="neutral" variant="solid" title="YouTube">
                 <IconButton
                     component="a"
                     href="https://youtube.com/channel/UCL6pKeSCbJkPohM2PUZbqQA"
                     color="primary"
                     size="sm"
                     variant="outlined"
-                    aria-label="YouTube Channel"
+                    aria-label="YouTube"
                 >
                     <YouTubeIcon />
                 </IconButton>
             </Tooltip>
-            <Tooltip color="neutral" variant="solid" title="Discord Server">
+            <Tooltip color="neutral" variant="solid" title="Discord">
                 <IconButton
                     component="a"
                     href="https://discord.gg/GAbzAGKccW"
@@ -60,12 +62,12 @@ export function Buttons() {
                     size="sm"
                     variant="outlined"
                     // disabled
-                    aria-label="Discord Server"
+                    aria-label="Discord"
                 >
                     <DiscordLogo />
                 </IconButton>
             </Tooltip>
-            <Tooltip color="neutral" variant="solid" title="Tech Fiddle Linktree">
+            <Tooltip color="neutral" variant="solid" title="Linktree">
                 <IconButton
                     component="a"
                     href="https://linktr.ee/complabs"
@@ -77,71 +79,155 @@ export function Buttons() {
                     <ParkRoundedIcon />
                 </IconButton>
             </Tooltip>
+            <Tooltip color="neutral" variant="solid" title="RSS Feed">
+                <IconButton
+                    component="a"
+                    href="https://complabs.in/blog/rss.xml"
+                    color="primary"
+                    size="sm"
+                    variant="outlined"
+                    aria-label="RSS Feed"
+                >
+                    <RssFeedRoundedIcon />
+                </IconButton>
+            </Tooltip>
+        </Box>
+        </div>
+    );
+}
+
+export function FooterButtons() {
+    return (
+        <Box sx={{ display: 'flex', gap: 1, flexWrap: 'wrap', alignItems: 'center' }}>
+            <Tooltip color="neutral" variant="solid" title="GitHub">
+                <IconButton
+                    component="a"
+                    href="https://github.com/Comp-Labs"
+                    color="primary"
+                    size="sm"
+                    variant="outlined"
+                    aria-label="GitHub"
+                >
+                    <GitHubIcon />
+                </IconButton>
+            </Tooltip>
+            <Tooltip color="neutral" variant="solid" title="YouTube">
+                <IconButton
+                    component="a"
+                    href="https://youtube.com/channel/UCL6pKeSCbJkPohM2PUZbqQA"
+                    color="primary"
+                    size="sm"
+                    variant="outlined"
+                    aria-label="YouTube"
+                >
+                    <YouTubeIcon />
+                </IconButton>
+            </Tooltip>
+            <Tooltip color="neutral" variant="solid" title="Discord">
+                <IconButton
+                    component="a"
+                    href="https://discord.gg/GAbzAGKccW"
+                    color="primary"
+                    size="sm"
+                    variant="outlined"
+                    // disabled
+                    aria-label="Discord"
+                >
+                    <DiscordLogo />
+                </IconButton>
+            </Tooltip>
+            <Tooltip color="neutral" variant="solid" title="Linktree">
+                <IconButton
+                    component="a"
+                    href="https://linktr.ee/complabs"
+                    color="primary"
+                    size="sm"
+                    variant="outlined"
+                    aria-label="Linktree Page"
+                >
+                    <ParkRoundedIcon />
+                </IconButton>
+            </Tooltip>
+            <Tooltip color="neutral" variant="solid" title="RSS Feed">
+                <IconButton
+                    component="a"
+                    href="https://complabs.in/blog/rss.xml"
+                    color="primary"
+                    size="sm"
+                    variant="outlined"
+                    aria-label="RSS Feed"
+                >
+                    <RssFeedRoundedIcon />
+                </IconButton>
+            </Tooltip>
         </Box>
     );
 }
 
-// export function GitHubButton() {
-//     return (
-//             <Tooltip color="neutral" variant="solid" title="GitHub Organisation">
-//                 <IconButton
-//                     component="a"
-//                     href="https://github.com/Comp-Labs"
-//                     color="primary"
-//                     size="sm"
-//                     variant="outlined"
-//                 >
-//                     <ThumbUp />
-//                 </IconButton>
-//             </Tooltip>
-//     )
-// }
-
-// export function YouTubeButton() {
-//     return (
-//             <Tooltip color="neutral" variant="solid" title="YouTube Channel">
-//                 <IconButton
-//                     component="a"
-//                     href="https://youtube.com/channel/UCL6pKeSCbJkPohM2PUZbqQA"
-//                     color="primary"
-//                     size="sm"
-//                     variant="outlined"
-//                 >
-//                     <ThumbUp />
-//                 </IconButton>
-//             </Tooltip>
-//     )
-// }
-
-// export function DiscordButton() {
-//     return (
-//             <Tooltip color="neutral" variant="solid" title="Discord Server">
-//                 <IconButton
-//                     component="a"
-//                     href="https://discord.gg/GAbzAGKccW"
-//                     color="primary"
-//                     size="sm"
-//                     variant="outlined"
-//                     disabled
-//                 >
-//                     <ThumbUp />
-//                 </IconButton>
-//             </Tooltip>
-//     )
-// }
-
-// export function LinktreeButton() {
-//     return (
-//             <Tooltip color="neutral" variant="solid" title="Tech Fiddle Linktree">
-//                 <IconButton
-//                     component="a"
-//                     href="https://linktr.ee/complabs"
-//                     color="primary"
-//                     size="sm"
-//                     variant="outlined"
-//                 >
-//                     <ParkRoundedIcon />
-//                 </IconButton>
-//             </Tooltip>
-//     )
-// }
+export function Buttons() {
+    return (
+        <Box sx={{ display: 'flex', gap: 1, flexWrap: 'wrap', alignItems: 'center' }}>
+            <Tooltip color="neutral" variant="solid" title="GitHub">
+                <IconButton
+                    component="a"
+                    href="https://github.com/Comp-Labs"
+                    color="primary"
+                    size="sm"
+                    variant="outlined"
+                    aria-label="GitHub"
+                >
+                    <GitHubIcon />
+                </IconButton>
+            </Tooltip>
+            <Tooltip color="neutral" variant="solid" title="YouTube">
+                <IconButton
+                    component="a"
+                    href="https://youtube.com/channel/UCL6pKeSCbJkPohM2PUZbqQA"
+                    color="primary"
+                    size="sm"
+                    variant="outlined"
+                    aria-label="YouTube"
+                >
+                    <YouTubeIcon />
+                </IconButton>
+            </Tooltip>
+            <Tooltip color="neutral" variant="solid" title="Discord">
+                <IconButton
+                    component="a"
+                    href="https://discord.gg/GAbzAGKccW"
+                    color="primary"
+                    size="sm"
+                    variant="outlined"
+                    // disabled
+                    aria-label="Discord"
+                >
+                    <DiscordLogo />
+                </IconButton>
+            </Tooltip>
+            <Tooltip color="neutral" variant="solid" title="Linktree">
+                <IconButton
+                    component="a"
+                    href="https://linktr.ee/complabs"
+                    color="primary"
+                    size="sm"
+                    variant="outlined"
+                    aria-label="Linktree Page"
+                >
+                    <ParkRoundedIcon />
+                </IconButton>
+            </Tooltip>
+            <Tooltip color="neutral" variant="solid" title="RSS Feed">
+                <IconButton
+                    component="a"
+                    href="https://complabs.in/blog/rss.xml"
+                    color="primary"
+                    size="sm"
+                    variant="outlined"
+                    aria-label="RSS Feed"
+                >
+                    <RssFeedRoundedIcon />
+                </IconButton>
+            </Tooltip>
+        </Box>
+    );
+}

@@ -16,23 +16,29 @@ var ReactRotatingText = require("react-rotating-text");
 function HomepageHeader() {
   const { siteConfig } = useDocusaurusContext();
   return (
-    <div className="heroCard">
-      {/* <Card sx={{ minWidth: 300, flexGrow: 1 }}>
-        <CardContent> */}
-          <Typography
-            level="h1"
-            fontWeight="lg"
-          >
-            Tech Fiddle
-          </Typography>
-          <Typography
-            level="h1"
-            fontWeight="lg">
-            Description...
-          </Typography>
-        {/* </CardContent>
-      </Card> */}
-    </div>
+    <header className="hero">
+      <div className="container">
+        <h1 className="hero__title">Tech Fiddle</h1>
+        <p className="hero__subtitle">Tech Fiddle has a Tech Enthusiastic Blog, Some Useful Apps, and Solutions to Empower Everyone.</p>
+      </div>
+    </header>
+    // <div className="heroCard">
+    //   {/* <Card sx={{ minWidth: 300, flexGrow: 1 }}>
+    //     <CardContent> */}
+    //       <Typography
+    //         level="h1"
+    //         fontWeight="lg"
+    //       >
+    //         Tech Fiddle
+    //       </Typography>
+    //       <Typography
+    //         level="body1"
+    //         fontWeight="lg">
+    //         Tech Fiddle has a Tech Enthusiastic Blog, Some Useful Apps, and Solutions to Empower Everyone.
+    //       </Typography>
+    //     {/* </CardContent>
+    //   </Card> */}
+    // </div>
     // <div className="hero">
     //   <div className="heroInner">
     //     <h1 className="heroProjectTagline">
@@ -94,7 +100,7 @@ function HomepageHeader() {
     //           title="Follow Tech Fiddle on GitHub"
     //         />
     //       </span>
-    //       <br></br>
+    //       <br />
     //       <span className="indexCtasGitHubButtonWrapper">
     //         <iframe
     //           className="indexCtasGitHubButton"
@@ -120,8 +126,8 @@ export default function Home() {
   const { siteConfig } = useDocusaurusContext();
   return (
     <Layout
-      title={`Home`}
-      description="Tech Fiddle provides a Tech Enthusiastic Blog, some useful apps, and Core Solutions to empower everyone."
+      title={`Home | Guides, Apps, Solutions, Tools`}
+      description="Tech Fiddle has a Tech Enthusiastic Blog, Some Useful Apps, and Solutions to Empower Everyone."
     >
       <HomepageHeader />
       <hr></hr>

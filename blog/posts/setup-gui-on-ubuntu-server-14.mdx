@@ -32,43 +32,43 @@ Today we'll guide you through the setup of running Ubuntu Desktop on an AWS EC2 
 Make sure you have an AWS Account. If you don't have, [create one](https://portal.aws.amazon.com/billing/signup). Next, open [EC2 Management Console](https://console.aws.amazon.com/ec2/v2/home#Home:) in your Browser. Sign in with your account. Select your preferred Region from the top right corner. Click on `Launch Instance` on the center of the page. Then again click on `Launch Instance` from the opened dropdown.
 
 <figure>
-  <img src="/img/blog/14/14-1.jpg"></img>
+  <img src="/img/blog/14/14-1.jpg" />
   <figcaption align="center">Launch Instance Dropdown</figcaption>
 </figure>
 
 If you want, you can type your preferred instance name under **Name**. Next, under **Application and OS Images (Amazon Machine Image)**, Click on Quick Start, and select **Ubuntu**. Below, Under Amazon Machine Image (AMI), select **Ubuntu Server 22.04 LTS (HVM), SSD Volume Type**. Select Architecture as `64-bit (x86)`. This should look like this below:
 
 <figure>
-  <img src="/img/blog/14/14-2.jpg"></img>
+  <img src="/img/blog/14/14-2.jpg" />
   <figcaption align="center">AMI Configuration</figcaption>
 </figure>
 
 Next, under **Instance Type**, choose the instance type you want to select. I'll go with `t2.micro` (Free Tier) for the Instance Type.
 
 <figure>
-  <img src="/img/blog/14/14-3.jpg"></img>
+  <img src="/img/blog/14/14-3.jpg" />
   <figcaption align="center">Select Instance Type</figcaption>
 </figure>
 
 Next, Under **Key Pair (login)**, if you have a key pair already, click on **Select** and select your Key Pair. If you don't have a key pair, click on `Create New Key Pair` and create a new one. Make sure to select `PEM` format when creating a new key.
 
 <figure>
-  <img src="/img/blog/14/14-4.jpg"></img>
+  <img src="/img/blog/14/14-4.jpg" />
   <figcaption align="center">Create/Select Key Pair</figcaption>
 </figure>
 
 Next, Under **Network Settings**, Click on **Edit**. Select your VPC from the list. Then select the subnet you want to use. If you don't have one already, create one. Select **Auto-assign public IP** to **True**. Select your security group or create one. Under **Security group name**, you can type in any name as per your wish. Same as above for **Description**. Next, under **Security group rule 1 (TCP, 22, 0.0.0.0/0)**, Click on **Remove**. Next, click on **Add security group rule**. Select **Type** as **All traffic**. Select Source Type as **Anywhere**. Click on **Add security group rule** again. Select **Type** as `ssh`, and **Source Type** as **Anywhere**. Again Add new security group rule and select type as `rdp` and source type as **Anywhere**.
 
 <figure>
-  <img src="/img/blog/14/14-5.jpg"></img>
-  <img src="/img/blog/14/14-6.jpg"></img>
+  <img src="/img/blog/14/14-5.jpg" />
+  <img src="/img/blog/14/14-6.jpg" />
   <figcaption align="center">Network Settings</figcaption>
 </figure>
 
 Move on to **Configure Storage**. Select `1x 8 GiB gp2 Root volume`.
 
 <figure>
-  <img src="/img/blog/14/14-7.jpg"></img>
+  <img src="/img/blog/14/14-7.jpg" />
   <figcaption align="center">Configure Storage</figcaption>
 </figure>
 
@@ -79,15 +79,15 @@ Next, Click on **Launch Instance**. After this, open [EC2 Management Console](ht
 Click on the Instance ID that looks like `i-xxxxxxxxxxxxxxxxx`. Next, Copy the IP Address under **Public IPv4 Address** or click on <ContentCopyRoundedIcon /> icon under **Public IPv4 Address**.
 
 <figure>
-  <img src="/img/blog/14/14-8.jpg"></img>
-  <img src="/img/blog/14/14-9.jpg"></img>
+  <img src="/img/blog/14/14-8.jpg" />
+  <img src="/img/blog/14/14-9.jpg" />
   <figcaption align="center">Copy Public IPv4 Address</figcaption>
 </figure>
 
 Next, Open Command Prompt as shown below.
 
 <figure>
-  <img src="/img/blog/14/14-10.jpg"></img>
+  <img src="/img/blog/14/14-10.jpg" />
   <figcaption align="center">Open Command Prompt</figcaption>
 </figure>
 
@@ -103,7 +103,7 @@ ssh ubuntu@public-ip-address -i AWSKey.pem
 - Replace `AWSKey.pem` with your own AWS Key Pair File Name.
 
 <figure>
-  <img src="/img/blog/14/14-11.jpg"></img>
+  <img src="/img/blog/14/14-11.jpg" />
   <figcaption align="center">Connect to Instance using SSH</figcaption>
 </figure>
 
@@ -121,7 +121,7 @@ sudo apt -y install gnome-panel gnome-settings-daemon metacity nautilus gnome-te
 ```
 
 <figure>
-  <img src="/img/blog/14/14-12.jpg"></img>
+  <img src="/img/blog/14/14-12.jpg" />
   <figcaption align="center">Install Packages</figcaption>
 </figure>
 
@@ -134,7 +134,7 @@ vncserver
 After running this command, it will ask you for a password to set for connecting to Ubuntu Desktop. You can set it to anything you want but remember it. This password will be asked for two times for confirmation. After entering the password two times, type `y`, press enter and type the same password again two times.
 
 <figure>
-  <img src="/img/blog/14/14-13.jpg"></img>
+  <img src="/img/blog/14/14-13.jpg" />
   <figcaption align="center">Configure VNC Server</figcaption>
 </figure>
 
@@ -146,7 +146,7 @@ sudo apt-get install xrdp -y
 ```
 
 <figure>
-  <img src="/img/blog/14/14-14.jpg"></img>
+  <img src="/img/blog/14/14-14.jpg" />
   <figcaption align="center">
     Install <code>lxde</code> and <code>xrdp</code>
   </figcaption>
@@ -161,7 +161,7 @@ sudo passwd ubuntu
 This will ask you to set a password two times, I'll type the same password as I typed previously, but you can type as per your wish. Again, remember your password.
 
 <figure>
-  <img src="/img/blog/14/14-15.jpg"></img>
+  <img src="/img/blog/14/14-15.jpg" />
   <figcaption align="center">Set Password for Ubuntu User</figcaption>
 </figure>
 
@@ -172,16 +172,16 @@ Now GUI Configuration Process is Completed! Now let's connect to our GUI Instanc
 Open Remote Desktop Connection by pressing <kbd><i class="fa-brands fa-windows"></i></kbd> + R and type `mstsc` and press Enter. Then Type in your EC2 Instance Public IP Address and press Enter. Then type in your username as `ubuntu` and password as you set earlier. Then click on **OK**.
 
 <figure>
-  <img src="/img/blog/14/14-16.jpg"></img>
-  <img src="/img/blog/14/14-17.jpg"></img>
+  <img src="/img/blog/14/14-16.jpg" />
+  <img src="/img/blog/14/14-17.jpg" />
   <figcaption align="center">Connect to Desktop using RDP</figcaption>
 </figure>
 
 After few moments, you should end up with a Ubuntu Setup Window. Set up Ubuntu Desktop and enjoy!
 
 <figure>
-  <img src="/img/blog/14/14-18.jpg"></img>
-  <img src="/img/blog/14/14-19.jpg"></img>
+  <img src="/img/blog/14/14-18.jpg" />
+  <img src="/img/blog/14/14-19.jpg" />
   <figcaption align="center">End Results</figcaption>
 </figure>
 
