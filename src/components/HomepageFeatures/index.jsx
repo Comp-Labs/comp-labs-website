@@ -1,7 +1,7 @@
-import React from "react";
+import * as React from "react";
 import clsx from "clsx";
 // import styles from "./HomepageFeatures.module.css";
-// import Link from "@docusaurus/Link";
+import {Link} as DocusaurusLink from "@docusaurus/Link";
 import Translate, { translate } from "@docusaurus/Translate";
 import AspectRatio from "@mui/joy/AspectRatio";
 import Box from "@mui/joy/Box";
@@ -17,12 +17,16 @@ import InsertDriveFileRoundedIcon from "@mui/icons-material/InsertDriveFileRound
 import ParkRoundedIcon from "@mui/icons-material/ParkRounded";
 import GitHubIcon from "@mui/icons-material/GitHub";
 import YouTubeIcon from "@mui/icons-material/YouTube";
+import Chip from '@mui/joy/Chip';
+import Highlight from '@site/src/components/Highlight';
 
-const FeatureList = [
+// Data Start
+
+const Resources = [
   {
     title: "🚧 Docs",
     href: "/docs",
-    icon: <MenuBookRoundedIcon />,
+    icon: '<i class="fa-solid fa-files" />',
     Svg: require("/img/undraw_typewriter.svg").default,
     description: (
       <>
@@ -30,32 +34,18 @@ const FeatureList = [
         subsidiaries.
       </>
     ),
-    // button: (
-    //   <>
-    //     <Link className="button button--primary" to="/docs">
-    //       <Translate>Read Now!</Translate>
-    //     </Link>
-    //   </>
-    // ),
   },
   {
     title: "Guides",
     href: "/blog",
-    icon: "<MenuBookRoundedIcon />",
+    icon: '<i class="fa-solid fa-files" />',
     Svg: require("/img/undraw_typewriter.svg").default,
     description: <>Tech Based Blog for Enthusiasts.</>,
-    button: (
-      <>
-        <Link className="button button--primary" to="/blog">
-          <Translate>Learn Now!</Translate>
-        </Link>
-      </>
-    ),
   },
   {
     title: "Apps",
     href: "/apps",
-    icon: "",
+    icon: '<i class="fa-solid fa-grip" />',
     Svg: require("/img/undraw_develop_app.svg").default,
     description: (
       <>
@@ -76,29 +66,19 @@ const FeatureList = [
   {
     title: "Contact Us",
     href: "/contact",
-    icon: "",
+    icon: '<i class="fa-solid fa-envelope" />`',
     Svg: require("/img/undraw_typewriter.svg").default,
     description: (
       <>
-        Please Contact Us using the Google Form Link for any Issues, Queries,
+        Please Contact Us for any Issues, Queries,
         Feedback, etc.
-      </>
-    ),
-    button: (
-      <>
-        <Link
-          className="button button--primary"
-          href="https://forms.gle/dQmrNAZZ1KK81rAP7"
-        >
-          <Translate>Contact Now!</Translate>
-        </Link>
       </>
     ),
   },
   {
     title: "WebDev's Crafts",
     href: "/webdev-crafts",
-    icon: "",
+    icon: '<i class="fa-solid fa-hand-sparkles" />',
     Svg: require("/img/undraw_typewriter.svg").default,
     description: (
       <>
@@ -106,32 +86,35 @@ const FeatureList = [
         Users Worldwide!
       </>
     ),
-    button: (
+  },
+  {
+    title: "Donate Us",
+    href: "/donate",
+    icon: '<i class="fa-solid fa-hand-holding-dollar" />',
+    Svg: require("/img/undraw_typewriter.svg").default,
+    description: (
       <>
-        <Link className="button button--primary" to="/webdev-crafts">
-          <Translate>See Now!</Translate>
-        </Link>
+        Please Donate Us if you like our content!
       </>
     ),
   },
-  // {
-  //   title: "Donate Us",
-  //   href: "/donate-us",
-  //   icon: "",
-  //   Svg: require("/img/undraw_typewriter.svg").default,
-  //   description: (
-  //     <>
-  //       Please Donate Us to keep us alive!
-  //     </>
-  //   ),
-  // button: (
-  //   <>
-  //       <Link className="button button--primary" to="/donate-us">
-  //         <Translate>Donate Now!</Translate>
-  //       </Link>
-  //   </>
-  // )
-  // },
+  {
+    title: "Legal",
+    href: "/legal",
+    icon: '<i class="fa-solid fa-scale-balanced" />',
+    Svg: require("/img/undraw_typewriter.svg").default,
+    description: <>Tech Fiddle's Legal Documents.</>,
+  },
+  {
+    title: "Social",
+    href: "/social",
+    icon: '<i class="fa-solid fa-hashtag" />',
+    Svg: require("/img/undraw_typewriter.svg").default,
+    description: <>Connect with Tech Fiddle!</>,
+  },
+];
+
+const Solutions = [
   {
     title: "🚧 App Publisher for Google Play",
     href: "/solutions/google-play-developers",
@@ -218,6 +201,9 @@ const FeatureList = [
       </>
     ),
   },
+];
+
+const Tools = [
   {
     title: "DNS Lookup",
     href: "https://digwebinterface.com",
@@ -282,171 +268,173 @@ const FeatureList = [
       </>
     ),
   },
-  {
-    title: "Legal",
-    Svg: require("/img/undraw_typewriter.svg").default,
-    description: <>Legal Documents for Tech Fiddle.</>,
-    button: (
-      <>
-        <div className="button-group button-group--block">
-          <Button
-            component="a"
-            href="/legal/terms-of-service"
-            size="sm"
-            variant="soft"
-            startDecorator={<InsertDriveFileRoundedIcon />}
-          >
-            Terms of Service
-          </Button>
-          <Button
-            component="a"
-            href="/legal/privacy-policy"
-            size="sm"
-            variant="soft"
-            startDecorator={<InsertDriveFileRoundedIcon />}
-          >
-            Privacy Policy
-          </Button>
-          <Button
-            component="a"
-            href="/legal/cookie-policy"
-            size="sm"
-            variant="soft"
-            startDecorator={<InsertDriveFileRoundedIcon />}
-          >
-            Cookie Policy
-          </Button>
-        </div>
-      </>
-    ),
-  },
-  {
-    title: "Social",
-    Svg: require("/img/undraw_typewriter.svg").default,
-    description: <>Connect with Tech Fiddle!</>,
-    button: (
-      <>
-        <Button
-          component="a"
-          href="https://github.com/Comp-Labs"
-          size="sm"
-          variant="soft"
-          startDecorator={<GitHubIcon />}
-        >
-          GitHub
-        </Button>
-        <Button
-          component="a"
-          href="https://youtube.com/channel/UCL6pKeSCbJkPohM2PUZbqQA"
-          size="sm"
-          variant="soft"
-          startDecorator={<YouTubeIcon />}
-        >
-          YouTube
-        </Button>
-        <Button
-          component="a"
-          href="https://linktr.ee/complabs"
-          size="sm"
-          variant="soft"
-          startDecorator={<ParkRoundedIcon />}
-        >
-          Linktree
-        </Button>
-      </>
-    ),
-  },
 ];
 
-function Feature({ Svg, title, description, href, button, subtitle, icon }) {
+// Data End & Functions Start
+
+function Resource({ Svg, title, description, href, icon, button, subtitle }) {
   return (
-    <div className={clsx("col col--6")}>
-      <div className={clsx('card')}>
-      <div className="text--center">
-        <Svg className="featureSvg" alt={title} />
-      </div>
-      <div className="text--center padding-horiz--md">
-        <h3>{title}</h3>
-        <p>{description}</p>
-        {button}
-      </div>
-      </div>
+    <div className="col col--6 margin-bottom--lg">
+      <Card
+        variant="outlined"
+        row
+        sx={{
+          width: 320,
+          gap: 2,
+          '&:hover': { boxShadow: 'md', borderColor: 'neutral.outlinedHoverBorder' },
+        }}
+      >
+        {/* <AspectRatio ratio="1" sx={{ width: 90 }}>
+      <Svg className="featureSvg" alt={title} />
+      </AspectRatio> */}
+        <div>
+          <Typography level="h2" fontSize="lg" id="card-description" mb={0.5}>
+            {icon} {title}
+          </Typography>
+          <Typography fontSize="sm" aria-describedby="card-description" mb={1}>
+            <Link
+              overlay
+              underline="none"
+              href={href}
+              sx={{ color: 'text.tertiary' }}
+            >
+              {description}
+            </Link>
+          </Typography>
+          <Chip
+            variant="outlined"
+            color="primary"
+            size="sm"
+            sx={{ pointerEvents: 'none' }}
+          >
+            Resource
+          </Chip>
+        </div>
+      </Card>
     </div>
   );
 }
 
-// function Feature({ Svg, title, description, button, href, subtitle, icon }) {
-//   return (
-//       <Card
-//         color="primary"
-//         sx={{
-//           bgcolor: "background.level1",
-//           "&:hover, &:focus-within": {
-//             bgcolor: "background.level2",
-//           },
-//           boxShadow: "inset 0 1px 0 0 rgb(255 255 255 / 5%)",
-//         }}
-//       >
-//         <Box sx={{ display: "flex", gap: 2, mb: 2 }}>
-//           <Avatar size="lg" src={icon} />
-//           <div>
-//             <Typography component="div">
-//               <Link
-//                 overlay
-//                 href={href}
-//                 textColor="inherit"
-//                 underline="none"
-//                 fontWeight="md"
-//               >
-//                 {title}
-//               </Link>
-//             </Typography>
-//             <Typography level="body2">{subtitle}</Typography>
-//           </div>
-//         </Box>
-//         <Typography level="body2" display="flex" alignItems="center" gap={0.5}>
-//           {description}
-//         </Typography>
-//       </Card>
-//   );
-// }
+function Solution({ Svg, title, description, href, icon, button, subtitle }) {
+  return (
+    <div className="col col--6 margin-bottom--lg">
+      <Card
+        variant="outlined"
+        row
+        sx={{
+          width: 320,
+          gap: 2,
+          '&:hover': { boxShadow: 'md', borderColor: 'neutral.outlinedHoverBorder' },
+        }}
+      >
+        {/* <AspectRatio ratio="1" sx={{ width: 90 }}>
+      <Svg className="featureSvg" alt={title} />
+      </AspectRatio> */}
+        <div>
+          <Typography level="h2" fontSize="lg" id="card-description" mb={0.5}>
+            {icon} {title}
+          </Typography>
+          <Typography fontSize="sm" aria-describedby="card-description" mb={1}>
+            <Link
+              overlay
+              underline="none"
+              href={href}
+              sx={{ color: 'text.tertiary' }}
+            >
+              {description}
+            </Link>
+          </Typography>
+          <Chip
+            variant="outlined"
+            color="primary"
+            size="sm"
+            sx={{ pointerEvents: 'none' }}
+          >
+            Resource
+          </Chip>
+        </div>
+      </Card>
+    </div>
+  );
+}
 
-// function Feature({ Svg, title, description, href, button }) {
-//   return (
-//     <CssVarsProvider>
-//     <div className="col--col--6">
-//       <div className={clsx("card")}>
-//         <div className={clsx("card__image")}>
-//           <div className="text--center">
-//             <Svg className="featureSvg" alt={title} />
-//           </div>
-//           <div className="card__body">
-//             <div className="text--center padding-horiz--md">
-//               <h3>{title}</h3>
-//               <p>{description}</p>
-//             </div>
-//           </div>
-//           <div className="card__footer">
-//             {button}
-//           </div>
-//         </div>
-//       </div>
-//       </div>
-//       </CssVarsProvider>
-//   );
-// }
+function Tool({ Svg, title, description, href, icon, button, subtitle }) {
+  return (
+    <div className="col col--6 margin-bottom--lg">
+      <Card
+        variant="outlined"
+        row
+        sx={{
+          width: 320,
+          gap: 2,
+          '&:hover': { boxShadow: 'md', borderColor: 'neutral.outlinedHoverBorder' },
+        }}
+      >
+        {/* <AspectRatio ratio="1" sx={{ width: 90 }}>
+      <Svg className="featureSvg" alt={title} />
+      </AspectRatio> */}
+        <div>
+          <Typography level="h2" fontSize="lg" id="card-description" mb={0.5}>
+            {icon} {title}
+          </Typography>
+          <Typography fontSize="sm" aria-describedby="card-description" mb={1}>
+            <Link
+              overlay
+              underline="none"
+              href={href}
+              sx={{ color: 'text.tertiary' }}
+            >
+              {description}
+            </Link>
+          </Typography>
+          <Chip
+            variant="outlined"
+            color="primary"
+            size="sm"
+            sx={{ pointerEvents: 'none' }}
+          >
+            Resource
+          </Chip>
+        </div>
+      </Card>
+    </div>
+  );
+}
 
 export default function HomepageFeatures() {
   return (
-    <section>
-      <div className="features">
-        <div className="col--col--6">
-          {FeatureList.map((props, idx) => (
-            <Feature key={idx} {...props} />
-          ))}
+    <>
+      <section>
+        <h2 className="featuresHeading"><Highlight color="#076af7">Resources</Highlight></h2>
+        <div className="features">
+          <div className="row">
+            {Resources.map((props, idx) => (
+              <Resource key={idx} {...props} />
+            ))}
+          </div>
         </div>
-      </div>
-      <hr></hr>
-    </section>
+        <hr></hr>
+      </section>
+      <section>
+        <h2 className="featuresHeading"><Highlight color="#076af7">Solutions</Highlight></h2>
+        <div className="features">
+          <div className="row">
+          {Resources.map((props, idx) => (
+              <Solution key={idx} {...props} />
+            ))}
+          </div>
+        </div>
+      </section>
+      <section>
+        <h2 className="featuresHeading"><Highlight color="#076af7">Tools</Highlight></h2>
+        <div className="features">
+          <div className="row">
+          {Resources.map((props, idx) => (
+              <Tool key={idx} {...props} />
+            ))}
+          </div>
+        </div>
+      </section>
+    </>
   );
 }

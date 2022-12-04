@@ -24,19 +24,19 @@ export default function FooterWrapper(props: {}) {
         <title>{metadata.title}</title>
       </Head>
       <Footer {...props} />
-      <hr></hr>
+      <hr />
       <div className="margin-vert--xl">
         <h2>Share</h2>
         <div className="row">
           <NativeShare />
-          <div className="addthis_inline_share_toolbox"></div>
+          <div className="addthis_inline_share_toolbox" />
         </div>
         <h2>Subscribe to our YouTube Channel:</h2>
-        <br></br>
+        <br />
         <YTSubscribe />
         <h2>Comments</h2>
-        <div data-chirpy-comment="true"></div>
-        <br></br>
+        <div data-chirpy-comment="true" />
+        <br />
         <Giscus
           id="comments"
           repo="Comp-Labs/comp-labs-website"
@@ -56,8 +56,8 @@ export default function FooterWrapper(props: {}) {
       <Provider apiKey="6fc6243f4df274525650ea97e4d638"
         theme={{
           colors: {
-            primary: '#22c1c3',
-            secondary: '#ff00c3',
+            primary: '#076af7',
+            secondary: '#fff',
             background: 'transparent',
             text: '#292929',
             highlight: '#e095ed',
