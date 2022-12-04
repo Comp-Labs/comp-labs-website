@@ -38,7 +38,7 @@
     "@mui/icons-material": "^5.10.6",
     "@mui/joy": "5.0.0-alpha.55",
     "@mui/material": "^5.10.6",
-    "@mui/system": "5.10.15",
+    "@mui/system": "5.10.16",
     "@svgr/webpack": "^6.2.1",
     "@types/react": "^18.0.21",
     "@types/react-dom": "^18.0.0",
