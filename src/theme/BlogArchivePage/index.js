@@ -3,11 +3,10 @@ import Link from '@docusaurus/Link';
 import {translate} from '@docusaurus/Translate';
 import {PageMetadata} from '@docusaurus/theme-common';
 import Layout from '@theme/Layout';
-import Highlight from "@site/src/components/Highlight";
 function Year({year, posts}) {
   return (
     <>
-      <h3><Highlight color="#076af7">{year}</Highlight></h3>
+      <h3>{year}</h3>
       <ul>
         {posts.map((post) => (
           <li key={post.metadata.date}>
@@ -68,6 +67,7 @@ export default function BlogArchive({archive}) {
             <p className="hero__subtitle">{description}</p>
           </div>
         </header>
+        <hr />
         <main>{years.length > 0 && <YearsSection years={years} />}</main>
       </Layout>
     </>

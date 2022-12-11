@@ -4,10 +4,7 @@ import * as React from 'react';
 import clsx from 'clsx';
 import Translate from '@docusaurus/Translate';
 // import Link from '@docusaurus/Link';
-import Chip from '@mui/joy/Chip';
-import Stack from '@mui/material/Stack';
 import { CssVarsProvider } from '@mui/joy/styles';
-import Highlight from '@site/src/components/Highlight';
 import AspectRatio from '@mui/joy/AspectRatio';
 import Box from '@mui/joy/Box';
 import Card from '@mui/joy/Card';
@@ -16,7 +13,6 @@ import CardContent from "@mui/joy/CardContent";
 import Typography from '@mui/joy/Typography';
 import Link from '@mui/joy/Link';
 import Divider from '@mui/joy/Divider';
-import Typography from '@mui/joy/Typography';
 
 const AppCards = [
     {
@@ -103,18 +99,18 @@ const AppCards = [
             height: '256',
         },
     },
-    {
-        name: 'Office',
-        image: 'https://cdn.jsdelivr.net/gh/Comp-Labs/cdn/img/apps/office.png',
-        url: {
-            categories: 'Productivity',
-            status: 'In Development',
-            viewNow: '/apps/office',
-            color: 'warning',
-            width: '256',
-            height: '256',
-        },
-    },
+    // {
+    //     name: 'Office',
+    //     image: 'https://cdn.jsdelivr.net/gh/Comp-Labs/cdn/img/apps/office.png',
+    //     url: {
+    //         categories: 'Productivity',
+    //         status: 'In Development',
+    //         viewNow: '/apps/office',
+    //         color: 'warning',
+    //         width: '256',
+    //         height: '256',
+    //     },
+    // },
 ];
 
 interface Props {
@@ -132,7 +128,7 @@ interface Props {
 
 function AppCard({ name, image, url }: Props) {
     return (
-        <Card row variant="outlined" sx={{ width: 260, bgcolor: 'background.body' }}>
+        <Card row variant="outlined" sx={{ width: 280, bgcolor: 'background.body', height: 97 }}>
         <CardOverflow>
           <AspectRatio ratio="1" sx={{ width: 90 }}>
             <img
@@ -146,7 +142,16 @@ function AppCard({ name, image, url }: Props) {
           <Typography fontWeight="md" textColor="success.plainColor" mb={0.5}>
             {name}
           </Typography>
-          <Typography level="body2">{url.categories}</Typography>
+          <Typography level="body2">
+          <Link
+            overlay
+            underline="none"
+            href={url.viewNow}
+            sx={{ color: 'text.tertiary' }}
+          >
+            {url.categories}
+            </Link>
+            </Typography>
         </CardContent>
         <Divider />
         <CardOverflow
@@ -241,7 +246,7 @@ function AppCard({ name, image, url }: Props) {
 //                 </div>
 //                 <div className="card__footer">
 //                     <Highlight color={url.color}>{url.status}</Highlight>
-//                     <br></br><br></br>
+//                     <br /><br />
 //                     <Stack direction="row" spacing={1}>
 //                     <Chip size="sm" variant="soft">{url.categories[0]}</Chip>
 //                     <Chip size="sm" variant="soft">{url.categories[1]}</Chip>
@@ -250,10 +255,10 @@ function AppCard({ name, image, url }: Props) {
 //                     <Chip size="sm" variant="soft">{url.categories[4]}</Chip>
 //                     <Chip size="sm" variant="soft">{url.categories[5]}</Chip> */}
 //                     </Stack>
-//                     <br></br>
+//                     <br />
 //                     <div className="button-group button-group--block">
 //                         <Link className="button button--primary" to={url.viewNow}>
-//                             <i className="fa-solid fa-arrow-up-right-from-square"></i> View Now
+//                             <i className="fa-solid fa-arrow-up-right-from-square" /> View Now
 //                         </Link>
 //                     </div>
 //                 </div>

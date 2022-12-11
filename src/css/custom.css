@@ -50,13 +50,13 @@
   --ifm-font-family-monospace: 'Fira Code VF', SFMono-Regular, Menlo, Monaco,
     Consolas, 'Liberation Mono', 'Courier New', monospace;
 
-  --ifm-color-primary: #03357b;
-  --ifm-color-primary-dark: #03306f;
-  --ifm-color-primary-darker: #032d69;
-  --ifm-color-primary-darkest: #022556;
-  --ifm-color-primary-light: #033a87;
-  --ifm-color-primary-lighter: #033d8d;
-  --ifm-color-primary-lightest: #0445a0;
+  --ifm-color-primary: #076af7;
+  --ifm-color-primary-dark: #065fde;
+  --ifm-color-primary-darker: #065ad2;
+  --ifm-color-primary-darkest: #054aad;
+  --ifm-color-primary-light: #1f79f9;
+  --ifm-color-primary-lighter: #2b80f9;
+  --ifm-color-primary-lightest: #5096fa;
   --ifm-color-info: #25c2a0;
 
   --ifm-navbar-shadow: none;
@@ -206,6 +206,7 @@ code {
 
 .footer__copyright {
   text-align: left;
+  margin-right: 4px;
 }
 
 /* .footer--light .footer--dark {
@@ -309,7 +310,8 @@ table th {
   height: 0.25rem;
   border-radius: 0.25rem;
   background-image: linear-gradient(90deg, #0059b2, #007fff);
-  padding: 1rem;
+  margin-top: 0px;
+  margin-bottom: 10px;
 }
 
 .vr {
@@ -318,6 +320,10 @@ table th {
 
 .space {
   padding: 5px;
+}
+
+.muiSpace {
+  padding: 10px;
 }
 
 b {
@@ -387,8 +393,13 @@ div[class^="announcementBar_"] {
 }
 
 /* Modern UI Link Styling */
+
+a:hover {
+  text-decoration: none;
+}
+
 /* Light */
-a {
+/* a {
   position: relative;
   text-decoration: none;
 }
@@ -414,7 +425,7 @@ a:hover::before {
 
 [data-theme="dark"] a:hover {
   color: var(--ifm-color-primary);
-}
+} */
 
 /* Site Variables End */
 

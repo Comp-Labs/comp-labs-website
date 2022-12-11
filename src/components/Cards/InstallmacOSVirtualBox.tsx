@@ -68,7 +68,7 @@ function macOSGuideSeriesCard({ name, image, url }: Props) {
                 <div className="card__footer">
                     <div className="button-group button-group--block">
                         <Link className="button button--primary" to={url.read}>
-                            <i className="fa-brands fa-github"></i> Read Now
+                            <i className="fa-brands fa-github" /> Read Now
                         </Link>
                     </div>
                 </div>

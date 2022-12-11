@@ -26,7 +26,7 @@ function Terminal({
         </div>
         <div className={terminalStyles.browserWindowAddressBar}>{title}</div>
         <div className={terminalStyles.browserWindowMenuIcon}>
-          <i className="fa-solid fa-gear"></i>
+          <i className="fa-solid fa-gear" />
         </div>
       </div>
 

@@ -12,7 +12,12 @@ export default function Heading({ as: As, id, ...props }) {
   } = useThemeConfig();
   // H1 headings do not need an id because they don't appear in the TOC.
   if (As === 'h1' || !id) {
-    return <As {...props} id={undefined} />;
+    return (
+      <>
+      <As {...props} id={undefined} />
+      <div className="h1divider" />
+      </>
+    );
   }
   return (
     <As
@@ -41,7 +46,6 @@ export default function Heading({ as: As, id, ...props }) {
         <LinkIcon />
         </Link>
       </a>
-      <div className="h1divider"></div>
     </As>
   );
 }

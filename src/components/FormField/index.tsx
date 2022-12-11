@@ -32,7 +32,7 @@ function FormField({
 
   return (
     <div className="margin-vert--lg">
-      <label htmlFor={id}><Highlight color="#076af7">{label}</Highlight></label>
+      <label htmlFor={id}>{label}</label>
       <div className="margin-top--sm">
         {fieldType === "textarea" ? (
           <textarea id={id} {...(props as TextareaProps)} />

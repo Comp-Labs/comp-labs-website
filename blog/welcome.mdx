@@ -7,12 +7,8 @@ tags: ["Hello", "Welcome"]
 description: Welcome Page for Tech Fiddle Blog.
 image: https://cdn.jsdelivr.net/gh/Comp-Labs/cdn/img/default.jpg
 hide_table_of_contents: false
-date: 2022-01-01T00:00
+date: 2023-01-01T00:00
 ---
-
-import YouTubeIcon from "@mui/icons-material/YouTube";
-import SellRoundedIcon from "@mui/icons-material/SellRounded";
-import ArchiveRoundedIcon from "@mui/icons-material/ArchiveRounded";
 
 # Welcome!
 
@@ -24,17 +20,19 @@ As most of our Blog Posts are YouTube Videos, We Recommend You To Go To Our YouT
 
 <div className="button-group button-group--block">
   <Link className="button button--primary" to="/blog/tags">
-    <SellRoundedIcon /> Filter by Tags
+    <i class="fa-solid fa-tag" /> Filter by Tags
   </Link>
   <Link className="button button--primary" to="/blog/archive">
-    <ArchiveRoundedIcon /> Archive
+    <i class="fa-solid fa-box-archive" /> Archive
   </Link>
   <Link
     className="button button--primary"
     href="https://youtube.com/@techfiddle"
   >
-    <YouTubeIcon /> YouTube Channel
+    <i class="fa-brands fa-youtube" /> YouTube Channel
   </Link>
 </div>
 
 :::
+
+<!-- truncate -->

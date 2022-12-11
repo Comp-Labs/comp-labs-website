@@ -34,7 +34,7 @@ function ColorModeToggle({className, value, onChange}) {
   );
   return (
     <>
-    <div className="space"></div>
+    <div className="space" />
     <div className={clsx(styles.toggle, className)}>
       <Tooltip color="neutral" variant="solid" title={title}>
         <IconButton

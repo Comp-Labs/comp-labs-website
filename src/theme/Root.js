@@ -9,6 +9,7 @@ export default function Root({ children }) {
         <>
             {getInitColorSchemeScript()}
             <CssVarsProvider>
+                {/* <BackToTopButton /> */}
                 {children}
             </CssVarsProvider>
         </>

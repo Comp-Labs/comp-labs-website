@@ -2,22 +2,25 @@ import React from 'react';
 import BlogPostItemHeaderTitle from '@theme/BlogPostItem/Header/Title';
 import BlogPostItemHeaderInfo from '@theme/BlogPostItem/Header/Info';
 import BlogPostItemHeaderAuthors from '@theme/BlogPostItem/Header/Authors';
-import ReadingTime from "@site/arc/components/ReadingTime";
+import ReadingTime from "@site/src/components/ReadingTime";
 import NativeShare from "@site/src/components/NativeShare";
-import {useBlogPost} from '@docusaurus/theme-common/internal';
-const {frontMatter} = useBlogPost();
+// import {useBlogPost} from '@docusaurus/theme-common/internal';
+// const {frontMatter} = useBlogPost();
 export default function BlogPostItemHeader() {
   return (
     <header>
-        <img src={frontMatter.image} title="Blog Image" />
       <BlogPostItemHeaderTitle />
       <div className="row">
+        <div className="muiSpace" />
         <ReadingTime />
+        <div className="space" />
         <NativeShare />
+        <div className="space" />
         <div className="addthis_inline_share_toolbox" />
-        </div>
-      {/* <BlogPostItemHeaderInfo /> */}
+      </div>
+      <BlogPostItemHeaderInfo />
       <BlogPostItemHeaderAuthors />
+      {/* <img src={frontMatter.image} /> */}
     </header>
   );
 }

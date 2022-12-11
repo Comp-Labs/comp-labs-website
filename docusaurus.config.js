@@ -375,7 +375,7 @@ const darkCodeTheme = require("prism-react-renderer/themes/dracula");
           ],
         },
         footer: {
-          style: "dark",
+          style: "light",
           links: [
             {
               title: "Tech Fiddle",
@@ -416,10 +416,10 @@ const darkCodeTheme = require("prism-react-renderer/themes/dracula");
                   label: "Legal",
                   href: "/legal",
                 },
-                {
-                  label: "Donate Us!",
-                  to: "/donate",
-                },
+                // {
+                //   label: "Donate Us!",
+                //   to: "/donate",
+                // },
               ],
             },
             {

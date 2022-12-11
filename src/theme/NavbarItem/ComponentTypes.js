@@ -7,7 +7,7 @@ import DocNavbarItem from '@theme/NavbarItem/DocNavbarItem';
 import DocSidebarNavbarItem from '@theme/NavbarItem/DocSidebarNavbarItem';
 import DocsVersionNavbarItem from '@theme/NavbarItem/DocsVersionNavbarItem';
 import DocsVersionDropdownNavbarItem from '@theme/NavbarItem/DocsVersionDropdownNavbarItem';
-import {NavbarButtons} from "@site/src/components/SocialButtons";
+import { Buttons } from "@site/src/components/SocialButtons";
 const ComponentTypes = {
   default: DefaultNavbarItem,
   localeDropdown: LocaleDropdownNavbarItem,
@@ -18,6 +18,6 @@ const ComponentTypes = {
   docSidebar: DocSidebarNavbarItem,
   docsVersion: DocsVersionNavbarItem,
   docsVersionDropdown: DocsVersionDropdownNavbarItem,
-  'custom-Buttons': NavbarButtons,
+  'custom-Buttons': Buttons,
 };
 export default ComponentTypes;

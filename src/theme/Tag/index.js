@@ -17,7 +17,7 @@ export default function Tag({ permalink, label, count }) {
         href={permalink}
       >
         {label}
-        {count && <div className="space"></div>}
+        {count && <div className="space" />}
         {count && <code>{count}</code>}
       </Chip>
 

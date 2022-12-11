@@ -42,7 +42,7 @@ function CardCategory({item}) {
   return (
     <CardLayout
       href={href}
-      icon="🗃️"
+      icon={"🗃️"}
       title={item.label}
       description={translate(
         {

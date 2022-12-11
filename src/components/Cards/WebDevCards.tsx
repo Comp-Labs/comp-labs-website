@@ -831,13 +831,13 @@ function WebDevCard({ name, image, url, description }: Props) {
         <div className="card__footer">
           <div className="button-group button-group--block">
             <Link className="button button--primary" to={url.page}>
-              <i className="fa-solid fa-arrow-up-right-from-square"></i> View Live
+              <i className="fa-solid fa-arrow-up-right-from-square" /> View Live
             </Link>
             <Link className="button button--primary" to={url.codepen}>
-              <i className="fa-brands fa-codepen"></i> View on CodePen
+              <i className="fa-brands fa-codepen" /> View on CodePen
             </Link>
             <Link className="button button--primary" to={url.github}>
-              <i className="fa-brands fa-github"></i> View on GitHub
+              <i className="fa-brands fa-github" /> View on GitHub
             </Link>
           </div>
         </div>
