@@ -32,7 +32,7 @@
     "@flaticon/flaticon-uicons": "^1.7.0",
     "@giscus/react": "^2.0.6",
     "@lyket/react": "^1.4.8",
-    "@mdx-js/react": "^1.6.22",
+    "@mdx-js/react": "^2.2.1",
     "@microlink/react": "^5.5.9",
     "@mui/base": "5.0.0-alpha.109",
     "@mui/icons-material": "^5.10.6",
