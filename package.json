@@ -36,7 +36,7 @@
     "@microlink/react": "^5.5.9",
     "@mui/base": "5.0.0-alpha.109",
     "@mui/icons-material": "^5.10.6",
-    "@mui/joy": "5.0.0-alpha.57",
+    "@mui/joy": "5.0.0-alpha.60",
     "@mui/material": "^5.10.6",
     "@mui/system": "5.10.17",
     "@svgr/webpack": "^6.2.1",
