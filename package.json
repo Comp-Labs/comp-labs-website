@@ -29,7 +29,7 @@
     "@docusaurus/utils-common": "2.2.0",
     "@emotion/react": "^11.7.1",
     "@emotion/styled": "^11.6.0",
-    "@flaticon/flaticon-uicons": "^1.7.0",
+    "@flaticon/flaticon-uicons": "^2.0.0",
     "@giscus/react": "^2.0.6",
     "@lyket/react": "^1.4.8",
     "@mdx-js/react": "^1.6.22",
