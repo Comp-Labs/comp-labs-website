@@ -21,25 +21,25 @@ const onSuccess = (typeofSharing: TypeOfSharing) => {
 
 const NativeShare: React.FC = () => {
     return (
-            <Button
-                onClick={() =>
-                    shareWebPage(
-                        {
-                            title: APP_NAME,
-                            url: HOMEPAGE_URL,
-                            copyValue: `${HOMEPAGE_URL}`
-                        },
-                        onSuccess,
-                        onFail
-                    )
-                }
-                startDecorator={<ShareRoundedIcon />}
-                color="primary"
-                size="sm"
-                variant="soft"
-            >
-                Share
-            </Button>
+        <Button
+            onClick={() =>
+                shareWebPage(
+                    {
+                        title: APP_NAME,
+                        url: HOMEPAGE_URL,
+                        copyValue: `${HOMEPAGE_URL}`
+                    },
+                    onSuccess,
+                    onFail
+                )
+            }
+            startDecorator={<ShareRoundedIcon />}
+            color="primary"
+            size="sm"
+            variant="soft"
+        >
+            Share
+        </Button>
     );
 };
 

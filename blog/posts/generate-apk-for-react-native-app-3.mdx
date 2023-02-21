@@ -13,8 +13,6 @@ comments: true
 
 # Generate Debug and Release APK for React Native App
 
-![Image](/img/blog/3/3.jpg)
-
 > **What is an .apk file?**
 
 > > **An Android Package Kit `APK` is the package file format used by the Android Operating System for ~Distribution~ and Installation of Mobile Apps. It is similar to the `.exe` file you have on Windows Operating System, a `.apk` file is for Android.**
@@ -130,11 +128,11 @@ react-native bundle --platform android --dev false --entry-file index.js --bundl
 
 Place your Terminal Working Directory to `android` and Build The `APK` File:
 
-<Tabs className="unique-tabs">
-  <TabItem value="Windows">
+<Tabs className="unique-tabs" groupId="android-build-command" queryString>
+  <TabItem value="windows" label="Windows">
     <code>cd android && gradlew assembleRelease</code>
   </TabItem>
-  <TabItem value="macOS/Linux">
+  <TabItem value="macos-linux" label="macOS/Linux">
     <code>cd android && ./gradlew assembleRelease</code>
   </TabItem>
 </Tabs>

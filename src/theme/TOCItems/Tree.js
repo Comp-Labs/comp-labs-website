@@ -1,6 +1,6 @@
 import React from 'react';
 // Recursive component rendering the toc tree
-function TOCItemTree({toc, className, linkClassName, isChild}) {
+function TOCItemTree({ toc, className, linkClassName, isChild }) {
   if (!toc.length) {
     return null;
   }
@@ -14,7 +14,7 @@ function TOCItemTree({toc, className, linkClassName, isChild}) {
             className={linkClassName ?? undefined}
             // Developer provided the HTML, so assume it's safe.
             // eslint-disable-next-line react/no-danger
-            dangerouslySetInnerHTML={{__html: heading.value}}
+            dangerouslySetInnerHTML={{ __html: heading.value }}
           />
           <TOCItemTree
             isChild

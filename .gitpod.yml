@@ -3,10 +3,10 @@
 # and commit this file to your remote git repository to share the goodness with others.
 
 tasks:
-  - before: >
-      [[ ! -z $GNUPG_KEY  ]] &&
-      cd ~ &&
-      rm -rf .gnupg &&
-      echo $GNUPG_KEY | base64 -d | tar --no-same-owner -xzvf -
-  - init: npm install && npm run build
+  # - before: >
+  #     [[ ! -z $GNUPG_KEY  ]] &&
+  #     cd ~ &&
+  #     rm -rf .gnupg &&
+  #     echo $GNUPG_KEY | base64 -d | tar --no-same-owner -xzvf -
+  - init: npm run clear && npm install && npm run build
     command: npm run start

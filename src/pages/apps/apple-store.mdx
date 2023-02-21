@@ -9,22 +9,66 @@ hide_table_of_contents: true
 ---
 
 | ![Apple Store Icon](https://cdn.jsdelivr.net/gh/Comp-Labs/cdn/img/apps/applestore.webp) | <h2>Apple Store</h2>                                                    |
-| ---------------------------------------------- | ----------------------------------------------------------------------- |
-| **Developer**                                  | [**Tech Fiddle**](https://complabs.in/apps)                             |
-| **Category**                                   | **Shopping**                                                            |
-| **NOTE:**                                      | **Click on the Button for Your Specific Platform to Download the App.** |
+| --------------------------------------------------------------------------------------- | ----------------------------------------------------------------------- |
+| **Developer**                                                                           | [**Tech Fiddle**](https://complabs.in/apps)                             |
+| **Category**                                                                            | **Shopping**                                                            |
+| **NOTE:**                                                                               | **Click on the Button for Your Specific Platform to Download the App.** |
 
-| **Download:** | <div class="dropdown "><button class=" button button--primary"><i class="fa-brands fa-android" /> Android <i class="fa-solid fa-caret-down" /></button><div class=" dropdown-content"><a class="" href="#">Play Store</a><a class="" href="#">APK File</a></div></div> | <a href="#" target="_blank" rel="noopener noreferrer" class="button button--primary "><i class="fa-brands fa-app-store-ios" /> iOS</a> | <a href="#" target="_blank" rel="noopener noreferrer" class="button button--primary"><i class="fa-brands fa-windows" /> Windows</a> | <a href="#" target="_blank" rel="noopener noreferrer" class="button button--primary"><i class="fa-brands fa-apple" /> macOS</a> | <div class="dropdown"><button class="button button--primary"><i class="fa-brands fa-linux" /> Linux <i class="fa-solid fa-caret-down" /></button><div class="dropdown-content"><a href="#">AppImage</a><a href="#">DEB</a><a href="#">Snap</a></div></div> |
-| :-----------: | :------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------: | :--------------------------------------------------------------------------------------------------------------------------------------: | :-----------------------------------------------------------------------------------------------------------------------------------: | :-------------------------------------------------------------------------------------------------------------------------------: | :------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------: |
-|               |                                                                                                                                                                                                                                                                            |                                                                                                                                          |                                                                                                                                       |                                                                                                                                   |                                                                                                                                                                                                                                                                |
-|               |                                                                                                                                                                                                                                                                            |                                                                                                                                          |                                                                                                                                       |                                                                                                                                   |                                                                                                                                                                                                                                                                |
+| **Download:** | <div className="dropdown disabled dropdown--hoverable"><Link className="button disabled button--primary"><i className="fa-brands fa-android" /> Android <i className="fa-solid fa-caret-down" /></Link><ul className="dropdown__menu"><li><a className="dropdown__link" href="#">Get it on Play Store Image</a></li><li><a className="dropdown__link" href="#"><i className="fa-solid fa-download" /> Download APK</a></li></ul></div> | <a href="#" target="_blank" rel="noopener noreferrer" className="button button--primary "><i className="fa-brands fa-app-store-ios" /> iOS</a> | <a href="#" target="_blank" rel="noopener noreferrer" className="button button--primary"><i className="fa-brands fa-windows" /> Windows</a> | <a href="#" target="_blank" rel="noopener noreferrer" className="button button--primary"><i className="fa-brands fa-apple" /> macOS</a> | <div className="appsDropdown"><Link className="button button--primary"><i className="fa-brands fa-linux" /> Linux <i className="fa-solid fa-caret-down" /></Link><div className="appsDropdown-content"><a href="#">AppImage</a><a href="#">DEB</a><a href="#">Snap</a></div></div> |
+| :-----------: | :------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------: | :--------------------------------------------------------------------------------------------------------------------------------------------: | :-----------------------------------------------------------------------------------------------------------------------------------------: | :-------------------------------------------------------------------------------------------------------------------------------------: | :--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------: |
+|               |                                                                                                                                                                                                                                                                                                                                                                                                                                        |                                                                                                                                                |                                                                                                                                             |                                                                                                                                         |                                                                                                                                                                                                                                                                                    |
+|               |                                                                                                                                                                                                                                                                                                                                                                                                                                        |                                                                                                                                                |                                                                                                                                             |                                                                                                                                         |                                                                                                                                                                                                                                                                                    |
+
+<div className="row">
+<div className="dropdown dropdown--hoverable">
+  <Link className="button button--primary">
+    <i className="fa-brands fa-android" /> Android{" "}
+    <i className="fa-solid fa-caret-down" />
+  </Link>
+  <ul className="dropdown__menu">
+    <li>
+      <a className="dropdown__link" href="#">
+        Get it on Play Store Image
+      </a>
+    </li>
+    <li>
+      <a className="dropdown__link" href="#">
+        <i className="fa-solid fa-download" /> Download APK
+      </a>
+    </li>
+  </ul>
+</div>
+<div className="dropdown dropdown--hoverable">
+  <Link className="button button--primary">
+    <i className="fa-brands fa-linux" /> Linux{" "}
+    <i className="fa-solid fa-caret-down" />
+  </Link>
+  <ul className="dropdown__menu">
+    <li>
+      <a className="dropdown__link" href="#">
+        AppImage
+      </a>
+    </li>
+    <li>
+      <a className="dropdown__link" href="#">
+        DEB
+      </a>
+    </li>
+    <li>
+      <a className="dropdown__link" href="#">
+        Get it on Snap Store Image
+      </a>
+    </li>
+  </ul>
+</div>
+</div>
 
 ---
 
 ## Screenshots
 
-<Tabs className="unique-tabs">
-  <TabItem value="Android">
+<Tabs className="unique-tabs" groupId="screenshot-os" queryString>
+  <TabItem value="android" label="Android">
     <ShowcaseCarousel
       aspectRatio={6000 / 4000}
       sites={[
@@ -46,51 +90,45 @@ hide_table_of_contents: true
       ]}
     />
   </TabItem>
-  <TabItem value="Windows">
+  <TabItem value="windows" label="Windows">
     <ShowcaseCarousel
       aspectRatio={6000 / 4000}
       sites={[
         {
           name: "Windows Screenshot 1",
-          image:
-            "https://cdn.jsdelivr.net/gh/Comp-Labs/cdn/img/default.jpg",
+          image: "https://cdn.jsdelivr.net/gh/Comp-Labs/cdn/img/default.jpg",
           url: "",
         },
         {
           name: "Windows Screenshot 2",
-          image:
-            "https://cdn.jsdelivr.net/gh/Comp-Labs/cdn/img/default.jpg",
+          image: "https://cdn.jsdelivr.net/gh/Comp-Labs/cdn/img/default.jpg",
           url: "",
         },
         {
           name: "Windows Screenshot 3",
-          image:
-            "https://cdn.jsdelivr.net/gh/Comp-Labs/cdn/img/default.jpg",
+          image: "https://cdn.jsdelivr.net/gh/Comp-Labs/cdn/img/default.jpg",
           url: "",
         },
       ]}
     />
   </TabItem>
-  <TabItem value="Linux">
+  <TabItem value="linux" label="Linux">
     <ShowcaseCarousel
       aspectRatio={6000 / 4000}
       sites={[
         {
           name: "Linux Screenshot 1",
-          image:
-            "https://cdn.jsdelivr.net/gh/Comp-Labs/cdn/img/default.jpg",
+          image: "https://cdn.jsdelivr.net/gh/Comp-Labs/cdn/img/default.jpg",
           url: "",
         },
         {
           name: "Linux Screenshot 2",
-          image:
-            "https://cdn.jsdelivr.net/gh/Comp-Labs/cdn/img/default.jpg",
+          image: "https://cdn.jsdelivr.net/gh/Comp-Labs/cdn/img/default.jpg",
           url: "",
         },
         {
           name: "Linux Screenshot 3",
-          image:
-            "https://cdn.jsdelivr.net/gh/Comp-Labs/cdn/img/default.jpg",
+          image: "https://cdn.jsdelivr.net/gh/Comp-Labs/cdn/img/default.jpg",
           url: "",
         },
       ]}

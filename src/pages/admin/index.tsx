@@ -5,7 +5,7 @@ const AdminPage: React.FC = () => {
   return (
     <BrowserOnly fallback={<div>Loading...</div>}>
       {() => {
-        useEffect( () => {
+        useEffect(() => {
           const CMS = require('netlify-cms-app');
           const uploadcare = require('netlify-cms-media-library-uploadcare');
 

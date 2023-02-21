@@ -29,8 +29,8 @@ function TabsComponent(props: Props): JSX.Element {
     // minification, but we assume it won't throw in prod.
     throw new Error(
       `Docusaurus error: Bad <Tabs> child <${
-        // @ts-expect-error: guarding against unexpected cases
-        typeof child.type === 'string' ? child.type : child.type.name
+      // @ts-expect-error: guarding against unexpected cases
+      typeof child.type === 'string' ? child.type : child.type.name
       }>: all children of the <Tabs> component should be <TabItem>, and every <TabItem> should have a unique "value" prop.`
     );
   });

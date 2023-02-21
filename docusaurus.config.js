@@ -1,5 +1,7 @@
 const lightCodeTheme = require("prism-react-renderer/themes/github");
 const darkCodeTheme = require("prism-react-renderer/themes/dracula");
+// const remarkMath = require("remark-math");
+// const rehypeKatex = require("./src/remark/rehypeKatex.js");
 
 // With JSDoc @type annotations, IDEs can provide config autocompletion
 /** @type {import('@docusaurus/types').DocusaurusConfig} */
@@ -58,22 +60,22 @@ const darkCodeTheme = require("prism-react-renderer/themes/dracula");
         async: true,
       },
       // Chirpy
-      {
-        src: "https://chirpy.dev/bootstrap/comment.js",
-        defer: true,
-        'data-chirpy-domain': "complabs.in",
-        'data-chirpy-theme': "system",
-      },
+      // {
+      //   src: "https://chirpy.dev/bootstrap/comment.js",
+      //   defer: true,
+      //   'data-chirpy-domain': "complabs.in",
+      //   'data-chirpy-theme': "system",
+      // },
     ],
 
     headTags: [
-      {
-        tagName: 'script',
-        attributes: {
-          defer: 'true',
-          src: 'https://chirpy.dev/bootstrap/comment.js',
-        },
-      },
+      // {
+      //   tagName: 'script',
+      //   attributes: {
+      //     defer: 'true',
+      //     src: 'https://chirpy.dev/bootstrap/comment.js',
+      //   },
+      // },
       {
         tagName: 'script',
         attributes: {
@@ -124,6 +126,27 @@ const darkCodeTheme = require("prism-react-renderer/themes/dracula");
 
       //   },
       // ],
+      // [
+      //   "blog-index",
+      //   {
+      //     blogSidebarCount: "ALL",
+      //     blogSidebarTitle: "All my posts",
+      //     postsPerPage: "ALL",
+      //     remarkPlugins: [remarkMath],
+      //     rehypePlugins: [[rehypeKatex, { strict: false }]],
+      //   },
+      // ],
+      async function myPlugin(context, options) {
+        return {
+          name: "docusaurus-tailwindcss",
+          configurePostCss(postcssOptions) {
+            // Appends TailwindCSS and AutoPrefixer.
+            postcssOptions.plugins.push(require("tailwindcss"));
+            postcssOptions.plugins.push(require("autoprefixer"));
+            return postcssOptions;
+          },
+        };
+      },
       'plugin-image-zoom',
       [
         "@docusaurus/plugin-pwa",
@@ -285,52 +308,8 @@ const darkCodeTheme = require("prism-react-renderer/themes/dracula");
             { to: "/docs", label: "🚧 Docs", position: "left" },
             { to: "blog", label: "Guides", position: "left" },
             { to: "/apps", label: "Apps", position: "left" },
-            {
-              type: "dropdown",
-              label: "Solutions",
-              position: "left",
-              items: [
-                {
-                  label: "🚧 App Publishing Solution",
-                  to: "/solutions/google-play-developers",
-                },
-                {
-                  label: "🚧 Enterprise Mail Solution",
-                  to: "/solutions/enterprise-mail-solution",
-                },
-                {
-                  label: "🚧 Enterprise Meeting Solution",
-                  to: "/solutions/enterprise-meeting-solution",
-                },
-                {
-                  label: "🚧 Anonymous VPN",
-                  to: "/solutions/vpn",
-                },
-              ],
-            },
-            {
-              type: "dropdown",
-              label: "Tools",
-              position: "left",
-              items: [
-                {
-                  label: "DNS Lookup",
-                  href: "https://digwebinterface.com",
-                },
-                {
-                  label: "MicroURL",
-                  href: "https://microurl.complabs.in/",
-                },
-                {
-                  label: "SpeedTest",
-                  to: "/tools/speedtest",
-                },
-                {
-                  label: "Web Tools",
-                  href: "https://www.webtoolhub.com/",
-                },
-              ],
-            },
+            { to: "/solutions", label: "Solutions", position: "left" },
+            { to: "/tools", label: "Tools", position: "left" },
             { to: "/contact", label: "Contact Us", position: "left" },
             // { to: "/donate", label: "Donate Us", position: "left" },
             { to: "/webdev-crafts", label: "WebDev's Crafts", position: "left" },
@@ -366,12 +345,12 @@ const darkCodeTheme = require("prism-react-renderer/themes/dracula");
             //   width: "24px",
             //   height: "24px",
             // },
-            {
-              type: 'custom-Buttons',
-              position: "right",
-              itemProp: 44,
-              anotherProp: "xyz",
-            },
+            // {
+            //   type: 'custom-Buttons',
+            //   position: "right",
+            //   itemProp: 44,
+            //   anotherProp: "xyz",
+            // },
           ],
         },
         footer: {
@@ -416,10 +395,10 @@ const darkCodeTheme = require("prism-react-renderer/themes/dracula");
                   label: "Legal",
                   href: "/legal",
                 },
-                // {
-                //   label: "Donate Us!",
-                //   to: "/donate",
-                // },
+                {
+                  label: "Donate Us!",
+                  to: "/donate",
+                },
               ],
             },
             {
@@ -430,11 +409,11 @@ const darkCodeTheme = require("prism-react-renderer/themes/dracula");
                   to: "/solutions/google-play-developers",
                 },
                 {
-                  label: "🚧 Enterprise Meeting Service",
+                  label: "🚧 Enterprise Meeting Solution",
                   to: "/solutions/enterprise-meeting-solution",
                 },
                 {
-                  label: "🚧 Enterprise Mail Service",
+                  label: "🚧 Enterprise Mail Solution",
                   to: "/solutions/enterprise-mail-solution",
                 },
                 {
@@ -525,11 +504,11 @@ const darkCodeTheme = require("prism-react-renderer/themes/dracula");
                   to: "/solutions/google-play-developers",
                 },
                 {
-                  label: "Business Meeting Service",
+                  label: "Enterprise Meeting Solution",
                   to: "/solutions/enterprise-meeting-solution",
                 },
                 {
-                  label: "Business Mail Service",
+                  label: "Enterprise Mail Solution",
                   to: "/solutions/enterprise-mail-solution",
                 },
                 {

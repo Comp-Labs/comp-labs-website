@@ -1,15 +1,11 @@
 /* Fonts */
 @import "react-alice-carousel/lib/alice-carousel.css";
-@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@200;300;400;500;600;800&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Lobster&family=Rubik:wght@400;500&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@200;300;400;500;600;800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lobster&family=Rubik:wght@400;500&display=swap");
 
-/* @font-face {
-  font-family: Plus Jakarta Sans;
-  font-weight: 200 300 400 500 600 800;
-  font-style: normal;
-  src: url(/static/fonts/FiraCode-VF.woff2) format("woff2-variations"),
-    url(/static/fonts/FiraCode-VF.woff) format("woff-variations");
-} */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 
 @font-face {
   font-family: Fira Code VF;
@@ -34,21 +30,18 @@
   --docs-color-background-200: #efefef;
   --docs-color-background-300: #dcdcdc;
 
-  /* Color from prism themes */
-  /* --docs-color-code-background: #f6f8fa; */
-
   --docs-color-android: #44db85;
   --docs-color-apple: var(--docs-color-text) !important;
 
   --ifm-spacing-horizontal: 1.5rem;
 
-  --ifm-font-family-base: 'Rubik', system-ui, -apple-system, Segoe UI,
-    Roboto, Ubuntu, Cantarell, Noto Sans, sans-serif, BlinkMacSystemFont,
-    'Segoe UI', Helvetica, Arial, sans-serif, 'Apple Color Emoji',
-    'Segoe UI Emoji', 'Segoe UI Symbol';
+  --ifm-font-family-base: "Rubik", system-ui, -apple-system, Segoe UI, Roboto,
+    Ubuntu, Cantarell, Noto Sans, sans-serif, BlinkMacSystemFont, "Segoe UI",
+    Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji",
+    "Segoe UI Symbol";
 
-  --ifm-font-family-monospace: 'Fira Code VF', SFMono-Regular, Menlo, Monaco,
-    Consolas, 'Liberation Mono', 'Courier New', monospace;
+  --ifm-font-family-monospace: "Fira Code VF", SFMono-Regular, Menlo, Monaco,
+    Consolas, "Liberation Mono", "Courier New", monospace;
 
   --ifm-color-primary: #076af7;
   --ifm-color-primary-dark: #065fde;
@@ -59,10 +52,9 @@
   --ifm-color-primary-lightest: #5096fa;
   --ifm-color-info: #25c2a0;
 
-  --ifm-navbar-shadow: none;
-  --ifm-toc-border-color: #dedede;
-  --ifm-background-color: linear-gradient(180deg, #F3F6F9 0%, #FFFFFF 100%);
+  --ifm-background-color: linear-gradient(180deg, #f3f6f9 0%, #ffffff 100%);
   --ifm-code-font-size: 95%;
+  --ifm-navbar-padding-horizontal: 10px;
 }
 
 :root[data-theme="dark"] {
@@ -78,23 +70,18 @@
   --docs-color-background-200: #efefef;
   --docs-color-background-300: #dcdcdc;
 
-  /* Color from prism themes */
-  /* --docs-color-code-background: #f6f8fa; */
-
   --docs-color-android: #44db85;
   --docs-color-apple: var(--docs-color-text) !important;
 
   --ifm-spacing-horizontal: 1.5rem;
 
-  --ifm-font-family-base: 'Rubik', system-ui, -apple-system, Segoe UI,
-    Roboto, Ubuntu, Cantarell, Noto Sans, sans-serif, BlinkMacSystemFont,
-    'Segoe UI', Helvetica, Arial, sans-serif, 'Apple Color Emoji',
-    'Segoe UI Emoji', 'Segoe UI Symbol';
+  --ifm-font-family-base: "Rubik", system-ui, -apple-system, Segoe UI, Roboto,
+    Ubuntu, Cantarell, Noto Sans, sans-serif, BlinkMacSystemFont, "Segoe UI",
+    Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji",
+    "Segoe UI Symbol";
 
-  --ifm-font-family-monospace: 'Fira Code VF', SFMono-Regular, Menlo, Monaco,
-    Consolas, 'Liberation Mono', 'Courier New', monospace;
-
-  /* #076AF7 */
+  --ifm-font-family-monospace: "Fira Code VF", SFMono-Regular, Menlo, Monaco,
+    Consolas, "Liberation Mono", "Courier New", monospace;
 
   --ifm-color-primary: #076af7;
   --ifm-color-primary-dark: #065fde;
@@ -105,10 +92,9 @@
   --ifm-color-primary-lightest: #5096fa;
   --ifm-color-info: #25c2a0;
 
-  --ifm-navbar-shadow: none;
-  --ifm-toc-border-color: #ededed;
-  --ifm-background-color: linear-gradient(180deg, #F3F6F9 0%, #FFFFFF 100%);
+  --ifm-background-color: linear-gradient(180deg, #f3f6f9 0%, #ffffff 100%);
   --ifm-code-font-size: 95%;
+  --ifm-navbar-padding-horizontal: 10px;
 }
 
 html[data-theme="dark"] {
@@ -117,11 +103,47 @@ html[data-theme="dark"] {
   --ifm-color-primary: #1a90ff;
 
   /* --ifm-footer-background-color: #1c1c1c; */
-  --ifm-background-surface-color: linear-gradient(rgb(10, 25, 41) 0%, rgb(0, 30, 60) 100%) 0% 0% / 100% 300px no-repeat;
-  --ifm-background-color: linear-gradient(rgb(10, 25, 41) 0%, rgb(0, 30, 60) 100%) 0% 0% / 100% 300px no-repeat;
-  --ifm-toc-border-color: #2e2e2e;
+  --ifm-background-surface-color: linear-gradient(
+      rgb(10, 25, 41) 0%,
+      rgb(0, 30, 60) 100%
+    )
+    0% 0% / 100% 300px no-repeat;
+  --ifm-background-color: linear-gradient(
+      rgb(10, 25, 41) 0%,
+      rgb(0, 30, 60) 100%
+    )
+    0% 0% / 100% 300px no-repeat;
 
   --ifm-color-content: #e7e7e7;
+}
+
+@layer components {
+  .noise-bg {
+    background-image: url("https://docs.dyte.io/static/landing-page/grid-light.svg"),
+      url("https://docs.dyte.io/static/landing-page/noise-light.png"),
+      linear-gradient(
+        to bottom,
+        transparent,
+        rgb(var(--docs-color-secondary-700))
+      );
+    background-size: 48px 48px, 100% 100%, 100%;
+  }
+
+  html[data-theme="dark"] .noise-bg {
+    background-image: url("https://docs.dyte.io/static/landing-page/grid-dark.svg"),
+      url("https://docs.dyte.io/static/landing-page/noise-dark.png");
+  }
+}
+
+/* Main layout */
+.navbar__inner {
+  max-width: 1420px;
+  padding: 0 16px;
+  margin: 0 auto;
+}
+.main-wrapper > div {
+  max-width: 1440px;
+  margin: 0 auto;
 }
 
 pre,
@@ -129,8 +151,80 @@ code {
   font-variant-ligatures: none;
 }
 
-[data-theme="dark"] img {
+.docusaurusLink {
+  text-decoration: none;
+  color: black;
+}
+
+html[data-theme="dark"] .docusaurusLink {
+  text-decoration: none;
+  color: white;
+}
+
+.card:hover {
+  background-color: #f5f5f7;
+  text-decoration: none;
+}
+
+html[data-theme="dark"] .card:hover {
+  background-color: #1b1b1b;
+  text-decoration: none;
+}
+
+html[data-theme="dark"] img {
   filter: brightness(75%);
+}
+
+input::file-selector-button {
+  appearance: none;
+  background-color: #2ea44f;
+  border: 1px solid rgba(27, 31, 35, 0.15);
+  border-radius: 6px;
+  box-shadow: rgba(27, 31, 35, 0.1) 0 1px 0;
+  box-sizing: border-box;
+  color: #fff;
+  cursor: pointer;
+  display: inline-block;
+  font-family: -apple-system, system-ui, "Segoe UI", Helvetica, Arial,
+    sans-serif, "Apple Color Emoji", "Segoe UI Emoji";
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 20px;
+  padding: 6px 16px;
+  position: relative;
+  text-align: center;
+  text-decoration: none;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  vertical-align: middle;
+  white-space: nowrap;
+}
+
+input::file-selector-button:focus:not(:focus-visible):not(.focus-visible) {
+  box-shadow: none;
+  outline: none;
+}
+
+input::file-selector-button:hover {
+  background-color: #2c974b;
+}
+
+input::file-selector-button:focus {
+  box-shadow: rgba(46, 164, 79, 0.4) 0 0 0 3px;
+  outline: none;
+}
+
+input::file-selector-button:disabled {
+  background-color: #94d3a2;
+  border-color: rgba(27, 31, 35, 0.1);
+  color: rgba(255, 255, 255, 0.8);
+  cursor: default;
+}
+
+input::file-selector-button:active {
+  background-color: #298e46;
+  box-shadow: rgba(20, 70, 32, 0.2) 0 1px 0 inset;
 }
 
 /* [data-theme="dark"] body {
@@ -176,7 +270,7 @@ code {
 }
 
 .footer__row .links {
-  flex: 3;
+  flex: 4;
 }
 
 .footer__title {
@@ -216,14 +310,15 @@ code {
 
 /* Navbar */
 
-.navbar {
+nav.navbar:not(.navbar-sidebar--show) {
   backdrop-filter: blur(20px);
-  box-shadow: inset 0px -1px 1px #f5f5f5;
-  background-color: rgba(255, 255, 255, 0.72);
+  background-color: transparent;
 }
 
-nav.navbar {
+.navbar {
   border-bottom: 1px solid var(--ifm-toc-border-color);
+  white-space: nowrap;
+  box-shadow: none;
 }
 
 .navbar__item,
@@ -239,7 +334,7 @@ nav.navbar {
   background: none;
 }
 
-ul.menu__list>li>a.menu__link--active {
+ul.menu__list > li > a.menu__link--active {
   border-right: 1px solid var(--ifm-color-primary);
 }
 
@@ -269,6 +364,32 @@ html[data-theme="dark"] .navbar {
 .pagination-nav,
 .footer {
   --ifm-link-hover-decoration: none;
+}
+
+.dropdown > .navbar__link {
+  display: flex;
+  align-items: center;
+}
+
+.dropdown > .navbar__link:after {
+  content: "";
+  border: none;
+  position: static;
+  top: auto;
+  transform: none;
+  width: 12px;
+  height: 12px;
+  background-image: url("data:image/svg+xml,%3Csvg width='24' height='24' fill='none' viewBox='0 0 24 24' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M4.293 8.293a1 1 0 0 1 1.414 0L12 14.586l6.293-6.293a1 1 0 1 1 1.414 1.414l-7 7a1 1 0 0 1-1.414 0l-7-7a1 1 0 0 1 0-1.414Z' fill='%23888888'/%3E%3C/svg%3E");
+  background-size: 12px;
+  background-repeat: no-repeat;
+}
+
+html[data-theme="dark"] .dropdown > .navbar__link:after {
+  background-image: url("data:image/svg+xml,%3Csvg width='24' height='24' fill='none' viewBox='0 0 24 24' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M4.293 8.293a1 1 0 0 1 1.414 0L12 14.586l6.293-6.293a1 1 0 1 1 1.414 1.414l-7 7a1 1 0 0 1-1.414 0l-7-7a1 1 0 0 1 0-1.414Z' fill='%23ffffff'/%3E%3C/svg%3E");
+}
+
+.dropdown:hover > .navbar__link:after {
+  background-image: url("data:image/svg+xml,%3Csvg width='24' height='24' fill='none' viewBox='0 0 24 24' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M4.293 8.293a1 1 0 0 1 1.414 0L12 14.586l6.293-6.293a1 1 0 1 1 1.414 1.414l-7 7a1 1 0 0 1-1.414 0l-7-7a1 1 0 0 1 0-1.414Z' fill='%231a90ff'/%3E%3C/svg%3E") !important;
 }
 
 .menu__link {
@@ -310,8 +431,7 @@ table th {
   height: 0.25rem;
   border-radius: 0.25rem;
   background-image: linear-gradient(90deg, #0059b2, #007fff);
-  margin-top: 0px;
-  margin-bottom: 10px;
+  margin: 5px;
 }
 
 .vr {
@@ -362,10 +482,6 @@ div[class^="announcementBar_"] {
   white-space: nowrap;
 }
 
-.navbar {
-  white-space: nowrap;
-}
-
 navbar__item dropdown dropdown--hoverable {
   min-width: fit-content;
   white-space: nowrap;
@@ -376,19 +492,25 @@ table {
 }
 
 img {
-  border-radius: 20px;
+  border-radius: 15px;
 }
 
 div[class^="announcementBar_"] {
-  --site-announcement-bar-stripe-color1: hsl(var(--site-primary-hue-saturation),
-      85%);
-  --site-announcement-bar-stripe-color2: hsl(var(--site-primary-hue-saturation),
-      95%);
-  background: repeating-linear-gradient(35deg,
-      var(--site-announcement-bar-stripe-color1),
-      var(--site-announcement-bar-stripe-color1) 20px,
-      var(--site-announcement-bar-stripe-color2) 10px,
-      var(--site-announcement-bar-stripe-color2) 40px);
+  --site-announcement-bar-stripe-color1: hsl(
+    var(--site-primary-hue-saturation),
+    85%
+  );
+  --site-announcement-bar-stripe-color2: hsl(
+    var(--site-primary-hue-saturation),
+    95%
+  );
+  background: repeating-linear-gradient(
+    35deg,
+    var(--site-announcement-bar-stripe-color1),
+    var(--site-announcement-bar-stripe-color1) 20px,
+    var(--site-announcement-bar-stripe-color2) 10px,
+    var(--site-announcement-bar-stripe-color2) 40px
+  );
   font-weight: bold;
 }
 
@@ -504,10 +626,15 @@ a:hover::before {
  ![Image ALT](./path/to/image)
  _my image caption_
  */
-img+em {
+img + em {
   text-align: center;
   display: block;
   margin-top: 1rem;
+}
+
+.large-margin {
+  margin-left: 1;
+  margin-right: 1;
 }
 
 /* facebook/docusaurus modules */
@@ -557,7 +684,7 @@ img+em {
 
 .hero {
   backdrop-filter: blur(20px);
-  background-color: linear-gradient(62deg, #8EC5FC 0%, #E0C3FC 100%);
+  background-color: linear-gradient(62deg, #8ec5fc 0%, #e0c3fc 100%);
   padding: 48px;
 }
 
@@ -697,9 +824,9 @@ html[data-theme="dark"] .DocSearch {
   --docsearch-muted-color: var(--ifm-color-secondary-darkest);
   --docsearch-container-background: rgba(47, 55, 69, 0.7);
   /* Modal */
-  --docsearch-modal-background: var(--ifm-background-color);
+  --docsearch-modal-background: rgba(47, 55, 69, 0.7);
   /* Search box */
-  --docsearch-searchbox-background: var(--ifm-background-color);
+  --docsearch-searchbox-background: rgba(47, 55, 69, 0.7);
   --docsearch-searchbox-focus-background: var(--ifm-color-black);
   /* Hit */
   --docsearch-hit-color: var(--ifm-font-color-base);
@@ -707,9 +834,11 @@ html[data-theme="dark"] .DocSearch {
   --docsearch-hit-background: var(--ifm-color-emphasis-100);
   /* Footer */
   --docsearch-footer-background: var(--ifm-background-surface-color);
-  --docsearch-key-gradient: linear-gradient(-26.5deg,
-      var(--ifm-color-emphasis-200) 0%,
-      var(--ifm-color-emphasis-100) 100%);
+  --docsearch-key-gradient: linear-gradient(
+    -26.5deg,
+    var(--ifm-color-emphasis-200) 0%,
+    var(--ifm-color-emphasis-100) 100%
+  );
 }
 
 /* Algolia DocSearch End */
@@ -869,10 +998,10 @@ html[data-theme="dark"] .DocSearch {
   border-radius: 12px;
 }
 
-.disabled {
+/* .disabled {
   opacity: 0.6;
   cursor: not-allowed;
-}
+} */
 
 /* Custom Button End */
 
@@ -960,13 +1089,13 @@ border: 1px solid rgba(255, 255, 255, 0.3);
   border: none;
 }
 
-.dropdown {
+.appsDropdown {
   position: relative;
   display: inline-block;
   border-radius: 12px;
 }
 
-.dropdown-content {
+.appsDropdown-content {
   display: none;
   position: absolute;
   background-color: #ddd;
@@ -976,7 +1105,7 @@ border: 1px solid rgba(255, 255, 255, 0.3);
   border-radius: 7px;
 }
 
-.dropdown-content a {
+.appsDropdown-content a {
   color: black;
   padding: 12px 16px;
   text-decoration: none;
@@ -984,15 +1113,15 @@ border: 1px solid rgba(255, 255, 255, 0.3);
   border-radius: 7px;
 }
 
-.dropdown-content a:hover {
+.appsDropdown-content a:hover {
   background-color: #007aff;
 }
 
-.dropdown:hover .dropdown-content {
+.appsDropdown:hover .appsDropdown-content {
   display: block;
 }
 
-.dropdown:hover .dropbtn {
+.appsDropdown:hover .dropbtn {
   background-color: #3e8e41;
 }
 

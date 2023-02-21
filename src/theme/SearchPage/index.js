@@ -1,5 +1,5 @@
 /* eslint-disable jsx-a11y/no-autofocus */
-import React, {useEffect, useState, useReducer, useRef} from 'react';
+import React, { useEffect, useState, useReducer, useRef } from 'react';
 import clsx from 'clsx';
 import algoliaSearch from 'algoliasearch/lite';
 import algoliaSearchHelper from 'algoliasearch-helper';
@@ -17,13 +17,13 @@ import {
   useSearchPage,
 } from '@docusaurus/theme-common/internal';
 import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
-import {useAllDocsData} from '@docusaurus/plugin-content-docs/client';
-import Translate, {translate} from '@docusaurus/Translate';
+import { useAllDocsData } from '@docusaurus/plugin-content-docs/client';
+import Translate, { translate } from '@docusaurus/Translate';
 import Layout from '@theme/Layout';
 import styles from './styles.module.css';
 // Very simple pluralization: probably good enough for now
 function useDocumentsFoundPlural() {
-  const {selectMessage} = usePluralForm();
+  const { selectMessage } = usePluralForm();
   return (count) =>
     selectMessage(
       count,
@@ -34,7 +34,7 @@ function useDocumentsFoundPlural() {
             'Pluralized label for "{count} documents found". Use as much plural forms (separated by "|") as your language support (see https://www.unicode.org/cldr/cldr-aux/charts/34/supplemental/language_plural_rules.html)',
           message: 'One document found|{count} documents found',
         },
-        {count},
+        { count },
       ),
     );
 }
@@ -53,7 +53,7 @@ function useDocsSearchVersionsHelpers() {
   );
   // Set the value of a single select menu
   const setSearchVersion = (pluginId, searchVersion) =>
-    setSearchVersions((s) => ({...s, [pluginId]: searchVersion}));
+    setSearchVersions((s) => ({ ...s, [pluginId]: searchVersion }));
   const versioningEnabled = Object.values(allDocsData).some(
     (docsData) => docsData.versions.length > 1,
   );
@@ -65,7 +65,7 @@ function useDocsSearchVersionsHelpers() {
   };
 }
 // We want to display one select per versioned docs plugin instance
-function SearchVersionSelectList({docsSearchVersionsHelpers}) {
+function SearchVersionSelectList({ docsSearchVersionsHelpers }) {
   const versionedPluginEntries = Object.entries(
     docsSearchVersionsHelpers.allDocsData,
   )
@@ -108,15 +108,15 @@ function SearchVersionSelectList({docsSearchVersionsHelpers}) {
 }
 function SearchPageContent() {
   const {
-    siteConfig: {themeConfig},
-    i18n: {currentLocale},
+    siteConfig: { themeConfig },
+    i18n: { currentLocale },
   } = useDocusaurusContext();
   const {
-    algolia: {appId, apiKey, indexName, externalUrlRegex},
+    algolia: { appId, apiKey, indexName, externalUrlRegex },
   } = themeConfig;
   const documentsFoundPlural = useDocumentsFoundPlural();
   const docsSearchVersionsHelpers = useDocsSearchVersionsHelpers();
-  const {searchQuery, setSearchQuery} = useSearchPage();
+  const { searchQuery, setSearchQuery } = useSearchPage();
   const initialSearchResultState = {
     items: [],
     query: null,
@@ -133,7 +133,7 @@ function SearchPageContent() {
           return initialSearchResultState;
         }
         case 'loading': {
-          return {...prevState, loading: true};
+          return { ...prevState, loading: true };
         }
         case 'update': {
           if (searchQuery !== data.value.query) {
@@ -169,9 +169,9 @@ function SearchPageContent() {
   });
   algoliaHelper.on(
     'result',
-    ({results: {query, hits, page, nbHits, nbPages}}) => {
+    ({ results: { query, hits, page, nbHits, nbPages } }) => {
       if (query === '' || !Array.isArray(hits)) {
-        searchResultStateDispatcher({type: 'reset'});
+        searchResultStateDispatcher({ type: 'reset' });
         return;
       }
       const sanitizeValue = (value) =>
@@ -182,7 +182,7 @@ function SearchPageContent() {
       const items = hits.map(
         ({
           url,
-          _highlightResult: {hierarchy},
+          _highlightResult: { hierarchy },
           _snippetResult: snippet = {},
         }) => {
           const parsedURL = new URL(url);
@@ -219,37 +219,37 @@ function SearchPageContent() {
   const prevY = useRef(0);
   const observer = useRef(
     ExecutionEnvironment.canUseIntersectionObserver &&
-      new IntersectionObserver(
-        (entries) => {
-          const {
-            isIntersecting,
-            boundingClientRect: {y: currentY},
-          } = entries[0];
-          if (isIntersecting && prevY.current > currentY) {
-            searchResultStateDispatcher({type: 'advance'});
-          }
-          prevY.current = currentY;
-        },
-        {threshold: 1},
-      ),
+    new IntersectionObserver(
+      (entries) => {
+        const {
+          isIntersecting,
+          boundingClientRect: { y: currentY },
+        } = entries[0];
+        if (isIntersecting && prevY.current > currentY) {
+          searchResultStateDispatcher({ type: 'advance' });
+        }
+        prevY.current = currentY;
+      },
+      { threshold: 1 },
+    ),
   );
   const getTitle = () =>
     searchQuery
       ? translate(
-          {
-            id: 'theme.SearchPage.existingResultsTitle',
-            message: 'Search results for "{query}"',
-            description: 'The search page title for non-empty query',
-          },
-          {
-            query: searchQuery,
-          },
-        )
+        {
+          id: 'theme.SearchPage.existingResultsTitle',
+          message: 'Search results for "{query}"',
+          description: 'The search page title for non-empty query',
+        },
+        {
+          query: searchQuery,
+        },
+      )
       : translate({
-          id: 'theme.SearchPage.emptyResultsTitle',
-          message: 'Search the Tech Fiddle Website',
-          description: 'The search page title for empty query',
-        });
+        id: 'theme.SearchPage.emptyResultsTitle',
+        message: 'Search the Tech Fiddle Website',
+        description: 'The search page title for empty query',
+      });
   const makeSearch = useEvent((page = 0) => {
     algoliaHelper.addDisjunctiveFacetRefinement('docusaurus_tag', 'default');
     algoliaHelper.addDisjunctiveFacetRefinement('language', currentLocale);
@@ -275,9 +275,9 @@ function SearchPageContent() {
     return () => true;
   }, [loaderRef]);
   useEffect(() => {
-    searchResultStateDispatcher({type: 'reset'});
+    searchResultStateDispatcher({ type: 'reset' });
     if (searchQuery) {
-      searchResultStateDispatcher({type: 'loading'});
+      searchResultStateDispatcher({ type: 'loading' });
       setTimeout(() => {
         makeSearch();
       }, 300);
@@ -382,10 +382,10 @@ function SearchPageContent() {
         {searchResultState.items.length > 0 ? (
           <main>
             {searchResultState.items.map(
-              ({title, url, summary, breadcrumbs}, i) => (
+              ({ title, url, summary, breadcrumbs }, i) => (
                 <article key={i} className={styles.searchResultItem}>
                   <h2 className={styles.searchResultItemHeading}>
-                    <Link to={url} dangerouslySetInnerHTML={{__html: title}} />
+                    <Link to={url} dangerouslySetInnerHTML={{ __html: title }} />
                   </h2>
 
                   {breadcrumbs.length > 0 && (
@@ -401,7 +401,7 @@ function SearchPageContent() {
                             className="breadcrumbs__item"
                             // Developer provided the HTML, so assume it's safe.
                             // eslint-disable-next-line react/no-danger
-                            dangerouslySetInnerHTML={{__html: html}}
+                            dangerouslySetInnerHTML={{ __html: html }}
                           />
                         ))}
                       </ul>
@@ -413,7 +413,7 @@ function SearchPageContent() {
                       className={styles.searchResultItemSummary}
                       // Developer provided the HTML, so assume it's safe.
                       // eslint-disable-next-line react/no-danger
-                      dangerouslySetInnerHTML={{__html: summary}}
+                      dangerouslySetInnerHTML={{ __html: summary }}
                     />
                   )}
                 </article>

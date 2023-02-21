@@ -12,10 +12,10 @@ function PlayHeader1() {
   return (
     <header className={clsx("hero hero--primary", "heroBanner")}>
       <div className="container">
-        {/* <h1 className="hero__title">App Submission Service for Google Play Apps</h1> */}
+        {/* <h1 className="hero__title">App Submission Solution for Google Play Apps</h1> */}
         <p className="hero__subtitle">
           Hello, Android Developers! This is the SaaS Solution You Were Looking
-          For, Especially Tailored For You, "App Submission Service for Google
+          For, Especially Tailored For You, "App Submission Solution for Google
           Play Apps". You Can Upload your Developed Apps to Google Play Free of
           Cost With This Solution! Just Fill in the form by clicking on the
           button below saying "Register Now!" and we'll get back to you shortly!

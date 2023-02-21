@@ -16,7 +16,7 @@ function CodePen(props): JSX.Element {
       data-preview={props.preview ? 'true' : 'false'}
       data-pen-title={props.penTitle}
       no-prerender="true"
-     />
+    />
   );
 }
 

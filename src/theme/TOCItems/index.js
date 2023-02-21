@@ -1,5 +1,5 @@
-import React, {useMemo} from 'react';
-import {useThemeConfig} from '@docusaurus/theme-common';
+import React, { useMemo } from 'react';
+import { useThemeConfig } from '@docusaurus/theme-common';
 import {
   useTOCHighlight,
   useFilteredAndTreeifiedTOC,

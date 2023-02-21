@@ -26,21 +26,21 @@ export default function BackToTopButton() {
     //   variant="soft"
     // />
     <Tooltip title="Scroll to top" variant="solid">
-    <button
-      aria-label={translate({
-        id: 'theme.BackToTopButton.buttonAriaLabel',
-        message: 'Scroll back to top',
-        description: 'The ARIA label for the back to top button',
-      })}
-      className={clsx(
-        'clean-btn',
-        ThemeClassNames.common.backToTopButton,
-        styles.backToTopButton,
-        shown && styles.backToTopButtonShow,
-      )}
-      type="button"
-      onClick={scrollToTop}
-    />
+      <button
+        aria-label={translate({
+          id: 'theme.BackToTopButton.buttonAriaLabel',
+          message: 'Scroll back to top',
+          description: 'The ARIA label for the back to top button',
+        })}
+        className={clsx(
+          'clean-btn',
+          ThemeClassNames.common.backToTopButton,
+          styles.backToTopButton,
+          shown && styles.backToTopButtonShow,
+        )}
+        type="button"
+        onClick={scrollToTop}
+      />
     </Tooltip>
   );
 }

@@ -7,19 +7,19 @@ import { CssVarsProvider } from "@mui/joy/styles";
 
 export default function Tag({ permalink, label, count }) {
   return (
-      <Chip
-        // className={clsx(
-        //   count ? styles.tagWithCount : styles.tagRegular,
-        // )}
-        color="primary"
-        variant="soft"
-        component="a"
-        href={permalink}
-      >
-        {label}
-        {count && <div className="space" />}
-        {count && <code>{count}</code>}
-      </Chip>
+    <Chip
+      // className={clsx(
+      //   count ? styles.tagWithCount : styles.tagRegular,
+      // )}
+      color="primary"
+      variant="soft"
+      component="a"
+      href={permalink}
+    >
+      {label}
+      {count && <div className="space" />}
+      {count && <code>{count}</code>}
+    </Chip>
 
     // <Link
     //   href={permalink}

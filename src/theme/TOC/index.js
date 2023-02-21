@@ -3,6 +3,7 @@ import clsx from 'clsx';
 import TOCItems from '@theme/TOCItems';
 import styles from './styles.module.css';
 import YTSubscribe from '@site/src/components/YTSubscribe';
+import Divider from "@mui/joy/Divider";
 // Using a custom className
 // This prevents TOCInline/TOCCollapsible getting highlighted by mistake
 const LINK_CLASS_NAME = 'table-of-contents__link toc-highlight';
@@ -15,7 +16,7 @@ export default function TOC({ className, ...props }) {
         linkClassName={LINK_CLASS_NAME}
         linkActiveClassName={LINK_ACTIVE_CLASS_NAME}
       />
-      <hr />
+      <Divider />
       <YTSubscribe />
     </div>
   );

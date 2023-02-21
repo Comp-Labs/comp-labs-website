@@ -19,25 +19,25 @@ Playground supports single file and multi-file examples to show the required cod
 You can mix multi-file and single file examples together in a single example:
 
 ```tsx
-import angular_example_component_html from './angular/example_component_html.md';
-import angular_example_component_ts from './angular/example_component_ts.md';
+import angular_example_component_html from "./angular/example_component_html.md";
+import angular_example_component_ts from "./angular/example_component_ts.md";
 
-import react_main_tsx from './react/main_tsx.md';
-import react_main_css from './react/main_css.md';
+import react_main_tsx from "./react/main_tsx.md";
+import react_main_css from "./react/main_css.md";
 
-import vue from './vue.md';
-import javascript from './javascript.md';
+import vue from "./vue.md";
+import javascript from "./javascript.md";
 
 <Playground
   files={{
     angular: {
-      'src/app/example.component.html': angular_example_component_html,
-      'src/app/example.component.ts': angular_example_component_ts,
+      "src/app/example.component.html": angular_example_component_html,
+      "src/app/example.component.ts": angular_example_component_ts,
     },
     react: {
       files: {
-        'src/main.tsx': react_main_tsx,
-        'src/main.css': react_main_css,
+        "src/main.tsx": react_main_tsx,
+        "src/main.css": react_main_css,
       },
     },
     javascript,

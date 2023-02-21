@@ -4,9 +4,9 @@ import BlogPostItemHeaderInfo from '@theme/BlogPostItem/Header/Info';
 import BlogPostItemHeaderAuthors from '@theme/BlogPostItem/Header/Authors';
 import ReadingTime from "@site/src/components/ReadingTime";
 import NativeShare from "@site/src/components/NativeShare";
-// import {useBlogPost} from '@docusaurus/theme-common/internal';
-// const {frontMatter} = useBlogPost();
+import {useBlogPost} from '@docusaurus/theme-common/internal';
 export default function BlogPostItemHeader() {
+  const {frontMatter} = useBlogPost();
   return (
     <header>
       <BlogPostItemHeaderTitle />
@@ -20,7 +20,7 @@ export default function BlogPostItemHeader() {
       </div>
       <BlogPostItemHeaderInfo />
       <BlogPostItemHeaderAuthors />
-      {/* <img src={frontMatter.image} /> */}
+      <img src={frontMatter.image} />
     </header>
   );
 }

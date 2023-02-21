@@ -17,8 +17,14 @@ import Terminal from "@site/src/components/ShowcaseWindow/Terminal";
 import TOCInline from '@theme/TOCInline';
 import YTSubscribe from '@site/src/components/YTSubscribe';
 // Icons
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'; // Import the FontAwesomeIcon component.
+import { library } from '@fortawesome/fontawesome-svg-core'; // Import the library component.
+import { fab } from '@fortawesome/free-brands-svg-icons'; // Import all brands icons.
+import { fas } from '@fortawesome/free-solid-svg-icons'; // Import all solid icons.
 import TerminalRoundedIcon from '@mui/icons-material/TerminalRounded';
 import ContentCopyRoundedIcon from '@mui/icons-material/ContentCopyRounded';
+
+library.add(fab, fas); // Adds all icons to the library so you can use them without importing them individually.
 
 export default {
   ...MDXComponents,
@@ -27,6 +33,7 @@ export default {
   Button: Button,
   CssVarsProvider: CssVarsProvider,
   DocCardList: DocCardList,
+  FontAwesomeIcon: FontAwesomeIcon,
   Giscus: Giscus,
   // Highlight: Highlight,
   Link: Link,

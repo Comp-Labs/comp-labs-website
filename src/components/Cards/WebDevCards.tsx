@@ -10,7 +10,7 @@ import Link from '@docusaurus/Link';
 const WebDevCards = [
   {
     name: 'WeatherBox ⛅',
-    image: 'https://api.microlink.io?url=https%3A%2F%2Fweatherbox.complabs.in&overlay.browser=dark&screenshot=true&meta=false&embed=screenshot.url',
+    image: 'https://api.microlink.io?url=https%3A%2F%2Fweatherbox.complabs.in&screenshot=true&meta=false&embed=screenshot.url',
     url: {
       page: 'https://weatherbox.complabs.in',
       github: 'https://github.com/Comp-Labs/WeatherBox',
@@ -805,7 +805,7 @@ const WebDevCards = [
 ];
 
 interface Props {
-  name: string;       
+  name: string;
   image: string;
   url: {
     page?: string;
@@ -817,8 +817,8 @@ interface Props {
 
 function WebDevCard({ name, image, url, description }: Props) {
   return (
-    <div className="col col--6 margin-bottom--lg">
-      <div className={clsx('card')}>
+    <div className="col col--4 margin-bottom--lg">
+      <div className={clsx('card shadow--md')}>
         <div className={clsx('card__image')}>
           <Link to={url.page}>
             <img src={image} alt={name} title={name} />
@@ -830,15 +830,16 @@ function WebDevCard({ name, image, url, description }: Props) {
         </div>
         <div className="card__footer">
           <div className="button-group button-group--block">
-            <Link className="button button--primary" to={url.page}>
-              <i className="fa-solid fa-arrow-up-right-from-square" /> View Live
-            </Link>
-            <Link className="button button--primary" to={url.codepen}>
+            {url.page &&
+              <Link className="button button--primary" to={url.page}>
+                <i className="fa-solid fa-arrow-up-right-from-square" /> View Live
+              </Link>}
+            {url.codepen && <Link className="button button--primary" to={url.codepen}>
               <i className="fa-brands fa-codepen" /> View on CodePen
-            </Link>
-            <Link className="button button--primary" to={url.github}>
+            </Link>}
+            {url.github && <Link className="button button--primary" to={url.github}>
               <i className="fa-brands fa-github" /> View on GitHub
-            </Link>
+            </Link>}
           </div>
         </div>
       </div>

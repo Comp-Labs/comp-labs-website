@@ -1,6 +1,6 @@
 import * as React from 'react';
 import clsx from 'clsx';
-import Divider from '@mui/material/Divider';
+import Divider from '@mui/joy/Divider';
 import Typography from '@mui/joy/Typography';
 import { CssVarsProvider } from '@mui/joy/styles';
 import Button from "@mui/joy/Button";
@@ -16,7 +16,7 @@ export default function FooterLayout({ style, links, logo, copyright }) {
   const [open, setOpen] = React.useState(false);
   return (
     <>
-      <React.Fragment>
+      {/* <React.Fragment>
         <Modal
           aria-labelledby="modal-title"
           aria-describedby="modal-desc"
@@ -57,7 +57,7 @@ export default function FooterLayout({ style, links, logo, copyright }) {
             <iframe src="https://3867465e.sibforms.com/serve/MUIEAKVJ6U2B-mH1ZUc8FxYzi4j8ghc67ggrpsmqCD3mWzTdteGH7I3nEytJsQjhiVFvOrc2W1dvtOAhLNb5w5hNC6TSZrxjBEnVH9HibdbMvx3oPMfEIFg847tyrZytCfOWQmglR_BGVqv9faLN14CR1jxRMUWFENlPOQskTGfR5ODo-d-7LVrUwds7HFgDFBxHBXYFdOwwT32m" title="Tech Fiddle Newsletter Subscription" width="100%" height="100%" />
           </Sheet>
         </Modal>
-      </React.Fragment>
+      </React.Fragment> */}
       {/* Modal End */}
       <CssVarsProvider>
         <footer
@@ -76,7 +76,7 @@ export default function FooterLayout({ style, links, logo, copyright }) {
                     <strong>Keep up to date</strong>
                     <p>Join our newsletter for regular updates. No spam ever.</p>
                     <br />
-                    <Button variant="soft" color="primary" endDecorator={<ArrowRightRoundedIcon />} startDecorator={<EmailRoundedIcon />} onClick={() => setOpen(true)}>Subscribe</Button>
+                    <Button variant="soft" color="primary" endDecorator={<ArrowRightRoundedIcon />} startDecorator={<EmailRoundedIcon />} component="a" href="https://3867465e.sibforms.com/serve/MUIEAKVJ6U2B-mH1ZUc8FxYzi4j8ghc67ggrpsmqCD3mWzTdteGH7I3nEytJsQjhiVFvOrc2W1dvtOAhLNb5w5hNC6TSZrxjBEnVH9HibdbMvx3oPMfEIFg847tyrZytCfOWQmglR_BGVqv9faLN14CR1jxRMUWFENlPOQskTGfR5ODo-d-7LVrUwds7HFgDFBxHBXYFdOwwT32m" target="_blank">Subscribe</Button>
                     <br />
                     <br />
                     <FooterButtons />
@@ -89,10 +89,6 @@ export default function FooterLayout({ style, links, logo, copyright }) {
               <div className="muiSpace" /> {copyright && <div className="footer__bottom text--center">{copyright}</div>}
             </div>
           </div>
-          <script defer src="https://chirpy.dev/bootstrap/comment.js" data-chirpy-domain="complabs.in" data-chirpy-theme="system" />
-          <div class="popup-container" />
-          <script type="text/javascript" src="https://unpkg.com/wikipedia-preview@latest/dist/wikipedia-preview.production.js" />
-          <script type="text/javascript" src="/html/wikipedia.js" />
           <script type="text/javascript" src="https://cdn.ywxi.net/js/1.js" async />
           <script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-629de96c243ef6ee" />
         </footer>

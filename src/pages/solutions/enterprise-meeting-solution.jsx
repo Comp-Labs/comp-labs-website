@@ -20,12 +20,15 @@ function MeetHeader2() {
             </b>
           </p>
         </Admonition>
-        <h1 className="hero__title">App Submission Service for Google Play Developer Console</h1>
+        <h1 className="hero__title">
+          App Submission Solution for Google Play Developer Console
+        </h1>
         <p className="hero__subtitle"></p>
         <div className={buttons}>
           <Link
             className="button button--primary"
-            href="https://forms.gle/XM3VbGQD6uXqNr43A">
+            href="https://forms.gle/XM3VbGQD6uXqNr43A"
+          >
             Register Now!
           </Link>
         </div>
@@ -43,7 +46,9 @@ function MeetHeader1() {
           <img
             alt={translate({ message: "Tech Fiddle Meet Logo Animated" })}
             className={"heroLogo"}
-            src={useBaseUrl("https://cdn.jsdelivr.net/gh/Comp-Labs/cdn/img/apps/comp-labs-meet/icon.png")}
+            src={useBaseUrl(
+              "https://cdn.jsdelivr.net/gh/Comp-Labs/cdn/img/apps/comp-labs-meet/icon.png"
+            )}
             width="256"
             height="256"
           />
@@ -54,22 +59,25 @@ function MeetHeader1() {
               __html: translate({
                 id: "homepage.hero.title",
                 message:
-                  "<p>Best <b>SaaS Solution</b> Which <b>Empowers</b> Your <b>Personal</b>, <b>Business</b>, and <b>Enterprise Meetings</b> <b>Anywhere</b>, No <b>Matter Where You Are</b>.</p>",
+                  "<p>Best <b>SaaS Solution</b> Which <b>Empowers</b> Your <b>Personal</b>, <b>Enterprise</b>, and <b>Enterprise Meetings</b> <b>Anywhere</b>, No <b>Matter Where You Are</b>.</p>",
               }),
             }}
           />
         </h1>
         <div className={"indexCtas"}>
-        <Link className="button button--primary" href="https://forms.gle/XM3VbGQD6uXqNr43A">
+          <Link
+            className="button button--primary"
+            href="https://forms.gle/XM3VbGQD6uXqNr43A"
+          >
             <Translate>Register Now!</Translate>
           </Link>
           <Admonition type="caution" icon="⚠️">
-          <p>
-            <b>
-              This Page is in Development. Browse this Page with Caution ⚠️.
-            </b>
-          </p>
-        </Admonition>
+            <p>
+              <b>
+                This Page is in Development. Browse this Page with Caution ⚠️.
+              </b>
+            </p>
+          </Admonition>
         </div>
       </div>
     </div>

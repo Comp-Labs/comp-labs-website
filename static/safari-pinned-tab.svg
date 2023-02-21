@@ -3,12 +3,11 @@
 <svg version="1.0" xmlns="http://www.w3.org/2000/svg"
     width="285.000000pt" height="285.000000pt" viewBox="0 0 285.000000 285.000000"
     preserveAspectRatio="xMidYMid meet">
-    <metadata>
-Created by potrace 1.14, written by Peter Selinger 2001-2017
-</metadata>
+    <metadata> Created by potrace 1.14, written by Peter Selinger 2001-2017 </metadata>
     <g transform="translate(0.000000,285.000000) scale(0.100000,-0.100000)"
         fill="#000000" stroke="none">
-        <path d="M1347 2545 c-26 -7 -50 -13 -52 -14 -3 -1 -13 -4 -22 -8 -10 -3 -26
+        <path
+            d="M1347 2545 c-26 -7 -50 -13 -52 -14 -3 -1 -13 -4 -22 -8 -10 -3 -26
 -13 -35 -21 -10 -8 -18 -11 -18 -6 0 5 -4 4 -8 -2 -4 -6 -42 -30 -86 -55 -43
 -24 -98 -55 -121 -69 -24 -14 -74 -43 -111 -64 -38 -21 -77 -46 -86 -54 -10
 -8 -18 -12 -18 -8 0 4 -6 2 -12 -4 -23 -19 -147 -90 -157 -90 -6 0 -11 -4 -11

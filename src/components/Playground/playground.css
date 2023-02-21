@@ -88,7 +88,8 @@
 }
 
 /** Vertical divider between control groups */
-.playground__control-group + .playground__control-group:not(.playground__control-group--end) {
+.playground__control-group
+  + .playground__control-group:not(.playground__control-group--end) {
   /* Only show the vertical divider when there is a control group after it */
   border-left: 1px solid var(--playground-separator-color);
 }
@@ -119,7 +120,7 @@
 
   appearance: none;
   cursor: pointer;
-  transition: background-color .2s, color .2s;
+  transition: background-color 0.2s, color 0.2s;
 }
 
 /* fix layout shifting when button is bolded on select */
@@ -165,7 +166,7 @@
 
   cursor: pointer;
   appearance: none;
-  transition: background .2s;
+  transition: background 0.2s;
 }
 
 .playground__icon-button--disabled {
@@ -187,7 +188,7 @@
 }
 
 /* overwrite existing Docusaurus style */
-.playground__code-block pre[class*='language-'] {
+.playground__code-block pre[class*="language-"] {
   background-color: var(--playground-code-background);
 }
 
@@ -279,7 +280,6 @@
 .tippy-box[data-theme="playground"] .tippy-content {
   padding: 6px 10px;
 }
-
 
 /* Loading Screen */
 .playground .playground__loading {

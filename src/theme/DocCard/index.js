@@ -8,6 +8,8 @@ import {
 import isInternalUrl from '@docusaurus/isInternalUrl';
 import {translate} from '@docusaurus/Translate';
 import styles from './styles.module.css';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faFileAlt, faCabinetFiling, faPaperclip } from '@fortawesome/free-solid-svg-icons';
 function CardContainer({href, children}) {
   return (
     <Link
@@ -39,10 +41,11 @@ function CardCategory({item}) {
   if (!href) {
     return null;
   }
+  const icon = <FontAwesomeIcon icon="fa-solid fa-folder-open" />
   return (
     <CardLayout
       href={href}
-      icon={"🗃️"}
+      icon={icon}
       title={item.label}
       description={translate(
         {
@@ -57,7 +60,7 @@ function CardCategory({item}) {
   );
 }
 function CardLink({item}) {
-  const icon = isInternalUrl(item.href) ? '📄️' : '🔗';
+  const icon = isInternalUrl(item.href) ? <FontAwesomeIcon icon="fa-solid fa-file" /> : <FontAwesomeIcon icon="fa-solid fa-link" />;
   const doc = useDocById(item.docId ?? undefined);
   return (
     <CardLayout

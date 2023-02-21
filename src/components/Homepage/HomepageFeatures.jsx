@@ -11,14 +11,15 @@ import Typography from "@mui/joy/Typography";
 import { CssVarsProvider } from "@mui/joy/styles";
 import HorizontalScroll from "react-horizontal-scrolling";
 import Avatar from "@mui/joy/Avatar";
-import Link from "@mui/joy/Link";
+import Link from "@docusaurus/Link";
 import MenuBookRoundedIcon from "@mui/icons-material/MenuBookRounded";
 import InsertDriveFileRoundedIcon from "@mui/icons-material/InsertDriveFileRounded";
 import ParkRoundedIcon from "@mui/icons-material/ParkRounded";
 import GitHubIcon from "@mui/icons-material/GitHub";
 import YouTubeIcon from "@mui/icons-material/YouTube";
-import Chip from '@mui/joy/Chip';
-import Highlight from '@site/src/components/Highlight';
+import Chip from "@mui/joy/Chip";
+import Highlight from "@site/src/components/Highlight";
+import Divider from "@mui/joy/Divider";
 
 // Data Start
 
@@ -26,7 +27,11 @@ const Resources = [
   {
     title: "🚧 Docs",
     href: "/docs",
-    icon: <><i class="fa-solid fa-file-lines" /></>,
+    icon: (
+      <>
+        <i className="fa-solid fa-file-lines fa-2x" />
+      </>
+    ),
     Svg: require("/img/undraw_typewriter.svg").default,
     description: (
       <>
@@ -38,20 +43,30 @@ const Resources = [
   {
     title: "Guides",
     href: "/blog",
-    icon: <><i class="fa-solid fa-file-lines" /></>,
+    icon: (
+      <>
+        <i className="fa-solid fa-file-lines fa-2x" />
+      </>
+    ),
     Svg: require("/img/undraw_typewriter.svg").default,
     description: <>Tech Based Blog for Enthusiasts.</>,
   },
   {
     title: "Apps",
     href: "/apps",
-    icon: <><i class="fa-solid fa-grip-vertical" /></>,
+    icon: (
+      <>
+        <i className="fa-solid fa-grip-vertical fa-2x" />
+      </>
+    ),
     Svg: require("/img/undraw_develop_app.svg").default,
     description: (
       <>
         Apps with the World's Best UI/UX for Platforms Including <br />
         Android, Windows, iOS, iPadOS, watchOS, macOS, tvOS, and Linux.
-        <br />Download the Apps Today!<br />
+        <br />
+        Download the Apps Today!
+        <br />
         <br />
       </>
     ),
@@ -59,19 +74,22 @@ const Resources = [
   {
     title: "Contact Us",
     href: "/contact",
-    icon: <><i class="fa-solid fa-envelope" /></>,
-    Svg: require("/img/undraw_typewriter.svg").default,
-    description: (
+    icon: (
       <>
-        Please Contact Us for any Issues, Queries,
-        Feedback, etc.
+        <i className="fa-solid fa-envelope fa-2x" />
       </>
     ),
+    Svg: require("/img/undraw_typewriter.svg").default,
+    description: <>Please Contact Us for any Issues, Queries, Feedback, etc.</>,
   },
   {
     title: "WebDev's Crafts",
     href: "/webdev-crafts",
-    icon: <><i class="fa-solid fa-hand-sparkles" /></>,
+    icon: (
+      <>
+        <i className="fa-solid fa-hand-sparkles fa-2x" />
+      </>
+    ),
     Svg: require("/img/undraw_typewriter.svg").default,
     description: (
       <>
@@ -83,31 +101,36 @@ const Resources = [
   {
     title: "Donate Us",
     href: "/donate",
-    icon: <><i class="fa-solid fa-hand-holding-dollar" /></>,
-    Svg: require("/img/undraw_typewriter.svg").default,
-    description: (
+    icon: (
       <>
-        Please Donate Us if you like our content!
+        <i className="fa-solid fa-hand-holding-dollar fa-2x" />
       </>
     ),
+    Svg: require("/img/undraw_typewriter.svg").default,
+    description: <>Please Donate Us if you like our content!</>,
   },
   {
     title: "Legal",
     href: "/legal",
-    icon: <><i class="fa-solid fa-scale-balanced" /></>,
+    icon: (
+      <>
+        <i className="fa-solid fa-scale-balanced fa-2x" />
+      </>
+    ),
     Svg: require("/img/undraw_typewriter.svg").default,
     description: <>Tech Fiddle's Legal Documents.</>,
   },
   {
     title: "Social",
     href: "/social",
-    icon: <><i class="fa-solid fa-hashtag" /></>,
-    Svg: require("/img/undraw_typewriter.svg").default,
-    description: <>Connect with Tech Fiddle!</>,
-    button: (
+    icon: (
       <>
+        <i className="fa-solid fa-hashtag fa-2x" />
       </>
     ),
+    Svg: require("/img/undraw_typewriter.svg").default,
+    description: <>Connect with Tech Fiddle!</>,
+    button: <></>,
   },
 ];
 
@@ -125,25 +148,25 @@ const Solutions = [
     ),
   },
   {
-    title: "🚧 Business Mail Service",
+    title: "🚧 Enterprise Mail Solution",
     href: "/solutions/enterprise-mail-solution",
     icon: "",
     Svg: require("/img/undraw_typewriter.svg").default,
     description: (
       <>
-        Best SaaS Solution Which Empowers Your Personal, Business, and
+        Best SaaS Solution Which Empowers Your Personal, Enterprise, and
         Enterprise Mail Anywhere, No Matter Where You Are.
       </>
     ),
   },
   {
-    title: "🚧 Business Meeting Service",
+    title: "🚧 Enterprise Meeting Solution",
     href: "/solutions/enterprise-meeting-solution",
     icon: "",
     Svg: require("/img/undraw_typewriter.svg").default,
     description: (
       <>
-        Best SaaS Solution Which Empowers Your Personal, Business, and
+        Best SaaS Solution Which Empowers Your Personal, Enterprise, and
         Enterprise Meetings Anywhere, No Matter Where You Are.
       </>
     ),
@@ -157,7 +180,6 @@ const Solutions = [
       <>
         Introducing our Free, Fast, Anonymous VPN Powered by the SoftEther Open
         Source VPN Project and made by Tech Fiddle, hosted in it's own servers.
-        Now you can connect to our public and anonymous VPN.
       </>
     ),
   },
@@ -183,7 +205,7 @@ const Tools = [
     Svg: require("/img/undraw_typewriter.svg").default,
     description: (
       <>
-        Free, Fast, and Always Accurate Internet, Internet SpeedTest. Powered by
+        Free, Fast, and Always Accurate Internet SpeedTest. Powered by
         OpenSpeedTest.com to give you the best experience, accurate and detailed
         SpeedTest.
       </>
@@ -202,97 +224,46 @@ const Tools = [
 
 function Resource({ Svg, title, description, href, icon, button, subtitle }) {
   return (
-    <Card
-      variant="outlined"
-      row
-      sx={{
-        width: 320,
-        gap: 2,
-        '&:hover': { boxShadow: 'md', borderColor: 'neutral.outlinedHoverBorder' },
-      }}
-    >
-      <div>
-        <Typography level="h2" fontSize="lg" id="card-description" mb={0.5}>
-          {icon} {title}
-        </Typography>
-        <Typography fontSize="sm" aria-describedby="card-description" mb={1}>
-          <Link
-            overlay
-            underline="none"
-            href={href}
-            sx={{ color: 'text.tertiary' }}
-          >
-            {description}
-            <br />
-            {button}
-          </Link>
-        </Typography>
+    <Link href={href} className="docusaurusLink">
+      <div className="card shadow--md">
+        <div className="card__header">
+          {icon}
+          <div className="space" />
+          <h3>{title}</h3>
+        </div>
+        <div className="card__body">{description}</div>
       </div>
-    </Card>
+    </Link>
   );
 }
 
 function Solution({ Svg, title, description, href, icon, button, subtitle }) {
   return (
-    <Card
-      variant="outlined"
-      row
-      sx={{
-        width: 320,
-        gap: 2,
-        '&:hover': { boxShadow: 'md', borderColor: 'neutral.outlinedHoverBorder' },
-      }}
-    >
-      <div>
-        <Typography level="h2" fontSize="lg" id="card-description" mb={0.5}>
-          {icon} {title}
-        </Typography>
-        <Typography fontSize="sm" aria-describedby="card-description" mb={1}>
-          <Link
-            overlay
-            underline="none"
-            href={href}
-            sx={{ color: 'text.tertiary' }}
-          >
-            {description}
-            <br />
-            {button}
-          </Link>
-        </Typography>
+    <Link href={href} className="docusaurusLink">
+      <div className="card shadow--md">
+        <div className="card__header">
+          {icon}
+          <div className="space" />
+          <h3>{title}</h3>
+        </div>
+        <div className="card__body">{description}</div>
       </div>
-    </Card>
+    </Link>
   );
 }
 
 function Tool({ Svg, title, description, href, icon, button, subtitle }) {
   return (
-    <Card
-      variant="outlined"
-      row
-      sx={{
-        width: 320,
-        gap: 2,
-        '&:hover': { boxShadow: 'md', borderColor: 'neutral.outlinedHoverBorder' },
-      }}
-    >
-      <div>
-        <Typography level="h2" fontSize="lg" id="card-description" mb={0.5}>
-          {icon} {title}
-        </Typography>
-        <Typography fontSize="sm" aria-describedby="card-description" mb={1}>
-          <Link
-            overlay
-            underline="none"
-            href={href}
-            sx={{ color: 'text.tertiary' }}
-          >
-            {description}
-            <br />
-            {button}
-          </Link>
-        </Typography>
+    <Link href={href} className="docusaurusLink">
+      <div className="card shadow--md">
+        <div className="card__header">
+          {icon}
+          <div className="space" />
+          <h3>{title}</h3>
+        </div>
+        <div className="card__body">{description}</div>
       </div>
-    </Card>
+    </Link>
   );
 }
 
@@ -302,32 +273,52 @@ export default function HomepageFeatures() {
       <section>
         <h2 className="featuresHeading">Resources</h2>
         <div className="features">
-          <div className="row">
-            {Resources.map((props, idx) => (
-              <><Resource key={idx} {...props} /><br /></>
-            ))}
+          <div className="container">
+            <div className="row">
+              {Resources.map((props, idx) => (
+                <>
+                  <div className="col col--2">
+                    <Resource key={idx} {...props} />
+                  </div>
+                </>
+              ))}
+            </div>
           </div>
         </div>
-        <hr />
+        <br />
+        <Divider />
       </section>
       <section>
         <h2 className="featuresHeading">Solutions</h2>
         <div className="features">
+          <div className="container">
             <div className="row">
-            {Solutions.map((props, idx) => (
-              <><Solution key={idx} {...props} /><br /></>
-            ))}
+              {Solutions.map((props, idx) => (
+                <>
+                  <div className="col">
+                    <Solution key={idx} {...props} />
+                  </div>
+                </>
+              ))}
+            </div>
           </div>
         </div>
-        <hr />
+        <br />
+        <Divider />
       </section>
       <section>
         <h2 className="featuresHeading">Tools</h2>
         <div className="features">
-          <div className="row">
-            {Tools.map((props, idx) => (
-              <><Tool key={idx} {...props} /><br /></>
-            ))}
+          <div className="container">
+            <div className="row">
+              {Tools.map((props, idx) => (
+                <>
+                  <div className="col">
+                    <Tool key={idx} {...props} />
+                  </div>
+                </>
+              ))}
+            </div>
           </div>
         </div>
       </section>

@@ -16,7 +16,7 @@
 }
 
 .backToTopButton::after {
-  content: ' ';
+  content: " ";
   display: inline-block;
   mask: var(--ifm-menu-link-sublist-icon) 50% / 2rem 2rem no-repeat;
   background-color: var(--ifm-color-emphasis-1000);

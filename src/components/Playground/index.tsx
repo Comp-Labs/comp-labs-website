@@ -418,9 +418,8 @@ export default function Playground({
               }
             >
               <button
-                className={`playground__icon-button playground__icon-button--primary ${
-                  hasUsageTargetOptions ? 'playground__icon-button--disabled' : ''
-                }`}
+                className={`playground__icon-button playground__icon-button--primary ${hasUsageTargetOptions ? 'playground__icon-button--disabled' : ''
+                  }`}
                 aria-disabled={hasUsageTargetOptions}
                 onClick={copySourceCode}
               >
@@ -485,43 +484,43 @@ export default function Playground({
         </div>
         {renderIframes
           ? [
-              <div className="playground__preview">
-                {!iframesLoaded && renderLoadingScreen()}
-                {/*
+            <div className="playground__preview">
+              {!iframesLoaded && renderLoadingScreen()}
+              {/*
               We render two iframes, one for each mode.
               When the set mode changes, we hide one frame and
               show the other. This is done to avoid flickering
               and doing unnecessary reloads when switching modes.
             */}
-                {devicePreview
-                  ? [
-                      <div className={!isIOS ? 'frame-hidden' : 'frame-visible'}>
-                        <device-preview mode="ios">
-                          <iframe height={frameSize} ref={ref => handleFrameRef(ref, 'ios')} src={sourceiOS}></iframe>
-                        </device-preview>
-                      </div>,
-                      <div className={!isMD ? 'frame-hidden' : 'frame-visible'}>
-                        <device-preview mode="md">
-                          <iframe height={frameSize} ref={ref => handleFrameRef(ref, 'md')} src={sourceMD}></iframe>
-                        </device-preview>
-                      </div>,
-                    ]
-                  : [
-                      <iframe
-                        height={frameSize}
-                        className={!isIOS ? 'frame-hidden' : ''}
-                        ref={ref => handleFrameRef(ref, 'ios')}
-                        src={sourceiOS}
-                      ></iframe>,
-                      <iframe
-                        height={frameSize}
-                        className={!isMD ? 'frame-hidden' : ''}
-                        ref={ref => handleFrameRef(ref, 'md')}
-                        src={sourceMD}
-                      ></iframe>,
-                    ]}
-              </div>,
-            ]
+              {devicePreview
+                ? [
+                  <div className={!isIOS ? 'frame-hidden' : 'frame-visible'}>
+                    <device-preview mode="ios">
+                      <iframe height={frameSize} ref={ref => handleFrameRef(ref, 'ios')} src={sourceiOS}></iframe>
+                    </device-preview>
+                  </div>,
+                  <div className={!isMD ? 'frame-hidden' : 'frame-visible'}>
+                    <device-preview mode="md">
+                      <iframe height={frameSize} ref={ref => handleFrameRef(ref, 'md')} src={sourceMD}></iframe>
+                    </device-preview>
+                  </div>,
+                ]
+                : [
+                  <iframe
+                    height={frameSize}
+                    className={!isIOS ? 'frame-hidden' : ''}
+                    ref={ref => handleFrameRef(ref, 'ios')}
+                    src={sourceiOS}
+                  ></iframe>,
+                  <iframe
+                    height={frameSize}
+                    className={!isMD ? 'frame-hidden' : ''}
+                    ref={ref => handleFrameRef(ref, 'md')}
+                    src={sourceMD}
+                  ></iframe>,
+                ]}
+            </div>,
+          ]
           : []}
       </div>
       <div ref={codeRef} className="playground__code-block">

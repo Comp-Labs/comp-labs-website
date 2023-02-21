@@ -13,6 +13,7 @@ import CardContent from "@mui/joy/CardContent";
 import Typography from '@mui/joy/Typography';
 import Link from '@mui/joy/Link';
 import Divider from '@mui/joy/Divider';
+import Chip from '@mui/joy/Chip';
 
 const AppCards = [
     {
@@ -121,148 +122,42 @@ interface Props {
         status?: string;
         viewNow?: string;
         color?: string;
-        width?: string,
-        height?: string,
+        width?: string;
+        height?: string;
     };
 }
 
 function AppCard({ name, image, url }: Props) {
     return (
-        <Card row variant="outlined" sx={{ width: 280, bgcolor: 'background.body', height: 97 }}>
-        <CardOverflow>
-          <AspectRatio ratio="1" sx={{ width: 90 }}>
-            <img
-              src={image}
-              loading="lazy"
-              alt={{name} + "Logo"}
-            />
-          </AspectRatio>
-        </CardOverflow>
-        <CardContent sx={{ px: 2 }}>
-          <Typography fontWeight="md" textColor="success.plainColor" mb={0.5}>
-            {name}
-          </Typography>
-          <Typography level="body2">
-          <Link
-            overlay
-            underline="none"
-            href={url.viewNow}
-            sx={{ color: 'text.tertiary' }}
-          >
-            {url.categories}
-            </Link>
-            </Typography>
-        </CardContent>
-        <Divider />
-        <CardOverflow
-          variant="soft"
-          color={url.color}
-          sx={{
-            px: 0.2,
-            writingMode: 'vertical-rl',
-            textAlign: 'center',
-            fontSize: 'xs2',
-            fontWeight: 'xl2',
-            letterSpacing: '1px',
-            textTransform: 'uppercase',
-          }}
-        >
-          {url.status}
-        </CardOverflow>
-      </Card>
+        <Link href={url.viewNow}>
+            <div className="card">
+                <div className="card__image">
+                    <img
+                        src={image}
+                        loading="lazy"
+                        alt={{ name } + "Logo"}
+                        width={url.width}
+                        height={url.height}
+                    />
+                </div>
+                <div className="card__header"><h3>{name}</h3></div>
+                <div className="card__body">
+                    <Chip
+                        color="neutral"
+                        size="sm"
+                        variant="solid"
+                    >{url.categories}</Chip>
+                    <br />
+                    <Chip
+                        color={url.color}
+                        size="sm"
+                        variant="solid"
+                    >{url.status}</Chip>
+                </div>
+            </div>
+        </Link>
     );
 }
-
-{/* <Card variant="outlined" sx={{ maxWidth: 200, boxShadow: 'none', ...sx }}>
-<CardOverflow>
-  <AspectRatio>
-    <img
-      src="https://cdn.jsdelivr.net/gh/Comp-Labs/cdn/img/defaultbg.jpg"
-      loading="lazy"
-      alt="Background"
-    />
-  </AspectRatio>
-</CardOverflow>
-<Box sx={{ mt: -3, width: 48 }}>
-  <AspectRatio ratio="1">
-    <img
-      src={image}
-      loading="lazy"
-      alt={name}
-      title={name}
-    />
-  </AspectRatio>
-</Box>
-<Box>
-  <Typography fontWeight="lg" mt={1.5}>
-    <Link href={url.viewNow} overlay color="neutral">
-      {name}
-    </Link>
-  </Typography>
-  <Typography level="body2">A very very long description.</Typography>
-</Box>
-</Card> */}
-
-{/* <Card variant="outlined" sx={{ maxWidth: 200, boxShadow: 'none' }}>
-<CardOverflow>
-    <AspectRatio>
-        <img
-            src="https://cdn.jsdelivr.net/gh/Comp-Labs/cdn/img/defaultbg.jpg"
-            loading="lazy"
-            alt="Background"
-        />
-    </AspectRatio>
-</CardOverflow>
-<Box sx={{ mt: -3, width: 64 }}>
-    <AspectRatio ratio="1">
-        <img
-            src={image}
-            loading="lazy"
-            alt={name}
-            title={name}
-        />
-    </AspectRatio>
-</Box>
-<Box>
-    <Typography fontWeight="lg" mt={1.5}>
-        <Link href={url.viewNow} overlay color="neutral">
-            {name}
-        </Link>
-    </Typography>
-    <Typography level="body2">A very very long description.</Typography>
-</Box>
-</Card> */}
-
-//             <div className={clsx('card')}>
-//                 <div className={clsx('card__image')}>
-//                     <center>
-//                     <Link to={url.viewNow}>
-//                         <img src={image} alt={name} title={name} width={url.width} height={url.height} />
-//                     </Link>
-//                     </center>
-//                 </div>
-//                 <div className="card__body">
-//                     <h3>{name}</h3>
-//                 </div>
-//                 <div className="card__footer">
-//                     <Highlight color={url.color}>{url.status}</Highlight>
-//                     <br /><br />
-//                     <Stack direction="row" spacing={1}>
-//                     <Chip size="sm" variant="soft">{url.categories[0]}</Chip>
-//                     <Chip size="sm" variant="soft">{url.categories[1]}</Chip>
-//                     <Chip size="sm" variant="soft">{url.categories[2]}</Chip>
-//                     {/* <Chip size="sm" variant="soft">{url.categories[3]}</Chip>
-//                     <Chip size="sm" variant="soft">{url.categories[4]}</Chip>
-//                     <Chip size="sm" variant="soft">{url.categories[5]}</Chip> */}
-//                     </Stack>
-//                     <br />
-//                     <div className="button-group button-group--block">
-//                         <Link className="button button--primary" to={url.viewNow}>
-//                             <i className="fa-solid fa-arrow-up-right-from-square" /> View Now
-//                         </Link>
-//                     </div>
-//                 </div>
-//             </div>
 
 export function AppCardsRow(): JSX.Element {
     const [sx, setSx] = React.useState({});

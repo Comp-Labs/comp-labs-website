@@ -1,140 +1,80 @@
 import React from "react";
-import clsx from "clsx";
 import Layout from "@theme/Layout";
 import Link from "@docusaurus/Link";
-import useDocusaurusContext from "@docusaurus/useDocusaurusContext";
-// import styles from "./index.module.css";
-import HomepageFeatures from "../components/HomepageFeatures";
-import Translate, { translate } from "@docusaurus/Translate";
-import useBaseUrl from "@docusaurus/useBaseUrl";
-import Card from '@mui/joy/Card';
-import CardCover from '@mui/joy/CardCover';
-import CardContent from '@mui/joy/CardContent';
-import Typography from '@mui/joy/Typography';
+import HomepageFeatures from "../components/Homepage/HomepageFeatures";
+import { useColorMode } from "@docusaurus/theme-common";
+import Head from "@docusaurus/Head";
 var ReactRotatingText = require("react-rotating-text");
 
-function HomepageHeader() {
-  const { siteConfig } = useDocusaurusContext();
+function HeroSection() {
+  const { colorMode } = useColorMode();
+
   return (
-    <header className="hero">
-      <div className="container">
-        <h1 className="hero__title">Tech Fiddle</h1>
-        <p className="hero__subtitle">Tech Fiddle has a Tech Enthusiastic Blog, Some Useful Apps, and Solutions to Empower Everyone.</p>
+    <section className="noise-bg py-16 px-4 lg:py-12">
+      <Head>
+        <link rel="prefetch" href="https://docs.dyte.io/static/landing-page/hero-light.png" />
+        <link rel="prefetch" href="https://docs.dyte.io/static/landing-page/hero-dark.png" />
+      </Head>
+      <div className="mx-auto flex max-w-7xl flex-col items-center lg:flex-row">
+        <div className="flex-1 text-center lg:text-left">
+          <h1 className="mb-6 text-4xl font-bold lg:text-6xl">Tech Fiddle</h1>
+          <p className="text-sm text-text-400 lg:max-w-lg lg:text-base">
+            Tech Fiddle has a Tech Enthusiastic Blog, Some Useful Apps, and
+            Solutions to Empower Everyone.
+          </p>
+          {/* <div className="mt-8 flex flex-col gap-4 lg:flex-row">
+            <Link
+              href="/"
+              className="button button--primary button--lg"
+            >
+              Start building
+            </Link>
+            <Link
+              href="/"
+              className="button button--outline button--primary button--lg"
+            >
+              Getting started
+            </Link>
+          </div> */}
+        </div>
+        <div className="">
+          <img
+            src={`https://docs.dyte.io/static/landing-page/hero-${colorMode}.png`}
+            alt="Preview of using Dyte SDKs"
+          />
+        </div>
       </div>
-    </header>
-    // <div className="heroCard">
-    //   {/* <Card sx={{ minWidth: 300, flexGrow: 1 }}>
-    //     <CardContent> */}
-    //       <Typography
-    //         level="h1"
-    //         fontWeight="lg"
-    //       >
-    //         Tech Fiddle
-    //       </Typography>
-    //       <Typography
-    //         level="body1"
-    //         fontWeight="lg">
-    //         Tech Fiddle has a Tech Enthusiastic Blog, Some Useful Apps, and Solutions to Empower Everyone.
-    //       </Typography>
-    //     {/* </CardContent>
-    //   </Card> */}
-    // </div>
-    // <div className="hero">
-    //   <div className="heroInner">
-    //     <h1 className="heroProjectTagline">
-    //       {/* <img
-    //         alt={translate({ message: "Tech Fiddle Logo Animated" })}
-    //         className="heroLogo"
-    //         src={useBaseUrl("https://cdn.jsdelivr.net/gh/Comp-Labs/cdn/img/icon-removebg.jpg")}
-    //         width="256"
-    //         height="256"
-    //       /> */}
-    //       <span
-    //         className="heroTitleTextHtml"
-    //         // eslint-disable-next-line react/no-danger
-    //         dangerouslySetInnerHTML={{
-    //           __html: translate({
-    //             id: "homepage.hero.title",
-    //             message:
-    //               "<p><b>Tech Fiddle</b><br><b>------</b>------<b>------</b>------<b>------</b><br>",
-    //           }),
-    //         }}
-    //       />
-    //       <ReactRotatingText
-    //         items={["Guides.", "Apps.", "Solutions.", "Tools."]}
-    //         color="#076af7"
-    //       />
-    //       <span
-    //         className="heroTitleTextHtml"
-    //         // eslint-disable-next-line react/no-danger
-    //         dangerouslySetInnerHTML={{
-    //           __html: translate({
-    //             id: "homepage.hero.title",
-    //             message:
-    //               "<p>for <b>Personal</b>, <b>Business</b>, or <b>Enterprise Use</b>.</p>",
-    //           }),
-    //         }}
-    //       />
-    //     </h1>
-    //     {/* <div className="indexCtas"> */}
-    //     {/* <div className="button-group button-group--block">
-    //       <Link className="button button--primary" to="/docs">
-    //         <Translate>Get Started</Translate>
-    //       </Link>
-    //       <Link className="button button--primary" to="/blog">
-    //         <Translate>Guides</Translate>
-    //       </Link>
-    //       <Link className="button button--primary" href="https://github.com/Comp-Labs">
-    //         <Translate>Follow Tech Fiddle</Translate>
-    //       </Link>
-    //       <Link className="button button--primary" href="https://github.com/sponsors/RudraSen2">
-    //         <Translate>Sponsor Tech Fiddle</Translate>
-    //       </Link>
-    //       </div> */}
-    //     {/* <span className="indexCtasGitHubButtonWrapper">
-    //         <iframe
-    //           className="indexCtasGitHubButton"
-    //           src="https://ghbtns.com/github-btn.html?user=Comp-Labs&amp;type=follow&amp;count=true&amp;size=small"
-    //           width={190}
-    //           height={30}
-    //           title="Follow Tech Fiddle on GitHub"
-    //         />
-    //       </span>
-    //       <br />
-    //       <span className="indexCtasGitHubButtonWrapper">
-    //         <iframe
-    //           className="indexCtasGitHubButton"
-    //           src="https://ghbtns.com/github-btn.html?user=Comp-Labs&amp;type=sponsor&amp;size=small"
-    //           frameborder="0"
-    //           scrolling="0"
-    //           width="180"
-    //           height="30"
-    //           title="GitHub"
-    //         >
-    //           width={190}
-    //           height={30}
-    //           title="Sponsor Tech Fiddle on GitHub"
-    //         </iframe>
-    //       </span> */}
-    //     {/* </div> */}
-    //   </div>
-    // </div>
+    </section>
   );
 }
 
-export default function Home() {
-  const { siteConfig } = useDocusaurusContext();
+export default function Homepage() {
   return (
     <Layout
       title={`Home | Guides, Apps, Solutions, Tools`}
-      description="Tech Fiddle has a Tech Enthusiastic Blog, Some Useful Apps, and Solutions to Empower Everyone."
+      description="Tech Fiddle has a Tech Enthusiastic Blog, Some Useful Apps, and Solutions to Empower Everyone"
+      wrapperClassName="homepage flex flex-col"
     >
-      <HomepageHeader />
-      <hr></hr>
-      <main>
-        {/* <RecentBlogPosts /> */}
-        <HomepageFeatures />
-      </main>
+      <HeroSection />
+      <HomepageFeatures />
+      <br />
     </Layout>
   );
 }
+
+// export default function Home() {
+//   const { siteConfig } = useDocusaurusContext();
+//   return (
+//     <Layout
+//       title={`Home | Guides, Apps, Solutions, Tools`}
+//       description="Tech Fiddle has a Tech Enthusiastic Blog, Some Useful Apps, and Solutions to Empower Everyone."
+//     >
+//       <HomepageHeader />
+//       <Divider/>
+//       <main>
+//         {/* <RecentBlogPosts /> */}
+//         <HomepageFeatures />
+//       </main>
+//     </Layout>
+//   );
+// }
