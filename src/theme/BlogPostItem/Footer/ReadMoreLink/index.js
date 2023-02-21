@@ -1,5 +1,5 @@
 import React from 'react';
-import Translate, {translate} from '@docusaurus/Translate';
+import Translate, { translate } from '@docusaurus/Translate';
 import Link from '@docusaurus/Link';
 function ReadMoreLabel() {
   return (
@@ -13,7 +13,7 @@ function ReadMoreLabel() {
   );
 }
 export default function BlogPostItemFooterReadMoreLink(props) {
-  const {blogPostTitle, ...linkProps} = props;
+  const { blogPostTitle, ...linkProps } = props;
   return (
     <Link
       aria-label={translate(
@@ -23,7 +23,7 @@ export default function BlogPostItemFooterReadMoreLink(props) {
           description:
             'The ARIA label for the link to full blog posts from excerpts',
         },
-        {title: blogPostTitle},
+        { title: blogPostTitle },
       )}
       {...linkProps}>
       <ReadMoreLabel />

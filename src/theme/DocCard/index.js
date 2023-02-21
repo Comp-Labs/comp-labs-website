@@ -6,11 +6,11 @@ import {
   useDocById,
 } from '@docusaurus/theme-common/internal';
 import isInternalUrl from '@docusaurus/isInternalUrl';
-import {translate} from '@docusaurus/Translate';
+import { translate } from '@docusaurus/Translate';
 import styles from './styles.module.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faFileAlt, faCabinetFiling, faPaperclip } from '@fortawesome/free-solid-svg-icons';
-function CardContainer({href, children}) {
+function CardContainer({ href, children }) {
   return (
     <Link
       href={href}
@@ -19,7 +19,7 @@ function CardContainer({href, children}) {
     </Link>
   );
 }
-function CardLayout({href, icon, title, description}) {
+function CardLayout({ href, icon, title, description }) {
   return (
     <CardContainer href={href}>
       <h2 className={clsx('text--truncate', styles.cardTitle)} title={title}>
@@ -35,7 +35,7 @@ function CardLayout({href, icon, title, description}) {
     </CardContainer>
   );
 }
-function CardCategory({item}) {
+function CardCategory({ item }) {
   const href = findFirstCategoryLink(item);
   // Unexpected: categories that don't have a link have been filtered upfront
   if (!href) {
@@ -54,12 +54,12 @@ function CardCategory({item}) {
           description:
             'The default description for a category card in the generated index about how many items this category includes',
         },
-        {count: item.items.length},
+        { count: item.items.length },
       )}
     />
   );
 }
-function CardLink({item}) {
+function CardLink({ item }) {
   const icon = isInternalUrl(item.href) ? <FontAwesomeIcon icon="fa-solid fa-file" /> : <FontAwesomeIcon icon="fa-solid fa-link" />;
   const doc = useDocById(item.docId ?? undefined);
   return (
@@ -71,7 +71,7 @@ function CardLink({item}) {
     />
   );
 }
-export default function DocCard({item}) {
+export default function DocCard({ item }) {
   switch (item.type) {
     case 'link':
       return <CardLink item={item} />;

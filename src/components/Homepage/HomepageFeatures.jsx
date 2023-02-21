@@ -111,7 +111,7 @@ const Resources = [
   },
   {
     title: "Legal",
-    href: "/legal",
+    href: "/legal/terms-of-service",
     icon: (
       <>
         <i className="fa-solid fa-scale-balanced fa-2x" />
