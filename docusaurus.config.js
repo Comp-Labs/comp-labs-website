@@ -393,7 +393,7 @@ const darkCodeTheme = require("prism-react-renderer/themes/dracula");
                 },
                 {
                   label: "Legal",
-                  href: "/legal/term",
+                  href: "/legal/terms-of-service",
                 },
                 {
                   label: "Donate Us!",
