@@ -10,6 +10,7 @@ import DevicesRoundedIcon from '@mui/icons-material/DevicesRounded';
 interface Props {
     name: string;
     image: string;
+    download: string;
     description: string;
     longDescription: string;
 }
@@ -83,7 +84,7 @@ export default function AppPage({ name, image, description, longDescription }: P
                 <p>Contains ads | In-app purchases</p>
                 <p>Reviews | Downloads | Ratings</p>
             </div>
-            <div><Link href="{download}" className="button button--primary">Install</Link></div>
+            <div><Link href={download} className="button button--primary">Install</Link></div>
             <div><DevicesRoundedIcon /> This app is available for your device</div>
             <p>MARK: Divider</p>
             <p>Screenshots</p> <p>Developer Contact - Website, Email</p>

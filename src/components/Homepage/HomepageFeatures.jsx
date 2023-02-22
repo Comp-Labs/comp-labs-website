@@ -122,7 +122,7 @@ const Resources = [
   },
   {
     title: "Social",
-    href: "/social",
+    href: "/",
     icon: (
       <>
         <i className="fa-solid fa-hashtag fa-2x" />
