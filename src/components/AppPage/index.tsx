@@ -15,7 +15,7 @@ interface Props {
     longDescription: string;
 }
 
-export default function AppPage({ name, image, description, longDescription }: Props) {
+export default function AppPage({ name, image, download, description, longDescription }: Props) {
     const [open, setOpen] = React.useState(false);
     return (
         <>
