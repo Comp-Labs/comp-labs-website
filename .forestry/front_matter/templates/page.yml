@@ -1,0 +1,13 @@
+---
+label: Page
+hide_body: false
+fields:
+- type: text
+  name: title
+  label: title
+- type: text
+  name: description
+  label: description
+- type: boolean
+  name: hide_table_of_contents
+  label: hide_table_of_contents

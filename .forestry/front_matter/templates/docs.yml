@@ -1,0 +1,13 @@
+---
+label: Docs
+hide_body: false
+fields:
+- type: number
+  name: sidebar_position
+  label: sidebar_position
+- type: text
+  name: title
+  label: title
+- type: text
+  name: description
+  label: description

@@ -1,0 +1,28 @@
+---
+label: Blog Post
+hide_body: false
+fields:
+- type: text
+  name: title
+  label: title
+- type: list
+  name: authors
+  label: authors
+- type: list
+  name: tags
+  label: tags
+- type: text
+  name: description
+  label: description
+- type: file
+  name: image
+  label: image
+- type: boolean
+  name: hide_table_of_contents
+  label: hide_table_of_contents
+- type: text
+  name: slug
+  label: slug
+- type: boolean
+  name: comments
+  label: comments

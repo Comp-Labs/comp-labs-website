@@ -1,17 +1,36 @@
 ---
 new_page_extension: md
 auto_deploy: false
-admin_path: 
+admin_path: "/static/admin"
 webhook_url: 
-sections: 
-upload_dir: uploads
-public_path: "/uploads"
+sections:
+- type: directory
+  path: src/pages
+  label: Pages
+  create: all
+  match: "**/*"
+  new_doc_ext: mdx
+- type: directory
+  path: docs
+  label: Docs
+  create: all
+  match: "**/*"
+  new_doc_ext: mdx
+- type: directory
+  path: blog/posts
+  label: Blog Posts
+  create: all
+  match: "**/*"
+  new_doc_ext: mdx
+upload_dir: static/img
+public_path: "/img"
 front_matter_path: ''
 use_front_matter_path: false
 file_template: ":filename:"
 build:
+  preview_output_directory: "/build"
   install_dependencies_command: npm install
   preview_docker_image: forestryio/node:12
   mount_path: "/srv"
   working_dir: "/srv"
-  instant_preview_command: npm run develop
+  instant_preview_command: npm run start
