@@ -232,6 +232,54 @@ input::file-selector-button:active {
   background-color: #001e3c;
 } */
 
+/* Doc Sidebar */
+
+.theme-doc-sidebar-menu .menu__list-item-collapsible .menu__link {
+  color: var(--ifm-heading-color);
+  font-size: 14px;
+  padding-left: 12px;
+}
+/* Section content */
+.theme-doc-sidebar-item-category ul.menu__list {
+  margin-top: 0;
+  margin-left: 12px;
+  border-left: solid 1px var(--ifm-toc-border-color);
+  font-weight: 400;
+}
+.theme-doc-sidebar-item-category .menu__list li.menu__list-item {
+  margin: 8px 0;
+}
+/* .theme-doc-sidebar-item-category .menu__list li.menu__list-item svg {
+  opacity: 0;
+} */
+/* .theme-doc-sidebar-menu .menu__list-item > a.menu__link {
+  border-left: 1px solid transparent;
+  margin-left: -1px;
+  border-radius: 0;
+  padding: 5px 16px;
+  font-size: 14px;
+  line-height: 14px;
+}
+.theme-doc-sidebar-menu .menu__list-item > a.menu__link:hover {
+  border-left: 1px solid var(--ifm-font-color-base);
+  color: var(--ifm-font-color-base);
+}
+.theme-doc-sidebar-menu .menu__list-item > a.menu__link--active {
+  font-weight: 600;
+  border-left: 1px solid var(--ifm-color-primary);
+}
+.theme-doc-sidebar-menu .menu__list-item > a.menu__link--active:hover {
+  border-left: 1px solid var(--ifm-color-primary);
+  color: var(--ifm-color-primary);
+} */
+
+.menu__link {
+  /* Background tint only for menu links in sidebar */
+  --ifm-menu-color-background-active: var(--docs-color-primary-tint);
+}
+
+/* Doc Sidebar - End */
+
 /* Footer */
 
 .footer__description {
@@ -390,11 +438,6 @@ html[data-theme="dark"] .dropdown > .navbar__link:after {
 
 .dropdown:hover > .navbar__link:after {
   background-image: url("data:image/svg+xml,%3Csvg width='24' height='24' fill='none' viewBox='0 0 24 24' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M4.293 8.293a1 1 0 0 1 1.414 0L12 14.586l6.293-6.293a1 1 0 1 1 1.414 1.414l-7 7a1 1 0 0 1-1.414 0l-7-7a1 1 0 0 1 0-1.414Z' fill='%231a90ff'/%3E%3C/svg%3E") !important;
-}
-
-.menu__link {
-  /* Background tint only for menu links in sidebar */
-  --ifm-menu-color-background-active: var(--docs-color-primary-tint);
 }
 
 table {
