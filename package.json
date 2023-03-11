@@ -7,8 +7,8 @@
   ],
   "scripts": {
     "docusaurus": "docusaurus",
-    "start": "tinacms build && docusaurus start",
-    "build": "tinacms build && docusaurus build",
+    "start": "docusaurus start",
+    "build": "docusaurus build",
     "swizzle": "docusaurus swizzle",
     "deploy": "docusaurus deploy",
     "clear": "docusaurus clear",
