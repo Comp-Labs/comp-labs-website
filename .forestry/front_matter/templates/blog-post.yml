@@ -4,25 +4,27 @@ hide_body: false
 fields:
 - type: text
   name: title
-  label: title
+  label: Title
 - type: list
   name: authors
-  label: authors
+  label: Authors
 - type: list
   name: tags
-  label: tags
+  label: Tags
 - type: text
   name: description
-  label: description
+  label: Description
 - type: file
   name: image
-  label: image
+  label: Image
 - type: boolean
   name: hide_table_of_contents
-  label: hide_table_of_contents
+  label: Hide TOC
+  hidden: false
+  default: false
 - type: text
   name: slug
-  label: slug
+  label: Slug
 - type: boolean
   name: comments
-  label: comments
+  label: Comments
