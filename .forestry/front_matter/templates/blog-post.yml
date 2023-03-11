@@ -28,3 +28,6 @@ fields:
 - type: boolean
   name: comments
   label: Comments
+- name: draft
+  type: boolean
+  label: Draft
