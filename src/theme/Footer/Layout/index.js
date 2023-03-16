@@ -68,7 +68,7 @@ export default function FooterLayout({ style, links, logo, copyright }) {
             <div className="container container-fluid">
               {logo && <div className="margin-bottom--sm">{logo}</div>}
               <p className="footer__description">
-                Tech Fiddle provides a Tech Enthusiastic Blog, some useful apps, and Core Solutions to empower everyone.
+                Tech Fiddle provides a Tech Enthusiastic Blog, Innovative and Useful Apps, and Core Solutions for everyone.
               </p>
               <div className="footer__row">
                 <div className="footer__data">

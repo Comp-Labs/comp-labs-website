@@ -1,7 +1,7 @@
 import React from 'react';
 import Link from "@docusaurus/Link";
 
-const SolutionsList = [
+const ProductsList = [
     {
         name: 'App Publisher for Google Play',
         description: 'Best Solution to Publish Your AndroidOS and ChromeOS Apps to the Google Play Console for Free.',
@@ -30,7 +30,7 @@ interface Props {
     url: string;
 }
 
-function Solution({ name, description, url }: Props) {
+function Product({ name, description, url }: Props) {
     return (
         <div className="col">
             <Link href={url} className="docusaurusLink">
@@ -43,11 +43,11 @@ function Solution({ name, description, url }: Props) {
     );
 }
 
-export function Solutions(): JSX.Element {
+export function Products(): JSX.Element {
     return (
         <div className="row">
-            {SolutionsList.map((props, idx) => (
-                <Solution key={idx} {...props} />
+            {ProductsList.map((props, idx) => (
+                <Product key={idx} {...props} />
             ))}
         </div>
     );

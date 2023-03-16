@@ -134,10 +134,10 @@ const Resources = [
   },
 ];
 
-const Solutions = [
+const Products = [
   {
     title: "🚧 App Publisher for Google Play",
-    href: "/solutions/google-play-developers",
+    href: "/products/google-play-developers",
     icon: "",
     Svg: require("/img/undraw_android.svg").default,
     description: (
@@ -149,7 +149,7 @@ const Solutions = [
   },
   {
     title: "🚧 Enterprise Mail Solution",
-    href: "/solutions/enterprise-mail-solution",
+    href: "/products/enterprise-mail-solution",
     icon: "",
     Svg: require("/img/undraw_typewriter.svg").default,
     description: (
@@ -161,7 +161,7 @@ const Solutions = [
   },
   {
     title: "🚧 Enterprise Meeting Solution",
-    href: "/solutions/enterprise-meeting-solution",
+    href: "/products/enterprise-meeting-solution",
     icon: "",
     Svg: require("/img/undraw_typewriter.svg").default,
     description: (
@@ -173,7 +173,7 @@ const Solutions = [
   },
   {
     title: "🚧 Anonymous VPN",
-    href: "/solutions/vpn",
+    href: "/products/vpn",
     icon: "",
     Svg: require("/img/undraw_typewriter.svg").default,
     description: (
@@ -237,7 +237,7 @@ function Resource({ Svg, title, description, href, icon, button, subtitle }) {
   );
 }
 
-function Solution({ Svg, title, description, href, icon, button, subtitle }) {
+function Product({ Svg, title, description, href, icon, button, subtitle }) {
   return (
     <Link href={href} className="docusaurusLink">
       <div className="card shadow--md">
@@ -289,14 +289,14 @@ export default function HomepageFeatures() {
         <Divider />
       </section>
       <section>
-        <h2 className="featuresHeading">Solutions</h2>
+        <h2 className="featuresHeading">Products</h2>
         <div className="features">
           <div className="container">
             <div className="row">
-              {Solutions.map((props, idx) => (
+              {Products.map((props, idx) => (
                 <>
                   <div className="col">
-                    <Solution key={idx} {...props} />
+                    <Product key={idx} {...props} />
                   </div>
                 </>
               ))}

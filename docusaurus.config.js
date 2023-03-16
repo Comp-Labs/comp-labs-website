@@ -308,7 +308,7 @@ const darkCodeTheme = require("prism-react-renderer/themes/dracula");
             { to: "/docs", label: "🚧 Docs", position: "left" },
             { to: "blog", label: "Guides", position: "left" },
             { to: "/apps", label: "Apps", position: "left" },
-            { to: "/solutions", label: "Solutions", position: "left" },
+            { to: "/products", label: "Products", position: "left" },
             { to: "/tools", label: "Tools", position: "left" },
             { to: "/contact", label: "Contact Us", position: "left" },
             // { to: "/donate", label: "Donate Us", position: "left" },
@@ -376,8 +376,8 @@ const darkCodeTheme = require("prism-react-renderer/themes/dracula");
                   to: "/apps",
                 },
                 {
-                  label: "Solutions",
-                  to: "/solutions",
+                  label: "Products",
+                  to: "/products",
                 },
                 {
                   label: "Tools",
@@ -402,23 +402,23 @@ const darkCodeTheme = require("prism-react-renderer/themes/dracula");
               ],
             },
             {
-              title: "Solutions",
+              title: "Products",
               items: [
                 {
                   label: "🚧 App Publishing Solution",
-                  to: "/solutions/google-play-developers",
+                  to: "/products/google-play-developers",
                 },
                 {
                   label: "🚧 Enterprise Meeting Solution",
-                  to: "/solutions/enterprise-meeting-solution",
+                  to: "/products/enterprise-meeting-solution",
                 },
                 {
                   label: "🚧 Enterprise Mail Solution",
-                  to: "/solutions/enterprise-mail-solution",
+                  to: "/products/enterprise-mail-solution",
                 },
                 {
                   label: "🚧 Anonymous VPN",
-                  to: "/solutions/enterprise-mail-solution",
+                  to: "/products/vpn",
                 },
               ],
             },
@@ -483,13 +483,13 @@ const darkCodeTheme = require("prism-react-renderer/themes/dracula");
                   label: "Get $200 in Cloud Credits from DigitalOcean",
                   href: "https://m.do.co/c/4d2203436de1",
                 },
-                {
-                  html: `
-                <a href="https://www.netlify.com" target="_blank" rel="noreferrer noopener" aria-label="Deploys by Netlify">
-                  <img src="https://www.netlify.com/img/global/badges/netlify-color-accent.svg" alt="Deploys by Netlify" title="Deploys by Netlify" width="114" height="51" />
-                </a>
-              `,
-                },
+              //   {
+              //     html: `
+              //   <a href="https://www.netlify.com" target="_blank" rel="noreferrer noopener" aria-label="Deploys by Netlify">
+              //     <img src="https://www.netlify.com/img/global/badges/netlify-color-accent.svg" alt="Deploys by Netlify" title="Deploys by Netlify" width="114" height="51" />
+              //   </a>
+              // `,
+              //   },
               ],
             },
             {
@@ -501,19 +501,19 @@ const darkCodeTheme = require("prism-react-renderer/themes/dracula");
                 },
                 {
                   label: "App Publishing Solution",
-                  to: "/solutions/google-play-developers",
+                  to: "/products/google-play-developers",
                 },
                 {
                   label: "Enterprise Meeting Solution",
-                  to: "/solutions/enterprise-meeting-solution",
+                  to: "/products/enterprise-meeting-solution",
                 },
                 {
                   label: "Enterprise Mail Solution",
-                  to: "/solutions/enterprise-mail-solution",
+                  to: "/products/enterprise-mail-solution",
                 },
                 {
                   label: "Anonymous VPN",
-                  to: "/solutions/vpn",
+                  to: "/products/vpn",
                 },
               ],
             },

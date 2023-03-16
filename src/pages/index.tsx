@@ -20,7 +20,7 @@ function HeroSection() {
           <h1 className="mb-6 text-4xl font-bold lg:text-6xl">Tech Fiddle</h1>
           <p className="text-sm text-text-400 lg:max-w-lg lg:text-base">
             Tech Fiddle has a Tech Enthusiastic Blog, Some Useful Apps, and
-            Solutions to Empower Everyone.
+            Products for Everyone.
           </p>
           {/* <div className="mt-8 flex flex-col gap-4 lg:flex-row">
             <Link
@@ -52,7 +52,7 @@ export default function Homepage() {
   return (
     <Layout
       title={`Home | Guides, Apps, Solutions, Tools`}
-      description="Tech Fiddle has a Tech Enthusiastic Blog, Some Useful Apps, and Solutions to Empower Everyone"
+      description="Tech Fiddle provides a Tech Enthusiastic Blog, Apps, and Solutions for Everyone"
       wrapperClassName="homepage flex flex-col"
     >
       <HeroSection />
@@ -61,20 +61,3 @@ export default function Homepage() {
     </Layout>
   );
 }
-
-// export default function Home() {
-//   const { siteConfig } = useDocusaurusContext();
-//   return (
-//     <Layout
-//       title={`Home | Guides, Apps, Solutions, Tools`}
-//       description="Tech Fiddle has a Tech Enthusiastic Blog, Some Useful Apps, and Solutions to Empower Everyone."
-//     >
-//       <HomepageHeader />
-//       <Divider/>
-//       <main>
-//         {/* <RecentBlogPosts /> */}
-//         <HomepageFeatures />
-//       </main>
-//     </Layout>
-//   );
-// }
