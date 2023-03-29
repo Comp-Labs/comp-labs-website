@@ -5,22 +5,22 @@ const ProductsList = [
     {
         name: 'App Publisher for Google Play',
         description: 'Best Solution to Publish Your AndroidOS and ChromeOS Apps to the Google Play Console for Free.',
-        url: '/solutions/google-play-developers',
+        url: '/products/google-play-developers',
     },
     {
         name: 'Enterprise Mail Solution',
         description: 'Best SaaS Solution Which Empowers Your Personal, Enterprise, and Enterprise Mail Anywhere, No Matter Where You Are.',
-        url: '/solutions/enterprise-mail-solution',
+        url: '/products/enterprise-mail-solution',
     },
     {
         name: 'Enterprise Meeting Solution',
         description: 'Best SaaS Solution Which Empowers Your Personal, Enterprise, and Enterprise Meetings Anywhere, No Matter Where You Are.',
-        url: '/solutions/enterprise-meeting-solution',
+        url: '/products/enterprise-meeting-solution',
     },
     {
         name: 'Anonymous VPN',
         description: "Introducing our Free, Fast, Anonymous VPN Powered by the SoftEther Open Source VPN Project and made by Tech Fiddle, hosted in it's own servers.",
-        url: '/solutions/vpn',
+        url: '/products/vpn',
     },
 ];
 

@@ -308,11 +308,11 @@ const darkCodeTheme = require("prism-react-renderer/themes/dracula");
             { to: "/docs", label: "🚧 Docs", position: "left" },
             { to: "blog", label: "Guides", position: "left" },
             { to: "/apps", label: "Apps", position: "left" },
-            { to: "/products", label: "Products", position: "left" },
-            { to: "/tools", label: "Tools", position: "left" },
+            // { to: "/products", label: "Products", position: "left" },
+            // { to: "/tools", label: "Tools", position: "left" },
             { to: "/contact", label: "Contact Us", position: "left" },
             // { to: "/donate", label: "Donate Us", position: "left" },
-            { to: "/webdev-crafts", label: "WebDev's Crafts", position: "left" },
+            // { to: "/webdev-crafts", label: "WebDev's Crafts", position: "left" },
             {
               type: "dropdown",
               label: "Legal",
@@ -375,22 +375,22 @@ const darkCodeTheme = require("prism-react-renderer/themes/dracula");
                   label: "Apps",
                   to: "/apps",
                 },
-                {
-                  label: "Products",
-                  to: "/products",
-                },
-                {
-                  label: "Tools",
-                  to: "/tools",
-                },
+                // {
+                //   label: "Products",
+                //   to: "/products",
+                // },
+                // {
+                //   label: "Tools",
+                //   to: "/tools",
+                // },
                 {
                   label: "Contact Us!",
                   href: "https://forms.gle/dQmrNAZZ1KK81rAP7",
                 },
-                {
-                  label: "WebDev's Crafts",
-                  href: "/webdev-crafts",
-                },
+                // {
+                //   label: "WebDev's Crafts",
+                //   href: "/webdev-crafts",
+                // },
                 {
                   label: "Legal",
                   href: "/legal/terms-of-service",
@@ -401,48 +401,48 @@ const darkCodeTheme = require("prism-react-renderer/themes/dracula");
                 },
               ],
             },
-            {
-              title: "Products",
-              items: [
-                {
-                  label: "🚧 App Publishing Solution",
-                  to: "/products/google-play-developers",
-                },
-                {
-                  label: "🚧 Enterprise Meeting Solution",
-                  to: "/products/enterprise-meeting-solution",
-                },
-                {
-                  label: "🚧 Enterprise Mail Solution",
-                  to: "/products/enterprise-mail-solution",
-                },
-                {
-                  label: "🚧 Anonymous VPN",
-                  to: "/products/vpn",
-                },
-              ],
-            },
-            {
-              title: "Tools",
-              items: [
-                {
-                  label: "DNS Lookup",
-                  href: "https://digwebinterface.com",
-                },
-                {
-                  label: "MicroURL",
-                  href: "https://microurl.complabs.in/",
-                },
-                {
-                  label: "SpeedTest",
-                  to: "/tools/speedtest",
-                },
-                {
-                  label: "Web Tools",
-                  href: "https://www.webtoolhub.com/",
-                },
-              ],
-            },
+            // {
+            //   title: "Products",
+            //   items: [
+            //     {
+            //       label: "🚧 App Publishing Solution",
+            //       to: "/products/google-play-developers",
+            //     },
+            //     {
+            //       label: "🚧 Enterprise Meeting Solution",
+            //       to: "/products/enterprise-meeting-solution",
+            //     },
+            //     {
+            //       label: "🚧 Enterprise Mail Solution",
+            //       to: "/products/enterprise-mail-solution",
+            //     },
+            //     {
+            //       label: "🚧 Anonymous VPN",
+            //       to: "/products/vpn",
+            //     },
+            //   ],
+            // },
+            // {
+            //   title: "Tools",
+            //   items: [
+            //     {
+            //       label: "DNS Lookup",
+            //       href: "https://digwebinterface.com",
+            //     },
+            //     {
+            //       label: "MicroURL",
+            //       href: "https://microurl.complabs.in/",
+            //     },
+            //     {
+            //       label: "SpeedTest",
+            //       to: "/tools/speedtest",
+            //     },
+            //     {
+            //       label: "Web Tools",
+            //       href: "https://www.webtoolhub.com/",
+            //     },
+            //   ],
+            // },
             {
               title: "Legal",
               items: [
@@ -476,47 +476,47 @@ const darkCodeTheme = require("prism-react-renderer/themes/dracula");
                   href: "https://discord.gg/GAbzAGKccW",
                 },
                 {
-                  label: "Linktree",
-                  href: "https://linktr.ee/complabs",
+                  label: "Bento",
+                  href: "https://bento.me/techfiddle",
                 },
                 {
                   label: "Get $200 in Cloud Credits from DigitalOcean",
                   href: "https://m.do.co/c/4d2203436de1",
                 },
-              //   {
-              //     html: `
-              //   <a href="https://www.netlify.com" target="_blank" rel="noreferrer noopener" aria-label="Deploys by Netlify">
-              //     <img src="https://www.netlify.com/img/global/badges/netlify-color-accent.svg" alt="Deploys by Netlify" title="Deploys by Netlify" width="114" height="51" />
-              //   </a>
-              // `,
-              //   },
+                //   {
+                //     html: `
+                //   <a href="https://www.netlify.com" target="_blank" rel="noreferrer noopener" aria-label="Deploys by Netlify">
+                //     <img src="https://www.netlify.com/img/global/badges/netlify-color-accent.svg" alt="Deploys by Netlify" title="Deploys by Netlify" width="114" height="51" />
+                //   </a>
+                // `,
+                //   },
               ],
             },
-            {
-              title: "🚧 In Development",
-              items: [
-                {
-                  label: "Docs",
-                  to: "/docs/",
-                },
-                {
-                  label: "App Publishing Solution",
-                  to: "/products/google-play-developers",
-                },
-                {
-                  label: "Enterprise Meeting Solution",
-                  to: "/products/enterprise-meeting-solution",
-                },
-                {
-                  label: "Enterprise Mail Solution",
-                  to: "/products/enterprise-mail-solution",
-                },
-                {
-                  label: "Anonymous VPN",
-                  to: "/products/vpn",
-                },
-              ],
-            },
+            // {
+            //   title: "🚧 In Development",
+            //   items: [
+            //     {
+            //       label: "Docs",
+            //       to: "/docs/",
+            //     },
+            //     {
+            //       label: "App Publishing Solution",
+            //       to: "/products/google-play-developers",
+            //     },
+            //     {
+            //       label: "Enterprise Meeting Solution",
+            //       to: "/products/enterprise-meeting-solution",
+            //     },
+            //     {
+            //       label: "Enterprise Mail Solution",
+            //       to: "/products/enterprise-mail-solution",
+            //     },
+            //     {
+            //       label: "Anonymous VPN",
+            //       to: "/products/vpn",
+            //     },
+            //   ],
+            // },
           ],
           logo: {
             alt: "Tech Fiddle Footer Logo",

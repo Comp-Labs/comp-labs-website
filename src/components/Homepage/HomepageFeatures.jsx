@@ -62,12 +62,9 @@ const Resources = [
     Svg: require("/img/undraw_develop_app.svg").default,
     description: (
       <>
-        Apps with the World's Best UI/UX for Platforms Including <br />
-        Android, Windows, iOS, iPadOS, watchOS, macOS, tvOS, and Linux.
+        Apps with the Best UI/UX. A vast range of platforms are supported.
         <br />
         Download the Apps Today!
-        <br />
-        <br />
       </>
     ),
   },
@@ -82,22 +79,22 @@ const Resources = [
     Svg: require("/img/undraw_typewriter.svg").default,
     description: <>Please Contact Us for any Issues, Queries, Feedback, etc.</>,
   },
-  {
-    title: "WebDev's Crafts",
-    href: "/webdev-crafts",
-    icon: (
-      <>
-        <i className="fa-solid fa-hand-sparkles fa-2x" />
-      </>
-    ),
-    Svg: require("/img/undraw_typewriter.svg").default,
-    description: (
-      <>
-        Mesmerizing Crafts Made by WebDev's at Tech Fiddle And All The CodePen
-        Users Worldwide!
-      </>
-    ),
-  },
+  // {
+  //   title: "WebDev's Crafts",
+  //   href: "/webdev-crafts",
+  //   icon: (
+  //     <>
+  //       <i className="fa-solid fa-hand-sparkles fa-2x" />
+  //     </>
+  //   ),
+  //   Svg: require("/img/undraw_typewriter.svg").default,
+  //   description: (
+  //     <>
+  //       Mesmerizing Crafts Made by WebDev's at Tech Fiddle And All The CodePen
+  //       Users Worldwide!
+  //     </>
+  //   ),
+  // },
   {
     title: "Donate Us",
     href: "/donate",
@@ -110,7 +107,7 @@ const Resources = [
     description: <>Please Donate Us if you like our content!</>,
   },
   {
-    title: "Legal",
+    title: "Terms of Service",
     href: "/legal/terms-of-service",
     icon: (
       <>
@@ -118,11 +115,33 @@ const Resources = [
       </>
     ),
     Svg: require("/img/undraw_typewriter.svg").default,
-    description: <>Tech Fiddle's Legal Documents.</>,
+    description: <>Tech Fiddle's Terms of Service.</>,
+  },
+  {
+    title: "Privacy Policy",
+    href: "/legal/privacy-policy",
+    icon: (
+      <>
+        <i className="fa-solid fa-scale-balanced fa-2x" />
+      </>
+    ),
+    Svg: require("/img/undraw_typewriter.svg").default,
+    description: <>Tech Fiddle's Privacy Policy.</>,
+  },
+  {
+    title: "Cookie Policy",
+    href: "/legal/cookie-policy",
+    icon: (
+      <>
+        <i className="fa-solid fa-scale-balanced fa-2x" />
+      </>
+    ),
+    Svg: require("/img/undraw_typewriter.svg").default,
+    description: <>Tech Fiddle's Cookie Policy.</>,
   },
   {
     title: "Social",
-    href: "/",
+    href: "https://bento.me/techfiddle",
     icon: (
       <>
         <i className="fa-solid fa-hashtag fa-2x" />
@@ -237,35 +256,35 @@ function Resource({ Svg, title, description, href, icon, button, subtitle }) {
   );
 }
 
-function Product({ Svg, title, description, href, icon, button, subtitle }) {
-  return (
-    <Link href={href} className="docusaurusLink">
-      <div className="card shadow--md">
-        <div className="card__header">
-          {icon}
-          <div className="space" />
-          <h3>{title}</h3>
-        </div>
-        <div className="card__body">{description}</div>
-      </div>
-    </Link>
-  );
-}
+// function Product({ Svg, title, description, href, icon, button, subtitle }) {
+//   return (
+//     <Link href={href} className="docusaurusLink">
+//       <div className="card shadow--md">
+//         <div className="card__header">
+//           {icon}
+//           <div className="space" />
+//           <h3>{title}</h3>
+//         </div>
+//         <div className="card__body">{description}</div>
+//       </div>
+//     </Link>
+//   );
+// }
 
-function Tool({ Svg, title, description, href, icon, button, subtitle }) {
-  return (
-    <Link href={href} className="docusaurusLink">
-      <div className="card shadow--md">
-        <div className="card__header">
-          {icon}
-          <div className="space" />
-          <h3>{title}</h3>
-        </div>
-        <div className="card__body">{description}</div>
-      </div>
-    </Link>
-  );
-}
+// function Tool({ Svg, title, description, href, icon, button, subtitle }) {
+//   return (
+//     <Link href={href} className="docusaurusLink">
+//       <div className="card shadow--md">
+//         <div className="card__header">
+//           {icon}
+//           <div className="space" />
+//           <h3>{title}</h3>
+//         </div>
+//         <div className="card__body">{description}</div>
+//       </div>
+//     </Link>
+//   );
+// }
 
 export default function HomepageFeatures() {
   return (
@@ -285,10 +304,8 @@ export default function HomepageFeatures() {
             </div>
           </div>
         </div>
-        <br />
-        <Divider />
       </section>
-      <section>
+      {/* <section>
         <h2 className="featuresHeading">Products</h2>
         <div className="features">
           <div className="container">
@@ -321,7 +338,7 @@ export default function HomepageFeatures() {
             </div>
           </div>
         </div>
-      </section>
+      </section> */}
     </>
   );
 }

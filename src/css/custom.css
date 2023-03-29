@@ -95,6 +95,7 @@
   --ifm-background-color: linear-gradient(180deg, #f3f6f9 0%, #ffffff 100%);
   --ifm-code-font-size: 95%;
   --ifm-navbar-padding-horizontal: 10px;
+  --ifm-button-color: #ffffff;
 }
 
 html[data-theme="dark"] {
@@ -171,9 +172,9 @@ html[data-theme="dark"] .card:hover {
   text-decoration: none;
 }
 
-html[data-theme="dark"] img {
+/* html[data-theme="dark"] img {
   filter: brightness(75%);
-}
+} */
 
 input::file-selector-button {
   appearance: none;
@@ -284,12 +285,12 @@ input::file-selector-button:active {
 
 .footer__description {
   color: var(--docs-color-text-100);
-  font-size: 14px;
+  font-size: 18px;
 }
 
 .footer__copyright {
   margin-top: 32px;
-  font-size: 14px;
+  font-size: 16px;
   color: var(--docs-color-text-100);
 }
 
@@ -299,7 +300,7 @@ input::file-selector-button:active {
 
 .footer__cta {
   padding-right: 24px;
-  font-size: 14px;
+  font-size: 16px;
   flex-direction: row;
 }
 
@@ -318,7 +319,7 @@ input::file-selector-button:active {
 }
 
 .footer__row .links {
-  flex: 4;
+  flex: 1;
 }
 
 .footer__title {
@@ -329,7 +330,7 @@ input::file-selector-button:active {
 }
 
 .footer__item {
-  font-size: 14px;
+  font-size: 16px;
   font-weight: normal;
   color: var(--docs-color-text);
 }
