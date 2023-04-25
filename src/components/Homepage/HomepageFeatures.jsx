@@ -9,7 +9,6 @@ import Button from "@mui/joy/Button";
 import Card from "@mui/joy/Card";
 import Typography from "@mui/joy/Typography";
 import { CssVarsProvider } from "@mui/joy/styles";
-import HorizontalScroll from "react-horizontal-scrolling";
 import Avatar from "@mui/joy/Avatar";
 import Link from "@docusaurus/Link";
 import MenuBookRoundedIcon from "@mui/icons-material/MenuBookRounded";

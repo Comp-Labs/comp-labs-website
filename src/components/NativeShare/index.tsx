@@ -1,8 +1,6 @@
 import React, { useState, useEffect } from 'react';
-// import { RWebShare } from "react-web-share";
 import { CssVarsProvider } from "@mui/joy/styles";
 import Button from "@mui/joy/Button";
-// import BrowserOnly from '@docusaurus/BrowserOnly';
 import shareWebPage, { TypeOfSharing } from "web-sharing";
 import ShareRoundedIcon from '@mui/icons-material/ShareRounded';
 
