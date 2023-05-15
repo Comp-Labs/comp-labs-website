@@ -27,7 +27,7 @@
     "@docusaurus/theme-common": "^2.4.0",
     "@docusaurus/theme-live-codeblock": "^2.4.0",
     "@docusaurus/utils": "^2.4.0",
-    "@docusaurus/utils-common": "2.4.0",
+    "@docusaurus/utils-common": "2.4.1",
     "@emotion/react": "latest",
     "@emotion/styled": "latest",
     "@flaticon/flaticon-uicons": "latest",
