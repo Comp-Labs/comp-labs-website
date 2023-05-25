@@ -3,6 +3,7 @@ import TOCItems from '@theme/TOCItems';
 import Card from '@mui/joy/Card';
 import Typography from "@mui/joy/Typography";
 import styles from './styles.module.css';
+
 export default function TOCInline({ toc, minHeadingLevel, maxHeadingLevel }) {
   return (
     <Card variant="outlined">
@@ -17,5 +18,14 @@ export default function TOCInline({ toc, minHeadingLevel, maxHeadingLevel }) {
         />
       </div>
     </Card>
+    // <div className={styles.tableOfContentsInline}>
+    //   <TOCItems
+    //     toc={toc}
+    //     minHeadingLevel={minHeadingLevel}
+    //     maxHeadingLevel={maxHeadingLevel}
+    //     className="table-of-contents"
+    //     linkClassName={null}
+    //   />
+    // </div>
   );
 }

@@ -27,25 +27,25 @@ import ContentCopyRoundedIcon from '@mui/icons-material/ContentCopyRounded';
 library.add(fab, fas); // Adds all icons to the library so you can use them without importing them individually.
 
 export default {
-  ...MDXComponents,
-  // Divider
-  Browser: Browser,
-  Button: Button,
-  CssVarsProvider: CssVarsProvider,
-  DocCardList: DocCardList,
-  FontAwesomeIcon: FontAwesomeIcon,
-  Giscus: Giscus,
-  // Highlight: Highlight,
-  Link: Link,
-  Microlink: Microlink,
-  NativeShare: NativeShare,
-  ShowcaseCarousel: ShowcaseCarousel,
-  Tabs: Tabs,
-  TabItem: TabItem,
-  Terminal: Terminal,
-  TOCInline: TOCInline,
-  YTSubscribe: YTSubscribe,
-  // Icons
-  TerminalRoundedIcon: TerminalRoundedIcon,
-  ContentCopyRoundedIcon: ContentCopyRoundedIcon,
+    ...MDXComponents,
+    // Divider
+    Browser: Browser,
+    Button: Button,
+    CssVarsProvider: CssVarsProvider,
+    DocCardList: DocCardList,
+    FontAwesomeIcon: FontAwesomeIcon,
+    Giscus: Giscus,
+    // Highlight: Highlight,
+    Link: Link,
+    Microlink: Microlink,
+    NativeShare: NativeShare,
+    ShowcaseCarousel: ShowcaseCarousel,
+    Tabs: Tabs,
+    TabItem: TabItem,
+    Terminal: Terminal,
+    TOCInline: TOCInline,
+    YTSubscribe: YTSubscribe,
+    // Icons
+    TerminalRoundedIcon: TerminalRoundedIcon,
+    ContentCopyRoundedIcon: ContentCopyRoundedIcon,
 };

@@ -11,9 +11,9 @@ import DocItemTOCDesktop from '@theme/DocItem/TOC/Desktop';
 import DocItemContent from '@theme/DocItem/Content';
 import DocBreadcrumbs from '@theme/DocBreadcrumbs';
 import styles from './styles.module.css';
-import Giscus from '@giscus/react';
 import { useColorMode } from '@docusaurus/theme-common';
-import DocItemInfo from './DocItemInfo';
+import DocItemInfo from '@theme/DocItem/Layout';
+import Giscus from "@giscus/react";
 /**
  * Decide if the toc should be rendered, on mobile or desktop viewports
  */
@@ -36,7 +36,6 @@ function useDocTOC() {
 export default function DocItemLayout({ children }) {
   const docTOC = useDocTOC();
   const { colorMode } = useColorMode();
-
   return (
     <div className="row">
       <div className={clsx('col', !docTOC.hidden && styles.docItemCol)}>

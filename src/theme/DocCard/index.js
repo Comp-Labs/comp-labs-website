@@ -9,7 +9,6 @@ import isInternalUrl from '@docusaurus/isInternalUrl';
 import { translate } from '@docusaurus/Translate';
 import styles from './styles.module.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faFileAlt, faCabinetFiling, faPaperclip } from '@fortawesome/free-solid-svg-icons';
 function CardContainer({ href, children }) {
   return (
     <Link
@@ -41,21 +40,23 @@ function CardCategory({ item }) {
   if (!href) {
     return null;
   }
-  const icon = <FontAwesomeIcon icon="fa-solid fa-folder-open" />
   return (
     <CardLayout
       href={href}
       icon={icon}
       title={item.label}
-      description={translate(
-        {
-          message: '{count} items',
-          id: 'theme.docs.DocCard.categoryDescription',
-          description:
-            'The default description for a category card in the generated index about how many items this category includes',
-        },
-        { count: item.items.length },
-      )}
+      description={
+        item.description ??
+        translate(
+          {
+            message: '{count} items',
+            id: 'theme.docs.DocCard.categoryDescription',
+            description:
+              'The default description for a category card in the generated index about how many items this category includes',
+          },
+          { count: item.items.length },
+        )
+      }
     />
   );
 }
@@ -67,7 +68,7 @@ function CardLink({ item }) {
       href={item.href}
       icon={icon}
       title={item.label}
-      description={doc?.description}
+      description={item.description ?? doc?.description}
     />
   );
 }

@@ -18,9 +18,9 @@ See https://twitter.com/JoshWComeau/status/1332015868725891076
   user-select: none;
 }
 
-/* :global(.hash-link::before) {
-  content: '#';
-} */
+:global(.hash-link::before) {
+  content: '';
+}
 
 :global(.hash-link:focus),
 :global(*:hover > .hash-link) {

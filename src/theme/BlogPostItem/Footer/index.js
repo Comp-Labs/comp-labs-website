@@ -1,7 +1,7 @@
 import React from 'react';
 import clsx from 'clsx';
-import { useBlogPost } from '@docusaurus/theme-common/internal';
 import { useColorMode } from '@docusaurus/theme-common';
+import { useBlogPost } from '@docusaurus/theme-common/internal';
 import EditThisPage from '@theme/EditThisPage';
 import TagsListInline from '@theme/TagsListInline';
 import ReadMoreLink from '@theme/BlogPostItem/Footer/ReadMoreLink';
@@ -9,7 +9,6 @@ import styles from './styles.module.css';
 import Giscus from "@giscus/react";
 import YTSubscribe from '@site/src/components/YTSubscribe';
 import NativeShare from "@site/src/components/NativeShare";
-import { Provider, UpdownButton } from "@lyket/react";
 import Divider from "@mui/joy/Divider";
 export default function BlogPostItemFooter() {
   const { colorMode } = useColorMode();

@@ -2,10 +2,9 @@ import React from 'react';
 import clsx from 'clsx';
 import { translate } from '@docusaurus/Translate';
 import { useThemeConfig } from '@docusaurus/theme-common';
-import styles from './styles.module.css';
 import Link from '@mui/joy/Link';
 import LinkIcon from '@mui/icons-material/Link';
-
+import styles from './styles.module.css';
 export default function Heading({ as: As, id, ...props }) {
   const {
     navbar: { hideOnScroll },
@@ -21,6 +20,16 @@ export default function Heading({ as: As, id, ...props }) {
       </>
     );
   }
+  const anchorTitle = translate(
+    {
+      id: 'theme.common.headingLinkTitle',
+      message: 'Direct link to {heading}',
+      description: 'Title for link to heading',
+    },
+    {
+      heading: typeof props.children === 'string' ? props.children : id,
+    },
+  );
   return (
     <As
       {...props}
@@ -29,6 +38,7 @@ export default function Heading({ as: As, id, ...props }) {
         hideOnScroll
           ? styles.anchorWithHideOnScrollNavbar
           : styles.anchorWithStickyNavbar,
+        props.className,
       )}
       id={id}>
       {props.children}
@@ -48,6 +58,13 @@ export default function Heading({ as: As, id, ...props }) {
           <LinkIcon />
         </Link>
       </a>
+      {/* <Link
+        className="hash-link"
+        to={`#${id}`}
+        aria-label={anchorTitle}
+        title={anchorTitle}>
+        &#8203;
+      </Link> */}
     </As>
   );
 }

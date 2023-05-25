@@ -3,7 +3,7 @@
   height: 2rem;
 }
 
-/* .toggleButton {
+.toggleButton {
   -webkit-tap-highlight-color: transparent;
   align-items: center;
   display: flex;
@@ -12,14 +12,14 @@
   height: 100%;
   border-radius: 50%;
   transition: background var(--ifm-transition-fast);
-} */
+}
 
 .toggleButton:hover {
   background: var(--ifm-color-emphasis-200);
 }
 
-[data-theme="light"] .darkToggleIcon,
-[data-theme="dark"] .lightToggleIcon {
+[data-theme='light'] .darkToggleIcon,
+[data-theme='dark'] .lightToggleIcon {
   display: none;
 }
 

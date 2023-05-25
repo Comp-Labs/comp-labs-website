@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import readingTime from "reading-time/lib/reading-time";
-import MenuBookRoundedIcon from "@mui/icons-material/MenuBookRounded";
 import Chip from "@mui/joy/Chip";
+import AccessTimeRoundedIcon from '@mui/icons-material/AccessTimeRounded';
 
 export default function ReadingTime(props) {
   const [readingTimeInWords, setReadingTimeInWords] = useState("");
@@ -14,7 +14,7 @@ export default function ReadingTime(props) {
   return (
     <div>
       <Chip
-        startDecorator={<MenuBookRoundedIcon />}
+        startDecorator={<AccessTimeRoundedIcon />}
         color="primary"
         size="md"
         variant="soft"

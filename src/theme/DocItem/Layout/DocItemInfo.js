@@ -4,13 +4,13 @@ import { useDoc } from '@docusaurus/theme-common/internal';
 import NativeShare from "@site/src/components/NativeShare";
 
 function DocItemInfo() {
-  const { metadata } = useDoc();
-  return (
-    <div className="flex justify-between">
-      <ReadingTime />
-      <NativeShare />
-    </div>
-  );
+    const { metadata } = useDoc();
+    return (
+        <div className="flex justify-between">
+            <ReadingTime />
+            <NativeShare />
+        </div>
+    );
 }
 
 export default DocItemInfo;

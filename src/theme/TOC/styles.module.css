@@ -3,9 +3,6 @@
   overflow-y: auto;
   position: sticky;
   top: calc(var(--ifm-navbar-height) + 1rem);
-  border-radius: 10px;
-  box-sizing: border-box;
-  border: 0 solid #e5e7eb;
 }
 
 @media (max-width: 996px) {
