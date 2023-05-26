@@ -10,7 +10,7 @@ const darkCodeTheme = require("prism-react-renderer/themes/dracula");
     title: "Tech Fiddle",
     tagline:
       "All About Technology...",
-    url: "https://complabs.in",
+    url: "https://techfiddle.io",
     baseUrl: "/",
     onBrokenLinks: "throw",
     onBrokenMarkdownLinks: "throw",
@@ -430,7 +430,7 @@ const darkCodeTheme = require("prism-react-renderer/themes/dracula");
             //     },
             //     {
             //       label: "MicroURL",
-            //       href: "https://microurl.complabs.in/",
+            //       href: "https://microurl.techfiddle.io/",
             //     },
             //     {
             //       label: "SpeedTest",

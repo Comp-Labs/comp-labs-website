@@ -8,7 +8,7 @@ This Repository Contains source code for the [Tech Fiddle Website](https://githu
 
 Written in ReactJS, Markdown, and MDX. Built using [Docusaurus](docusaurus.io). Deploys with [Netlify](netlify.com).
 
-[Visit Website](https://complabs.in)
+[Visit Website](https://techfiddle.io)
 
 <footer>
 <p align="center" style="font-size: smaller;">
