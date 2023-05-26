@@ -12,8 +12,9 @@ import DocItemContent from '@theme/DocItem/Content';
 import DocBreadcrumbs from '@theme/DocBreadcrumbs';
 import styles from './styles.module.css';
 import { useColorMode } from '@docusaurus/theme-common';
-import DocItemInfo from '@theme/DocItem/Layout';
 import Giscus from "@giscus/react";
+import ReadingTime from '@site/src/components/ReadingTime';
+import NativeShare from "@site/src/components/NativeShare";
 /**
  * Decide if the toc should be rendered, on mobile or desktop viewports
  */
@@ -46,7 +47,10 @@ export default function DocItemLayout({ children }) {
             <DocVersionBadge />
             {docTOC.mobile}
             <DocItemContent>
-              <DocItemInfo />
+              <div className="flex justify-between">
+                <ReadingTime />
+                <NativeShare />
+              </div>
               {children}
             </DocItemContent>
             <DocItemFooter />
