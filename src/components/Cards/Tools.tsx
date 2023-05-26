@@ -11,14 +11,14 @@ const ToolsList = [
     {
         name: 'MicroURL',
         description: 'Best URL Shortener, developed using the Bitly API.',
-        url: 'https://microurl.complabs.in/',
-        image: 'https://api.screenshotone.com/take?access_key=qgRtgmasEiUh4Q&url=https%3A%2F%2Fmicrourl.complabs.in&full_page=true&device_scale_factor=1&format=webp&image_quality=100&block_resources=other&cache=true&cache_ttl=2592000&signature=239fb3664d31a9a70a28ef88edd52a46bae337280bef9795b72981fa433f2917',
+        url: 'https://microurl.techfiddle.io/',
+        image: 'https://api.screenshotone.com/take?access_key=qgRtgmasEiUh4Q&url=https%3A%2F%2Fmicrourl.techfiddle.io&full_page=true&device_scale_factor=1&format=webp&image_quality=100&block_resources=other&cache=true&cache_ttl=2592000&signature=239fb3664d31a9a70a28ef88edd52a46bae337280bef9795b72981fa433f2917',
     },
     {
         name: 'SpeedTest',
         description: 'Free, Fast, and Always Accurate Internet SpeedTest. Powered by OpenSpeedTest.com to give you the best experience, accurate and detailed SpeedTest.',
         url: '/tools/speedtest',
-        image: 'https://api.screenshotone.com/take?access_key=qgRtgmasEiUh4Q&url=https%3A%2F%2Fcomplabs.in%2Ftools%2Fspeedtest&device_scale_factor=1&format=webp&image_quality=100&block_resources=other&cache=true&cache_ttl=2592000&signature=6b245f85db3786b8eb9b8d3e4d0aa74eb493b918ef505d25e101504e997d75c2',
+        image: 'https://api.screenshotone.com/take?access_key=qgRtgmasEiUh4Q&url=https%3A%2F%2Ftechfiddle.io%2Ftools%2Fspeedtest&device_scale_factor=1&format=webp&image_quality=100&block_resources=other&cache=true&cache_ttl=2592000&signature=6b245f85db3786b8eb9b8d3e4d0aa74eb493b918ef505d25e101504e997d75c2',
         },
     {
         name: 'Web Tools',

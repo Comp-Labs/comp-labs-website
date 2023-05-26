@@ -14,7 +14,7 @@ function Browser({
   children,
   color = '#000000',
   minHeight,
-  url = 'https://complabs.in/',
+  url = 'https://techfiddle.io/',
 }: Props): JSX.Element {
   return (
     <div className={styles.browserWindow} style={{ minHeight }}>
