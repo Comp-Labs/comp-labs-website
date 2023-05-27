@@ -43,11 +43,11 @@ const darkCodeTheme = require("prism-react-renderer/themes/dracula");
       "https://s7.addthis.com/js/300/addthis_widget.js#pubid=ra-629de96c243ef6ee",
       "https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js",
       // Google AdSense:
-      {
-        src: 'https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6230468888789445',
-        async: true,
-        crossorigin: 'anonymous',
-      },
+      // {
+      //   src: 'https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6230468888789445',
+      //   async: true,
+      //   crossorigin: 'anonymous',
+      // },
       // TrustedSite:
       {
         src: 'https://cdn.ywxi.net/js/1.js',
@@ -70,14 +70,14 @@ const darkCodeTheme = require("prism-react-renderer/themes/dracula");
       //     src: 'https://chirpy.dev/bootstrap/comment.js',
       //   },
       // },
-      {
-        tagName: 'script',
-        attributes: {
-          async: 'true',
-          src: 'https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6230468888789445',
-          crossorigin: 'anonymous',
-        },
-      },
+      // {
+      //   tagName: 'script',
+      //   attributes: {
+      //     async: 'true',
+      //     src: 'https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6230468888789445',
+      //     crossorigin: 'anonymous',
+      //   },
+      // },
       {
         tagName: 'script',
         attributes: {
