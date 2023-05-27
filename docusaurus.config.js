@@ -77,7 +77,26 @@ const darkCodeTheme = require("prism-react-renderer/themes/dracula");
           src: 'https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6230468888789445',
           crossorigin: 'anonymous',
         },
-      }
+      },
+      {
+        tagName: 'script',
+        attributes: {
+          async: 'true',
+          src: 'https://cdn.headwayapp.co/widget.js',
+        },
+      },
+      {
+        tagName: 'script',
+        attributes: {
+          content: '!function(w,d,i,s){function l(){if(!d.getElementById(i)){var f=d.getElementsByTagName(s)[0],e=d.createElement(s);e.type="text/javascript",e.async=!0,e.src="https://canny.io/sdk.js",f.parentNode.insertBefore(e,f)}}if("function"!=typeof w.Canny){var c=function(){c.q.push(arguments)};c.q=[],w.Canny=c,"complete"===d.readyState?l():w.attachEvent?w.attachEvent("onload",l):w.addEventListener("load",l,!1)}}(window,document,"canny-jssdk","script");'
+        }
+      },
+      {
+        tagName: 'script',
+        attributes: {
+          content: "Canny('initChangelog', {appID: '62777bd9b9aa4552a064cab2',position: 'bottom',align: 'left',theme: 'auto',});"
+        }
+      },
     ],
 
     stylesheets: [
