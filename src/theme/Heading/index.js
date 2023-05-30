@@ -14,7 +14,7 @@ export default function Heading({ as: As, id, ...props }) {
     return (
       <>
         <As {...props} id={undefined} />
-        <div className="h-1 w-11 rounded bg-gradient-to-r from-primary-800 to-plum-800" />
+        {/* <div className="h-1 w-11 rounded bg-gradient-to-r from-primary-800 to-plum-800" /> */}
         {/* <div className="h1divider" />
       <div className="muiSpace" /> */}
       </>

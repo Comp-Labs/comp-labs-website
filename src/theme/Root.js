@@ -11,7 +11,7 @@ export default function Root({ children }) {
             <CssVarsProvider>
                 {children}
             </CssVarsProvider>
-            inject();
+            {inject()}
         </>
     );
 }
