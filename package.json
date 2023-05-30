@@ -42,7 +42,7 @@
     "@mui/material": "latest",
     "@mui/system": "latest",
     "@octokit/core": "^4.2.1",
-    "@svgr/webpack": "^7.0.0",
+    "@svgr/webpack": "^8.0.1",
     "@types/react": "latest",
     "@types/react-dom": "latest",
     "@vercel/analytics": "latest",
