@@ -1,0 +1,5 @@
+# Algolia-Crawler-Verif: BFCF0F25D6EF6E35
+
+User-agent: *
+Allow: /
+Sitemap: https://techfiddle.io/sitemap.xml
