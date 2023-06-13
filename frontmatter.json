@@ -1,0 +1,118 @@
+{
+  "$schema": "https://frontmatter.codes/frontmatter.schema.json",
+  "frontMatter.taxonomy.contentTypes": [
+    {
+      "name": "default",
+      "pageBundle": false,
+      "previewPath": null,
+      "fields": [
+        {
+          "title": "Title",
+          "name": "title",
+          "type": "string"
+        },
+        {
+          "title": "Description",
+          "name": "description",
+          "type": "string"
+        },
+        {
+          "title": "Publishing date",
+          "name": "date",
+          "type": "datetime",
+          "default": "{{now}}",
+          "isPublishDate": true
+        },
+        {
+          "title": "Content preview",
+          "name": "preview",
+          "type": "image"
+        },
+        {
+          "title": "Is in draft",
+          "name": "draft",
+          "type": "draft"
+        },
+        {
+          "title": "Tags",
+          "name": "tags",
+          "type": "tags"
+        },
+        {
+          "title": "Categories",
+          "name": "categories",
+          "type": "categories"
+        }
+      ]
+    }
+  ],
+  "frontMatter.framework.id": "docusaurus",
+  "frontMatter.content.pageFolders": [
+    {
+      "title": "Pages",
+      "path": "[[workspace]]/src/pages"
+    },
+    {
+      "title": "Docs",
+      "path": "[[workspace]]/docs"
+    },
+    {
+      "title": "Blog",
+      "path": "[[workspace]]/blog"
+    },
+    {
+      "path": "[[workspace]]/d:/Repositories/comp-labs-website/docs"
+    }
+  ],
+  "frontMatter.content.publicFolder": "static",
+  "frontMatter.preview.host": "http://localhost:3000",
+  "frontMatter.taxonomy.tags": [
+    "APK",
+    "Active Directory",
+    "Android",
+    "Apache",
+    "Big Sur",
+    "Browser-Based",
+    "Catalina",
+    "CentOS",
+    "Debug",
+    "Desktop",
+    "ESXi",
+    "Free",
+    "GUI",
+    "Generate",
+    "HTTPD",
+    "ISO File",
+    "Install",
+    "Install macOS Mojave",
+    "Jitsi",
+    "Legal",
+    "Meeting",
+    "Microsoft",
+    "Mojave",
+    "Monterey",
+    "New Features",
+    "Office",
+    "Prank",
+    "React Native",
+    "Release",
+    "Server",
+    "SoftEther",
+    "Stickers",
+    "Ubuntu",
+    "VMware",
+    "VPN Server",
+    "VirtualBox",
+    "Virtualization",
+    "Windows",
+    "Windows 11",
+    "Windows Server",
+    "Workstation",
+    "macOS",
+    "macOS Big Sur",
+    "macOS Catalina",
+    "macOS Monterey",
+    "macOS Ventura"
+  ],
+  "frontMatter.taxonomy.categories": []
+}

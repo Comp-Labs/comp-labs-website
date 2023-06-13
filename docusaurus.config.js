@@ -22,20 +22,6 @@ const darkCodeTheme = require("prism-react-renderer/themes/dracula");
 
     themes: [
       "@docusaurus/theme-live-codeblock",
-
-      // [
-      //   require.resolve("@easyops-cn/docusaurus-search-local"),
-      //   {
-      //     indexPages: true,
-      //     removeDefaultStemmer: false, // will change to true later
-      //     highlightSearchTermsOnTargetPage: true,
-      //     searchBarShortcutHint: true,
-      //     // `hashed` is recommended as long-term-cache of index file is possible.
-      //     hashed: true,
-      //     // For Docs using Chinese, The `language` is recommended to set to:
-      //     // language: ["en", "zh"],
-      //   },
-      // ],
     ],
 
     scripts: [
@@ -53,23 +39,9 @@ const darkCodeTheme = require("prism-react-renderer/themes/dracula");
         src: 'https://cdn.ywxi.net/js/1.js',
         async: true,
       },
-      // Chirpy
-      // {
-      //   src: "https://chirpy.dev/bootstrap/comment.js",
-      //   defer: true,
-      //   'data-chirpy-domain': "complabs.in",
-      //   'data-chirpy-theme': "system",
-      // },
     ],
 
     headTags: [
-      // {
-      //   tagName: 'script',
-      //   attributes: {
-      //     defer: 'true',
-      //     src: 'https://chirpy.dev/bootstrap/comment.js',
-      //   },
-      // },
       // {
       //   tagName: 'script',
       //   attributes: {
@@ -101,8 +73,7 @@ const darkCodeTheme = require("prism-react-renderer/themes/dracula");
 
     stylesheets: [
       // String format.
-      'https://docusaurus.io/style.css',
-      // Object format.
+      // 'https://docusaurus.io/style.css',
       {
         href: '/apple-touch-icon-180x180.png',
         rel: 'apple-touch-icon',
@@ -238,6 +209,17 @@ const darkCodeTheme = require("prism-react-renderer/themes/dracula");
         }),
       ],
     ],
+
+    markdown: {
+      mdx1Compat: {
+        // Allow html comments in MDX files like blog `<!-- truncate -->` markers
+        comments: true,
+        // Allow former admonition title syntax :::note Title instead of new syntax :::note[Title]
+        admonitions: true,
+        // Allow usage of unescaped {#headingId} syntax instead of \{#headingId}
+        headingIds: true
+      },
+    },
 
     themeConfig:
       /** @type {import('@docusaurus/preset-classic').ThemeConfig} */

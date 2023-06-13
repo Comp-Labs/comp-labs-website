@@ -9,16 +9,78 @@ import BlogPage from "@site/src/components/BlogPage";
 import AppPage from "@site/src/components/AppPage";
 import GetRelease from '@site/src/components/GetRelease';
 import CannyWidget from '@site/src/components/CannyWidget';
+import NativeShare from "@site/src/components/NativeShare";
+import Button from "@mui/joy/Button";
+import BackToTopButton from "@theme/BackToTopButton";
+import Divider from '@mui/joy/Divider';
+// import PDF from "@site/src/components/PDF";
+
+# Demo
+
+MDX Demo Document. Used for Tech Fiddle Demonstration and Testing Purposes.
+
+<Divider />
+
+## Canny
 
 <CannyWidget />
 
-<GetRelease repo="Google-Docs" />
-
 <Link className="button button--primary" data-canny-changelog>View Changelog</Link>
 
-<AppPage
-  name="My App"
-  image="https://cdn.jsdelivr.net/gh/Comp-Labs/cdn/img/apps/comp-labs-meet/icon.png"
-/>
+<Divider />
+
+{/* <GetRelease repo="Google-Docs" /> */}
+
+{/* <Divider /> */}
+
+## App Page
+
+<AppPage name="Tech Fiddle" image="https://cdn.jsdelivr.net/gh/Comp-Labs/cdn/img/logo-removebg.jpg" download="https://techfiddle.io/apps/" />
+
+<Divider />
+
+## Blog Page
 
 <BlogPage />
+
+<Divider />
+
+## PDF Example
+
+None...
+
+<Divider />
+
+## ShowcaseWindow Example
+
+**Browser:**
+
+<Browser background="#ff00ff" color="#ffffff">
+
+<h2>Hello from Docusaurus</h2>
+
+Are you ready to create the documentation site for your open source project?
+
+<h3>Headers</h3>
+
+will show up on the table of contents on the upper right
+
+So that your users will know what this page is all about without scrolling down or even without reading too much.
+
+<h3>Only h2 and h3 will be in the toc</h3>
+
+The headers are well-spaced so that the hierarchy is clear.
+
+- lists will help you
+- present the key points
+- that you want your users to remember
+  - and you may nest them
+    - multiple times
+
+</Browser>
+
+**Terminal:**
+
+<Terminal title="Terminal" background="#ff00ff">
+  $ brew install --cask google-docs
+</Terminal>
