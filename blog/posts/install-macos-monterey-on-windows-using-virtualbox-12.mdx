@@ -9,6 +9,7 @@ image: "/img/blog/12/12.jpg"
 hide_table_of_contents: false
 slug: posts/install-macos-monterey-on-windows-using-virtualbox
 comments: true
+draft: true
 ---
 
 import { macOSGuideSeriesCardsRow } from "@site/src/components/Cards/InstallmacOSVirtualBox";
@@ -110,7 +111,7 @@ Also, select USB 3.0 from the USB tab in the sidebar.
 
 Once you are done with configuring all of these settings for your virtual machine, there is another setting that must be done from the Command Prompt as Administrator. So, click on File on the top-left corner of VirtualBox and then click on Exit. Then open the VirtualBox Configuration Code that you downloaded (Open with Windows Notepad). Now replace "VM Name" with the name of the virtual machine that you inserted while creating your VM. Mine is "macOS Monterey" so I'll replace "VM Name" with "macOS Monterey".
 
-:::tip How to use Replace Function in Windows Notepad
+:::tip[How to use Replace Function in Windows Notepad]
 
 First, Open **Notepad**. Then Go to `Edit` > `Replace` or press <kbd>Ctrl</kbd> + H. Replace popup will appear and you can replace the text with the text you want.
 
@@ -182,7 +183,8 @@ After Erase is complete, click on **Done** and close Disk Utility by Pressing th
   <br />
   <b>Replace "VM Name" with your own virtual machine name</b>
   <br />
-  <code>
+
+  ```
     VBoxManage setextradata "VM Name" "VBoxInternal2/EfiGraphicsResolution"
     1280×720 VBoxManage setextradata "VM Name"
     "VBoxInternal2/EfiGraphicsResolution" 1280×800 VBoxManage setextradata "VM
@@ -196,7 +198,7 @@ After Erase is complete, click on **Done** and close Disk Utility by Pressing th
     VBoxManage setextradata "VM Name" "VBoxInternal2/EfiGraphicsResolution"
     3840×2160 VBoxManage setextradata "VM Name"
     "VBoxInternal2/EfiGraphicsResolution" 5120×2880
-  </code>
+  ```
 </details>
 
 <details>
@@ -206,13 +208,9 @@ After Erase is complete, click on **Done** and close Disk Utility by Pressing th
   </summary>
   You'll need to add this line to fix this issue:
   <br />
-  <code>
-    VBoxManage modifyvm “VM Name” –cpu-profile "Intel Xeon X5482 3.20GHz"
-  </code>
+    `VBoxManage modifyvm "VM Name" –cpu-profile "Intel Xeon X5482 3.20GHz"`
   <br />
-  This command is executed with the command prompt configuration steps listed <a href="#run-virtualbox-code-using-command-prompt">
-    above
-  </a>
+  This command is executed with the command prompt configuration steps listed [above](#run-virtualbox-code-using-command-prompt)
 </details>
 
 ---

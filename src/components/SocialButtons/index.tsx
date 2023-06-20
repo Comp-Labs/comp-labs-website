@@ -46,7 +46,7 @@ export function FooterButtons() {
             <Tooltip color="neutral" variant="solid" title="YouTube">
                 <IconButton
                     component="a"
-                    href="https://youtube.com/channel/UCL6pKeSCbJkPohM2PUZbqQA"
+                    href="https://youtube.com/@techfiddle"
                     color="primary"
                     size="sm"
                     variant="outlined"
@@ -114,7 +114,7 @@ export function Buttons() {
             <Tooltip color="neutral" variant="solid" title="YouTube">
                 <IconButton
                     component="a"
-                    href="https://youtube.com/channel/UCL6pKeSCbJkPohM2PUZbqQA"
+                    href="https://youtube.com/@techfiddle"
                     color="primary"
                     size="sm"
                     variant="outlined"

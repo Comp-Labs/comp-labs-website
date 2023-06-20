@@ -9,6 +9,7 @@ image: "/img/blog/14/14.jpg"
 hide_table_of_contents: false
 slug: posts/setup-gui-on-ubuntu-server
 comments: true
+draft: true
 ---
 
 # Setup GUI on Ubuntu Server
@@ -182,6 +183,18 @@ After few moments, you should end up with a Ubuntu Setup Window. Set up Ubuntu D
   <img src="/img/blog/14/14-19.jpg" />
   <figcaption align="center">End Results</figcaption>
 </figure>
+
+Ubuntu:
+sudo passwd root
+sudo apt update
+sudo apt install ubuntu-desktop -y
+sudo apt install tightvncserver -y
+sudo apt install gnome-panel gnome-settings-daemon metacity nautilus gnome-terminal -y
+vncserver 
+yes (view only pwd)
+sudo apt-get install lxde -y
+sudo apt-get install xrdp -y
+login using rdp as root
 
 **🎉 Congratulations, you’ve successfully configured your EC2 instance to run Ubuntu Desktop.**
 

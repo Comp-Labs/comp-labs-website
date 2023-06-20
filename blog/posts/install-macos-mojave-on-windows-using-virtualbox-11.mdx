@@ -9,6 +9,7 @@ image: "/img/blog/11/11.jpg"
 hide_table_of_contents: false
 slug: posts/install-macos-mojave-on-windows-using-virtualbox
 comments: true
+draft: true
 ---
 
 # How to install macOS Mojave 10.14 in Oracle VM VirtualBox (Windows)
@@ -27,7 +28,7 @@ Before we get started, make sure to read the following requirements. Please do n
 - Your system should support Intel or AMD VT (Virtualization Technology)
 - Intel/AMD VT (Virtualization Technology) Should be enabled from BIOS setup
 
-:::note Required
+:::note[Required]
 
 If you haven't already, then you should enable Virtualization Technology (Also known as Intel VT or AMD-V).
 
@@ -208,7 +209,7 @@ VBoxManage setextradata "VM Name" "VBoxInternal/Devices/smc/0/Config/GetKeyFromR
 VBoxManage setextradata "VM Name" VBoxInternal2/EfiGraphicsResolution HxV
 ```
 
-:::note Important Note
+:::note[Important Note]
 
 I highly recommend to quit the VirtualBox program before executing the code. If you don't do it, your virtual machine might not proceed to the installation step. To quit, simply open VirtualBox, then press <kbd>Ctrl</kbd> + Q. It will close automatically.
 
