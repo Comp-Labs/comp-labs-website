@@ -137,9 +137,9 @@ export function CardList() {
                 {card.type}</span>
               <span className="bg-blue-100 text-blue-800 text-xs font-medium mr-2 px-2.5 py-0.5 rounded-full dark:bg-blue-900 dark:text-blue-300"><i className="fa-regular fa-calendar" /> {card.releaseDate}</span>
               <span className="bg-blue-100 text-blue-800 text-xs font-medium mr-2 px-2.5 py-0.5 rounded-full dark:bg-blue-900 dark:text-blue-300"><i className="fa-solid fa-dollar-sign" /> {card.ifFree}</span> */}
-            <Chip size="sm" color="success" variant="soft" startDecorator={<DevicesRoundedIcon />}>{card.type}</Chip>
-            <Chip size="sm" color="success" variant="soft" startDecorator={<i className="fa-regular fa-calendar" />}>{card.releaseDate}</Chip>
-            <Chip size="sm" color="success" variant="soft" startDecorator={<i className="fa-solid fa-dollar-sign" />}>{card.ifFree}</Chip>
+            <Chip size="md" color="success" variant="soft" startDecorator={<DevicesRoundedIcon />}>{card.type}</Chip>
+            <Chip size="md" color="success" variant="soft" startDecorator={<i className="fa-regular fa-calendar" />}>{card.releaseDate}</Chip>
+            <Chip size="md" color="success" variant="soft" startDecorator={<i className="fa-solid fa-dollar-sign" />}>{card.ifFree}</Chip>
             </div>
             <div className="flex items-center">
               <div className="mr-2">
