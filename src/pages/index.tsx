@@ -47,7 +47,7 @@ function ShowcaseSection() {
   return (
     <section className="bg-white dark:bg-gray-900">
       <h2 className="featuresHeading">Showcase (Top 5)</h2>
-      <CardList />
+      {/* <CardList /> */}
     </section>
   );
 }
