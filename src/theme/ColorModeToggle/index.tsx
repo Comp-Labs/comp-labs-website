@@ -22,7 +22,7 @@ function ColorModeToggle({
 
   const title = translate(
     {
-      message: 'Switch between dark and light mode (currently {mode})',
+      message: '{mode}',
       id: 'theme.colorToggle.ariaLabel',
       description: 'The ARIA label for the navbar color mode toggle',
     },
