@@ -42,7 +42,7 @@ function BlogListPageContent(props: Props): JSX.Element {
         
         <div className="flex flex-col items-center justify-center">
           <div className="button-group">
-            <Link className="button button--primary button--md" href="/blog/rss.xml">
+            <Link className="button button--primary button--md" to="/blog/rss.xml">
               <i className="fa-solid fa-rss" /> RSS Feed
             </Link>
             <Link className="button button--primary button--md" to="/blog/tags">
