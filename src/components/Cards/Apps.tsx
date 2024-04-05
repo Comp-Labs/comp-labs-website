@@ -22,7 +22,7 @@ const AppCards = [
         url: {
             categories: 'Productivity',
             status: 'Available',
-            viewNow: '/apps/comp-labs-meet',
+            viewNow: '/apps/tech-fiddle-meet',
             color: 'success',
             width: '256',
             height: '256',

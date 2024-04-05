@@ -12,6 +12,7 @@ export default function Tag({ permalink, label, count }: Props): JSX.Element {
       color="primary"
       variant="soft"
       component="a"
+      size="lg"
       href={permalink}
     >
       {label}

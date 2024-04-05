@@ -22,66 +22,66 @@ const cardList: Card[] = [
   {
     id: 1,
     title: 'Tech Fiddle Meet',
-    description: 'An App to solve all your meeting problems.',
-    screenshot: 'https://snap.techfiddle.io/snap?url=https://meet.techfiddle.io/',
+    description: 'An app which solves all your meeting problems easily. No account required.',
+    screenshot: 'https://cdn.jsdelivr.net/gh/Comp-Labs/cdn/img/default.jpg',
     icon: 'https://cdn.jsdelivr.net/gh/Comp-Labs/cdn/img/apps/comp-labs-meet/icon.png',
     type: 'Universal App',
     ifFree: 'Free',
     releaseDate: 'August 13, 2023',
     cta: {
-      link: '/',
+      link: '/showcase/app/tech-fiddle-meet',
     },
   },
   {
     id: 2,
     title: 'Google Docs',
     description: 'Free Office Suite in your pocket for on-the-go editing.',
-    screenshot: 'https://snap.techfiddle.io/snap?url=https://techfiddle.io/',
+    screenshot: 'https://cdn.jsdelivr.net/gh/Comp-Labs/cdn/img/default.jpg',
     icon: 'https://cdn.jsdelivr.net/gh/Comp-Labs/cdn/img/apps/google-docs.png',
     type: 'Desktop App',
     ifFree: 'Free',
     releaseDate: 'August 13, 2023',
     cta: {
-      link: '/',
+      link: '/showcase/app/google-docs',
     },
   },
   {
     id: 3,
     title: 'Jira Desktop',
     description: 'Atlassian Jira Desktop App to connect to your Jira server seamlessly from your desktop.',
-    screenshot: 'https://snap.techfiddle.io/snap?url=https://techfiddle.io/',
+    screenshot: 'https://cdn.jsdelivr.net/gh/Comp-Labs/cdn/img/default.jpg',
     icon: 'https://cdn.jsdelivr.net/gh/Comp-Labs/cdn/img/apps/jira-server.png',
     type: 'Desktop App',
     ifFree: 'Free',
     releaseDate: 'August 13, 2023',
     cta: {
-      link: '/',
+      link: '/showcase/app/jira-server',
     },
   },
   {
     id: 4,
     title: 'CodeEdit',
-    description: "The power of many IDE's in one desktop app.",
-    screenshot: 'https://snap.techfiddle.io/snap?url=https://techfiddle.io/',
+    description: "The power of all IDE's, unified in one desktop app. Simple to use with a bunch of features and modern interface.",
+    screenshot: 'https://cdn.jsdelivr.net/gh/Comp-Labs/cdn/img/default.jpg',
     icon: 'https://cdn.jsdelivr.net/gh/Comp-Labs/cdn/img/icon-removebg.jpg',
     type: 'Desktop App',
     ifFree: 'Free',
     releaseDate: 'August 13, 2023',
     cta: {
-      link: '/',
+      link: '/showcase/app/codeedit',
     },
   },
   {
     id: 5,
     title: 'WeatherBox',
     description: 'Powerful Weather App with all the features you ever wanted.',
-    screenshot: 'https://snap.techfiddle.io/snap?url=https://weatherbox.techfiddle.io/',
+    screenshot: 'https://cdn.jsdelivr.net/gh/Comp-Labs/cdn/img/default.jpg',
     icon: 'https://weatherbox.techfiddle.io/apple-touch-icon.png',
     type: 'Website + App',
     ifFree: 'Free',
     releaseDate: 'August 13, 2023',
     cta: {
-      link: '/',
+      link: '/showcase/app/weatherbox',
     },
   },
 ];
@@ -137,13 +137,13 @@ export function CardList() {
                 {card.type}</span>
               <span className="bg-blue-100 text-blue-800 text-xs font-medium mr-2 px-2.5 py-0.5 rounded-full dark:bg-blue-900 dark:text-blue-300"><i className="fa-regular fa-calendar" /> {card.releaseDate}</span>
               <span className="bg-blue-100 text-blue-800 text-xs font-medium mr-2 px-2.5 py-0.5 rounded-full dark:bg-blue-900 dark:text-blue-300"><i className="fa-solid fa-dollar-sign" /> {card.ifFree}</span> */}
-            <Chip size="sm" color="success" variant="soft" startDecorator={<DevicesRoundedIcon />}>{card.type}</Chip>
-            <Chip size="sm" color="success" variant="soft" startDecorator={<i className="fa-regular fa-calendar" />}>{card.releaseDate}</Chip>
-            <Chip size="sm" color="success" variant="soft" startDecorator={<i className="fa-solid fa-dollar-sign" />}>{card.ifFree}</Chip>
+            <Chip size="md" color="success" variant="soft" startDecorator={<DevicesRoundedIcon />}>{card.type}</Chip>
+            <Chip size="md" color="success" variant="soft" startDecorator={<i className="fa-regular fa-calendar" />}>{card.releaseDate}</Chip>
+            <Chip size="md" color="success" variant="soft" startDecorator={<i className="fa-solid fa-dollar-sign" />}>{card.ifFree}</Chip>
             </div>
-            <div className="flex items-center">
+            <div className="flex items-justify">
               <div className="mr-2">
-                <img src={card.icon} alt="App Icon" className="w-16 h-16" />
+                <img src={card.icon} alt="App Icon" className="w-22 h-20" />
               </div>
               <div>
                 <h2 className="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white"><Link href={card.cta.link}>{card.title}</Link></h2>

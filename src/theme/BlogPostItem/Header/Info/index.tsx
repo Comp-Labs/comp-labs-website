@@ -60,7 +60,7 @@ export default function BlogPostItemHeaderInfo({
         <Chip
           startDecorator={<CalendarTodayRoundedIcon />}
           color="primary"
-          size="md"
+          size="lg"
           variant="soft"
         >
           <Date date={date} formattedDate={formattedDate} />
