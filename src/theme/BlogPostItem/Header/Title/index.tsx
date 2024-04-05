@@ -3,6 +3,7 @@ import clsx from 'clsx';
 import Link from '@docusaurus/Link';
 import {useBlogPost} from '@docusaurus/theme-common/internal';
 import type {Props} from '@theme/BlogPostItem/Header/Title';
+import title from 'title';
 
 import styles from './styles.module.css';
 
@@ -18,7 +19,7 @@ export default function BlogPostItemHeaderTitle({
         title
       ) : (
         <Link itemProp="url" to={permalink}>
-          {title}
+          title(title)
         </Link>
       )}
     </TitleHeading>

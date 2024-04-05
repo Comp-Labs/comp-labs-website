@@ -131,8 +131,8 @@ const config = {
 
   markdown: {
     mdx1Compat: {
-      // Allow html comments in MDX files like blog `<!-- truncate -->` markers
-      comments: true,
+      // Allow html comments in MDX files like blog `{/* truncate */}` markers
+      comments: false,
       // Allow former admonition title syntax :::note Title instead of new syntax :::note[Title]
       admonitions: false,
       // Allow usage of unescaped {#headingId} syntax instead of \{#headingId}
@@ -159,6 +159,12 @@ const config = {
       src: 'https://cdn.ywxi.net/js/1.js',
       async: true,
     },
+
+    // Headway
+    {
+      src: 'https://cdn.headwayapp.co/widget.js',
+      async: true,
+    },
   ],
 
   headTags: [
@@ -170,14 +176,6 @@ const config = {
     //     crossorigin: 'anonymous',
     //   },
     // },
-
-    {
-      tagName: 'script',
-      attributes: {
-        async: 'true',
-        src: 'https://cdn.headwayapp.co/widget.js',
-      },
-    },
 
     {
       tagName: 'script',

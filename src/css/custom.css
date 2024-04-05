@@ -1,10 +1,9 @@
-/* Fonts */
-@import url("https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@200;300;400;500;600;800&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Rubik:wght@400;500&display=swap");
-
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+/* Fonts */
+@import url("https://fonts.googleapis.com/css2?family=Rubik:wght@400;500&display=swap");
 
 @font-face {
   font-family: Fira Code VF;
@@ -95,12 +94,7 @@
   --ifm-code-font-size: 95%;
   --ifm-navbar-padding-horizontal: 10px;
   --ifm-button-color: #ffffff;
-
-  --ifm-link-color: #1a90ff;
-
-  --ifm-color-primary: #1a90ff;
-
-  /* --ifm-footer-background-color: #1c1c1c; */
+  /* --ifm-link-color: #1a90ff; */
   --ifm-background-surface-color: @apply from-gray-800 dark:to-gray-900;
   --ifm-background-color: @apply from-gray-800 dark:to-gray-900;
 

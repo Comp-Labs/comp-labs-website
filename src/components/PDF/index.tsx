@@ -1,5 +1,6 @@
 import React, { useEffect } from 'react';
 import PictureAsPdfRoundedIcon from '@mui/icons-material/PictureAsPdfRounded';
+import Button from '@mui/joy/Button';
 
 export default function PDF() {
     useEffect(() => { })
@@ -12,7 +13,7 @@ export default function PDF() {
             size="sm"
             variant="soft"
         >
-            Download as PDF
+            Download PDF
         </Button>
     )
 }

@@ -1,13 +1,13 @@
 tech-fiddle:
-  name: Tech Fiddle Bot
-  title: System
+  name: Tech Fiddle
+  title: Bot
   url: https://techfiddle.io
   image_url: https://github.com/comp-labs.png
   github: https://github.com/Comp-Labs/
 
 rudra-sen:
   name: Rudra Sen
-  title: Creator of Tech Fiddle
+  title: Founder / Creator
   url: https://github.com/Comp-Labs
   image_url: https://github.com/rudrasen2.png
   github: https://github.com/RudraSen2
