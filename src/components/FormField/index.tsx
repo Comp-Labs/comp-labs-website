@@ -1,5 +1,4 @@
 import React from "react";
-import Highlight from "@site/src/components/Highlight"
 
 interface FormFieldProps {
   label: string;
