@@ -5,9 +5,9 @@ import {
     CannyFeedback
 } from "react-canny";
 
-const APP_ID = "62777bd9b9aa4552a064cab2";
+const APP_ID = "627";
 const LABEL_IDS = [/* Your label ids */];
-const BOARD_TOKEN = "4e868883-e854-23a8-6cc2-d3c2e3156b94";
+const BOARD_TOKEN = "123";
 
 
 export default function CannyWidget() {
