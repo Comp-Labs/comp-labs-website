@@ -42,7 +42,7 @@ export default function FooterLayout({
             </div>
             <br />
             <Divider />
-            <div className="muiSpace" /> {copyright && <div className="footer__bottom text--center">{copyright}</div>}
+            {copyright && <div className="footer__bottom text--center">{copyright}</div>}
           </div>
         </div>
       </footer>

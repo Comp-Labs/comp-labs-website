@@ -9,7 +9,9 @@ export default function Root({ children }) {
         <>
             {getInitColorSchemeScript()}
             <CssVarsProvider>
-                {children}
+                <div className="bg-gradient-to-r from-rose-100 to-teal-100 dark:from-gray-800 dark:to-gray-900">
+                    {children}
+                </div>
             </CssVarsProvider>
             {inject()}
         </>

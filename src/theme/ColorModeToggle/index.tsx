@@ -1,10 +1,10 @@
 import React from 'react';
 import clsx from 'clsx';
 import useIsBrowser from '@docusaurus/useIsBrowser';
-import {translate} from '@docusaurus/Translate';
+import { translate } from '@docusaurus/Translate';
 import IconLightMode from '@theme/Icon/LightMode';
 import IconDarkMode from '@theme/Icon/DarkMode';
-import type {Props} from '@theme/ColorModeToggle';
+import type { Props } from '@theme/ColorModeToggle';
 import Tooltip from "@mui/joy/Tooltip";
 import IconButton from "@mui/joy/IconButton";
 import { useColorScheme } from '@mui/joy/styles';
@@ -30,21 +30,21 @@ function ColorModeToggle({
       mode:
         value === 'dark'
           ? translate({
-              message: 'Turn on the light',
-              id: 'theme.colorToggle.ariaLabel.mode.dark',
-              description: 'The name for the dark color mode',
-            })
+            message: 'Turn on the light',
+            id: 'theme.colorToggle.ariaLabel.mode.dark',
+            description: 'The name for the dark color mode',
+          })
           : translate({
-              message: 'Turn off the light',
-              id: 'theme.colorToggle.ariaLabel.mode.light',
-              description: 'The name for the light color mode',
-            }),
+            message: 'Turn off the light',
+            id: 'theme.colorToggle.ariaLabel.mode.light',
+            description: 'The name for the light color mode',
+          }),
     },
   );
 
   return (
     <div className={clsx(styles.toggle, className)}>
-            <Tooltip color="neutral" variant="solid" title={title}>
+      <Tooltip color="neutral" variant="solid" title={title}>
         <IconButton
           variant="outlined"
           color="primary"
@@ -61,7 +61,7 @@ function ColorModeToggle({
           <IconDarkMode
             className={clsx(styles.toggleIcon, styles.darkToggleIcon)} />
         </IconButton>
-      {/* <button
+        {/* <button
         className={clsx(
           'clean-btn',
           styles.toggleButton,

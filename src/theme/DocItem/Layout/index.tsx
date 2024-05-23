@@ -16,6 +16,7 @@ import { useColorMode } from '@docusaurus/theme-common';
 import Giscus from "@giscus/react";
 import ReadingTime from '@site/src/components/ReadingTime';
 import NativeShare from "@site/src/components/NativeShare";
+import Divider from "@mui/joy/Divider"
 
 import styles from './styles.module.css';
 
@@ -59,17 +60,17 @@ export default function DocItemLayout({ children }: Props): JSX.Element {
             <DocBreadcrumbs />
             <DocVersionBadge />
             {docTOC.mobile}
-            <DocItemContent>
-              <div className="flex justify-between">
-                <ReadingTime />
-                <NativeShare />
-              </div>
-              {children}
-            </DocItemContent>
+            <div className="flex justify-end space-x-2">
+              <NativeShare />
+            </div>
+            <DocItemContent>{children}</DocItemContent>
             <DocItemFooter />
           </article>
           <DocItemPaginator />
         </div>
+        <div className="py-4" />
+        <Divider />
+        <div className="py-4" />
         <Giscus
           id="comments"
           repo="Comp-Labs/comp-labs-website"

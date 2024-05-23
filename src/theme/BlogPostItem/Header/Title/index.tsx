@@ -3,7 +3,6 @@ import clsx from 'clsx';
 import Link from '@docusaurus/Link';
 import {useBlogPost} from '@docusaurus/theme-common/internal';
 import type {Props} from '@theme/BlogPostItem/Header/Title';
-import title from 'title';
 
 import styles from './styles.module.css';
 
@@ -14,14 +13,8 @@ export default function BlogPostItemHeaderTitle({
   const {permalink, title} = metadata;
   const TitleHeading = isBlogPostPage ? 'h1' : 'h2';
   return (
-    <TitleHeading className={clsx(styles.title, className)} itemProp="headline">
-      {isBlogPostPage ? (
-        title
-      ) : (
-        <Link itemProp="url" to={permalink}>
-          title(title)
-        </Link>
-      )}
+    <TitleHeading className={clsx(styles.title, className)}>
+      {isBlogPostPage ? title : <Link to={permalink}>{title}</Link>}
     </TitleHeading>
   );
 }

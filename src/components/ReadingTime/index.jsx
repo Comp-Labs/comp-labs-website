@@ -16,7 +16,7 @@ export default function ReadingTime(props) {
       <Chip
         startDecorator={<AccessTimeRoundedIcon />}
         color="primary"
-        size="lg"
+        size="md"
         variant="soft"
       >
         {readingTimeInWords}

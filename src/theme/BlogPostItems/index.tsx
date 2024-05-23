@@ -1,7 +1,7 @@
 import React from 'react';
-import {BlogPostProvider} from '@docusaurus/theme-common/internal';
+import { BlogPostProvider } from '@docusaurus/theme-common/internal';
 import BlogPostItem from '@theme/BlogPostItem';
-import type {Props} from '@theme/BlogPostItems';
+import type { Props } from '@theme/BlogPostItems';
 
 export default function BlogPostItems({
   items,
@@ -9,15 +9,17 @@ export default function BlogPostItems({
 }: Props): JSX.Element {
   return (
     <>
-      {items.map(({content: BlogPostContent}) => (
-        <BlogPostProvider
-          key={BlogPostContent.metadata.permalink}
-          content={BlogPostContent}>
-          <BlogPostItemComponent>
-            <BlogPostContent />
-          </BlogPostItemComponent>
-        </BlogPostProvider>
-      ))}
+      <div className='grid md:grid-cols-2 gap-4 items-stretch py-6'>
+        {items.map(({ content: BlogPostContent }) => (
+          <BlogPostProvider
+            key={BlogPostContent.metadata.permalink}
+            content={BlogPostContent}>
+              <BlogPostItemComponent>
+                <BlogPostContent />
+              </BlogPostItemComponent>
+          </BlogPostProvider>
+        ))}
+      </div>
     </>
   );
 }

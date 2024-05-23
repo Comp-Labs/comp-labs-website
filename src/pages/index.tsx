@@ -1,94 +1,102 @@
 import React from 'react';
-import clsx from 'clsx';
 import Link from '@docusaurus/Link';
 import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
 import Layout from '@theme/Layout';
-import Contact from '@site/src/pages/contact';
-import Divider from '@mui/joy/Divider';
 import FormField from "@site/src/components/FormField";
-import CardList from "@site/src/pages/showcase";
 
 function HeroSection() {
+  const { siteConfig: { customFields } } = useDocusaurusContext();
+  const { announcement, aType, aLink } = customFields;
   return (
-    <section className="bg-white dark:bg-gray-900">
-      <div className="grid max-w-screen-xl px-4 py-8 mx-auto lg:gap-8 xl:gap-0 lg:py-16 lg:grid-cols-12">
-        <div className="mr-auto place-self-center lg:col-span-7">
-          <Link href="https://techfiddle.canny.io/changelog" className="inline-flex justify-between items-center py-1 px-1 pr-4 mb-7 text-sm text-gray-700 bg-gray-100 rounded-full dark:bg-gray-800 dark:text-white hover:bg-gray-200 dark:hover:bg-gray-700" role="alert">
-            <span className="text-xs bg-primary-600 rounded-full text-white px-4 py-1.5 mr-3">New!</span> <span className="text-sm font-medium">Tech Fiddle's new 'changelog' page is out! See it live!</span>
-            <svg className="ml-2 w-5 h-5" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z" clip-rule="evenodd"></path></svg>
-          </Link>
-          <h1 className="max-w-2xl mb-4 text-4xl font-extrabold tracking-tight leading-none md:text-5xl xl:text-6xl dark:text-white">Tech Fiddle</h1>
-          <p className="max-w-2xl mb-6 font-light text-gray-500 lg:mb-8 md:text-lg lg:text-xl dark:text-gray-400">Tech Fiddle provides a Tech Enthusiastic Blog and Innovative + Useful Digital Products for everyone.</p>
-          <Link to="/blog" className="inline-flex items-center justify-center px-5 py-3 mr-3 text-base font-medium text-center text-white rounded-lg bg-primary-700 hover:bg-primary-800 focus:ring-4 focus:ring-primary-300 dark:focus:ring-primary-900">
-            Guides
-            <svg className="w-5 h-5 ml-2 -mr-1" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg>
-          </Link>
-          <Link href="/showcase" className="inline-flex items-center justify-center px-5 py-3 text-base font-medium text-center text-gray-900 border border-gray-300 rounded-lg hover:bg-gray-100 focus:ring-4 focus:ring-gray-100 dark:text-white dark:border-gray-700 dark:hover:bg-gray-700 dark:focus:ring-gray-800">
-            Showcase
-            <svg className="w-5 h-5 ml-2 -mr-1" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg>
-          </Link>
+    <div className="flex justify-center items-center py-8 h-4/5">
+      <section className="py-8 px-6 w-4/5 max-w-screen-xl bg-gradient-to-r from-rose-50 to-teal-50 dark:dark:from-gray-700 dark:to-gray-800 bg-opacity-50 rounded-lg bg-clip-padding shadow-lg backdrop-blur-3xl backdrop-filter border border-gray-100">
+        <div className="grid max-w-screen-xl px-6 py-8 mx-auto lg:gap-8 xl:gap-0 lg:py-16 lg:grid-cols-12">
+          <div className="mr-auto place-self-center lg:col-span-7">
+            <Link href={`${aLink}`} className="inline-flex justify-between items-center p-1 pr-4 mb-7 text-sm text-gray-700 bg-gray-100 rounded-full dark:bg-gray-800 dark:text-white hover:bg-gray-200 dark:hover:bg-gray-700" role="alert">
+              <span className="text-xs bg-primary-600 rounded-full text-white px-4 py-1.5 mr-3">{`${aType}`}</span> <span className="text-sm font-medium">{`${announcement}`}</span>
+              <svg className="ml-2 w-5 h-5" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z" clip-rule="evenodd"></path></svg>
+            </Link>
+            <h1 className="max-w-2xl mb-4 text-4xl font-extrabold tracking-tight leading-none md:text-5xl xl:text-6xl dark:text-white">Tech Fiddle</h1>
+            <p className="max-w-2xl mb-6 font-light text-gray-500 lg:mb-8 md:text-lg lg:text-xl dark:text-gray-400">Tech Fiddle provides a Tech Enthusiastic Blog and Innovative + Useful Digital Products for everyone.</p>
+            <Link to="/blog" className="inline-flex items-center justify-center px-5 py-3 mr-3 text-base font-medium text-center text-white rounded-lg bg-primary-700 hover:bg-primary-800 focus:ring-4 focus:ring-primary-300 dark:focus:ring-primary-900">
+              Guides
+              <svg className="w-5 h-5 ml-2 -mr-1" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg>
+            </Link>
+            <Link href="/showcase" className="inline-flex items-center justify-center px-5 py-3 text-base font-medium text-center text-gray-900 border border-gray-300 rounded-lg hover:bg-gray-100 focus:ring-4 focus:ring-gray-100 dark:text-white dark:border-gray-700 dark:hover:bg-gray-700 dark:focus:ring-gray-800">
+              Showcase
+              <svg className="w-5 h-5 ml-2 -mr-1" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg>
+            </Link>
+          </div>
+          <div className="hidden lg:mt-0 lg:col-span-5 lg:flex">
+            <img src="https://cdn.jsdelivr.net/gh/Comp-Labs/cdn/img/hero.svg" alt="mockup" />
+          </div>
         </div>
-        <div className="hidden lg:mt-0 lg:col-span-5 lg:flex">
-          <img src="https://cdn.jsdelivr.net/gh/Comp-Labs/cdn/img/hero.svg" alt="mockup" />
-        </div>
-      </div>
-    </section>
+      </section>
+    </div>
   );
 }
 
 function BlogSection() {
   return (
-    <section className="bg-white dark:bg-gray-900">
-      <h2 className="featuresHeading">Recent Blog Posts</h2>
-    </section>
+    <div className="flex justify-center items-center py-8">
+      <section className="py-8 px-6 w-4/5 max-w-screen-xl bg-gradient-to-r from-rose-50 to-teal-50 dark:dark:from-gray-700 dark:to-gray-800 bg-opacity-50 rounded-lg bg-clip-padding shadow-lg backdrop-blur-3xl backdrop-filter border border-gray-100">
+        <h2 className="featuresHeading">Recent Blog Posts</h2>
+      </section>
+    </div>
   );
 }
 
 function ShowcaseSection() {
   return (
-    <section className="bg-white dark:bg-gray-900">
-      <h2 className="featuresHeading">Showcase (Top 5)</h2>
-      {/* <CardList /> */}
-    </section>
+    <div className="flex justify-center items-center py-8">
+      <section className="py-8 px-6 w-4/5 max-w-screen-xl bg-gradient-to-r from-rose-50 to-teal-50 dark:dark:from-gray-700 dark:to-gray-800 bg-opacity-50 rounded-lg bg-clip-padding shadow-lg backdrop-blur-3xl backdrop-filter border border-gray-100">
+        <h2 className="featuresHeading">Showcase (Top 5)</h2>
+        {/* <CardList /> */}
+      </section>
+    </div>
   );
 }
 
 function ContactSection() {
   return (
-    <div className="container margin-vert--lg">
-      <div className="row">
-        <div className="col col--6 col--offset-3">
-          <h1>Contact Us</h1>
-          <form action="https://getform.io/f/3a65ea10-fa80-47b6-861d-8b2af34a5e15" method="POST" encType="multipart/form-data">
-            <FormField type="text" label="Your Name" name="name" required />
-            <FormField
-              label="Your Email"
-              name="email"
-              required
-              type="email"
-            />
-            <FormField
-              fieldType="textarea"
-              label="Message / Feedback / Suggestions / Queries"
-              name="message"
-              type="text"
-              required
-              rows={5}
-            />
-            <FormField
-              fieldType="file"
-              label="Attachments (If Any)"
-              name="file"
-              type="file"
-            />
-            {/* <input name="website" style={{ display: "none" }} /> */}
-            <input name="_honeypot" style={{ display: "none" }} />
-            <button className="button button--primary" type="submit">
-              Submit
-            </button>
-          </form>
+    <div className="flex justify-center items-center py-8">
+      <section className="py-8 px-6 w-4/5 max-w-screen bg-gradient-to-r from-rose-50 to-teal-50 dark:dark:from-gray-700 dark:to-gray-800 bg-opacity-50 rounded-lg bg-clip-padding shadow-lg backdrop-blur-3xl backdrop-filter border border-gray-100">
+        <div className="container margin-vert--lg">
+          <div className="row">
+            <div className="col col--6 col--offset-3">
+              <h1>Contact Us</h1>
+              <form action="https://getform.io/f/3a65ea10-fa80-47b6-861d-8b2af34a5e15" method="POST" encType="multipart/form-data">
+                <FormField type="text" label="Your Name" name="name" required />
+                <FormField
+                  label="Your Email"
+                  name="email"
+                  required
+                  type="email"
+                />
+                <FormField
+                  fieldType="textarea"
+                  label="Message / Feedback / Suggestions / Queries"
+                  name="message"
+                  type="text"
+                  required
+                  rows={5}
+                />
+                <FormField
+                  fieldType="file"
+                  label="Attachments (If Any)"
+                  name="file"
+                  type="file"
+                />
+                {/* <input name="website" style={{ display: "none" }} /> */}
+                <input name="_honeypot" style={{ display: "none" }} />
+                <button className="button button--primary" type="submit">
+                  Submit
+                </button>
+              </form>
+            </div>
+          </div>
         </div>
-      </div>
+      </section>
     </div>
   );
 }
@@ -159,12 +167,9 @@ export default function Home(): JSX.Element {
       wrapperClassName="homepage flex flex-col"
     >
       <HeroSection />
-      <Divider />
       <main>
         <BlogSection />
-        <Divider />
         <ShowcaseSection />
-        <Divider />
         <ContactSection />
       </main>
     </Layout>

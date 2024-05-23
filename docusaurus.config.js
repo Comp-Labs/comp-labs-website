@@ -143,8 +143,6 @@ const config = {
   scripts: [
     "https://kit.fontawesome.com/307bcbc229.js",
 
-    "https://s7.addthis.com/js/300/addthis_widget.js#pubid=ra-629de96c243ef6ee",
-
     "https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js",
 
     // Google AdSense:
@@ -220,6 +218,12 @@ const config = {
       color: '#5bbad5',
     },
   ],
+
+  customFields: {
+    announcement: "Tech Fiddle's new 'changelog' page is out! See it live!",
+    aType: 'New!',
+    aLink: 'https://techfiddle.canny.io/changelog'
+  },
 
   themeConfig:
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */

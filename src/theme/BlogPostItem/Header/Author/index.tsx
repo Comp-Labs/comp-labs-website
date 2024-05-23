@@ -26,21 +26,13 @@ export default function BlogPostItemHeaderAuthor({
       )}
 
       {name && (
-        <div
-          className="avatar__intro"
-          itemProp="author"
-          itemScope
-          itemType="https://schema.org/Person">
+        <div className="avatar__intro">
           <div className="avatar__name">
-            <MaybeLink href={link} itemProp="url">
-              <span itemProp="name">{name}</span>
+            <MaybeLink href={link}>
+              <span>{name}</span>
             </MaybeLink>
           </div>
-          {title && (
-            <small className="avatar__subtitle" itemProp="description">
-              {title}
-            </small>
-          )}
+          {title && <small className="avatar__subtitle">{title}</small>}
         </div>
       )}
     </div>
