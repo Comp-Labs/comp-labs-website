@@ -23,12 +23,12 @@ export default function FooterLayout({
         <div className="container container-fluid">
           <div className="container container-fluid">
             {logo && <div className="margin-bottom--sm">{logo}</div>}
-            <p className="footer__description">
+            <p className="footer__description text-lg">
               Tech Fiddle provides a Tech Enthusiastic Blog, Innovative and Useful Apps, and Core Solutions for everyone.
             </p>
-            <div className="footer__row">
+            <div className="flex">
               <div className="footer__data">
-                <div className="footer__cta">
+                <div className="pr-6 text-base flex-row">
                   <strong>Keep up to date</strong>
                   <p>Join our newsletter for regular updates. No spam ever.</p>
                   <br />

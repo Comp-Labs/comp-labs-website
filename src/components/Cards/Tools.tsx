@@ -38,7 +38,7 @@ interface Props {
 function Tool({ name, description, url, image }: Props) {
     return (
         <div className="col">
-            <Link href={url} className="docusaurusLink">
+            <Link href={url}>
                 <div className="card shadow--md">
                     <div className="card__image"><img src={image} /></div>
                     <div className="card__header"><h3>{name}</h3></div>

@@ -33,7 +33,7 @@ interface Props {
 function Product({ name, description, url }: Props) {
     return (
         <div className="col">
-            <Link href={url} className="docusaurusLink">
+            <Link href={url}>
                 <div className="card shadow--md">
                     <div className="card__header"><h3>{name}</h3></div>
                     <div className="card__body"><p>{description}</p></div>

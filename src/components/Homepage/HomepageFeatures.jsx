@@ -242,11 +242,11 @@ const Tools = [
 
 function Resource({ Svg, title, description, href, icon, button, subtitle }) {
   return (
-    <Link href={href} className="docusaurusLink">
+    <Link href={href}>
       <div className="card shadow--md">
         <div className="card__header">
           {icon}
-          <div className="space" />
+          <div className="p-5" />
           <h3>{title}</h3>
         </div>
         <div className="card__body">{description}</div>
