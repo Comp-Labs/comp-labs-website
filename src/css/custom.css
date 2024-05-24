@@ -13,14 +13,6 @@
     url(/static/fonts/FiraCode-VF.woff) format("woff-variations");
 }
 
-/* Tailwind Classes */
-
-@layer components {
-  .bgrnd {
-    @apply bg-gradient-to-r from-rose-100 to-teal-100 dark:from-gray-800 dark:to-gray-900
-  }
-}
-
 /* Site Color/Font Variables */
 
 :root {
