@@ -174,7 +174,14 @@ const config = {
     //     crossorigin: 'anonymous',
     //   },
     // },
-
+    {
+      tagName: 'meta',
+      attributes: {
+        'data-rh': 'true',
+        'property': 'og:type',
+        'content': 'application/website'
+      }
+    },
     {
       tagName: 'script',
       attributes: {
@@ -415,6 +422,10 @@ const config = {
                 label: "Donate Us!",
                 to: "/donate",
               },
+              {
+                label: "Search Website",
+                to: "/search",
+              }
             ],
           },
 

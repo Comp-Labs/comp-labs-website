@@ -37,7 +37,7 @@ function BlogListPageContent(props: Props): JSX.Element {
     <BlogLayout sidebar={sidebar}>
             <div>
         <div className="mx-auto max-w-screen-lg text-center lg:mb-16 mb-8">
-          <h2 className="mb-4 text-3xl lg:text-4xl tracking-tight font-extrabold text-gray-900 dark:text-white">Welcome to Tech Fiddle Guides!</h2>
+          <h1 className="mb-4 text-3xl lg:text-4xl tracking-tight font-extrabold text-gray-900 dark:text-white">Welcome to Tech Fiddle Guides!</h1>
           <p className="font-light text-gray-500 sm:text-xl dark:text-gray-400">Select one of the blog posts from the list below or search using the search box above for your convenience. As most of our blog posts are YouTube Videos, we recommend you to visit our YouTube Channel and browse our videos. You can see the Blog Archive at the link below as well.</p>
         
         <div className="flex flex-col items-center justify-center">

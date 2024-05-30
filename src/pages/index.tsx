@@ -64,7 +64,7 @@ function ContactSection() {
         <div className="container margin-vert--lg">
           <div className="row">
             <div className="col col--6 col--offset-3">
-              <h1>Contact Us</h1>
+              <h2>Contact Us</h2>
               <form action="https://getform.io/f/3a65ea10-fa80-47b6-861d-8b2af34a5e15" method="POST" encType="multipart/form-data">
                 <FormField type="text" label="Your Name" name="name" required />
                 <FormField
