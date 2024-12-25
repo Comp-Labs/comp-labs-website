@@ -1,6 +1,6 @@
 {
   "name": "comp-labs-website",
-  "version": "2024.3.1",
+  "version": "2024.12.1",
   "private": true,
   "workspaces": [
     "plugins/*"
@@ -22,15 +22,16 @@
     "typecheck": "tsc"
   },
   "dependencies": {
-    "@docusaurus/core": "^3.3.0",
-    "@docusaurus/plugin-content-docs": "^3.3.0",
-    "@docusaurus/plugin-ideal-image": "^3.3.0",
-    "@docusaurus/plugin-pwa": "^3.3.0",
-    "@docusaurus/preset-classic": "^3.3.0",
-    "@docusaurus/theme-common": "^3.3.0",
-    "@docusaurus/theme-live-codeblock": "^3.3.0",
-    "@docusaurus/utils": "^3.3.0",
-    "@docusaurus/utils-common": "^3.3.0",
+    "@docusaurus/core": "^3.6.3",
+    "@docusaurus/faster": "^3.6.3",
+    "@docusaurus/plugin-content-docs": "^3.6.3",
+    "@docusaurus/plugin-ideal-image": "^3.6.3",
+    "@docusaurus/plugin-pwa": "^3.6.3",
+    "@docusaurus/preset-classic": "^3.6.3",
+    "@docusaurus/theme-common": "^3.6.3",
+    "@docusaurus/theme-live-codeblock": "^3.6.3",
+    "@docusaurus/utils": "^3.6.3",
+    "@docusaurus/utils-common": "^3.6.3",
     "@emotion/react": "latest",
     "@emotion/styled": "latest",
     "@flaticon/flaticon-uicons": "latest",
@@ -63,7 +64,7 @@
     "web-sharing": "latest"
   },
   "devDependencies": {
-    "@docusaurus/module-type-aliases": "^3.3.0",
+    "@docusaurus/module-type-aliases": "^3.6.3",
     "@tsconfig/docusaurus": "latest",
     "@types/node": "^22.1.0",
     "@types/react": "^18.3.1",

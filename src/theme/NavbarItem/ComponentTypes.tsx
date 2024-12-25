@@ -8,7 +8,6 @@ import DocSidebarNavbarItem from '@theme/NavbarItem/DocSidebarNavbarItem';
 import DocsVersionNavbarItem from '@theme/NavbarItem/DocsVersionNavbarItem';
 import DocsVersionDropdownNavbarItem from '@theme/NavbarItem/DocsVersionDropdownNavbarItem';
 import { Buttons } from "@site/src/components/SocialButtons";
-
 import type {ComponentTypesObject} from '@theme/NavbarItem/ComponentTypes';
 
 const ComponentTypes: ComponentTypesObject = {

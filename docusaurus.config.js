@@ -17,6 +17,14 @@ const config = {
   deploymentBranch: "main",
   trailingSlash: false,
 
+  future: {
+    experimental_faster: true,
+    experimental_storage: {
+      type: 'localStorage',
+      namespace: true,
+    },
+  },
+
   plugins: [
     // [
     //   "./plugins/blog-plugin",
@@ -103,6 +111,7 @@ const config = {
           sortPosts: "descending",
           editUrl: "https://github.com/Comp-Labs/comp-labs-website/edit/main/",
           feedOptions: {
+            xslt: true,
             type: 'all',
             copyright: `Copyright © ${new Date().getFullYear()} Tech Fiddle. All Rights Reserved.`,
           },

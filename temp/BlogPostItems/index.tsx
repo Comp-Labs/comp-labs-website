@@ -9,14 +9,14 @@ export default function BlogPostItems({
 }: Props): JSX.Element {
   return (
     <>
-      <div className='grid grid-flow-row-dense md:grid-cols-2 gap-4 items-stretch py-6 sm:grid-cols-1'>
+      <div className='grid md:grid-cols-2 gap-4 items-stretch py-6'>
         {items.map(({ content: BlogPostContent }) => (
           <BlogPostProvider
             key={BlogPostContent.metadata.permalink}
             content={BlogPostContent}>
-            <BlogPostItemComponent>
-              <BlogPostContent />
-            </BlogPostItemComponent>
+              <BlogPostItemComponent>
+                <BlogPostContent />
+              </BlogPostItemComponent>
           </BlogPostProvider>
         ))}
       </div>

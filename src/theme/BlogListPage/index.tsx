@@ -10,17 +10,17 @@ import {
 import BlogLayout from '@theme/BlogLayout';
 import BlogListPaginator from '@theme/BlogListPaginator';
 import SearchMetadata from '@theme/SearchMetadata';
-import type {Props} from '@theme/BlogListPage';
+import type { Props } from '@theme/BlogListPage';
 import BlogPostItems from '@theme/BlogPostItems';
 import Link from "@docusaurus/Link";
 import Divider from "@mui/joy/Divider";
 
 function BlogListPageMetadata(props: Props): JSX.Element {
-  const {metadata} = props;
+  const { metadata } = props;
   const {
-    siteConfig: {title: siteTitle},
+    siteConfig: { title: siteTitle },
   } = useDocusaurusContext();
-  const {blogDescription, blogTitle, permalink} = metadata;
+  const { blogDescription, blogTitle, permalink } = metadata;
   const isBlogOnlyMode = permalink === '/';
   const title = isBlogOnlyMode ? siteTitle : blogTitle;
   return (
@@ -32,14 +32,13 @@ function BlogListPageMetadata(props: Props): JSX.Element {
 }
 
 function BlogListPageContent(props: Props): JSX.Element {
-  const {metadata, items, sidebar} = props;
+  const { metadata, items, sidebar } = props;
   return (
     <BlogLayout sidebar={sidebar}>
-            <div>
-        <div className="mx-auto max-w-screen-lg text-center lg:mb-16 mb-8">
-          <h1 className="mb-4 text-3xl lg:text-4xl tracking-tight font-extrabold text-gray-900 dark:text-white">Welcome to Tech Fiddle Guides!</h1>
-          <p className="font-light text-gray-500 sm:text-xl dark:text-gray-400">Select one of the blog posts from the list below or search using the search box above for your convenience. As most of our blog posts are YouTube Videos, we recommend you to visit our YouTube Channel and browse our videos. You can see the Blog Archive at the link below as well.</p>
-        
+      <div className="text-center lg:mb-16 mb-8">
+        <h1 className="mb-4 text-3xl lg:text-4xl tracking-tight font-extrabold text-gray-900 dark:text-white">Welcome to Tech Fiddle Guides!</h1>
+        <p className="font-light text-gray-500 sm:text-xl dark:text-gray-400">Select one of the blog posts from the list below or search using the search box above for your convenience. As most of our blog posts are YouTube Videos, we recommend you to visit our YouTube Channel and browse our videos. You can see the Blog Archive at the link below as well.</p>
+
         <div className="flex flex-col items-center justify-center">
           <div className="button-group">
             <Link className="button button--primary button--md" href="https://techfiddle.io/blog/rss.xml">
@@ -58,7 +57,6 @@ function BlogListPageContent(props: Props): JSX.Element {
               <i className="fa-brands fa-youtube" /> YouTube Channel
             </Link>
           </div>
-        </div>
         </div>
       </div>
       <Divider />

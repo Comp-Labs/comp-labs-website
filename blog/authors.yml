@@ -1,13 +1,17 @@
 tech-fiddle:
   name: Tech Fiddle
   title: Bot
-  url: https://techfiddle.io
   image_url: https://github.com/comp-labs.png
-  github: https://github.com/Comp-Labs/
+  socials:
+    x: sebastienlorber
+    linkedin: sebastienlorber
+    github: Comp-Labs
+    newsletter: https://techfiddle.io
 
 rudra-sen:
   name: Rudra Sen
   title: Founder / Creator
-  url: https://github.com/Comp-Labs
   image_url: https://github.com/rudrasen2.png
-  github: https://github.com/RudraSen2
+  socials:
+    github: RudraSen2
+    newsletter: https://github.com/Comp-Labs

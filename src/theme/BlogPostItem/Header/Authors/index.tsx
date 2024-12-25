@@ -1,10 +1,10 @@
 import React from 'react';
 import clsx from 'clsx';
-import { useBlogPost } from '@docusaurus/theme-common/internal';
-import BlogPostItemHeaderAuthor from '@theme/BlogPostItem/Header/Author';
+import { useBlogPost } from '@docusaurus/plugin-content-blog/client';
+import BlogAuthor from '@theme/Blog/Components/Author';
 import type { Props } from '@theme/BlogPostItem/Header/Authors';
-import Tooltip from "@mui/joy/Tooltip";
 import styles from './styles.module.css';
+import Tooltip from "@mui/joy/Tooltip";
 
 // Component responsible for the authors layout
 export default function BlogPostItemHeaderAuthors({
@@ -20,6 +20,7 @@ export default function BlogPostItemHeaderAuthors({
     return null;
   }
   const imageOnly = authors.every(({ name }) => !name);
+  const singleAuthor = authors.length === 1;
   return (
     <>
       {isBlogPostPage ? (
@@ -32,11 +33,11 @@ export default function BlogPostItemHeaderAuthors({
           {authors.map((author, idx) => (
             <div
               className={clsx(
-                !imageOnly && 'col col--6',
+                !imageOnly && (singleAuthor ? 'col col--12' : 'col col--6'),
                 imageOnly ? styles.imageOnlyAuthorCol : styles.authorCol,
               )}
               key={idx}>
-              <BlogPostItemHeaderAuthor
+              <BlogAuthor
                 author={{
                   ...author,
                   // Handle author images using relative paths
@@ -48,17 +49,30 @@ export default function BlogPostItemHeaderAuthors({
         </div>
       ) : (
         <div className="flex items-center">
-          <div className="flex items-center space-x-4">
-            <div className="flex mb-5 -space-x-4">
-              <Tooltip arrow placement="top" variant="solid" color="neutral" size="md" title="Tech Fiddle">
-                <img data-tooltip-target="tooltip-complabs" className="w-10 h-10 border-2 border-white rounded-full dark:border-gray-800" src="https://github.com/comp-labs.png" alt="" />
-              </Tooltip>
-              <Tooltip arrow placement="top" variant="solid" color="neutral" size="md" title="Rudra Sen">
-                <img data-tooltip-target="tooltip-rudrasen2" className="w-10 h-10 border-2 border-white rounded-full dark:border-gray-800" src="https://github.com/rudrasen2.png" alt="" />
-              </Tooltip>
-            </div>
+          <div className="flex items-center space-x-4 mb-5">
+            {authors.map((author, idx) => (
+              <div className="avatar">
+                <img
+                  className="avatar__photo avatar__photo--sm"
+                  src={assets.authorsImageUrls[idx] ?? author.imageURL} />
+                <div className="avatar__intro">
+                  <div className="avatar__name">{author.name}</div>
+                </div>
+              </div>
+            ))}
           </div>
         </div>
+
+        //     <div className="flex mb-5 -space-x-4">
+        //       <Tooltip arrow placement="top" variant="solid" color="neutral" size="md" title="Tech Fiddle">
+        //         <img data-tooltip-target="tooltip-complabs" className="w-10 h-10 border-2 border-white rounded-full dark:border-gray-800" src="https://github.com/comp-labs.png" alt="" />
+        //       </Tooltip>
+        //       <Tooltip arrow placement="top" variant="solid" color="neutral" size="md" title="Rudra Sen">
+        //         <img data-tooltip-target="tooltip-rudrasen2" className="w-10 h-10 border-2 border-white rounded-full dark:border-gray-800" src="https://github.com/rudrasen2.png" alt="" />
+        //       </Tooltip>
+        //     </div>
+        //   </div>
+        // </div>
       )}
     </>
   );

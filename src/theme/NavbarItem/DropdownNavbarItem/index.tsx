@@ -12,6 +12,7 @@ import type {
   DesktopOrMobileNavBarItemProps,
   Props,
 } from '@theme/NavbarItem/DropdownNavbarItem';
+import styles from './styles.module.css';
 
 function isItemActive(
   item: LinkLikeNavbarItemProps,
@@ -81,6 +82,9 @@ function DropdownNavbarItemDesktop({
         aria-haspopup="true"
         aria-expanded={showDropdown}
         role="button"
+        // # hash permits to make the <a> tag focusable in case no link target
+        // See https://github.com/facebook/docusaurus/pull/6003
+        // There's probably a better solution though...
         href={props.to ? undefined : '#'}
         className={clsx('navbar__link', className)}
         {...props}
@@ -136,6 +140,7 @@ function DropdownNavbarItemMobile({
       <NavbarNavLink
         role="button"
         className={clsx(
+          styles.dropdownNavbarItemMobile,
           'menu__link menu__link--sublist menu__link--sublist-caret',
           className,
         )}

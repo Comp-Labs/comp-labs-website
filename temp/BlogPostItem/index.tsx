@@ -9,7 +9,7 @@ import BlogPostItemFooter from '@theme/BlogPostItem/Footer';
 import type { Props } from '@theme/BlogPostItem';
 import BlogPostItemHeaderAuthors from '@theme/BlogPostItem/Header/Authors';
 import Link from "@docusaurus/Link";
-import { ReadingTime, DateTime } from '../../../temp/Header/Info';
+import { ReadingTime, DateTime } from '../BlogPostItem/Header/Info';
 
 // apply a bottom margin in list view
 function useContainerClassName() {
@@ -41,7 +41,7 @@ export default function BlogPostItem({
           <BlogPostItemFooter />
         </BlogPostItemContainer>
       ) : (
-        <BlogPostItemContainer className="p-6 bg-white rounded-lg border border-gray-200 shadow-md dark:bg-gray-800 dark:border-gray-700 max-w-screen flex justify-center">
+        <article className="p-6 bg-white rounded-lg border border-gray-200 shadow-md dark:bg-gray-800 dark:border-gray-700 max-w-screen flex justify-center">
           <div>
             <Link href={permalink}>
               <img className="w-full rounded-lg shadow-xl shadow-blue-gray-900/50" src={frontMatter.image} alt="Blog Post Image" />
@@ -57,7 +57,7 @@ export default function BlogPostItem({
                 <h2 className="self-start mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white h-2/5"><Link href={permalink}>{title}</Link></h2>
                 <p className="self-center mb-5 font-light text-gray-500 dark:text-gray-400 h-2/5">{metadata.description}</p>
               </div>
-              <div className="flex justify-between items-center">
+              <div className="flex justify-between">
                 <BlogPostItemHeaderAuthors />
                 <Link href={permalink} className="inline-flex items-center text-white bg-gradient-to-r from-blue-500 via-blue-600 to-blue-700 hover:bg-gradient-to-br focus:ring-4 focus:outline-none focus:ring-blue-300 dark:focus:ring-blue-800 font-medium rounded-lg text-sm px-5 py-2.5 text-center mr-2 mb-2">
                   Read more
@@ -65,8 +65,8 @@ export default function BlogPostItem({
                 </Link>
               </div>
             </div>
-            </div>
-        </BlogPostItemContainer>
+          </div>
+        </article>
       )}
     </>
   );
