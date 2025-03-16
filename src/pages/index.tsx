@@ -3,6 +3,9 @@ import Link from '@docusaurus/Link';
 import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
 import Layout from '@theme/Layout';
 import FormField from "@site/src/components/FormField";
+import BlogPostItem from '@theme/BlogPostItem';
+import type { Props } from '@theme/BlogPostItems';
+import { BlogPostProvider } from '@docusaurus/plugin-content-blog/client';
 
 function HeroSection() {
   const { siteConfig: { customFields } } = useDocusaurusContext();
@@ -36,11 +39,23 @@ function HeroSection() {
   );
 }
 
-function BlogSection() {
+function BlogSection({
+  items,
+  component: BlogPostItemComponent = BlogPostItem,
+}: Props): JSX.Element {
   return (
     <div className="flex justify-center items-center py-8">
       <section className="py-8 px-6 w-4/5 max-w-screen-xl bg-gradient-to-r from-rose-50 to-teal-50 dark:dark:from-gray-700 dark:to-gray-800 bg-opacity-50 rounded-lg bg-clip-padding shadow-lg backdrop-blur-3xl backdrop-filter border border-gray-100">
         <h2 className="featuresHeading">Recent Blog Posts</h2>
+        {items.map(({ content: BlogPostContent }) => (
+          <BlogPostProvider
+            key={BlogPostContent.metadata.permalink}
+            content={BlogPostContent}>
+            <BlogPostItemComponent>
+              <BlogPostContent />
+            </BlogPostItemComponent>
+          </BlogPostProvider>
+        ))}
       </section>
     </div>
   );

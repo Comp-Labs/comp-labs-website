@@ -9,7 +9,8 @@ import BlogPostItemFooter from '@theme/BlogPostItem/Footer';
 import type { Props } from '@theme/BlogPostItem';
 import BlogPostItemHeaderAuthors from '@theme/BlogPostItem/Header/Authors';
 import Link from "@docusaurus/Link";
-import { ReadingTime, DateTime } from '../../../temp/Header/Info';
+import DateTime from '@theme/BlogPostItem/Header/Info';
+import ReadingTime from '@site/src/components/ReadingTime';
 
 // apply a bottom margin in list view
 function useContainerClassName() {
@@ -49,7 +50,7 @@ export default function BlogPostItem({
             <br /><br />
             <div className="flex flex-row justify-between items-center mb-5 text-gray-500">
               <span className="bg-blue-100 text-blue-800 text-xs font-medium mr-2 px-2.5 py-0.5 rounded-full dark:bg-blue-900 dark:text-blue-300"><i className="fa-solid fa-newspaper" /> Article</span>
-              <span className="bg-blue-100 text-blue-800 text-xs font-medium mr-2 px-2.5 py-0.5 rounded-full dark:bg-blue-900 dark:text-blue-300"><i className="fa-regular fa-calendar" /> <DateTime date={date} formattedDate={formatDate(date)} /></span>
+              <span className="bg-blue-100 text-blue-800 text-xs font-medium mr-2 px-2.5 py-0.5 rounded-full dark:bg-blue-900 dark:text-blue-300"><i className="fa-regular fa-calendar" /> <DateTime /></span>
               <span className="bg-blue-100 text-blue-800 text-xs font-medium mr-2 px-2.5 py-0.5 rounded-full dark:bg-blue-900 dark:text-blue-300"><i className="fa-regular fa-clock" /> <ReadingTime readingTime={readingTime} /></span>
             </div>
             <div className='h-full flex-col justify-between align-baseline'>
