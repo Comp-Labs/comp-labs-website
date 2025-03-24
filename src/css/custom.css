@@ -419,9 +419,9 @@ table th {
 
 /* Link Styling */
 
-a:hover {
+/* a:hover {
   text-decoration: none;
-}
+} */
 
 /**
  Image caption, use in markdown as:
@@ -600,7 +600,7 @@ html[data-theme="dark"] .DocSearch {
 
 [data-theme="dark"] ::-webkit-scrollbar-track {
   border-radius: 100vh;
-  background: #4a78a7;
+  background: gray-900;
 }
 
 [data-theme="dark"] ::-webkit-scrollbar-thumb {

@@ -183,8 +183,8 @@ export default function Home(): JSX.Element {
     >
       <HeroSection />
       <main>
-        <BlogSection />
-        <ShowcaseSection />
+        {/* <BlogSection />
+        <ShowcaseSection /> */}
         <ContactSection />
       </main>
     </Layout>
