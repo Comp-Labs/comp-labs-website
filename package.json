@@ -56,7 +56,7 @@
     "pure-react-carousel": "latest",
     "react": "^18.3.1",
     "react-canny": "latest",
-    "react-dom": "^18.3.1",
+    "react-dom": "^19.1.0",
     "react-router-dom": "^6.13.0",
     "reading-time": "latest",
     "swiper": "^11.1.3",
