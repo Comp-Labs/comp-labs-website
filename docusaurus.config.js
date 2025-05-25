@@ -259,14 +259,14 @@ const config = {
         respectPrefersColorScheme: true,
       },
 
-      announcementBar: {
-        id: 'announcement',
-        content:
-          '<p>Domain Expiration Notice: Tech Fiddle will soon be removed from domain techfiddle.io.</p>',
-        backgroundColor: '#fff',
-        textColor: '#fff',
-        isCloseable: false,
-      },
+      // announcementBar: {
+      //   id: 'announcement',
+      //   content:
+      //     '<p>Hello</p>',
+      //   backgroundColor: '#fff',
+      //   textColor: '#fff',
+      //   isCloseable: false,
+      // },
       // announcementBar: {
       //   id: 'christmas-lights',
       //   content: '<iframe src="/html/lights.html" title="Lighting" />',
