@@ -236,8 +236,8 @@ const config = {
   ],
 
   customFields: {
-    announcement: "Tech Fiddle's new 'changelog' page is out! See it live!",
-    aType: 'New!',
+    announcement: "Tech Fiddle has moved to techfiddle.org!",
+    aType: 'Update!',
     aLink: 'https://techfiddle.canny.io/changelog'
   },
 
