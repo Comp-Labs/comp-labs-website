@@ -1,6 +1,6 @@
 # <p align="center">Tech Fiddle Website</p>
 
-[![Vercel Status](https://vercel-badge-tech-fiddle.vercel.app/api/Comp-Labs/comp-labs-website)](https://techfiddle.io)
+[![Vercel Status](https://vercel-badge-tech-fiddle.vercel.app/api/Comp-Labs/comp-labs-website)](https://techfiddle.org)
 
 <hr />
 
@@ -8,7 +8,7 @@ This Repository Contains source code for the [Tech Fiddle Website](https://githu
 
 Written in ReactJS, Markdown, and MDX. Built using [Docusaurus](docusaurus.io). Deploys with [Netlify](netlify.com).
 
-[Visit Website](https://techfiddle.io)
+[Visit Website](https://techfiddle.org)
 
 <footer>
 <p align="center" style="font-size: smaller;">

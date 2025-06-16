@@ -10,9 +10,9 @@ import Link from '@docusaurus/Link';
 const WebDevCards = [
   {
     name: 'WeatherBox ⛅',
-    image: 'https://api.microlink.io?url=https%3A%2F%2Fweatherbox.techfiddle.io&screenshot=true&meta=false&embed=screenshot.url',
+    image: 'https://api.microlink.io?url=https%3A%2F%2Fweatherbox.techfiddle.org&screenshot=true&meta=false&embed=screenshot.url',
     url: {
-      page: 'https://weatherbox.techfiddle.io',
+      page: 'https://weatherbox.techfiddle.org',
       github: 'https://github.com/Comp-Labs/WeatherBox',
     },
     description: (

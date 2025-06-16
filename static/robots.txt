@@ -2,4 +2,4 @@
 
 User-agent: *
 Allow: /
-Sitemap: https://techfiddle.io/sitemap.xml
+Sitemap: https://techfiddle.org/sitemap.xml

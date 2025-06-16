@@ -5,7 +5,7 @@ import shareWebPage, { TypeOfSharing } from "web-sharing";
 import ShareRoundedIcon from '@mui/icons-material/ShareRounded';
 
 const APP_NAME = "Tech Fiddle"
-const HOMEPAGE_URL = "https://techfiddle.io"
+const HOMEPAGE_URL = "https://techfiddle.org"
 const onFail = () => alert("Could not Share. Please Try Again.")
 
 const onSuccess = (typeofSharing: TypeOfSharing) => {

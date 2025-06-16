@@ -50,7 +50,7 @@ export const cardList: Card[] = [
     title: 'WeatherBox',
     description: 'Powerful Weather App with all the features you ever wanted.',
     screenshot: 'https://cdn.jsdelivr.net/gh/Comp-Labs/cdn/img/default.jpg',
-    icon: 'https://weatherbox.techfiddle.io/apple-touch-icon.png',
+    icon: 'https://weatherbox.techfiddle.org/apple-touch-icon.png',
     type: 'Website + App',
     ifFree: 'Free',
     releaseDate: 'August 13, 2023',

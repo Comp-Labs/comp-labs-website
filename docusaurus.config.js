@@ -7,7 +7,7 @@ const darkCodeTheme = require('prism-react-renderer').themes.dracula;
 const config = {
   title: "Tech Fiddle",
   tagline: "All About Technology...",
-  url: "https://techfiddle.io",
+  url: "https://techfiddle.org",
   baseUrl: "/",
   onBrokenLinks: "throw",
   onBrokenMarkdownLinks: "throw",
@@ -469,7 +469,7 @@ const config = {
           //     },
           //     {
           //       label: "MicroURL",
-          //       href: "https://microurl.techfiddle.io/",
+          //       href: "https://microurl.techfiddle.org/",
           //     },
           //     {
           //       label: "SpeedTest",

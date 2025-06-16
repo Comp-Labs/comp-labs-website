@@ -83,7 +83,7 @@ export function FooterButtons() {
             <Tooltip color="neutral" variant="solid" title="RSS Feed">
                 <IconButton
                     component="a"
-                    href="https://techfiddle.io/blog/rss.xml"
+                    href="https://techfiddle.org/blog/rss.xml"
                     color="primary"
                     size="sm"
                     variant="outlined"
@@ -151,7 +151,7 @@ export function Buttons() {
             <Tooltip color="neutral" variant="solid" title="RSS Feed">
                 <IconButton
                     component="a"
-                    href="https://techfiddle.io/blog/rss.xml"
+                    href="https://techfiddle.org/blog/rss.xml"
                     color="primary"
                     size="sm"
                     variant="outlined"

@@ -9,7 +9,7 @@ const RSSFeed = () => {
   useEffect(() => {
     const fetchPosts = async () => {
       try {
-        const response = await axios.get('https://techfiddle.io/blog/feed.json');
+        const response = await axios.get('https://techfiddle.org/blog/feed.json');
         const { items } = response.data;
         setPosts(items);
       } catch (error) {
