@@ -12,8 +12,6 @@ const config = {
   onBrokenLinks: "throw",
   onBrokenMarkdownLinks: "throw",
   favicon: "img/favicon.ico",
-  organizationName: "Comp-Labs",
-  projectName: "comp-labs-website",
   deploymentBranch: "main",
   trailingSlash: false,
 
