@@ -69,7 +69,7 @@
     "@tsconfig/docusaurus": "latest",
     "@types/node": "^22.1.0",
     "@types/react": "^18.3.1",
-    "@types/react-dom": "^18.3.1",
+    "@types/react-dom": "^19.1.9",
     "typescript": "latest"
   },
   "browserslist": {
