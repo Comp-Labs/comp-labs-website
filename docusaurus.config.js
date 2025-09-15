@@ -15,13 +15,13 @@ const config = {
   deploymentBranch: "main",
   trailingSlash: false,
 
-  future: {
-    experimental_faster: true,
-    experimental_storage: {
-      type: 'localStorage',
-      namespace: true,
-    },
-  },
+  // future: {
+  //   experimental_faster: true,
+  //   experimental_storage: {
+  //     type: 'localStorage',
+  //     namespace: true,
+  //   },
+  // },
 
   plugins: [
     // [
